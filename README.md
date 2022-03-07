@@ -1,4 +1,4 @@
-# SOS2122-25
+## SOS2122-25
 
 - **Team**
   - [Damián González Carrasco](https://github.com/Damiangc99)
