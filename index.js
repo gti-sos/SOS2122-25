@@ -12,16 +12,16 @@ var economies=[
     {
         country: "eeuu",
         year: 2019,
-        percapita: 2.42   
-        currency: 62.014
+        percapita: 2.42,
+        currency: 62.014,
         currentprices:217092
         
     },
     {
         country: "spain",
         year: 2019,
-        percapita: 1.946
-        currency: 25269.988
+        percapita: 1.946,
+        currency: 25269.988,
         currentprices:1247
         
     },
@@ -29,7 +29,7 @@ var economies=[
         country: "argentina",
         year: 2019,
         percapita: -2391,
-        currency: 14787.768
+        currency: 14787.768,
         currentprices:20939
     },
  
