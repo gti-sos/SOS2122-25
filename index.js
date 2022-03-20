@@ -6,19 +6,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
 const BASE_API_URL = "/api/v1";
-
-/*var contacts =[
-    {
-        name: "peter",
-        phone: 123456
-    },
-    {
-        name: "paul",
-        phone: 5678  
-    }
-];
-
-*/
+const api_doc = "https://docs.google.com/document/d/1my9fboOZnBnGUS0nW65O653r2NRP5Ol4Q2oFTw9MQpU/";
 
 var economies=[
     {
@@ -33,7 +21,10 @@ var economies=[
     },
  
 ];
-    
+
+app.get(BASE_API_URL+"/economies/docs",(req,res)=>{
+    res.redirect(api_doc);
+});    
 
 app.get(BASE_API_URL+"/economies",(req,res)=>{
     res.send(JSON.stringify(economies,null,2));
@@ -45,35 +36,6 @@ app.post(BASE_API_URL+"/economies",(req,res)=>{
 });
 
 
-/*
-app.delete(BASE_API_URL+"/contacts",(req,res)=>{
-    contacts = [];
-    res.sendStatus(200,"OK  ");
-});
-
-app.delete(BASE_API_URL+"/contacts/:name",(req,res)=>{
-    var contactName = req.params.name;
-    filteredContacts = contacts.filter((contact)=>{
-        return(contact.name != contactName);
-    });
-    res.sendStatus(200,"OK  ");
-});
-
-app.get(BASE_API_URL+"/contacts/:name",(req,res)=>{
-    var contactName = req.params.name;
-    filteredContacts = contacts.filter((contact)=>{
-        return(contact.name == contactName);
-    });
-
-    if(filteredContacts == 0){
-        res.sendStatus(404,"NOT FOUND");
-    }
-    else{
-        res.send(JSON.stringify(filteredContacts[0],null,2)); 
-    }
-});
-
-*/
 
 app.listen(port, () => {
     console.log(`Server ready at port ${port}`);
