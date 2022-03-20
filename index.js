@@ -12,12 +12,22 @@ var economies=[
     {
         country: "eeuu",
         year: 2019,
-        percapita: 2
+        esco_tot: 102.5
     },
     {
         country: "spain",
         year: 2019,
-        percapita: 1.946
+        esco_tot: 100.7
+    },
+    {
+        country: "argentina",
+        year: 2019,
+        esco_tot: 116.5
+    },
+    {
+        country: "madagascar",
+        year: 2019,
+        esco_tot: 102.4
     },
  
 ];
