@@ -66,19 +66,7 @@ var economies=[
  
 ];
 
-//ANGEL
 
-app.get(BASE_API_URL+"/esco/docs",(req,res)=>{
-    res.redirect(api_doc_ASM);
-});    
-
-app.get(BASE_API_URL+"/esco",(req,res)=>{
-    res.send(JSON.stringify(esco,null,2));
-});
-
-app.post(BASE_API_URL+"/esco",(req,res)=>{
-    contacts.push(req.body);
-    res.sendStatus(201,"CREATED");
    
 //DAMIAN
 
