@@ -6,9 +6,9 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
 const BASE_API_URL = "/api/v1";
-const api_doc = "https://docs.google.com/document/d/1_LHw0xnOvLafWNtNXzWkdP922CPShLoMHLHixCJYO9A/edit";
+const api_doc_ASM = "https://docs.google.com/document/d/1_LHw0xnOvLafWNtNXzWkdP922CPShLoMHLHixCJYO9A/edit";
 
-var economies=[
+var esco=[
     {
         country: "eeuu",
         year: 2019,
@@ -32,15 +32,15 @@ var economies=[
  
 ];
 
-app.get(BASE_API_URL+"/economies/docs",(req,res)=>{
-    res.redirect(api_doc);
+app.get(BASE_API_URL+"/esco/docs",(req,res)=>{
+    res.redirect(api_doc_ASM);
 });    
 
-app.get(BASE_API_URL+"/economies",(req,res)=>{
-    res.send(JSON.stringify(economies,null,2));
+app.get(BASE_API_URL+"/esco",(req,res)=>{
+    res.send(JSON.stringify(esco,null,2));
 });
 
-app.post(BASE_API_URL+"/economies",(req,res)=>{
+app.post(BASE_API_URL+"/esco",(req,res)=>{
     contacts.push(req.body);
     res.sendStatus(201,"CREATED");
 });
