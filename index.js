@@ -5,6 +5,7 @@ const app = express();
 app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
+
 const BASE_API_URL = "/api/v1";
 //DAMIAN
 const api_doc_DGC = "https://docs.google.com/document/d/1my9fboOZnBnGUS0nW65O653r2NRP5Ol4Q2oFTw9MQpU/";
@@ -66,6 +67,8 @@ var economies=[
  
 ];
 
+app.use("/",express.static('public'));
+
 //ANGEL
 
 app.get(BASE_API_URL+"/esco/docs",(req,res)=>{
@@ -91,9 +94,79 @@ app.get(BASE_API_URL+"/economies",(req,res)=>{
     res.send(JSON.stringify(economies,null,2));
 });
 
+app.get(BASE_API_URL+"/economies/loadInicialData",(req,res)=>{
+    res.send(JSON.stringify(economies,null,2));
+});
+
 app.post(BASE_API_URL+"/economies",(req,res)=>{
-    contacts.push(req.body);
+    economies.push(req.body);
     res.sendStatus(201,"CREATED");
+});
+
+app.get(BASE_API_URL+"/economies/:country",(req,res)=>{
+    var countryName= req.params.country;
+    filteredCountry = economies.filter((data)=>{
+        return(data.country == countryName);
+    });
+ 
+    if(filteredCountry == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+app.get(BASE_API_URL+"/economies/:country",(req,res)=>{
+    var countryName= req.params.country;
+    filteredCountry = economies.filter((data)=>{
+        return(data.country == countryName);
+    });
+ 
+    if(filteredCountry == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+
+app.get(BASE_API_URL+"/economies/:country/:year",(req,res)=>{
+    var countryName= req.params.country;
+    var yearSearch= req.params.year;
+    filteredCountry = economies.filter((data)=>{
+  	  if(data.country == countryName){
+  	      return(data.year == yearSearch);
+  	  }
+    });
+ 
+    if(yearSearch == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+
+app.delete(BASE_API_URL+"/economies",(req,res)=>{
+    economies = [];
+    res.sendStatus(200,"OK  ");
+});
+
+app.delete(BASE_API_URL+"/economies/:country",(req,res)=>{
+    var countryName= req.params.country;
+    filteredCountry = countries.filter((data)=>{
+        return(data.country != countryName);
+    });
+ 
+    if(filteredCountry == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        filteredCountry[0]={};
+    }
 });
 
 
