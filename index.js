@@ -157,7 +157,7 @@ app.delete(BASE_API_URL+"/economies",(req,res)=>{
 
 app.delete(BASE_API_URL+"/economies/:country",(req,res)=>{
     var countryName= req.params.country;
-    economies = countries.filter((data)=>{
+    economies = economies.filter((data)=>{
         return(data.country != countryName);
     });
  
