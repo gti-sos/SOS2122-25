@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080;
 
 const BASE_API_URL = "/api/v1";
 //DAMIAN
-const api_doc_DGC = "https://docs.google.com/document/d/1my9fboOZnBnGUS0nW65O653r2NRP5Ol4Q2oFTw9MQpU/";
+const api_doc_DGC = "https://documenter.getpostman.com/view/19516890/UVsSL2yS";
 //ANGEL
 const api_doc_ASM = "https://docs.google.com/document/d/1_LHw0xnOvLafWNtNXzWkdP922CPShLoMHLHixCJYO9A/edit";
 
