@@ -157,16 +157,11 @@ app.delete(BASE_API_URL+"/economies",(req,res)=>{
 
 app.delete(BASE_API_URL+"/economies/:country",(req,res)=>{
     var countryName= req.params.country;
-    filteredCountry = countries.filter((data)=>{
+    economies = countries.filter((data)=>{
         return(data.country != countryName);
     });
  
-    if(filteredCountry == 0){
-        res.sendStatus(404,"NOT FOUND");
-    }
-    else{
-        filteredCountry[0]={};
-    }
+    res.sendStatus(200,"OK");
 });
 
 
