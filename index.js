@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
 const BASE_API_URL = "/api/v1";
-const api_doc = "https://docs.google.com/document/d/1my9fboOZnBnGUS0nW65O653r2NRP5Ol4Q2oFTw9MQpU/";
+const api_doc = "https://docs.google.com/document/d/1_LHw0xnOvLafWNtNXzWkdP922CPShLoMHLHixCJYO9A/edit";
 
 var economies=[
     {
