@@ -131,6 +131,13 @@ app.get(BASE_API_URL+"/economies/:country",(req,res)=>{
     }
 });
 
+app.put(BASE_API_URL+"/economies/",(req,res)=>{
+    res.sendStatus(405,"METHOD NOT ALLOWED");
+});
+
+app.post(BASE_API_URL+"/economies/:country",(req,res)=>{
+    res.sendStatus(409,"METHOD NOT ALLOWED");
+});
 
 app.get(BASE_API_URL+"/economies/:country/:year",(req,res)=>{
     var countryName= req.params.country;
