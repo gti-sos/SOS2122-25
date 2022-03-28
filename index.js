@@ -10,7 +10,7 @@ const BASE_API_URL = "/api/v1";
 //DAMIAN
 const api_doc_DGC = "https://documenter.getpostman.com/view/19516890/UVsSL2yS";
 //ANGEL
-const api_doc_ASM = "https://docs.google.com/document/d/1_LHw0xnOvLafWNtNXzWkdP922CPShLoMHLHixCJYO9A/edit";
+const api_doc_ASM = "https://documenter.getpostman.com/view/19481634/UVyoUx9L";
 
 //ANGEL
 
