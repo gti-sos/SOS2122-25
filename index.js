@@ -115,7 +115,7 @@ app.get(BASE_API_URL+"/expo/docs",(req,res)=>{
 });    
 
 app.get(BASE_API_URL+"/expo",(req,res)=>{
-    res.send(JSON.stringify(esco,null,2));
+    res.send(JSON.stringify(expo,null,2));
 });
 
 app.post(BASE_API_URL+"/expo",(req,res)=>{
