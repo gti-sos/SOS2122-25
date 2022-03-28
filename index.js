@@ -111,7 +111,7 @@ app.post(BASE_API_URL+"/esco",(req,res)=>{
 //ADRIÁN
 
 app.get(BASE_API_URL+"/expo/docs",(req,res)=>{
-    res.redirect(api_doc_ASM);
+    res.redirect(api_doc_APG);
 });    
 
 app.get(BASE_API_URL+"/expo",(req,res)=>{
