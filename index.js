@@ -171,6 +171,75 @@ app.delete(BASE_API_URL+"/economies/:country",(req,res)=>{
     res.sendStatus(200,"OK");
 });
 
+//ANGEL
+
+app.get(BASE_API_URL+"/esco/:country",(req,res)=>{
+    var countryName= req.params.country;
+    filteredCountry = esco.filter((data)=>{
+        return(data.country == countryName);
+    });
+ 
+    if(filteredCountry == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+app.get(BASE_API_URL+"/esco/:country",(req,res)=>{
+    var countryName= req.params.country;
+    filteredCountry = esco.filter((data)=>{
+        return(data.country == countryName);
+    });
+ 
+    if(filteredCountry == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+app.put(BASE_API_URL+"/esco/",(req,res)=>{
+    res.sendStatus(405,"METHOD NOT ALLOWED");
+});
+
+app.post(BASE_API_URL+"/esco/:country",(req,res)=>{
+    res.sendStatus(409,"METHOD NOT ALLOWED");
+});
+
+app.get(BASE_API_URL+"/esco/:country/:year",(req,res)=>{
+    var countryName= req.params.country;
+    var yearSearch= req.params.year;
+    filteredCountry = esco.filter((data)=>{
+  	  if(data.country == countryName){
+  	      return(data.year == yearSearch);
+  	  }
+    });
+ 
+    if(yearSearch == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+
+app.delete(BASE_API_URL+"/esco",(req,res)=>{
+    esco = [];
+    res.sendStatus(200,"OK  ");
+});
+
+app.delete(BASE_API_URL+"/esco/:country",(req,res)=>{
+    var countryName= req.params.country;
+    esco = esco.filter((data)=>{
+        return(data.country != countryName);
+    });
+ 
+    res.sendStatus(200,"OK");
+});
 
 
 app.listen(port, () => {
