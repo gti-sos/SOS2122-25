@@ -11,6 +11,8 @@ const BASE_API_URL = "/api/v1";
 const api_doc_DGC = "https://documenter.getpostman.com/view/19516890/UVsSL2yS";
 //ANGEL
 const api_doc_ASM = "https://documenter.getpostman.com/view/19481634/UVyoUx9L";
+//ADRIÁN
+const api_doc_APG = "https://documenter.getpostman.com/view/19481634/UVyoUx9L";
 
 //ANGEL
 
@@ -29,6 +31,33 @@ var esco=[
         country: "argentina",
         year: 2019,
         esco_tot: 116.5
+    },
+    
+];
+
+//ADRIÁN
+
+var expo=[
+    {
+        country: "eeuu",
+        year: 2019,
+        expo_tec: 18.673,
+        expo_m: 59.114,
+        expo_bys: 11.756,
+    },
+    {
+        country: "spain",
+        year: 2019,
+        expo_tec: 6.846,
+        expo_m: 66.650,
+        expo_bys: 34.955,
+    },
+    {
+        country: "argentina",
+        year: 2019,
+        expo_tec: 5.213,
+        expo_m: 16.555,
+        expo_bys: 17.696,
     },
     
 ];
@@ -77,6 +106,89 @@ app.get(BASE_API_URL+"/esco",(req,res)=>{
 app.post(BASE_API_URL+"/esco",(req,res)=>{
     contacts.push(req.body);
     res.sendStatus(201,"CREATED");
+});
+
+//ADRIÁN
+
+app.get(BASE_API_URL+"/expo/docs",(req,res)=>{
+    res.redirect(api_doc_ASM);
+});    
+
+app.get(BASE_API_URL+"/expo",(req,res)=>{
+    res.send(JSON.stringify(esco,null,2));
+});
+
+app.post(BASE_API_URL+"/expo",(req,res)=>{
+    contacts.push(req.body);
+    res.sendStatus(201,"CREATED");
+});
+
+app.get(BASE_API_URL+"/expo/:country",(req,res)=>{
+    var countryName= req.params.country;
+    filteredCountry = expo.filter((data)=>{
+        return(data.country == countryName);
+    });
+ 
+    if(filteredCountry == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+app.get(BASE_API_URL+"/expo/:country",(req,res)=>{
+    var countryName= req.params.country;
+    filteredCountry = expo.filter((data)=>{
+        return(data.country == countryName);
+    });
+ 
+    if(filteredCountry == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+app.put(BASE_API_URL+"/expo/",(req,res)=>{
+    res.sendStatus(405,"METHOD NOT ALLOWED");
+});
+
+app.post(BASE_API_URL+"/expo/:country",(req,res)=>{
+    res.sendStatus(409,"METHOD NOT ALLOWED");
+});
+
+app.get(BASE_API_URL+"/expo/:country/:year",(req,res)=>{
+    var countryName= req.params.country;
+    var yearSearch= req.params.year;
+    filteredCountry = expo.filter((data)=>{
+  	  if(data.country == countryName){
+  	      return(data.year == yearSearch);
+  	  }
+    });
+ 
+    if(yearSearch == 0){
+        res.sendStatus(404,"NOT FOUND");
+    }
+    else{
+        res.send(JSON.stringify(filteredCountry[0],null,2));
+    }
+});
+
+
+app.delete(BASE_API_URL+"/expo",(req,res)=>{
+    expo = [];
+    res.sendStatus(200,"OK  ");
+});
+
+app.delete(BASE_API_URL+"/expo/:country",(req,res)=>{
+    var countryName= req.params.country;
+    economies = expo.filter((data)=>{
+        return(data.country != countryName);
+    });
+ 
+    res.sendStatus(200,"OK");
 });
    
 //DAMIAN
