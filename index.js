@@ -30,12 +30,7 @@ var esco=[
         year: 2019,
         esco_tot: 116.5
     },
-    {
-        country: "madagascar",
-        year: 2019,
-        esco_tot: 102.4
-    },
- 
+    
 ];
 
 //DAMIAN
