@@ -12,7 +12,7 @@ const api_doc_DGC = "https://documenter.getpostman.com/view/19516890/UVsSL2yS";
 //ANGEL
 const api_doc_ASM = "https://documenter.getpostman.com/view/19481634/UVyoUx9L";
 //ADRIÁN
-const api_doc_APG = "https://documenter.getpostman.com/view/19481634/UVyoUx9L";
+const api_doc_APG = "https://documenter.getpostman.com/view/20003647/UVyoVdQm";
 
 //ANGEL
 
