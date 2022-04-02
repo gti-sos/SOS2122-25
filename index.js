@@ -5,8 +5,8 @@ const app = express();
 app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
-const cancerdeaths_stats_API = require("./src/back/cancerdeaths-stats.js");
-const pneumonia_stats_API = require("./src/back/pneumonia-stats.js");
+const cancerdeaths_stats_API = require("./src/back/economies-stats.js");
+const pneumonia_stats_API = require("./src/back/esco-stats.js");
 const airpollution_stats_API = require("./src/back/air-pollution-stats.js");
 
 
