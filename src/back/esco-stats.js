@@ -1,148 +1,51 @@
-//Alicia Campos Castello
+//Angel Simon Mesa
 const bodyParser = require("body-parser");
 
-const BASE_API_URL_AIR_POLLUTION_STATS = "/api/v1/air-pollution-stats";
+const BASE_API_URL_ESCO = "/api/v1/esco";
 
 
 
-var air_pollution_stats = [
-    {
-        country: "france",
-        year: 2019,
-        ages_zero_fifty: 1,
-        ages_fifty_seventy: 10,
-        ages_seventy: 31
-    },
-    {
-        country: "argentina",
-        year: 2019,
-        ages_zero_fifty: 57,
-        ages_fifty_seventy: 197,
-        ages_seventy: 457
-    },
-    {
-        country: "brazil",
-        year: 2019,
-        ages_zero_fifty: 2083,
-        ages_fifty_seventy: 4588,
-        ages_seventy: 7346
-    },
-    {
-        country: "china",
-        year: 2019,
-        ages_zero_fifty: 21535,
-        ages_fifty_seventy: 104555,
-        ages_seventy: 236938
-    },
-    {
-        country: "japan",
-        year: 2019,
-        ages_zero_fifty: 2,
-        ages_fifty_seventy: 16,
-        ages_seventy: 85
-    },
-    {
-        country: "england",
-        year: 2019,
-        ages_zero_fifty: 0,
-        ages_fifty_seventy: 2,
-        ages_seventy: 7
-    },
-    {
-        country: "india",
-        year: 2019,
-        ages_zero_fifty: 118341,
-        ages_fifty_seventy: 203713,
-        ages_seventy: 284836
-
-    },
+var esco=[
     {
         country: "eeuu",
         year: 2019,
-        ages_zero_fifty: 8,
-        ages_fifty_seventy: 45,
-        ages_seventy: 97
+        esco_tot: 102.5
     },
     {
         country: "spain",
         year: 2019,
-        ages_zero_fifty: 6,
-        ages_fifty_seventy: 30,
-        ages_seventy: 143
-    }
-]
+        esco_tot: 100.7
+    },
+    {
+        country: "argentina",
+        year: 2019,
+        esco_tot: 116.5
+    },
+    
+];
 
 module.exports.register = (app) =>{
 
     app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/loadInitialData",(req, res)=>{
     
-        if(air_pollution_stats.length==0){
-            air_pollution_stats = [
-                {
-                    country: "france",
-                    year: 2019,
-                    ages_zero_fifty: 1,
-                    ages_fifty_seventy: 10,
-                    ages_seventy: 31
-                },
-                {
-                    country: "argentina",
-                    year: 2019,
-                    ages_zero_fifty: 57,
-                    ages_fifty_seventy: 197,
-                    ages_seventy: 457
-                },
-                {
-                    country: "brazil",
-                    year: 2019,
-                    ages_zero_fifty: 2083,
-                    ages_fifty_seventy: 4588,
-                    ages_seventy: 7346
-                },
-                {
-                    country: "china",
-                    year: 2019,
-                    ages_zero_fifty: 21535,
-                    ages_fifty_seventy: 104555,
-                    ages_seventy: 236938
-                },
-                {
-                    country: "japan",
-                    year: 2019,
-                    ages_zero_fifty: 2,
-                    ages_fifty_seventy: 16,
-                    ages_seventy: 85
-                },
-                {
-                    country: "england",
-                    year: 2019,
-                    ages_zero_fifty: 0,
-                    ages_fifty_seventy: 2,
-                    ages_seventy: 7
-                },
-                {
-                    country: "india",
-                    year: 2019,
-                    ages_zero_fifty: 118341,
-                    ages_fifty_seventy: 203713,
-                    ages_seventy: 284836
-            
-                },
-                {
-                    country: "eeuu",
-                    year: 2019,
-                    ages_zero_fifty: 8,
-                    ages_fifty_seventy: 45,
-                    ages_seventy: 97
-                },
-                {
-                    country: "spain",
-                    year: 2019,
-                    ages_zero_fifty: 6,
-                    ages_fifty_seventy: 30,
-                    ages_seventy: 143
-                }
-            ]
+        if(esco.length==0){
+            esco=[
+            {
+                country: "eeuu",
+                year: 2019,
+                esco_tot: 102.5
+            },
+            {
+                country: "spain",
+                year: 2019,
+                esco_tot: 100.7
+            },
+            {
+                country: "argentina",
+                year: 2019,
+                esco_tot: 116.5
+             }
+           ]
         }
         res.sendStatus(200, "OK.")
         
@@ -152,7 +55,7 @@ module.exports.register = (app) =>{
     
     app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/docs",(req,res)=>
     {
-        res.redirect("https://documenter.getpostman.com/view/20219339/UVyn2Jne")
+        res.redirect("https://documenter.getpostman.com/view/19481634/UVyoUx9L")
     })
     
     
