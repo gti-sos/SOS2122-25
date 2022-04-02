@@ -7,43 +7,55 @@ const BASE_API_URL_ESCO = "/api/v1/esco";
 
 var esco=[
     {
-        country: "eeuu",
-        year: 2019,
-        esco_tot: 102.5
-    },
-    {
-        country: "spain",
-        year: 2019,
-        esco_tot: 100.7
-    },
-    {
-        country: "argentina",
-        year: 2019,
-        esco_tot: 116.5
-    },
+                country: "eeuu",
+                year: 2019,
+                esco_tot: 102.5,
+                esco_men: 102.1,
+                esco_wom: 103
+            },
+            {
+                country: "spain",
+                year: 2019,
+                esco_tot: 100.7,
+                esco_men: 100,
+                esco_wom: 101.5
+            },
+            {
+                country: "argentina",
+                year: 2019,
+                esco_tot: 116.5,
+                esco_men: 112.4,
+                esco_wom: 120.8
+             }
     
-];
+]
 
 module.exports.register = (app) =>{
 
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/loadInitialData",(req, res)=>{
+    app.get(BASE_API_URL_ESCO+"/loadInitialData",(req, res)=>{
     
         if(esco.length==0){
             esco=[
             {
                 country: "eeuu",
                 year: 2019,
-                esco_tot: 102.5
+                esco_tot: 102.5,
+                esco_men: 102.1,
+                esco_wom: 103
             },
             {
                 country: "spain",
                 year: 2019,
-                esco_tot: 100.7
+                esco_tot: 100.7,
+                esco_men: 100,
+                esco_wom: 101.5
             },
             {
                 country: "argentina",
                 year: 2019,
-                esco_tot: 116.5
+                esco_tot: 116.5,
+                esco_men: 112.4,
+                esco_wom: 120.8
              }
            ]
         }
@@ -53,19 +65,20 @@ module.exports.register = (app) =>{
     
     // Documentos
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/docs",(req,res)=>
+    app.get(
+        +"/docs",(req,res)=>
     {
         res.redirect("https://documenter.getpostman.com/view/19481634/UVyoUx9L")
     })
     
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
+    app.get(BASE_API_URL_ESCO,(req, res)=>{
     
         var year = req.query.year;
         var from = req.query.from;
         var to = req.query.to;
         if(year != null){
-            var filteredList = air_pollution_stats.filter((reg)=>
+            var filteredList = esco.filter((reg)=>
             {
                 return (reg.year == year);
             });
@@ -75,7 +88,7 @@ module.exports.register = (app) =>{
                 res.send(JSON.stringify(filteredList,null,2));
             }
         }else if(from != null && to != null){
-            var filteredList = air_pollution_stats.filter((reg)=>
+            var filteredList = esco.filter((reg)=>
             {
                 return (reg.year >= from && reg.year <=to);
             });
@@ -86,7 +99,7 @@ module.exports.register = (app) =>{
             }
     
         }else if(year == null && from == null && to == null){
-            res.send(JSON.stringify(air_pollution_stats,null,2));
+            res.send(JSON.stringify(esco,null,2));
         }else{
             res.sendStatus(400, "BAD REQUEST");
         }
@@ -94,10 +107,10 @@ module.exports.register = (app) =>{
     
     
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/:country",(req, res)=>{
+    app.get(BASE_API_URL_ESCO+"/:country",(req, res)=>{
     
         var country =req.params.country
-        var filteredList = air_pollution_stats.filter((reg)=>
+        var filteredList = esco.filter((reg)=>
         {
             return (reg.country == country);
         });
@@ -127,11 +140,11 @@ module.exports.register = (app) =>{
     })
     
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/:country/:year",(req, res)=>{
+    app.get(BASE_API_URL_ESCO+"/:country/:year",(req, res)=>{
     
         var country =req.params.country
         var year = req.params.year
-        var filteredList = air_pollution_stats.filter((reg)=>
+        var filteredList = esco.filter((reg)=>
         {
             return (reg.country == country && reg.year == year);
         });
@@ -144,12 +157,12 @@ module.exports.register = (app) =>{
     
     
     
-    app.post(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
+    app.post(BASE_API_URL_ESCO,(req, res)=>{
         
         if(comprobar_body(req)){
             res.sendStatus(400,"BAD REQUEST - Parametros incorrectos");
         }else{
-            var filteredList = air_pollution_stats.filter((reg)=>
+            var filteredList = esco.filter((reg)=>
             {
                 return(req.body.country == reg.country && req.body.year == reg.year)
             })
@@ -157,7 +170,7 @@ module.exports.register = (app) =>{
             if(filteredList.length != 0){
                 res.sendStatus(409,"CONFLICT");
             }else{
-                air_pollution_stats.push(req.body);
+                esco.push(req.body);
                 res.sendStatus(201,"CREATED");
             }
         }
@@ -166,18 +179,18 @@ module.exports.register = (app) =>{
     
     
     
-    app.post(BASE_API_URL_AIR_POLLUTION_STATS+"/:country",(req, res)=>{
+    app.post(BASE_API_URL_ESCO+"/:country",(req, res)=>{
         res.sendStatus(405,"METHOD NOT ALLOWED");
     })
     
     
-    app.put(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
+    app.put(BASE_API_URL_ESCO,(req, res)=>{
         
         res.sendStatus(405,"METHOD NOT ALLOWED");
     })
     
     
-    app.put(BASE_API_URL_AIR_POLLUTION_STATS+"/:country/:year",(req, res)=>{
+    app.put(BASE_API_URL_ESCO+"/:country/:year",(req, res)=>{
         
         if(comprobar_body(req)){
             res.sendStatus(400,"BAD REQUEST - Parametros incorrectos");
@@ -185,7 +198,7 @@ module.exports.register = (app) =>{
             var country = req.params.country;
             var year = req.params.year;
             var body = req.body;  
-            var index = air_pollution_stats.findIndex((reg) =>{
+            var index = esco.findIndex((reg) =>{
                 return (reg.country == country && reg.year == year)
             })
             if(index == null){
@@ -194,7 +207,7 @@ module.exports.register = (app) =>{
                 res.sendStatus(400,"BAD REQUEST");
             }else{
                 var  update_air_pollution_stats = {...body};
-                air_pollution_stats[index] = update_air_pollution_stats;
+                esco[index] = update_esco;
             
                 res.sendStatus(200,"UPDATED");
             }
@@ -203,17 +216,17 @@ module.exports.register = (app) =>{
     })
     
     
-    app.delete(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
-        air_pollution_stats = [];
+    app.delete(BASE_API_URL_ESCO,(req, res)=>{
+        esco = [];
         res.sendStatus(200,"DELETED");
     })
     
     
     
-    app.delete(BASE_API_URL_AIR_POLLUTION_STATS+"/:country/:year",(req, res)=>{
+    app.delete(BASE_API_URL_ESCO+"/:country/:year",(req, res)=>{
         var country = req.params.country;
         var year = req.params.year;
-        air_pollution_stats = air_pollution_stats.filter((reg)=>{
+        esco = esco.filter((reg)=>{
             return (reg.country!=country || (reg.country == country && reg.year != year))
         })
         res.sendStatus(200,"DELETED");
@@ -222,8 +235,8 @@ module.exports.register = (app) =>{
     function comprobar_body(req){
         return (req.body.country == null |
                  req.body.year == null | 
-                 req.body.ages_zero_fifty == null | 
-                 req.body.ages_fifty_seventy == null | 
-                 req.body.ages_seventy == null);
+                 req.body.esco_tot == null | 
+                 req.body.esco_man == null | 
+                 req.body.esco_wom == null);
     }
 }
