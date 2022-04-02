@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
 
-const BASE_API_URL = "/api/v1/economies";
+const BASE_API_URL_ECO = "/api/v1/economies";
 
 
 
@@ -40,7 +40,7 @@ var economies=[
 
 module.exports.register = (app) =>{
 
-    app.get(BASE_API_URL+"/loadInitialData",(req, res)=>{
+    app.get(BASE_API_URL_ECO+"/loadInitialData",(req, res)=>{
     
         if(economies.length==0){
             economies = [
@@ -75,13 +75,13 @@ module.exports.register = (app) =>{
     
     // Documentos
     
-    app.get(BASE_API_URL+"/docs",(req,res)=>
+    app.get(BASE_API_URL_ECO+"/docs",(req,res)=>
     {
         res.redirect("https://documenter.getpostman.com/view/19516890/UVsSL2yS")
     })
     
     
-    app.get(BASE_API_URL,(req, res)=>{
+    app.get(BASE_API_URL_ECO,(req, res)=>{
     
         var year = req.query.year;
         var from = req.query.from;
@@ -116,7 +116,7 @@ module.exports.register = (app) =>{
     
     
     
-    app.get(BASE_API_URL+"/:country",(req, res)=>{
+    app.get(BASE_API_URL_ECO+"/:country",(req, res)=>{
     
         var country =req.params.country
         var filteredList = economies.filter((reg)=>
@@ -149,7 +149,7 @@ module.exports.register = (app) =>{
     })
     
     
-    app.get(BASE_API_URL+"/:country/:year",(req, res)=>{
+    app.get(BASE_API_URL_ECO+"/:country/:year",(req, res)=>{
     
         var country =req.params.country
         var year = req.params.year
@@ -166,7 +166,7 @@ module.exports.register = (app) =>{
     
     
     
-    app.post(BASE_API_URL,(req, res)=>{
+    app.post(BASE_API_URL_ECO,(req, res)=>{
         
         if(comprobar_body(req)){
             res.sendStatus(400,"BAD REQUEST - Parametros incorrectos");
@@ -188,18 +188,18 @@ module.exports.register = (app) =>{
     
     
     
-    app.post(BASE_API_URL+"/:country",(req, res)=>{
+    app.post(BASE_API_URL_ECO+"/:country",(req, res)=>{
         res.sendStatus(405,"METHOD NOT ALLOWED");
     })
     
     
-    app.put(BASE_API_URL_AIR,(req, res)=>{
+    app.put(BASE_API_URL_ECO,(req, res)=>{
         
         res.sendStatus(405,"METHOD NOT ALLOWED");
     })
     
     
-    app.put(BASE_API_URL+"/:country/:year",(req, res)=>{
+    app.put(BASE_API_URL_ECO+"/:country/:year",(req, res)=>{
         
         if(comprobar_body(req)){
             res.sendStatus(400,"BAD REQUEST - Parametros incorrectos");
@@ -225,14 +225,14 @@ module.exports.register = (app) =>{
     })
     
     
-    app.delete(BASE_API_URL,(req, res)=>{
+    app.delete(BASE_API_URL_ECO,(req, res)=>{
         economies = [];
         res.sendStatus(200,"DELETED");
     })
     
     
     
-    app.delete(BASE_API_URL+"/:country/:year",(req, res)=>{
+    app.delete(BASE_API_URL_ECO+"/:country/:year",(req, res)=>{
         var country = req.params.country;
         var year = req.params.year;
         economies = economies.filter((reg)=>{
@@ -249,8 +249,3 @@ module.exports.register = (app) =>{
                  req.body.currentprices == null);
     }
 }
-
-
-app.listen(port, () => {
-    console.log(`Server ready at port ${port}`);
-});
