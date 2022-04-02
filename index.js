@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 
 const economies_stats_API = require("./src/back/economies-stats.js");
 const esco_stats_API = require("./src/back/esco-stats.js");
-const airpollution_stats_API = require("./src/back/air-pollution-stats.js");
+
 
 
 const BASE_API_URL = "/api/v1/";
@@ -16,7 +16,7 @@ const BASE_API_URL = "/api/v1/";
 
 economies_stats_API.register(app);
 esco_stats_API.register(app);
-airpollution_stats_API.register(app);
+
 
 app.use("/", express.static(`public`))
 
