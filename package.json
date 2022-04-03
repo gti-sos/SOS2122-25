@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test-economies": "npx newman run ./test/backendEconomies.json -e ./test/env/LocalEconomies.json"
+    "test-esco": "npx newman run ./test/backendEsco.json -e ./test/env/LocalEsco.json"
   },
   "repository": {
     "type": "git",
