@@ -232,13 +232,12 @@ module.exports.register = (app) =>{
     
     
     
-    app.delete(BASE_API_URL+"/economies/:country",(req,res)=>{
-        var countryName= req.params.country;
-        economies = economies.filter((data)=>{
-            return(data.country != countryName);
-        });
- 
+    app.delete(BASE_API_URL_ECO + "/:country/:year",(req,res)=>{
+        economies = economies.filter((stat)=>{
+            return (stat.country != req.params.country || stat.year != req.params.year);
+        })
         res.sendStatus(200,"OK");
+    
     });
     
     function comprobar_body(req){
