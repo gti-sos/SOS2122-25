@@ -79,6 +79,30 @@ module.exports.register = (app) =>{
     {
         res.redirect("https://documenter.getpostman.com/view/19516890/UVsSL2yS")
     })
+
+    app.get(BASE_API_URL_ECO+"?year=:yearParam",(req,res)=>{
+        filteredList = economies.filter((stat)=>{
+            return (stat.year === parseInt(req.params.yearParam));
+        })
+        if(filteredList === 0){
+            res.sendStatus(404,"NOT FOUND");
+        }else{
+            res.send(JSON.stringify(filteredList, null, 2));
+        } 
+    });
+
+    //BUSQUEDA POR PAIS
+    
+    app.get(BASE_API_URL_ECO+"?country=:countryParam",(req,res)=>{
+        filteredList = economies.filter((stat)=>{
+            return (stat.country === req.params.countryParam);
+        })
+        if(filteredList === 0){
+            res.sendStatus(404,"NOT FOUND");
+        }else{
+            res.send(JSON.stringify(filteredList, null, 2));
+        } 
+    });
     
     
     app.get(BASE_API_URL_ECO,(req, res)=>{
