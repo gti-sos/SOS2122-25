@@ -116,17 +116,37 @@ module.exports.register = (app) =>{
     
     
     
-    app.get(BASE_API_URL_ECO+"/:country/:year",(req,res)=>{
-        filteredList = economies.filter((stat)=>{
-            return (stat.country === req.params.country && stat.year === req.params.year);
-        })
-        if(filteredList === 0){
-            res.sendStatus(404,"NOT FOUND");
+    app.get(BASE_API_URL_ECO+"/:country",(req, res)=>{
+    
+        var country =req.params.country
+        var filteredList = economies.filter((reg)=>
+        {
+            return (reg.country == country);
+        });
+    
+        var from = req.query.from;
+        var to = req.query.to;
+    
+        if(from != null && to != null){
+            filteredList = filteredList.filter((reg)=>
+            {
+                return (reg.year >= from && reg.year <=to);
+            });
+            if (filteredList==0){
+                res.sendStatus(404, "NO EXISTE");
+            }else{
+                res.send(JSON.stringify(filteredList[0],null,2));
+            }
+    
         }else{
-            //se devuelve un unico objeto
-            res.send(JSON.stringify(filteredList[0], null, 2));
+            if (filteredList==0){
+                res.sendStatus(404, "NO EXISTE");
+            }else{
+                res.send(JSON.stringify(filteredList[0],null,2));
+            }
         }
-    });
+    
+    })
     
     
     app.get(BASE_API_URL_ECO+"/:country/:year",(req, res)=>{
