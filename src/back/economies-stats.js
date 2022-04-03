@@ -232,14 +232,14 @@ module.exports.register = (app) =>{
     
     
     
-    app.delete(BASE_API_URL_ECO+"/:country/:year",(req, res)=>{
-        var country = req.params.country;
-        var year = req.params.year;
-        economies = economies.filter((reg)=>{
-            return (reg.country!=country || (reg.country == country && reg.year != year))
-        })
-        res.sendStatus(200,"DELETED");
-    })
+app.delete(BASE_API_URL+"/economies/:country",(req,res)=>{
+    var countryName= req.params.country;
+    economies = economies.filter((data)=>{
+        return(data.country != countryName);
+    });
+ 
+    res.sendStatus(200,"OK");
+});
     
     function comprobar_body(req){
         return (req.body.country == null |
