@@ -7,6 +7,7 @@ const port = process.env.PORT || 8080;
 
 const economies_stats_API = require("./src/back/economies-stats.js");
 const esco_stats_API = require("./src/back/esco-stats.js");
+const esco_expo_API = require("./src/back/expo-stats.js");
 
 
 
