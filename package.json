@@ -5,25 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",  
-    "test":"npm run test-economies && npm run test-esco && npm run test-expo",
-    "test-economies": "npx newman run ./test/backendEconomies.json -e ./test/env/LocalEconomies.json",
-    "test-esco": "npx newman run ./test/backendEsco.json -e ./test/env/LocalEsco.json",
-    "test-expo": "npx newman run ./test/backendExpo.json -e ./test/env/LocalExpo.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gti-sos/SOS2122-25.git"
-  },
-  "author": "group 25",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.0",
-    "cool-ascii-faces": "^1.3.4",
-    "express": "^4.17.3",
-    "nedb": "^1.8.0"
-  },
-  "bugs": {
-    "url": "https://github.com/gti-sos/SOS2122-25/issues"
-  },
-  "homepage": "https://github.com/gti-sos/SOS2122-25#readme"
+    "test-economies": "npx newman run ./test/backendEconomies.json -e ./test/env/LocalEconomies.json"
+  }
 }

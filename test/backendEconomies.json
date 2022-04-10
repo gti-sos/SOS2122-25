@@ -6,6 +6,42 @@
 	},
 	"item": [
 		{
+			"name": "InitialData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/loadInitialData",
+					"protocol": "https",
+					"host": [
+						"sos2122-25",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"economies",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "GET/countries",
 			"event": [
 				{
@@ -62,10 +98,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Response is an array\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(Array.isArray(jsonData)).to.eql(true);\r",
-							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -139,42 +172,6 @@
 			"response": []
 		},
 		{
-			"name": "DELETE /economies",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/",
-					"protocol": "https",
-					"host": [
-						"sos2122-25",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"api",
-						"v1",
-						"economies",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "DELETE /countries/madagascar",
 			"event": [
 				{
@@ -213,17 +210,29 @@
 		},
 		{
 			"name": "PUT /economies FAIL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "PUT",
+				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies",
-					"protocol": "https",
+					"raw": "http://localhost:8080/api/v1/economies",
+					"protocol": "http",
 					"host": [
-						"sos2122-25",
-						"herokuapp",
-						"com"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -235,6 +244,19 @@
 		},
 		{
 			"name": "PUT /countries/eeuu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -258,11 +280,24 @@
 		},
 		{
 			"name": "POST /economies/eeuu FAIL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/eeuu",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/wakanda",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -273,19 +308,32 @@
 						"api",
 						"v1",
 						"economies",
-						"eeuu"
+						"wakanda"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "InitialData",
+			"name": "DELETE /economies",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/loadInitialData",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -296,7 +344,7 @@
 						"api",
 						"v1",
 						"economies",
-						"loadInitialData"
+						""
 					]
 				}
 			},
