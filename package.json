@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-<<<<<<< HEAD
+
     "test":"npm run test-economies && npm run test-esco && npm run test-expo",
-=======
-    "test": "npm test-economies && npm test-expo && npm text-esco",
->>>>>>> c4296f55aa8c683a30c69d9a76a41f8b609c3414
     "test-economies": "npx newman run ./test/backendEconomies.json -e ./test/env/LocalEconomies.json",
     "test-esco": "npx newman run ./test/backendEsco.json -e ./test/env/LocalEsco.json",
     "test-expo": "npx newman run ./test/backendExpo.json -e ./test/env/LocalExpo.json"
