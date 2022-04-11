@@ -263,6 +263,23 @@ module.exports.register = (app) =>{
         res.sendStatus(200,"OK");
     
     });
+
+    function paginationMaker(req, stats) {
+        var res = [];
+        const offset = req.query.offset;
+        const limit = req.query.limit;
+    
+        if(limit < 0 || offset < 0 || offset > economies.length) {
+            console.error(`Error in pagination, you have exceded limits`);
+            res.push("ERROR");
+            return res;	
+        }
+        const startIndex = offset;
+        const endIndex = startIndex + limit;
+    
+        res = economies.slice(startIndex, endIndex);
+        return res;
+    }
     
     function comprobar_body(req){
         return (req.body.country == null |
