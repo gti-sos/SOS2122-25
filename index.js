@@ -15,7 +15,7 @@ const BASE_API_URL = "/api/v1/";
 economies_stats_API.register(app);
 
 
-app.use("/", express.static(`public`));
+app.use("/", express.static("./public"));
 
 
 app.listen(port, ()=>{
