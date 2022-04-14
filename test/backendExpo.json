@@ -12,17 +12,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"pm.test(\"Response is an Array\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(Array.isArray(jsonData)).to.eql(true);\r",
-							"});\r",
-							"pm.test(\"Response has exports\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.length).to.be.at.least(1);\r",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -32,7 +22,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/expo",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/expo/loadInitialData",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -42,7 +32,8 @@
 					"path": [
 						"api",
 						"v1",
-						"expo"
+						"expo",
+						"loadInitialData"
 					]
 				}
 			},
@@ -202,8 +193,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
 							"});"
 						],
 						"type": "text/javascript"
