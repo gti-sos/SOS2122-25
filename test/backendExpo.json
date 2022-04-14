@@ -128,42 +128,6 @@
 			"response": []
 		},
 		{
-			"name": "GET/countries FAIL",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {\r",
-							"    pm.response.to.have.status(404);\r",
-							"});\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/expo",
-					"protocol": "https",
-					"host": [
-						"sos2122-25",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"api",
-						"v1",
-						"expo"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "POST/madagascar",
 			"event": [
 				{
@@ -291,6 +255,19 @@
 		},
 		{
 			"name": "POST/expo/eeuu FAIL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
