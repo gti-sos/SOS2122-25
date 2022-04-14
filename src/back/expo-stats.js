@@ -72,7 +72,7 @@ module.exports.register = (app) =>{
     
     app.get(BASE_API_URL_EXPO+"/docs",(req,res)=>
     {
-        res.redirect("https://documenter.getpostman.com/view/19481634/UVyoUx9L")
+        res.redirect("https://documenter.getpostman.com/view/20003647/UVyoVdQm")
     })
     
     
