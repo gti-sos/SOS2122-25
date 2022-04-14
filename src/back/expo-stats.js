@@ -1,4 +1,10 @@
+const express = require("express");
+
 const bodyParser = require("body-parser");
+
+const app = express();
+app.use(bodyParser.json());
+const port = process.env.PORT || 8080;
 
 const BASE_API_URL_EXPO = "/api/v1/expo";
 
@@ -27,7 +33,7 @@ var expo=[
                 expo_bys: 17.696
              }
     
-]
+];
 
 module.exports.register = (app) =>{
 
@@ -64,11 +70,35 @@ module.exports.register = (app) =>{
     
     // Documentos
     
-    app.get(
-        +"/docs",(req,res)=>
+    app.get(BASE_API_URL_EXPO+"/docs",(req,res)=>
     {
         res.redirect("https://documenter.getpostman.com/view/19481634/UVyoUx9L")
     })
+    
+    
+    app.get(BASE_API_URL_EXPO+"?year=:yearParam",(req,res)=>{
+        filteredList = expo.filter((stat)=>{
+            return (stat.year === parseInt(req.params.yearParam));
+        })
+        if(filteredList === 0){
+            res.sendStatus(404,"NOT FOUND");
+        }else{
+            res.send(JSON.stringify(filteredList, null, 2));
+        } 
+    });
+
+    //BUSQUEDA POR PAIS
+    
+    app.get(BASE_API_URL_EXPO+"?country=:countryParam",(req,res)=>{
+        filteredList = expo.filter((stat)=>{
+            return (stat.country === req.params.countryParam);
+        })
+        if(filteredList === 0){
+            res.sendStatus(404,"NOT FOUND");
+        }else{
+            res.send(JSON.stringify(filteredList, null, 2));
+        } 
+    });
     
     
     app.get(BASE_API_URL_EXPO,(req, res)=>{
@@ -125,14 +155,14 @@ module.exports.register = (app) =>{
             if (filteredList==0){
                 res.sendStatus(404, "NO EXISTE");
             }else{
-                res.send(JSON.stringify(filteredList,null,2));
+                res.send(JSON.stringify(filteredList[0],null,2));
             }
     
         }else{
             if (filteredList==0){
                 res.sendStatus(404, "NO EXISTE");
             }else{
-                res.send(JSON.stringify(filteredList,null,2));
+                res.send(JSON.stringify(filteredList[0],null,2));
             }
         }
     
@@ -205,8 +235,8 @@ module.exports.register = (app) =>{
             }else if(country != body.country || year != body.year){
                 res.sendStatus(400,"BAD REQUEST");
             }else{
-                var  update_air_pollution_stats = {...body};
-                expo[index] = update_expo;
+                var  update_economies = {...body};
+                expo[index] = expo;
             
                 res.sendStatus(200,"UPDATED");
             }
@@ -222,21 +252,20 @@ module.exports.register = (app) =>{
     
     
     
-    app.delete(BASE_API_URL_EXPO+"/:country/:year",(req, res)=>{
-        var country = req.params.country;
-        var year = req.params.year;
-        expo = expo.filter((reg)=>{
-            return (reg.country!=country || (reg.country == country && reg.year != year))
+    app.delete(BASE_API_URL_EXPO + "/:country/:year",(req,res)=>{
+        expo = expo.filter((stat)=>{
+            return (stat.country != req.params.country || stat.year != req.params.year);
         })
-        res.sendStatus(200,"DELETED");
-    })
+        res.sendStatus(200,"OK");
+    
+    });
     
     function comprobar_body(req){
         return (req.body.country == null |
                  req.body.year == null | 
-                 req.body.expo_tec == null | 
-                 req.body.expo_m == null | 
-                 req.body.expo_bys == null);
+                 req.body.percapita == null | 
+                 req.body.currency == null | 
+                 req.body.currentprices == null);
     }
 }
 
