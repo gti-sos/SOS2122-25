@@ -40,7 +40,7 @@ module.exports.register = (app) =>{
     app.get(BASE_API_URL_EXPO+"/loadInitialData",(req, res)=>{
     
         if(expo.length==0){
-            expo=[
+            expo = [
             {
                 country: "eeuu",
                 year: 2019,
