@@ -17,7 +17,7 @@ economies_stats_API.register(app);
 esco_stats_API.register(app);
 expo_stats_API.register(app);
 
-
+app.use("/api/v1/svelteExpo", express.static("./frontExpo/public"));
 app.use("/api/v1/svelteEconomies", express.static("./frontEconomies/public"));
 app.use("/",express.static("./public"));
 
