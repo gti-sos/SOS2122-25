@@ -5,8 +5,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
 const economies_stats_API = require("./src/back/economies-stats.js");
-const esco_stats_API = require("./src/back/v1/esco-stats.js");
-const esco_stats_API = require("./src/back/v2/esco-stats.js");
+const esco_stats_API = require("./src/back/esco-stats.js");
 const expo_stats_API = require("./src/back/expo-stats.js");
 
 

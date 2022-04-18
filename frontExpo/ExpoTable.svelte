@@ -1,5 +1,7 @@
 <script>
     import { onMount } from 'svelte';
+		import Table from 'sveltestrap/src/Table.svelte';
+		import Button from 'sveltestrap/src/Button.svelte';
 	
 
 	let expo=[];
@@ -26,7 +28,7 @@ loading
 	{:then expo}
 	{p1}
 
-	<table>
+	<Table bordered>
 		<thead>
 			<tr>
 				<th>
@@ -57,6 +59,6 @@ loading
 				</tr>
 				{/each}
 		</tbody>
-	</table>
+	</Table>
 {/await}
 </main>
