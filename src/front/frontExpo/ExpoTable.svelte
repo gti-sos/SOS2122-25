@@ -32,10 +32,10 @@ loading
 		<thead>
 			<tr>
 				<th>
-					Country
+					País
 				</th>
 				<th>
-					Year
+					Año
 				</th>
 				<th>
 					Expo_tec
