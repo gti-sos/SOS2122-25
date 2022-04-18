@@ -1,7 +1,7 @@
 //Angel Simon Mesa
 const bodyParser = require("body-parser");
 
-const BASE_API_URL_ESCO = "/api/v1/esco";
+const BASE_API_URL_ESCO = "/api/v2/esco";
 
 
 
