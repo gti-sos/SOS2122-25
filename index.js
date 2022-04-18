@@ -5,7 +5,8 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
 const economies_stats_API = require("./src/back/economies-stats.js");
-const esco_stats_API = require("./src/back/esco-stats.js");
+const esco_stats_API = require("./src/back/v1/esco-stats.js");
+const esco_stats_API = require("./src/back/v2/esco-stats.js");
 const expo_stats_API = require("./src/back/expo-stats.js");
 
 
@@ -19,6 +20,7 @@ expo_stats_API.register(app);
 
 app.use("/api/v1/svelteExpo", express.static("./frontExpo/public"));
 app.use("/api/v1/svelteEconomies", express.static("./frontEconomies/public"));
+app.use("/api/v1/svelteEsco", express.static("./frontEsco/public"));
 app.use("/",express.static("./public"));
 
 
