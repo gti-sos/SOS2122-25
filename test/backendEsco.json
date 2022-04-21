@@ -34,7 +34,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco/",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -86,7 +86,7 @@
 					"path": [
 						"api",
 						"v1",
-						"economies",
+						"esco",
 						"eeuu"
 					]
 				}
@@ -100,8 +100,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -113,7 +113,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"country\": \"madagascar\",\r\n    \"year\": 2019,\r\n    \"esco-tot\": -2391,\r\n    \"esco-men\": 14787.768,\r\n    \"esco-wom\":20939\r\n}",
+					"raw": "{\r\n    \"country\": \"madagascar\",\r\n    \"year\": 2019,\r\n    \"esco-tot\": 106,\r\n    \"esco-men\": 105,\r\n    \"esco-wom\":107\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -157,7 +157,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco/",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -193,7 +193,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/eeuu/2019",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco/eeuu/2019",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -217,7 +217,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -239,7 +239,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/eeuu",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco/eeuu",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -262,7 +262,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/economies/eeuu",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco/eeuu",
 					"protocol": "https",
 					"host": [
 						"sos2122-25",
@@ -272,7 +272,7 @@
 					"path": [
 						"api",
 						"v1",
-						"economies",
+						"esco",
 						"eeuu"
 					]
 				}
