@@ -30,19 +30,19 @@ loading
 		<thead>
 			<tr>
 				<th>
-					Country
+					Pais
 				</th>
 				<th>
-					Year
+					Año
 				</th>
 				<th>
-					PerCapitat
+					PerCapita
 				</th>
 				<th>
 					currency
 				</th>
 				<th>
-					CurrentPrices
+					PreciosActual	
 				</th>
 			</tr>
 		</thead>
