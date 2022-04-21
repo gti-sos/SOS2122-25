@@ -11,3 +11,4 @@ jobs:
       - run: npm start &
       - run: npm run test-expo
       - run: npm run test-economies
+      - run: npm run test-esco
