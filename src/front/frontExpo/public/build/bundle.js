@@ -513,7 +513,7 @@ var app = (function () {
     	let th4;
     	let t11;
     	let tbody;
-    	let each_value = /*economies*/ ctx[0];
+    	let each_value = /*expo*/ ctx[0];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -529,19 +529,19 @@ var app = (function () {
     			thead = element("thead");
     			tr = element("tr");
     			th0 = element("th");
-    			th0.textContent = "Country";
+    			th0.textContent = "País";
     			t3 = space();
     			th1 = element("th");
-    			th1.textContent = "Year";
+    			th1.textContent = "Año";
     			t5 = space();
     			th2 = element("th");
-    			th2.textContent = "PerCapitat";
+    			th2.textContent = "Exportaciones Tec.";
     			t7 = space();
     			th3 = element("th");
-    			th3.textContent = "currency";
+    			th3.textContent = "Exportaciones Prod. Manuf.";
     			t9 = space();
     			th4 = element("th");
-    			th4.textContent = "CurrentPrices";
+    			th4.textContent = "Exportaciones Bienes y Servicios";
     			t11 = space();
     			tbody = element("tbody");
 
@@ -582,8 +582,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*economies*/ 1) {
-    				each_value = /*economies*/ ctx[0];
+    			if (dirty & /*expo*/ 1) {
+    				each_value = /*expo*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
 
@@ -618,34 +618,34 @@ var app = (function () {
     		block,
     		id: create_then_block.name,
     		type: "then",
-    		source: "(26:1) {:then economies}",
+    		source: "(26:1) {:then expo}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:4) {#each economies as economy}
+    // (50:4) {#each expo as expos}
     function create_each_block(ctx) {
     	let tr;
     	let td0;
-    	let t0_value = /*economy*/ ctx[4].country + "";
+    	let t0_value = /*expos*/ ctx[4].country + "";
     	let t0;
     	let t1;
     	let td1;
-    	let t2_value = /*economy*/ ctx[4].year + "";
+    	let t2_value = /*expos*/ ctx[4].year + "";
     	let t2;
     	let t3;
     	let td2;
-    	let t4_value = /*economy*/ ctx[4].percapita + "";
+    	let t4_value = /*expos*/ ctx[4].expo_tec + "";
     	let t4;
     	let t5;
     	let td3;
-    	let t6_value = /*economy*/ ctx[4].currency + "";
+    	let t6_value = /*expo*/ ctx[4].expo_m + "";
     	let t6;
     	let t7;
     	let td4;
-    	let t8_value = /*economy*/ ctx[4].currentprices + "";
+    	let t8_value = /*expo*/ ctx[4].expo_bys + "";
     	let t8;
     	let t9;
 
@@ -693,11 +693,11 @@ var app = (function () {
     			append_dev(tr, t9);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*economies*/ 1 && t0_value !== (t0_value = /*economy*/ ctx[4].country + "")) set_data_dev(t0, t0_value);
-    			if (dirty & /*economies*/ 1 && t2_value !== (t2_value = /*economy*/ ctx[4].year + "")) set_data_dev(t2, t2_value);
-    			if (dirty & /*economies*/ 1 && t4_value !== (t4_value = /*economy*/ ctx[4].percapita + "")) set_data_dev(t4, t4_value);
-    			if (dirty & /*economies*/ 1 && t6_value !== (t6_value = /*economy*/ ctx[4].currency + "")) set_data_dev(t6, t6_value);
-    			if (dirty & /*economies*/ 1 && t8_value !== (t8_value = /*economy*/ ctx[4].currentprices + "")) set_data_dev(t8, t8_value);
+    			if (dirty & /*expo*/ 1 && t0_value !== (t0_value = /*expos*/ ctx[4].country + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*expo*/ 1 && t2_value !== (t2_value = /*expos*/ ctx[4].year + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*expo*/ 1 && t4_value !== (t4_value = /*expos*/ ctx[4].expo_tec + "")) set_data_dev(t4, t4_value);
+    			if (dirty & /*expo*/ 1 && t6_value !== (t6_value = /*expos*/ ctx[4].expo_m + "")) set_data_dev(t6, t6_value);
+    			if (dirty & /*expo*/ 1 && t8_value !== (t8_value = /*expos*/ ctx[4].expo_bys + "")) set_data_dev(t8, t8_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(tr);
@@ -708,14 +708,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(50:4) {#each economies as economy}",
+    		source: "(50:4) {#each expo as expos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (24:22)   loading   {:then economies}
+    // (24:22)   loading   {:then expo}
     function create_pending_block(ctx) {
     	let t;
 
@@ -736,7 +736,7 @@ var app = (function () {
     		block,
     		id: create_pending_block.name,
     		type: "pending",
-    		source: "(24:22)   loading   {:then economies}",
+    		source: "(24:22)   loading   {:then expo}",
     		ctx
     	});
 
@@ -758,7 +758,7 @@ var app = (function () {
     		value: 0
     	};
 
-    	handle_promise(promise = /*economies*/ ctx[0], info);
+    	handle_promise(promise = /*expo*/ ctx[0], info);
 
     	const block = {
     		c: function create() {
@@ -779,7 +779,7 @@ var app = (function () {
     			ctx = new_ctx;
     			info.ctx = ctx;
 
-    			if (dirty & /*economies*/ 1 && promise !== (promise = /*economies*/ ctx[0]) && handle_promise(promise, info)) ; else {
+    			if (dirty & /*expo*/ 1 && promise !== (promise = /*expo*/ ctx[0]) && handle_promise(promise, info)) ; else {
     				update_await_block_branch(info, ctx, dirty);
     			}
     		},
@@ -806,39 +806,39 @@ var app = (function () {
 
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots('EconomiesTable', slots, []);
-    	let economies = [];
+    	validate_slots('ExpoTable', slots, []);
+    	let expo = [];
     	let loading = true;
     	let p1;
-    	onMount(getEconomies);
+    	onMount(getExpo);
 
-    	async function getEconomies() {
+    	async function getExpo() {
     		console.log("fetching ...");
-    		const res = await fetch("/api/v1/economies");
+    		const res = await fetch("/api/v1/Expo");
 
     		if (res.ok) {
     			const data = await res.json();
-    			$$invalidate(0, economies = data);
-    			console.log("Received countries: " + economies.length);
+    			$$invalidate(0, expo = data);
+    			console.log("Received countries: " + expo.length);
     		}
     	}
 
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<EconomiesTable> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<ExpoTable> was created with unknown prop '${key}'`);
     	});
 
     	$$self.$capture_state = () => ({
     		onMount,
-    		economies,
+    		expo,
     		loading,
     		p1,
-    		getEconomies
+    		getExpo
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('economies' in $$props) $$invalidate(0, economies = $$props.economies);
+    		if ('economies' in $$props) $$invalidate(0, expo = $$props.expo);
     		if ('loading' in $$props) loading = $$props.loading;
     		if ('p1' in $$props) $$invalidate(1, p1 = $$props.p1);
     	};
@@ -847,17 +847,17 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [economies, p1];
+    	return [expo, p1];
     }
 
-    class EconomiesTable extends SvelteComponentDev {
+    class ExpoTable extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
     		init(this, options, instance$1, create_fragment$1, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
-    			tagName: "EconomiesTable",
+    			tagName: "ExpoTable",
     			options,
     			id: create_fragment$1.name
     		});
@@ -874,9 +874,9 @@ var app = (function () {
     	let t1;
     	let t2;
     	let t3;
-    	let economiestable;
+    	let expotable;
     	let current;
-    	economiestable = new EconomiesTable({ $$inline: true });
+    	expotable = new ExpoTable({ $$inline: true });
 
     	const block = {
     		c: function create() {
@@ -886,7 +886,7 @@ var app = (function () {
     			t1 = text(/*name*/ ctx[0]);
     			t2 = text("!");
     			t3 = space();
-    			create_component(economiestable.$$.fragment);
+    			create_component(expotable.$$.fragment);
     			add_location(h1, file, 6, 1, 107);
     			add_location(main, file, 5, 0, 98);
     		},
@@ -900,7 +900,7 @@ var app = (function () {
     			append_dev(h1, t1);
     			append_dev(h1, t2);
     			append_dev(main, t3);
-    			mount_component(economiestable, main, null);
+    			mount_component(expotable, main, null);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -908,16 +908,16 @@ var app = (function () {
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(economiestable.$$.fragment, local);
+    			transition_in(expotable.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(economiestable.$$.fragment, local);
+    			transition_out(expotable.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(main);
-    			destroy_component(economiestable);
+    			destroy_component(expotable);
     		}
     	};
 
@@ -946,7 +946,7 @@ var app = (function () {
     		if ('name' in $$props) $$invalidate(0, name = $$props.name);
     	};
 
-    	$$self.$capture_state = () => ({ EconomiesTable, name });
+    	$$self.$capture_state = () => ({ ExpoTable, name });
 
     	$$self.$inject_state = $$props => {
     		if ('name' in $$props) $$invalidate(0, name = $$props.name);

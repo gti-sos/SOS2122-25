@@ -7,14 +7,15 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "node index.js",
-    "test":"npm run test-economies && npm run test-esco && npm run test-expo",
+    "test": "npm run test-economies && npm run test-esco && npm run test-expo",
     "test-economies": "npx newman run ./test/backendEconomies.json -e ./test/env/LocalEconomies.json",
     "test-esco": "npx newman run ./test/backendEsco.json -e ./test/env/LocalEsco.json",
     "test-expo": "npx newman run ./test/backendExpo.json -e ./test/env/LocalExpo.json"
   },
   "dependencies": {
     "body-parser": "^1.20.0",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sveltestrap": "^5.9.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
