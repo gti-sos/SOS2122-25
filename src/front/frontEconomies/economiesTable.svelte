@@ -78,7 +78,7 @@ loading
 				</tr>
 				{#each economies as economy}
 				<tr>
-					<td>{economy.country}</td>
+					<td><a href=#/economiesTable/{economy.country}>{economy.country}</a></td>
 					<td>{economy.year}</td>
 					<td>{economy.percapita}</td>
 					<td>{economy.currency}</td>
