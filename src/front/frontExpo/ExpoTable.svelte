@@ -15,6 +15,11 @@
         expo_tec : "",
         expo_bys : ""
 	};
+
+    let from = null;
+	let to = null;
+	let offset = 0;
+	let maxPages = 0;
    //Pagination
    let current_offset = 2;
     let limit = 6;
@@ -315,6 +320,28 @@
 loading
 	{:then stats}
 	
+    <Table bordered>
+		<thead>
+			<tr>
+				<th>Fecha Inicio</th>
+                <th>Fecha Fin</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input bind:value="{from}"></td>
+				<td><input bind:value="{to}"></td>
+				<td><Button outline color="primary" on:click="{getStats}">Buscar</Button></td>
+				<td align="center"><Button outline color="info" on:click="{()=>{
+					from = null;
+					to = null;
+					getStats();
+				}}">
+					Limpiar Búsqueda
+					</Button>
+			</tr>
+		</tbody>
+	</Table>
 	
 	<Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
         {#if checkMSG}
