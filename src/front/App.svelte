@@ -5,6 +5,8 @@
 	import Editesco from "./frontEsco/Editesco.svelte";
 	import ExpoTable from './frontExpo/ExpoTable.svelte';
 	import EditExpoTable from './frontExpo/editExpoTable.svelte';
+	import EconomiesTable from './frontEconomies/economiesTable.svelte'
+	import edit from "./frontEconomies/editEconomies.svelte";
 
 	//export let name;
 	const routes={
@@ -13,6 +15,8 @@
 		"/esco/:country" : Editesco,
 		"/ExpoTable" : ExpoTable,
 		"/ExpoTable/:country" : EditExpoTable,
+		"/economiesTable": EconomiesTable,
+		"/economiesTable/:country": edit,
 		"/info" : Home
 		
 	};
