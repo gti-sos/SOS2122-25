@@ -7,8 +7,8 @@
 		Nav,
         PaginationItem,
         PaginationLink, } from 'sveltestrap';
-    let expo_stats = [];
-	let newexpo_stat = {
+    let expos = [];
+	let newexpo = {
 		country : "",
         year : "",
         expo_m : "",
@@ -35,12 +35,12 @@
  
     onMount(getStats);
     async function getStats(){
-        console.log("Fetching c02Stats....");
-        const res = await fetch("/api/v1/expo-stat"); 
+        console.log("Fetching....");
+        const res = await fetch("/api/v1/expo"); 
         if(res.ok){
             const data = await res.json();
-            expo_stats = data;
-            console.log("Received STATS: "+expo_stats.length);
+            expos = data;
+            console.log("Received STATS: "+expos.length);
         }else {
                 checkMSG= res.status + ": Recursos no encontrados ";
                 console.log("ERROR! no encontrado");
@@ -49,13 +49,13 @@
 	async function getData() {
         console.log("Fetching data...");
         const res = await fetch(
-            "api/v1/expo-stat?limit=" + limit + "&offset=" + current_offset
+            "api/v1/expo?limit=" + limit + "&offset=" + current_offset
         );
         if (res.ok) {
             console.log("Ok");
             const json = await res.json();
-            expo_stats = json;
-            console.log(`We have received ${expo_stats.length} resources.`);
+            expos = json;
+            console.log(`We have received ${expos.length} resources.`);
         } else {
             console.log("Error");
         }
@@ -63,7 +63,7 @@
 	async function getDataSearch(query) {
         console.log("Fetching data...");
         const res = await fetch(
-            "api/v1/expo-stat" +query +
+            "api/v1/expo" +query +
                 "?limit=" +
                 limit +
                 "&offset=" +
@@ -72,8 +72,8 @@
         if (res.ok) {
             console.log("Ok");
             const json = await res.json();
-            expo_stats = json;
-            console.log(`We have received ${expo_stats.length} resources.`);
+            expos = json;
+            console.log(`We have received ${expos.length} resources.`);
         } else {
             console.log("Error");
         }
@@ -92,7 +92,7 @@
                 current_offset
         );
         //const res = await fetch("api/v1/evictions" + query + "&limit=" + limit + "&offset="+current_offset);
-        const res = await fetch("api/v1/expo-stat" + query);
+        const res = await fetch("api/v1/expo" + query);
         if (res.ok) {
             const json = await res.json();
             total = json.length;
@@ -125,7 +125,7 @@
         console.log("---------Exit change page-------");
     }
     async function getNumData() {
-        const res = await fetch("api/v1/expo-stat");
+        const res = await fetch("api/v1/expo-stats");
         if (res.ok) {
             const json = await res.json();
             total = json.length;
@@ -155,7 +155,7 @@
             console.log("current_page: " + current_page);
             //NUEVO
             var campos = new Map(
-                Object.entries(newexpo_stat).filter((o) => {
+                Object.entries(newexpo).filter((o) => {
                     return o[1] != "";
                 })
             );
@@ -177,7 +177,7 @@
         visitado = "si";
         console.log("Searching data...");
         var campos = new Map(
-            Object.entries(newexpo_stat).filter((o) => {
+            Object.entries(newexpo).filter((o) => {
                 return o[1] != "";
             })
         );
@@ -196,16 +196,16 @@
             const limityOffset =
                 "?limit=" + limit + "&offset=" + current_offset;
             const res = await fetch(
-                "api/v1/expo-stat" + fullQuery + limityOffset
+                "api/v1/expo-stats" + fullQuery + limityOffset
             );
             console.log("FULL QUERY: " + fullQuery + limityOffset);
             if (res.ok) {
                 console.log("OK");
                 const json = await res.json();
-                evictionsDataTocho = expo_stats;
-                expo_stats = json;
+                evictionsDataTocho = expos;
+                expos = json;
                 console.log(
-                    `We have received ${expo_stats.length} resources.`
+                    `We have received ${expos.length} resources.`
                 );
                 alertError = "";
                 alertOk = "Búsqueda realizada con éxito: " + aux;
@@ -240,12 +240,12 @@
 	async function LoadStats(){
         console.log("Loading stats....");
         
-        await fetch("/api/v1/expo-stat/loadInitialData");
-        const res2 = await fetch("api/v1/expo-stat/loadInitialData" + "?limit=10&offset=0");
+        await fetch("/api/v1/expo/loadInitialData");
+        const res2 = await fetch("api/v1/expo/loadInitialData" + "?limit=10&offset=0");
         if (res2.ok) {
             console.log("Ok:");
             const json = await res2.json();
-            expo_stats = json;
+            expos = json;
             visible = true;
             color = "success";
             checkMSG = "Datos cargados correctamente";
@@ -256,11 +256,11 @@
         }
     }
 	async function insertStat(){
-		console.log("Inserting new Stat: "+JSON.stringify(newexpo_stat));
-        const res = await fetch("/api/v1/expo-stat",
+		console.log("Inserting new Stat: "+JSON.stringify(newexpo));
+        const res = await fetch("/api/v1/expo",
 					{
 						method: "POST",
-						body: JSON.stringify(newexpo_stat),
+						body: JSON.stringify(newexpo),
 						headers: {
 							"Content-Type":"application/json"
 						}
@@ -272,7 +272,7 @@
 	}
 	async function 	DeleteStats(){
 	console.log("Deleting stats....");
-    const res = await fetch("/api/v1/expo-stat/",
+    const res = await fetch("/api/v1/expo/",
 		{
 			method: "DELETE"
 		}).then(function (res){
@@ -282,7 +282,7 @@
 	}
 	async function DeleteStat(country, year){
         console.log("Deleting entry....");
-        const res = await fetch("/api/v1/expo-stat/"+country+"/"+year,
+        const res = await fetch("/api/v1/expo/"+country+"/"+year,
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -311,7 +311,7 @@
 <main>
 
 
-{#await expo_stats}	
+{#await expos}	
 loading
 	{:then stats}
 	
@@ -333,11 +333,11 @@ loading
 		</thead>
 		<tbody>
 			<tr>
-				<td><input bind:value="{newexpo_stat.country}"></td>
-				<td><input bind:value="{newexpo_stat.year}"></td>
-				<td><input bind:value="{newexpo_stat.expo_tec}"></td>
-                <td><input bind:value="{newexpo_stat.expo_m}"></td>
-				<td><input bind:value="{newexpo_stat.expo_bys}"></td>
+				<td><input bind:value="{newexpo.country}"></td>
+				<td><input bind:value="{newexpo.year}"></td>
+				<td><input bind:value="{newexpo.expo_tec}"></td>
+                <td><input bind:value="{newexpo.expo_m}"></td>
+				<td><input bind:value="{newexpo.expo_bys}"></td>
 
 				<td><Button outline color="primary" on:click="{insertStat}">
 					Añadir
@@ -346,19 +346,19 @@ loading
 				<td><Button color="primary" on:click={searchData}>Buscar</Button></td>
 
 			</tr>
-			{#each expo_stats as expo_stat}
+			{#each expos as expo}
 				<tr>
-					<td><a href="#/ExpoTable/{expo_stat.country}">{expo_stat.country}</a></td>
-					<td>{expo_stat.year}</td>
-					<td>{expo_stat.expo_tec}</td>
-                    <td>{expo_stat.expo_m}</td>
-                    <td>{expo_stat.expo_bys}</td>
+					<td><a href="#/ExpoTable/{expo.country}">{expo.country}</a></td>
+					<td>{expo.year}</td>
+					<td>{expo.expo_tec}</td>
+                    <td>{expo.expo_m}</td>
+                    <td>{expo.expo_bys}</td>
 					<td><Button outline color="warning" on:click={function (){
-						window.location.href = `/#/ExpoTable/${expo_stat.country}/${expo_stat.year}`
+						window.location.href = `/#/ExpoTable/${expo.country}/${expo.year}`
 					}}>
 						Editar
 					</Button>
-					<td><Button outline color="danger" on:click={DeleteStat(expo_stat.country,expo_stat.year)}>
+					<td><Button outline color="danger" on:click={DeleteStat(expo.country,expo.year)}>
 						Borrar
 					</Button>
 					</td>

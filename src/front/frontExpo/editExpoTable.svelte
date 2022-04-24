@@ -17,7 +17,7 @@
     onMount(getEntries);
     async function getEntries(){
         console.log("Fetching entries....");
-        const res = await fetch("/api/v1/expo-stats/"+params.country+"/"+params.year); 
+        const res = await fetch("/api/v1/expo/"+params.country+"/"+params.year); 
         if(res.ok){
             const data = await res.json();
             entry = data;
@@ -35,7 +35,7 @@
     }
     async function EditEntry(){
         console.log("Updating entry...."+updatedCountry);
-        const res = await fetch("/api/v1/expo-stats/"+params.country+"/"+params.year,
+        const res = await fetch("/api/v1/expo/"+params.country+"/"+params.year,
 			{
 				method: "PUT",
 				body: JSON.stringify({
