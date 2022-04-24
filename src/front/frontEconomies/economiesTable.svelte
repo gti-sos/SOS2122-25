@@ -156,7 +156,7 @@ loading
 					<td>{economy.currency}</td>
 					<td>{economy.currentprices}</td>
 					<td><Button outline color="warning" on:click={function (){
-						window.location.href ="svelteEconomies/#/economiesTable/${economy.country}"
+						window.location.href ="economiesTable/:country"
 					}}>
 						Editar
 					</Button>

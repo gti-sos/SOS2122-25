@@ -13,7 +13,7 @@
 	onMount(getesco);
 	async function getesco(){
 		console.log("fetching esco ....");
-		const res= await fetch("/api/v1/esco-stats");
+		const res= await fetch("/api/v1/esco");
 		if(res.ok){
 			const data= await res.json();
 			esco=data;
@@ -22,7 +22,7 @@
 	}
 	async function insertesco(){
         console.log("Inserting esco...."+JSON.stringify(newesco));
-        const res = await fetch("/api/v1/esco-stats",
+        const res = await fetch("/api/v1/esco",
 			{
 				method: "POST",
 				body: JSON.stringify(newesco),
@@ -46,7 +46,7 @@
     }
 	async function Borrarescos(){
         console.log("Deleting escos....");
-        const res = await fetch("/api/v1/esco-stats/",
+        const res = await fetch("/api/v1/esco/",
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -56,7 +56,7 @@
     }
 	async function Loadesco(){
         console.log("Loading esco....");
-        const res = await fetch("/api/v1/esco-stats/loadInitialData",
+        const res = await fetch("/api/v1/esco/loadInitialData",
 			{
 				method: "GET"
 			}).then(function (res){
