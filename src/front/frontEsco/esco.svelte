@@ -36,7 +36,7 @@
     }
 	async function Borraresco(country,year){
         console.log("Deleting esco....");
-        const res = await fetch("/api/v1/esco-stats/" + country +"/" + year,
+        const res = await fetch("/api/v1/esco/" + country +"/" + year,
 			{
 				method: "DELETE"
 			}).then(function (res){
