@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
@@ -21,7 +21,6 @@ app.use("/api/v1/svelteExpo", express.static("./src/front/frontExpo/public"));
 app.use("/api/v1/svelteEconomies", express.static("./src/front/frontEconomies/public"));
 app.use("/api/v1/svelteEsco", express.static("./src/front/frontEsco/public"));
 app.use("/",express.static("./public"));
-app.use("/#/info",express.static("./public"));
 
 
 app.listen(port, ()=>{

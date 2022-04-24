@@ -1,9 +1,14 @@
 <script>
-	import EconomiesTable from './economiesTable.svelte';
-	export let name;
+	import Router from "svelte-spa-router"
+	import EconomiesTable from './economiesTable.svelte'
+	import edit from "./editEconomies.svelte";
+
+	const routes ={
+		"/economiesTable": EconomiesTable,
+		"/economiesTable/:countryName": edit,
+	}
 </script>
 
 <main>
-	<h1>APP {name}!</h1>
-	<EconomiesTable />
+	<Router {routes}></Router>
 </main>
