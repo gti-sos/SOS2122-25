@@ -14,7 +14,7 @@ const BASE_API_URL = "/api/v1/";
 
 
 economies_stats_API.register(app);
-esco_stats_API.register(app,db_esco_stats);
+esco_stats_API.register(app);
 expo_stats_API.register(app);
 
 app.use("/api/v1/svelteExpo", express.static("./src/front/frontExpo/public"));
