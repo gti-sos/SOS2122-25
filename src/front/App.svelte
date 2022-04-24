@@ -1,14 +1,19 @@
 <script>
 	import Router from 'svelte-spa-router';
 	import Home from './Home.svelte';
-	import esco from './esco-stats/esco.svelte';
-	import Editesco from "./esco-stats/Editesco.svelte";
-	
+	import esco from './frontEsco/esco.svelte';
+	import Editesco from "./frontEsco/Editesco.svelte";
+	import ExpoTable from './frontExpo/ExpoTable.svelte';
+	import EditExpoTable from './frontExpo/editExpoTable.svelte';
+
 	//export let name;
 	const routes={
 		"/" : Home,
 		"/esco-stats" : esco,
 		"/esco/:country" : Editesco,
+		"/ExpoTable" : ExpoTable,
+		"/ExpoTable/:country" : EditExpoTable,
+		"/info" : Home
 		
 	};
 	
