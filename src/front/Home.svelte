@@ -1,5 +1,5 @@
 <main>
-    <h1>SOS2122-24</h1>
+    <h1>SOS2122-25</h1>
 
     <h3>Team</h3>
     <b>-<a href='https://github.com/Damiangc99'> [Damián González Carrasco]</a><br></b> 
@@ -17,8 +17,8 @@
         
     
     <h3>FRONT-END:</h3>
-    <p>- <a href="#/esco-stats">https://sos2122-24.herokuapp.com/#/esco-stats </a>(developed by <a href="https://github.com/AngelSM11">Ángel Simón Mesa</a>)</p>
-	
+    <p>- <a href="#/esco-stats">https://sos2122-25.herokuapp.com/#/esco-stats </a>(developed by <a href="https://github.com/AngelSM11">Ángel Simón Mesa</a>)</p>
+	<p>- <a href="#/expo-stats">https://sos2122-25.herokuapp.com/#/expo-stats </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
 
 </main>
 <style>
