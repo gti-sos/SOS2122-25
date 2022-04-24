@@ -235,7 +235,7 @@ module.exports.register = (app) =>{
             }else if(country != body.country || year != body.year){
                 res.sendStatus(400,"BAD REQUEST");
             }else{
-                var  update_economies = {...body};
+                var  update_expo = {...body};
                 expo[index] = expo;
             
                 res.sendStatus(200,"UPDATED");

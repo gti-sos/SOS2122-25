@@ -14,9 +14,9 @@
     let updatedExpo_m;
     let updatedExpo_bys;
     let errorMsg = "";
-    onMount(getEntries);
-    async function getEntries(){
-        console.log("Fetching entries....");
+    onMount(getexpo);
+    async function getexpo(){
+        console.log("Fetching expo....");
         const res = await fetch("/api/v1/expo/"+params.country+"/"+params.year); 
         if(res.ok){
             const data = await res.json();
@@ -51,7 +51,7 @@
 			}).then(function (res) {
                     visible = true;
                     if(res.status == 200){
-                        getEntries(); 
+                        getexpo(); 
                         console.log("Data introduced");
                         color = "success";
                         errorMsg="Recurso actualizado correctamente";
