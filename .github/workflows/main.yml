@@ -9,6 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm start &
-      - run: npm run test-expo
       - run: npm run test-economies
       - run: npm run test-esco
