@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte'
-    let params={};
+    export let params={};
     import { pop } from "svelte-spa-router";
     import {Table , Button} from "sveltestrap";
 
@@ -10,30 +10,51 @@
     let economy ={};
 
     let updatedCountry;
-    let updateYear;
-    let updatePercapita;
-    let updateCurrency;
-    let updateCurrentPrices;
+    let updatedYear;
+    let updatedPercapita;
+    let updatedCurrency;
+    let updatedCurrentPrices;
 
     async function getEconomy(){
         console.log("fetching ...");
-        const res =await fetch("/api/v1/economies/"+countryName);
+        const res =await fetch("/api/v1/economies/"+params.country);
         if(res.ok){
             const data = await res.json();
             economy = data;
             updatedCountry = economy.country;
             updatedYear= economy.year;
-            updatePercapita= economy.percapita;
-            updateCurrency= economy.currency;
-            updateCurrentPrices= economy.currentprices;
+            updatedPercapita= economy.percapita;
+            updatedCurrency= economy.currency;
+            updatedCurrentPrices= economy.currentprices;
             console.log("Received country");
         }
+    }
 
+    async function EditEntry(){
+        console.log("Updating entry...."+updatedCountry);
+        const res = await fetch("/api/v1/economies/eeuu",
+			{
+				method: "PUT",
+				body: JSON.stringify({
+                    country: updatedCountry,
+                    year: updatedYear,
+                    percapita: updatedPercapita,
+                    currency: updatedCurrency,
+                    currentprices: updatedCurrentPrices
+                }),
+				headers: {
+					"Content-Type": "application/json"
+				}
+			}).then(function (res){
+				window.alert("Actualizado con éxito");
+			});
+            
+            
     }
 </script>
 
 <main>
-    This is country {params.countryName};
+    This is country {updatedCountry}
 
         {#await economy}
     loading
@@ -53,10 +74,14 @@
             <tbody>
                     <tr>
                         <td><input bind:value="{updatedCountry}"></td>
-                        <td><input bind:value="{updateYear}"></td>
-                        <td><input bind:value="{updatePercapita}"></td>
-                        <td><input bind:value="{updateCurrency}"></td>
-                        <td><input bind:value="{updateCurrentPrices}"></td>
+                        <td><input bind:value="{updatedYear}"></td>
+                        <td><input bind:value="{updatedPercapita}"></td>
+                        <td><input bind:value="{updatedCurrency}"></td>
+                        <td><input bind:value="{updatedCurrentPrices}"></td>
+                        <td><Button outline color="primary" on:click="{EditEntry}">
+                            Editar
+                            </Button>
+                        </td>
                     </tr>
             </tbody>
         </Table>

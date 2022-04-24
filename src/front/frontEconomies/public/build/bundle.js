@@ -2531,7 +2531,7 @@ var app = (function () {
 
     	colgroup = new Colgroup({
     			props: {
-    				$$slots: { default: [create_default_slot_3] },
+    				$$slots: { default: [create_default_slot_3$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -2539,7 +2539,7 @@ var app = (function () {
 
     	tableheader = new TableHeader({
     			props: {
-    				$$slots: { default: [create_default_slot_2] },
+    				$$slots: { default: [create_default_slot_2$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -2696,7 +2696,7 @@ var app = (function () {
     }
 
     // (34:6) <Colgroup>
-    function create_default_slot_3(ctx) {
+    function create_default_slot_3$1(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[11].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[12], null);
@@ -2744,7 +2744,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3.name,
+    		id: create_default_slot_3$1.name,
     		type: "slot",
     		source: "(34:6) <Colgroup>",
     		ctx
@@ -2754,7 +2754,7 @@ var app = (function () {
     }
 
     // (37:6) <TableHeader>
-    function create_default_slot_2(ctx) {
+    function create_default_slot_2$2(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[11].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[12], get_default_slot_context);
@@ -2802,7 +2802,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2.name,
+    		id: create_default_slot_2$2.name,
     		type: "slot",
     		source: "(37:6) <TableHeader>",
     		ctx
@@ -4161,7 +4161,7 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[11] = list[i];
+    	child_ctx[24] = list[i];
     	return child_ctx;
     }
 
@@ -4187,56 +4187,145 @@ var app = (function () {
     	return block;
     }
 
-    // (52:1) {:then economies}
+    // (101:1) {:then economies}
     function create_then_block$1(ctx) {
     	let t0;
     	let t1;
-    	let table;
+    	let table0;
+    	let t2;
+    	let table1;
+    	let t3;
+    	let div;
+    	let button0;
+    	let t4;
+    	let button1;
     	let current;
 
-    	table = new Table({
+    	table0 = new Table({
     			props: {
     				bordered: true,
+    				$$slots: { default: [create_default_slot_6] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	table1 = new Table({
+    			props: {
+    				bordered: true,
+    				$$slots: { default: [create_default_slot_2$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button0 = new Button({
+    			props: {
+    				outline: true,
+    				color: "success",
+    				$$slots: { default: [create_default_slot_1$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button0.$on("click", /*LoadEconomies*/ ctx[9]);
+
+    	button1 = new Button({
+    			props: {
+    				outline: true,
+    				color: "danger",
     				$$slots: { default: [create_default_slot$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
+    	button1.$on("click", /*BorrarEconomies*/ ctx[8]);
+
     	const block = {
     		c: function create() {
-    			t0 = text(/*p1*/ ctx[2]);
+    			t0 = text(/*p1*/ ctx[4]);
     			t1 = space();
-    			create_component(table.$$.fragment);
+    			create_component(table0.$$.fragment);
+    			t2 = space();
+    			create_component(table1.$$.fragment);
+    			t3 = space();
+    			div = element("div");
+    			create_component(button0.$$.fragment);
+    			t4 = space();
+    			create_component(button1.$$.fragment);
+    			attr_dev(div, "align", "center");
+    			add_location(div, file$2, 170, 1, 4037);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
     			insert_dev(target, t1, anchor);
-    			mount_component(table, target, anchor);
+    			mount_component(table0, target, anchor);
+    			insert_dev(target, t2, anchor);
+    			mount_component(table1, target, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div, anchor);
+    			mount_component(button0, div, null);
+    			append_dev(div, t4);
+    			mount_component(button1, div, null);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			const table_changes = {};
+    			const table0_changes = {};
 
-    			if (dirty & /*$$scope, economies, newEconomies*/ 16387) {
-    				table_changes.$$scope = { dirty, ctx };
+    			if (dirty & /*$$scope, from, to*/ 134217734) {
+    				table0_changes.$$scope = { dirty, ctx };
     			}
 
-    			table.$set(table_changes);
+    			table0.$set(table0_changes);
+    			const table1_changes = {};
+
+    			if (dirty & /*$$scope, economies, window, newEconomies*/ 134217737) {
+    				table1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			table1.$set(table1_changes);
+    			const button0_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button0_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button0.$set(button0_changes);
+    			const button1_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button1.$set(button1_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(table.$$.fragment, local);
+    			transition_in(table0.$$.fragment, local);
+    			transition_in(table1.$$.fragment, local);
+    			transition_in(button0.$$.fragment, local);
+    			transition_in(button1.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(table.$$.fragment, local);
+    			transition_out(table0.$$.fragment, local);
+    			transition_out(table1.$$.fragment, local);
+    			transition_out(button0.$$.fragment, local);
+    			transition_out(button1.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(t1);
-    			destroy_component(table, detaching);
+    			destroy_component(table0, detaching);
+    			if (detaching) detach_dev(t2);
+    			destroy_component(table1, detaching);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div);
+    			destroy_component(button0);
+    			destroy_component(button1);
     		}
     	};
 
@@ -4244,15 +4333,245 @@ var app = (function () {
     		block,
     		id: create_then_block$1.name,
     		type: "then",
-    		source: "(52:1) {:then economies}",
+    		source: "(101:1) {:then economies}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (73:9) <Button         outline        color= "primary"        on:click={insertEconomies}>
-    function create_default_slot_1$1(ctx) {
+    // (115:8) <Button outline color="primary" on:click="{getEconomies}">
+    function create_default_slot_8(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Buscar");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_8.name,
+    		type: "slot",
+    		source: "(115:8) <Button outline color=\\\"primary\\\" on:click=\\\"{getEconomies}\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (116:23) <Button outline color="info" on:click="{()=>{       from = null;       to = null;       getEconomies();      }}">
+    function create_default_slot_7(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Limpiar Búsqueda");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_7.name,
+    		type: "slot",
+    		source: "(116:23) <Button outline color=\\\"info\\\" on:click=\\\"{()=>{       from = null;       to = null;       getEconomies();      }}\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (104:1) <Table bordered>
+    function create_default_slot_6(ctx) {
+    	let thead;
+    	let tr0;
+    	let th0;
+    	let t1;
+    	let th1;
+    	let t3;
+    	let tbody;
+    	let tr1;
+    	let td0;
+    	let input0;
+    	let t4;
+    	let td1;
+    	let input1;
+    	let t5;
+    	let td2;
+    	let button0;
+    	let t6;
+    	let td3;
+    	let button1;
+    	let current;
+    	let mounted;
+    	let dispose;
+
+    	button0 = new Button({
+    			props: {
+    				outline: true,
+    				color: "primary",
+    				$$slots: { default: [create_default_slot_8] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button0.$on("click", /*getEconomies*/ ctx[5]);
+
+    	button1 = new Button({
+    			props: {
+    				outline: true,
+    				color: "info",
+    				$$slots: { default: [create_default_slot_7] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button1.$on("click", /*click_handler*/ ctx[12]);
+
+    	const block = {
+    		c: function create() {
+    			thead = element("thead");
+    			tr0 = element("tr");
+    			th0 = element("th");
+    			th0.textContent = "Fecha Inicio";
+    			t1 = space();
+    			th1 = element("th");
+    			th1.textContent = "Fecha Fin";
+    			t3 = space();
+    			tbody = element("tbody");
+    			tr1 = element("tr");
+    			td0 = element("td");
+    			input0 = element("input");
+    			t4 = space();
+    			td1 = element("td");
+    			input1 = element("input");
+    			t5 = space();
+    			td2 = element("td");
+    			create_component(button0.$$.fragment);
+    			t6 = space();
+    			td3 = element("td");
+    			create_component(button1.$$.fragment);
+    			add_location(th0, file$2, 106, 4, 2276);
+    			add_location(th1, file$2, 107, 16, 2315);
+    			add_location(tr0, file$2, 105, 3, 2266);
+    			add_location(thead, file$2, 104, 2, 2254);
+    			add_location(input0, file$2, 112, 8, 2385);
+    			add_location(td0, file$2, 112, 4, 2381);
+    			add_location(input1, file$2, 113, 8, 2427);
+    			add_location(td1, file$2, 113, 4, 2423);
+    			add_location(td2, file$2, 114, 4, 2463);
+    			attr_dev(td3, "align", "center");
+    			add_location(td3, file$2, 115, 4, 2551);
+    			add_location(tr1, file$2, 111, 3, 2371);
+    			add_location(tbody, file$2, 110, 2, 2359);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, thead, anchor);
+    			append_dev(thead, tr0);
+    			append_dev(tr0, th0);
+    			append_dev(tr0, t1);
+    			append_dev(tr0, th1);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, tbody, anchor);
+    			append_dev(tbody, tr1);
+    			append_dev(tr1, td0);
+    			append_dev(td0, input0);
+    			set_input_value(input0, /*from*/ ctx[1]);
+    			append_dev(tr1, t4);
+    			append_dev(tr1, td1);
+    			append_dev(td1, input1);
+    			set_input_value(input1, /*to*/ ctx[2]);
+    			append_dev(tr1, t5);
+    			append_dev(tr1, td2);
+    			mount_component(button0, td2, null);
+    			append_dev(tr1, t6);
+    			append_dev(tr1, td3);
+    			mount_component(button1, td3, null);
+    			current = true;
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[10]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[11])
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*from*/ 2 && input0.value !== /*from*/ ctx[1]) {
+    				set_input_value(input0, /*from*/ ctx[1]);
+    			}
+
+    			if (dirty & /*to*/ 4 && input1.value !== /*to*/ ctx[2]) {
+    				set_input_value(input1, /*to*/ ctx[2]);
+    			}
+
+    			const button0_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button0_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button0.$set(button0_changes);
+    			const button1_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button1.$set(button1_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button0.$$.fragment, local);
+    			transition_in(button1.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button0.$$.fragment, local);
+    			transition_out(button1.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(thead);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(tbody);
+    			destroy_component(button0);
+    			destroy_component(button1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_6.name,
+    		type: "slot",
+    		source: "(104:1) <Table bordered>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (145:9) <Button         outline        color= "primary"        on:click={insertEconomies}>
+    function create_default_slot_5(ctx) {
     	let t;
 
     	const block = {
@@ -4269,40 +4588,127 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$1.name,
+    		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(73:9) <Button         outline        color= \\\"primary\\\"        on:click={insertEconomies}>",
+    		source: "(145:9) <Button         outline        color= \\\"primary\\\"        on:click={insertEconomies}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (79:4) {#each economies as economy}
+    // (158:9) <Button outline color="warning" on:click={function (){        window.location.href ="svelteEconomies/#/economiesTable/${economy.country}"       }}>
+    function create_default_slot_4(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Editar");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_4.name,
+    		type: "slot",
+    		source: "(158:9) <Button outline color=\\\"warning\\\" on:click={function (){        window.location.href =\\\"svelteEconomies/#/economiesTable/${economy.country}\\\"       }}>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (163:9) <Button outline color="danger" on:click={BorrarEconomy(economy.country,economy.year)}>
+    function create_default_slot_3(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Borrar");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_3.name,
+    		type: "slot",
+    		source: "(163:9) <Button outline color=\\\"danger\\\" on:click={BorrarEconomy(economy.country,economy.year)}>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (151:4) {#each economies as economy}
     function create_each_block(ctx) {
     	let tr;
     	let td0;
     	let a;
-    	let t0_value = /*economy*/ ctx[11].country + "";
+    	let t0_value = /*economy*/ ctx[24].country + "";
     	let t0;
     	let a_href_value;
     	let t1;
     	let td1;
-    	let t2_value = /*economy*/ ctx[11].year + "";
+    	let t2_value = /*economy*/ ctx[24].year + "";
     	let t2;
     	let t3;
     	let td2;
-    	let t4_value = /*economy*/ ctx[11].percapita + "";
+    	let t4_value = /*economy*/ ctx[24].percapita + "";
     	let t4;
     	let t5;
     	let td3;
-    	let t6_value = /*economy*/ ctx[11].currency + "";
+    	let t6_value = /*economy*/ ctx[24].currency + "";
     	let t6;
     	let t7;
     	let td4;
-    	let t8_value = /*economy*/ ctx[11].currentprices + "";
+    	let t8_value = /*economy*/ ctx[24].currentprices + "";
     	let t8;
     	let t9;
+    	let td5;
+    	let button0;
+    	let t10;
+    	let td6;
+    	let button1;
+    	let t11;
+    	let current;
+
+    	button0 = new Button({
+    			props: {
+    				outline: true,
+    				color: "warning",
+    				$$slots: { default: [create_default_slot_4] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button0.$on("click", /*click_handler_1*/ ctx[18]);
+
+    	button1 = new Button({
+    			props: {
+    				outline: true,
+    				color: "danger",
+    				$$slots: { default: [create_default_slot_3] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button1.$on("click", function () {
+    		if (is_function(/*BorrarEconomy*/ ctx[7](/*economy*/ ctx[24].country, /*economy*/ ctx[24].year))) /*BorrarEconomy*/ ctx[7](/*economy*/ ctx[24].country, /*economy*/ ctx[24].year).apply(this, arguments);
+    	});
 
     	const block = {
     		c: function create() {
@@ -4323,14 +4729,22 @@ var app = (function () {
     			td4 = element("td");
     			t8 = text(t8_value);
     			t9 = space();
-    			attr_dev(a, "href", a_href_value = "#/economiesTable/" + /*economy*/ ctx[11].country);
-    			add_location(a, file$2, 80, 9, 1784);
-    			add_location(td0, file$2, 80, 5, 1780);
-    			add_location(td1, file$2, 81, 5, 1860);
-    			add_location(td2, file$2, 82, 5, 1890);
-    			add_location(td3, file$2, 83, 5, 1925);
-    			add_location(td4, file$2, 84, 5, 1959);
-    			add_location(tr, file$2, 79, 4, 1769);
+    			td5 = element("td");
+    			create_component(button0.$$.fragment);
+    			t10 = space();
+    			td6 = element("td");
+    			create_component(button1.$$.fragment);
+    			t11 = space();
+    			attr_dev(a, "href", a_href_value = "#/economiesTable/" + /*economy*/ ctx[24].country);
+    			add_location(a, file$2, 152, 9, 3461);
+    			add_location(td0, file$2, 152, 5, 3457);
+    			add_location(td1, file$2, 153, 5, 3539);
+    			add_location(td2, file$2, 154, 5, 3569);
+    			add_location(td3, file$2, 155, 5, 3604);
+    			add_location(td4, file$2, 156, 5, 3638);
+    			add_location(td5, file$2, 157, 5, 3677);
+    			add_location(td6, file$2, 162, 5, 3865);
+    			add_location(tr, file$2, 151, 4, 3446);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -4350,21 +4764,56 @@ var app = (function () {
     			append_dev(tr, td4);
     			append_dev(td4, t8);
     			append_dev(tr, t9);
+    			append_dev(tr, td5);
+    			mount_component(button0, td5, null);
+    			append_dev(td5, t10);
+    			append_dev(tr, td6);
+    			mount_component(button1, td6, null);
+    			append_dev(td6, t11);
+    			current = true;
     		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*economies*/ 2 && t0_value !== (t0_value = /*economy*/ ctx[11].country + "")) set_data_dev(t0, t0_value);
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if ((!current || dirty & /*economies*/ 8) && t0_value !== (t0_value = /*economy*/ ctx[24].country + "")) set_data_dev(t0, t0_value);
 
-    			if (dirty & /*economies*/ 2 && a_href_value !== (a_href_value = "#/economiesTable/" + /*economy*/ ctx[11].country)) {
+    			if (!current || dirty & /*economies*/ 8 && a_href_value !== (a_href_value = "#/economiesTable/" + /*economy*/ ctx[24].country)) {
     				attr_dev(a, "href", a_href_value);
     			}
 
-    			if (dirty & /*economies*/ 2 && t2_value !== (t2_value = /*economy*/ ctx[11].year + "")) set_data_dev(t2, t2_value);
-    			if (dirty & /*economies*/ 2 && t4_value !== (t4_value = /*economy*/ ctx[11].percapita + "")) set_data_dev(t4, t4_value);
-    			if (dirty & /*economies*/ 2 && t6_value !== (t6_value = /*economy*/ ctx[11].currency + "")) set_data_dev(t6, t6_value);
-    			if (dirty & /*economies*/ 2 && t8_value !== (t8_value = /*economy*/ ctx[11].currentprices + "")) set_data_dev(t8, t8_value);
+    			if ((!current || dirty & /*economies*/ 8) && t2_value !== (t2_value = /*economy*/ ctx[24].year + "")) set_data_dev(t2, t2_value);
+    			if ((!current || dirty & /*economies*/ 8) && t4_value !== (t4_value = /*economy*/ ctx[24].percapita + "")) set_data_dev(t4, t4_value);
+    			if ((!current || dirty & /*economies*/ 8) && t6_value !== (t6_value = /*economy*/ ctx[24].currency + "")) set_data_dev(t6, t6_value);
+    			if ((!current || dirty & /*economies*/ 8) && t8_value !== (t8_value = /*economy*/ ctx[24].currentprices + "")) set_data_dev(t8, t8_value);
+    			const button0_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button0_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button0.$set(button0_changes);
+    			const button1_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button1.$set(button1_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button0.$$.fragment, local);
+    			transition_in(button1.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button0.$$.fragment, local);
+    			transition_out(button1.$$.fragment, local);
+    			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(tr);
+    			destroy_component(button0);
+    			destroy_component(button1);
     		}
     	};
 
@@ -4372,15 +4821,15 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(79:4) {#each economies as economy}",
+    		source: "(151:4) {#each economies as economy}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (55:1) <Table bordered>
-    function create_default_slot$1(ctx) {
+    // (127:1) <Table bordered>
+    function create_default_slot_2$1(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -4423,20 +4872,24 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_1$1] },
+    				$$slots: { default: [create_default_slot_5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	button.$on("click", /*insertEconomies*/ ctx[3]);
-    	let each_value = /*economies*/ ctx[1];
+    	button.$on("click", /*insertEconomies*/ ctx[6]);
+    	let each_value = /*economies*/ ctx[3];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
     		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
     	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
 
     	const block = {
     		c: function create() {
@@ -4485,27 +4938,27 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(th0, file$2, 57, 4, 1125);
-    			add_location(th1, file$2, 58, 4, 1144);
-    			add_location(th2, file$2, 59, 4, 1162);
-    			add_location(th3, file$2, 60, 4, 1186);
-    			add_location(th4, file$2, 61, 4, 1209);
-    			add_location(th5, file$2, 62, 4, 1237);
-    			add_location(tr0, file$2, 56, 3, 1115);
-    			add_location(thead, file$2, 55, 2, 1103);
-    			add_location(input0, file$2, 67, 9, 1308);
-    			add_location(td0, file$2, 67, 5, 1304);
-    			add_location(input1, file$2, 68, 9, 1367);
-    			add_location(td1, file$2, 68, 5, 1363);
-    			add_location(input2, file$2, 69, 9, 1423);
-    			add_location(td2, file$2, 69, 5, 1419);
-    			add_location(input3, file$2, 70, 9, 1484);
-    			add_location(td3, file$2, 70, 5, 1480);
-    			add_location(input4, file$2, 71, 9, 1544);
-    			add_location(td4, file$2, 71, 5, 1540);
-    			add_location(td5, file$2, 72, 5, 1605);
-    			add_location(tr1, file$2, 66, 4, 1293);
-    			add_location(tbody, file$2, 65, 2, 1280);
+    			add_location(th0, file$2, 129, 4, 2802);
+    			add_location(th1, file$2, 130, 4, 2821);
+    			add_location(th2, file$2, 131, 4, 2839);
+    			add_location(th3, file$2, 132, 4, 2863);
+    			add_location(th4, file$2, 133, 4, 2886);
+    			add_location(th5, file$2, 134, 4, 2914);
+    			add_location(tr0, file$2, 128, 3, 2792);
+    			add_location(thead, file$2, 127, 2, 2780);
+    			add_location(input0, file$2, 139, 9, 2985);
+    			add_location(td0, file$2, 139, 5, 2981);
+    			add_location(input1, file$2, 140, 9, 3044);
+    			add_location(td1, file$2, 140, 5, 3040);
+    			add_location(input2, file$2, 141, 9, 3100);
+    			add_location(td2, file$2, 141, 5, 3096);
+    			add_location(input3, file$2, 142, 9, 3161);
+    			add_location(td3, file$2, 142, 5, 3157);
+    			add_location(input4, file$2, 143, 9, 3221);
+    			add_location(td4, file$2, 143, 5, 3217);
+    			add_location(td5, file$2, 144, 5, 3282);
+    			add_location(tr1, file$2, 138, 4, 2970);
+    			add_location(tbody, file$2, 137, 2, 2957);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -4556,11 +5009,11 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[4]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[5]),
-    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[6]),
-    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[7]),
-    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[8])
+    					listen_dev(input0, "input", /*input0_input_handler_1*/ ctx[13]),
+    					listen_dev(input1, "input", /*input1_input_handler_1*/ ctx[14]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[15]),
+    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[16]),
+    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[17])
     				];
 
     				mounted = true;
@@ -4589,14 +5042,14 @@ var app = (function () {
 
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 16384) {
+    			if (dirty & /*$$scope*/ 134217728) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
     			button.$set(button_changes);
 
-    			if (dirty & /*economies*/ 2) {
-    				each_value = /*economies*/ ctx[1];
+    			if (dirty & /*BorrarEconomy, economies, window*/ 136) {
+    				each_value = /*economies*/ ctx[3];
     				validate_each_argument(each_value);
     				let i;
 
@@ -4605,27 +5058,42 @@ var app = (function () {
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
     					} else {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(tbody, null);
     					}
     				}
 
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
     				}
 
-    				each_blocks.length = each_value.length;
+    				check_outros();
     			}
     		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(button.$$.fragment, local);
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(button.$$.fragment, local);
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -4641,16 +5109,70 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$1.name,
+    		id: create_default_slot_2$1.name,
     		type: "slot",
-    		source: "(55:1) <Table bordered>",
+    		source: "(127:1) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:22)   loading   {:then economies}
+    // (172:2) <Button outline color="success" on:click={LoadEconomies}>
+    function create_default_slot_1$1(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Cargar datos");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_1$1.name,
+    		type: "slot",
+    		source: "(172:2) <Button outline color=\\\"success\\\" on:click={LoadEconomies}>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (175:2) <Button outline color="danger" on:click={BorrarEconomies}>
+    function create_default_slot$1(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Borrar todo");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$1.name,
+    		type: "slot",
+    		source: "(175:2) <Button outline color=\\\"danger\\\" on:click={BorrarEconomies}>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (99:22)   loading   {:then economies}
     function create_pending_block$1(ctx) {
     	let t;
 
@@ -4673,7 +5195,7 @@ var app = (function () {
     		block,
     		id: create_pending_block$1.name,
     		type: "pending",
-    		source: "(50:22)   loading   {:then economies}",
+    		source: "(99:22)   loading   {:then economies}",
     		ctx
     	});
 
@@ -4693,17 +5215,17 @@ var app = (function () {
     		pending: create_pending_block$1,
     		then: create_then_block$1,
     		catch: create_catch_block$1,
-    		value: 1,
+    		value: 3,
     		blocks: [,,,]
     	};
 
-    	handle_promise(promise = /*economies*/ ctx[1], info);
+    	handle_promise(promise = /*economies*/ ctx[3], info);
 
     	const block = {
     		c: function create() {
     			main = element("main");
     			info.block.c();
-    			add_location(main, file$2, 48, 0, 1012);
+    			add_location(main, file$2, 97, 0, 2163);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4719,7 +5241,7 @@ var app = (function () {
     			ctx = new_ctx;
     			info.ctx = ctx;
 
-    			if (dirty & /*economies*/ 2 && promise !== (promise = /*economies*/ ctx[1]) && handle_promise(promise, info)) ; else {
+    			if (dirty & /*economies*/ 8 && promise !== (promise = /*economies*/ ctx[3]) && handle_promise(promise, info)) ; else {
     				update_await_block_branch(info, ctx, dirty);
     			}
     		},
@@ -4768,6 +5290,11 @@ var app = (function () {
     		currentprices: ""
     	};
 
+    	let from = null;
+    	let to = null;
+    	let offset = 0;
+    	let limit = 10;
+    	let maxPages = 0;
     	let loading = true;
     	let p1;
     	onMount(getEconomies);
@@ -4778,8 +5305,16 @@ var app = (function () {
 
     		if (res.ok) {
     			const data = await res.json();
-    			$$invalidate(1, economies = data);
+    			$$invalidate(3, economies = data);
     			console.log("Received countries: " + economies.length);
+    		}
+    	}
+
+    	async function maxPagesFunction(total) {
+    		maxPages = Math.floor(total / 10);
+
+    		if (maxPages === total / 10) {
+    			maxPages = maxPages - 1;
     		}
     	}
 
@@ -4797,6 +5332,33 @@ var app = (function () {
     		console.log("DONE");
     	}
 
+    	async function BorrarEconomy(countryDelete, yearDelete) {
+    		console.log("Deleting entry....");
+
+    		await fetch("/api/v1/economies/" + countryDelete + "/" + yearDelete, { method: "DELETE" }).then(function (res) {
+    			getEconomies();
+    			window.alert("Entrada eliminada con éxito");
+    		});
+    	}
+
+    	async function BorrarEconomies() {
+    		console.log("Deleting economies....");
+
+    		await fetch("/api/v1/economies", { method: "DELETE" }).then(function (res) {
+    			getEconomies();
+    			window.alert("Entradas elimidas con éxito");
+    		});
+    	}
+
+    	async function LoadEconomies() {
+    		console.log("Loading economies....");
+
+    		await fetch("/api/v1/economies/loadInitialData", { method: "GET" }).then(function (res) {
+    			getEconomies();
+    			window.alert("Entradas cargadas con éxito");
+    		});
+    	}
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -4804,11 +5366,27 @@ var app = (function () {
     	});
 
     	function input0_input_handler() {
+    		from = this.value;
+    		$$invalidate(1, from);
+    	}
+
+    	function input1_input_handler() {
+    		to = this.value;
+    		$$invalidate(2, to);
+    	}
+
+    	const click_handler = () => {
+    		$$invalidate(1, from = null);
+    		$$invalidate(2, to = null);
+    		getEconomies();
+    	};
+
+    	function input0_input_handler_1() {
     		newEconomies.country = this.value;
     		$$invalidate(0, newEconomies);
     	}
 
-    	function input1_input_handler() {
+    	function input1_input_handler_1() {
     		newEconomies.year = this.value;
     		$$invalidate(0, newEconomies);
     	}
@@ -4828,23 +5406,41 @@ var app = (function () {
     		$$invalidate(0, newEconomies);
     	}
 
+    	const click_handler_1 = function () {
+    		window.location.href = "svelteEconomies/#/economiesTable/${economy.country}";
+    	};
+
     	$$self.$capture_state = () => ({
     		onMount,
     		Table,
     		Button,
     		economies,
     		newEconomies,
+    		from,
+    		to,
+    		offset,
+    		limit,
+    		maxPages,
     		loading,
     		p1,
     		getEconomies,
-    		insertEconomies
+    		maxPagesFunction,
+    		insertEconomies,
+    		BorrarEconomy,
+    		BorrarEconomies,
+    		LoadEconomies
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('economies' in $$props) $$invalidate(1, economies = $$props.economies);
+    		if ('economies' in $$props) $$invalidate(3, economies = $$props.economies);
     		if ('newEconomies' in $$props) $$invalidate(0, newEconomies = $$props.newEconomies);
+    		if ('from' in $$props) $$invalidate(1, from = $$props.from);
+    		if ('to' in $$props) $$invalidate(2, to = $$props.to);
+    		if ('offset' in $$props) offset = $$props.offset;
+    		if ('limit' in $$props) limit = $$props.limit;
+    		if ('maxPages' in $$props) maxPages = $$props.maxPages;
     		if ('loading' in $$props) loading = $$props.loading;
-    		if ('p1' in $$props) $$invalidate(2, p1 = $$props.p1);
+    		if ('p1' in $$props) $$invalidate(4, p1 = $$props.p1);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -4853,14 +5449,24 @@ var app = (function () {
 
     	return [
     		newEconomies,
+    		from,
+    		to,
     		economies,
     		p1,
+    		getEconomies,
     		insertEconomies,
+    		BorrarEconomy,
+    		BorrarEconomies,
+    		LoadEconomies,
     		input0_input_handler,
     		input1_input_handler,
+    		click_handler,
+    		input0_input_handler_1,
+    		input1_input_handler_1,
     		input2_input_handler,
     		input3_input_handler,
-    		input4_input_handler
+    		input4_input_handler,
+    		click_handler_1
     	];
     }
 
@@ -4905,7 +5511,7 @@ var app = (function () {
     	return block;
     }
 
-    // (40:8) {:then economy}
+    // (61:8) {:then economy}
     function create_then_block(ctx) {
     	let table;
     	let current;
@@ -4930,7 +5536,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const table_changes = {};
 
-    			if (dirty & /*$$scope, updateCurrentPrices, updateCurrency, updatePercapita, updateYear, updatedCountry*/ 8223) {
+    			if (dirty & /*$$scope, updatedCurrentPrices, updatedCurrency, updatedPercapita, updatedYear, updatedCountry*/ 16415) {
     				table_changes.$$scope = { dirty, ctx };
     			}
 
@@ -4954,14 +5560,41 @@ var app = (function () {
     		block,
     		id: create_then_block.name,
     		type: "then",
-    		source: "(40:8) {:then economy}",
+    		source: "(61:8) {:then economy}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (42:8) <Table bordered>
+    // (81:28) <Button outline color="primary" on:click="{EditEntry}">
+    function create_default_slot_2(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Editar");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_2.name,
+    		type: "slot",
+    		source: "(81:28) <Button outline color=\\\"primary\\\" on:click=\\\"{EditEntry}\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (63:8) <Table bordered>
     function create_default_slot_1(ctx) {
     	let thead;
     	let tr0;
@@ -4993,8 +5626,24 @@ var app = (function () {
     	let t15;
     	let td4;
     	let input4;
+    	let t16;
+    	let td5;
+    	let button;
+    	let current;
     	let mounted;
     	let dispose;
+
+    	button = new Button({
+    			props: {
+    				outline: true,
+    				color: "primary",
+    				$$slots: { default: [create_default_slot_2] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", /*EditEntry*/ ctx[6]);
 
     	const block = {
     		c: function create() {
@@ -5034,26 +5683,30 @@ var app = (function () {
     			t15 = space();
     			td4 = element("td");
     			input4 = element("input");
-    			add_location(th0, file$1, 44, 20, 1112);
-    			add_location(th1, file$1, 45, 20, 1147);
-    			add_location(th2, file$1, 46, 20, 1181);
-    			add_location(th3, file$1, 47, 20, 1221);
-    			add_location(th4, file$1, 48, 20, 1260);
-    			add_location(th5, file$1, 49, 20, 1304);
-    			add_location(tr0, file$1, 43, 16, 1086);
-    			add_location(thead, file$1, 42, 12, 1061);
-    			add_location(input0, file$1, 54, 28, 1443);
-    			add_location(td0, file$1, 54, 24, 1439);
-    			add_location(input1, file$1, 55, 28, 1515);
-    			add_location(td1, file$1, 55, 24, 1511);
-    			add_location(input2, file$1, 56, 28, 1583);
-    			add_location(td2, file$1, 56, 24, 1579);
-    			add_location(input3, file$1, 57, 28, 1656);
-    			add_location(td3, file$1, 57, 24, 1652);
-    			add_location(input4, file$1, 58, 28, 1728);
-    			add_location(td4, file$1, 58, 24, 1724);
-    			add_location(tr1, file$1, 53, 20, 1409);
-    			add_location(tbody, file$1, 52, 12, 1380);
+    			t16 = space();
+    			td5 = element("td");
+    			create_component(button.$$.fragment);
+    			add_location(th0, file$1, 65, 20, 1770);
+    			add_location(th1, file$1, 66, 20, 1805);
+    			add_location(th2, file$1, 67, 20, 1839);
+    			add_location(th3, file$1, 68, 20, 1879);
+    			add_location(th4, file$1, 69, 20, 1918);
+    			add_location(th5, file$1, 70, 20, 1962);
+    			add_location(tr0, file$1, 64, 16, 1744);
+    			add_location(thead, file$1, 63, 12, 1719);
+    			add_location(input0, file$1, 75, 28, 2101);
+    			add_location(td0, file$1, 75, 24, 2097);
+    			add_location(input1, file$1, 76, 28, 2173);
+    			add_location(td1, file$1, 76, 24, 2169);
+    			add_location(input2, file$1, 77, 28, 2242);
+    			add_location(td2, file$1, 77, 24, 2238);
+    			add_location(input3, file$1, 78, 28, 2316);
+    			add_location(td3, file$1, 78, 24, 2312);
+    			add_location(input4, file$1, 79, 28, 2389);
+    			add_location(td4, file$1, 79, 24, 2385);
+    			add_location(td5, file$1, 80, 24, 2463);
+    			add_location(tr1, file$1, 74, 20, 2067);
+    			add_location(tbody, file$1, 73, 12, 2038);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -5078,27 +5731,31 @@ var app = (function () {
     			append_dev(tr1, t12);
     			append_dev(tr1, td1);
     			append_dev(td1, input1);
-    			set_input_value(input1, /*updateYear*/ ctx[1]);
+    			set_input_value(input1, /*updatedYear*/ ctx[1]);
     			append_dev(tr1, t13);
     			append_dev(tr1, td2);
     			append_dev(td2, input2);
-    			set_input_value(input2, /*updatePercapita*/ ctx[2]);
+    			set_input_value(input2, /*updatedPercapita*/ ctx[2]);
     			append_dev(tr1, t14);
     			append_dev(tr1, td3);
     			append_dev(td3, input3);
-    			set_input_value(input3, /*updateCurrency*/ ctx[3]);
+    			set_input_value(input3, /*updatedCurrency*/ ctx[3]);
     			append_dev(tr1, t15);
     			append_dev(tr1, td4);
     			append_dev(td4, input4);
-    			set_input_value(input4, /*updateCurrentPrices*/ ctx[4]);
+    			set_input_value(input4, /*updatedCurrentPrices*/ ctx[4]);
+    			append_dev(tr1, t16);
+    			append_dev(tr1, td5);
+    			mount_component(button, td5, null);
+    			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[7]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[8]),
-    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[9]),
-    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[10]),
-    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[11])
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[8]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[9]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[10]),
+    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[11]),
+    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[12])
     				];
 
     				mounted = true;
@@ -5109,26 +5766,44 @@ var app = (function () {
     				set_input_value(input0, /*updatedCountry*/ ctx[0]);
     			}
 
-    			if (dirty & /*updateYear*/ 2 && input1.value !== /*updateYear*/ ctx[1]) {
-    				set_input_value(input1, /*updateYear*/ ctx[1]);
+    			if (dirty & /*updatedYear*/ 2 && input1.value !== /*updatedYear*/ ctx[1]) {
+    				set_input_value(input1, /*updatedYear*/ ctx[1]);
     			}
 
-    			if (dirty & /*updatePercapita*/ 4 && input2.value !== /*updatePercapita*/ ctx[2]) {
-    				set_input_value(input2, /*updatePercapita*/ ctx[2]);
+    			if (dirty & /*updatedPercapita*/ 4 && input2.value !== /*updatedPercapita*/ ctx[2]) {
+    				set_input_value(input2, /*updatedPercapita*/ ctx[2]);
     			}
 
-    			if (dirty & /*updateCurrency*/ 8 && input3.value !== /*updateCurrency*/ ctx[3]) {
-    				set_input_value(input3, /*updateCurrency*/ ctx[3]);
+    			if (dirty & /*updatedCurrency*/ 8 && input3.value !== /*updatedCurrency*/ ctx[3]) {
+    				set_input_value(input3, /*updatedCurrency*/ ctx[3]);
     			}
 
-    			if (dirty & /*updateCurrentPrices*/ 16 && input4.value !== /*updateCurrentPrices*/ ctx[4]) {
-    				set_input_value(input4, /*updateCurrentPrices*/ ctx[4]);
+    			if (dirty & /*updatedCurrentPrices*/ 16 && input4.value !== /*updatedCurrentPrices*/ ctx[4]) {
+    				set_input_value(input4, /*updatedCurrentPrices*/ ctx[4]);
     			}
+
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 16384) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(thead);
     			if (detaching) detach_dev(t11);
     			if (detaching) detach_dev(tbody);
+    			destroy_component(button);
     			mounted = false;
     			run_all(dispose);
     		}
@@ -5138,14 +5813,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(42:8) <Table bordered>",
+    		source: "(63:8) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:24)       loading          {:then economy}
+    // (59:24)       loading          {:then economy}
     function create_pending_block(ctx) {
     	let t;
 
@@ -5168,14 +5843,14 @@ var app = (function () {
     		block,
     		id: create_pending_block.name,
     		type: "pending",
-    		source: "(38:24)       loading          {:then economy}",
+    		source: "(59:24)       loading          {:then economy}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (68:4) <Button outline color="secondary" on:click="{pop}">
+    // (93:4) <Button outline color="secondary" on:click="{pop}">
     function create_default_slot(ctx) {
     	let t;
 
@@ -5195,7 +5870,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(68:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
+    		source: "(93:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -5205,7 +5880,6 @@ var app = (function () {
     function create_fragment$1(ctx) {
     	let main;
     	let t0;
-    	let t1_value = /*params*/ ctx[6].countryName + "";
     	let t1;
     	let t2;
     	let promise;
@@ -5243,12 +5917,12 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			t0 = text("This is country ");
-    			t1 = text(t1_value);
-    			t2 = text(";\r\n\r\n        ");
+    			t1 = text(/*updatedCountry*/ ctx[0]);
+    			t2 = space();
     			info.block.c();
     			t3 = space();
     			create_component(button.$$.fragment);
-    			add_location(main, file$1, 34, 0, 900);
+    			add_location(main, file$1, 55, 0, 1563);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5267,6 +5941,7 @@ var app = (function () {
     		},
     		p: function update(new_ctx, [dirty]) {
     			ctx = new_ctx;
+    			if (!current || dirty & /*updatedCountry*/ 1) set_data_dev(t1, /*updatedCountry*/ ctx[0]);
     			info.ctx = ctx;
 
     			if (dirty & /*economy*/ 32 && promise !== (promise = /*economy*/ ctx[5]) && handle_promise(promise, info)) ; else {
@@ -5275,7 +5950,7 @@ var app = (function () {
 
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 16384) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -5319,32 +5994,50 @@ var app = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('EditEconomies', slots, []);
-    	let params = {};
+    	let { params = {} } = $$props;
     	onMount(getEconomy);
     	let economy = {};
     	let updatedCountry;
-    	let updateYear;
-    	let updatePercapita;
-    	let updateCurrency;
-    	let updateCurrentPrices;
+    	let updatedYear;
+    	let updatedPercapita;
+    	let updatedCurrency;
+    	let updatedCurrentPrices;
 
     	async function getEconomy() {
     		console.log("fetching ...");
-    		const res = await fetch("/api/v1/economies/" + countryName);
+    		const res = await fetch("/api/v1/economies/" + params.country);
 
     		if (res.ok) {
     			const data = await res.json();
     			$$invalidate(5, economy = data);
     			$$invalidate(0, updatedCountry = economy.country);
-    			updatedYear = economy.year;
-    			$$invalidate(2, updatePercapita = economy.percapita);
-    			$$invalidate(3, updateCurrency = economy.currency);
-    			$$invalidate(4, updateCurrentPrices = economy.currentprices);
+    			$$invalidate(1, updatedYear = economy.year);
+    			$$invalidate(2, updatedPercapita = economy.percapita);
+    			$$invalidate(3, updatedCurrency = economy.currency);
+    			$$invalidate(4, updatedCurrentPrices = economy.currentprices);
     			console.log("Received country");
     		}
     	}
 
-    	const writable_props = [];
+    	async function EditEntry() {
+    		console.log("Updating entry...." + updatedCountry);
+
+    		await fetch("/api/v1/economies/eeuu", {
+    			method: "PUT",
+    			body: JSON.stringify({
+    				country: updatedCountry,
+    				year: updatedYear,
+    				percapita: updatedPercapita,
+    				currency: updatedCurrency,
+    				currentprices: updatedCurrentPrices
+    			}),
+    			headers: { "Content-Type": "application/json" }
+    		}).then(function (res) {
+    			window.alert("Actualizado con éxito");
+    		});
+    	}
+
+    	const writable_props = ['params'];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<EditEconomies> was created with unknown prop '${key}'`);
@@ -5356,24 +6049,28 @@ var app = (function () {
     	}
 
     	function input1_input_handler() {
-    		updateYear = this.value;
-    		$$invalidate(1, updateYear);
+    		updatedYear = this.value;
+    		$$invalidate(1, updatedYear);
     	}
 
     	function input2_input_handler() {
-    		updatePercapita = this.value;
-    		$$invalidate(2, updatePercapita);
+    		updatedPercapita = this.value;
+    		$$invalidate(2, updatedPercapita);
     	}
 
     	function input3_input_handler() {
-    		updateCurrency = this.value;
-    		$$invalidate(3, updateCurrency);
+    		updatedCurrency = this.value;
+    		$$invalidate(3, updatedCurrency);
     	}
 
     	function input4_input_handler() {
-    		updateCurrentPrices = this.value;
-    		$$invalidate(4, updateCurrentPrices);
+    		updatedCurrentPrices = this.value;
+    		$$invalidate(4, updatedCurrentPrices);
     	}
+
+    	$$self.$$set = $$props => {
+    		if ('params' in $$props) $$invalidate(7, params = $$props.params);
+    	};
 
     	$$self.$capture_state = () => ({
     		onMount,
@@ -5383,21 +6080,22 @@ var app = (function () {
     		Button,
     		economy,
     		updatedCountry,
-    		updateYear,
-    		updatePercapita,
-    		updateCurrency,
-    		updateCurrentPrices,
-    		getEconomy
+    		updatedYear,
+    		updatedPercapita,
+    		updatedCurrency,
+    		updatedCurrentPrices,
+    		getEconomy,
+    		EditEntry
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('params' in $$props) $$invalidate(6, params = $$props.params);
+    		if ('params' in $$props) $$invalidate(7, params = $$props.params);
     		if ('economy' in $$props) $$invalidate(5, economy = $$props.economy);
     		if ('updatedCountry' in $$props) $$invalidate(0, updatedCountry = $$props.updatedCountry);
-    		if ('updateYear' in $$props) $$invalidate(1, updateYear = $$props.updateYear);
-    		if ('updatePercapita' in $$props) $$invalidate(2, updatePercapita = $$props.updatePercapita);
-    		if ('updateCurrency' in $$props) $$invalidate(3, updateCurrency = $$props.updateCurrency);
-    		if ('updateCurrentPrices' in $$props) $$invalidate(4, updateCurrentPrices = $$props.updateCurrentPrices);
+    		if ('updatedYear' in $$props) $$invalidate(1, updatedYear = $$props.updatedYear);
+    		if ('updatedPercapita' in $$props) $$invalidate(2, updatedPercapita = $$props.updatedPercapita);
+    		if ('updatedCurrency' in $$props) $$invalidate(3, updatedCurrency = $$props.updatedCurrency);
+    		if ('updatedCurrentPrices' in $$props) $$invalidate(4, updatedCurrentPrices = $$props.updatedCurrentPrices);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -5406,11 +6104,12 @@ var app = (function () {
 
     	return [
     		updatedCountry,
-    		updateYear,
-    		updatePercapita,
-    		updateCurrency,
-    		updateCurrentPrices,
+    		updatedYear,
+    		updatedPercapita,
+    		updatedCurrency,
+    		updatedCurrentPrices,
     		economy,
+    		EditEntry,
     		params,
     		input0_input_handler,
     		input1_input_handler,
@@ -5423,7 +6122,7 @@ var app = (function () {
     class EditEconomies extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {});
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, { params: 7 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -5431,6 +6130,14 @@ var app = (function () {
     			options,
     			id: create_fragment$1.name
     		});
+    	}
+
+    	get params() {
+    		throw new Error("<EditEconomies>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set params(value) {
+    		throw new Error("<EditEconomies>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
 
