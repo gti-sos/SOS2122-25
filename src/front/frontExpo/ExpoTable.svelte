@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-		import Table from 'C:/Users/adria/SOS/SOS2122-25/node_modules/sveltestrap/src/Table.svelte';
+		import Table from 'SOS2122-25/node_modules/sveltestrap/src/Table.svelte';
 		import Button from 'sveltestrap/src/Button.svelte';
 	
 
