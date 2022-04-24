@@ -30,27 +30,30 @@
         }
     }
 
-    async function EditEntry(){
-        console.log("Updating entry...."+updatedCountry);
-        const res = await fetch("/api/v1/economies/eeuu",
-			{
-				method: "PUT",
-				body: JSON.stringify({
-                    country: updatedCountry,
-                    year: updatedYear,
-                    percapita: updatedPercapita,
-                    currency: updatedCurrency,
-                    currentprices: updatedCurrentPrices
-                }),
-				headers: {
-					"Content-Type": "application/json"
-				}
-			}).then(function (res){
-				window.alert("Actualizado con éxito");
-			});
+    async function updateEconomy(){
+		console.log("Updating country...." + JSON.stringify(params.country));
+		const res = await fetch("/api/v1/inequality-stats/" + params.country + "/" + params.year,{
+			method: "PUT",
+			body: JSON.stringify({
+                country : params.country,
+                year : params.year,
+                percapita : updatedPercapita,
+                currency : updatedCurrency,
+                currentprices : updatedCurrentPrices}),
+			headers: {
+				"Content-Type": "application/json"
+			}
+		}).then(function (res) {
+            getPais();
             
-            
-    }
+            if(res.status==200){
+                window.alert("El pais se ha modificado correctamente");
+            }else if(res.status == 400){
+                window.alert("ERROR No se introdujeron bien los datos");
+                errorMSG = 400;
+            }
+		});
+	}
 </script>
 
 <main>
@@ -78,7 +81,7 @@
                         <td><input bind:value="{updatedPercapita}"></td>
                         <td><input bind:value="{updatedCurrency}"></td>
                         <td><input bind:value="{updatedCurrentPrices}"></td>
-                        <td><Button outline color="primary" on:click="{EditEntry}">
+                        <td><Button outline color="primary" on:click="{updateEconomy}">
                             Editar
                             </Button>
                         </td>

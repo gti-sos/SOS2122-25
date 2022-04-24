@@ -19,7 +19,7 @@
     <h3>FRONT-END:</h3>
     <p>- <a href="#/esco-stats">https://sos2122-25.herokuapp.com/#/esco-stats </a>(developed by <a href="https://github.com/AngelSM11">Ángel Simón Mesa</a>)</p>
 	<p>- <a href="#/expo-stats">https://sos2122-25.herokuapp.com/#/expo-stats </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
-
+	<p>- <a href="#/expo-stats">https://sos2122-25.herokuapp.com/#/economiesTable </a>(developed by <a href="https://github.com/damiangc99">Damián González Carrasco</a>)</p>
 </main>
 <style>
 	main {
