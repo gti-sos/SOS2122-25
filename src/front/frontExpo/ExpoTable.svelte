@@ -17,13 +17,13 @@
 	let from = "";
 	let to = "";
 	let offset = 0;
-	let limit = 10;
+	let page = 1;
 	let maxPages = 0;
     let numPage = 0;
     let year1 = "";
+    let totaldata=11;
 
 	let loading = true;
-	let p1;
 
 	onMount(getexpo);
 
@@ -110,7 +110,7 @@
             page-=5; 
         } else page = 1
         console.log("Charging page... Listing since: "+page);
-        const res = await fetch("/api/v2/coal-stats?limit=10&offset="+(-1+page));
+        const res = await fetch("/api/v1/expo?limit=10&offset="+(-1+page));
         
         if (totaldata == 0){
             console.log("ERROR Data was not erased");
@@ -137,7 +137,7 @@
         numPage = Math.round(page/10);
         
         console.log("Charging page... Listing since: "+page);
-        const res = await fetch("/api/v2/coal-stats?limit=10&offset="+(-1+page));
+        const res = await fetch("/api/v1/expo?limit=10&offset="+(-1+page));
 
         if (totaldata == 0){
             console.log("ERROR Data was not erased");
