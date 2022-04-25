@@ -32,7 +32,7 @@
 
     async function updateEconomy(){
 		console.log("Updating country...." + JSON.stringify(params.country));
-		const res = await fetch("/api/v1/inequality-stats/" + params.country + "/" + params.year,{
+		const res = await fetch("/api/v1/economies/" + params.country,{
 			method: "PUT",
 			body: JSON.stringify({
                 country : params.country,
@@ -44,14 +44,7 @@
 				"Content-Type": "application/json"
 			}
 		}).then(function (res) {
-            getPais();
-            
-            if(res.status==200){
-                window.alert("El pais se ha modificado correctamente");
-            }else if(res.status == 400){
-                window.alert("ERROR No se introdujeron bien los datos");
-                errorMSG = 400;
-            }
+            getEconomy();
 		});
 	}
 </script>
@@ -76,12 +69,12 @@
             </thead>
             <tbody>
                     <tr>
-                        <td><input bind:value="{updatedCountry}"></td>
-                        <td><input bind:value="{updatedYear}"></td>
+                        <td>{updatedCountry}</td>
+                        <td>{updatedYear}</td>
                         <td><input bind:value="{updatedPercapita}"></td>
                         <td><input bind:value="{updatedCurrency}"></td>
                         <td><input bind:value="{updatedCurrentPrices}"></td>
-                        <td><Button outline color="primary" on:click="{updateEconomy}">
+                        <td><Button outline color="primary" on:click={updateEconomy}>
                             Editar
                             </Button>
                         </td>

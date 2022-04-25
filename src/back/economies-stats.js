@@ -35,6 +35,20 @@ var economies=[
         currency: 14787.768,
         currentprices:20939
     },
+    {
+        country: "marroco",
+        year: 2019,
+        percapita: -332,
+        currency: 1668.3,
+        currentprices:6484
+    },
+    {
+        country: "greece",
+        year: 2019,
+        percapita: 91,
+        currency: 147.768,
+        currentprices:1683
+    }
  
 ];
 
@@ -66,6 +80,20 @@ module.exports.register = (app) =>{
                     percapita: -2391,
                     currency: 14787.768,
                     currentprices:20939
+                },
+                {
+                    country: "marroco",
+                    year: 2019,
+                    percapita: -332,
+                    currency: 1668.3,
+                    currentprices:6484
+                },
+                {
+                    country: "greece",
+                    year: 2019,
+                    percapita: 91,
+                    currency: 147.768,
+                    currentprices:1683
                 }
             ]
         }
@@ -215,38 +243,41 @@ module.exports.register = (app) =>{
     app.post(BASE_API_URL_ECO+"/:country",(req, res)=>{
         res.sendStatus(405,"METHOD NOT ALLOWED");
     })
+
     
-    
-    app.put(BASE_API_URL_ECO,(req, res)=>{
-        
-        res.sendStatus(405,"METHOD NOT ALLOWED");
-    })
-    
-    
-    app.put(BASE_API_URL_ECO+"/:country/:year",(req, res)=>{
-        
-        if(comprobar_body(req)){
-            res.sendStatus(400,"BAD REQUEST - Parametros incorrectos");
+    app.put(BASE_API_URL_ECO +"/:country/:year", (req,res) => {
+
+        //comprobamos que los parametros del req existan
+        if(
+            Object.keys(req.body).length != 5 ||
+            req.body.country == null ||
+            req.body.year == null ||
+            req.body.percapita == null ||
+            req.body.currency == null ||
+            req.body.currentprices == null
+        ){ 
+            res.sendStatus(400,"BAD REQUEST");  
         }else{
-            var country = req.params.country;
-            var year = req.params.year;
-            var body = req.body;  
-            var index = economies.findIndex((reg) =>{
-                return (reg.country == country && reg.year == year)
+            existsEconomy = economies.filter((stat)=>{
+                return (
+                    stat.country == req.params.country && 
+                    stat.year == req.params.year
+                    );
             })
-            if(index == null){
-                res.sendStatus(404,"NOT FOUND");
-            }else if(country != body.country || year != body.year){
-                res.sendStatus(400,"BAD REQUEST");
-            }else{
-                var  update_economies = {...body};
-                economies[index] = economies;
-            
-                res.sendStatus(200,"UPDATED");
-            }
-        }
     
-    })
+            var indice = economies.indexOf(existsEconomy[0]);
+    
+            if(existsEconomy.length == 0){
+                res.sendStatus(404,"NOT FOUND");
+            }
+            else{
+                economies[indice].currency = req.body.currency;
+                economies[indice].currentprices = req.body.currentprices;
+                economies[indice].percapita = req.body.percapita;
+                res.sendStatus(200,"OK");
+            }
+        }   
+        });
     
     
     app.delete(BASE_API_URL_ECO,(req, res)=>{
@@ -264,22 +295,86 @@ module.exports.register = (app) =>{
     
     });
 
-    function paginationMaker(req, stats) {
+    function pagination(req, lista) {
         var res = [];
-        const offset = req.query.offset;
         const limit = req.query.limit;
+        const offset = req.query.offset;
     
-        if(limit < 0 || offset < 0 || offset > economies.length) {
-            console.error(`Error in pagination, you have exceded limits`);
-            res.push("ERROR");
-            return res;	
+        if (limit < 1 || offset < 0 || offset > lista.length) {
+          res.push("ERROR EN PARAMETROS LIMIT Y/O OFFSET");
+          return res;
         }
-        const startIndex = offset;
-        const endIndex = startIndex + limit;
     
-        res = economies.slice(startIndex, endIndex);
+        res = lista.slice(offset, parseInt(limit) + parseInt(offset));
         return res;
-    }
+      }
+    
+      //GETs
+    
+      //GET Global y años
+    
+      app.get(BASE_API_URL_ECO, (req, res) => {
+        var year = req.query.year;
+        var from = req.query.from;
+        var to = req.query.to;
+    
+        //Comprobaciones
+        //Comprobacion query
+    
+        for (var i = 0; i < Object.keys(req.query).length; i++) {
+          var element = Object.keys(req.query)[i];
+          if (
+            element != "year" &&
+            element != "from" &&
+            element != "to" &&
+            element != "limit" &&
+            element != "offset"
+          ) {
+            res.sendStatus(400, "BAD REQUEST");
+          }
+        }
+    
+        //Comprobacion from menor que to
+    
+        if (from > to) {
+          res.sendStatus(400, "BAD REQUEST");
+        }
+    
+        db.find({}, function (err, filteredList) {
+    
+          // Apartado para búsqueda por año
+    
+          if (year != null) {
+            var filteredList = economies.filter((reg) => {
+              return reg.year == year;
+            });
+            if (filteredList == 0) {
+              res.sendStatus(404, "NOT FOUND");
+            }
+          }
+    
+          // Apartado para from y to
+    
+          if (from != null && to != null) {
+            filteredList = filteredList.filter((reg) => {
+              return reg.year >= from && reg.year <= to;
+            });
+    
+            if (filteredList == 0) {
+              res.sendStatus(404, "NOT FOUND");
+            }
+          }
+          // RESULTADO
+    
+          if (req.query.limit != undefined || req.query.offset != undefined) {
+            filteredList = pagination(req, filteredList);
+          }
+          filteredList.forEach((element) => {
+            delete element._id;
+          });
+          res.send(JSON.stringify(filteredList, null, 2));
+        });
+      });
     
     function comprobar_body(req){
         return (req.body.country == null |

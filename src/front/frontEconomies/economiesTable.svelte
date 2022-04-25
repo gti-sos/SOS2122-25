@@ -13,6 +13,11 @@
 		
 	};
 
+	let Ucountry = "";
+	let Uyear = "";
+	let Ufrom = "";
+	let Uto = "";
+    let coefficients=""
 
 	let from = null;
 	let to = null;
@@ -59,7 +64,7 @@
 		console.log("DONE");
 	}
 
-	async function busqueda (Ucountry,Uyear,Ufrom,Uto,coefficients,educations,lifes){
+	async function pagination (Ufrom,Uto,Ucountry,Uyear){
 		if(typeof Ucountry=='undefined'){
 			Ucountry="";
 		}
@@ -72,24 +77,23 @@
         if(typeof Uto=='undefined'){
 			Uto="";
 		}
-
-        
-		const res = await fetch("/api/v1/economies?country="+Ucountry+"&year="+Uyear+"&from="+Ufrom+"&to="+Uto)
+		if(typeof coefficients=='undefined'){
+			coefficients="";
+		}
+        // /api/v1/economies?from=2019&to=2020
+		const res = await fetch("/api/v1/economies?from="+Ufrom+"&to="+Uto)
 		if (res.ok){
 			const json = await res.json();
-			inequality_stats = json;
-			console.log("Found "+ inequality_stats.length + " countries");
+			economies = json;
+			console.log("Found "+ economies.length + " countries");
 			
-			if(inequality_stats.length==1){
-				exitoMsg = "Se ha encontrado " + inequality_stats.length + " paises";
-			}else{
-				exitoMsg = "Se han encontrado " + inequality_stats.length + " paises";
-			}
 		}else if (res.status==404){
 			window.alert("No hay países con los parámetros introducidos");
 			console.log("ERROR");
 		}
 	}
+
+
     async function getNextPage() {
         console.log(totaldata);
         if (page+10 > totaldata) {
@@ -110,8 +114,8 @@
         }else if (res.ok) {
             console.log("Ok:");
             const json = await res.json();
-            inequality_stats = json;
-            console.log("Received " + inequality_stats.length + " resources.");
+            economies = json;
+            console.log("Received " + economies.length + " resources.");
         } else {
             errorMSG= res.status + ": " + res.statusText;
             console.log("ERROR!");
@@ -135,8 +139,8 @@
         }else if (res.ok) {
             console.log("Ok:");
             const json = await res.json();
-            inequality_stats = json;
-            console.log("Received "+inequality_stats.length+" resources.");
+            economies = json;
+            console.log("Received "+economies.length+" resources.");
         } else {
             errorMSG= res.status+": "+res.statusText;
             console.log("ERROR!");
@@ -194,9 +198,9 @@ loading
 		</thead>
 		<tbody>
 			<tr>
-				<td><input bind:value="{from}"></td>
-				<td><input bind:value="{to}"></td>
-				<td><Button outline color="primary" on:click="{getEconomies}">Buscar</Button></td>
+				<td><input bind:value="{Ufrom}"></td>
+				<td><input bind:value="{Uto}"></td>
+				<td><Button outline color="primary" on:click="{pagination (Ufrom,Uto,Ucountry, Uyear)}">Buscar</Button></td>
 				<td align="center"><Button outline color="info" on:click="{()=>{
 					from = null;
 					to = null;
@@ -214,9 +218,6 @@ loading
 <Button id ="siguientebtn" on:click="{getNextPage}">
 	Siguiente
 </Button>
-		<div style="text-align:center;padding-bottom: 1%">
-			<Button outline color="primary" on:click="{busqueda (economies.country, economies.year,from,to,)}">Buscar</Button>
-		</div>
 	<Table bordered>
 		<thead>
 			<tr>
