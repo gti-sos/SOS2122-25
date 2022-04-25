@@ -59,6 +59,90 @@
 		console.log("DONE");
 	}
 
+	async function busqueda (Ucountry,Uyear,Ufrom,Uto,coefficients,educations,lifes){
+		if(typeof Ucountry=='undefined'){
+			Ucountry="";
+		}
+		if(typeof Uyear=='undefined'){
+			Uyear="";
+		}
+        if(typeof Ufrom=='undefined'){
+			Ufrom="";
+		}
+        if(typeof Uto=='undefined'){
+			Uto="";
+		}
+
+        
+		const res = await fetch("/api/v1/economies?country="+Ucountry+"&year="+Uyear+"&from="+Ufrom+"&to="+Uto)
+		if (res.ok){
+			const json = await res.json();
+			inequality_stats = json;
+			console.log("Found "+ inequality_stats.length + " countries");
+			
+			if(inequality_stats.length==1){
+				exitoMsg = "Se ha encontrado " + inequality_stats.length + " paises";
+			}else{
+				exitoMsg = "Se han encontrado " + inequality_stats.length + " paises";
+			}
+		}else if (res.status==404){
+			window.alert("No hay países con los parámetros introducidos");
+			console.log("ERROR");
+		}
+	}
+    async function getNextPage() {
+        console.log(totaldata);
+        if (page+10 > totaldata) {
+            page = 1
+        } else {
+            page+=10
+        }
+        
+        visible = true;
+        console.log("Charging page... Listing since: "+page);
+        const res = await fetch("/api/v1/economies?limit=10&offset="+(-1+page));
+        color = "success";
+        errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
+        if (totaldata == 0){
+            console.log("ERROR Data was not erased");
+            color = "danger";
+            errorMSG= "¡No hay datos!";
+        }else if (res.ok) {
+            console.log("Ok:");
+            const json = await res.json();
+            inequality_stats = json;
+            console.log("Received " + inequality_stats.length + " resources.");
+        } else {
+            errorMSG= res.status + ": " + res.statusText;
+            console.log("ERROR!");
+        }
+    }
+     
+    async function getPreviewPage() {
+        console.log(totaldata);
+        if (page-10 > 1) {
+            page-=5; 
+        } else page = 1
+        visible = true;
+        console.log("Charging page... Listing since: "+page);
+        const res = await fetch("/api/v1/economies?limit=10&offset="+(-1+page));
+        color = "success";
+        errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
+        if (totaldata == 0){
+            console.log("ERROR Data was not erased");
+            color = "danger";
+            errorMSG= "¡No hay datos!";
+        }else if (res.ok) {
+            console.log("Ok:");
+            const json = await res.json();
+            inequality_stats = json;
+            console.log("Received "+inequality_stats.length+" resources.");
+        } else {
+            errorMSG= res.status+": "+res.statusText;
+            console.log("ERROR!");
+        }
+    }
+
 
 	async function BorrarEconomy(countryDelete, yearDelete){
         console.log("Deleting entry....");
@@ -122,8 +206,17 @@ loading
 					</Button>
 			</tr>
 		</tbody>
+		
 	</Table>
-
+<Button id ="atrasbtn" on:click="{getPreviewPage}">
+	Atrás
+</Button>
+<Button id ="siguientebtn" on:click="{getNextPage}">
+	Siguiente
+</Button>
+		<div style="text-align:center;padding-bottom: 1%">
+			<Button outline color="primary" on:click="{busqueda (economies.country, economies.year,from,to,)}">Buscar</Button>
+		</div>
 	<Table bordered>
 		<thead>
 			<tr>
@@ -156,7 +249,7 @@ loading
 					<td>{economy.currency}</td>
 					<td>{economy.currentprices}</td>
 					<td><Button outline color="warning" on:click={function (){
-						window.location.href ="economiesTable/:country"
+						window.location.href ="#/economiesTable/"+economy.country
 					}}>
 						Editar
 					</Button>
