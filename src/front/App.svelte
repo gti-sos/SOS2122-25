@@ -5,7 +5,7 @@
 	import Editesco from "./frontEsco/Editesco.svelte";
 	import ExpoTable from './frontExpo/ExpoTable.svelte';
 	import EditExpoTable from './frontExpo/editExpoTable.svelte';
-	import EconomiesTable from './frontEconomies/economiesTable.svelte'
+	import EconomiesTable from './frontEconomies/economiesTable.svelte';
 	import edit from "./frontEconomies/editEconomies.svelte";
 
 	//export let name;
