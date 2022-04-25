@@ -18,12 +18,17 @@
 	let Ufrom = "";
 	let Uto = "";
     let coefficients=""
+	let color = "danger";
+	let errorMSG = null;
 
 	let from = null;
 	let to = null;
 	let offset = 0;
 	let limit = 10;
 	let maxPages = 0;
+	let totaldata=11;
+	let page=1;
+	let visible = false;
 
 	let loading = true;
 	let p1;
@@ -84,7 +89,7 @@
      }
     //DELETE SPECIFIC
     async function deleteData(name, year) {
-        const res = await fetch("/api/v1/inequality-stats/" + name + "/" + year, {
+        const res = await fetch("/api/v1/economies/" + name + "/" + year, {
             method: "DELETE"
         }).then(function (res) {
             visible = true;
@@ -107,7 +112,7 @@
     async function deleteALL() {
 		console.log("Deleting inequality data...");
 			console.log("Deleting all unemployment data...");
-			const res = await fetch("/api/v1/inequality-stats/", {
+			const res = await fetch("/api/v1/economies/", {
 				method: "DELETE"
 			}).then(function (res) {
 				if(res.ok){
