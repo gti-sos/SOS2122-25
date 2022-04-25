@@ -2,6 +2,8 @@
     import {onMount} from 'svelte';
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte'; 
+	import { Form } from 'sveltestrap';
+	
 	let esco=[];
     let newesco={
         country: "",
@@ -10,6 +12,41 @@
         esco_men:"",
         esco_wom:""
     }
+
+	let Ucountry = "";
+	let Uyear = "";
+	let Ufrom = "";
+	let Uto = "";
+
+	async function pagination (Ufrom,Uto,Ucountry,Uyear){
+		if(typeof Ucountry=='undefined'){
+			Ucountry="";
+		}
+		if(typeof Uyear=='undefined'){
+			Uyear="";
+		}
+        if(typeof Ufrom=='undefined'){
+			Ufrom="";
+		}
+        if(typeof Uto=='undefined'){
+			Uto="";
+		}
+		if(typeof coefficients=='undefined'){
+			coefficients="";
+		}
+        
+		const res = await fetch("/api/v1/esco?from="+Ufrom+"&to="+Uto)
+		if (res.ok){
+			const json = await res.json();
+			economies = json;
+			console.log("Found "+ economies.length + " countries");
+			
+		}else if (res.status==404){
+			window.alert("No hay países con los parámetros introducidos");
+			console.log("ERROR");
+		}
+	}
+
 	onMount(getesco);
 	async function getesco(){
 		console.log("fetching esco ....");
@@ -36,8 +73,8 @@
     }
 	async function Borraresco(country,year){
         console.log("Deleting esco....");
-        const res = await fetch("/api/v1/esco/" + country +"/" + year,
-			{
+		const res = await fetch("/api/v1/economies/"+countryDelete+"/"+yearDelete,
+		{
 				method: "DELETE"
 			}).then(function (res){
 				getesco();
@@ -71,6 +108,28 @@
     {#await esco}
 	loading
 	{:then esco}
+	<Table bordered>
+		<thead>
+			<tr>
+				<th>Fecha Inicio</th>
+                <th>Fecha Fin</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input bind:value="{Ufrom}"></td>
+				<td><input bind:value="{Uto}"></td>
+				<td><Button outline color="primary" on:click="{pagination (Ufrom,Uto,Ucountry, Uyear)}">Buscar</Button></td>
+				<td align="center"><Button outline color="info" on:click="{()=>{
+					Ufrom = null;
+					Uto = null;
+					getesco();
+				}}">
+					Limpiar Búsqueda
+					</Button>
+			</tr>
+		</tbody>
+	</Table>
 	<Table bordered>
 		<thead>
 			<tr>
