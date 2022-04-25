@@ -31,22 +31,31 @@
     }
 
     async function updateEconomy(){
-		console.log("Updating country...." + JSON.stringify(params.country));
-		const res = await fetch("/api/v1/economies/" + params.country,{
-			method: "PUT",
-			body: JSON.stringify({
-                country : params.country,
-                year : params.year,
-                percapita : updatedPercapita,
+        console.log("Updating..." + params.country);
+        const res = await fetch("/api/v1/economies/"+params.country+"/"+economy.year,
+
+        {
+            method: "PUT",
+            body : JSON.stringify({
+                country:params.country,
+                year : economy.year,
                 currency : updatedCurrency,
-                currentprices : updatedCurrentPrices}),
-			headers: {
-				"Content-Type": "application/json"
-			}
-		}).then(function (res) {
-            getEconomy();
-		});
-	}
+                currentprices : updatedCurrentPrices,
+                percapita:updatedPercapita
+            }),
+            headers:{
+                "Content-Type": "application/json"
+            }
+        }).then(function(res){
+            if(res.ok){
+                window.alert(`Modificado correctamente, con los nuevos datos : ${updatedCurrency},${updatedCurrentPrices},${updatedPercapita}`)
+                getEconomy();
+            }
+            else{
+                window.alert("ERROR");
+            }
+        })
+    }
 </script>
 
 <main>
