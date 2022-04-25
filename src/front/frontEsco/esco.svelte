@@ -3,7 +3,7 @@
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte'; 
 	import { Form } from 'sveltestrap';
-	
+
 	let esco=[];
     let newesco={
         country: "",
@@ -17,6 +17,16 @@
 	let Uyear = "";
 	let Ufrom = "";
 	let Uto = "";
+    let coefficients=""
+
+	let from = null;
+	let to = null;
+	let offset = 0;
+	let limit = 10;
+	let maxPages = 0;
+
+	let loading = true;
+	let p1;
 
 	async function pagination (Ufrom,Uto,Ucountry,Uyear){
 		if(typeof Ucountry=='undefined'){
@@ -38,8 +48,8 @@
 		const res = await fetch("/api/v1/esco?from="+Ufrom+"&to="+Uto)
 		if (res.ok){
 			const json = await res.json();
-			economies = json;
-			console.log("Found "+ economies.length + " countries");
+			esco = json;
+			console.log("Found "+ esco.length + " countries");
 			
 		}else if (res.status==404){
 			window.alert("No hay países con los parámetros introducidos");
@@ -47,7 +57,61 @@
 		}
 	}
 
+	async function getNextPage() {
+        console.log(totaldata);
+        if (page+10 > totaldata) {
+            page = 1
+        } else {
+            page+=10
+        }
+        
+        visible = true;
+        console.log("Charging page... Listing since: "+page);
+        const res = await fetch("/api/v1/esco?limit=10&offset="+(-1+page));
+        color = "success";
+        errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
+        if (totaldata == 0){
+            console.log("ERROR Data was not erased");
+            color = "danger";
+            errorMSG= "¡No hay datos!";
+        }else if (res.ok) {
+            console.log("Ok:");
+            const json = await res.json();
+            esco = json;
+            console.log("Received " + esco.length + " resources.");
+        } else {
+            errorMSG= res.status + ": " + res.statusText;
+            console.log("ERROR!");
+        }
+    }
+     
+    async function getPreviewPage() {
+        console.log(totaldata);
+        if (page-10 > 1) {
+            page-=5; 
+        } else page = 1
+        visible = true;
+        console.log("Charging page... Listing since: "+page);
+        const res = await fetch("/api/v1/esco?limit=10&offset="+(-1+page));
+        color = "success";
+        errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
+        if (totaldata == 0){
+            console.log("ERROR Data was not erased");
+            color = "danger";
+            errorMSG= "¡No hay datos!";
+        }else if (res.ok) {
+            console.log("Ok:");
+            const json = await res.json();
+            esco = json;
+            console.log("Received "+esco.length+" resources.");
+        } else {
+            errorMSG= res.status+": "+res.statusText;
+            console.log("ERROR!");
+        }
+    }
+
 	onMount(getesco);
+
 	async function getesco(){
 		console.log("fetching esco ....");
 		const res= await fetch("/api/v1/esco");
@@ -73,7 +137,7 @@
     }
 	async function Borraresco(country,year){
         console.log("Deleting esco....");
-		const res = await fetch("/api/v1/economies/"+countryDelete+"/"+yearDelete,
+		const res = await fetch("/api/v1/esco/"+countryDelete+"/"+yearDelete,
 		{
 				method: "DELETE"
 			}).then(function (res){
@@ -81,6 +145,7 @@
 				window.alert("Entrada eliminada con éxito");
 			});
     }
+
 	async function Borrarescos(){
         console.log("Deleting escos....");
         const res = await fetch("/api/v1/esco/",
@@ -130,6 +195,12 @@
 			</tr>
 		</tbody>
 	</Table>
+	<Button id ="atrasbtn" on:click="{getPreviewPage}">
+		Atrás
+	</Button>
+	<Button id ="siguientebtn" on:click="{getNextPage}">
+		Siguiente
+	</Button>
 	<Table bordered>
 		<thead>
 			<tr>
