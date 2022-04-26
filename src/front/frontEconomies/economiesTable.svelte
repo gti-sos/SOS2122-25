@@ -80,7 +80,7 @@
                      errorMSG = 400;
                  }
                  else if(res.status == 409){
-                     //window.alert("Ya existe ese recurso en la base de datos");
+                     window.alert("Ya existe ese recurso en la base de datos");
                      console.log("ERROR There is already a data with that country and year in the database");
                      errorMSG = 409;
                  }
