@@ -17,7 +17,7 @@
 
     async function getEconomy(){
         console.log("fetching ...");
-        const res =await fetch("/api/v1/economies/"+params.country);
+        const res =await fetch("/api/v2/economies/"+params.country+"/2019");
         if(res.ok){
             const data = await res.json();
             economy = data;
@@ -32,11 +32,11 @@
 
     async function updateEconomy(){
 		console.log("Updating country...." + JSON.stringify(params.country));
-		const res = await fetch("/api/v1/economies/" + params.country,{
+		const res = await fetch("/api/v2/economies/" + params.country+"/"+updatedYear,{
 			method: "PUT",
 			body: JSON.stringify({
                 country : params.country,
-                year : params.year,
+                year : updatedYear,
                 percapita : updatedPercapita,
                 currency : updatedCurrency,
                 currentprices : updatedCurrentPrices}),

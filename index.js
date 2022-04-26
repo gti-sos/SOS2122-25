@@ -1,19 +1,22 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
+const path = require("path");
 app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
-const economies_stats_API = require("./src/back/economies-stats.js");
+const economies_stats_API = require("./src/back/economies-stats-v2.js");
 const esco_stats_API = require("./src/back/esco-stats.js");
 const expo_stats_API = require("./src/back/expo-stats.js");
 
+var Datastore = require("nedb");
 
-const BASE_API_URL = "/api/v1/";
+ECO_DB = new Datastore();
 
 
 
-economies_stats_API.register(app);
+
+economies_stats_API.register(app,ECO_DB);
 esco_stats_API.register(app);
 expo_stats_API.register(app);
 

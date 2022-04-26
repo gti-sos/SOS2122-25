@@ -37,7 +37,7 @@
 
 	async function getEconomies(){
 		console.log("fetching ...");
-		const res =await fetch("/api/v1/economies");
+		const res =await fetch("/api/v2/economies");
 		if(res.ok){
 			const data = await res.json();
 			economies = data;
@@ -61,7 +61,7 @@
              alert("Debes insertar el nombre del país y el año.");
          }
          else{
-             const res = await fetch("/api/v1/economies",{
+             const res = await fetch("/api/v2/economies",{
              method:"POST",
              body:JSON.stringify(newEconomies),
              headers:{
@@ -89,7 +89,7 @@
      }
     //DELETE SPECIFIC
     async function deleteData(name, year) {
-        const res = await fetch("/api/v1/economies/" + name + "/" + year, {
+        const res = await fetch("/api/v2/economies/" + name + "/" + year, {
             method: "DELETE"
         }).then(function (res) {
             visible = true;
@@ -112,7 +112,7 @@
     async function deleteALL() {
 		console.log("Deleting inequality data...");
 			console.log("Deleting all unemployment data...");
-			const res = await fetch("/api/v1/economies/", {
+			const res = await fetch("/api/v2/economies/", {
 				method: "DELETE"
 			}).then(function (res) {
 				if(res.ok){
@@ -147,7 +147,7 @@
 			coefficients="";
 		}
         // /api/v1/economies?from=2019&to=2020
-		const res = await fetch("/api/v1/economies?from="+Ufrom+"&to="+Uto)
+		const res = await fetch("/api/v2/economies?from="+Ufrom+"&to="+Uto)
 		if (res.ok){
 			const json = await res.json();
 			economies = json;
@@ -171,7 +171,7 @@
         
         visible = true;
         console.log("Charging page... Listing since: "+page);
-        const res = await fetch("/api/v1/economies?limit=10&offset="+(-1+page));
+        const res = await fetch("/api/v2/economies?limit=10&offset="+(-1+page));
         color = "success";
         errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
         if (totaldata == 0){
@@ -196,7 +196,7 @@
         } else page = 1
         visible = true;
         console.log("Charging page... Listing since: "+page);
-        const res = await fetch("/api/v1/economies?limit=10&offset="+(-1+page));
+        const res = await fetch("/api/v2/economies?limit=10&offset="+(-1+page));
         color = "success";
         errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
         if (totaldata == 0){
@@ -217,7 +217,7 @@
 
 	async function BorrarEconomy(countryDelete, yearDelete){
         console.log("Deleting entry....");
-        const res = await fetch("/api/v1/economies/"+countryDelete+"/"+yearDelete,
+        const res = await fetch("/api/v2/economies/"+countryDelete+"/"+yearDelete,
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -228,7 +228,7 @@
 
 	async function BorrarEconomies(){
         console.log("Deleting economies....");
-        const res = await fetch("/api/v1/economies",
+        const res = await fetch("/api/v2/economies",
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -240,7 +240,7 @@
 
 	async function LoadEconomies(){
         console.log("Loading economies....");
-        const res = await fetch("/api/v1/economies/loadInitialData",
+        const res = await fetch("/api/v2/economies/loadInitialData",
 			{
 				method: "GET"
 			}).then(function (res){
