@@ -2,342 +2,317 @@
     import { onMount } from 'svelte';
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte';
-
-	let expos=[];
-	let newExpo= {
-		country: "",
-		year: "",
-		expo_tec: "",
-		expo_m: "",
-		expo_bys:""
-		
-	};
-
-	let Ucountry = "";
-	let Uyear = "";
-	let Ufrom = "";
-	let Uto = "";
-    let coefficients=""
-	let color = "danger";
-	let errorMSG = null;
-
+	import { Alert } from 'sveltestrap';
+    let entries = [];
 	let from = null;
 	let to = null;
 	let offset = 0;
 	let limit = 10;
 	let maxPages = 0;
-	let totaldata=11;
-	let page=1;
-	let visible = false;
-
-	let loading = true;
-	let p1;
-
-	onMount(getExpo);
-
-	async function getExpo(){
-		console.log("fetching ...");
-		const res =await fetch("/api/v1/expo");
-		if(res.ok){
-			const data = await res.json();
-			expos = data;
-			console.log("Received countries: "+expos.length);
+    let newExpo = {
+        country : "",
+        year : "",
+        expo_tec : "",
+        expo_m : "",
+        expo_bys : ""
+    }
+    let checkMSG = "";
+    let visible = false;
+    let color = "danger";
+    let page = 1;
+    let totaldata=6;
+    let errorC=0;
+    onMount(getEntries);
+    async function getEntries(){
+        console.log("Fetching entries....");
+		let cadena = `/api/v1/expo?limit=${limit}&&offset=${offset*10}&&`;
+		if (from != null) {
+			cadena = cadena + `from=${from}&&`
 		}
-	}
-
-	async function maxPagesFunction(total){
-		maxPages = Math.floor(total/10);
-		if(maxPages === total/10){
-			maxPages = maxPages-1;
+		if (to != null) {
+			cadena = cadena + `to=${to}&&`
 		}
-	}
-
-
-	async function insertExpos(){
-		 
-         console.log("Inserting inequality data...");
-         //Comprobamos que el año y la fecha no estén vacíos, el string vacio no es null
-         if (newExpo.country == "" || newExpo.country == null || newExpo.year == "" || newExpo.year == null) {
-             alert("Debes insertar el nombre del país y el año.");
-         }
-         else{
-             const res = await fetch("/api/v1/expo",{
-             method:"POST",
-             body:JSON.stringify(newExpo),
-             headers:{
-                 "Content-Type": "application/json"
-             }
-             }).then(function (res) {
-                 if(res.status == 201){
-                    getExpo();
-                     //window.alert("Se introdujo el dato");
-                     console.log("Data introduced");
-                     errorMSG = 201;
-                 }
-                 else if(res.status == 400){
-                     window.alert("No se introdujo bien el dato");
-                     console.log("ERROR Data was not correctly introduced");
-                     errorMSG = 400;
-                 }
-                 else if(res.status == 409){
-                     //window.alert("Ya existe ese recurso en la base de datos");
-                     console.log("ERROR There is already a data with that country and year in the database");
-                     errorMSG = 409;
-                 }
-             });	
-         }
-     }
-    //DELETE SPECIFIC
-    async function deleteData(name, year) {
-        const res = await fetch("/api/v1/expo/" + name + "/" + year, {
-            method: "DELETE"
-        }).then(function (res) {
+		console.log(cadena);
+        const res = await fetch(cadena); 
+        if(res.ok){
+			let cadenaPag = cadena.split(`limit=${limit}&&offset=${offset*10}`);
+			maxPagesFunction(cadenaPag[0]+cadenaPag[1]);
+            const data = await res.json();
+            entries = data;
+        }else{
+			if(res.status == "400"){
+                visible = true;
+                color = "danger";
+                checkMSG = "Comprueba los parametros de busqueda";
+			}
+			if(res.status == "405"){
+                color = "danger";
+                checkMSG = "Método no permitido";
+				
+			}
+			if(res.status == "404"){
+                visible = true;
+                color = "danger";
+                checkMSG = "Elemento no encontrado";
+				
+			}
+			if(res.status == "500"){
+                color = "danger";
+                checkMSG = "INTERNAL SERVER ERROR";
+				
+			}
+		}
+    }
+	async function insertEntry(){
+        console.log("Inserting entry...."+JSON.stringify(newExpo));
+        if(newExpo.country=='' ||newExpo.year==""){
             visible = true;
-            getData();      
-            if (res.status==200) {
-                totaldata--;
-                errorMSG = 200.2;
-                console.log("Deleted " + name);            
-            }else if (res.status==404) {
-                errorMSG = 404;
-                console.log("DATA NOT FOUND");            
-            } else {
-                //color = "danger";
-                errorMSG= res.status;// + ": " + res.statusText;
-                console.log("ERROR!");
-            }      
-        });
-    }
-    //DELETE ALL
-    async function deleteALL() {
-		console.log("Deleting inequality data...");
-			console.log("Deleting all unemployment data...");
-			const res = await fetch("/api/v1/economies/", {
-				method: "DELETE"
-			}).then(function (res) {
-				if(res.ok){
-                    totaldata = 0;
-					getData();
-                    errorMSG = 200.3;
-                    //window.alert("Datos eliminados correctamente");
-					console.log("Datos eliminados correctamente");
-                    location.reload();
-				}
-				else{
-					console.log("Ha habido un fallo. No se han eliminado los datos");
-                    errorMSG = 404.2;
-				}
-			});
-		
-	}
-	async function pagination (Ufrom,Uto,Ucountry,Uyear){
-		if(typeof Ucountry=='undefined'){
-			Ucountry="";
-		}
-		if(typeof Uyear=='undefined'){
-			Uyear="";
-		}
-        if(typeof Ufrom=='undefined'){
-			Ufrom="";
-		}
-        if(typeof Uto=='undefined'){
-			Uto="";
-		}
-		if(typeof coefficients=='undefined'){
-			coefficients="";
-		}
-        // /api/v1/economies?from=2019&to=2020
-		const res = await fetch("/api/v1/expo?from="+Ufrom+"&to="+Uto)
-		if (res.ok){
-			const json = await res.json();
-			expos = json;
-			console.log("Found "+ expos.length + " countries");
-			window.alert(expos.length + " paises encontrados");
-			
-		}else if (res.status==404){
-			window.alert("No hay países con los parámetros introducidos");
-			console.log("ERROR");
-		}
-	}
-
-
-    async function getNextPage() {
-        console.log(totaldata);
-        if (page+10 > totaldata) {
-            page = 1
-        } else {
-            page+=10
-        }
-        
-        visible = true;
-        console.log("Charging page... Listing since: "+page);
-        const res = await fetch("/api/v1/expo?limit=10&offset="+(-1+page));
-        color = "success";
-        errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
-        if (totaldata == 0){
-            console.log("ERROR Data was not erased");
+            console.log("Data introduced");
             color = "danger";
-            errorMSG= "¡No hay datos!";
-        }else if (res.ok) {
-            console.log("Ok:");
-            const json = await res.json();
-            expos = json;
-            console.log("Received " + expos.length + " resources.");
-        } else {
-            errorMSG= res.status + ": " + res.statusText;
-            console.log("ERROR!");
+            checkMSG="El campo Pais o Año estan vacíos";
+        }else{
+            const res = await fetch("/api/v1/expo",
+			{
+				method: "POST",
+				body: JSON.stringify(newExpo),
+				headers: {
+					"Content-Type": "application/json"
+				}
+			}).then(function (res){
+                        console.log("iosdhfviosdbhfvioubsdfio");
+                        if (res.status == 201){
+                            getEntries()
+                            totaldata++;
+                            visible = true;
+                            console.log("Data introduced");
+                            color = "success";
+                            checkMSG="Entrada introducida correctamente a la base de datos";
+                        }else if(res.status == 400){
+                            console.log("ERROR Data was not correctly introduced");
+                            color = "danger";
+                            checkMSG= "Los datos de la entrada no fueron introducidos correctamente";
+                        }else if(res.status == 409){
+                            console.log("ERROR There is already a data with that country and year in the database");
+                            color = "danger";
+                            checkMSG= "Ya existe una entrada en la base de datos con el pais y el año introducido";
+                }
+                                                 
+                        //setInterval("location.reload()",60000);
+                    }); 
         }
     }
-     
-    async function getPreviewPage() {
-        console.log(totaldata);
-        if (page-10 > 1) {
-            page-=5; 
-        } else page = 1
-        visible = true;
-        console.log("Charging page... Listing since: "+page);
-        const res = await fetch("/api/v1/expo?limit=10&offset="+(-1+page));
-        color = "success";
-        errorMSG= (page+5 > totaldata) ? "Mostrando elementos "+(page)+"-"+totaldata : "Mostrando elementos "+(page)+"-"+(page+9);
-        if (totaldata == 0){
-            console.log("ERROR Data was not erased");
-            color = "danger";
-            errorMSG= "¡No hay datos!";
-        }else if (res.ok) {
-            console.log("Ok:");
-            const json = await res.json();
-            expos = json;
-            console.log("Received "+expos.length+" resources.");
-        } else {
-            errorMSG= res.status+": "+res.statusText;
-            console.log("ERROR!");
-        }
-    }
-
-
-	async function BorrarExpo(countryDelete, yearDelete){
+	//Función para borrar una entrada
+	async function BorrarEntry(countryDelete, yearDelete){
         console.log("Deleting entry....");
         const res = await fetch("/api/v1/expo/"+countryDelete+"/"+yearDelete,
 			{
 				method: "DELETE"
 			}).then(function (res){
-				getExpo();
-				window.alert("Entrada eliminada con éxito");
+				
+				getEntries();
+				//Código de Entrada eliminada con éxito
+				if(res.status ==200){
+                    visible = true;
+                    color="success";
+                    checkMSG = "Elemento eliminado correctamente";
+                }else{
+                    checkMSG = "malll";
+                }
 			});
     }
-
-	async function BorrarExpos(){
-        console.log("Deleting economies....");
-        const res = await fetch("/api/v1/expo",
+	//Función para borrar todas las entradas
+	async function BorrarEntries(){
+        console.log("Deleting entries....");
+        const res = await fetch("/api/v1/expo/",
 			{
 				method: "DELETE"
 			}).then(function (res){
-				getExpo();
-				window.alert("Entradas elimidas con éxito");
+				getEntries();
+                if(res.status==200){
+                    visible = true;
+                    color = "success";
+                    checkMSG = "Eliminadas todas las entradas con exito";
+                }
+				//window.alert("Entradas elimidas con éxito");
 			});
     }
-
-
-	async function LoadExpo(){
-        console.log("Loading economies....");
+	//Función para cargar las entradas
+	async function LoadEntries(){
+        console.log("Loading entries....");
         const res = await fetch("/api/v1/expo/loadInitialData",
 			{
 				method: "GET"
 			}).then(function (res){
-				getExpo();
-				window.alert("Entradas cargadas con éxito");
+				getEntries();
+                errorC=200.4;
+				//window.alert("Entradas cargadas con éxito");
+                if (res.ok) {
+                    console.log("Ok:");
+                    visible = true;
+                    totaldata=11;
+                    console.log("Received " + entries.length + " entry data.");
+                    color = "success";
+                    checkMSG = "Datos cargados correctamente";
+                } else {
+                    color = "danger";
+                    checkMSG= res.status + ": " + "No se pudo cargar los datos";
+                    console.log("ERROR! ");
+        }
 			});
     }
+	//Función auxiliar para imprimir errores
+	async function Errores(code){
+        
+        let msg;
+        if(code == 400){
+            msg = "La fecha inicio no puede ser menor a la fecha fin"
+        }
+		else if(code == 404){
+            msg = "No se han encontrado registros en ese rango"
+        }
+        else if(code == 409){
+            msg = "El recurso creado ya existe o hay un conflicto.";
+        }
+        else{
+            msg = "todo ok";
+        }
+        window.alert(msg)
+            return;
+    }
+	
+	//Función auxiliar para obtener el número máximo de páginas que se pueden ver
+	async function maxPagesFunction(cadena){
+		let num;
+        const res = await fetch(cadena,
+			{
+				method: "GET"
+			});
+			if(res.ok){
+				const data = await res.json();
+				maxPages = Math.floor(data.length/10);
+				if(maxPages === data.length/10){
+					maxPages = maxPages-1;
+				}
+        }
+	}
 </script>
 
 <main>
-    {#await expos}
-loading
-	{:then expos}
-	{p1}
+   
 
+{#await entries}
+loading
+	{:then entries}
+    
+	
+    <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
+		{#if checkMSG}
+			{checkMSG}
+		{/if}
+	</Alert>
+    
 	<Table bordered>
 		<thead>
-			<tr>
-				<th>Fecha Inicio</th>
-                <th>Fecha Fin</th>
-			</tr>
+            <p>Busqueda</p>
+            <tr>
+                <th>Año Inicial</th>
+                <th>Año Final</th>
+                
+            </tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><input bind:value="{Ufrom}"></td>
-				<td><input bind:value="{Uto}"></td>
-				<td><Button outline color="primary" on:click="{pagination (Ufrom,Uto,Ucountry, Uyear)}">Buscar</Button></td>
+				<td><input type="number" min="2000" bind:value="{from}"></td>
+				<td><input type="number" min="2000" bind:value="{to}"></td>
+				<td align="center"><Button outline color="dark" on:click="{()=>{
+					if (from == null || to == null) {
+						window.alert('Los campos fecha inicio y fecha fin no pueden estar vacíos')
+					}else{
+						getEntries();
+					}
+				}}">
+					Buscar
+					</Button>
+				</td>
 				<td align="center"><Button outline color="info" on:click="{()=>{
 					from = null;
 					to = null;
-					getExpo();
+					getEntries();
+					
 				}}">
 					Limpiar Búsqueda
 					</Button>
+				</td>
 			</tr>
 		</tbody>
-		
 	</Table>
-<Button id ="atrasbtn" on:click="{getPreviewPage}">
-	Atrás
-</Button>
-<Button id ="siguientebtn" on:click="{getNextPage}">
-	Siguiente
-</Button>
-	<Table bordered>
-		<thead>
-			<tr>
-				<th>Pais</th>
-				<th>Año</th>
-				<th>Exportaciones de tecnologia</th>
-				<th>Exportaciones de productos manufacturados</th>
-				<th>Exportaciones de bienes y servicios</th>
-				<th>Acciones</th>
-			</tr>
-		</thead>
-		<tbody>
-				<tr>
-					<td><input bind:value="{newExpo.country}"></td>
-					<td><input bind:value="{newExpo.year}"></td>
-					<td><input bind:value="{newExpo.expo_bys}"></td>
-					<td><input bind:value="{newExpo.expo_m}"></td>
-					<td><input bind:value="{newExpo.expo_tec}"></td>
-					<td><Button 
-						outline
-						color= "primary"
-						on:click={insertExpos}>insert</Button>
-					</td>
-				</tr>
-				{#each expos as exp}
-				<tr>
-					<td><a href="#/ExpoTable/{exp.country}">{exp.country}</a></td>
-					<td>{exp.year}</td>
-					<td>{exp.expo_tec}</td>
-					<td>{exp.expo_m}</td>
-					<td>{exp.expo_bys}</td>
-					<td><Button outline color="warning" on:click={function (){
-						window.location.href ="#/ExpoTable/"+exp.country
-					}}>
-						Editar
-					</Button>
-					<td><Button outline color="danger" on:click={BorrarExpo(exp.country,exp.year)}>
+    <Table bordered responsive>
+        <thead>
+            <tr>
+                <th>Pais</th>
+                <th>Año</th>
+                <th>Exportaciones Tecnológicas</th>
+                <th>Exportaciones Prod. Manufacturados</th>
+                <th>Exportaciones Bienes y Servicios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" required bind:value="{newExpo.country}"></td>
+                <td><input type="number" required bind:value="{newExpo.year}"></td>
+                <td><input type="number" required bind:value="{newExpo.expo_tec}"></td>
+                <td><input type="number" required bind:value="{newExpo.expo_m}"></td>
+                <td><input type="number" required bind:value="{newExpo.expo_bys}"></td>
+
+                <td><Button outline color="primary" on:click="{insertEntry}">
+                    Añadir
+                    </Button >
+                </td>
+
+            </tr>
+            {#each entries as expo}
+                <tr>
+                    <td><a href="#/exposTable/{expo.country}">{expo.country}</a></td>
+                    <td>{expo.year}</td>
+                    <td>{expo.expo_tec}</td>
+                    <td>{expo.expo_m}</td>
+                    <td>{expo.expo_bys}</td>
+                    <td><Button outline color="warning" on:click={function (){
+                        window.location.href = `/#/exposTable/${expo.country}/${expo.year}`
+                    }}>
+                        Editar
+                    </Button>
+                    <td>
+                    <Button outline color="danger" on:click={BorrarEntry(expo.country,expo.year)}>
 						Borrar
 					</Button>
-				</tr>
-				{/each}
-		</tbody>
-	</Table>
+                    </td>
+                </tr>
+            {/each}
+            <tr>
+                <td><Button outline color="success" on:click={LoadEntries}>
+                    Cargar datos
+                </Button></td>
+                <td><Button outline color="danger" on:click={BorrarEntries}>
+                    Borrar todo
+                </Button></td>
+            </tr>
+        </tbody>
+    </Table>
 
 	<div align="center">
-		<Button outline color="success" on:click={LoadExpo}>
-			Cargar datos
-		</Button>
-		<Button outline color="danger" on:click={BorrarExpos}>
-			Borrar todo
-		</Button>
-	</div>
+		{#each Array(maxPages+1) as _,page}
+		
+			<Button outline color="secondary" on:click={()=>{
+				offset = page;
+				getEntries();
+			}}>{page} </Button>&nbsp
+	
+		{/each}
+		</div>
+	
+	<br>
+	<br>
 {/await}
-
 
 </main>
