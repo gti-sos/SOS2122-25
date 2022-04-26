@@ -164,6 +164,16 @@ module.exports.register = (app) =>{
         }else{
             res.sendStatus(400, "BAD REQUEST");
         }
+
+        if(Object.keys(req.query).length > 0){
+            console.log("Query:",req.query);
+            selectedEconomies = filteredList(req,economies);
+
+            if(req.query.limit != undefined || req.query.offset != undefined){
+                selectedEconomies = pagination(req,selectedEconomies);
+                res.send(JSON.stringify(filteredList,null));
+            }
+        }
     })
     
     
@@ -295,25 +305,33 @@ module.exports.register = (app) =>{
     
     });
 
-    function pagination(req, lista) {
+    function pagination(req, list){
         var res = [];
-        const limit = req.query.limit;
-        const offset = req.query.offset;
-    
-        if (limit < 1 || offset < 0 || offset > lista.length) {
-          res.push("ERROR EN PARAMETROS LIMIT Y/O OFFSET");
-          return res;
+        var limit = req.query.limit;
+        var offset = req.query.offset;
+        
+        if(limit < 1 || offset < 0 || offset > list.length){
+            res.push("ERROR EN PARAMETROS LIMIT Y/O OFFSET");
+            return res;
         }
-    
-        res = lista.slice(offset, parseInt(limit) + parseInt(offset));
+
+        //limit no definido
+        if(limit == undefined && offset != undefined){
+            limit = list.length - offset;
+        }
+        //offset no definido
+        else if(limit != undefined && offset == undefined){
+            offset = 0;
+        }
+
+        res = list.slice(offset,parseInt(limit)+parseInt(offset));
         return res;
-      }
-    
+    }
       //GETs
     
       //GET Global y años
     
-      app.get(BASE_API_URL_ECO, (req, res) => {
+    app.get(BASE_API_URL_ECO, (req, res) => {
         var year = req.query.year;
         var from = req.query.from;
         var to = req.query.to;
@@ -340,41 +358,8 @@ module.exports.register = (app) =>{
           res.sendStatus(400, "BAD REQUEST");
         }
     
-        db.find({}, function (err, filteredList) {
-    
-          // Apartado para búsqueda por año
-    
-          if (year != null) {
-            var filteredList = economies.filter((reg) => {
-              return reg.year == year;
-            });
-            if (filteredList == 0) {
-              res.sendStatus(404, "NOT FOUND");
-            }
-          }
-    
-          // Apartado para from y to
-    
-          if (from != null && to != null) {
-            filteredList = filteredList.filter((reg) => {
-              return reg.year >= from && reg.year <= to;
-            });
-    
-            if (filteredList == 0) {
-              res.sendStatus(404, "NOT FOUND");
-            }
-          }
-          // RESULTADO
-    
-          if (req.query.limit != undefined || req.query.offset != undefined) {
-            filteredList = pagination(req, filteredList);
-          }
-          filteredList.forEach((element) => {
-            delete element._id;
-          });
-          res.send(JSON.stringify(filteredList, null, 2));
-        });
-      });
+
+    });
     
     function comprobar_body(req){
         return (req.body.country == null |
