@@ -130,7 +130,7 @@
 			});
 		
 	}
-	async function pagination (Ufrom,Uto,Ucountry,Uyear){
+	async function paginacion (Ufrom,Uto,Ucountry,Uyear){
 		if(typeof Ucountry=='undefined'){
 			Ucountry="";
 		}
@@ -267,7 +267,7 @@ loading
 			<tr>
 				<td><input bind:value="{Ufrom}"></td>
 				<td><input bind:value="{Uto}"></td>
-				<td><Button outline color="primary" on:click="{pagination (Ufrom,Uto,Ucountry, Uyear)}">Buscar</Button></td>
+				<td><Button outline color="primary" on:click="{paginacion (Ufrom,Uto,Ucountry, Uyear)}">Buscar</Button></td>
 				<td align="center"><Button outline color="info" on:click="{()=>{
 					from = null;
 					to = null;

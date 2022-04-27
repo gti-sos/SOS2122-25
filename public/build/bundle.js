@@ -9538,7 +9538,7 @@ var app = (function () {
     	return block;
     }
 
-    // (270:8) <Button outline color="primary" on:click="{pagination (Ufrom,Uto,Ucountry, Uyear)}">
+    // (270:8) <Button outline color="primary" on:click="{paginacion (Ufrom,Uto,Ucountry, Uyear)}">
     function create_default_slot_10(ctx) {
     	let t;
 
@@ -9558,7 +9558,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(270:8) <Button outline color=\\\"primary\\\" on:click=\\\"{pagination (Ufrom,Uto,Ucountry, Uyear)}\\\">",
+    		source: "(270:8) <Button outline color=\\\"primary\\\" on:click=\\\"{paginacion (Ufrom,Uto,Ucountry, Uyear)}\\\">",
     		ctx
     	});
 
@@ -9628,7 +9628,7 @@ var app = (function () {
     		});
 
     	button0.$on("click", function () {
-    		if (is_function(/*pagination*/ ctx[11](/*Ufrom*/ ctx[1], /*Uto*/ ctx[2], /*Ucountry*/ ctx[6], /*Uyear*/ ctx[7]))) /*pagination*/ ctx[11](/*Ufrom*/ ctx[1], /*Uto*/ ctx[2], /*Ucountry*/ ctx[6], /*Uyear*/ ctx[7]).apply(this, arguments);
+    		if (is_function(/*paginacion*/ ctx[11](/*Ufrom*/ ctx[1], /*Uto*/ ctx[2], /*Ucountry*/ ctx[6], /*Uyear*/ ctx[7]))) /*paginacion*/ ctx[11](/*Ufrom*/ ctx[1], /*Uto*/ ctx[2], /*Ucountry*/ ctx[6], /*Uyear*/ ctx[7]).apply(this, arguments);
     	});
 
     	button1 = new Button({
@@ -10664,7 +10664,7 @@ var app = (function () {
     		});
     	}
 
-    	async function pagination(Ufrom, Uto, Ucountry, Uyear) {
+    	async function paginacion(Ufrom, Uto, Ucountry, Uyear) {
 
     		if (typeof Ufrom == 'undefined') {
     			Ufrom = "";
@@ -10862,7 +10862,7 @@ var app = (function () {
     		insertEconomies,
     		deleteData,
     		deleteALL,
-    		pagination,
+    		paginacion,
     		getNextPage,
     		getPreviewPage,
     		BorrarEconomy,
@@ -10908,7 +10908,7 @@ var app = (function () {
     		p1,
     		getEconomies,
     		insertEconomies,
-    		pagination,
+    		paginacion,
     		getNextPage,
     		getPreviewPage,
     		BorrarEconomy,
@@ -11142,25 +11142,25 @@ var app = (function () {
     			t18 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$1, 61, 20, 1727);
-    			add_location(th1, file$1, 62, 20, 1762);
-    			add_location(th2, file$1, 63, 20, 1796);
-    			add_location(th3, file$1, 64, 20, 1836);
-    			add_location(th4, file$1, 65, 20, 1875);
-    			add_location(th5, file$1, 66, 20, 1919);
-    			add_location(tr0, file$1, 60, 16, 1701);
-    			add_location(thead, file$1, 59, 12, 1676);
-    			add_location(td0, file$1, 71, 24, 2054);
-    			add_location(td1, file$1, 72, 24, 2105);
-    			add_location(input0, file$1, 73, 28, 2157);
-    			add_location(td2, file$1, 73, 24, 2153);
-    			add_location(input1, file$1, 74, 28, 2231);
-    			add_location(td3, file$1, 74, 24, 2227);
-    			add_location(input2, file$1, 75, 28, 2304);
-    			add_location(td4, file$1, 75, 24, 2300);
-    			add_location(td5, file$1, 76, 24, 2378);
-    			add_location(tr1, file$1, 70, 20, 2024);
-    			add_location(tbody, file$1, 69, 12, 1995);
+    			add_location(th0, file$1, 61, 20, 1810);
+    			add_location(th1, file$1, 62, 20, 1845);
+    			add_location(th2, file$1, 63, 20, 1879);
+    			add_location(th3, file$1, 64, 20, 1919);
+    			add_location(th4, file$1, 65, 20, 1958);
+    			add_location(th5, file$1, 66, 20, 2002);
+    			add_location(tr0, file$1, 60, 16, 1784);
+    			add_location(thead, file$1, 59, 12, 1759);
+    			add_location(td0, file$1, 71, 24, 2137);
+    			add_location(td1, file$1, 72, 24, 2188);
+    			add_location(input0, file$1, 73, 28, 2240);
+    			add_location(td2, file$1, 73, 24, 2236);
+    			add_location(input1, file$1, 74, 28, 2314);
+    			add_location(td3, file$1, 74, 24, 2310);
+    			add_location(input2, file$1, 75, 28, 2387);
+    			add_location(td4, file$1, 75, 24, 2383);
+    			add_location(td5, file$1, 76, 24, 2461);
+    			add_location(tr1, file$1, 70, 20, 2107);
+    			add_location(tbody, file$1, 69, 12, 2078);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -11367,7 +11367,7 @@ var app = (function () {
     			info.block.c();
     			t3 = space();
     			create_component(button.$$.fragment);
-    			add_location(main, file$1, 51, 0, 1520);
+    			add_location(main, file$1, 51, 0, 1603);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -11449,8 +11449,8 @@ var app = (function () {
     	let updatedCurrentPrices;
 
     	async function getEconomy() {
-    		console.log("fetching ...");
-    		const res = await fetch("/api/v2/economies/" + params.country + "/2019");
+    		console.log("fetching ..." + JSON.stringify(params.country) + " " + JSON.stringify(params.year));
+    		const res = await fetch("/api/v2/economies/" + params.country + "/" + params.year);
 
     		if (res.ok) {
     			const data = await res.json();
@@ -11471,7 +11471,7 @@ var app = (function () {
     			method: "PUT",
     			body: JSON.stringify({
     				country: params.country,
-    				year: updatedYear,
+    				year: economy.year,
     				percapita: updatedPercapita,
     				currency: updatedCurrency,
     				currentprices: updatedCurrentPrices

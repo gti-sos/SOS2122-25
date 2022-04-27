@@ -16,8 +16,8 @@
     let updatedCurrentPrices;
 
     async function getEconomy(){
-        console.log("fetching ...");
-        const res =await fetch("/api/v2/economies/"+params.country+"/2019");
+        console.log("fetching ..."+JSON.stringify(params.country)+" "+JSON.stringify(params.year));
+        const res =await fetch("/api/v2/economies/"+params.country+"/"+params.year);
         if(res.ok){
             const data = await res.json();
             economy = data;
@@ -36,7 +36,7 @@
 			method: "PUT",
 			body: JSON.stringify({
                 country : params.country,
-                year : updatedYear,
+                year : economy.year,
                 percapita : updatedPercapita,
                 currency : updatedCurrency,
                 currentprices : updatedCurrentPrices}),
@@ -44,7 +44,7 @@
 				"Content-Type": "application/json"
 			}
 		}).then(function (res) {
-            getEconomy();
+            getEconomy(updatedYear);
 		});
 	}
 </script>

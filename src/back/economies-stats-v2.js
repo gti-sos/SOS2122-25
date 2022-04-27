@@ -363,41 +363,26 @@ function filterQuery(req,stats){
 
 //FUNCION DE PAGINACION
 
-function Paginacion(req, lista){
+function Paginacion(req, list){
     var res = [];
     var limit = req.query.limit;
     var offset = req.query.offset;
     
-    if(limit < 1 || offset < 0 || offset > lista.length){
+    if(limit < 1 || offset < 0 || offset > list.length){
         res.push("ERROR EN PARAMETROS LIMIT Y/O OFFSET");
         return res;
     }
 
     //limit no definido
     if(limit == undefined && offset != undefined){
-        limit = lista.length - offset;
+        limit = list.length - offset;
     }
     //offset no definido
     else if(limit != undefined && offset == undefined){
         offset = 0;
     }
 
-    res = lista.slice(offset,parseInt(limit)+parseInt(offset));
-    return res;
-}
-
-function Paginacion(req, stats) {
-    var res = [];
-    const offset = req.query.offset;
-    const limit = req.query.limit;
-
-    if(limit < 0 || offset < 0 || offset > stats.length) {
-        console.error(`Error in pagination, you have exceded limits`);
-        res.push("ERROR");
-        return res;	
-    }    
-
-    res = stats.slice(offset, limit+offset);
+    res = list.slice(offset,parseInt(limit)+parseInt(offset));
     return res;
 }
 
