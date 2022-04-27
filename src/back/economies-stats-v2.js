@@ -199,6 +199,51 @@ app.get(BASE_API_URL_ECO + "/:country/:year", (req, res) => {
     });
 })
 
+app.get(BASE_API_URL_ECO + "/:country/", (req, res) => {
+
+    var country = req.params.country
+
+    db.find({}, function (err, filteredList) {
+        if (err) {
+            res.sendStatus(500, "ERROR EN CLIENTE");
+            return;
+        }
+        filteredList = filteredList.filter((reg) => {
+            return (reg.country == country);
+        });
+        if (filteredList == 0) {
+            res.sendStatus(404, "NOT FOUND");
+            return;
+        }
+
+        //RESULTADO
+
+        //Paginación
+        if (req.query.limit != undefined || req.query.offset != undefined) {
+            filteredList = Paginacion(req, filteredList);
+            res.send(JSON.stringify(filteredList, null, 2));
+        }
+        filteredList.forEach((element) => {
+            delete element._id;
+        });
+        //Comprobamos fields
+        if(req.query.fields!=null){
+            //Comprobamos si los campos son correctos
+            var listaFields = req.query.fields.split(",");
+            for(var i = 0; i<listaFields.length;i++){
+                var element = listaFields[i];
+                if(element != "country" && element != "year" && element != "percapita"  && element != "currency" && element != "currentprices"){
+                    res.sendStatus(400, "BAD REQUEST");
+                    return;
+                }
+            }
+            //Escogemos los fields correspondientes
+            filteredList = checkFields(req,filteredList);
+        }
+        res.send(JSON.stringify(filteredList[0], null, 2));
+    });
+})
+
 //POST CORRECTO
 
 app.post(BASE_API_URL_ECO, (req, res) => {
@@ -363,7 +408,7 @@ function filterQuery(req,stats){
 
 //FUNCION DE PAGINACION
 
-function Paginacion(req, list){
+function paginacion(req, list){
     var res = [];
     var limit = req.query.limit;
     var offset = req.query.offset;

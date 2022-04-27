@@ -16,8 +16,8 @@
     let updatedCurrentPrices;
 
     async function getEconomy(){
-        console.log("fetching ..."+JSON.stringify(params.country)+" "+JSON.stringify(params.year));
-        const res =await fetch("/api/v2/economies/"+params.country+"/"+params.year);
+        console.log("fetching ..."+JSON.stringify(params.country)+JSON.stringify(params.year));
+        const res =await fetch("/api/v2/economies/"+params.country);
         if(res.ok){
             const data = await res.json();
             economy = data;
