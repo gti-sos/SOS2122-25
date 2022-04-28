@@ -1,61 +1,66 @@
 const { Pagination } = require("sveltestrap");
 
-const BASE_API_URL_ECO = "/api/v2/economies";
+const BASE_API_URL_ESCO = "/api/v2/esco";
 const API_DOC_PORTAL = "https://documenter.getpostman.com/view/19516890/UVsSL2yS";
 
-var economies = [
+var esco = [
     {
         country: "eeuu",
         year: 2019,
-        percapita: 2.42,
-        currency: 62.014,
-        currentprices:217092
-        
+        esco_tot: 102.5,
+        esco_men: 102.1,
+        esco_wom: 103
     },
     {
         country: "spain",
         year: 2019,
-        percapita: 1.946,
-        currency: 25269.988,
-        currentprices:1247
-        
+        esco_tot: 100.7,
+        esco_men: 100,
+        esco_wom: 101.5
     },
     {
         country: "argentina",
         year: 2019,
-        percapita: -2391,
-        currency: 14787.768,
-        currentprices:20939
+        esco_tot: 116.5,
+        esco_men: 112.4,
+        esco_wom: 120.8
+     },
+     {
+        country: "pakistan",
+        year: 2015,
+        esco_tot: 100,
+        esco_men: 101,
+        esco_wom: 99
     },
     {
-        country: "marroco",
+        country: "israel",
         year: 2019,
-        percapita: -332,
-        currency: 1668.3,
-        currentprices:6484
+        esco_tot: 95,
+        esco_men: 96.4,
+        esco_wom: 93
     },
     {
-        country: "greece",
+        country: "italia",
         year: 2019,
-        percapita: 91,
-        currency: 147.768,
-        currentprices:1683
-    } 
+        esco_tot: 115.5,
+        esco_men: 111.4,
+        esco_wom: 119.8
+     }  
 ];
 
-var Debteconomies = economies;
+var Debtesco = esco;
 
 module.exports.register = (app,db) => {
 
 //DOCUMENTACION DE LA API
 
-app.get(BASE_API_URL_ECO+"/docs",(req,res)=>{
+app.get(BASE_API_URL_ESCO+"/docs",(req,res)=>{
     res.redirect(API_DOC_PORTAL);
 });
 
 //LOAD INITIAL DATA
 
-app.get(BASE_API_URL_ECO + "/loadInitialData", (req, res) => {
+app.get(BASE_API_URL_ESCO + "/loadInitialData", (req, res) => {
 
     db.find({}, function (err, filteredList) {
         if (err) {
@@ -63,8 +68,8 @@ app.get(BASE_API_URL_ECO + "/loadInitialData", (req, res) => {
             return;
         }
         if (filteredList == 0) {
-            for (var i = 0; i < economies.length; i++) {
-                db.insert(economies[i]);
+            for (var i = 0; i < esco.length; i++) {
+                db.insert(esco[i]);
             }
             res.sendStatus(200, "OK: datos inicializados correctamente.");
             return;
@@ -76,7 +81,7 @@ app.get(BASE_API_URL_ECO + "/loadInitialData", (req, res) => {
 
 //GET GENERAL
 
-app.get(BASE_API_URL_ECO, (req, res) => {
+app.get(BASE_API_URL_ESCO, (req, res) => {
 
     var year = req.query.year;
     var from = req.query.from;
@@ -153,7 +158,7 @@ app.get(BASE_API_URL_ECO, (req, res) => {
 
 //GET DE UN RECURSO CONCRETO
 
-app.get(BASE_API_URL_ECO + "/:country/:year", (req, res) => {
+app.get(BASE_API_URL_ESCO + "/:country/:year", (req, res) => {
 
     var country = req.params.country
     var year = req.params.year
@@ -187,7 +192,7 @@ app.get(BASE_API_URL_ECO + "/:country/:year", (req, res) => {
             var listaFields = req.query.fields.split(",");
             for(var i = 0; i<listaFields.length;i++){
                 var element = listaFields[i];
-                if(element != "country" && element != "year" && element != "percapita"  && element != "currency" && element != "currentprices"){
+                if(element != "country" && element != "year" && element != "esco_tot"  && element != "esco_men" && element != "esco_wom"){
                     res.sendStatus(400, "BAD REQUEST");
                     return;
                 }
@@ -199,7 +204,7 @@ app.get(BASE_API_URL_ECO + "/:country/:year", (req, res) => {
     });
 })
 
-app.get(BASE_API_URL_ECO + "/:country/", (req, res) => {
+app.get(BASE_API_URL_ESCO + "/:country/", (req, res) => {
 
     var country = req.params.country
 
@@ -232,7 +237,7 @@ app.get(BASE_API_URL_ECO + "/:country/", (req, res) => {
             var listaFields = req.query.fields.split(",");
             for(var i = 0; i<listaFields.length;i++){
                 var element = listaFields[i];
-                if(element != "country" && element != "year" && element != "percapita"  && element != "currency" && element != "currentprices"){
+                if(element != "country" && element != "year" && element != "esco_tot"  && element != "esco_men" && element != "esco_wom"){
                     res.sendStatus(400, "BAD REQUEST");
                     return;
                 }
@@ -246,7 +251,7 @@ app.get(BASE_API_URL_ECO + "/:country/", (req, res) => {
 
 //POST CORRECTO
 
-app.post(BASE_API_URL_ECO, (req, res) => {
+app.post(BASE_API_URL_ESCO, (req, res) => {
 
     if (checkBody(req)) {
         res.sendStatus(400, "BAD REQUEST");
@@ -274,13 +279,13 @@ app.post(BASE_API_URL_ECO, (req, res) => {
 
 //POST NO PERMITIDO
 
-app.post(BASE_API_URL_ECO +"/:country/:year", (req,res) => {
+app.post(BASE_API_URL_ESCO +"/:country/:year", (req,res) => {
     res.sendStatus(405,"METHOD NOT ALLOWED");
 });
 
 //PUT CORRECTO
 
-app.put(BASE_API_URL_ECO + "/:country/:year", (req, res) => {
+app.put(BASE_API_URL_ESCO + "/:country/:year", (req, res) => {
 
     //comprobamos body
     if (checkBody(req)) {
@@ -326,13 +331,13 @@ app.put(BASE_API_URL_ECO + "/:country/:year", (req, res) => {
 
 //PUT NO PERMITIDO
 
-app.put(BASE_API_URL_ECO, (req,res) => {
+app.put(BASE_API_URL_ESCO, (req,res) => {
     res.sendStatus(405,"METHOD NOT ALLOWED");
 });
 
 //DELETE GENERAL
 
-app.delete(BASE_API_URL_ECO,(req, res)=>{
+app.delete(BASE_API_URL_ESCO,(req, res)=>{
     db.remove({}, { multi: true }, (err, numRemoved)=>{
         if (err){
             res.sendStatus(500,"ERROR EN CLIENTE");
@@ -345,7 +350,7 @@ app.delete(BASE_API_URL_ECO,(req, res)=>{
 
 //DELETE DE UN RECURSO CONCRETO
 
-app.delete(BASE_API_URL_ECO+"/:country/:year",(req, res)=>{
+app.delete(BASE_API_URL_ESCO+"/:country/:year",(req, res)=>{
     var countryR = req.params.country;
     var yearR = req.params.year;
 
@@ -386,18 +391,18 @@ function filterQuery(req,stats){
                 flag = false;
             }
         }
-        if(req.query.percapita != undefined) {
-            if(stat.percapita != req.query.percapita)  {
+        if(req.query.esco_tot != undefined) {
+            if(stat.esco_tot != req.query.esco_tot)  {
                 flag = false;
             }
         }
-        if(req.query.currency != undefined) {
-            if(stat.currency != req.query.currency)  {
+        if(req.query.esco_men != undefined) {
+            if(stat.esco_men != req.query.esco_men)  {
                 flag = false;
             }
         }
-        if(req.query.currentprices != undefined) {
-            if(stat.currentprices != req.query.currentprices)  {
+        if(req.query.esco_wom != undefined) {
+            if(stat.esco_wom != req.query.esco_wom)  {
                 flag = false;
             }
         }
@@ -436,9 +441,9 @@ function paginacion(req, list){
 function checkBody(req) {
     return (req.body.country == null |
         req.body.year == null |
-        req.body.percapita == null |
-        req.body.currency == null |
-        req.body.currentprices == null
+        req.body.esco_tot == null |
+        req.body.esco_men == null |
+        req.body.esco_wom == null
     );
 }
 
@@ -448,9 +453,9 @@ function checkFields(req, lista){
     var fields = req.query.fields;
     var hasCountry = false;
     var hasYear = false;
-    var hasPerCapita = false;
-    var hasCurrency = false;
-    var hasCurrentPrices = false;
+    var hasesco_tot = false;
+    var hasesco_men = false;
+    var hasesco_wom = false;
     fields = fields.split(",");
 
     for(var i = 0; i<fields.length;i++){
@@ -461,14 +466,14 @@ function checkFields(req, lista){
         if(element=='year'){
             hasYear=true;
         }
-        if(element=='percapita'){
-            hasPerCapita=true;
+        if(element=='esco_tot'){
+            hasesco_tot=true;
         }
-        if(element=='currency'){
-            hasCurrency=true;
+        if(element=='esco_men'){
+            hasesco_men=true;
         }
-        if(element=='currentprices'){
-            hasCurrentPrices=true;
+        if(element=='esco_wom'){
+            hasesco_wom=true;
         }
     }
 
@@ -486,24 +491,24 @@ function checkFields(req, lista){
         })
     }
 
-    //Currency
-    if(!hasCurrency){
+    //esco_men
+    if(!hasesco_men){
         lista.forEach((element)=>{
-            delete element.total_debt;
+            delete element.esco_men;
         })
     }
 
-    //DebtGdp
-    if(!hasCurrentPrices){
+    //esco_wom
+    if(!hasesco_wom){
         lista.forEach((element)=>{
-            delete element.debt_gdp;
+            delete element.esco_wom;
         })
     }
 
-    //PerCapitaDebt
-    if(!hasPerCapita){
+    //esco_tot
+    if(!hasesco_tot){
         lista.forEach((element)=>{
-            delete element.per_capita_debt;
+            delete element.esco_tot;
         })
     }
 
