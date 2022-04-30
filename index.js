@@ -12,6 +12,7 @@ const expo_stats_API = require("./src/back/expo-stats.js");
 var Datastore = require("nedb");
 
 ECO_DB = new Datastore();
+ESCO_DB = new Datastore();
 
 
 

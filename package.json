@@ -14,8 +14,11 @@
   },
   "dependencies": {
     "body-parser": "^1.20.0",
+    "chokidar": "^3.5.3",
     "express": "^4.17.3",
+    "install": "^0.13.0",
     "nedb": "^1.8.0",
+    "npm": "^8.8.0",
     "svelte-spa-router": "^3.2.0",
     "sveltestrap": "^5.9.0"
   },

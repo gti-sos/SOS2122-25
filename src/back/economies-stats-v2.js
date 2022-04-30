@@ -127,7 +127,7 @@ app.get(BASE_API_URL_ECO, (req, res) => {
 
         // Resultado sin ID
         if (req.query.limit != undefined || req.query.offset != undefined) {
-            filteredList = Paginacion(req, filteredList);
+            filteredList = paginacion(req, filteredList);
         }
         filteredList.forEach((element) => {
             delete element._id;
