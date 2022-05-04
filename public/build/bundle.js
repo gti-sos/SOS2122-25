@@ -2566,7 +2566,7 @@ var app = (function () {
     		c: function create() {
     			colgroup = element("colgroup");
     			if (default_slot) default_slot.c();
-    			add_location(colgroup, file$d, 6, 0, 92);
+    			add_location(colgroup, file$d, 6, 0, 98);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2727,7 +2727,7 @@ var app = (function () {
     			div = element("div");
     			if (default_slot) default_slot.c();
     			attr_dev(div, "class", /*responsiveClassName*/ ctx[1]);
-    			add_location(div, file$c, 13, 2, 305);
+    			add_location(div, file$c, 13, 2, 318);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2955,9 +2955,9 @@ var app = (function () {
     			tfoot = element("tfoot");
     			tr = element("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$b, 7, 2, 117);
+    			add_location(tr, file$b, 7, 2, 124);
     			set_attributes(tfoot, tfoot_data);
-    			add_location(tfoot, file$b, 6, 0, 90);
+    			add_location(tfoot, file$b, 6, 0, 96);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3068,9 +3068,9 @@ var app = (function () {
     			thead = element("thead");
     			tr = element("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$a, 7, 2, 117);
+    			add_location(tr, file$a, 7, 2, 124);
     			set_attributes(thead, thead_data);
-    			add_location(thead, file$a, 6, 0, 90);
+    			add_location(thead, file$a, 6, 0, 96);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3293,7 +3293,7 @@ var app = (function () {
 
     			t2 = space();
     			create_component(tablefooter.$$.fragment);
-    			add_location(tbody, file$9, 39, 6, 1057);
+    			add_location(tbody, file$9, 39, 6, 1096);
     		},
     		m: function mount(target, anchor) {
     			mount_component(colgroup, target, anchor);
@@ -3538,7 +3538,7 @@ var app = (function () {
     			tr = element("tr");
     			if (default_slot) default_slot.c();
     			t = space();
-    			add_location(tr, file$9, 41, 10, 1103);
+    			add_location(tr, file$9, 41, 10, 1144);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -3678,7 +3678,7 @@ var app = (function () {
     			table = element("table");
     			if_block.c();
     			set_attributes(table, table_data);
-    			add_location(table, file$9, 31, 2, 885);
+    			add_location(table, file$9, 31, 2, 916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -4028,7 +4028,7 @@ var app = (function () {
     			button = element("button");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$8, 54, 2, 1124);
+    			add_location(button, file$8, 54, 2, 1178);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -4146,7 +4146,7 @@ var app = (function () {
     			a = element("a");
     			if_block.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$8, 37, 2, 866);
+    			add_location(a, file$8, 37, 2, 903);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -4314,7 +4314,7 @@ var app = (function () {
     	return block_1;
     }
 
-    // (65:10)        
+    // (65:10)         
     function fallback_block(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -4387,7 +4387,7 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block.name,
     		type: "fallback",
-    		source: "(65:10)        ",
+    		source: "(65:10)         ",
     		ctx
     	});
 
@@ -6564,7 +6564,7 @@ var app = (function () {
     			t1 = space();
     			if_block2.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$6, 26, 2, 808);
+    			add_location(div, file$6, 26, 2, 834);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -6699,7 +6699,7 @@ var app = (function () {
     			t = text(/*heading*/ ctx[3]);
     			if (heading_slot) heading_slot.c();
     			attr_dev(h4, "class", "alert-heading");
-    			add_location(h4, file$6, 33, 6, 961);
+    			add_location(h4, file$6, 33, 6, 994);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -6767,7 +6767,7 @@ var app = (function () {
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", /*closeClassNames*/ ctx[6]);
     			attr_dev(button, "aria-label", /*closeAriaLabel*/ ctx[2]);
-    			add_location(button, file$6, 38, 6, 1077);
+    			add_location(button, file$6, 38, 6, 1115);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);

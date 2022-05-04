@@ -132,11 +132,9 @@ app.get(BASE_API_URL_ESCO, (req, res) => {
 
         // Resultado sin ID
         if (req.query.limit != undefined || req.query.offset != undefined) {
-<<<<<<< HEAD
+
             filteredList = Paginacion(req, filteredList);
-=======
-            filteredList = paginacion(req, filteredList);
->>>>>>> 234982efb8612c92e6a79277c120da5f472d1c15
+
         }
         filteredList.forEach((element) => {
             delete element._id;

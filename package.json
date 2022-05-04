@@ -19,6 +19,7 @@
     "install": "^0.13.0",
     "nedb": "^1.8.0",
     "npm": "^8.8.0",
+    "split-string": "^6.1.0",
     "svelte-spa-router": "^3.2.0",
     "sveltestrap": "^5.9.0"
   },
