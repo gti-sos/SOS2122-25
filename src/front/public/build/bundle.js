@@ -2269,7 +2269,7 @@ var app = (function () {
     			attr_dev(a12, "href", "https://github.com/AngelSM11");
     			add_location(a12, file$i, 19, 96, 1450);
     			add_location(p0, file$i, 19, 4, 1358);
-    			attr_dev(a13, "href", "#/expo-stats");
+    			attr_dev(a13, "href", "#/expo");
     			add_location(a13, file$i, 20, 6, 1522);
     			attr_dev(a14, "href", "https://github.com/adriperez01");
     			add_location(a14, file$i, 20, 93, 1609);
@@ -10157,7 +10157,7 @@ var app = (function () {
 
     	async function getStats() {
     		console.log("Fetching c02Stats....");
-    		const res = await fetch("/api/v1/expo-stat");
+    		const res = await fetch("/api/v1/expo");
 
     		if (res.ok) {
     			const data = await res.json();
@@ -10171,7 +10171,7 @@ var app = (function () {
 
     	async function getData() {
     		console.log("Fetching data...");
-    		const res = await fetch("api/v1/expo-stat?limit=" + limit + "&offset=" + current_offset);
+    		const res = await fetch("api/v1/expo?limit=" + limit + "&offset=" + current_offset);
 
     		if (res.ok) {
     			console.log("Ok");
@@ -10185,7 +10185,7 @@ var app = (function () {
 
     	async function getDataSearch(query) {
     		console.log("Fetching data...");
-    		const res = await fetch("api/v1/expo-stat" + query + "?limit=" + limit + "&offset=" + current_offset);
+    		const res = await fetch("api/v1/expo" + query + "?limit=" + limit + "&offset=" + current_offset);
 
     		if (res.ok) {
     			console.log("Ok");
@@ -10202,7 +10202,7 @@ var app = (function () {
     		console.log("LA QUERY: " + query + "LIMITE: " + limit + "OFFSET: " + current_offset);
 
     		//const res = await fetch("api/v1/evictions" + query + "&limit=" + limit + "&offset="+current_offset);
-    		const res = await fetch("api/v1/expo-stat" + query);
+    		const res = await fetch("api/v1/expo" + query);
 
     		if (res.ok) {
     			const json = await res.json();
@@ -10240,7 +10240,7 @@ var app = (function () {
     	}
 
     	async function getNumData() {
-    		const res = await fetch("api/v1/expo-stat");
+    		const res = await fetch("api/v1/expo");
 
     		if (res.ok) {
     			const json = await res.json();
@@ -10317,7 +10317,7 @@ var app = (function () {
 
     		if (fullQuery != "") {
     			const limityOffset = "?limit=" + limit + "&offset=" + current_offset;
-    			const res = await fetch("api/v1/expo-stat" + fullQuery + limityOffset);
+    			const res = await fetch("api/v2/expo" + fullQuery + limityOffset);
     			console.log("FULL QUERY: " + fullQuery + limityOffset);
 
     			if (res.ok) {
@@ -10359,8 +10359,8 @@ var app = (function () {
     */
     	async function LoadStats() {
     		console.log("Loading stats....");
-    		await fetch("/api/v1/expo-stat/loadInitialData");
-    		const res2 = await fetch("api/v1/expo-stat/loadInitialData" + "?limit=10&offset=0");
+    		await fetch("/api/v2/expo/loadInitialData");
+    		const res2 = await fetch("api/v2/expo/loadInitialData" + "?limit=10&offset=0");
 
     		if (res2.ok) {
     			console.log("Ok:");
@@ -10379,7 +10379,7 @@ var app = (function () {
     	async function insertStat() {
     		console.log("Inserting new Stat: " + JSON.stringify(newexpo_stat));
 
-    		await fetch("/api/v1/expo-stat", {
+    		await fetch("/api/v2/expo", {
     			method: "POST",
     			body: JSON.stringify(newexpo_stat),
     			headers: { "Content-Type": "application/json" }
@@ -10393,7 +10393,7 @@ var app = (function () {
     	async function DeleteStats() {
     		console.log("Deleting stats....");
 
-    		await fetch("/api/v1/expo-stat/", { method: "DELETE" }).then(function (res) {
+    		await fetch("/api/v2/expo/", { method: "DELETE" }).then(function (res) {
     			getStats();
     		});
     	}
@@ -10401,7 +10401,7 @@ var app = (function () {
     	async function DeleteStat(country, year) {
     		console.log("Deleting entry....");
 
-    		await fetch("/api/v1/expo-stat/" + country + "/" + year, { method: "DELETE" }).then(function (res) {
+    		await fetch("/api/v2/expo/" + country + "/" + year, { method: "DELETE" }).then(function (res) {
     			getStats();
 
     			if (res.status == 200) {
@@ -11212,7 +11212,7 @@ var app = (function () {
 
     	async function getEntries() {
     		console.log("Fetching entries....");
-    		const res = await fetch("/api/v1/expo-stats/" + params.country + "/" + params.year);
+    		const res = await fetch("/api/v2/expo/" + params.country + "/" + params.year);
 
     		if (res.ok) {
     			const data = await res.json();
@@ -11233,7 +11233,7 @@ var app = (function () {
     	async function EditEntry() {
     		console.log("Updating entry...." + updatedCountry);
 
-    		await fetch("/api/v1/expo-stats/" + params.country + "/" + params.year, {
+    		await fetch("/api/v2/expo/" + params.country + "/" + params.year, {
     			method: "PUT",
     			body: JSON.stringify({
     				country: updatedCountry,
