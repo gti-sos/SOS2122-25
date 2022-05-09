@@ -10,5 +10,5 @@
 -  **APIs**:
     -  [https://SOS2122-25.herokuapp.com/api/v1/economies/docs](https://SOS2122-25.herokuapp.com/api/v1/economies/docs) (developed by [Damian Gonzalez Carrasco](https://github.com/damiangc99))
     - [https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs) (developed by [Angel Simon Mesa](https://github.com/AngelSM11))
-    - [https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs) (developed by [Alicia Campos Castelló](https://github.com/AliciaCamposCastello))
+    - [https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs) (developed by [Adrian Perez](https://github.com/AliciaCamposCastello))
     

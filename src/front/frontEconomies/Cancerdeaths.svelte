@@ -6,7 +6,7 @@
 	import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'sveltestrap';
 	
 
-	let cancerdeaths=[];
+	let economies=[];
 	let datos2 = [];
 	let offset=0;
 	let limit=10;
@@ -20,19 +20,19 @@
 	let errorMsg = "";
 	let msg = "";
 
-    let newcancerdeaths={
+    let neweconomies={
         country: "",
         year:"",
-        ages_zero_fifty:"",
-        ages_fifty_seventy:"",
-        ages_seventy:""
+        percapita:"",
+        currency:"",
+        currentprices:""
     }
 
-	onMount(getcancerdeaths);
+	onMount(getEconomies);
 
-	async function getcancerdeaths(){
-		console.log("fetching cancerdeaths ....");
-		let cadena = `/api/v1/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
+	async function getEconomies(){
+		console.log("fetching economies ....");
+		let cadena = `/api/v2/economies?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -45,11 +45,11 @@
 			
 			const data= await res.json();
 			datos2=data;
-			cancerdeaths = datos2.sort(function (a, b){
+			economies = datos2.sort(function (a, b){
 				return (a.year - b.year);
 			});
-			numEntries=cancerdeaths.length;
-			console.log("Received cancerdeaths: " + cancerdeaths.length);
+			numEntries=economies.length;
+			console.log("Received economies: " + economies.length);
 		}
 		else{
 			visibleError = true;
@@ -64,8 +64,8 @@
 			offset=offset-10;
 		}
 		//limit=limit+10;
-        console.log("fetching cancerdeaths ....");
-		let cadena = `/api/v1/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
+        console.log("fetching economies ....");
+		let cadena = `/api/v2/economies?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -76,20 +76,20 @@
 		if(res.ok){
 			const data= await res.json();
 			datos2=data;
-			cancerdeaths = datos2.sort(function (a, b){
+			economies = datos2.sort(function (a, b){
 				return (a.year - b.year);
 			});
-			console.log("Received cancerdeaths: " + cancerdeaths.length);
+			console.log("Received economies: " + economies.length);
 		}
     }
 	async function getPgSig() {
-		if(cancerdeaths.length>=10){
+		if(economies.length>=10){
 
 			offset=offset+10;
 		}
 		//limit=limit+10;
-        console.log("fetching cancerdeaths ....");
-		let cadena = `/api/v1/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
+        console.log("fetching economies ....");
+		let cadena = `/api/v2/economies?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -100,36 +100,36 @@
 		if(res.ok){
 			const data= await res.json();
 			datos2=data;
-			cancerdeaths = datos2.sort(function (a, b){
+			economies = datos2.sort(function (a, b){
 				return (a.year - b.year);
 			});
-			console.log("Received cancerdeaths: " + cancerdeaths.length);
+			console.log("Received economies: " + economies.length);
 		}
     }
 	
-	async function insertcancerdeaths(){
-		if (newcancerdeaths.country == "" || newcancerdeaths.country == null || newcancerdeaths.year == "" || newcancerdeaths.year == null|| newcancerdeaths.ages_zero_fifty == "" || newcancerdeaths.ages_zero_fifty == null || newcancerdeaths.ages_fifty_seventy == "" || newcancerdeaths.ages_fifty_seventy == null || newcancerdeaths.ages_seventy == "" || newcancerdeaths.ages_seventy == null) {
+	async function insertEconomies(){
+		if (neweconomies.country == "" || neweconomies.country == null || neweconomies.year == "" || neweconomies.year == null|| neweconomies.percapita == "" || neweconomies.percapita == null || neweconomies.currency == "" || neweconomies.currency == null || neweconomies.currentprices == "" || neweconomies.currentprices == null) {
 			visibleError = true;
 					visibleMsg = false;
 					msg = "Debe de rellenar todos los campos";
          }
 		 else{
-        console.log("Inserting cancerdeaths...."+JSON.stringify(newcancerdeaths));
-        const res = await fetch("/api/v1/cancerdeaths-stats",
+        console.log("Inserting economies...."+JSON.stringify(neweconomies));
+        const res = await fetch("/api/v2/economies",
 			{
 				method: "POST",
-				body: JSON.stringify(newcancerdeaths),
+				body: JSON.stringify(neweconomies),
 				headers: {
 					"Content-Type": "application/json"
 				}
 			}).then(function (res){
 				if(res.status == 201){
-				getcancerdeaths();
-				newcancerdeaths.country = null;
-					newcancerdeaths.year = null;
-					newcancerdeaths.ages_zero_fifty = null;
-					newcancerdeaths.ages_fifty_seventy = null;
-					newcancerdeaths.ages_seventy = null;
+				getEconomies();
+				neweconomies.country = null;
+					neweconomies.year = null;
+					neweconomies.percapita = null;
+					neweconomies.currency = null;
+					neweconomies.currentprices = null;
 				visibleError = false;
 					visibleMsg = true;
 					msg = "Entrada introducida con éxito";}
@@ -144,12 +144,12 @@
                  }
 			}); 
     }}
-	async function Borrarcancerdeaths(name, year) {
-        const res = await fetch("/api/v1/cancerdeaths-stats/"+name+"/"+year, {
+	async function BorrarEconomies(name, year) {
+        const res = await fetch("/api/v2/economies/"+name+"/"+year, {
             method: "DELETE"
         }).then(function(res) {
            
-            getcancerdeaths();      
+            getEconomies();      
             if (res.status==200) {
                 console.log("Deleted " + name); 
 				//window.alert(name + " elimida con éxito"); 
@@ -166,13 +166,13 @@
             }      
         });
     }
-	async function BorrarcancerdeathsAll(){
-        console.log("Deleting cancerdeathss....");
-        const res = await fetch("/api/v1/cancerdeaths-stats/",
+	async function BorrarEconomiesAll(){
+        console.log("Deleting economies....");
+        const res = await fetch("/api/v2/economies/",
 			{
 				method: "DELETE"
 			}).then(function (res){
-				getcancerdeaths();
+				getEconomies();
 				//window.alert("Entradas elimidas con éxito");
 				visibleError = false;
 					visibleMsg = true;
@@ -180,13 +180,13 @@
 			});
     }
 
-	async function Loadcancerdeaths(){
-        console.log("Loading cancerdeaths....");
-        const res = await fetch("/api/v1/cancerdeaths-stats/loadInitialData",
+	async function LoadEconomies(){
+        console.log("Loading economies....");
+        const res = await fetch("/api/v2/economies/loadInitialData",
 			{
 				method: "GET"
 			}).then(function (res){
-				getcancerdeaths();
+				geteconomies();
 				//window.alert("Entradas cargadas con éxito");
 				visibleError = false;
 					visibleMsg = true;
@@ -203,7 +203,7 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="./api/v2/economies">Economies-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
@@ -214,7 +214,7 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/Cancerdeaths-stats">Cancerdeaths FRONT-END</DropdownItem>
+				  <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
 				  <DropdownItem href="./#/esco-stats">esco FRONT-END</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>
@@ -225,7 +225,7 @@
 			  <Dropdown >
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/cancerdeaths-graph">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>
@@ -238,7 +238,7 @@
 		</Nav>
 	</Navbar>
 	<!---->
-    <h1>Tasa de muertes por cancer</h1>
+    <h1>Economia Mundial</h1>
 	<Alert color="danger" isOpen={visibleError} toggle={() => (visibleError = false)}>
 		{#if msg}
 			<p>ERROR: {msg}</p>
@@ -255,9 +255,9 @@
 	<Button on:click="{getPgSig}">
 		Página Siguiente
 	</Button>
-    {#await cancerdeaths}
+    {#await economies}
 loading
-	{:then cancerdeaths}
+	{:then economies}
 	<Table bordered>
         <thead>
             <tr>
@@ -278,7 +278,7 @@ loading
 					visibleMsg = false;
 					msg = "Los campos fecha inicio y fecha fin no pueden estar vacíos";
                 }else{
-                    getcancerdeaths();
+                    getEconomies();
                 }
             }}">
                 Buscar
@@ -287,7 +287,7 @@ loading
             <td align="center"><Button outline color="info" on:click="{()=>{
                 from = null;
                 to = null;
-                getcancerdeaths();
+                getEconomies();
                 
             }}">
                 Limpiar Búsqueda
@@ -301,30 +301,30 @@ loading
 			<tr>
 				<th>País</th>
 				<th>Año</th>
-                <th>Muertes 0-50 años</th>
-                <th>Muertes 50-70 años</th>
-                <th>Muertes 70 años</th>
+                <th>percapita</th>
+                <th>currency</th>
+                <th>currentprices</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><input bind:value="{newcancerdeaths.country}"></td>
-				<td><input type="number" bind:value="{newcancerdeaths.year}"></td>
-				<td><input type="number" bind:value="{newcancerdeaths.ages_zero_fifty}"></td>
-				<td><input type="number" bind:value="{newcancerdeaths.ages_fifty_seventy}"></td>
-				<td><input type="number" bind:value="{newcancerdeaths.ages_seventy}"></td>
+				<td><input bind:value="{neweconomies.country}"></td>
+				<td><input type="number" bind:value="{neweconomies.year}"></td>
+				<td><input type="number" bind:value="{neweconomies.percapita}"></td>
+				<td><input type="number" bind:value="{neweconomies.currency}"></td>
+				<td><input type="number" bind:value="{neweconomies.currentprices}"></td>
 
-				<td align="center"><Button outline color="primary" on:click="{insertcancerdeaths}">
+				<td align="center"><Button outline color="primary" on:click="{insertEconomies}">
 					Añadir
 					</Button>
 					
 				</td>
 				<td align="center"><Button outline color="primary" on:click="{()=>{
-					newcancerdeaths.country = null;
-					newcancerdeaths.year = null;
-					newcancerdeaths.ages_zero_fifty = null;
-					newcancerdeaths.ages_fifty_seventy = null;
-					newcancerdeaths.ages_seventy = null;
+					neweconomies.country = null;
+					neweconomies.year = null;
+					neweconomies.percapita = null;
+					neweconomies.currency = null;
+					neweconomies.currentprices = null;
 				}}">
 					Limpiar
 					</Button>
@@ -332,30 +332,30 @@ loading
 				
 			</tr>
 			
-			{#each cancerdeaths as cd}
+			{#each economies as cd}
 			<tr>
 				<td>{cd.country}</td>
 				<td>{cd.year}</td>
-                <td>{cd.ages_zero_fifty}</td>
-                <td>{cd.ages_fifty_seventy}</td>
-                <td>{cd.ages_seventy}</td>
+                <td>{cd.percapita}</td>
+                <td>{cd.currency}</td>
+                <td>{cd.currentprices}</td>
 
 				<td align="center"><Button outline color="warning" on:click={function (){
-					window.location.href = `/#/cancerdeaths/${cd.country+"/"+cd.year}`
+					window.location.href = `/#/economies/${cd.country+"/"+cd.year}`
 				}}>
 					Editar
 				</Button>
-				<td align="center"><Button outline color="danger" on:click={Borrarcancerdeaths(cd.country,cd.year)}>
+				<td align="center"><Button outline color="danger" on:click={BorrarEconomies(cd.country,cd.year)}>
 					Borrar
 				</Button>
 				</td>
 			</tr>
 			{/each}
 			<tr>
-				<td><Button outline color="success" on:click={Loadcancerdeaths}>
+				<td><Button outline color="success" on:click={LoadEconomies}>
 					Cargar datos
 				</Button></td>
-				<td><Button outline color="danger" on:click={BorrarcancerdeathsAll}>
+				<td><Button outline color="danger" on:click={BorrarEconomiesAll}>
 					Borrar todo
 				</Button></td>
 			</tr>

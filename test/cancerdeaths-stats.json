@@ -25,7 +25,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/loadInitialData",
+					"raw": "{{HOST}}/api/v2/economies/loadInitialData",
 					"host": [
 						"{{HOST}}"
 					],
@@ -68,7 +68,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/",
+					"raw": "{{HOST}}/api/v2/economies/",
 					"host": [
 						"{{HOST}}"
 					],
@@ -111,7 +111,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain",
+					"raw": "{{HOST}}/api/v2/economies/spain",
 					"host": [
 						"{{HOST}}"
 					],
@@ -131,7 +131,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2019",
+					"raw": "{{HOST}}/api/v2/economies/spain/2019",
 					"host": [
 						"{{HOST}}"
 					],
@@ -165,7 +165,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats?year=2019",
+					"raw": "{{HOST}}/api/v2/economies?year=2019",
 					"host": [
 						"{{HOST}}"
 					],
@@ -204,7 +204,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/francee",
+					"raw": "{{HOST}}/api/v2/economies/francee",
 					"host": [
 						"{{HOST}}"
 					],
@@ -246,7 +246,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
+					"raw": "{{HOST}}/api/v2/economies",
 					"host": [
 						"{{HOST}}"
 					],
@@ -287,7 +287,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain",
+					"raw": "{{HOST}}/api/v2/economies/spain",
 					"host": [
 						"{{HOST}}"
 					],
@@ -329,7 +329,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
+					"raw": "{{HOST}}/api/v2/economies",
 					"host": [
 						"{{HOST}}"
 					],
@@ -370,7 +370,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
+					"raw": "{{HOST}}/api/v2/economies",
 					"host": [
 						"{{HOST}}"
 					],
@@ -411,7 +411,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2019",
+					"raw": "{{HOST}}/api/v2/economies/spain/2019",
 					"host": [
 						"{{HOST}}"
 					],
@@ -454,7 +454,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
+					"raw": "{{HOST}}/api/v2/economies",
 					"host": [
 						"{{HOST}}"
 					],
@@ -495,7 +495,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2013",
+					"raw": "{{HOST}}/api/v2/economies/spain/2013",
 					"host": [
 						"{{HOST}}"
 					],
@@ -538,7 +538,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2019",
+					"raw": "{{HOST}}/api/v2/economies/spain/2019",
 					"host": [
 						"{{HOST}}"
 					],
@@ -581,7 +581,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
+					"raw": "{{HOST}}/api/v2/economies",
 					"host": [
 						"{{HOST}}"
 					],

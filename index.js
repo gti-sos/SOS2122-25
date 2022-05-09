@@ -5,19 +5,19 @@ const app = express();
 app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
-const cancerdeaths_stats_API = require("./src/back/cancerdeaths-stats.js");
+const economies_stats_API = require("./src/back/economies-stats-v2.js");
 const esco_stats_API = require("./src/back/esco-stats.js");
 const airpollution_stats_API = require("./src/back/air-pollution-stats.js");
 const Datastore = require('nedb');
 
 
 
-db_cancerdeaths_stats = new Datastore();
+db_economies_stats = new Datastore();
 db_esco_stats = new Datastore();
 db_airpollution_stats = new Datastore();
 
 
-cancerdeaths_stats_API.register(app,db_cancerdeaths_stats);
+economies_stats_API.register(app,db_economies_stats);
 esco_stats_API.register(app,db_esco_stats);
 airpollution_stats_API.register(app,db_airpollution_stats);
 

@@ -1,4 +1,4 @@
-//Alicia Campos Castello
+
 const bodyParser = require("body-parser");
 
 const BASE_API_URL_AIR_POLLUTION_STATS = "/api/v1/air-pollution-stats";

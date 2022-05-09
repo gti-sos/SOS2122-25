@@ -10,7 +10,7 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="./api/v2/economies">economies-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
@@ -21,7 +21,7 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/Cancerdeaths-stats">Cancerdeaths FRONT-END</DropdownItem>
+				  <DropdownItem href="./#/Cancerdeaths-stats">economies FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./#/esco-stats">esco FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
@@ -32,7 +32,7 @@
 		  <Dropdown >
 			<DropdownToggle nav caret> Gráficas </DropdownToggle>
 			<DropdownMenu end>
-			  <DropdownItem href="./#/cancerdeaths-graph">Cancerdeaths-Stats</DropdownItem>
+			  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
 			  <DropdownItem divider/>
 			  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
 			  <DropdownItem divider/>
@@ -51,7 +51,7 @@
     <h1>SOS2122-25</h1>
 
     <h3>Team</h3>
-    <p>- <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>(fuente de datos: <a href="https://ourworldindata.org/cancer#deaths-from-cancer">Cancerdeaths-stats</a>)</p>
+    <p>- <a href="https://github.com/damiangc99">Damian Gonzalez Carrasco</a>(fuente de datos: <a href="https://ourworldindata.org/cancer#deaths-from-cancer">Cancerdeaths-stats</a>)</p>
     <p>- <a href="https://github.com/AngelSM11">Angel Simon Mesa </a> (fuente de datos: <a href="https://ourworldindata.org/esco">esco-stats</a>)</p>
     <p>- <a href="https://github.com/AliciaCamposCastello">Alicia Campos Castelló</a>(fuente de datos: AirPollution-stats)</p>
     <br>
@@ -62,12 +62,12 @@
     <h3>URL:</h3><a href="http://SOS2122-25.herokuapp.com">http://SOS2122-25.herokuapp.com</a>
     <br><br>
     <h3>Documentos POSTMAN:</h3>
-    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/cancerdeaths-stats/docs">https://SOS2122-25.herokuapp.com/api/v1/cancerdeaths-stats/docs </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
+    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v2/economies/docs">https://SOS2122-25.herokuapp.com/api/v2/economies/docs </a>(developed by <a href="https://github.com/damiangc99">Damian Gonzalez Carrasco</a>)</p>
     <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs">https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
     <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs">https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs </a>(developed by <a href="https://github.com/AliciaCamposCastello">Alicia Campos Castelló</a>)</p>
     <br>
 	<h3>APIS:</h3>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/cancerdeaths-stats">https://SOS2122-25.herokuapp.com/api/v1/cancerdeaths-stats </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v2/economies">https://SOS2122-25.herokuapp.com/api/v2/economies </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/esco-stats">https://SOS2122-25.herokuapp.com/api/v1/esco-stats </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats">https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats </a>(developed by <a href="https://github.com/AliciaCamposCastello">Alicia Campos Castello</a>)</p>
     <br>
@@ -77,7 +77,7 @@
 	<p>- <a href="#/air-pollution-stats">https://SOS2122-25.herokuapp.com/#/air-pollution-stats </a>(developed by <a href="https://github.com/AliciaCamposCastello">Alicia Campos Castello</a>)</p>
     <br>
     <h3>GÁFRICAS:</h3>
-    <p>- <a href="./#/cancerdeaths-graph">https://SOS2122-25.herokuapp.com/#/cancerdeaths-graph </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
+    <p>- <a href="./#/economies-graph">https://SOS2122-25.herokuapp.com/#/economies-graph </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
     <p>- <a href="./#/graphesco">https://SOS2122-25.herokuapp.com/#/graphesco </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
     <p>- <a href="#/air-pollution-stats">https://SOS2122-25.herokuapp.com/#/air-pollution-stats </a>(developed by <a href="https://github.com/AliciaCamposCastello">Alicia Campos Castello</a>)</p>
 	<p>- <a href="./#/graph">https://SOS2122-25.herokuapp.com/#/graph </a></p>

@@ -6,22 +6,22 @@
 
     let year = [];
     let country = [];
-    let ages_zero_fifty = [];
-    let ages_fifty_seventy = [];
-    let ages_seventy = [];
+    let percapita = [];
+    let currency = [];
+    let currentprices = [];
     let datos = []; 
     let datosOrdenados = [];   
     //creo 2 let datos para poder ordenado los datos por año
 
     async function getData(){
         console.log("Fetching cancerdeaths....");
-        const res = await fetch("/api/v1/cancerdeaths-stats");
+        const res = await fetch("/api/v2/economies");
         if(res.ok){
             const data = await res.json();          
             datos = data;
             //si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
             if (datos.length == 0) {
-                const res = await fetch("/api/v1/cancerdeaths-stats/loadInitialData");
+                const res = await fetch("/api/v2/economies/loadInitialData");
                 console.log("Entradas recibidas: "+datos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
             datosOrdenados = datos.sort(function (a, b){
@@ -31,9 +31,9 @@
             datosOrdenados.forEach(dato => {
                 year.push(dato.year);
                 country.push(dato.country+"-"+dato.year);
-                ages_zero_fifty.push(dato.ages_zero_fifty);
-                ages_fifty_seventy.push(dato.ages_fifty_seventy);
-                ages_seventy.push(dato.ages_seventy);          
+                percapita.push(dato.percapita);
+                currency.push(dato.currency);
+                currentprices.push(dato.currentprices);          
             });
             location.reload();
             }
@@ -47,9 +47,9 @@
             datosOrdenados.forEach(dato => {
                 year.push(dato.year);
                 country.push(dato.country+"-"+dato.year);
-                ages_zero_fifty.push(dato.ages_zero_fifty);
-                ages_fifty_seventy.push(dato.ages_fifty_seventy);
-                ages_seventy.push(dato.ages_seventy);            
+                percapita.push(dato.percapita);
+                currency.push(dato.currency);
+                currentprices.push(dato.currentprices);            
             }); 
             }
             
@@ -64,11 +64,9 @@
                 type: 'area'
             },
             title: {
-                text: 'Grafica de muertes producidad por cancer'
+                text: 'Grafica de economia mundial'
             },
-            subtitle: {
-                text: 'Source: https://ourworldindata.org/cancer#deaths-from-cancer'
-            },
+
             xAxis: {
                 categories: country,
                 tickmarkPlacement: 'on',
@@ -79,13 +77,13 @@
             yAxis: {
                 
                 title: {
-                    text: 'Muertes'
+                    text: 'economia'
                 },
                 
             },
             tooltip: {
                 split: true,
-                valueSuffix: 'muertes'
+                valueSuffix: 'economia'
             },
             plotOptions: {
                 
@@ -102,16 +100,16 @@
             
             series: [
                 {
-                name: 'Mayores de 70 años',
-                data: ages_seventy
+                name: 'percapita',
+                data: percapita
                 },
                 {
-                name: 'Entre 50 y 70 años',
-                data: ages_fifty_seventy
+                name: 'currency',
+                data: currency
                 },
                 {
-                name: 'Menores de 50 años',
-                data: ages_zero_fifty
+                name: 'currentprices',
+                data: currentprices
                 }
             ]
         });
@@ -139,7 +137,7 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="./api/v2/economies">economies-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
@@ -150,7 +148,7 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/Cancerdeaths-stats">Cancerdeaths FRONT-END</DropdownItem>
+				  <DropdownItem href="./#/Cancerdeaths-stats">economies FRONT-END</DropdownItem>
 				  <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">Inversion promoción social</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>
@@ -161,7 +159,7 @@
 			  <Dropdown >
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/cancerdeaths-graph">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
 				  <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">Inversion promoción social</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>

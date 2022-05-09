@@ -111,9 +111,9 @@
                 <tr>
                     <th>País</th>
                     <th>Año</th>
-                    <th>Muertes 0-50 años</th>
-                    <th>Muertes 50-70 años</th>
-                    <th>Muertes 70 años</th>
+                    <th>percapita</th>
+                    <th>currency</th>
+                    <th>currentprices</th>
                 </tr>
             </thead>
             <tbody>
