@@ -1,33 +1,37 @@
+const cool = require("cool-ascii-faces");
 const express = require("express");
-const bodyParser = require("body-parser");
+const bodyParser = require("body-parser")
 const app = express();
-const path = require("path");
 app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
-const economies_stats_API = require("./src/back/economies-stats-v2.js");
-const esco_stats_API = require("./src/back/esco-stats-v2.js");
-const expo_stats_API = require("./src/back/expo-stats-v2.js");
-
-var Datastore = require("nedb");
-
-ECO_DB = new Datastore();
-ESCO_DB = new Datastore();
+const cancerdeaths_stats_API = require("./src/back/cancerdeaths-stats.js");
+const esco_stats_API = require("./src/back/esco-stats.js");
+const airpollution_stats_API = require("./src/back/air-pollution-stats.js");
+const Datastore = require('nedb');
 
 
 
+db_cancerdeaths_stats = new Datastore();
+db_esco_stats = new Datastore();
+db_airpollution_stats = new Datastore();
 
-economies_stats_API.register(app,ECO_DB);
-esco_stats_API.register(app,ESCO_DB);
-expo_stats_API.register(app);
 
-app.use("/api/v2/svelteExpo", express.static("./src/front/frontExpo/public"));
-app.use("/api/v2/svelteEconomies", express.static("./src/front/frontEconomies/public"));
-app.use("/api/v2/svelteEsco", express.static("./src/front/frontEsco/public"));
+cancerdeaths_stats_API.register(app,db_cancerdeaths_stats);
+esco_stats_API.register(app,db_esco_stats);
+airpollution_stats_API.register(app,db_airpollution_stats);
 
-app.use("/",express.static("./public"));
+app.use("/", express.static(`public`))
 
+app.get("/cool", (req,res)=>{
+    console.log("Requested /cool route");
+    res.send("<html><body><h1>" + cool()+ "</h1></body></html>")
+});
 
 app.listen(port, ()=>{
     console.log(`Server ready at port ${port}`);
 });
+
+
+
+

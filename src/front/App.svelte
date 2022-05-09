@@ -1,26 +1,42 @@
 <script>
 	import Router from 'svelte-spa-router';
 	import Home from './Home.svelte';
-	import esco from './frontEsco/esco.svelte';
-	import Editesco from "./frontEsco/Editesco.svelte";
-	import ExpoTable from './frontExpo/ExpoTable.svelte';
-	import EditExpoTable from './frontExpo/editExpoTable.svelte';
-	import EconomiesTable from './frontEconomies/economiesTable.svelte';
-	import edit from "./frontEconomies/editEconomies.svelte";
+	import Info from './Info.svelte';
 
+	import esco from './esco-stats/esco.svelte';
+	import Editesco from "./esco-stats/Editesco.svelte";
+	import MyGraphesco from './esco-stats/MyGraphesco.svelte';
+	import Cancerdeaths from './cancerdeaths-stats/Cancerdeaths.svelte';
+	import EditCancerdeaths from "./cancerdeaths-stats/EditCancerdeaths.svelte";
+	import MyGraphCancerdeaths from "./cancerdeaths-stats/MyGraphCancerdeaths.svelte";
+	import Airpollution from './air-pollution-stats/Airpollution.svelte';
+	import EditAirpollution from "./air-pollution-stats/EditAirpollution.svelte";
+
+	
+import AirPollutionGraph from './air-pollution-stats/AirPollutionGraph.svelte';
+import MyGraph from './MyGraph.svelte';
 	//export let name;
+
 	const routes={
-		"/" : Home,
+		'/' : Home,
+		"/info" : Info,
+
 		"/esco-stats" : esco,
-		"/esco/:country" : Editesco,
-		"/ExpoTable" : ExpoTable,
-		"/ExpoTable/:country" : EditExpoTable,
-		"/economiesTable": EconomiesTable,
-		"/economiesTable/:country": edit,
-		"/info" : Home
-		
+		"/esco/:country/:year" : Editesco,
+		"/graphesco": MyGraphesco,
+		"/cancerdeaths-stats" : Cancerdeaths,
+		"/cancerdeaths/:country/:year" : EditCancerdeaths,
+		"/cancerdeaths-graph": MyGraphCancerdeaths,
+		"/air-pollution-stats" : Airpollution,
+		"/air-pollution/:country/:year" : EditAirpollution,
+		"/graphAirPollution" : AirPollutionGraph,
+		"/graph": MyGraph
+
+
 	};
 	
+
+
 </script>
 
 <main>
@@ -30,3 +46,4 @@
 	<Router {routes} />
 	
 </main>
+
