@@ -177,7 +177,11 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
+<<<<<<< HEAD
 				  <DropdownItem href="./api/v2/economies">Economies-Stats</DropdownItem>
+=======
+				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
@@ -199,7 +203,11 @@
 			  <Dropdown >
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
+<<<<<<< HEAD
 				  <DropdownItem href="./#/economies-graph">Cancerdeaths-Stats</DropdownItem>
+=======
+				  <DropdownItem href="./#/cancerdeaths-graph">Cancerdeaths-Stats</DropdownItem>
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
 				  <DropdownItem href="#/graphAirPollution">AirPollution-Stats</DropdownItem>
                   <DropdownItem href="#/graph">Grafica comun</DropdownItem>
@@ -212,7 +220,11 @@
 		  </NavItem>-->
 		</Nav>
 	</Navbar>
+<<<<<<< HEAD
     <h1>Economia Mundial</h1>
+=======
+    <h1>Tasa de muertes por contaminacion de aire</h1>
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 	<Button on:click="{getPgAnt}">
 		Página Anterior
 	</Button>
@@ -272,9 +284,15 @@ loading
 			<tr>
 				<th>País</th>
 				<th>Año</th>
+<<<<<<< HEAD
                 <th>Per Capita</th>
                 <th>currency</th>
                 <th>currentprices</th>
+=======
+                <th>Muertes 0-50 años</th>
+                <th>Muertes 50-70 años</th>
+                <th>Muertes 70 años</th>
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 			</tr>
 		</thead>
 		<tbody>

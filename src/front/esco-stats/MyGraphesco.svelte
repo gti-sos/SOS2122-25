@@ -129,7 +129,11 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
+<<<<<<< HEAD
 				  <DropdownItem href="./api/v2/economies">economies-Stats</DropdownItem>
+=======
+				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
@@ -140,7 +144,11 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
+<<<<<<< HEAD
 				  <DropdownItem href="./#/Cancerdeaths-stats">economies FRONT-END</DropdownItem>
+=======
+				  <DropdownItem href="./#/Cancerdeaths-stats">Cancerdeaths FRONT-END</DropdownItem>
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
                   <DropdownItem divider/>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
                   <DropdownItem divider/>
@@ -151,7 +159,11 @@
 			  <Dropdown >
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
+<<<<<<< HEAD
 				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
+=======
+				  <DropdownItem href="./#/cancerdeaths-graph">Cancerdeaths-Stats</DropdownItem>
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
                   <DropdownItem divider/>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
                   <DropdownItem divider/>

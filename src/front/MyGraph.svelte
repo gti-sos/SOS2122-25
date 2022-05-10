@@ -4,22 +4,34 @@
    
     let airpollutions = [];
     let escos = [];
+<<<<<<< HEAD
     let economies = [];
+=======
+    let cancerdeaths = [];
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 
     let country= [];
     let year = [];
     let ages_seventy = [];
     let ages_fifty_seventy = [];
+<<<<<<< HEAD
     let ages_zero_fifty = [];
     let percapita = [];
     let currency = [];
     let currentprices = [];
+=======
+    let ages_zero_fifty = []; 
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
     let ages1 =[];
     let ages2=[];
     let ages3=[];
     async function getData(){
         const res1= await fetch("/api/v1/air-pollution-stats");
+<<<<<<< HEAD
         const res2= await fetch("/api/v2/economies");
+=======
+        const res2= await fetch("/api/v1/cancerdeaths-stats");
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
         const res3= await fetch("/api/v1/esco-stats");
         if(res1.ok && res2.ok && res3.ok){
             const data1 = await res1.json();
@@ -45,6 +57,7 @@
                 ages2.push(esco.ages_seventy+esco.ages_fifty_seventy+esco.ages_zero_fifty);
                 ages_seventy.push(esco.ages_seventy);
             });
+<<<<<<< HEAD
             economies=data3;
             console.log("Recibido: " + economies.length);
             economies.forEach(cancerdeath=>{
@@ -54,6 +67,17 @@
                 currency.push(economies.currency);
                 ages3.push(economies.percapita+economies.currency+economies.currentprices);
                 currentprices.push(economies.currentprices);
+=======
+            cancerdeaths=data3;
+            console.log("Recibido: " + cancerdeaths.length);
+            cancerdeaths.forEach(cancerdeath=>{
+                //year.push(cancerdeath.year);
+                //country.push(cancerdeath.country);
+                ages_zero_fifty.push(cancerdeath.ages_zero_fifty);
+                ages_fifty_seventy.push(cancerdeath.ages_fifty_seventy);
+                ages3.push(cancerdeath.ages_seventy+cancerdeath.ages_fifty_seventy+cancerdeath.ages_zero_fifty);
+                ages_seventy.push(cancerdeath.ages_seventy);
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
             });
 
 
@@ -99,10 +123,17 @@
         name: 'AirPollution',
         data: ages1,
     },{
+<<<<<<< HEAD
         name: 'esco',
         data: ages2,
     },{
         name: 'economies',
+=======
+        name: 'Escolarization',
+        data: ages2,
+    },{
+        name: 'CancerDeaths',
+>>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
         data: ages3,
     },
     ],
