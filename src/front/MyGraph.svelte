@@ -4,19 +4,22 @@
    
     let airpollutions = [];
     let escos = [];
-    let cancerdeaths = [];
+    let economies = [];
 
     let country= [];
     let year = [];
     let ages_seventy = [];
     let ages_fifty_seventy = [];
-    let ages_zero_fifty = []; 
+    let ages_zero_fifty = [];
+    let percapita = [];
+    let currency = [];
+    let currentprices = [];
     let ages1 =[];
     let ages2=[];
     let ages3=[];
     async function getData(){
         const res1= await fetch("/api/v1/air-pollution-stats");
-        const res2= await fetch("/api/v1/cancerdeaths-stats");
+        const res2= await fetch("/api/v2/economies");
         const res3= await fetch("/api/v1/esco-stats");
         if(res1.ok && res2.ok && res3.ok){
             const data1 = await res1.json();
@@ -42,15 +45,13 @@
                 ages2.push(esco.ages_seventy+esco.ages_fifty_seventy+esco.ages_zero_fifty);
                 ages_seventy.push(esco.ages_seventy);
             });
-            cancerdeaths=data3;
-            console.log("Recibido: " + cancerdeaths.length);
-            cancerdeaths.forEach(cancerdeath=>{
-                //year.push(cancerdeath.year);
-                //country.push(cancerdeath.country);
-                ages_zero_fifty.push(cancerdeath.ages_zero_fifty);
-                ages_fifty_seventy.push(cancerdeath.ages_fifty_seventy);
-                ages3.push(cancerdeath.ages_seventy+cancerdeath.ages_fifty_seventy+cancerdeath.ages_zero_fifty);
-                ages_seventy.push(cancerdeath.ages_seventy);
+            economies=data3;
+            console.log("Recibido: " + economies.length);
+            economies.forEach(economies=>{
+                percapita.push(economies.percapita);
+                currency.push(economies.currency);
+                ages3.push(economies.percapita+economies.currency+economies.currentprices);
+                currentprices.push(economies.currentprices);
             });
 
 
@@ -96,10 +97,10 @@
         name: 'AirPollution',
         data: ages1,
     },{
-        name: 'Escolarization',
+        name: 'esco',
         data: ages2,
     },{
-        name: 'CancerDeaths',
+        name: 'economies',
         data: ages3,
     },
     ],
