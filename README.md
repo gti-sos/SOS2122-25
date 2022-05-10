@@ -4,7 +4,7 @@
   - [Damian Gonzalez Carrasco](https://github.com/damiangc99)
   - [Angel Simon Mesa](https://github.com/AngelSM11)
   - [Adrian Perez](https://github.com/adrmg)
-  - **Project description**:Nuestras fuentes de información esta orientadas a analizar la economia, la escolarizacion y la expo 
+  - **Project description**:Nuestras fuentes de información esta orientadas a analizar la economia, la escolarizacion y las exportaciones 
 - **Repository**: [gti-sos/SOS2122-25](https://github.com/gti-sos/SOS2122-25.git)
 - **URL**: [http://SOS2122-25.herokuapp.com](http://SOS2122-25.herokuapp.com)
 -  **APIs**:
