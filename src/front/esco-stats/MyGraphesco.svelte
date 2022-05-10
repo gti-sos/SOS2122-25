@@ -133,7 +133,7 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo-stats">expoç-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               
@@ -144,7 +144,7 @@
                   <DropdownItem divider/>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
                   <DropdownItem divider/>
-				  <DropdownItem href="#/air-pollution-stats">AirPollution FRONT-END</DropdownItem>
+				  <DropdownItem href="#/expo-stats">expo FRONT-END</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 			  
@@ -155,7 +155,7 @@
                   <DropdownItem divider/>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
                   <DropdownItem divider/>
-				  <DropdownItem href="#/graphAirPollution">AirPollution-Stats</DropdownItem>
+				  <DropdownItem href="#/graphexpo">expo-Stats</DropdownItem>
                   <DropdownItem divider/>
                   <DropdownItem href="./#/graph">Grafica comun</DropdownItem>
 				</DropdownMenu>

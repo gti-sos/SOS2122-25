@@ -9,9 +9,9 @@
 	import economies from './frontEconomies/economies.svelte';
 	import EditEconomies from "./frontEconomies/EditEconomies.svelte";
 	import MyGraphEconomies from "./frontEconomies/MyGraphEconomies.svelte";
-	import Expo from './air-pollution-stats/Expo.svelte';
-	import EditExpo from "./air-pollution-stats/EditExpo.svelte";
-	import ExpoGraph from './air-pollution-stats/ExpoGraph.svelte';
+	import Expo from './expo-stats/Expo.svelte';
+	import EditExpo from "./expo-stats/EditExpo.svelte";
+	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
 	//export let name;
 

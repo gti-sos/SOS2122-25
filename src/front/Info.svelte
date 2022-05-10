@@ -55,7 +55,7 @@
     <p>- <a href="https://github.com/AngelSM11">Angel Simon Mesa </a> (fuente de datos: <a href="https://ourworldindata.org/esco">esco-stats</a>)</p>
     <p>- <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>(fuente de datos: exports-stats)</p>
     <br>
-    <h3>Project description:</h3> Nuestras fuentes de información esta orientadas a analizar la relación que existe entre la tasa de escolarizacion, la economia y la contaminacion del aire en interiores. 
+    <h3>Project description:</h3> Nuestras fuentes de información esta orientadas a analizar la relación que existe entre las exportaciones. 
     <br><br>
     <h3>Repository:</h3><a href="https://github.com/gti-sos/SOS2122-25.git">gti-sos/SOS2122-25</a>
     <br><br>

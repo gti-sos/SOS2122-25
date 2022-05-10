@@ -31,9 +31,9 @@
             expos.forEach(expo => {
                 country.push(expo.country+"-"+expo.year);
                 year.push(expo.year);
-                ages1.push(expo.expo_bys+expo.ages_fifty_seventy+expo.ages_zero_fifty);
-                ages_fifty_seventy.push(expo.ages_fifty_seventy);
-                ages_zero_fifty.push(expo.ages_zero_fifty);   
+                ages1.push(expo.expo_bys+expo.expo_m+expo.expo_tec);
+                expo_m.push(expo.expo_m);
+                expo_tec.push(expo.expo_tec);   
             });
             escos=data2;
             console.log("Recibido: " + escos.length);
@@ -42,8 +42,8 @@
                 //country.push(esco.country);
                 ages_zero_fifty.push(esco.ages_zero_fifty);
                 ages_fifty_seventy.push(esco.ages_fifty_seventy);
-                ages2.push(esco.expo_bys+esco.ages_fifty_seventy+esco.ages_zero_fifty);
-                expo_bys.push(esco.expo_bys);
+                ages2.push(esco.ages_seventy+esco.ages_fifty_seventy+esco.ages_zero_fifty);
+                expo_bys.push(esco.ages_seventy);
             });
             economies=data3;
             console.log("Recibido: " + economies.length);

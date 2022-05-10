@@ -12,10 +12,10 @@
     - [https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs) (developed by [Angel Simon Mesa](https://github.com/AngelSM11))
 <<<<<<< HEAD
 <<<<<<< HEAD
-    - [https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs) (developed by [Adrian Perez](https://github.com/adrianperez01_))
+    - [https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs) (developed by [Adrian Perez](https://github.com/adrianperez01_))
     
 =======
-    - [https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs) (developed by [Adrian Perez Gomez](https://github.com/adrmg))
+    - [https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs) (developed by [Adrian Perez Gomez](https://github.com/adrmg))
 =======
     - [https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs) (developed by [Adrian Perez](https://github.com/adrianperez01_))
 >>>>>>> 6ff6ec0218de74b1df6f9e5b346435b68e0de9a2

@@ -39,7 +39,7 @@
         }
 	}
 
-    async function Editexpo(){
+    async function EditExpo(){
         console.log("Updating expo...."+updatedCountry);
         const res = await fetch("/api/v1/expo/"+params.country+"/"+params.year,
 			{
