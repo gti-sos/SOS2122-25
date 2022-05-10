@@ -23,8 +23,8 @@
         const res3= await fetch("/api/v1/esco-stats");
         if(res1.ok && res2.ok && res3.ok){
             const data1 = await res1.json();
-            const data2 = await res2.json();
-            const data3 = await res3.json();
+            const data3 = await res2.json();
+            const data2 = await res3.json();
             airpollutions = data1;
             console.log("Recibido: "+airpollutions.length);
             //inicializamos los arrays para mostrar los datos
