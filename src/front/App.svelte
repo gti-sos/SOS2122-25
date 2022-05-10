@@ -6,9 +6,9 @@
 	import esco from './esco-stats/esco.svelte';
 	import Editesco from "./esco-stats/Editesco.svelte";
 	import MyGraphesco from './esco-stats/MyGraphesco.svelte';
-	import economies from './frontEconomies/Cancerdeaths.svelte';
-	import EditEconomies from "./frontEconomies/EditCancerdeaths.svelte";
-	import MyGraphEconomies from "./frontEconomies/MyGraphCancerdeaths.svelte";
+	import economies from './frontEconomies/economies.svelte';
+	import EditEconomies from "./frontEconomies/EditEconomies.svelte";
+	import MyGraphEconomies from "./frontEconomies/MyGraphEconomies.svelte";
 	import Airpollution from './air-pollution-stats/Airpollution.svelte';
 	import EditAirpollution from "./air-pollution-stats/EditAirpollution.svelte";
 

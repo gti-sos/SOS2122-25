@@ -24,7 +24,7 @@
     onMount(getEconomies);
 
 	async function getEconomies(){
-		console.log("fetching cancerdeaths ....");
+		console.log("fetching Economies ....");
 		const res= await fetch("/api/v2/economies/" +params.country+"/"+params.year);
 		if(res.ok){
 			const data= await res.json();

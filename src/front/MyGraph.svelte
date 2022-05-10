@@ -47,9 +47,7 @@
             });
             economies=data3;
             console.log("Recibido: " + economies.length);
-            economies.forEach(cancerdeath=>{
-                //year.push(cancerdeath.year);
-                //country.push(cancerdeath.country);
+            economies.forEach(economies=>{
                 percapita.push(economies.percapita);
                 currency.push(economies.currency);
                 ages3.push(economies.percapita+economies.currency+economies.currentprices);

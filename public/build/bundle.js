@@ -32234,23 +32234,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$1, 134, 4, 3925);
+    			add_location(script0, file$1, 132, 4, 3821);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 135, 4, 4018);
+    			add_location(script1, file$1, 133, 4, 3914);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 136, 4, 4121);
+    			add_location(script2, file$1, 134, 4, 4017);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 137, 4, 4221);
+    			add_location(script3, file$1, 135, 4, 4117);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$1, 138, 4, 4323);
+    			add_location(script4, file$1, 136, 4, 4219);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$1, 145, 8, 4501);
-    			add_location(code, file$1, 148, 12, 4668);
+    			add_location(div, file$1, 143, 8, 4397);
+    			add_location(code, file$1, 146, 12, 4564);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 146, 8, 4537);
+    			add_location(p, file$1, 144, 8, 4433);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 144, 4, 4457);
-    			add_location(main, file$1, 142, 0, 4443);
+    			add_location(figure, file$1, 142, 4, 4353);
+    			add_location(main, file$1, 140, 0, 4339);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32365,11 +32365,8 @@ var app = (function () {
     			economies = data3;
     			console.log("Recibido: " + economies.length);
 
-    			economies.forEach(cancerdeath => {
-    				//year.push(cancerdeath.year);
-    				//country.push(cancerdeath.country);
+    			economies.forEach(economies => {
     				percapita.push(economies.percapita);
-
     				currency.push(economies.currency);
     				ages3.push(economies.percapita + economies.currency + economies.currentprices);
     				currentprices.push(economies.currentprices);

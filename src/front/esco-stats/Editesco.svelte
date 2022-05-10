@@ -108,7 +108,7 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/economies">Cancerdeaths FRONT-END</DropdownItem>
+				  <DropdownItem href="./#/economies">Economies FRONT-END</DropdownItem>
                   <DropdownItem divider/>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
                   <DropdownItem divider/>
