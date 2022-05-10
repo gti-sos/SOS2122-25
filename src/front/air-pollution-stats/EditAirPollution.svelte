@@ -94,11 +94,7 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
-<<<<<<< HEAD
 				  <DropdownItem href="./api/v2/economies">Economies-Stats</DropdownItem>
-=======
-				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
@@ -109,11 +105,7 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-<<<<<<< HEAD
 				  <DropdownItem href="./#/Cancerdeaths-stats">economies FRONT-END</DropdownItem>
-=======
-				  <DropdownItem href="./#/Cancerdeaths-stats">Cancerdeaths FRONT-END</DropdownItem>
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
 				  <DropdownItem href="#/air-pollution-stats">AirPollution FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
@@ -124,11 +116,7 @@
 			  <Dropdown >
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
-<<<<<<< HEAD
 				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
-=======
-				  <DropdownItem href="./#/cancerdeaths-graph">Cancerdeaths-Stats</DropdownItem>
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
 				  <DropdownItem href="#/graphAirPollution">AirPollution-Stats</DropdownItem>
                   <DropdownItem href="#/graph">Grafica comun</DropdownItem>
@@ -156,15 +144,9 @@
                 <tr>
                     <th>País</th>
                     <th>Año</th>
-<<<<<<< HEAD
                     <th>Per capita</th>
                     <th>currency</th>
                     <th>currentprices</th>
-=======
-                    <th>Muertes 0-50 años</th>
-                    <th>Muertes 50-70 años</th>
-                    <th>Muertes 70 años</th>
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
                 </tr>
             </thead>
             <tbody>

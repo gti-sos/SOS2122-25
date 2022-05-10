@@ -12,45 +12,45 @@
 	let errorMsg = "";
 	let msg = "";
 
-    let cancerdeaths={};
+    let econos={};
 
     
     let updatedCountry;
     let updatedYear;
-    let updatedAgesZeroFifty;
-    let updatedAgesFiftySeventy;
-    let updatedAgesSeventy;
+    let updatedpercapita;
+    let updatedcurrency;
+    let updatedcurrentprices;
 
-    onMount(getCancerdeaths);
+    onMount(getEconomies);
 
-	async function getCancerdeaths(){
+	async function getEconomies(){
 		console.log("fetching cancerdeaths ....");
-		const res= await fetch("/api/v1/cancerdeaths-stats/" +params.country+"/"+params.year);
+		const res= await fetch("/api/v2/economies/" +params.country+"/"+params.year);
 		if(res.ok){
 			const data= await res.json();
-			cancerdeaths=data;
-			updatedCountry=cancerdeaths.country;
-            updatedYear=cancerdeaths.year;
-            updatedAgesZeroFifty=cancerdeaths.ages_zero_fifty;
-            updatedAgesFiftySeventy=cancerdeaths.ages_fifty_seventy;
-            updatedAgesSeventy=cancerdeaths.ages_seventy;
+			econos=data;
+			updatedCountry=econos.country;
+            updatedYear=econos.year;
+            updatedpercapita=econos.percapita;
+            updatedcurrency=econos.currency;
+            updatedcurrentprices=econos.currentprices;
 		}else{
             Fallos(res.status,params.country);
             pop();
         }
 	}
 
-    async function EditCancerdeaths(){
-        console.log("Updating Cancerdeaths...."+updatedCountry);
-        const res = await fetch("/api/v1/cancerdeaths-stats/"+params.country+"/"+params.year,
+    async function EditEconomies(){
+        console.log("Updating economies...."+updatedCountry);
+        const res = await fetch("/api/v2/economies/"+params.country+"/"+params.year,
 			{
 				method: "PUT",
 				body: JSON.stringify({
                     country: updatedCountry,
                     year: updatedYear,
-                    ages_zero_fifty: updatedAgesZeroFifty,
-                    ages_fifty_seventy: updatedAgesFiftySeventy,
-                    ages_seventy: updatedAgesSeventy
+                    percapita: updatedpercapita,
+                    currency: updatedcurrency,
+                    currentprices: updatedcurrentprices
                 }),
 				headers: {
 					"Content-Type": "application/json"
@@ -102,9 +102,9 @@
 			<p>Correcto: {msg}</p>
 		{/if}
 	</Alert>
-    {#await cancerdeaths}
+    {#await econos}
     loading
-        {:then cancerdeaths}
+        {:then econos}
     
         <Table bordered>
             <thead>
@@ -120,11 +120,11 @@
                 <tr>
                     <td>{params.country}</td>
                     <td>{params.year}</td>
-                    <td><input bind:value="{updatedAgesZeroFifty}"></td>
-                    <td><input bind:value="{updatedAgesFiftySeventy}"></td>
-                    <td><input bind:value="{updatedAgesSeventy}"></td>
+                    <td><input bind:value="{updatedpercapita}"></td>
+                    <td><input bind:value="{updatedcurrency}"></td>
+                    <td><input bind:value="{updatedcurrentprices}"></td>
     
-                    <td><Button outline color="primary" on:click="{EditCancerdeaths}">
+                    <td><Button outline color="primary" on:click="{EditEconomies}">
                         Editar
                         </Button>
                     </td>

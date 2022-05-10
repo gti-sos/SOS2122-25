@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
 //Adrian Perez Gomez
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 const bodyParser = require("body-parser");
 
 const BASE_API_URL_AIR_POLLUTION_STATS = "/api/v1/air-pollution-stats";

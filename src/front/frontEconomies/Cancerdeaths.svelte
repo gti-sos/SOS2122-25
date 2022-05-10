@@ -186,7 +186,7 @@
 			{
 				method: "GET"
 			}).then(function (res){
-				geteconomies();
+				getEconomies();
 				//window.alert("Entradas cargadas con éxito");
 				visibleError = false;
 					visibleMsg = true;
