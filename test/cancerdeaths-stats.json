@@ -1,12 +1,12 @@
 {
 	"info": {
 		"_postman_id": "29415688-89fb-4e35-b714-a2bff465ab28",
-		"name": "SOS2122-25 cancerdeaths_stats",
+		"name": "SOS2122-25",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "cancerdeaths-stats GET Cargar datos iniciales",
+			"name": "economies GET Cargar datos iniciales",
 			"event": [
 				{
 					"listen": "test",
@@ -25,18 +25,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/loadInitialData",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/loadInitialData",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"loadInitialData"
 					]
 				}
@@ -44,7 +40,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats GET Global",
+			"name": "economies GET Global",
 			"event": [
 				{
 					"listen": "test",
@@ -72,18 +68,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						""
 					]
 				}
@@ -91,7 +83,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats GET por País",
+			"name": "economies GET por País",
 			"event": [
 				{
 					"listen": "test",
@@ -119,18 +111,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/spain",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"spain"
 					]
 				}
@@ -138,23 +126,19 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats GET por País y año",
+			"name": "economies GET por País y año",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/spain/2019",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2019",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"spain",
 						"2019"
 					]
@@ -163,7 +147,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats GET en un año concreto",
+			"name": "economies GET en un año concreto",
 			"event": [
 				{
 					"listen": "test",
@@ -181,18 +165,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies?year=2019",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats?year=2019",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats"
+						"economies"
 					],
 					"query": [
 						{
@@ -205,7 +185,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats GET FALLO por País",
+			"name": "economies GET FALLO por País",
 			"event": [
 				{
 					"listen": "test",
@@ -224,18 +204,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/francee",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/francee",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"francee"
 					]
 				}
@@ -243,7 +219,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats POST de una lista de resursos",
+			"name": "economies POST de una lista de resursos",
 			"event": [
 				{
 					"listen": "test",
@@ -270,25 +246,21 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats"
+						"economies"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats POST para un recurso especifico",
+			"name": "economies POST para un recurso especifico",
 			"event": [
 				{
 					"listen": "test",
@@ -315,18 +287,14 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/spain",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"spain"
 					]
 				}
@@ -334,7 +302,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats POST FALLO de una lista de resursos",
+			"name": "economies POST FALLO de una lista de resursos",
 			"event": [
 				{
 					"listen": "test",
@@ -361,25 +329,21 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats"
+						"economies"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats POST FALLO JSON de una lista de resursos",
+			"name": "economies POST FALLO JSON de una lista de resursos",
 			"event": [
 				{
 					"listen": "test",
@@ -406,25 +370,21 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats"
+						"economies"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats PUT de un recurso",
+			"name": "economies PUT de un recurso",
 			"event": [
 				{
 					"listen": "test",
@@ -451,18 +411,14 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/spain/2019",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2019",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"spain",
 						"2019"
 					]
@@ -471,7 +427,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats PUT de una lista de recursos",
+			"name": "economies PUT de una lista de recursos",
 			"event": [
 				{
 					"listen": "test",
@@ -498,25 +454,21 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats"
+						"economies"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats PUT FALLO de un recurso",
+			"name": "economies PUT FALLO de un recurso",
 			"event": [
 				{
 					"listen": "test",
@@ -543,18 +495,14 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/spain/2013",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2013",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"spain",
 						"2013"
 					]
@@ -563,7 +511,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats DELETE de un recurso",
+			"name": "economies DELETE de un recurso",
 			"event": [
 				{
 					"listen": "test",
@@ -590,18 +538,14 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies/spain/2019",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats/spain/2019",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats",
+						"economies",
 						"spain",
 						"2019"
 					]
@@ -610,7 +554,7 @@
 			"response": []
 		},
 		{
-			"name": "cancerdeaths-stats DELETE de una lista de recursos",
+			"name": "economies DELETE de una lista de recursos",
 			"event": [
 				{
 					"listen": "test",
@@ -637,18 +581,14 @@
 					}
 				},
 				"url": {
-<<<<<<< HEAD
 					"raw": "{{HOST}}/api/v2/economies",
-=======
-					"raw": "{{HOST}}/api/v1/cancerdeaths-stats",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"cancerdeaths-stats"
+						"economies"
 					]
 				}
 			},

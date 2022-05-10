@@ -11546,7 +11546,7 @@ var app = (function () {
     	return block;
     }
 
-    // (24:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (24:6) <DropdownItem href="./#/economies">
     function create_default_slot_13$8(ctx) {
     	let t;
 
@@ -11566,7 +11566,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$8.name,
     		type: "slot",
-    		source: "(24:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(24:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -11642,7 +11642,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_13$8] },
     				$$scope: { ctx }
     			},
@@ -12596,7 +12596,7 @@ var app = (function () {
     			a0.textContent = "Damian Gonzalez Carrasco";
     			t7 = text("(fuente de datos: ");
     			a1 = element("a");
-    			a1.textContent = "Cancerdeaths-stats";
+    			a1.textContent = "economies";
     			t9 = text(")");
     			t10 = space();
     			p1 = element("p");
@@ -12618,7 +12618,7 @@ var app = (function () {
     			t21 = space();
     			h31 = element("h3");
     			h31.textContent = "Project description:";
-    			t23 = text(" Nuestras fuentes de información esta orientadas a analizar la relación que existe entre la tasa de escolarizacion, la tasa de muertes por cancer y la contaminacion del aire en interiores. \r\n    ");
+    			t23 = text(" Nuestras fuentes de información esta orientadas a analizar la relación que existe entre la tasa de escolarizacion, la economia y la contaminacion del aire en interiores. \r\n    ");
     			br1 = element("br");
     			br2 = element("br");
     			t24 = space();
@@ -12679,7 +12679,7 @@ var app = (function () {
     			a13.textContent = "https://SOS2122-25.herokuapp.com/api/v2/economies ";
     			t58 = text("(developed by ");
     			a14 = element("a");
-    			a14.textContent = "Raúl Gómez Morales";
+    			a14.textContent = "Damiangc99";
     			t60 = text(")");
     			t61 = space();
     			p7 = element("p");
@@ -12708,10 +12708,10 @@ var app = (function () {
     			p9 = element("p");
     			t77 = text("- ");
     			a19 = element("a");
-    			a19.textContent = "https://SOS2122-25.herokuapp.com/#/Cancerdeaths-stats ";
+    			a19.textContent = "https://SOS2122-25.herokuapp.com/#/economies ";
     			t79 = text("(developed by ");
     			a20 = element("a");
-    			a20.textContent = "Raúl Gómez Morales";
+    			a20.textContent = "Damiangc99";
     			t81 = text(")");
     			t82 = space();
     			p10 = element("p");
@@ -12743,7 +12743,7 @@ var app = (function () {
     			a25.textContent = "https://SOS2122-25.herokuapp.com/#/economies-graph ";
     			t100 = text("(developed by ");
     			a26 = element("a");
-    			a26.textContent = "Raúl Gómez Morales";
+    			a26.textContent = "Damiangc99";
     			t102 = text(")");
     			t103 = space();
     			p13 = element("p");
@@ -12770,107 +12770,107 @@ var app = (function () {
     			a31.textContent = "https://SOS2122-25.herokuapp.com/#/graph";
     			add_location(body, file$b, 5, 0, 162);
     			attr_dev(h1, "class", "svelte-95ufxa");
-    			add_location(h1, file$b, 50, 4, 1932);
-    			add_location(h30, file$b, 52, 4, 1959);
+    			add_location(h1, file$b, 50, 4, 1923);
+    			add_location(h30, file$b, 52, 4, 1950);
     			attr_dev(a0, "href", "https://github.com/damiangc99");
-    			add_location(a0, file$b, 53, 9, 1983);
-    			attr_dev(a1, "href", "https://ourworldindata.org/cancer#deaths-from-cancer");
-    			add_location(a1, file$b, 53, 95, 2069);
-    			add_location(p0, file$b, 53, 4, 1978);
+    			add_location(a0, file$b, 53, 9, 1974);
+    			attr_dev(a1, "href", "https://ourworldindata.org/percapita");
+    			add_location(a1, file$b, 53, 95, 2060);
+    			add_location(p0, file$b, 53, 4, 1969);
     			attr_dev(a2, "href", "https://github.com/AngelSM11");
-    			add_location(a2, file$b, 54, 9, 2170);
+    			add_location(a2, file$b, 54, 9, 2136);
     			attr_dev(a3, "href", "https://ourworldindata.org/esco");
-    			add_location(a3, file$b, 54, 88, 2249);
-    			add_location(p1, file$b, 54, 4, 2165);
+    			add_location(a3, file$b, 54, 88, 2215);
+    			add_location(p1, file$b, 54, 4, 2131);
     			attr_dev(a4, "href", "https://github.com/AliciaCamposCastello");
-    			add_location(a4, file$b, 55, 9, 2321);
-    			add_location(p2, file$b, 55, 4, 2316);
-    			add_location(br0, file$b, 56, 4, 2444);
-    			add_location(h31, file$b, 57, 4, 2454);
-    			add_location(br1, file$b, 58, 4, 2678);
-    			add_location(br2, file$b, 58, 8, 2682);
-    			add_location(h32, file$b, 59, 4, 2692);
+    			add_location(a4, file$b, 55, 9, 2287);
+    			add_location(p2, file$b, 55, 4, 2282);
+    			add_location(br0, file$b, 56, 4, 2410);
+    			add_location(h31, file$b, 57, 4, 2420);
+    			add_location(br1, file$b, 58, 4, 2626);
+    			add_location(br2, file$b, 58, 8, 2630);
+    			add_location(h32, file$b, 59, 4, 2640);
     			attr_dev(a5, "href", "https://github.com/gti-sos/SOS2122-25.git");
-    			add_location(a5, file$b, 59, 24, 2712);
-    			add_location(br3, file$b, 60, 4, 2792);
-    			add_location(br4, file$b, 60, 8, 2796);
-    			add_location(h33, file$b, 61, 4, 2806);
+    			add_location(a5, file$b, 59, 24, 2660);
+    			add_location(br3, file$b, 60, 4, 2740);
+    			add_location(br4, file$b, 60, 8, 2744);
+    			add_location(h33, file$b, 61, 4, 2754);
     			attr_dev(a6, "href", "http://SOS2122-25.herokuapp.com");
-    			add_location(a6, file$b, 61, 17, 2819);
-    			add_location(br5, file$b, 62, 4, 2902);
-    			add_location(br6, file$b, 62, 8, 2906);
-    			add_location(h34, file$b, 63, 4, 2916);
+    			add_location(a6, file$b, 61, 17, 2767);
+    			add_location(br5, file$b, 62, 4, 2850);
+    			add_location(br6, file$b, 62, 8, 2854);
+    			add_location(h34, file$b, 63, 4, 2864);
     			attr_dev(a7, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies/docs");
-    			add_location(a7, file$b, 64, 9, 2955);
+    			add_location(a7, file$b, 64, 9, 2903);
     			attr_dev(a8, "href", "https://github.com/damiangc99");
-    			add_location(a8, file$b, 64, 147, 3093);
-    			add_location(p3, file$b, 64, 4, 2950);
+    			add_location(a8, file$b, 64, 147, 3041);
+    			add_location(p3, file$b, 64, 4, 2898);
     			attr_dev(a9, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs");
-    			add_location(a9, file$b, 65, 9, 3177);
+    			add_location(a9, file$b, 65, 9, 3125);
     			attr_dev(a10, "href", "https://github.com/AngelSM11");
-    			add_location(a10, file$b, 65, 149, 3317);
-    			add_location(p4, file$b, 65, 4, 3172);
+    			add_location(a10, file$b, 65, 149, 3265);
+    			add_location(p4, file$b, 65, 4, 3120);
     			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs");
-    			add_location(a11, file$b, 66, 9, 3392);
+    			add_location(a11, file$b, 66, 9, 3340);
     			attr_dev(a12, "href", "https://github.com/AliciaCamposCastello");
-    			add_location(a12, file$b, 66, 167, 3550);
-    			add_location(p5, file$b, 66, 4, 3387);
-    			add_location(br7, file$b, 67, 4, 3637);
-    			add_location(h35, file$b, 68, 1, 3644);
+    			add_location(a12, file$b, 66, 167, 3498);
+    			add_location(p5, file$b, 66, 4, 3335);
+    			add_location(br7, file$b, 67, 4, 3585);
+    			add_location(h35, file$b, 68, 1, 3592);
     			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies");
-    			add_location(a13, file$b, 69, 6, 3666);
-    			attr_dev(a14, "href", "https://github.com/Rgm13");
-    			add_location(a14, file$b, 69, 134, 3794);
-    			add_location(p6, file$b, 69, 1, 3661);
+    			add_location(a13, file$b, 69, 6, 3614);
+    			attr_dev(a14, "href", "https://github.com/Damiangc99");
+    			add_location(a14, file$b, 69, 134, 3742);
+    			add_location(p6, file$b, 69, 1, 3609);
     			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats");
-    			add_location(a15, file$b, 70, 6, 3864);
+    			add_location(a15, file$b, 70, 6, 3809);
     			attr_dev(a16, "href", "https://github.com/AngelSM11");
-    			add_location(a16, file$b, 70, 136, 3994);
-    			add_location(p7, file$b, 70, 1, 3859);
+    			add_location(a16, file$b, 70, 136, 3939);
+    			add_location(p7, file$b, 70, 1, 3804);
     			attr_dev(a17, "href", "https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats");
-    			add_location(a17, file$b, 71, 6, 4066);
+    			add_location(a17, file$b, 71, 6, 4011);
     			attr_dev(a18, "href", "https://github.com/AliciaCamposCastello");
-    			add_location(a18, file$b, 71, 154, 4214);
-    			add_location(p8, file$b, 71, 1, 4061);
-    			add_location(br8, file$b, 72, 4, 4301);
-    			add_location(h36, file$b, 73, 4, 4311);
-    			attr_dev(a19, "href", "#/Cancerdeaths-stats");
-    			add_location(a19, file$b, 74, 6, 4338);
-    			attr_dev(a20, "href", "https://github.com/Rgm13");
-    			add_location(a20, file$b, 74, 109, 4441);
-    			add_location(p9, file$b, 74, 1, 4333);
+    			add_location(a18, file$b, 71, 154, 4159);
+    			add_location(p8, file$b, 71, 1, 4006);
+    			add_location(br8, file$b, 72, 4, 4246);
+    			add_location(h36, file$b, 73, 4, 4256);
+    			attr_dev(a19, "href", "#/economies");
+    			add_location(a19, file$b, 74, 6, 4283);
+    			attr_dev(a20, "href", "https://github.com/Damiangc99");
+    			add_location(a20, file$b, 74, 91, 4368);
+    			add_location(p9, file$b, 74, 1, 4278);
     			attr_dev(a21, "href", "#/esco-stats");
-    			add_location(a21, file$b, 75, 6, 4511);
+    			add_location(a21, file$b, 75, 6, 4435);
     			attr_dev(a22, "href", "https://github.com/AngelSM11");
-    			add_location(a22, file$b, 75, 93, 4598);
-    			add_location(p10, file$b, 75, 1, 4506);
+    			add_location(a22, file$b, 75, 93, 4522);
+    			add_location(p10, file$b, 75, 1, 4430);
     			attr_dev(a23, "href", "#/air-pollution-stats");
-    			add_location(a23, file$b, 76, 6, 4670);
+    			add_location(a23, file$b, 76, 6, 4594);
     			attr_dev(a24, "href", "https://github.com/AliciaCamposCastello");
-    			add_location(a24, file$b, 76, 111, 4775);
-    			add_location(p11, file$b, 76, 1, 4665);
-    			add_location(br9, file$b, 77, 4, 4862);
-    			add_location(h37, file$b, 78, 4, 4872);
+    			add_location(a24, file$b, 76, 111, 4699);
+    			add_location(p11, file$b, 76, 1, 4589);
+    			add_location(br9, file$b, 77, 4, 4786);
+    			add_location(h37, file$b, 78, 4, 4796);
     			attr_dev(a25, "href", "./#/economies-graph");
-    			add_location(a25, file$b, 79, 9, 4901);
-    			attr_dev(a26, "href", "https://github.com/Rgm13");
-    			add_location(a26, file$b, 79, 108, 5000);
-    			add_location(p12, file$b, 79, 4, 4896);
+    			add_location(a25, file$b, 79, 9, 4825);
+    			attr_dev(a26, "href", "https://github.com/Damiangc99");
+    			add_location(a26, file$b, 79, 108, 4924);
+    			add_location(p12, file$b, 79, 4, 4820);
     			attr_dev(a27, "href", "./#/graphesco");
-    			add_location(a27, file$b, 80, 9, 5073);
+    			add_location(a27, file$b, 80, 9, 4994);
     			attr_dev(a28, "href", "https://github.com/AngelSM11");
-    			add_location(a28, file$b, 80, 96, 5160);
-    			add_location(p13, file$b, 80, 4, 5068);
+    			add_location(a28, file$b, 80, 96, 5081);
+    			add_location(p13, file$b, 80, 4, 4989);
     			attr_dev(a29, "href", "#/air-pollution-stats");
-    			add_location(a29, file$b, 81, 9, 5235);
+    			add_location(a29, file$b, 81, 9, 5156);
     			attr_dev(a30, "href", "https://github.com/AliciaCamposCastello");
-    			add_location(a30, file$b, 81, 114, 5340);
-    			add_location(p14, file$b, 81, 4, 5230);
+    			add_location(a30, file$b, 81, 114, 5261);
+    			add_location(p14, file$b, 81, 4, 5151);
     			attr_dev(a31, "href", "./#/graph");
-    			add_location(a31, file$b, 82, 6, 5429);
-    			add_location(p15, file$b, 82, 1, 5424);
+    			add_location(a31, file$b, 82, 6, 5350);
+    			add_location(p15, file$b, 82, 1, 5345);
     			attr_dev(main, "class", "svelte-95ufxa");
-    			add_location(main, file$b, 49, 0, 1920);
+    			add_location(main, file$b, 49, 0, 1911);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -13490,7 +13490,7 @@ var app = (function () {
     	return block;
     }
 
-    // (206:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (206:6) <DropdownItem href="./#/economies">
     function create_default_slot_26$3(ctx) {
     	let t;
 
@@ -13510,7 +13510,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_26$3.name,
     		type: "slot",
-    		source: "(206:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(206:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -13586,7 +13586,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_26$3] },
     				$$scope: { ctx }
     			},
@@ -14751,24 +14751,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$a, 250, 4, 7499);
-    			add_location(th1, file$a, 251, 4, 7529);
-    			add_location(tr0, file$a, 249, 3, 7489);
-    			add_location(thead, file$a, 248, 2, 7477);
+    			add_location(th0, file$a, 250, 4, 7490);
+    			add_location(th1, file$a, 251, 4, 7520);
+    			add_location(tr0, file$a, 249, 3, 7480);
+    			add_location(thead, file$a, 248, 2, 7468);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$a, 258, 7, 7603);
-    			add_location(td0, file$a, 258, 3, 7599);
+    			add_location(input0, file$a, 258, 7, 7594);
+    			add_location(td0, file$a, 258, 3, 7590);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$a, 259, 7, 7666);
-    			add_location(td1, file$a, 259, 3, 7662);
+    			add_location(input1, file$a, 259, 7, 7657);
+    			add_location(td1, file$a, 259, 3, 7653);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$a, 260, 3, 7723);
+    			add_location(td2, file$a, 260, 3, 7714);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$a, 273, 3, 8118);
-    			add_location(tr1, file$a, 257, 2, 7590);
-    			add_location(tbody, file$a, 254, 2, 7573);
+    			add_location(td3, file$a, 273, 3, 8109);
+    			add_location(tr1, file$a, 257, 2, 7581);
+    			add_location(tbody, file$a, 254, 2, 7564);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -15051,14 +15051,14 @@ var app = (function () {
     			t10 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$a, 322, 4, 9375);
-    			add_location(td1, file$a, 323, 4, 9405);
-    			add_location(td2, file$a, 324, 16, 9444);
-    			add_location(td3, file$a, 325, 16, 9494);
-    			add_location(td4, file$a, 326, 16, 9547);
-    			add_location(td5, file$a, 328, 4, 9584);
-    			add_location(td6, file$a, 333, 4, 9755);
-    			add_location(tr, file$a, 321, 3, 9365);
+    			add_location(td0, file$a, 322, 4, 9366);
+    			add_location(td1, file$a, 323, 4, 9396);
+    			add_location(td2, file$a, 324, 16, 9435);
+    			add_location(td3, file$a, 325, 16, 9485);
+    			add_location(td4, file$a, 326, 16, 9538);
+    			add_location(td5, file$a, 328, 4, 9575);
+    			add_location(td6, file$a, 333, 4, 9746);
+    			add_location(tr, file$a, 321, 3, 9356);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -15350,35 +15350,35 @@ var app = (function () {
     			t18 = space();
     			td8 = element("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$a, 290, 4, 8375);
-    			add_location(th1, file$a, 291, 4, 8394);
-    			add_location(th2, file$a, 292, 16, 8424);
-    			add_location(th3, file$a, 293, 16, 8468);
-    			add_location(th4, file$a, 294, 16, 8513);
-    			add_location(tr0, file$a, 289, 3, 8365);
-    			add_location(thead, file$a, 288, 2, 8353);
-    			add_location(input0, file$a, 299, 8, 8589);
-    			add_location(td0, file$a, 299, 4, 8585);
+    			add_location(th0, file$a, 290, 4, 8366);
+    			add_location(th1, file$a, 291, 4, 8385);
+    			add_location(th2, file$a, 292, 16, 8415);
+    			add_location(th3, file$a, 293, 16, 8459);
+    			add_location(th4, file$a, 294, 16, 8504);
+    			add_location(tr0, file$a, 289, 3, 8356);
+    			add_location(thead, file$a, 288, 2, 8344);
+    			add_location(input0, file$a, 299, 8, 8580);
+    			add_location(td0, file$a, 299, 4, 8576);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$a, 300, 8, 8642);
-    			add_location(td1, file$a, 300, 4, 8638);
+    			add_location(input1, file$a, 300, 8, 8633);
+    			add_location(td1, file$a, 300, 4, 8629);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$a, 301, 8, 8706);
-    			add_location(td2, file$a, 301, 4, 8702);
+    			add_location(input2, file$a, 301, 8, 8697);
+    			add_location(td2, file$a, 301, 4, 8693);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$a, 302, 8, 8781);
-    			add_location(td3, file$a, 302, 4, 8777);
+    			add_location(input3, file$a, 302, 8, 8772);
+    			add_location(td3, file$a, 302, 4, 8768);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$a, 303, 8, 8859);
-    			add_location(td4, file$a, 303, 4, 8855);
-    			add_location(td5, file$a, 305, 4, 8929);
+    			add_location(input4, file$a, 303, 8, 8850);
+    			add_location(td4, file$a, 303, 4, 8846);
+    			add_location(td5, file$a, 305, 4, 8920);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$a, 309, 4, 9035);
-    			add_location(tr1, file$a, 298, 3, 8575);
-    			add_location(td7, file$a, 341, 4, 9920);
-    			add_location(td8, file$a, 344, 4, 10021);
-    			add_location(tr2, file$a, 340, 3, 9910);
-    			add_location(tbody, file$a, 297, 2, 8563);
+    			add_location(td6, file$a, 309, 4, 9026);
+    			add_location(tr1, file$a, 298, 3, 8566);
+    			add_location(td7, file$a, 341, 4, 9911);
+    			add_location(td8, file$a, 344, 4, 10012);
+    			add_location(tr2, file$a, 340, 3, 9901);
+    			add_location(tbody, file$a, 297, 2, 8554);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -15678,7 +15678,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t4 = space();
     			info.block.c();
-    			add_location(h1, file$a, 230, 4, 7119);
+    			add_location(h1, file$a, 230, 4, 7110);
     			add_location(main, file$a, 187, 0, 5369);
     		},
     		l: function claim(nodes) {
@@ -16183,7 +16183,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Cancerdeaths-Stats");
+    			t = text("economies");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -16500,7 +16500,7 @@ var app = (function () {
     	return block;
     }
 
-    // (111:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (111:6) <DropdownItem href="./#/economies">
     function create_default_slot_17$6(ctx) {
     	let t;
 
@@ -16520,7 +16520,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_17$6.name,
     		type: "slot",
-    		source: "(111:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(111:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -16596,7 +16596,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_17$6] },
     				$$scope: { ctx }
     			},
@@ -16829,7 +16829,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Cancerdeaths-Stats");
+    			t = text("economies");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -17615,24 +17615,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$9, 146, 20, 4607);
-    			add_location(th1, file$9, 147, 20, 4642);
-    			add_location(th2, file$9, 148, 20, 4676);
-    			add_location(th3, file$9, 149, 20, 4724);
-    			add_location(th4, file$9, 150, 20, 4773);
-    			add_location(tr0, file$9, 145, 16, 4581);
-    			add_location(thead, file$9, 144, 12, 4556);
-    			add_location(td0, file$9, 155, 20, 4907);
-    			add_location(td1, file$9, 156, 20, 4954);
-    			add_location(input0, file$9, 157, 24, 5002);
-    			add_location(td2, file$9, 157, 20, 4998);
-    			add_location(input1, file$9, 158, 24, 5076);
-    			add_location(td3, file$9, 158, 20, 5072);
-    			add_location(input2, file$9, 159, 24, 5153);
-    			add_location(td4, file$9, 159, 20, 5149);
-    			add_location(td5, file$9, 161, 20, 5227);
-    			add_location(tr1, file$9, 154, 16, 4881);
-    			add_location(tbody, file$9, 153, 12, 4856);
+    			add_location(th0, file$9, 146, 20, 4580);
+    			add_location(th1, file$9, 147, 20, 4615);
+    			add_location(th2, file$9, 148, 20, 4649);
+    			add_location(th3, file$9, 149, 20, 4697);
+    			add_location(th4, file$9, 150, 20, 4746);
+    			add_location(tr0, file$9, 145, 16, 4554);
+    			add_location(thead, file$9, 144, 12, 4529);
+    			add_location(td0, file$9, 155, 20, 4880);
+    			add_location(td1, file$9, 156, 20, 4927);
+    			add_location(input0, file$9, 157, 24, 4975);
+    			add_location(td2, file$9, 157, 20, 4971);
+    			add_location(input1, file$9, 158, 24, 5049);
+    			add_location(td3, file$9, 158, 20, 5045);
+    			add_location(input2, file$9, 159, 24, 5126);
+    			add_location(td4, file$9, 159, 20, 5122);
+    			add_location(td5, file$9, 161, 20, 5200);
+    			add_location(tr1, file$9, 154, 16, 4854);
+    			add_location(tbody, file$9, 153, 12, 4829);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -17872,7 +17872,7 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-    			add_location(h1, file$9, 133, 4, 4290);
+    			add_location(h1, file$9, 133, 4, 4263);
     			add_location(main, file$9, 92, 0, 2540);
     		},
     		l: function claim(nodes) {
@@ -18549,7 +18549,7 @@ var app = (function () {
     	return block;
     }
 
-    // (143:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (143:6) <DropdownItem href="./#/economies">
     function create_default_slot_13$5(ctx) {
     	let t;
 
@@ -18569,7 +18569,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$5.name,
     		type: "slot",
-    		source: "(143:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(143:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -18645,7 +18645,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_13$5] },
     				$$scope: { ctx }
     			},
@@ -19476,11 +19476,11 @@ var app = (function () {
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
     			add_location(script3, file$8, 121, 4, 4341);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$8, 168, 8, 6330);
+    			add_location(div, file$8, 168, 8, 6321);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$8, 169, 8, 6362);
+    			add_location(p, file$8, 169, 8, 6353);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$8, 167, 4, 6286);
+    			add_location(figure, file$8, 167, 4, 6277);
     			add_location(main, file$8, 124, 0, 4459);
     		},
     		l: function claim(nodes) {
@@ -20188,7 +20188,7 @@ var app = (function () {
     	return block;
     }
 
-    // (221:6) <DropdownItem href="#/analytics">
+    // (221:6) <DropdownItem href="#/graph">
     function create_default_slot_25$2(ctx) {
     	let t;
 
@@ -20208,7 +20208,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_25$2.name,
     		type: "slot",
-    		source: "(221:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(221:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -20259,7 +20259,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_25$2] },
     				$$scope: { ctx }
     			},
@@ -20552,7 +20552,7 @@ var app = (function () {
     	return block;
     }
 
-    // (232:6) <DropdownItem href="#/analytics">
+    // (232:6) <DropdownItem href="#/graph">
     function create_default_slot_18$4(ctx) {
     	let t;
 
@@ -20572,7 +20572,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_18$4.name,
     		type: "slot",
-    		source: "(232:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(232:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -20623,7 +20623,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_18$4] },
     				$$scope: { ctx }
     			},
@@ -21006,7 +21006,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("ERROR: ");
     			t1 = text(/*msg*/ ctx[4]);
-    			add_location(p, file$7, 243, 3, 7697);
+    			add_location(p, file$7, 243, 3, 7689);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21088,7 +21088,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("Correcto: ");
     			t1 = text(/*msg*/ ctx[4]);
-    			add_location(p, file$7, 248, 3, 7839);
+    			add_location(p, file$7, 248, 3, 7831);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21443,24 +21443,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$7, 263, 16, 8135);
-    			add_location(th1, file$7, 264, 16, 8177);
-    			add_location(tr0, file$7, 262, 12, 8113);
-    			add_location(thead, file$7, 261, 8, 8092);
+    			add_location(th0, file$7, 263, 16, 8127);
+    			add_location(th1, file$7, 264, 16, 8169);
+    			add_location(tr0, file$7, 262, 12, 8105);
+    			add_location(thead, file$7, 261, 8, 8084);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$7, 271, 16, 8293);
-    			add_location(td0, file$7, 271, 12, 8289);
+    			add_location(input0, file$7, 271, 16, 8285);
+    			add_location(td0, file$7, 271, 12, 8281);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$7, 272, 16, 8365);
-    			add_location(td1, file$7, 272, 12, 8361);
+    			add_location(input1, file$7, 272, 16, 8357);
+    			add_location(td1, file$7, 272, 12, 8353);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$7, 273, 12, 8431);
+    			add_location(td2, file$7, 273, 12, 8423);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$7, 286, 12, 8953);
-    			add_location(tr1, file$7, 270, 8, 8271);
-    			add_location(tbody, file$7, 267, 8, 8242);
+    			add_location(td3, file$7, 286, 12, 8945);
+    			add_location(tr1, file$7, 270, 8, 8263);
+    			add_location(tbody, file$7, 267, 8, 8234);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -21743,16 +21743,16 @@ var app = (function () {
     			t10 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$7, 336, 4, 10356);
-    			add_location(td1, file$7, 337, 4, 10383);
-    			add_location(td2, file$7, 338, 16, 10419);
-    			add_location(td3, file$7, 339, 16, 10460);
-    			add_location(td4, file$7, 340, 16, 10500);
+    			add_location(td0, file$7, 336, 4, 10348);
+    			add_location(td1, file$7, 337, 4, 10375);
+    			add_location(td2, file$7, 338, 16, 10411);
+    			add_location(td3, file$7, 339, 16, 10452);
+    			add_location(td4, file$7, 340, 16, 10492);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$7, 342, 4, 10535);
+    			add_location(td5, file$7, 342, 4, 10527);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$7, 347, 4, 10721);
-    			add_location(tr, file$7, 335, 3, 10346);
+    			add_location(td6, file$7, 347, 4, 10713);
+    			add_location(tr, file$7, 335, 3, 10338);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22044,36 +22044,36 @@ var app = (function () {
     			t18 = space();
     			td8 = element("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$7, 301, 4, 9316);
-    			add_location(th1, file$7, 302, 4, 9335);
-    			add_location(th2, file$7, 303, 16, 9365);
-    			add_location(th3, file$7, 304, 16, 9401);
-    			add_location(th4, file$7, 305, 16, 9436);
-    			add_location(tr0, file$7, 300, 3, 9306);
-    			add_location(thead, file$7, 299, 2, 9294);
-    			add_location(input0, file$7, 310, 8, 9510);
-    			add_location(td0, file$7, 310, 4, 9506);
+    			add_location(th0, file$7, 301, 4, 9308);
+    			add_location(th1, file$7, 302, 4, 9327);
+    			add_location(th2, file$7, 303, 16, 9357);
+    			add_location(th3, file$7, 304, 16, 9393);
+    			add_location(th4, file$7, 305, 16, 9428);
+    			add_location(tr0, file$7, 300, 3, 9298);
+    			add_location(thead, file$7, 299, 2, 9286);
+    			add_location(input0, file$7, 310, 8, 9502);
+    			add_location(td0, file$7, 310, 4, 9498);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$7, 311, 8, 9568);
-    			add_location(td1, file$7, 311, 4, 9564);
+    			add_location(input1, file$7, 311, 8, 9560);
+    			add_location(td1, file$7, 311, 4, 9556);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$7, 312, 8, 9637);
-    			add_location(td2, file$7, 312, 4, 9633);
+    			add_location(input2, file$7, 312, 8, 9629);
+    			add_location(td2, file$7, 312, 4, 9625);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$7, 313, 8, 9711);
-    			add_location(td3, file$7, 313, 4, 9707);
+    			add_location(input3, file$7, 313, 8, 9703);
+    			add_location(td3, file$7, 313, 4, 9699);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$7, 314, 8, 9784);
-    			add_location(td4, file$7, 314, 4, 9780);
+    			add_location(input4, file$7, 314, 8, 9776);
+    			add_location(td4, file$7, 314, 4, 9772);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$7, 316, 4, 9860);
+    			add_location(td5, file$7, 316, 4, 9852);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$7, 321, 4, 9993);
-    			add_location(tr1, file$7, 309, 3, 9496);
-    			add_location(td7, file$7, 354, 4, 10894);
-    			add_location(td8, file$7, 357, 4, 11000);
-    			add_location(tr2, file$7, 353, 3, 10884);
-    			add_location(tbody, file$7, 308, 2, 9484);
+    			add_location(td6, file$7, 321, 4, 9985);
+    			add_location(tr1, file$7, 309, 3, 9488);
+    			add_location(td7, file$7, 354, 4, 10886);
+    			add_location(td8, file$7, 357, 4, 10992);
+    			add_location(tr2, file$7, 353, 3, 10876);
+    			add_location(tbody, file$7, 308, 2, 9476);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -22403,7 +22403,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t6 = space();
     			info.block.c();
-    			add_location(h1, file$7, 240, 4, 7569);
+    			add_location(h1, file$7, 240, 4, 7561);
     			add_location(main, file$7, 197, 0, 5779);
     		},
     		l: function claim(nodes) {
@@ -24193,7 +24193,7 @@ var app = (function () {
     	return block;
     }
 
-    // (151:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (151:6) <DropdownItem href="./#/economies">
     function create_default_slot_14$3(ctx) {
     	let t;
 
@@ -24213,7 +24213,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_14$3.name,
     		type: "slot",
-    		source: "(151:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(151:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -24274,7 +24274,7 @@ var app = (function () {
     	return block;
     }
 
-    // (155:6) <DropdownItem href="#/analytics">
+    // (155:6) <DropdownItem href="#/graph">
     function create_default_slot_11$3(ctx) {
     	let t;
 
@@ -24294,7 +24294,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$3.name,
     		type: "slot",
-    		source: "(155:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(155:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -24316,7 +24316,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_14$3] },
     				$$scope: { ctx }
     			},
@@ -24345,7 +24345,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_11$3] },
     				$$scope: { ctx }
     			},
@@ -24638,7 +24638,7 @@ var app = (function () {
     	return block;
     }
 
-    // (166:6) <DropdownItem href="#/analytics">
+    // (166:6) <DropdownItem href="#/graph">
     function create_default_slot_4$3(ctx) {
     	let t;
 
@@ -24658,7 +24658,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$3.name,
     		type: "slot",
-    		source: "(166:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(166:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -24709,7 +24709,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_4$3] },
     				$$scope: { ctx }
     			},
@@ -25132,21 +25132,21 @@ var app = (function () {
     			t3 = space();
     			p = element("p");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$5, 123, 4, 3982);
+    			add_location(script0, file$5, 123, 4, 3979);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$5, 124, 4, 4074);
+    			add_location(script1, file$5, 124, 4, 4071);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$5, 125, 4, 4173);
+    			add_location(script2, file$5, 125, 4, 4170);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$5, 126, 4, 4274);
-    			add_location(br, file$5, 174, 4, 6330);
+    			add_location(script3, file$5, 126, 4, 4271);
+    			add_location(br, file$5, 174, 4, 6310);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$5, 176, 8, 6384);
+    			add_location(div, file$5, 176, 8, 6364);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$5, 177, 8, 6420);
+    			add_location(p, file$5, 177, 8, 6400);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$5, 175, 4, 6340);
-    			add_location(main, file$5, 131, 0, 4395);
+    			add_location(figure, file$5, 175, 4, 6320);
+    			add_location(main, file$5, 131, 0, 4392);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -25235,7 +25235,7 @@ var app = (function () {
 
     	//creo 2 let datos para poder ordenado los datos por año
     	async function getData() {
-    		console.log("Fetching cancerdeaths....");
+    		console.log("Fetching Economies....");
     		const res = await fetch("/api/v2/economies");
 
     		if (res.ok) {
@@ -25767,13 +25767,13 @@ var app = (function () {
     	return block;
     }
 
-    // (191:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (191:6) <DropdownItem href="./#/economies">
     function create_default_slot_28(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Cancerdeaths FRONT-END");
+    			t = text("Economies FRONT-END");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -25787,7 +25787,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_28.name,
     		type: "slot",
-    		source: "(191:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(191:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -25848,7 +25848,7 @@ var app = (function () {
     	return block;
     }
 
-    // (195:6) <DropdownItem href="#/analytics">
+    // (195:6) <DropdownItem href="#/graph">
     function create_default_slot_25$1(ctx) {
     	let t;
 
@@ -25868,7 +25868,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_25$1.name,
     		type: "slot",
-    		source: "(195:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(195:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -25890,7 +25890,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_28] },
     				$$scope: { ctx }
     			},
@@ -25919,7 +25919,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_25$1] },
     				$$scope: { ctx }
     			},
@@ -26137,7 +26137,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Cancerdeaths-Stats");
+    			t = text("economies");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -26239,7 +26239,7 @@ var app = (function () {
     	return block;
     }
 
-    // (207:6) <DropdownItem href="#/analytics">
+    // (207:6) <DropdownItem href="#/graph">
     function create_default_slot_17$2(ctx) {
     	let t;
 
@@ -26259,7 +26259,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_17$2.name,
     		type: "slot",
-    		source: "(207:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(207:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -26321,7 +26321,7 @@ var app = (function () {
 
     	dropdownitem5 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_17$2] },
     				$$scope: { ctx }
     			},
@@ -27098,24 +27098,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$4, 233, 4, 7126);
-    			add_location(th1, file$4, 234, 4, 7156);
-    			add_location(tr0, file$4, 232, 3, 7116);
-    			add_location(thead, file$4, 231, 2, 7104);
+    			add_location(th0, file$4, 233, 4, 7097);
+    			add_location(th1, file$4, 234, 4, 7127);
+    			add_location(tr0, file$4, 232, 3, 7087);
+    			add_location(thead, file$4, 231, 2, 7075);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$4, 241, 7, 7230);
-    			add_location(td0, file$4, 241, 3, 7226);
+    			add_location(input0, file$4, 241, 7, 7201);
+    			add_location(td0, file$4, 241, 3, 7197);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$4, 242, 7, 7293);
-    			add_location(td1, file$4, 242, 3, 7289);
+    			add_location(input1, file$4, 242, 7, 7264);
+    			add_location(td1, file$4, 242, 3, 7260);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$4, 243, 3, 7350);
+    			add_location(td2, file$4, 243, 3, 7321);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$4, 255, 3, 7670);
-    			add_location(tr1, file$4, 240, 2, 7217);
-    			add_location(tbody, file$4, 237, 2, 7200);
+    			add_location(td3, file$4, 255, 3, 7641);
+    			add_location(tr1, file$4, 240, 2, 7188);
+    			add_location(tbody, file$4, 237, 2, 7171);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -27398,14 +27398,14 @@ var app = (function () {
     			t10 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$4, 304, 4, 8978);
-    			add_location(td1, file$4, 305, 4, 9016);
-    			add_location(td2, file$4, 306, 16, 9063);
-    			add_location(td3, file$4, 307, 16, 9121);
-    			add_location(td4, file$4, 308, 16, 9182);
-    			add_location(td5, file$4, 310, 4, 9227);
-    			add_location(td6, file$4, 315, 4, 9423);
-    			add_location(tr, file$4, 303, 3, 8968);
+    			add_location(td0, file$4, 304, 4, 8949);
+    			add_location(td1, file$4, 305, 4, 8987);
+    			add_location(td2, file$4, 306, 16, 9034);
+    			add_location(td3, file$4, 307, 16, 9092);
+    			add_location(td4, file$4, 308, 16, 9153);
+    			add_location(td5, file$4, 310, 4, 9198);
+    			add_location(td6, file$4, 315, 4, 9394);
+    			add_location(tr, file$4, 303, 3, 8939);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -27697,32 +27697,32 @@ var app = (function () {
     			t18 = space();
     			td8 = element("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$4, 272, 4, 7935);
-    			add_location(th1, file$4, 273, 4, 7954);
-    			add_location(th2, file$4, 274, 16, 7984);
-    			add_location(th3, file$4, 275, 16, 8021);
-    			add_location(th4, file$4, 276, 16, 8056);
-    			add_location(tr0, file$4, 271, 3, 7925);
-    			add_location(thead, file$4, 270, 2, 7913);
-    			add_location(input0, file$4, 281, 8, 8130);
-    			add_location(td0, file$4, 281, 4, 8126);
+    			add_location(th0, file$4, 272, 4, 7906);
+    			add_location(th1, file$4, 273, 4, 7925);
+    			add_location(th2, file$4, 274, 16, 7955);
+    			add_location(th3, file$4, 275, 16, 7992);
+    			add_location(th4, file$4, 276, 16, 8027);
+    			add_location(tr0, file$4, 271, 3, 7896);
+    			add_location(thead, file$4, 270, 2, 7884);
+    			add_location(input0, file$4, 281, 8, 8101);
+    			add_location(td0, file$4, 281, 4, 8097);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$4, 282, 8, 8191);
-    			add_location(td1, file$4, 282, 4, 8187);
-    			add_location(input2, file$4, 283, 8, 8263);
-    			add_location(td2, file$4, 283, 4, 8259);
-    			add_location(input3, file$4, 284, 8, 8332);
-    			add_location(td3, file$4, 284, 4, 8328);
-    			add_location(input4, file$4, 285, 8, 8404);
-    			add_location(td4, file$4, 285, 4, 8400);
-    			add_location(td5, file$4, 287, 4, 8468);
+    			add_location(input1, file$4, 282, 8, 8162);
+    			add_location(td1, file$4, 282, 4, 8158);
+    			add_location(input2, file$4, 283, 8, 8234);
+    			add_location(td2, file$4, 283, 4, 8230);
+    			add_location(input3, file$4, 284, 8, 8303);
+    			add_location(td3, file$4, 284, 4, 8299);
+    			add_location(input4, file$4, 285, 8, 8375);
+    			add_location(td4, file$4, 285, 4, 8371);
+    			add_location(td5, file$4, 287, 4, 8439);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$4, 291, 4, 8582);
-    			add_location(tr1, file$4, 280, 3, 8116);
-    			add_location(td7, file$4, 322, 4, 9606);
-    			add_location(td8, file$4, 325, 4, 9715);
-    			add_location(tr2, file$4, 321, 3, 9596);
-    			add_location(tbody, file$4, 279, 2, 8104);
+    			add_location(td6, file$4, 291, 4, 8553);
+    			add_location(tr1, file$4, 280, 3, 8087);
+    			add_location(td7, file$4, 322, 4, 9577);
+    			add_location(td8, file$4, 325, 4, 9686);
+    			add_location(tr2, file$4, 321, 3, 9567);
+    			add_location(tbody, file$4, 279, 2, 8075);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -28022,7 +28022,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t4 = space();
     			info.block.c();
-    			add_location(h1, file$4, 214, 4, 6739);
+    			add_location(h1, file$4, 214, 4, 6710);
     			add_location(main, file$4, 172, 0, 4936);
     		},
     		l: function claim(nodes) {
@@ -28833,7 +28833,7 @@ var app = (function () {
     	return block;
     }
 
-    // (108:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (108:6) <DropdownItem href="./#/economies">
     function create_default_slot_19$1(ctx) {
     	let t;
 
@@ -28853,7 +28853,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$1.name,
     		type: "slot",
-    		source: "(108:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(108:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -28914,7 +28914,7 @@ var app = (function () {
     	return block;
     }
 
-    // (112:6) <DropdownItem href="#/analytics">
+    // (112:6) <DropdownItem href="#/graph">
     function create_default_slot_16$1(ctx) {
     	let t;
 
@@ -28934,7 +28934,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$1.name,
     		type: "slot",
-    		source: "(112:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(112:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -28956,7 +28956,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_19$1] },
     				$$scope: { ctx }
     			},
@@ -28985,7 +28985,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_16$1] },
     				$$scope: { ctx }
     			},
@@ -29305,7 +29305,7 @@ var app = (function () {
     	return block;
     }
 
-    // (124:6) <DropdownItem href="#/analytics">
+    // (124:6) <DropdownItem href="#/graph">
     function create_default_slot_8$1(ctx) {
     	let t;
 
@@ -29325,7 +29325,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(124:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(124:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -29387,7 +29387,7 @@ var app = (function () {
 
     	dropdownitem5 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_8$1] },
     				$$scope: { ctx }
     			},
@@ -30043,24 +30043,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$3, 144, 20, 4717);
-    			add_location(th1, file$3, 145, 20, 4752);
-    			add_location(th2, file$3, 146, 20, 4786);
-    			add_location(th3, file$3, 147, 20, 4827);
-    			add_location(th4, file$3, 148, 20, 4866);
-    			add_location(tr0, file$3, 143, 16, 4691);
-    			add_location(thead, file$3, 142, 12, 4666);
-    			add_location(td0, file$3, 153, 20, 4998);
-    			add_location(td1, file$3, 154, 20, 5045);
-    			add_location(input0, file$3, 155, 24, 5093);
-    			add_location(td2, file$3, 155, 20, 5089);
-    			add_location(input1, file$3, 156, 24, 5167);
-    			add_location(td3, file$3, 156, 20, 5163);
-    			add_location(input2, file$3, 157, 24, 5244);
-    			add_location(td4, file$3, 157, 20, 5240);
-    			add_location(td5, file$3, 159, 20, 5318);
-    			add_location(tr1, file$3, 152, 16, 4972);
-    			add_location(tbody, file$3, 151, 12, 4947);
+    			add_location(th0, file$3, 144, 20, 4700);
+    			add_location(th1, file$3, 145, 20, 4735);
+    			add_location(th2, file$3, 146, 20, 4769);
+    			add_location(th3, file$3, 147, 20, 4810);
+    			add_location(th4, file$3, 148, 20, 4849);
+    			add_location(tr0, file$3, 143, 16, 4674);
+    			add_location(thead, file$3, 142, 12, 4649);
+    			add_location(td0, file$3, 153, 20, 4981);
+    			add_location(td1, file$3, 154, 20, 5028);
+    			add_location(input0, file$3, 155, 24, 5076);
+    			add_location(td2, file$3, 155, 20, 5072);
+    			add_location(input1, file$3, 156, 24, 5150);
+    			add_location(td3, file$3, 156, 20, 5146);
+    			add_location(input2, file$3, 157, 24, 5227);
+    			add_location(td4, file$3, 157, 20, 5223);
+    			add_location(td5, file$3, 159, 20, 5301);
+    			add_location(tr1, file$3, 152, 16, 4955);
+    			add_location(tbody, file$3, 151, 12, 4930);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -30300,7 +30300,7 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-    			add_location(h1, file$3, 131, 4, 4384);
+    			add_location(h1, file$3, 131, 4, 4367);
     			add_location(main, file$3, 89, 0, 2584);
     		},
     		l: function claim(nodes) {
@@ -30976,7 +30976,7 @@ var app = (function () {
     	return block;
     }
 
-    // (129:6) <DropdownItem href="./#/Cancerdeaths-stats">
+    // (129:6) <DropdownItem href="./#/economies">
     function create_default_slot_15(ctx) {
     	let t;
 
@@ -30996,7 +30996,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(129:6) <DropdownItem href=\\\"./#/Cancerdeaths-stats\\\">",
+    		source: "(129:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
@@ -31057,7 +31057,7 @@ var app = (function () {
     	return block;
     }
 
-    // (133:6) <DropdownItem href="#/analytics">
+    // (133:6) <DropdownItem href="#/graph">
     function create_default_slot_12(ctx) {
     	let t;
 
@@ -31077,7 +31077,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(133:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(133:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -31099,7 +31099,7 @@ var app = (function () {
 
     	dropdownitem0 = new DropdownItem({
     			props: {
-    				href: "./#/Cancerdeaths-stats",
+    				href: "./#/economies",
     				$$slots: { default: [create_default_slot_15] },
     				$$scope: { ctx }
     			},
@@ -31128,7 +31128,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_12] },
     				$$scope: { ctx }
     			},
@@ -31448,7 +31448,7 @@ var app = (function () {
     	return block;
     }
 
-    // (145:6) <DropdownItem href="#/analytics">
+    // (145:6) <DropdownItem href="#/graph">
     function create_default_slot_4(ctx) {
     	let t;
 
@@ -31468,7 +31468,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(145:6) <DropdownItem href=\\\"#/analytics\\\">",
+    		source: "(145:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
@@ -31530,7 +31530,7 @@ var app = (function () {
 
     	dropdownitem5 = new DropdownItem({
     			props: {
-    				href: "#/analytics",
+    				href: "#/graph",
     				$$slots: { default: [create_default_slot_4] },
     				$$scope: { ctx }
     			},
@@ -31973,11 +31973,11 @@ var app = (function () {
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
     			add_location(script3, file$2, 105, 4, 2779);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$2, 153, 8, 4745);
+    			add_location(div, file$2, 153, 8, 4728);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$2, 154, 8, 4781);
+    			add_location(p, file$2, 154, 8, 4764);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$2, 152, 4, 4701);
+    			add_location(figure, file$2, 152, 4, 4684);
     			add_location(main, file$2, 110, 0, 2901);
     		},
     		l: function claim(nodes) {
@@ -32499,7 +32499,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			create_component(router.$$.fragment);
-    			add_location(main, file, 41, 0, 1285);
+    			add_location(main, file, 41, 0, 1261);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32546,8 +32546,8 @@ var app = (function () {
     		"/esco-stats": Esco,
     		"/esco/:country/:year": Editesco_1,
     		"/graphesco": MyGraphesco,
-    		"/cancerdeaths-stats": Cancerdeaths,
-    		"/cancerdeaths/:country/:year": EditCancerdeaths,
+    		"/economies": Cancerdeaths,
+    		"/economies/:country/:year": EditCancerdeaths,
     		"/economies-graph": MyGraphCancerdeaths,
     		"/air-pollution-stats": Airpollution,
     		"/air-pollution/:country/:year": EditAirpollution_1,
@@ -32568,8 +32568,8 @@ var app = (function () {
     		esco: Esco,
     		Editesco: Editesco_1,
     		MyGraphesco,
-    		Cancerdeaths,
-    		EditCancerdeaths,
+    		economies: Cancerdeaths,
+    		EditEconomies: EditCancerdeaths,
     		MyGraphEconomies: MyGraphCancerdeaths,
     		Airpollution,
     		EditAirpollution: EditAirpollution_1,

@@ -14,7 +14,7 @@
     //creo 2 let datos para poder ordenado los datos por año
 
     async function getData(){
-        console.log("Fetching cancerdeaths....");
+        console.log("Fetching Economies....");
         const res = await fetch("/api/v2/economies");
         if(res.ok){
             const data = await res.json();          
@@ -148,11 +148,11 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/Cancerdeaths-stats">economies FRONT-END</DropdownItem>
+				  <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
 				  <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">Inversion promoción social</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="#/analytics">Conjunto</DropdownItem>
+				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 			  
@@ -163,7 +163,7 @@
 				  <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">Inversion promoción social</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="#/analytics">Conjunto</DropdownItem>
+				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 		  <!--<NavItem>

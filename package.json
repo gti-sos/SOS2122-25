@@ -7,10 +7,10 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "node index.js",
-    "test-cancerdeaths-stats": "npx newman run ./test/economies.json -e ./test/env/LOCAL.json",
+    "test-economies": "npx newman run ./test/economies.json -e ./test/env/LOCAL.json",
     "test-esco-stats": "npx newman run ./test/esco-stats.json -e ./test/env/HEROKU.json",
     "test-air-pollution-stats": "npx newman run ./test/air-pollution-stats.json -e ./test/env/LOCAL1.json",
-    "test": "npm run test-cancerdeaths-stats && npm run test-esco-stats && npm run test-air-pollution-stats"
+    "test": "npm run test-economies && npm run test-esco-stats && npm run test-air-pollution-stats"
   },
   "repository": {
     "type": "git",

@@ -188,23 +188,23 @@
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/Cancerdeaths-stats">Cancerdeaths FRONT-END</DropdownItem>
+				  <DropdownItem href="./#/economies">Economies FRONT-END</DropdownItem>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
 				  <DropdownItem href="#/air-pollution-stats">AirPollution FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="#/analytics">Conjunto</DropdownItem>
+				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 			  
 			  <Dropdown >
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/economies-graph">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="./#/economies-graph">economies</DropdownItem>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
 				  <DropdownItem href="#/graphAirPollution">AirPollution-Stats</DropdownItem>
                   <DropdownItem href="#/graph">Grafica comun</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="#/analytics">Conjunto</DropdownItem>
+				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 		  <!--<NavItem>

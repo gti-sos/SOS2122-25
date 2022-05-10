@@ -218,7 +218,7 @@
 				  <DropdownItem href="./#/esco-stats">esco FRONT-END</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="#/analytics">Conjunto</DropdownItem>
+				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 			  
@@ -229,7 +229,7 @@
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
 				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="#/analytics">Conjunto</DropdownItem>
+				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 		  <!--<NavItem>
