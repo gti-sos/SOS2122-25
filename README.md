@@ -13,7 +13,4 @@
 <<<<<<< HEAD
     - [https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/expo-stats/docs) (developed by [Adrian Perez](https://github.com/adrianperez01_))
     
-=======
-    - [https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs](https://SOS2122-25.herokuapp.com/api/v1/air-pollution-stats/docs) (developed by [Adrian Perez Gomez](https://github.com/adrmg))
-    
 >>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
