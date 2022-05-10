@@ -7,11 +7,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "node index.js",
-<<<<<<< HEAD
     "test-cancerdeaths-stats": "npx newman run ./test/economies.json -e ./test/env/LOCAL.json",
-=======
-    "test-cancerdeaths-stats": "npx newman run ./test/cancerdeaths-stats.json -e ./test/env/LOCAL.json",
->>>>>>> 3fa2bfde40a647fabca91b7de0ce0784d8d9cf4a
     "test-esco-stats": "npx newman run ./test/esco-stats.json -e ./test/env/HEROKU.json",
     "test-air-pollution-stats": "npx newman run ./test/air-pollution-stats.json -e ./test/env/LOCAL1.json",
     "test": "npm run test-cancerdeaths-stats && npm run test-esco-stats && npm run test-air-pollution-stats"
