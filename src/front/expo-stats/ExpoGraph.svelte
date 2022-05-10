@@ -1,111 +1,125 @@
 <script>
+    import { onMount } from "svelte";
+    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button} from 'sveltestrap';
 
-import { onMount } from 'svelte';
-import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button} from 'sveltestrap';
+    const delay=ms=>new Promise(res=>setTimeout(res,ms));
 
-let apiData = {};
+    let expos=[];
+    let country=[];
+    let year=[];
+    let expo_tec=[];
+    let expo_m=[];
+    let expo_bys=[];
+    let datosOrdenados=[];
 
-const delay = ms => new Promise(res => setTimeout(res,ms));
-    let stats = [];
-    let country= [];
-    let year = [];
-    let expo_bys = [];
-    let expo_m = [];
-    let expo_tec = []; 
-    async function getPEStats(){
-        console.log("Fetching stats....");
+    async function getData(){
+        console.log("Fetching expo....");
         const res = await fetch("/api/v1/expo");
         if(res.ok){
-            const data = await res.json();
-            stats = data;
-            console.log("Estadísticas recibidas: "+stats.length);
-            //inicializamos los arrays para mostrar los datos
-            stats.forEach(stat => {
-                country.push(stat.country+"-"+stat.year);
-                year.push(stat.year);
-                expo_tec.push(stat.expo_bys);
-                expo_m.push(stat.expo_m);
-                expo_tec.push(stat.expo_tec);            
+            const data = await res.json();          
+            expos = data;
+            if (expos.length == 0) {
+                const res = await fetch("/api/v1/expo-stats/loadInitialData");
+                console.log("Entradas recibidas: "+expos.length);
+            //con la siguiente funcion ordeno los datos por años de menor a mayor
+            datosOrdenados = expos.sort(function (a, b){
+            return (a.year - b.year)
             });
-        }else{
-            console.log("Error cargando los datos");
-		}
-    }
-
-async function getData(){
-    const res= await fetch("/api/v1/expo");
-    if(res.ok){
-        const json = await res.json();
-        apiData = json;
-        loadGraph();
-
-    }else{
-        console.log("Error in request");
-    }
-}
-
-async function loadGraph(){
-
-
-Highcharts.chart('container', {
-    chart: {
-        type: 'spline',
-        inverted: true
-    },
-    title: {
-        text: 'Exportaciones anuales'
-    },
-    
-    xAxis: {
-        title: {
-                    text: "País-Año",
-                },
-                categories: country,
-            
-    },
-    yAxis: {
-        title: {
-            text: 'Exportaciones'
-        },
-       
-    },
-    legend: {
-        enabled: false
-    },
-    tooltip: {
-        headerFormat: '<b>{series.name}</b><br/>',
-        pointFormat: '{point.y}exportaciones'
-    },
-    plotOptions: {
-        spline: {
-            marker: {
-                enable: false
+            console.log("Ordenadas correctamente");
+            datosOrdenados.forEach(expo => {
+                year.push(expo.year);
+                country.push(expo.country+"-"+ expo.year);
+                expo_tec.push(expo.expo_tec);
+                expo_m.push(expo.expo_m);
+                expo_bys.push(expo.expo_bys);          
+            });
+            location.reload();
             }
+            else{
+               console.log("Entradas recibidas: "+expos.length);
+            //con la siguiente funcion ordeno los datos por años de menor a mayor
+            datosOrdenados = expos.sort(function (a, b){
+            return (a.year - b.year)
+            });
+            console.log("Ordenadas correctamente");
+            datosOrdenados.forEach(expo => {
+                year.push(expo.year);
+                country.push(expo.country+"-"+expo.year);
+                expo_tec.push(expo.expo_tec);
+                expo_m.push(expo.expo_m);
+                expo_bys.push(expo.expo_bys);            
+            }); 
+            }
+            
+        }else{
+            console.log("Error, can`t charge data");
         }
-    },
-    series: [
-        {
-        name: 'Exportaciones Bienes y Servicios',
-        data: expo_bys
-    },
-    {   name: 'Exportaciones Prod. Manufacturados',
-        data: expo_m},
-    {   name:'Exportaciones Tecnológicas',
-        data: expo_tec}
-    ]
-});
-}
-onMount(getPEStats);
+    }
+    
+
+    async function loadGraph() {
+        Highcharts.chart("container", {
+            chart: {
+                type: "column",
+            },
+            title: {
+                text: "País",
+            },
+            subtitle: {
+                text: "Source: https://ourworldindata.org/expo",
+            },
+            xAxis: {
+                categories: country,
+                crosshair: true
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: "%(Según el PIB)",
+                },
+            },
+            tooltip: {
+                headerFormat:
+                    '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat:
+                    '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y} % de exportaciones</b></td></tr>',
+                footerFormat: "</table>",
+                shared: true,
+                useHTML: true,
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0,
+                },
+            },
+            series: [
+                {
+                name: 'Exportaciones Bienes y Servicios',
+                data: expo_bys
+                },
+                {
+                name: 'Exportaciones Prod. Manufacturados',
+                data: expo_m
+                },
+                {
+                name: 'Exportaciones Tecnológicas',
+                data: expo_tec
+                
+                }
+                
+            ]
+        });
+    }
+    onMount(getData);
 </script>
+
 <svelte:head>
-
-
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js" on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js" on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js" on:load="{loadGraph}"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}"></script>
-
-
 </svelte:head>
 
 <main>
@@ -119,30 +133,31 @@ onMount(getPEStats);
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/expo">Expo-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo-stats">expoç-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               
             <Dropdown>
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/economies">Economies FRONT-END</DropdownItem>
+				  <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
+                  <DropdownItem divider/>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
-				  <DropdownItem href="#/expo">Expo FRONT-END</DropdownItem>
-				  <DropdownItem divider/>
-				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                  <DropdownItem divider/>
+				  <DropdownItem href="#/expo-stats">expo FRONT-END</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 			  
 			  <Dropdown >
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./#/economies-graph">Economies-Stats</DropdownItem>
+				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
+                  <DropdownItem divider/>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
-				  <DropdownItem href="#/graphexpo">Expo-Stats</DropdownItem>
-                  <DropdownItem href="#/graph">Grafica comun</DropdownItem>
-				  <DropdownItem divider/>
-				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                  <DropdownItem divider/>
+				  <DropdownItem href="#/graphexpo">expo-Stats</DropdownItem>
+                  <DropdownItem divider/>
+                  <DropdownItem href="./#/graph">Grafica comun</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 		  <!--<NavItem>
@@ -151,14 +166,8 @@ onMount(getPEStats);
 		</Nav>
 	</Navbar>
     <figure class="highcharts-figure">
-        <div id="container"></div>
+        <div id="container" />
         <p class="highcharts-description">
-            Los gráficos de spline son gráficos de líneas suavizadas y este ejemplo muestra un 
-            gráfico de spline invertido. Invertir el gráfico significa que el eje X se coloca como 
-            el eje vertical y el eje Y se coloca como el eje horizontal. Esto puede ser más intuitivo 
-            para ciertos conjuntos de datos, como en este gráfico donde el eje X representa la altitud 
-            vertical.
-        </p>
+            Este gráfico compara las exportaciones de diferentes paises
     </figure>
-    
 </main>

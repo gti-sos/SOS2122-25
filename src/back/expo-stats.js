@@ -9,39 +9,39 @@ var expo_stats = [
     {
         country: "eeuu",
         year: 2019,
-        expo_tec: 2.42,
-        expo_m: 62.014,
-        expo_bys:217092
+        expo_tec: 18.673,
+        expo_m: 59.114,
+        expo_bys: 11.756
         
     },
     {
         country: "spain",
         year: 2019,
-        expo_tec: 1.946,
-        expo_m: 25269.988,
-        expo_bys:1247
+        expo_tec: 6.846,
+        expo_m: 66.650,
+        expo_bys:34.955
         
     },
     {
         country: "argentina",
         year: 2019,
-        expo_tec: -2391,
-        expo_m: 14787.768,
-        expo_bys:20939
+        expo_tec: 5.213,
+        expo_m: 16.555,
+        expo_bys:17.696
     },
     {
         country: "marroco",
         year: 2019,
-        expo_tec: -332,
-        expo_m: 1668.3,
-        expo_bys:6484
+        expo_tec: 4.898,
+        expo_m: 70.843,
+        expo_bys: 39.317
     },
     {
         country: "greece",
         year: 2019,
-        expo_tec: -332,
-        expo_m: 1668.3,
-        expo_bys:6484
+        expo_tec: 12.515,
+        expo_m: 37.505,
+        expo_bys: 40.132
     } 
 ]
 

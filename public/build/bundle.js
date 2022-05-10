@@ -13572,7 +13572,7 @@ var app = (function () {
     }
 
     // (205:4) <DropdownMenu end>
-    function create_default_slot_23$5(ctx) {
+    function create_default_slot_23$4(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -13694,7 +13694,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_23$5.name,
+    		id: create_default_slot_23$4.name,
     		type: "slot",
     		source: "(205:4) <DropdownMenu end>",
     		ctx
@@ -13704,7 +13704,7 @@ var app = (function () {
     }
 
     // (203:12) <Dropdown>
-    function create_default_slot_22$6(ctx) {
+    function create_default_slot_22$5(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -13723,7 +13723,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_23$5] },
+    				$$slots: { default: [create_default_slot_23$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -13777,7 +13777,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$6.name,
+    		id: create_default_slot_22$5.name,
     		type: "slot",
     		source: "(203:12) <Dropdown>",
     		ctx
@@ -14193,7 +14193,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_22$6] },
+    				$$slots: { default: [create_default_slot_22$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16178,7 +16178,7 @@ var app = (function () {
     }
 
     // (100:6) <DropdownItem href="./api/v2/economies">
-    function create_default_slot_23$4(ctx) {
+    function create_default_slot_23$3(ctx) {
     	let t;
 
     	const block = {
@@ -16195,7 +16195,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_23$4.name,
+    		id: create_default_slot_23$3.name,
     		type: "slot",
     		source: "(100:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
@@ -16205,7 +16205,7 @@ var app = (function () {
     }
 
     // (102:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_22$5(ctx) {
+    function create_default_slot_22$4(ctx) {
     	let t;
 
     	const block = {
@@ -16222,7 +16222,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$5.name,
+    		id: create_default_slot_22$4.name,
     		type: "slot",
     		source: "(102:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
@@ -16274,7 +16274,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./api/v2/economies",
-    				$$slots: { default: [create_default_slot_23$4] },
+    				$$slots: { default: [create_default_slot_23$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16285,7 +16285,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_22$5] },
+    				$$slots: { default: [create_default_slot_22$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20362,7 +20362,7 @@ var app = (function () {
     }
 
     // (214:12) <Dropdown>
-    function create_default_slot_23$3(ctx) {
+    function create_default_slot_23$2(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -20435,7 +20435,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_23$3.name,
+    		id: create_default_slot_23$2.name,
     		type: "slot",
     		source: "(214:12) <Dropdown>",
     		ctx
@@ -20445,7 +20445,7 @@ var app = (function () {
     }
 
     // (226:4) <DropdownToggle nav caret>
-    function create_default_slot_22$4(ctx) {
+    function create_default_slot_22$3(ctx) {
     	let t;
 
     	const block = {
@@ -20462,7 +20462,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$4.name,
+    		id: create_default_slot_22$3.name,
     		type: "slot",
     		source: "(226:4) <DropdownToggle nav caret>",
     		ctx
@@ -20736,7 +20736,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_22$4] },
+    				$$slots: { default: [create_default_slot_22$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20827,7 +20827,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_23$3] },
+    				$$slots: { default: [create_default_slot_23$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -23817,7 +23817,7 @@ var app = (function () {
     const file$5 = "src\\front\\frontEconomies\\MyGraphEconomies.svelte";
 
     // (135:2) <NavbarBrand href="#/info">
-    function create_default_slot_22$3(ctx) {
+    function create_default_slot_22$2(ctx) {
     	let t;
 
     	const block = {
@@ -23834,7 +23834,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$3.name,
+    		id: create_default_slot_22$2.name,
     		type: "slot",
     		source: "(135:2) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
@@ -25009,7 +25009,7 @@ var app = (function () {
     	navbarbrand = new NavbarBrand({
     			props: {
     				href: "#/info",
-    				$$slots: { default: [create_default_slot_22$3] },
+    				$$slots: { default: [create_default_slot_22$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26022,7 +26022,7 @@ var app = (function () {
     }
 
     // (188:12) <Dropdown>
-    function create_default_slot_23$2(ctx) {
+    function create_default_slot_23$1(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -26095,7 +26095,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_23$2.name,
+    		id: create_default_slot_23$1.name,
     		type: "slot",
     		source: "(188:12) <Dropdown>",
     		ctx
@@ -26105,7 +26105,7 @@ var app = (function () {
     }
 
     // (200:4) <DropdownToggle nav caret>
-    function create_default_slot_22$2(ctx) {
+    function create_default_slot_22$1(ctx) {
     	let t;
 
     	const block = {
@@ -26122,7 +26122,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$2.name,
+    		id: create_default_slot_22$1.name,
     		type: "slot",
     		source: "(200:4) <DropdownToggle nav caret>",
     		ctx
@@ -26449,7 +26449,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_22$2] },
+    				$$slots: { default: [create_default_slot_22$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26540,7 +26540,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_23$2] },
+    				$$slots: { default: [create_default_slot_23$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -28565,7 +28565,7 @@ var app = (function () {
     }
 
     // (101:6) <DropdownItem href="./api/v1/expo">
-    function create_default_slot_23$1(ctx) {
+    function create_default_slot_23(ctx) {
     	let t;
 
     	const block = {
@@ -28582,7 +28582,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_23$1.name,
+    		id: create_default_slot_23.name,
     		type: "slot",
     		source: "(101:6) <DropdownItem href=\\\"./api/v1/expo\\\">",
     		ctx
@@ -28592,7 +28592,7 @@ var app = (function () {
     }
 
     // (96:4) <DropdownMenu end>
-    function create_default_slot_22$1(ctx) {
+    function create_default_slot_22(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -28629,7 +28629,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "./api/v1/expo",
-    				$$slots: { default: [create_default_slot_23$1] },
+    				$$slots: { default: [create_default_slot_23] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -28714,7 +28714,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$1.name,
+    		id: create_default_slot_22.name,
     		type: "slot",
     		source: "(96:4) <DropdownMenu end>",
     		ctx
@@ -28743,7 +28743,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_22$1] },
+    				$$slots: { default: [create_default_slot_22] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30598,8 +30598,8 @@ var app = (function () {
 
     const file$2 = "src\\front\\expo-stats\\ExpoGraph.svelte";
 
-    // (113:2) <NavbarBrand href="#/info">
-    function create_default_slot_23(ctx) {
+    // (127:2) <NavbarBrand href="#/info">
+    function create_default_slot_21(ctx) {
     	let t;
 
     	const block = {
@@ -30616,17 +30616,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_23.name,
+    		id: create_default_slot_21.name,
     		type: "slot",
-    		source: "(113:2) <NavbarBrand href=\\\"#/info\\\">",
+    		source: "(127:2) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:4) <DropdownToggle nav caret>
-    function create_default_slot_22(ctx) {
+    // (130:4) <DropdownToggle nav caret>
+    function create_default_slot_20(ctx) {
     	let t;
 
     	const block = {
@@ -30643,17 +30643,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22.name,
+    		id: create_default_slot_20.name,
     		type: "slot",
-    		source: "(116:4) <DropdownToggle nav caret>",
+    		source: "(130:4) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (118:6) <DropdownItem href="./api/v2/economies">
-    function create_default_slot_21(ctx) {
+    // (132:6) <DropdownItem href="./api/v2/economies">
+    function create_default_slot_19(ctx) {
     	let t;
 
     	const block = {
@@ -30670,17 +30670,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21.name,
+    		id: create_default_slot_19.name,
     		type: "slot",
-    		source: "(118:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
+    		source: "(132:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (120:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_20(ctx) {
+    // (134:6) <DropdownItem href="./api/v1/esco-stats">
+    function create_default_slot_18(ctx) {
     	let t;
 
     	const block = {
@@ -30697,22 +30697,22 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20.name,
+    		id: create_default_slot_18.name,
     		type: "slot",
-    		source: "(120:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
+    		source: "(134:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (122:6) <DropdownItem href="./api/v1/expo">
-    function create_default_slot_19(ctx) {
+    // (136:6) <DropdownItem href="./api/v1/expo-stats">
+    function create_default_slot_17(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Expo-Stats");
+    			t = text("expoç-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -30724,17 +30724,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19.name,
+    		id: create_default_slot_17.name,
     		type: "slot",
-    		source: "(122:6) <DropdownItem href=\\\"./api/v1/expo\\\">",
+    		source: "(136:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (117:4) <DropdownMenu end>
-    function create_default_slot_18(ctx) {
+    // (131:4) <DropdownMenu end>
+    function create_default_slot_16(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -30749,7 +30749,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./api/v2/economies",
-    				$$slots: { default: [create_default_slot_21] },
+    				$$slots: { default: [create_default_slot_19] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30760,7 +30760,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_20] },
+    				$$slots: { default: [create_default_slot_18] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30770,8 +30770,8 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "./api/v1/expo",
-    				$$slots: { default: [create_default_slot_19] },
+    				href: "./api/v1/expo-stats",
+    				$$slots: { default: [create_default_slot_17] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30804,21 +30804,21 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const dropdownitem0_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem0_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdownitem0.$set(dropdownitem0_changes);
     			const dropdownitem2_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem2_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdownitem2.$set(dropdownitem2_changes);
     			const dropdownitem4_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem4_changes.$$scope = { dirty, ctx };
     			}
 
@@ -30856,17 +30856,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18.name,
+    		id: create_default_slot_16.name,
     		type: "slot",
-    		source: "(117:4) <DropdownMenu end>",
+    		source: "(131:4) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (115:3) <Dropdown >
-    function create_default_slot_17(ctx) {
+    // (129:3) <Dropdown >
+    function create_default_slot_15(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -30876,7 +30876,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_22] },
+    				$$slots: { default: [create_default_slot_20] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30885,7 +30885,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_18] },
+    				$$slots: { default: [create_default_slot_16] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30906,14 +30906,14 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const dropdowntoggle_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdowntoggle_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdowntoggle.$set(dropdowntoggle_changes);
     			const dropdownmenu_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownmenu_changes.$$scope = { dirty, ctx };
     			}
 
@@ -30939,17 +30939,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17.name,
+    		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(115:3) <Dropdown >",
+    		source: "(129:3) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:4) <DropdownToggle nav caret>
-    function create_default_slot_16(ctx) {
+    // (141:4) <DropdownToggle nav caret>
+    function create_default_slot_14(ctx) {
     	let t;
 
     	const block = {
@@ -30966,22 +30966,22 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16.name,
+    		id: create_default_slot_14.name,
     		type: "slot",
-    		source: "(127:4) <DropdownToggle nav caret>",
+    		source: "(141:4) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (129:6) <DropdownItem href="./#/economies">
-    function create_default_slot_15(ctx) {
+    // (143:6) <DropdownItem href="./#/economies">
+    function create_default_slot_13(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Economies FRONT-END");
+    			t = text("economies FRONT-END");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -30993,17 +30993,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15.name,
+    		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(129:6) <DropdownItem href=\\\"./#/economies\\\">",
+    		source: "(143:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (130:6) <DropdownItem href="./#/esco-stats">
-    function create_default_slot_14(ctx) {
+    // (145:6) <DropdownItem href="./#/esco-stats">
+    function create_default_slot_12(ctx) {
     	let t;
 
     	const block = {
@@ -31020,71 +31020,44 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14.name,
-    		type: "slot",
-    		source: "(130:6) <DropdownItem href=\\\"./#/esco-stats\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (131:6) <DropdownItem href="#/expo">
-    function create_default_slot_13(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Expo FRONT-END");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_13.name,
-    		type: "slot",
-    		source: "(131:6) <DropdownItem href=\\\"#/expo\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (133:6) <DropdownItem href="#/graph">
-    function create_default_slot_12(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Conjunto");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(133:6) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(145:6) <DropdownItem href=\\\"./#/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (128:4) <DropdownMenu end>
+    // (147:6) <DropdownItem href="#/expo-stats">
     function create_default_slot_11(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("expo FRONT-END");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_11.name,
+    		type: "slot",
+    		source: "(147:6) <DropdownItem href=\\\"#/expo-stats\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (142:4) <DropdownMenu end>
+    function create_default_slot_10(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -31099,25 +31072,18 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_15] },
+    				$$slots: { default: [create_default_slot_13] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	dropdownitem1 = new DropdownItem({
-    			props: {
-    				href: "./#/esco-stats",
-    				$$slots: { default: [create_default_slot_14] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
+    	dropdownitem1 = new DropdownItem({ props: { divider: true }, $$inline: true });
 
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/expo",
-    				$$slots: { default: [create_default_slot_13] },
+    				href: "./#/esco-stats",
+    				$$slots: { default: [create_default_slot_12] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31127,8 +31093,8 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/graph",
-    				$$slots: { default: [create_default_slot_12] },
+    				href: "#/expo-stats",
+    				$$slots: { default: [create_default_slot_11] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31161,28 +31127,21 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const dropdownitem0_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem0_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdownitem0.$set(dropdownitem0_changes);
-    			const dropdownitem1_changes = {};
-
-    			if (dirty & /*$$scope*/ 2048) {
-    				dropdownitem1_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem1.$set(dropdownitem1_changes);
     			const dropdownitem2_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem2_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdownitem2.$set(dropdownitem2_changes);
     			const dropdownitem4_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem4_changes.$$scope = { dirty, ctx };
     			}
 
@@ -31220,17 +31179,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11.name,
+    		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(128:4) <DropdownMenu end>",
+    		source: "(142:4) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (126:12) <Dropdown>
-    function create_default_slot_10(ctx) {
+    // (140:12) <Dropdown>
+    function create_default_slot_9(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -31240,7 +31199,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_16] },
+    				$$slots: { default: [create_default_slot_14] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31249,7 +31208,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_11] },
+    				$$slots: { default: [create_default_slot_10] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31270,14 +31229,14 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const dropdowntoggle_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdowntoggle_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdowntoggle.$set(dropdowntoggle_changes);
     			const dropdownmenu_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownmenu_changes.$$scope = { dirty, ctx };
     			}
 
@@ -31303,17 +31262,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10.name,
+    		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(126:12) <Dropdown>",
+    		source: "(140:12) <Dropdown>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (138:4) <DropdownToggle nav caret>
-    function create_default_slot_9(ctx) {
+    // (152:4) <DropdownToggle nav caret>
+    function create_default_slot_8(ctx) {
     	let t;
 
     	const block = {
@@ -31330,22 +31289,22 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9.name,
+    		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(138:4) <DropdownToggle nav caret>",
+    		source: "(152:4) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (140:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_8(ctx) {
+    // (154:6) <DropdownItem href="./#/economies-graph">
+    function create_default_slot_7(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Economies-Stats");
+    			t = text("economies-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -31357,17 +31316,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8.name,
+    		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(140:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
+    		source: "(154:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (141:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_7(ctx) {
+    // (156:6) <DropdownItem href="./#/graphesco">
+    function create_default_slot_6(ctx) {
     	let t;
 
     	const block = {
@@ -31384,22 +31343,22 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7.name,
+    		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(141:6) <DropdownItem href=\\\"./#/graphesco\\\">",
+    		source: "(156:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (142:6) <DropdownItem href="#/graphexpo">
-    function create_default_slot_6(ctx) {
+    // (158:6) <DropdownItem href="#/graphexpo">
+    function create_default_slot_5(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Expo-Stats");
+    			t = text("expo-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -31411,17 +31370,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6.name,
+    		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(142:6) <DropdownItem href=\\\"#/graphexpo\\\">",
+    		source: "(158:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (143:18) <DropdownItem href="#/graph">
-    function create_default_slot_5(ctx) {
+    // (160:18) <DropdownItem href="./#/graph">
+    function create_default_slot_4(ctx) {
     	let t;
 
     	const block = {
@@ -31438,43 +31397,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5.name,
-    		type: "slot",
-    		source: "(143:18) <DropdownItem href=\\\"#/graph\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (145:6) <DropdownItem href="#/graph">
-    function create_default_slot_4(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Conjunto");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(145:6) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(160:18) <DropdownItem href=\\\"./#/graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (139:4) <DropdownMenu end>
+    // (153:4) <DropdownMenu end>
     function create_default_slot_3(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -31487,49 +31419,46 @@ var app = (function () {
     	let dropdownitem4;
     	let t4;
     	let dropdownitem5;
+    	let t5;
+    	let dropdownitem6;
     	let current;
 
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_8] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem1 = new DropdownItem({
-    			props: {
-    				href: "./#/graphesco",
     				$$slots: { default: [create_default_slot_7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
+    	dropdownitem1 = new DropdownItem({ props: { divider: true }, $$inline: true });
+
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/graphexpo",
+    				href: "./#/graphesco",
     				$$slots: { default: [create_default_slot_6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	dropdownitem3 = new DropdownItem({
+    	dropdownitem3 = new DropdownItem({ props: { divider: true }, $$inline: true });
+
+    	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/graph",
+    				href: "#/graphexpo",
     				$$slots: { default: [create_default_slot_5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	dropdownitem4 = new DropdownItem({ props: { divider: true }, $$inline: true });
+    	dropdownitem5 = new DropdownItem({ props: { divider: true }, $$inline: true });
 
-    	dropdownitem5 = new DropdownItem({
+    	dropdownitem6 = new DropdownItem({
     			props: {
-    				href: "#/graph",
+    				href: "./#/graph",
     				$$slots: { default: [create_default_slot_4] },
     				$$scope: { ctx }
     			},
@@ -31549,6 +31478,8 @@ var app = (function () {
     			create_component(dropdownitem4.$$.fragment);
     			t4 = space();
     			create_component(dropdownitem5.$$.fragment);
+    			t5 = space();
+    			create_component(dropdownitem6.$$.fragment);
     		},
     		m: function mount(target, anchor) {
     			mount_component(dropdownitem0, target, anchor);
@@ -31562,44 +31493,39 @@ var app = (function () {
     			mount_component(dropdownitem4, target, anchor);
     			insert_dev(target, t4, anchor);
     			mount_component(dropdownitem5, target, anchor);
+    			insert_dev(target, t5, anchor);
+    			mount_component(dropdownitem6, target, anchor);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
     			const dropdownitem0_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem0_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdownitem0.$set(dropdownitem0_changes);
-    			const dropdownitem1_changes = {};
-
-    			if (dirty & /*$$scope*/ 2048) {
-    				dropdownitem1_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem1.$set(dropdownitem1_changes);
     			const dropdownitem2_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownitem2_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdownitem2.$set(dropdownitem2_changes);
-    			const dropdownitem3_changes = {};
+    			const dropdownitem4_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
-    				dropdownitem3_changes.$$scope = { dirty, ctx };
+    			if (dirty & /*$$scope*/ 1024) {
+    				dropdownitem4_changes.$$scope = { dirty, ctx };
     			}
 
-    			dropdownitem3.$set(dropdownitem3_changes);
-    			const dropdownitem5_changes = {};
+    			dropdownitem4.$set(dropdownitem4_changes);
+    			const dropdownitem6_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
-    				dropdownitem5_changes.$$scope = { dirty, ctx };
+    			if (dirty & /*$$scope*/ 1024) {
+    				dropdownitem6_changes.$$scope = { dirty, ctx };
     			}
 
-    			dropdownitem5.$set(dropdownitem5_changes);
+    			dropdownitem6.$set(dropdownitem6_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -31609,6 +31535,7 @@ var app = (function () {
     			transition_in(dropdownitem3.$$.fragment, local);
     			transition_in(dropdownitem4.$$.fragment, local);
     			transition_in(dropdownitem5.$$.fragment, local);
+    			transition_in(dropdownitem6.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -31618,6 +31545,7 @@ var app = (function () {
     			transition_out(dropdownitem3.$$.fragment, local);
     			transition_out(dropdownitem4.$$.fragment, local);
     			transition_out(dropdownitem5.$$.fragment, local);
+    			transition_out(dropdownitem6.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -31632,6 +31560,8 @@ var app = (function () {
     			destroy_component(dropdownitem4, detaching);
     			if (detaching) detach_dev(t4);
     			destroy_component(dropdownitem5, detaching);
+    			if (detaching) detach_dev(t5);
+    			destroy_component(dropdownitem6, detaching);
     		}
     	};
 
@@ -31639,14 +31569,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(139:4) <DropdownMenu end>",
+    		source: "(153:4) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (137:5) <Dropdown >
+    // (151:5) <Dropdown >
     function create_default_slot_2(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -31657,7 +31587,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_9] },
+    				$$slots: { default: [create_default_slot_8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31687,14 +31617,14 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const dropdowntoggle_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdowntoggle_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdowntoggle.$set(dropdowntoggle_changes);
     			const dropdownmenu_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdownmenu_changes.$$scope = { dirty, ctx };
     			}
 
@@ -31722,14 +31652,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(137:5) <Dropdown >",
+    		source: "(151:5) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:2) <Nav navbar>
+    // (128:2) <Nav navbar>
     function create_default_slot_1(ctx) {
     	let dropdown0;
     	let t0;
@@ -31740,7 +31670,7 @@ var app = (function () {
 
     	dropdown0 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_17] },
+    				$$slots: { default: [create_default_slot_15] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31748,7 +31678,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_10] },
+    				$$slots: { default: [create_default_slot_9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31781,21 +31711,21 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const dropdown0_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdown0_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdown0.$set(dropdown0_changes);
     			const dropdown1_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdown1_changes.$$scope = { dirty, ctx };
     			}
 
     			dropdown1.$set(dropdown1_changes);
     			const dropdown2_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				dropdown2_changes.$$scope = { dirty, ctx };
     			}
 
@@ -31827,14 +31757,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(114:2) <Nav navbar>",
+    		source: "(128:2) <Nav navbar>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (112:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (126:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
     function create_default_slot(ctx) {
     	let navbarbrand;
     	let t;
@@ -31844,7 +31774,7 @@ var app = (function () {
     	navbarbrand = new NavbarBrand({
     			props: {
     				href: "#/info",
-    				$$slots: { default: [create_default_slot_23] },
+    				$$slots: { default: [create_default_slot_21] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31874,14 +31804,14 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const navbarbrand_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				navbarbrand_changes.$$scope = { dirty, ctx };
     			}
 
     			navbarbrand.$set(navbarbrand_changes);
     			const nav_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				nav_changes.$$scope = { dirty, ctx };
     			}
 
@@ -31909,7 +31839,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(112:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(126:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -31962,22 +31892,22 @@ var app = (function () {
     			div = element("div");
     			t2 = space();
     			p = element("p");
-    			p.textContent = "Los gráficos de spline son gráficos de líneas suavizadas y este ejemplo muestra un \r\n            gráfico de spline invertido. Invertir el gráfico significa que el eje X se coloca como \r\n            el eje vertical y el eje Y se coloca como el eje horizontal. Esto puede ser más intuitivo \r\n            para ciertos conjuntos de datos, como en este gráfico donde el eje X representa la altitud \r\n            vertical.";
+    			p.textContent = "Este gráfico compara las exportaciones de diferentes paises";
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$2, 102, 4, 2452);
+    			add_location(script0, file$2, 118, 4, 3945);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$2, 103, 4, 2523);
+    			add_location(script1, file$2, 119, 4, 4038);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$2, 104, 4, 2601);
+    			add_location(script2, file$2, 120, 4, 4138);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$2, 105, 4, 2681);
+    			add_location(script3, file$2, 121, 4, 4240);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$2, 153, 8, 4568);
+    			add_location(div, file$2, 168, 8, 6171);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$2, 154, 8, 4604);
+    			add_location(p, file$2, 169, 8, 6203);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$2, 152, 4, 4524);
-    			add_location(main, file$2, 110, 0, 2803);
+    			add_location(figure, file$2, 167, 4, 6127);
+    			add_location(main, file$2, 124, 0, 4358);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -31998,14 +31928,20 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false);
+    				dispose = [
+    					listen_dev(script0, "load", /*loadGraph*/ ctx[0], false, false, false),
+    					listen_dev(script1, "load", /*loadGraph*/ ctx[0], false, false, false),
+    					listen_dev(script2, "load", /*loadGraph*/ ctx[0], false, false, false),
+    					listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false)
+    				];
+
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
     			const navbar_changes = {};
 
-    			if (dirty & /*$$scope*/ 2048) {
+    			if (dirty & /*$$scope*/ 1024) {
     				navbar_changes.$$scope = { dirty, ctx };
     			}
 
@@ -32029,7 +31965,7 @@ var app = (function () {
     			if (detaching) detach_dev(main);
     			destroy_component(navbar);
     			mounted = false;
-    			dispose();
+    			run_all(dispose);
     		}
     	};
 
@@ -32047,64 +31983,88 @@ var app = (function () {
     function instance$2($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('ExpoGraph', slots, []);
-    	let apiData = {};
     	const delay = ms => new Promise(res => setTimeout(res, ms));
-    	let stats = [];
+    	let expos = [];
     	let country = [];
     	let year = [];
-    	let expo_bys = [];
-    	let expo_m = [];
     	let expo_tec = [];
+    	let expo_m = [];
+    	let expo_bys = [];
+    	let datosOrdenados = [];
 
-    	async function getPEStats() {
-    		console.log("Fetching stats....");
+    	async function getData() {
+    		console.log("Fetching expo....");
     		const res = await fetch("/api/v1/expo");
 
     		if (res.ok) {
     			const data = await res.json();
-    			stats = data;
-    			console.log("Estadísticas recibidas: " + stats.length);
+    			expos = data;
 
-    			//inicializamos los arrays para mostrar los datos
-    			stats.forEach(stat => {
-    				country.push(stat.country + "-" + stat.year);
-    				year.push(stat.year);
-    				expo_tec.push(stat.expo_bys);
-    				expo_m.push(stat.expo_m);
-    				expo_tec.push(stat.expo_tec);
-    			});
+    			if (expos.length == 0) {
+    				await fetch("/api/v1/expo-stats/loadInitialData");
+    				console.log("Entradas recibidas: " + expos.length);
+
+    				//con la siguiente funcion ordeno los datos por años de menor a mayor
+    				datosOrdenados = expos.sort(function (a, b) {
+    					return a.year - b.year;
+    				});
+
+    				console.log("Ordenadas correctamente");
+
+    				datosOrdenados.forEach(expo => {
+    					year.push(expo.year);
+    					country.push(expo.country + "-" + expo.year);
+    					expo_tec.push(expo.expo_tec);
+    					expo_m.push(expo.expo_m);
+    					expo_bys.push(expo.expo_bys);
+    				});
+
+    				location.reload();
+    			} else {
+    				console.log("Entradas recibidas: " + expos.length);
+
+    				//con la siguiente funcion ordeno los datos por años de menor a mayor
+    				datosOrdenados = expos.sort(function (a, b) {
+    					return a.year - b.year;
+    				});
+
+    				console.log("Ordenadas correctamente");
+
+    				datosOrdenados.forEach(expo => {
+    					year.push(expo.year);
+    					country.push(expo.country + "-" + expo.year);
+    					expo_tec.push(expo.expo_tec);
+    					expo_m.push(expo.expo_m);
+    					expo_bys.push(expo.expo_bys);
+    				});
+    			}
     		} else {
-    			console.log("Error cargando los datos");
-    		}
-    	}
-
-    	async function getData() {
-    		const res = await fetch("/api/v1/expo");
-
-    		if (res.ok) {
-    			const json = await res.json();
-    			apiData = json;
-    			loadGraph();
-    		} else {
-    			console.log("Error in request");
+    			console.log("Error, can`t charge data");
     		}
     	}
 
     	async function loadGraph() {
-    		Highcharts.chart('container', {
-    			chart: { type: 'spline', inverted: true },
-    			title: { text: 'Exportaciones anuales' },
-    			xAxis: {
-    				title: { text: "País-Año" },
-    				categories: country
+    		Highcharts.chart("container", {
+    			chart: { type: "column" },
+    			title: { text: "País" },
+    			subtitle: {
+    				text: "Source: https://ourworldindata.org/expo"
     			},
-    			yAxis: { title: { text: 'Exportaciones' } },
-    			legend: { enabled: false },
+    			xAxis: { categories: country, crosshair: true },
+    			yAxis: {
+    				min: 0,
+    				title: { text: "%(Según el PIB)" }
+    			},
     			tooltip: {
-    				headerFormat: '<b>{series.name}</b><br/>',
-    				pointFormat: '{point.y}exportaciones'
+    				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+    				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y} % de exportaciones</b></td></tr>',
+    				footerFormat: "</table>",
+    				shared: true,
+    				useHTML: true
     			},
-    			plotOptions: { spline: { marker: { enable: false } } },
+    			plotOptions: {
+    				column: { pointPadding: 0.2, borderWidth: 0 }
+    			},
     			series: [
     				{
     					name: 'Exportaciones Bienes y Servicios',
@@ -32122,7 +32082,7 @@ var app = (function () {
     		});
     	}
 
-    	onMount(getPEStats);
+    	onMount(getData);
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -32141,27 +32101,26 @@ var app = (function () {
     		DropdownMenu,
     		DropdownItem,
     		Button,
-    		apiData,
     		delay,
-    		stats,
+    		expos,
     		country,
     		year,
-    		expo_bys,
-    		expo_m,
     		expo_tec,
-    		getPEStats,
+    		expo_m,
+    		expo_bys,
+    		datosOrdenados,
     		getData,
     		loadGraph
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('apiData' in $$props) apiData = $$props.apiData;
-    		if ('stats' in $$props) stats = $$props.stats;
+    		if ('expos' in $$props) expos = $$props.expos;
     		if ('country' in $$props) country = $$props.country;
     		if ('year' in $$props) year = $$props.year;
-    		if ('expo_bys' in $$props) expo_bys = $$props.expo_bys;
-    		if ('expo_m' in $$props) expo_m = $$props.expo_m;
     		if ('expo_tec' in $$props) expo_tec = $$props.expo_tec;
+    		if ('expo_m' in $$props) expo_m = $$props.expo_m;
+    		if ('expo_bys' in $$props) expo_bys = $$props.expo_bys;
+    		if ('datosOrdenados' in $$props) datosOrdenados = $$props.datosOrdenados;
     	};
 
     	if ($$props && "$$inject" in $$props) {
