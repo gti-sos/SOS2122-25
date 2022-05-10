@@ -1,88 +1,61 @@
 //Adrian Perez Gomez
 const bodyParser = require("body-parser");
 
-const BASE_API_URL_AIR_POLLUTION_STATS = "/api/v1/air-pollution-stats";
+const BASE_API_URL_EXPO_STATS = "/api/v1/expo";
 
 
 
-var air_pollution_stats = [
-    {
-        country: "france",
-        year: 2019,
-        ages_zero_fifty: 1,
-        ages_fifty_seventy: 10,
-        ages_seventy: 31
-    },
-    {
-        country: "argentina",
-        year: 2019,
-        ages_zero_fifty: 57,
-        ages_fifty_seventy: 197,
-        ages_seventy: 457
-    },
-    {
-        country: "brazil",
-        year: 2019,
-        ages_zero_fifty: 2083,
-        ages_fifty_seventy: 4588,
-        ages_seventy: 7346
-    },
-    {
-        country: "china",
-        year: 2019,
-        ages_zero_fifty: 21535,
-        ages_fifty_seventy: 104555,
-        ages_seventy: 236938
-    },
-    {
-        country: "japan",
-        year: 2019,
-        ages_zero_fifty: 2,
-        ages_fifty_seventy: 16,
-        ages_seventy: 85
-    },
-    {
-        country: "england",
-        year: 2019,
-        ages_zero_fifty: 0,
-        ages_fifty_seventy: 2,
-        ages_seventy: 7
-    },
-    {
-        country: "india",
-        year: 2019,
-        ages_zero_fifty: 118341,
-        ages_fifty_seventy: 203713,
-        ages_seventy: 284836
-
-    },
+var expo_stats = [
     {
         country: "eeuu",
         year: 2019,
-        ages_zero_fifty: 8,
-        ages_fifty_seventy: 45,
-        ages_seventy: 97
+        expo_tec: 2.42,
+        expo_m: 62.014,
+        expo_bys:217092
+        
     },
     {
         country: "spain",
         year: 2019,
-        ages_zero_fifty: 6,
-        ages_fifty_seventy: 30,
-        ages_seventy: 143
-    }
+        expo_tec: 1.946,
+        expo_m: 25269.988,
+        expo_bys:1247
+        
+    },
+    {
+        country: "argentina",
+        year: 2019,
+        expo_tec: -2391,
+        expo_m: 14787.768,
+        expo_bys:20939
+    },
+    {
+        country: "marroco",
+        year: 2019,
+        expo_tec: -332,
+        expo_m: 1668.3,
+        expo_bys:6484
+    },
+    {
+        country: "greece",
+        year: 2019,
+        expo_tec: -332,
+        expo_m: 1668.3,
+        expo_bys:6484
+    } 
 ]
 
 module.exports.register = (app, db) =>{
 
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/loadInitialData",(req, res)=>{
+    app.get(BASE_API_URL_EXPO_STATS+"/loadInitialData",(req, res)=>{
         db.find({}, function (err, filteredList) {
             if (err) {
                 res.sendStatus(500, "INTERNAL SERVER ERROR");
                 return;
             }
             if (filteredList == 0) {
-                for (var i = 0; i < air_pollution_stats.length; i++) {
-                    db.insert(air_pollution_stats[i]);
+                for (var i = 0; i < expo_stats.length; i++) {
+                    db.insert(expo_stats[i]);
                 }
                 res.sendStatus(200, "OK.")
                 return;
@@ -95,13 +68,13 @@ module.exports.register = (app, db) =>{
     
     // Documentos
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/docs",(req,res)=>
+    app.get(BASE_API_URL_EXPO_STATS+"/docs",(req,res)=>
     {
-        res.redirect("https://documenter.getpostman.com/view/20219339/UVyn2Jne")
+        res.redirect("https://documenter.getpostman.com/view/20003647/UVyoVdQm")
     })
     
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
+    app.get(BASE_API_URL_EXPO_STATS,(req, res)=>{
     
         var year = req.query.year;
         var from = req.query.from;
@@ -161,7 +134,7 @@ module.exports.register = (app, db) =>{
     
     
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/:country",(req, res)=>{
+    app.get(BASE_API_URL_EXPO_STATS+"/:country",(req, res)=>{
     
         var country =req.params.country
         var from = req.query.from;
@@ -231,7 +204,7 @@ module.exports.register = (app, db) =>{
 
     
     
-    app.get(BASE_API_URL_AIR_POLLUTION_STATS+"/:country/:year",(req, res)=>{
+    app.get(BASE_API_URL_EXPO_STATS+"/:country/:year",(req, res)=>{
     
         var country = req.params.country
         var year = req.params.year
@@ -265,7 +238,7 @@ module.exports.register = (app, db) =>{
     
     
     
-    app.post(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
+    app.post(BASE_API_URL_EXPO_STATS,(req, res)=>{
         
         if (comprobar_body(req)) {
             res.sendStatus(400, "BAD REQUEST - INCORRECT PARAMETERS");
@@ -292,18 +265,18 @@ module.exports.register = (app, db) =>{
     })
     
     
-    app.post(BASE_API_URL_AIR_POLLUTION_STATS+"/:country",(req, res)=>{
+    app.post(BASE_API_URL_EXPO_STATS+"/:country",(req, res)=>{
         res.sendStatus(405,"METHOD NOT ALLOWED");
     })
     
     
-    app.put(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
+    app.put(BASE_API_URL_EXPO_STATS,(req, res)=>{
         
         res.sendStatus(405,"METHOD NOT ALLOWED");
     })
     
     
-    app.put(BASE_API_URL_AIR_POLLUTION_STATS+"/:country/:year",(req, res)=>{
+    app.put(BASE_API_URL_EXPO_STATS+"/:country/:year",(req, res)=>{
         
         if (comprobar_body(req)) {
             res.sendStatus(400, "BAD REQUEST - INCORRECT PARAMETERS");
@@ -350,7 +323,7 @@ module.exports.register = (app, db) =>{
 
     
     
-    app.delete(BASE_API_URL_AIR_POLLUTION_STATS,(req, res)=>{
+    app.delete(BASE_API_URL_EXPO_STATS,(req, res)=>{
         db.remove({}, { multi: true }, (err, numRemoved) => {
             if (err) {
                 res.sendStatus(500, "INTERNAL SERVER ERROR");
@@ -363,7 +336,7 @@ module.exports.register = (app, db) =>{
     
     
     
-    app.delete(BASE_API_URL_AIR_POLLUTION_STATS+"/:country/:year",(req, res)=>{
+    app.delete(BASE_API_URL_EXPO_STATS+"/:country/:year",(req, res)=>{
         var country = req.params.country;
         var year = req.params.year;
         db.find({ country: country, year: parseInt(year) }, {}, (err, filteredList) => {
@@ -392,9 +365,9 @@ module.exports.register = (app, db) =>{
     function comprobar_body(req) {
         return (req.body.country == null |
             req.body.year == null |
-            req.body.ages_zero_fifty == null |
-            req.body.ages_fifty_seventy == null |
-            req.body.ages_seventy == null);
+            req.body.expo_tec == null |
+            req.body.expo_m == null |
+            req.body.expo_bys == null);
     }
     //PAGINACION
     function paginacion(req, lista) {

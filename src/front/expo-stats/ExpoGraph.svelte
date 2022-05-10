@@ -9,12 +9,12 @@ const delay = ms => new Promise(res => setTimeout(res,ms));
     let stats = [];
     let country= [];
     let year = [];
-    let ages_seventy = [];
-    let ages_fifty_seventy = [];
-    let ages_zero_fifty = []; 
+    let expo_bys = [];
+    let expo_m = [];
+    let expo_tec = []; 
     async function getPEStats(){
         console.log("Fetching stats....");
-        const res = await fetch("/api/v1/air-pollution-stats");
+        const res = await fetch("/api/v1/expo");
         if(res.ok){
             const data = await res.json();
             stats = data;
@@ -23,9 +23,9 @@ const delay = ms => new Promise(res => setTimeout(res,ms));
             stats.forEach(stat => {
                 country.push(stat.country+"-"+stat.year);
                 year.push(stat.year);
-                ages_seventy.push(stat.ages_seventy);
-                ages_fifty_seventy.push(stat.ages_fifty_seventy);
-                ages_zero_fifty.push(stat.ages_zero_fifty);            
+                expo_tec.push(stat.expo_bys);
+                expo_m.push(stat.expo_m);
+                expo_tec.push(stat.expo_tec);            
             });
         }else{
             console.log("Error cargando los datos");
@@ -33,7 +33,7 @@ const delay = ms => new Promise(res => setTimeout(res,ms));
     }
 
 async function getData(){
-    const res= await fetch("/api/v1/air-pollution-stats");
+    const res= await fetch("/api/v1/expo");
     if(res.ok){
         const json = await res.json();
         apiData = json;
@@ -53,7 +53,7 @@ Highcharts.chart('container', {
         inverted: true
     },
     title: {
-        text: 'Muertes por contaminacion de aire en interiores'
+        text: 'Exportaciones anuales'
     },
     
     xAxis: {
@@ -65,7 +65,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: 'Muertes'
+            text: 'Exportaciones'
         },
        
     },
@@ -74,7 +74,7 @@ Highcharts.chart('container', {
     },
     tooltip: {
         headerFormat: '<b>{series.name}</b><br/>',
-        pointFormat: '{point.y}muertes'
+        pointFormat: '{point.y}exportaciones'
     },
     plotOptions: {
         spline: {
@@ -85,13 +85,13 @@ Highcharts.chart('container', {
     },
     series: [
         {
-        name: 'Mayores de 70 años',
-        data: ages_seventy
+        name: 'Exportaciones Bienes y Servicios',
+        data: expo_bys
     },
-    {   name: 'Entre 50 y 70 años',
-        data: ages_fifty_seventy},
-    {   name:'Menores de 50 años',
-        data: ages_zero_fifty}
+    {   name: 'Exportaciones Prod. Manufacturados',
+        data: expo_m},
+    {   name:'Exportaciones Tecnológicas',
+        data: expo_tec}
     ]
 });
 }
@@ -119,7 +119,7 @@ onMount(getPEStats);
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo">Expo-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               
@@ -128,7 +128,7 @@ onMount(getPEStats);
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies">Economies FRONT-END</DropdownItem>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
-				  <DropdownItem href="#/air-pollution-stats">AirPollution FRONT-END</DropdownItem>
+				  <DropdownItem href="#/expo">Expo FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
@@ -139,7 +139,7 @@ onMount(getPEStats);
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies-graph">Economies-Stats</DropdownItem>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
-				  <DropdownItem href="#/graphAirPollution">AirPollution-Stats</DropdownItem>
+				  <DropdownItem href="#/graphexpo">Expo-Stats</DropdownItem>
                   <DropdownItem href="#/graph">Grafica comun</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>

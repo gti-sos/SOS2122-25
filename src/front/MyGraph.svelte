@@ -2,15 +2,15 @@
     import { onMount } from 'svelte';
 
    
-    let airpollutions = [];
+    let expos = [];
     let escos = [];
     let economies = [];
 
     let country= [];
     let year = [];
-    let ages_seventy = [];
-    let ages_fifty_seventy = [];
-    let ages_zero_fifty = [];
+    let expo_bys = [];
+    let expo_m = [];
+    let expo_tec = [];
     let percapita = [];
     let currency = [];
     let currentprices = [];
@@ -18,22 +18,22 @@
     let ages2=[];
     let ages3=[];
     async function getData(){
-        const res1= await fetch("/api/v1/air-pollution-stats");
+        const res1= await fetch("/api/v1/expo");
         const res2= await fetch("/api/v2/economies");
         const res3= await fetch("/api/v1/esco-stats");
         if(res1.ok && res2.ok && res3.ok){
             const data1 = await res1.json();
             const data3 = await res2.json();
             const data2 = await res3.json();
-            airpollutions = data1;
-            console.log("Recibido: "+airpollutions.length);
+            expos = data1;
+            console.log("Recibido: "+expos.length);
             //inicializamos los arrays para mostrar los datos
-            airpollutions.forEach(airpollution => {
-                country.push(airpollution.country+"-"+airpollution.year);
-                year.push(airpollution.year);
-                ages1.push(airpollution.ages_seventy+airpollution.ages_fifty_seventy+airpollution.ages_zero_fifty);
-                ages_fifty_seventy.push(airpollution.ages_fifty_seventy);
-                ages_zero_fifty.push(airpollution.ages_zero_fifty);   
+            expos.forEach(expo => {
+                country.push(expo.country+"-"+expo.year);
+                year.push(expo.year);
+                ages1.push(expo.expo_bys+expo.ages_fifty_seventy+expo.ages_zero_fifty);
+                ages_fifty_seventy.push(expo.ages_fifty_seventy);
+                ages_zero_fifty.push(expo.ages_zero_fifty);   
             });
             escos=data2;
             console.log("Recibido: " + escos.length);
@@ -42,8 +42,8 @@
                 //country.push(esco.country);
                 ages_zero_fifty.push(esco.ages_zero_fifty);
                 ages_fifty_seventy.push(esco.ages_fifty_seventy);
-                ages2.push(esco.ages_seventy+esco.ages_fifty_seventy+esco.ages_zero_fifty);
-                ages_seventy.push(esco.ages_seventy);
+                ages2.push(esco.expo_bys+esco.ages_fifty_seventy+esco.ages_zero_fifty);
+                expo_bys.push(esco.expo_bys);
             });
             economies=data3;
             console.log("Recibido: " + economies.length);
@@ -94,7 +94,7 @@
 
         series: [
         {
-        name: 'AirPollution',
+        name: 'expo',
         data: ages1,
     },{
         name: 'esco',

@@ -7,49 +7,49 @@
     import Table from 'sveltestrap/src/Table.svelte';
     import Alert from 'sveltestrap/src/Alert.svelte';
     import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'sveltestrap';
-    let airpollution={};
+    let expo={};
 
     
     let updatedCountry;
     let updatedYear;
-    let updatedAgesZeroFifty;
-    let updatedAgesFiftySeventy;
-    let updatedAgesSeventy;
+    let updatedExpoTec;
+    let updatedExpoM;
+    let updatedExpoByS;
     
     let checkMSG = "";
     let visible = false;
     let color = "danger";
 
-    onMount(getAirpollution);
+    onMount(getExpo);
 
-	async function getAirpollution(){
-		console.log("fetching Airpollution ....");
-		const res= await fetch("/api/v1/air-pollution-stats/" +params.country+"/"+params.year);
+	async function getExpo(){
+		console.log("fetching expos ....");
+		const res= await fetch("/api/v1/expo/" +params.country+"/"+params.year);
 		if(res.ok){
 			const data= await res.json();
-			airpollution=data;
-			updatedCountry=airpollution.country;
-            updatedYear=airpollution.year;
-            updatedAgesZeroFifty=airpollution.ages_zero_fifty;
-            updatedAgesFiftySeventy=airpollution.ages_fifty_seventy;
-            updatedAgesSeventy=airpollution.ages_seventy;
+			expo=data;
+			updatedCountry=expo.country;
+            updatedYear=expo.year;
+            updatedExpoTec=expo.expo_tec;
+            updatedExpoM=expo.expo_m;
+            updatedExpoM=expo.expo_bys;
 		}else{
             Fallos(res.status,params.country);
             pop();
         }
 	}
 
-    async function EditAirpollution(){
-        console.log("Updating Airpollution...."+updatedCountry);
-        const res = await fetch("/api/v1/air-pollution-stats/"+params.country+"/"+params.year,
+    async function Editexpo(){
+        console.log("Updating expo...."+updatedCountry);
+        const res = await fetch("/api/v1/expo/"+params.country+"/"+params.year,
 			{
 				method: "PUT",
 				body: JSON.stringify({
                     country: updatedCountry,
                     year: updatedYear,
-                    ages_zero_fifty: updatedAgesZeroFifty,
-                    ages_fifty_seventy: updatedAgesFiftySeventy,
-                    ages_seventy: updatedAgesSeventy
+                    expo_tec: updatedExpoTec,
+                    expo_m: updatedExpoM,
+                    expo_bys: updatedExpoM
                 }),
 				headers: {
 					"Content-Type": "application/json"
@@ -98,7 +98,7 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo">expo-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               
@@ -107,7 +107,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
-				  <DropdownItem href="#/air-pollution-stats">AirPollution FRONT-END</DropdownItem>
+				  <DropdownItem href="#/expo">expo FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
@@ -118,7 +118,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
-				  <DropdownItem href="#/graphAirPollution">AirPollution-Stats</DropdownItem>
+				  <DropdownItem href="#/graphexpo">expo-Stats</DropdownItem>
                   <DropdownItem href="#/graph">Grafica comun</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
@@ -135,29 +135,29 @@
 			{checkMSG}
 		{/if}
 	</Alert>
-    {#await airpollution}
+    {#await expo}
     loading
-        {:then airpollution}
+        {:then expo}
     
         <Table bordered>
             <thead>
                 <tr>
                     <th>País</th>
                     <th>Año</th>
-                    <th>Per capita</th>
-                    <th>currency</th>
-                    <th>currentprices</th>
+                    <th>Exportaciones Tecnológicas</th>
+                    <th>Exportaciones Productos Manufacturados</th>
+                    <th>Exportaciones Bienes y Servicios</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>{params.country}</td>
                     <td>{params.year}</td>
-                    <td><input bind:value="{updatedAgesZeroFifty}"></td>
-                    <td><input bind:value="{updatedAgesFiftySeventy}"></td>
-                    <td><input bind:value="{updatedAgesSeventy}"></td>
+                    <td><input bind:value="{updatedExpoTec}"></td>
+                    <td><input bind:value="{updatedExpoM}"></td>
+                    <td><input bind:value="{updatedExpoM}"></td>
     
-                    <td><Button outline color="primary" on:click="{EditAirpollution}">
+                    <td><Button outline color="primary" on:click="{EditExpo}">
                         Editar
                         </Button>
                     </td>

@@ -9,12 +9,10 @@
 	import economies from './frontEconomies/economies.svelte';
 	import EditEconomies from "./frontEconomies/EditEconomies.svelte";
 	import MyGraphEconomies from "./frontEconomies/MyGraphEconomies.svelte";
-	import Airpollution from './air-pollution-stats/Airpollution.svelte';
-	import EditAirpollution from "./air-pollution-stats/EditAirpollution.svelte";
-
-	
-import AirPollutionGraph from './air-pollution-stats/AirPollutionGraph.svelte';
-import MyGraph from './MyGraph.svelte';
+	import Expo from './air-pollution-stats/Expo.svelte';
+	import EditExpo from "./air-pollution-stats/EditExpo.svelte";
+	import ExpoGraph from './air-pollution-stats/ExpoGraph.svelte';
+	import MyGraph from './MyGraph.svelte';
 	//export let name;
 
 	const routes={
@@ -27,9 +25,9 @@ import MyGraph from './MyGraph.svelte';
 		"/economies" : economies,
 		"/economies/:country/:year" : EditEconomies,
 		"/economies-graph": MyGraphEconomies,
-		"/air-pollution-stats" : Airpollution,
-		"/air-pollution/:country/:year" : EditAirpollution,
-		"/graphAirPollution" : AirPollutionGraph,
+		"/expo" : Expo,
+		"/expo/:country/:year" : EditExpo,
+		"/graphexpo" : ExpoGraph,
 		"/graph": MyGraph
 
 
