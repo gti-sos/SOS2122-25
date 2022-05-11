@@ -12,7 +12,7 @@
 	let errorMsg = "";
 	let msg = "";
 
-    let econos={};
+    let economies={};
 
     
     let updatedCountry;
@@ -24,16 +24,16 @@
     onMount(getEconomies);
 
 	async function getEconomies(){
-		console.log("fetching Economies ....");
+		console.log("fetching Economies ...."+params.country+" "+params.year);
 		const res= await fetch("/api/v2/economies/" +params.country+"/"+params.year);
 		if(res.ok){
 			const data= await res.json();
-			econos=data;
-			updatedCountry=econos.country;
-            updatedYear=econos.year;
-            updatedpercapita=econos.percapita;
-            updatedcurrency=econos.currency;
-            updatedcurrentprices=econos.currentprices;
+			economies=data;
+			updatedCountry=economies.country;
+            updatedYear=economies.year;
+            updatedpercapita=economies.percapita;
+            updatedcurrency=economies.currency;
+            updatedcurrentprices=economies.currentprices;
 		}else{
             Fallos(res.status,params.country);
             pop();
@@ -41,7 +41,7 @@
 	}
 
     async function EditEconomies(){
-        console.log("Updating economies...."+updatedCountry);
+        console.log("Updating economies...."+params.country+" "+params.year);
         const res = await fetch("/api/v2/economies/"+params.country+"/"+params.year,
 			{
 				method: "PUT",
@@ -102,9 +102,9 @@
 			<p>Correcto: {msg}</p>
 		{/if}
 	</Alert>
-    {#await econos}
+    {#await economies}
     loading
-        {:then econos}
+        {:then economies}
     
         <Table bordered>
             <thead>

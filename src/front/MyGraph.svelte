@@ -73,7 +73,7 @@
 
         yAxis: {
             title: {
-                text: "Muertes",
+                text: "economia escolarizacion",
             },
 
         },
