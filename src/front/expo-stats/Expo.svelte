@@ -5,7 +5,7 @@
 	import Alert from 'sveltestrap/src/Alert.svelte';
 	import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'sveltestrap';
 
-	let airpollution=[];
+	let expo=[];
 	let from=null;
 	let to=null;
 	let offset=0;
@@ -16,19 +16,19 @@
     let visible = false;
     let color = "danger";
 
-    let newAirpollution={
+    let newExpo={
         country: "",
         year:"",
-        ages_zero_fifty:"",
-        ages_fifty_seventy:"",
-        ages_seventy:""
+        expo_tec:"",
+        expo_m:"",
+        expo_bys:""
     }
 
-	onMount(getAirpollution);
+	onMount(getExpo);
 
-	async function getAirpollution(){
-		console.log("fetching airpollution ....");
-		let cadena=`/api/v1/air-pollution-stats?offset=+${offset}+&limit=+${limit}`;
+	async function getExpo(){
+		console.log("fetching exports ....");
+		let cadena=`/api/v1/expo?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
 			cadena=cadena + `&from=${from}&` 
 		}
@@ -39,9 +39,9 @@
 		const res= await fetch(cadena);
 		if(res.ok){
 			const data= await res.json();
-			airpollution=data;
-			numEntries=airpollution.length;
-			console.log("Received airpollution: " + airpollution.length);
+			expo=data;
+			numEntries=expo.length;
+			console.log("Received expo: " + expo.length);
 		}else{
 			color="danger";
 			checkMSG="No hay entradas para esas fechas";
@@ -54,8 +54,8 @@
 			offset=offset-10;
 		}
 		//limit=limit+10;
-        console.log("fetching airpollution ....");
-		let cadena = `/api/v1/air-pollution-stats?offset=+${offset}+&limit=+${limit}`;
+        console.log("fetching exports ....");
+		let cadena = `/api/v1/expo?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -65,18 +65,18 @@
 		const res= await fetch(cadena);
 		if(res.ok){
 			const data= await res.json();
-			airpollution=data;
-			console.log("Received airpollution: " + airpollution.length);
+			expo=data;
+			console.log("Received expo: " + expo.length);
 		}
     }
 	async function getPgSig() {
-		if(airpollution.length>=10){
+		if(expo.length>=10){
 
 			offset=offset+10;
 		}
 		//limit=limit+10;
-        console.log("fetching airpollution ....");
-		let cadena = `/api/v1/air-pollution-stats?offset=+${offset}+&limit=+${limit}`;
+        console.log("fetching expo ....");
+		let cadena = `/api/v1/expo?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -86,22 +86,22 @@
 		const res= await fetch(cadena);
 		if(res.ok){
 			const data= await res.json();
-			airpollution=data;
-			console.log("Received airpollution: " + airpollution.length);
+			expo=data;
+			console.log("Received expo: " + expo.length);
 		}
     }
 	
-	async function insertAirpollution(){
-		if (newAirpollution.country == "" || newAirpollution.country == null || newAirpollution.year == "" || newAirpollution.year == null) {
+	async function insertExpo(){
+		if (newExpo.country == "" || newExpo.country == null || newExpo.year == "" || newExpo.year == null) {
 			color="danger";
 			checkMSG="Debes insertar el nombre del país y el año.";
 			visible="true";
          }else{
-        console.log("Inserting Airpollution...."+JSON.stringify(newAirpollution));
-        const res = await fetch("/api/v1/air-pollution-stats",
+        console.log("Inserting Expo...."+JSON.stringify(newExpo));
+        const res = await fetch("/api/v1/expo",
 			{
 				method: "POST",
-				body: JSON.stringify(newAirpollution),
+				body: JSON.stringify(newExpo),
 				headers: {
 					"Content-Type": "application/json"
 				}
@@ -110,7 +110,7 @@
 					color="success";
 					checkMSG="Entrada introducida con éxito";
 					visible="true";
-				getAirpollution();
+				getExpo();
 				
 				}
 				else if(res.status == 409){
@@ -122,12 +122,12 @@
                  }
 			});  
     }}
-	async function BorrarAirpollution(name, year) {
-        const res = await fetch("/api/v1/air-pollution-stats/"+name+"/"+year, {
+	async function BorrarExpo(name, year) {
+        const res = await fetch("/api/v1/expo/"+name+"/"+year, {
             method: "DELETE"
         }).then(function(res) {
            
-            getAirpollution();      
+            getExpo();      
             if (res.status==200) {
                 color="success";
 				checkMSG=name + " entrada borrada correctamente";
@@ -142,9 +142,9 @@
             }      
         });
     }
-	async function BorrarAirpollutionAll(){
-        console.log("Deleting airpollution....");
-        const res = await fetch("/api/v1/air-pollution-stats/",
+	async function BorrarExpoAll(){
+        console.log("Deleting Expo....");
+        const res = await fetch("/api/v1/expo/",
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -152,17 +152,17 @@
 				color="success";
 				checkMSG="Entradas elimidas con éxito";
 				visible="true";
-				getAirpollution();
+				getExpo();
 			});
     }
 
-	async function LoadAirpollution(){
-        console.log("Loading airpollution....");
-        const res = await fetch("/api/v1/air-pollution-stats/loadInitialData",
+	async function LoadExpo(){
+        console.log("Loading expo....");
+        const res = await fetch("/api/v1/expo/loadInitialData",
 			{
 				method: "GET"
 			}).then(function (res){
-				getAirpollution();
+				getExpo();
 				color="success";
 				checkMSG="Entradas cargadas con éxito";
 				visible="true";
@@ -181,7 +181,7 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo">expo-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               
@@ -190,7 +190,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies">Economies FRONT-END</DropdownItem>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
-				  <DropdownItem href="#/air-pollution-stats">AirPollution FRONT-END</DropdownItem>
+				  <DropdownItem href="#/expo">Expo FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
@@ -201,7 +201,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies-graph">economies</DropdownItem>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
-				  <DropdownItem href="#/graphAirPollution">AirPollution-Stats</DropdownItem>
+				  <DropdownItem href="#/graphexpo">expo-Stats</DropdownItem>
                   <DropdownItem href="#/graph">Grafica comun</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
@@ -219,9 +219,9 @@
 	<Button on:click="{getPgSig}">
 		Página Siguiente
 	</Button>
-    {#await airpollution}
+    {#await expo}
 loading
-	{:then airpollution}
+	{:then expo}
 	<Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
 		{#if checkMSG}
 			{checkMSG}
@@ -247,7 +247,7 @@ loading
 					checkMSG="Los campos fecha inicio y fecha fin no pueden estar vacíos";
 					visible="true";
 				}else{
-					getAirpollution();
+					getExpo();
 				}
 			}}">
 				Buscar
@@ -256,7 +256,7 @@ loading
 			<td align="center"><Button outline color="info" on:click="{()=>{
 				from = null;
 				to = null;
-				getAirpollution();
+				getExpo();
 				
 			}}">
 				Limpiar Búsqueda
@@ -272,58 +272,58 @@ loading
 			<tr>
 				<th>País</th>
 				<th>Año</th>
-                <th>Per Capita</th>
-                <th>currency</th>
-                <th>currentprices</th>
+                <th>Exportaciones Tecnológicas</th>
+                <th>Exportaciones Productos Manufacturados</th>
+                <th>Exportaciones Bienes y Servicios</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><input bind:value="{newAirpollution.country}"></td>
-				<td><input type="number" bind:value="{newAirpollution.year}"></td>
-				<td><input bind:value="{newAirpollution.ages_zero_fifty}"></td>
-				<td><input bind:value="{newAirpollution.ages_fifty_seventy}"></td>
-				<td><input bind:value="{newAirpollution.ages_seventy}"></td>
+				<td><input bind:value="{newExpo.country}"></td>
+				<td><input type="number" bind:value="{newExpo.year}"></td>
+				<td><input bind:value="{newExpo.expo_tec}"></td>
+				<td><input bind:value="{newExpo.expo_m}"></td>
+				<td><input bind:value="{newExpo.expo_bys}"></td>
 
-				<td><Button outline color="primary" on:click="{insertAirpollution}">
+				<td><Button outline color="primary" on:click="{insertExpo}">
 					Añadir
 					</Button>
 				</td>
 				<td align="center"><Button outline color="primary" on:click="{()=>{
-					newAirpollution.country = null;
-					newAirpollution.year = null;
-					newAirpollution.ages_zero_fifty = null;
-					newAirpollution.ages_fifty_seventy = null;
-					newAirpollution.ages_seventy = null;
+					newExpo.country = null;
+					newExpo.year = null;
+					newExpo.expo_tec = null;
+					newExpo.expo_m = null;
+					newExpo.expo_bys= null;
 				}}">
 					Limpiar
 					</Button>
 				</td>
 			</tr>
-			{#each airpollution as airpollutionn}
+			{#each expo as expos}
 			<tr>
-				<td>{airpollutionn.country}</td>
-				<td>{airpollutionn.year}</td>
-                <td>{airpollutionn.ages_zero_fifty}</td>
-                <td>{airpollutionn.ages_fifty_seventy}</td>
-                <td>{airpollutionn.ages_seventy}</td>
+				<td>{expos.country}</td>
+				<td>{expos.year}</td>
+                <td>{expos.expo_tec}</td>
+                <td>{expos.expo_m}</td>
+                <td>{expos.expo_bys}</td>
 
 				<td><Button outline color="warning" on:click={function (){
-					window.location.href = `/#/air-pollution/${airpollutionn.country}/${airpollutionn.year}`
+					window.location.href = `/#/expo/${expos.country}/${expos.year}`
 				}}>
 					Editar
 				</Button>
-				<td><Button outline color="danger" on:click={BorrarAirpollution(airpollutionn.country,airpollutionn.year)}>
+				<td><Button outline color="danger" on:click={BorrarExpo(expos.country,expos.year)}>
 					Borrar
 				</Button>
 				</td>
 			</tr>
 			{/each}
 			<tr>
-				<td><Button outline color="success" on:click={LoadAirpollution}>
+				<td><Button outline color="success" on:click={LoadExpo}>
 					Cargar datos
 				</Button></td>
-				<td><Button outline color="danger" on:click={BorrarAirpollutionAll}>
+				<td><Button outline color="danger" on:click={BorrarExpoAll}>
 					Borrar todo
 				</Button></td>
 			</tr>

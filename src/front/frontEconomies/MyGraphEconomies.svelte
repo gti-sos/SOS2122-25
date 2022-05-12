@@ -141,7 +141,7 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo-stats">expo-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               

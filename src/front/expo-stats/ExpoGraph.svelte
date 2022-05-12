@@ -4,50 +4,50 @@
 
     const delay=ms=>new Promise(res=>setTimeout(res,ms));
 
-    let escos=[];
+    let expos=[];
     let country=[];
     let year=[];
-    let ages_zero_fifty=[];
-    let ages_fifty_seventy=[];
-    let ages_seventy=[];
+    let expo_tec=[];
+    let expo_m=[];
+    let expo_bys=[];
     let datosOrdenados=[];
 
     async function getData(){
-        console.log("Fetching esco....");
-        const res = await fetch("/api/v1/esco-stats");
+        console.log("Fetching expo....");
+        const res = await fetch("/api/v1/expo");
         if(res.ok){
             const data = await res.json();          
-            escos = data;
-            if (escos.length == 0) {
-                const res = await fetch("/api/v1/esco-stats/loadInitialData");
-                console.log("Entradas recibidas: "+escos.length);
+            expos = data;
+            if (expos.length == 0) {
+                const res = await fetch("/api/v1/expo-stats/loadInitialData");
+                console.log("Entradas recibidas: "+expos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
-            datosOrdenados = escos.sort(function (a, b){
+            datosOrdenados = expos.sort(function (a, b){
             return (a.year - b.year)
             });
             console.log("Ordenadas correctamente");
-            datosOrdenados.forEach(esco => {
-                year.push(esco.year);
-                country.push(esco.country+"-"+ esco.year);
-                ages_zero_fifty.push(esco.ages_zero_fifty);
-                ages_fifty_seventy.push(esco.ages_fifty_seventy);
-                ages_seventy.push(esco.ages_seventy);          
+            datosOrdenados.forEach(expo => {
+                year.push(expo.year);
+                country.push(expo.country+"-"+ expo.year);
+                expo_tec.push(expo.expo_tec);
+                expo_m.push(expo.expo_m);
+                expo_bys.push(expo.expo_bys);          
             });
             location.reload();
             }
             else{
-               console.log("Entradas recibidas: "+escos.length);
+               console.log("Entradas recibidas: "+expos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
-            datosOrdenados = escos.sort(function (a, b){
+            datosOrdenados = expos.sort(function (a, b){
             return (a.year - b.year)
             });
             console.log("Ordenadas correctamente");
-            datosOrdenados.forEach(esco => {
-                year.push(esco.year);
-                country.push(esco.country+"-"+esco.year);
-                ages_zero_fifty.push(esco.ages_zero_fifty);
-                ages_fifty_seventy.push(esco.ages_fifty_seventy);
-                ages_seventy.push(esco.ages_seventy);            
+            datosOrdenados.forEach(expo => {
+                year.push(expo.year);
+                country.push(expo.country+"-"+expo.year);
+                expo_tec.push(expo.expo_tec);
+                expo_m.push(expo.expo_m);
+                expo_bys.push(expo.expo_bys);            
             }); 
             }
             
@@ -63,10 +63,10 @@
                 type: "column",
             },
             title: {
-                text: "escolarizacion",
+                text: "País",
             },
             subtitle: {
-                text: "Source: https://ourworldindata.org/esco",
+                text: "Source: https://ourworldindata.org/expo",
             },
             xAxis: {
                 categories: country,
@@ -75,7 +75,7 @@
             yAxis: {
                 min: 0,
                 title: {
-                    text: "escolarizacion",
+                    text: "%(Según el PIB)",
                 },
             },
             tooltip: {
@@ -83,7 +83,7 @@
                     '<span style="font-size:10px">{point.key}</span><table>',
                 pointFormat:
                     '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y} muertes</b></td></tr>',
+                    '<td style="padding:0"><b>{point.y} % de exportaciones</b></td></tr>',
                 footerFormat: "</table>",
                 shared: true,
                 useHTML: true,
@@ -96,16 +96,16 @@
             },
             series: [
                 {
-                name: 'Mayores de 70 años',
-                data: ages_seventy
+                name: 'Exportaciones Bienes y Servicios',
+                data: expo_bys
                 },
                 {
-                name: 'De 50 a 70 años',
-                data: ages_fifty_seventy
+                name: 'Exportaciones Prod. Manufacturados',
+                data: expo_m
                 },
                 {
-                name: 'Menores de 50 años',
-                data: ages_zero_fifty
+                name: 'Exportaciones Tecnológicas',
+                data: expo_tec
                 
                 }
                 
@@ -133,7 +133,7 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/expo-stats">expoç-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo">expo-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               
@@ -144,7 +144,7 @@
                   <DropdownItem divider/>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
                   <DropdownItem divider/>
-				  <DropdownItem href="#/expo-stats">expo FRONT-END</DropdownItem>
+				  <DropdownItem href="#/expo">expo FRONT-END</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 			  
@@ -168,6 +168,6 @@
     <figure class="highcharts-figure">
         <div id="container" />
         <p class="highcharts-description">
-            Este gráfico compara los valores de escolarizacion en distintas edades
+            Este gráfico compara las exportaciones de diferentes paises
     </figure>
 </main>
