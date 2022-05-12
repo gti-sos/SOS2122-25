@@ -17615,26 +17615,6 @@ var app = (function () {
     			t16 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-<<<<<<< HEAD
-    			add_location(th0, file$9, 146, 20, 4577);
-    			add_location(th1, file$9, 147, 20, 4612);
-    			add_location(th2, file$9, 148, 20, 4646);
-    			add_location(th3, file$9, 149, 20, 4694);
-    			add_location(th4, file$9, 150, 20, 4743);
-    			add_location(tr0, file$9, 145, 16, 4551);
-    			add_location(thead, file$9, 144, 12, 4526);
-    			add_location(td0, file$9, 155, 20, 4877);
-    			add_location(td1, file$9, 156, 20, 4924);
-    			add_location(input0, file$9, 157, 24, 4972);
-    			add_location(td2, file$9, 157, 20, 4968);
-    			add_location(input1, file$9, 158, 24, 5046);
-    			add_location(td3, file$9, 158, 20, 5042);
-    			add_location(input2, file$9, 159, 24, 5123);
-    			add_location(td4, file$9, 159, 20, 5119);
-    			add_location(td5, file$9, 161, 20, 5197);
-    			add_location(tr1, file$9, 154, 16, 4851);
-    			add_location(tbody, file$9, 153, 12, 4826);
-=======
     			add_location(th0, file$9, 146, 20, 4527);
     			add_location(th1, file$9, 147, 20, 4562);
     			add_location(th2, file$9, 148, 20, 4596);
@@ -17653,7 +17633,6 @@ var app = (function () {
     			add_location(td5, file$9, 161, 20, 5147);
     			add_location(tr1, file$9, 154, 16, 4801);
     			add_location(tbody, file$9, 153, 12, 4776);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -17893,11 +17872,7 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-<<<<<<< HEAD
-    			add_location(h1, file$9, 133, 4, 4260);
-=======
     			add_location(h1, file$9, 133, 4, 4210);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     			add_location(main, file$9, 92, 0, 2540);
     		},
     		l: function claim(nodes) {
@@ -22941,11 +22916,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("ERROR: ");
     			t1 = text(/*msg*/ ctx[3]);
-<<<<<<< HEAD
     			add_location(p, file$6, 96, 3, 2643);
-=======
-    			add_location(p, file$6, 96, 3, 2575);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23027,11 +22998,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("Correcto: ");
     			t1 = text(/*msg*/ ctx[3]);
-<<<<<<< HEAD
     			add_location(p, file$6, 101, 3, 2785);
-=======
-    			add_location(p, file$6, 101, 3, 2717);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23296,7 +23263,6 @@ var app = (function () {
     			t16 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-<<<<<<< HEAD
     			add_location(th0, file$6, 111, 20, 2988);
     			add_location(th1, file$6, 112, 20, 3023);
     			add_location(th2, file$6, 113, 20, 3057);
@@ -23315,26 +23281,6 @@ var app = (function () {
     			add_location(td5, file$6, 126, 20, 3578);
     			add_location(tr1, file$6, 119, 16, 3242);
     			add_location(tbody, file$6, 118, 12, 3217);
-=======
-    			add_location(th0, file$6, 111, 20, 2914);
-    			add_location(th1, file$6, 112, 20, 2949);
-    			add_location(th2, file$6, 113, 20, 2983);
-    			add_location(th3, file$6, 114, 20, 3023);
-    			add_location(th4, file$6, 115, 20, 3062);
-    			add_location(tr0, file$6, 110, 16, 2888);
-    			add_location(thead, file$6, 109, 12, 2863);
-    			add_location(td0, file$6, 120, 20, 3194);
-    			add_location(td1, file$6, 121, 20, 3241);
-    			add_location(input0, file$6, 122, 24, 3289);
-    			add_location(td2, file$6, 122, 20, 3285);
-    			add_location(input1, file$6, 123, 24, 3359);
-    			add_location(td3, file$6, 123, 20, 3355);
-    			add_location(input2, file$6, 124, 24, 3428);
-    			add_location(td4, file$6, 124, 20, 3424);
-    			add_location(td5, file$6, 126, 20, 3504);
-    			add_location(tr1, file$6, 119, 16, 3168);
-    			add_location(tbody, file$6, 118, 12, 3143);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -23574,13 +23520,8 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-<<<<<<< HEAD
     			add_location(h1, file$6, 93, 4, 2501);
     			add_location(main, file$6, 92, 0, 2489);
-=======
-    			add_location(h1, file$6, 93, 4, 2433);
-    			add_location(main, file$6, 92, 0, 2421);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -23724,11 +23665,7 @@ var app = (function () {
     	onMount(getEconomies);
 
     	async function getEconomies() {
-<<<<<<< HEAD
     		console.log("fetching Economies ...." + params.country + " " + params.year);
-=======
-    		console.log("fetching Economies ....");
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		const res = await fetch("/api/v2/economies/" + params.country + "/" + params.year);
 
     		if (res.ok) {
@@ -30769,13 +30706,13 @@ var app = (function () {
     	return block;
     }
 
-    // (136:6) <DropdownItem href="./api/v1/expo-stats">
+    // (136:6) <DropdownItem href="./api/v1/expo">
     function create_default_slot_17(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("expoç-Stats");
+    			t = text("expo-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -30789,7 +30726,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_17.name,
     		type: "slot",
-    		source: "(136:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
+    		source: "(136:6) <DropdownItem href=\\\"./api/v1/expo\\\">",
     		ctx
     	});
 
@@ -30833,7 +30770,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "./api/v1/expo-stats",
+    				href: "./api/v1/expo",
     				$$slots: { default: [create_default_slot_17] },
     				$$scope: { ctx }
     			},
@@ -31092,7 +31029,7 @@ var app = (function () {
     	return block;
     }
 
-    // (147:6) <DropdownItem href="#/expo-stats">
+    // (147:6) <DropdownItem href="#/expo">
     function create_default_slot_11(ctx) {
     	let t;
 
@@ -31112,7 +31049,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(147:6) <DropdownItem href=\\\"#/expo-stats\\\">",
+    		source: "(147:6) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
     	});
 
@@ -31156,7 +31093,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "#/expo-stats",
+    				href: "#/expo",
     				$$slots: { default: [create_default_slot_11] },
     				$$scope: { ctx }
     			},
@@ -31965,11 +31902,11 @@ var app = (function () {
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
     			add_location(script3, file$2, 121, 4, 4240);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$2, 168, 8, 6171);
+    			add_location(div, file$2, 168, 8, 6158);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$2, 169, 8, 6203);
+    			add_location(p, file$2, 169, 8, 6190);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$2, 167, 4, 6127);
+    			add_location(figure, file$2, 167, 4, 6114);
     			add_location(main, file$2, 124, 0, 4358);
     		},
     		l: function claim(nodes) {
@@ -32253,43 +32190,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$1, 132, 4, 3837);
+    			add_location(script0, file$1, 135, 4, 3640);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 133, 4, 3930);
+    			add_location(script1, file$1, 136, 4, 3733);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 134, 4, 4033);
+    			add_location(script2, file$1, 137, 4, 3836);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 135, 4, 4133);
+    			add_location(script3, file$1, 138, 4, 3936);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$1, 136, 4, 4235);
+    			add_location(script4, file$1, 139, 4, 4038);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$1, 143, 8, 4413);
-    			add_location(code, file$1, 146, 12, 4580);
+    			add_location(div, file$1, 146, 8, 4216);
+    			add_location(code, file$1, 149, 12, 4383);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 144, 8, 4449);
+    			add_location(p, file$1, 147, 8, 4252);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 142, 4, 4369);
-    			add_location(main, file$1, 140, 0, 4355);
-=======
-    			add_location(script0, file$1, 132, 4, 3606);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 133, 4, 3699);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 134, 4, 3802);
-    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 135, 4, 3902);
-    			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$1, 136, 4, 4004);
-    			attr_dev(div, "id", "container");
-    			add_location(div, file$1, 143, 8, 4182);
-    			add_location(code, file$1, 146, 12, 4349);
-    			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 144, 8, 4218);
-    			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 142, 4, 4138);
-    			add_location(main, file$1, 140, 0, 4124);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
+    			add_location(figure, file$1, 145, 4, 4172);
+    			add_location(main, file$1, 143, 0, 4158);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32376,13 +32293,8 @@ var app = (function () {
     			const data1 = await res1.json();
     			const data3 = await res2.json();
     			const data2 = await res3.json();
-<<<<<<< HEAD
-    			airpollutions = data1;
-    			console.log("Recibido: " + airpollutions.length);
-=======
     			expos = data1;
     			console.log("Recibido: " + expos.length);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
 
     			//inicializamos los arrays para mostrar los datos
     			expos.forEach(expo => {
@@ -32391,6 +32303,16 @@ var app = (function () {
     				ages1.push(expo.expo_bys + expo.expo_m + expo.expo_tec);
     				expo_m.push(expo.expo_m);
     				expo_tec.push(expo.expo_tec);
+    			});
+
+    			economies = data3;
+    			console.log("Recibido: " + economies.length);
+
+    			economies.forEach(economies => {
+    				percapita.push(economies.percapita);
+    				currency.push(economies.currency);
+    				ages3.push(economies.percapita + economies.currency + economies.currentprices);
+    				currentprices.push(economies.currentprices);
     			});
 
     			escos = data2;
@@ -32404,16 +32326,6 @@ var app = (function () {
     				ages_fifty_seventy.push(esco.ages_fifty_seventy);
     				ages2.push(esco.ages_seventy + esco.ages_fifty_seventy + esco.ages_zero_fifty);
     				expo_bys.push(esco.ages_seventy);
-    			});
-
-    			economies = data3;
-    			console.log("Recibido: " + economies.length);
-
-    			economies.forEach(economies => {
-    				percapita.push(economies.percapita);
-    				currency.push(economies.currency);
-    				ages3.push(economies.percapita + economies.currency + economies.currentprices);
-    				currentprices.push(economies.currentprices);
     			});
     		} else {
     			console.log("Error in request");
@@ -32542,11 +32454,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			create_component(router.$$.fragment);
-<<<<<<< HEAD
-    			add_location(main, file, 41, 0, 1252);
-=======
     			add_location(main, file, 39, 0, 1118);
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32596,15 +32504,9 @@ var app = (function () {
     		"/economies": Economies,
     		"/economies/:country/:year": EditEconomies_1,
     		"/economies-graph": MyGraphEconomies,
-<<<<<<< HEAD
-    		"/air-pollution-stats": Airpollution,
-    		"/air-pollution/:country/:year": EditAirpollution_1,
-    		"/graphAirPollution": AirPollutionGraph,
-=======
     		"/expo": Expo,
     		"/expo/:country/:year": EditExpo_1,
     		"/graphexpo": ExpoGraph,
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		"/graph": MyGraph
     	};
 
@@ -32624,15 +32526,9 @@ var app = (function () {
     		economies: Economies,
     		EditEconomies: EditEconomies_1,
     		MyGraphEconomies,
-<<<<<<< HEAD
-    		Airpollution,
-    		EditAirpollution: EditAirpollution_1,
-    		AirPollutionGraph,
-=======
     		Expo,
     		EditExpo: EditExpo_1,
     		ExpoGraph,
->>>>>>> a38cfab3102983643fe5c224c6b905e1382db5a6
     		MyGraph,
     		routes
     	});

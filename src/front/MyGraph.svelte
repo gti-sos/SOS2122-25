@@ -35,6 +35,16 @@
                 expo_m.push(expo.expo_m);
                 expo_tec.push(expo.expo_tec);   
             });
+
+            economies=data3;
+            console.log("Recibido: " + economies.length);
+            economies.forEach(economies=>{
+                percapita.push(economies.percapita);
+                currency.push(economies.currency);
+                ages3.push(economies.percapita+economies.currency+economies.currentprices);
+                currentprices.push(economies.currentprices);
+            });
+            
             escos=data2;
             console.log("Recibido: " + escos.length);
             escos.forEach(esco=>{
@@ -45,14 +55,7 @@
                 ages2.push(esco.ages_seventy+esco.ages_fifty_seventy+esco.ages_zero_fifty);
                 expo_bys.push(esco.ages_seventy);
             });
-            economies=data3;
-            console.log("Recibido: " + economies.length);
-            economies.forEach(economies=>{
-                percapita.push(economies.percapita);
-                currency.push(economies.currency);
-                ages3.push(economies.percapita+economies.currency+economies.currentprices);
-                currentprices.push(economies.currentprices);
-            });
+
 
 
         }else{
