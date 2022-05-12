@@ -360,9 +360,9 @@ module.exports.register = (app, db) => {
     function comprobar_body(req) {
         return (req.body.country == null |
             req.body.year == null |
-            req.body.ages_zero_fifty == null |
-            req.body.ages_fifty_seventy == null |
-            req.body.ages_seventy == null);
+            req.body.percapita == null |
+            req.body.currency == null |
+            req.body.currentprices == null);
     }
 
     function paginacion(req, lista){
