@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1b353404-b451-4f2c-8df4-f868f83f56a3",
+		"_postman_id": "1710f67d-aaeb-4d26-bb90-28b77378bc3f",
 		"name": "SOS2122-25",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -25,9 +25,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/loadInitialData",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/loadInitialData",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -68,9 +71,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -110,9 +116,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/france",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/france",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -130,9 +139,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/france/2019",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/france/2019",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -164,9 +176,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats?year=2019",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats?year=2019",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -203,7 +218,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -211,9 +226,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -244,7 +262,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -252,9 +270,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/france",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/france",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -286,7 +307,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -294,9 +315,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/france/2019",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/france/2019",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -329,7 +353,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -337,9 +361,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -370,7 +397,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2017,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2017,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -378,9 +405,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/france/2019",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/france/2019",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -413,7 +443,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -421,9 +451,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -454,7 +487,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -462,9 +495,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -495,9 +531,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/italy",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/italy",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -537,9 +576,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats/france/2019",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/france/2019",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -580,9 +622,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/api/v1/esco-stats",
+					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats",
+					"protocol": "https",
 					"host": [
-						"{{HOST}}"
+						"sos2122-25",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
