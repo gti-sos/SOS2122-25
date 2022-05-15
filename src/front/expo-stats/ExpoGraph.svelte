@@ -9,7 +9,7 @@
     let year=[];
     let expo_tec=[];
     let expo_m=[];
-    let expo_bys=[];
+    let tot_esco=[];
     let datosOrdenados=[];
 
     async function getData(){
@@ -31,7 +31,7 @@
                 country.push(expo.country+"-"+ expo.year);
                 expo_tec.push(expo.expo_tec);
                 expo_m.push(expo.expo_m);
-                expo_bys.push(expo.expo_bys);          
+                tot_esco.push(expo.tot_esco);          
             });
             location.reload();
             }
@@ -47,7 +47,7 @@
                 country.push(expo.country+"-"+expo.year);
                 expo_tec.push(expo.expo_tec);
                 expo_m.push(expo.expo_m);
-                expo_bys.push(expo.expo_bys);            
+                tot_esco.push(expo.tot_esco);            
             }); 
             }
             
@@ -97,7 +97,7 @@
             series: [
                 {
                 name: 'Exportaciones Bienes y Servicios',
-                data: expo_bys
+                data: tot_esco
                 },
                 {
                 name: 'Exportaciones Prod. Manufacturados',

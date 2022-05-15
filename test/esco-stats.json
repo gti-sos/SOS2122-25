@@ -203,7 +203,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"ages_zero_fifty\": 2,\r\n\"ages_fifty_seventy\": 8,\r\n\"ages_seventy\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -244,7 +244,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"ages_zero_fifty\": 2,\r\n\"ages_fifty_seventy\": 8,\r\n\"ages_seventy\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -286,7 +286,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"ages_zero_fifty\": 2,\r\n\"ages_fifty_seventy\": 8,\r\n\"ages_seventy\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -329,7 +329,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"ages_zero_fifty\": 2,\r\n\"ages_fifty_seventy\": 8,\r\n\"ages_seventy\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -370,7 +370,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2017,\r\n\"ages_zero_fifty\": 2,\r\n\"ages_fifty_seventy\": 8,\r\n\"ages_seventy\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2017,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -413,7 +413,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"ages_zero_fifty\": 2,\r\n\"ages_fifty_seventy\": 8,\r\n\"ages_seventy\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -454,7 +454,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"ages_zero_fifty\": 2,\r\n\"ages_fifty_seventy\": 8,\r\n\"ages_seventy\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 2,\r\n\"tot_man\": 8,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

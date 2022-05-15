@@ -2162,7 +2162,7 @@ var app = (function () {
     			t1 = space();
     			if_block2.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$t, 26, 2, 834);
+    			add_location(div, file$t, 26, 2, 808);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2297,7 +2297,7 @@ var app = (function () {
     			t = text(/*heading*/ ctx[3]);
     			if (heading_slot) heading_slot.c();
     			attr_dev(h4, "class", "alert-heading");
-    			add_location(h4, file$t, 33, 6, 994);
+    			add_location(h4, file$t, 33, 6, 961);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -2365,7 +2365,7 @@ var app = (function () {
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", /*closeClassNames*/ ctx[6]);
     			attr_dev(button, "aria-label", /*closeAriaLabel*/ ctx[2]);
-    			add_location(button, file$t, 38, 6, 1115);
+    			add_location(button, file$t, 38, 6, 1077);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2849,7 +2849,7 @@ var app = (function () {
     			button = element("button");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$s, 54, 2, 1178);
+    			add_location(button, file$s, 54, 2, 1124);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2967,7 +2967,7 @@ var app = (function () {
     			a = element("a");
     			if_block.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$s, 37, 2, 903);
+    			add_location(a, file$s, 37, 2, 866);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -3135,7 +3135,7 @@ var app = (function () {
     	return block_1;
     }
 
-    // (65:10)         
+    // (65:10)        
     function fallback_block$1(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -3208,7 +3208,7 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block$1.name,
     		type: "fallback",
-    		source: "(65:10)         ",
+    		source: "(65:10)        ",
     		ctx
     	});
 
@@ -5555,7 +5555,7 @@ var app = (function () {
     			div = element("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$r, 123, 2, 3332);
+    			add_location(div, file$r, 123, 2, 3209);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5633,7 +5633,7 @@ var app = (function () {
     			li = element("li");
     			if (default_slot) default_slot.c();
     			set_attributes(li, li_data);
-    			add_location(li, file$r, 119, 2, 3237);
+    			add_location(li, file$r, 119, 2, 3118);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -6128,7 +6128,7 @@ var app = (function () {
     			div = element("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$q, 23, 0, 565);
+    			add_location(div, file$q, 23, 0, 542);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6362,7 +6362,7 @@ var app = (function () {
     			button = element("button");
     			if (default_slot) default_slot.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$p, 49, 2, 1135);
+    			add_location(button, file$p, 49, 2, 1086);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -6460,7 +6460,7 @@ var app = (function () {
     			a = element("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$p, 45, 2, 1024);
+    			add_location(a, file$p, 45, 2, 979);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -6547,7 +6547,7 @@ var app = (function () {
     			div = element("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$p, 41, 2, 905);
+    			add_location(div, file$p, 41, 2, 864);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -6636,7 +6636,7 @@ var app = (function () {
     			h6 = element("h6");
     			if (default_slot) default_slot.c();
     			set_attributes(h6, h6_data);
-    			add_location(h6, file$p, 37, 2, 785);
+    			add_location(h6, file$p, 37, 2, 748);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h6, anchor);
@@ -7017,7 +7017,7 @@ var app = (function () {
     			div = element("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$o, 41, 0, 974);
+    			add_location(div, file$o, 41, 0, 933);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7268,7 +7268,7 @@ var app = (function () {
     			button = element("button");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$n, 94, 2, 2042);
+    			add_location(button, file$n, 94, 2, 1948);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -7379,7 +7379,7 @@ var app = (function () {
     			span = element("span");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(span, span_data);
-    			add_location(span, file$n, 80, 2, 1753);
+    			add_location(span, file$n, 80, 2, 1673);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7488,7 +7488,7 @@ var app = (function () {
     			div = element("div");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$n, 66, 2, 1448);
+    			add_location(div, file$n, 66, 2, 1382);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -7596,7 +7596,7 @@ var app = (function () {
     			a = element("a");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$n, 51, 2, 1131);
+    			add_location(a, file$n, 51, 2, 1080);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -7674,7 +7674,7 @@ var app = (function () {
     	return block_1;
     }
 
-    // (105:10)         
+    // (105:10)        
     function fallback_block_3(ctx) {
     	let span;
     	let t;
@@ -7684,7 +7684,7 @@ var app = (function () {
     			span = element("span");
     			t = text(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$n, 105, 6, 2270);
+    			add_location(span, file$n, 105, 6, 2165);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7702,14 +7702,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_3.name,
     		type: "fallback",
-    		source: "(105:10)         ",
+    		source: "(105:10)        ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (90:10)         
+    // (90:10)        
     function fallback_block_2(ctx) {
     	let span;
     	let t;
@@ -7719,7 +7719,7 @@ var app = (function () {
     			span = element("span");
     			t = text(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$n, 90, 6, 1957);
+    			add_location(span, file$n, 90, 6, 1867);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7737,14 +7737,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_2.name,
     		type: "fallback",
-    		source: "(90:10)         ",
+    		source: "(90:10)        ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (76:10)         
+    // (76:10)        
     function fallback_block_1(ctx) {
     	let span;
     	let t;
@@ -7754,7 +7754,7 @@ var app = (function () {
     			span = element("span");
     			t = text(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$n, 76, 6, 1651);
+    			add_location(span, file$n, 76, 6, 1575);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7772,14 +7772,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_1.name,
     		type: "fallback",
-    		source: "(76:10)         ",
+    		source: "(76:10)        ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (62:10)         
+    // (62:10)        
     function fallback_block(ctx) {
     	let span;
     	let t;
@@ -7789,7 +7789,7 @@ var app = (function () {
     			span = element("span");
     			t = text(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$n, 62, 6, 1349);
+    			add_location(span, file$n, 62, 6, 1287);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7807,7 +7807,7 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block.name,
     		type: "fallback",
-    		source: "(62:10)         ",
+    		source: "(62:10)        ",
     		ctx
     	});
 
@@ -8248,7 +8248,7 @@ var app = (function () {
     			ul = element("ul");
     			if (default_slot) default_slot.c();
     			set_attributes(ul, ul_data);
-    			add_location(ul, file$m, 39, 0, 980);
+    			add_location(ul, file$m, 39, 0, 941);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8716,7 +8716,7 @@ var app = (function () {
     			nav = element("nav");
     			if_block.c();
     			set_attributes(nav, nav_data);
-    			add_location(nav, file$l, 38, 0, 927);
+    			add_location(nav, file$l, 38, 0, 889);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8992,7 +8992,7 @@ var app = (function () {
     			li = element("li");
     			if (default_slot) default_slot.c();
     			set_attributes(li, li_data);
-    			add_location(li, file$k, 10, 0, 229);
+    			add_location(li, file$k, 10, 0, 219);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9149,7 +9149,7 @@ var app = (function () {
     			a = element("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$j, 27, 0, 499);
+    			add_location(a, file$j, 27, 0, 472);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9381,7 +9381,7 @@ var app = (function () {
     			a = element("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$i, 10, 0, 202);
+    			add_location(a, file$i, 10, 0, 192);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9535,7 +9535,7 @@ var app = (function () {
     		c: function create() {
     			colgroup = element("colgroup");
     			if (default_slot) default_slot.c();
-    			add_location(colgroup, file$h, 6, 0, 98);
+    			add_location(colgroup, file$h, 6, 0, 92);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9696,7 +9696,7 @@ var app = (function () {
     			div = element("div");
     			if (default_slot) default_slot.c();
     			attr_dev(div, "class", /*responsiveClassName*/ ctx[1]);
-    			add_location(div, file$g, 13, 2, 318);
+    			add_location(div, file$g, 13, 2, 305);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -9924,9 +9924,9 @@ var app = (function () {
     			tfoot = element("tfoot");
     			tr = element("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$f, 7, 2, 124);
+    			add_location(tr, file$f, 7, 2, 117);
     			set_attributes(tfoot, tfoot_data);
-    			add_location(tfoot, file$f, 6, 0, 96);
+    			add_location(tfoot, file$f, 6, 0, 90);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10037,9 +10037,9 @@ var app = (function () {
     			thead = element("thead");
     			tr = element("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$e, 7, 2, 124);
+    			add_location(tr, file$e, 7, 2, 117);
     			set_attributes(thead, thead_data);
-    			add_location(thead, file$e, 6, 0, 96);
+    			add_location(thead, file$e, 6, 0, 90);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10262,7 +10262,7 @@ var app = (function () {
 
     			t2 = space();
     			create_component(tablefooter.$$.fragment);
-    			add_location(tbody, file$d, 39, 6, 1096);
+    			add_location(tbody, file$d, 39, 6, 1057);
     		},
     		m: function mount(target, anchor) {
     			mount_component(colgroup, target, anchor);
@@ -10507,7 +10507,7 @@ var app = (function () {
     			tr = element("tr");
     			if (default_slot) default_slot.c();
     			t = space();
-    			add_location(tr, file$d, 41, 10, 1144);
+    			add_location(tr, file$d, 41, 10, 1103);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -10647,7 +10647,7 @@ var app = (function () {
     			table = element("table");
     			if_block.c();
     			set_attributes(table, table_data);
-    			add_location(table, file$d, 31, 2, 916);
+    			add_location(table, file$d, 31, 2, 885);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -14751,24 +14751,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$a, 250, 4, 7440);
-    			add_location(th1, file$a, 251, 4, 7470);
-    			add_location(tr0, file$a, 249, 3, 7430);
-    			add_location(thead, file$a, 248, 2, 7418);
+    			add_location(th0, file$a, 250, 4, 7348);
+    			add_location(th1, file$a, 251, 4, 7378);
+    			add_location(tr0, file$a, 249, 3, 7338);
+    			add_location(thead, file$a, 248, 2, 7326);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$a, 258, 7, 7544);
-    			add_location(td0, file$a, 258, 3, 7540);
+    			add_location(input0, file$a, 258, 7, 7452);
+    			add_location(td0, file$a, 258, 3, 7448);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$a, 259, 7, 7607);
-    			add_location(td1, file$a, 259, 3, 7603);
+    			add_location(input1, file$a, 259, 7, 7515);
+    			add_location(td1, file$a, 259, 3, 7511);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$a, 260, 3, 7664);
+    			add_location(td2, file$a, 260, 3, 7572);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$a, 273, 3, 8059);
-    			add_location(tr1, file$a, 257, 2, 7531);
-    			add_location(tbody, file$a, 254, 2, 7514);
+    			add_location(td3, file$a, 273, 3, 7967);
+    			add_location(tr1, file$a, 257, 2, 7439);
+    			add_location(tbody, file$a, 254, 2, 7422);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -14887,7 +14887,7 @@ var app = (function () {
     	return block;
     }
 
-    // (310:23) <Button outline color="primary" on:click="{()=>{       newesco.country = null;       newesco.year = null;       newesco.ages_zero_fifty = null;       newesco.ages_fifty_seventy = null;       newesco.ages_seventy = null;      }}">
+    // (310:23) <Button outline color="primary" on:click="{()=>{       newesco.country = null;       newesco.year = null;       newesco.tot_wom = null;       newesco.tot_man = null;       newesco.tot_esco = null;      }}">
     function create_default_slot_5$7(ctx) {
     	let t;
 
@@ -14907,7 +14907,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$7.name,
     		type: "slot",
-    		source: "(310:23) <Button outline color=\\\"primary\\\" on:click=\\\"{()=>{       newesco.country = null;       newesco.year = null;       newesco.ages_zero_fifty = null;       newesco.ages_fifty_seventy = null;       newesco.ages_seventy = null;      }}\\\">",
+    		source: "(310:23) <Button outline color=\\\"primary\\\" on:click=\\\"{()=>{       newesco.country = null;       newesco.year = null;       newesco.tot_wom = null;       newesco.tot_man = null;       newesco.tot_esco = null;      }}\\\">",
     		ctx
     	});
 
@@ -14980,15 +14980,15 @@ var app = (function () {
     	let t2;
     	let t3;
     	let td2;
-    	let t4_value = /*escoa*/ ctx[29].ages_zero_fifty + "";
+    	let t4_value = /*escoa*/ ctx[29].tot_wom + "";
     	let t4;
     	let t5;
     	let td3;
-    	let t6_value = /*escoa*/ ctx[29].ages_fifty_seventy + "";
+    	let t6_value = /*escoa*/ ctx[29].tot_man + "";
     	let t6;
     	let t7;
     	let td4;
-    	let t8_value = /*escoa*/ ctx[29].ages_seventy + "";
+    	let t8_value = /*escoa*/ ctx[29].tot_esco + "";
     	let t8;
     	let t9;
     	let td5;
@@ -15051,14 +15051,14 @@ var app = (function () {
     			t10 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$a, 322, 4, 9316);
-    			add_location(td1, file$a, 323, 4, 9346);
-    			add_location(td2, file$a, 324, 16, 9385);
-    			add_location(td3, file$a, 325, 16, 9435);
-    			add_location(td4, file$a, 326, 16, 9488);
-    			add_location(td5, file$a, 328, 4, 9525);
-    			add_location(td6, file$a, 333, 4, 9696);
-    			add_location(tr, file$a, 321, 3, 9306);
+    			add_location(td0, file$a, 322, 4, 9192);
+    			add_location(td1, file$a, 323, 4, 9222);
+    			add_location(td2, file$a, 324, 16, 9261);
+    			add_location(td3, file$a, 325, 16, 9303);
+    			add_location(td4, file$a, 326, 16, 9345);
+    			add_location(td5, file$a, 328, 4, 9378);
+    			add_location(td6, file$a, 333, 4, 9549);
+    			add_location(tr, file$a, 321, 3, 9182);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -15088,9 +15088,9 @@ var app = (function () {
     			ctx = new_ctx;
     			if ((!current || dirty[0] & /*esco*/ 64) && t0_value !== (t0_value = /*escoa*/ ctx[29].country + "")) set_data_dev(t0, t0_value);
     			if ((!current || dirty[0] & /*esco*/ 64) && t2_value !== (t2_value = /*escoa*/ ctx[29].year + "")) set_data_dev(t2, t2_value);
-    			if ((!current || dirty[0] & /*esco*/ 64) && t4_value !== (t4_value = /*escoa*/ ctx[29].ages_zero_fifty + "")) set_data_dev(t4, t4_value);
-    			if ((!current || dirty[0] & /*esco*/ 64) && t6_value !== (t6_value = /*escoa*/ ctx[29].ages_fifty_seventy + "")) set_data_dev(t6, t6_value);
-    			if ((!current || dirty[0] & /*esco*/ 64) && t8_value !== (t8_value = /*escoa*/ ctx[29].ages_seventy + "")) set_data_dev(t8, t8_value);
+    			if ((!current || dirty[0] & /*esco*/ 64) && t4_value !== (t4_value = /*escoa*/ ctx[29].tot_wom + "")) set_data_dev(t4, t4_value);
+    			if ((!current || dirty[0] & /*esco*/ 64) && t6_value !== (t6_value = /*escoa*/ ctx[29].tot_man + "")) set_data_dev(t6, t6_value);
+    			if ((!current || dirty[0] & /*esco*/ 64) && t8_value !== (t8_value = /*escoa*/ ctx[29].tot_esco + "")) set_data_dev(t8, t8_value);
     			const button0_changes = {};
 
     			if (dirty[1] & /*$$scope*/ 2) {
@@ -15307,13 +15307,13 @@ var app = (function () {
     			th1.textContent = "Año";
     			t3 = space();
     			th2 = element("th");
-    			th2.textContent = "Muertes 0-50 años";
+    			th2.textContent = "Escolarizacion total";
     			t5 = space();
     			th3 = element("th");
-    			th3.textContent = "Muertes 50-70 años";
+    			th3.textContent = "Escolarizacion hombres";
     			t7 = space();
     			th4 = element("th");
-    			th4.textContent = "Muertes 70 años";
+    			th4.textContent = "Escolarizacion mujeres";
     			t9 = space();
     			tbody = element("tbody");
     			tr1 = element("tr");
@@ -15350,35 +15350,35 @@ var app = (function () {
     			t18 = space();
     			td8 = element("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$a, 290, 4, 8316);
-    			add_location(th1, file$a, 291, 4, 8335);
-    			add_location(th2, file$a, 292, 16, 8365);
-    			add_location(th3, file$a, 293, 16, 8409);
-    			add_location(th4, file$a, 294, 16, 8454);
-    			add_location(tr0, file$a, 289, 3, 8306);
-    			add_location(thead, file$a, 288, 2, 8294);
-    			add_location(input0, file$a, 299, 8, 8530);
-    			add_location(td0, file$a, 299, 4, 8526);
+    			add_location(th0, file$a, 290, 4, 8224);
+    			add_location(th1, file$a, 291, 4, 8243);
+    			add_location(th2, file$a, 292, 16, 8273);
+    			add_location(th3, file$a, 293, 16, 8320);
+    			add_location(th4, file$a, 294, 16, 8369);
+    			add_location(tr0, file$a, 289, 3, 8214);
+    			add_location(thead, file$a, 288, 2, 8202);
+    			add_location(input0, file$a, 299, 8, 8452);
+    			add_location(td0, file$a, 299, 4, 8448);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$a, 300, 8, 8583);
-    			add_location(td1, file$a, 300, 4, 8579);
+    			add_location(input1, file$a, 300, 8, 8505);
+    			add_location(td1, file$a, 300, 4, 8501);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$a, 301, 8, 8647);
-    			add_location(td2, file$a, 301, 4, 8643);
+    			add_location(input2, file$a, 301, 8, 8569);
+    			add_location(td2, file$a, 301, 4, 8565);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$a, 302, 8, 8722);
-    			add_location(td3, file$a, 302, 4, 8718);
+    			add_location(input3, file$a, 302, 8, 8636);
+    			add_location(td3, file$a, 302, 4, 8632);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$a, 303, 8, 8800);
-    			add_location(td4, file$a, 303, 4, 8796);
-    			add_location(td5, file$a, 305, 4, 8870);
+    			add_location(input4, file$a, 303, 8, 8703);
+    			add_location(td4, file$a, 303, 4, 8699);
+    			add_location(td5, file$a, 305, 4, 8769);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$a, 309, 4, 8976);
-    			add_location(tr1, file$a, 298, 3, 8516);
-    			add_location(td7, file$a, 341, 4, 9861);
-    			add_location(td8, file$a, 344, 4, 9962);
-    			add_location(tr2, file$a, 340, 3, 9851);
-    			add_location(tbody, file$a, 297, 2, 8504);
+    			add_location(td6, file$a, 309, 4, 8875);
+    			add_location(tr1, file$a, 298, 3, 8438);
+    			add_location(td7, file$a, 341, 4, 9714);
+    			add_location(td8, file$a, 344, 4, 9815);
+    			add_location(tr2, file$a, 340, 3, 9704);
+    			add_location(tbody, file$a, 297, 2, 8426);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -15405,15 +15405,15 @@ var app = (function () {
     			append_dev(tr1, t11);
     			append_dev(tr1, td2);
     			append_dev(td2, input2);
-    			set_input_value(input2, /*newesco*/ ctx[5].ages_zero_fifty);
+    			set_input_value(input2, /*newesco*/ ctx[5].tot_wom);
     			append_dev(tr1, t12);
     			append_dev(tr1, td3);
     			append_dev(td3, input3);
-    			set_input_value(input3, /*newesco*/ ctx[5].ages_fifty_seventy);
+    			set_input_value(input3, /*newesco*/ ctx[5].tot_man);
     			append_dev(tr1, t13);
     			append_dev(tr1, td4);
     			append_dev(td4, input4);
-    			set_input_value(input4, /*newesco*/ ctx[5].ages_seventy);
+    			set_input_value(input4, /*newesco*/ ctx[5].tot_esco);
     			append_dev(tr1, t14);
     			append_dev(tr1, td5);
     			mount_component(button0, td5, null);
@@ -15456,16 +15456,16 @@ var app = (function () {
     				set_input_value(input1, /*newesco*/ ctx[5].year);
     			}
 
-    			if (dirty[0] & /*newesco*/ 32 && to_number(input2.value) !== /*newesco*/ ctx[5].ages_zero_fifty) {
-    				set_input_value(input2, /*newesco*/ ctx[5].ages_zero_fifty);
+    			if (dirty[0] & /*newesco*/ 32 && to_number(input2.value) !== /*newesco*/ ctx[5].tot_wom) {
+    				set_input_value(input2, /*newesco*/ ctx[5].tot_wom);
     			}
 
-    			if (dirty[0] & /*newesco*/ 32 && to_number(input3.value) !== /*newesco*/ ctx[5].ages_fifty_seventy) {
-    				set_input_value(input3, /*newesco*/ ctx[5].ages_fifty_seventy);
+    			if (dirty[0] & /*newesco*/ 32 && to_number(input3.value) !== /*newesco*/ ctx[5].tot_man) {
+    				set_input_value(input3, /*newesco*/ ctx[5].tot_man);
     			}
 
-    			if (dirty[0] & /*newesco*/ 32 && to_number(input4.value) !== /*newesco*/ ctx[5].ages_seventy) {
-    				set_input_value(input4, /*newesco*/ ctx[5].ages_seventy);
+    			if (dirty[0] & /*newesco*/ 32 && to_number(input4.value) !== /*newesco*/ ctx[5].tot_esco) {
+    				set_input_value(input4, /*newesco*/ ctx[5].tot_esco);
     			}
 
     			const button0_changes = {};
@@ -15678,8 +15678,8 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t4 = space();
     			info.block.c();
-    			add_location(h1, file$a, 230, 4, 7060);
-    			add_location(main, file$a, 187, 0, 5369);
+    			add_location(h1, file$a, 230, 4, 6968);
+    			add_location(main, file$a, 187, 0, 5277);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -15786,9 +15786,9 @@ var app = (function () {
     	let newesco = {
     		country: "",
     		year: "",
-    		ages_zero_fifty: "",
-    		ages_fifty_seventy: "",
-    		ages_seventy: ""
+    		tot_wom: "",
+    		tot_man: "",
+    		tot_esco: ""
     	};
 
     	onMount(getesco);
@@ -15874,7 +15874,7 @@ var app = (function () {
     	}
 
     	async function insertesco() {
-    		if (newesco.country == "" || newesco.country == null || newesco.year == "" || newesco.year == null || newesco.ages_zero_fifty == "" || newesco.ages_zero_fifty == null || newesco.ages_fifty_seventy == "" || newesco.ages_fifty_seventy == null || newesco.ages_seventy == "" || newesco.ages_seventy == null) {
+    		if (newesco.country == "" || newesco.country == null || newesco.year == "" || newesco.year == null || newesco.tot_wom == "" || newesco.tot_wom == null || newesco.tot_man == "" || newesco.tot_man == null || newesco.tot_esco == "" || newesco.tot_esco == null) {
     			$$invalidate(4, color = "danger");
     			$$invalidate(2, checkMSG = "Debe completar todos los campos");
     			$$invalidate(3, visible = "true");
@@ -15892,9 +15892,9 @@ var app = (function () {
     					$$invalidate(3, visible = "true");
     					$$invalidate(5, newesco.country = null, newesco);
     					$$invalidate(5, newesco.year = null, newesco);
-    					$$invalidate(5, newesco.ages_zero_fifty = null, newesco);
-    					$$invalidate(5, newesco.ages_fifty_seventy = null, newesco);
-    					$$invalidate(5, newesco.ages_seventy = null, newesco);
+    					$$invalidate(5, newesco.tot_wom = null, newesco);
+    					$$invalidate(5, newesco.tot_man = null, newesco);
+    					$$invalidate(5, newesco.tot_esco = null, newesco);
     					getesco();
     				} else if (res.status == 409) {
     					$$invalidate(4, color = "danger"); //window.alert("Entrada introducida con éxito");
@@ -15997,26 +15997,26 @@ var app = (function () {
     	}
 
     	function input2_input_handler() {
-    		newesco.ages_zero_fifty = to_number(this.value);
+    		newesco.tot_wom = to_number(this.value);
     		$$invalidate(5, newesco);
     	}
 
     	function input3_input_handler() {
-    		newesco.ages_fifty_seventy = to_number(this.value);
+    		newesco.tot_man = to_number(this.value);
     		$$invalidate(5, newesco);
     	}
 
     	function input4_input_handler() {
-    		newesco.ages_seventy = to_number(this.value);
+    		newesco.tot_esco = to_number(this.value);
     		$$invalidate(5, newesco);
     	}
 
     	const click_handler_2 = () => {
     		$$invalidate(5, newesco.country = null, newesco);
     		$$invalidate(5, newesco.year = null, newesco);
-    		$$invalidate(5, newesco.ages_zero_fifty = null, newesco);
-    		$$invalidate(5, newesco.ages_fifty_seventy = null, newesco);
-    		$$invalidate(5, newesco.ages_seventy = null, newesco);
+    		$$invalidate(5, newesco.tot_wom = null, newesco);
+    		$$invalidate(5, newesco.tot_man = null, newesco);
+    		$$invalidate(5, newesco.tot_esco = null, newesco);
     	};
 
     	const click_handler_3 = function (escoa) {
@@ -17469,7 +17469,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const table_changes = {};
 
-    			if (dirty & /*$$scope, updatedAgesSeventy, updatedAgesFiftySeventy, updatedAgesZeroFifty, updatedYear, params*/ 65777) {
+    			if (dirty & /*$$scope, updatedtot_esco, updatedtot_man, updatedtot_wom, updatedYear, params*/ 65777) {
     				table_changes.$$scope = { dirty, ctx };
     			}
 
@@ -17588,13 +17588,13 @@ var app = (function () {
     			th1.textContent = "Año";
     			t3 = space();
     			th2 = element("th");
-    			th2.textContent = "Muertes 0-50 años";
+    			th2.textContent = "Escolarizacion total";
     			t5 = space();
     			th3 = element("th");
-    			th3.textContent = "Muertes 50-70 años";
+    			th3.textContent = "Escolarizacion hombres";
     			t7 = space();
     			th4 = element("th");
-    			th4.textContent = "Muertes 70 años";
+    			th4.textContent = "Escolarizacion mujeres";
     			t9 = space();
     			tbody = element("tbody");
     			tr1 = element("tr");
@@ -17615,24 +17615,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$9, 146, 20, 4527);
-    			add_location(th1, file$9, 147, 20, 4562);
-    			add_location(th2, file$9, 148, 20, 4596);
-    			add_location(th3, file$9, 149, 20, 4644);
-    			add_location(th4, file$9, 150, 20, 4693);
-    			add_location(tr0, file$9, 145, 16, 4501);
-    			add_location(thead, file$9, 144, 12, 4476);
-    			add_location(td0, file$9, 155, 20, 4827);
-    			add_location(td1, file$9, 156, 20, 4874);
-    			add_location(input0, file$9, 157, 24, 4922);
-    			add_location(td2, file$9, 157, 20, 4918);
-    			add_location(input1, file$9, 158, 24, 4996);
-    			add_location(td3, file$9, 158, 20, 4992);
-    			add_location(input2, file$9, 159, 24, 5073);
-    			add_location(td4, file$9, 159, 20, 5069);
-    			add_location(td5, file$9, 161, 20, 5147);
-    			add_location(tr1, file$9, 154, 16, 4801);
-    			add_location(tbody, file$9, 153, 12, 4776);
+    			add_location(th0, file$9, 146, 20, 4427);
+    			add_location(th1, file$9, 147, 20, 4462);
+    			add_location(th2, file$9, 148, 20, 4496);
+    			add_location(th3, file$9, 149, 20, 4547);
+    			add_location(th4, file$9, 150, 20, 4600);
+    			add_location(tr0, file$9, 145, 16, 4401);
+    			add_location(thead, file$9, 144, 12, 4376);
+    			add_location(td0, file$9, 155, 20, 4741);
+    			add_location(td1, file$9, 156, 20, 4788);
+    			add_location(input0, file$9, 157, 24, 4836);
+    			add_location(td2, file$9, 157, 20, 4832);
+    			add_location(input1, file$9, 158, 24, 4904);
+    			add_location(td3, file$9, 158, 20, 4900);
+    			add_location(input2, file$9, 159, 24, 4972);
+    			add_location(td4, file$9, 159, 20, 4968);
+    			add_location(td5, file$9, 161, 20, 5043);
+    			add_location(tr1, file$9, 154, 16, 4715);
+    			add_location(tbody, file$9, 153, 12, 4690);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -17657,15 +17657,15 @@ var app = (function () {
     			append_dev(tr1, t13);
     			append_dev(tr1, td2);
     			append_dev(td2, input0);
-    			set_input_value(input0, /*updatedAgesZeroFifty*/ ctx[5]);
+    			set_input_value(input0, /*updatedtot_wom*/ ctx[5]);
     			append_dev(tr1, t14);
     			append_dev(tr1, td3);
     			append_dev(td3, input1);
-    			set_input_value(input1, /*updatedAgesFiftySeventy*/ ctx[6]);
+    			set_input_value(input1, /*updatedtot_man*/ ctx[6]);
     			append_dev(tr1, t15);
     			append_dev(tr1, td4);
     			append_dev(td4, input2);
-    			set_input_value(input2, /*updatedAgesSeventy*/ ctx[7]);
+    			set_input_value(input2, /*updatedtot_esco*/ ctx[7]);
     			append_dev(tr1, t16);
     			append_dev(tr1, td5);
     			mount_component(button, td5, null);
@@ -17685,16 +17685,16 @@ var app = (function () {
     			if ((!current || dirty & /*params*/ 1) && t10_value !== (t10_value = /*params*/ ctx[0].country + "")) set_data_dev(t10, t10_value);
     			if (!current || dirty & /*updatedYear*/ 16) set_data_dev(t12, /*updatedYear*/ ctx[4]);
 
-    			if (dirty & /*updatedAgesZeroFifty*/ 32 && input0.value !== /*updatedAgesZeroFifty*/ ctx[5]) {
-    				set_input_value(input0, /*updatedAgesZeroFifty*/ ctx[5]);
+    			if (dirty & /*updatedtot_wom*/ 32 && input0.value !== /*updatedtot_wom*/ ctx[5]) {
+    				set_input_value(input0, /*updatedtot_wom*/ ctx[5]);
     			}
 
-    			if (dirty & /*updatedAgesFiftySeventy*/ 64 && input1.value !== /*updatedAgesFiftySeventy*/ ctx[6]) {
-    				set_input_value(input1, /*updatedAgesFiftySeventy*/ ctx[6]);
+    			if (dirty & /*updatedtot_man*/ 64 && input1.value !== /*updatedtot_man*/ ctx[6]) {
+    				set_input_value(input1, /*updatedtot_man*/ ctx[6]);
     			}
 
-    			if (dirty & /*updatedAgesSeventy*/ 128 && input2.value !== /*updatedAgesSeventy*/ ctx[7]) {
-    				set_input_value(input2, /*updatedAgesSeventy*/ ctx[7]);
+    			if (dirty & /*updatedtot_esco*/ 128 && input2.value !== /*updatedtot_esco*/ ctx[7]) {
+    				set_input_value(input2, /*updatedtot_esco*/ ctx[7]);
     			}
 
     			const button_changes = {};
@@ -17872,8 +17872,8 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-    			add_location(h1, file$9, 133, 4, 4210);
-    			add_location(main, file$9, 92, 0, 2540);
+    			add_location(h1, file$9, 133, 4, 4110);
+    			add_location(main, file$9, 92, 0, 2440);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -18009,9 +18009,9 @@ var app = (function () {
     	let color = "danger";
     	let updatedCountry;
     	let updatedYear;
-    	let updatedAgesZeroFifty;
-    	let updatedAgesFiftySeventy;
-    	let updatedAgesSeventy;
+    	let updatedtot_wom;
+    	let updatedtot_man;
+    	let updatedtot_esco;
     	onMount(getesco);
 
     	async function getesco() {
@@ -18023,9 +18023,9 @@ var app = (function () {
     			$$invalidate(8, esco = data);
     			updatedCountry = esco.country;
     			$$invalidate(4, updatedYear = esco.year);
-    			$$invalidate(5, updatedAgesZeroFifty = esco.ages_zero_fifty);
-    			$$invalidate(6, updatedAgesFiftySeventy = esco.ages_fifty_seventy);
-    			$$invalidate(7, updatedAgesSeventy = esco.ages_seventy);
+    			$$invalidate(5, updatedtot_wom = esco.tot_wom);
+    			$$invalidate(6, updatedtot_man = esco.tot_man);
+    			$$invalidate(7, updatedtot_esco = esco.tot_esco);
     		} else {
     			Fallos$2(res.status, params.country);
     			pop();
@@ -18040,9 +18040,9 @@ var app = (function () {
     			body: JSON.stringify({
     				country: updatedCountry,
     				year: updatedYear,
-    				ages_zero_fifty: updatedAgesZeroFifty,
-    				ages_fifty_seventy: updatedAgesFiftySeventy,
-    				ages_seventy: updatedAgesSeventy
+    				tot_wom: updatedtot_wom,
+    				tot_man: updatedtot_man,
+    				tot_esco: updatedtot_esco
     			}),
     			headers: { "Content-Type": "application/json" }
     		});
@@ -18061,18 +18061,18 @@ var app = (function () {
     	const func = () => $$invalidate(2, visible = false);
 
     	function input0_input_handler() {
-    		updatedAgesZeroFifty = this.value;
-    		$$invalidate(5, updatedAgesZeroFifty);
+    		updatedtot_wom = this.value;
+    		$$invalidate(5, updatedtot_wom);
     	}
 
     	function input1_input_handler() {
-    		updatedAgesFiftySeventy = this.value;
-    		$$invalidate(6, updatedAgesFiftySeventy);
+    		updatedtot_man = this.value;
+    		$$invalidate(6, updatedtot_man);
     	}
 
     	function input2_input_handler() {
-    		updatedAgesSeventy = this.value;
-    		$$invalidate(7, updatedAgesSeventy);
+    		updatedtot_esco = this.value;
+    		$$invalidate(7, updatedtot_esco);
     	}
 
     	$$self.$$set = $$props => {
@@ -18101,9 +18101,9 @@ var app = (function () {
     		color,
     		updatedCountry,
     		updatedYear,
-    		updatedAgesZeroFifty,
-    		updatedAgesFiftySeventy,
-    		updatedAgesSeventy,
+    		updatedtot_wom,
+    		updatedtot_man,
+    		updatedtot_esco,
     		getesco,
     		Editesco,
     		Fallos: Fallos$2
@@ -18117,9 +18117,9 @@ var app = (function () {
     		if ('color' in $$props) $$invalidate(3, color = $$props.color);
     		if ('updatedCountry' in $$props) updatedCountry = $$props.updatedCountry;
     		if ('updatedYear' in $$props) $$invalidate(4, updatedYear = $$props.updatedYear);
-    		if ('updatedAgesZeroFifty' in $$props) $$invalidate(5, updatedAgesZeroFifty = $$props.updatedAgesZeroFifty);
-    		if ('updatedAgesFiftySeventy' in $$props) $$invalidate(6, updatedAgesFiftySeventy = $$props.updatedAgesFiftySeventy);
-    		if ('updatedAgesSeventy' in $$props) $$invalidate(7, updatedAgesSeventy = $$props.updatedAgesSeventy);
+    		if ('updatedtot_wom' in $$props) $$invalidate(5, updatedtot_wom = $$props.updatedtot_wom);
+    		if ('updatedtot_man' in $$props) $$invalidate(6, updatedtot_man = $$props.updatedtot_man);
+    		if ('updatedtot_esco' in $$props) $$invalidate(7, updatedtot_esco = $$props.updatedtot_esco);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -18132,9 +18132,9 @@ var app = (function () {
     		visible,
     		color,
     		updatedYear,
-    		updatedAgesZeroFifty,
-    		updatedAgesFiftySeventy,
-    		updatedAgesSeventy,
+    		updatedtot_wom,
+    		updatedtot_man,
+    		updatedtot_esco,
     		esco,
     		Editesco,
     		func,
@@ -19468,20 +19468,20 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Este gráfico compara los valores de escolarizacion en distintas edades";
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$8, 118, 4, 4046);
+    			add_location(script0, file$8, 118, 4, 3921);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$8, 119, 4, 4139);
+    			add_location(script1, file$8, 119, 4, 4014);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$8, 120, 4, 4239);
+    			add_location(script2, file$8, 120, 4, 4114);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$8, 121, 4, 4341);
+    			add_location(script3, file$8, 121, 4, 4216);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$8, 168, 8, 6272);
+    			add_location(div, file$8, 168, 8, 6147);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$8, 169, 8, 6304);
+    			add_location(p, file$8, 169, 8, 6179);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$8, 167, 4, 6228);
-    			add_location(main, file$8, 124, 0, 4459);
+    			add_location(figure, file$8, 167, 4, 6103);
+    			add_location(main, file$8, 124, 0, 4334);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -19561,9 +19561,9 @@ var app = (function () {
     	let escos = [];
     	let country = [];
     	let year = [];
-    	let ages_zero_fifty = [];
-    	let ages_fifty_seventy = [];
-    	let ages_seventy = [];
+    	let tot_wom = [];
+    	let tot_man = [];
+    	let tot_esco = [];
     	let datosOrdenados = [];
 
     	async function getData() {
@@ -19588,9 +19588,9 @@ var app = (function () {
     				datosOrdenados.forEach(esco => {
     					year.push(esco.year);
     					country.push(esco.country + "-" + esco.year);
-    					ages_zero_fifty.push(esco.ages_zero_fifty);
-    					ages_fifty_seventy.push(esco.ages_fifty_seventy);
-    					ages_seventy.push(esco.ages_seventy);
+    					tot_wom.push(esco.tot_wom);
+    					tot_man.push(esco.tot_man);
+    					tot_esco.push(esco.tot_esco);
     				});
 
     				location.reload();
@@ -19607,9 +19607,9 @@ var app = (function () {
     				datosOrdenados.forEach(esco => {
     					year.push(esco.year);
     					country.push(esco.country + "-" + esco.year);
-    					ages_zero_fifty.push(esco.ages_zero_fifty);
-    					ages_fifty_seventy.push(esco.ages_fifty_seventy);
-    					ages_seventy.push(esco.ages_seventy);
+    					tot_wom.push(esco.tot_wom);
+    					tot_man.push(esco.tot_man);
+    					tot_esco.push(esco.tot_esco);
     				});
     			}
     		} else {
@@ -19641,16 +19641,16 @@ var app = (function () {
     			},
     			series: [
     				{
-    					name: 'Mayores de 70 años',
-    					data: ages_seventy
+    					name: 'Escolarizacion Total',
+    					data: tot_esco
     				},
     				{
-    					name: 'De 50 a 70 años',
-    					data: ages_fifty_seventy
+    					name: 'Escolarización Hombres',
+    					data: tot_man
     				},
     				{
-    					name: 'Menores de 50 años',
-    					data: ages_zero_fifty
+    					name: 'Escolarización Mujeres',
+    					data: tot_wom
     				}
     			]
     		});
@@ -19679,9 +19679,9 @@ var app = (function () {
     		escos,
     		country,
     		year,
-    		ages_zero_fifty,
-    		ages_fifty_seventy,
-    		ages_seventy,
+    		tot_wom,
+    		tot_man,
+    		tot_esco,
     		datosOrdenados,
     		getData,
     		loadGraph
@@ -19691,9 +19691,9 @@ var app = (function () {
     		if ('escos' in $$props) escos = $$props.escos;
     		if ('country' in $$props) country = $$props.country;
     		if ('year' in $$props) year = $$props.year;
-    		if ('ages_zero_fifty' in $$props) ages_zero_fifty = $$props.ages_zero_fifty;
-    		if ('ages_fifty_seventy' in $$props) ages_fifty_seventy = $$props.ages_fifty_seventy;
-    		if ('ages_seventy' in $$props) ages_seventy = $$props.ages_seventy;
+    		if ('tot_wom' in $$props) tot_wom = $$props.tot_wom;
+    		if ('tot_man' in $$props) tot_man = $$props.tot_man;
+    		if ('tot_esco' in $$props) tot_esco = $$props.tot_esco;
     		if ('datosOrdenados' in $$props) datosOrdenados = $$props.datosOrdenados;
     	};
 
@@ -27234,7 +27234,7 @@ var app = (function () {
     	return block;
     }
 
-    // (292:23) <Button outline color="primary" on:click="{()=>{       newExpo.country = null;       newExpo.year = null;       newExpo.expo_tec = null;       newExpo.expo_m = null;       newExpo.expo_bys= null;      }}">
+    // (292:23) <Button outline color="primary" on:click="{()=>{       newExpo.country = null;       newExpo.year = null;       newExpo.expo_tec = null;       newExpo.expo_m = null;       newExpo.tot_esco= null;      }}">
     function create_default_slot_5$2(ctx) {
     	let t;
 
@@ -27254,7 +27254,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$2.name,
     		type: "slot",
-    		source: "(292:23) <Button outline color=\\\"primary\\\" on:click=\\\"{()=>{       newExpo.country = null;       newExpo.year = null;       newExpo.expo_tec = null;       newExpo.expo_m = null;       newExpo.expo_bys= null;      }}\\\">",
+    		source: "(292:23) <Button outline color=\\\"primary\\\" on:click=\\\"{()=>{       newExpo.country = null;       newExpo.year = null;       newExpo.expo_tec = null;       newExpo.expo_m = null;       newExpo.tot_esco= null;      }}\\\">",
     		ctx
     	});
 
@@ -27335,7 +27335,7 @@ var app = (function () {
     	let t6;
     	let t7;
     	let td4;
-    	let t8_value = /*expos*/ ctx[29].expo_bys + "";
+    	let t8_value = /*expos*/ ctx[29].tot_esco + "";
     	let t8;
     	let t9;
     	let td5;
@@ -27437,7 +27437,7 @@ var app = (function () {
     			if ((!current || dirty[0] & /*expo*/ 64) && t2_value !== (t2_value = /*expos*/ ctx[29].year + "")) set_data_dev(t2, t2_value);
     			if ((!current || dirty[0] & /*expo*/ 64) && t4_value !== (t4_value = /*expos*/ ctx[29].expo_tec + "")) set_data_dev(t4, t4_value);
     			if ((!current || dirty[0] & /*expo*/ 64) && t6_value !== (t6_value = /*expos*/ ctx[29].expo_m + "")) set_data_dev(t6, t6_value);
-    			if ((!current || dirty[0] & /*expo*/ 64) && t8_value !== (t8_value = /*expos*/ ctx[29].expo_bys + "")) set_data_dev(t8, t8_value);
+    			if ((!current || dirty[0] & /*expo*/ 64) && t8_value !== (t8_value = /*expos*/ ctx[29].tot_esco + "")) set_data_dev(t8, t8_value);
     			const button0_changes = {};
 
     			if (dirty[1] & /*$$scope*/ 2) {
@@ -27757,7 +27757,7 @@ var app = (function () {
     			append_dev(tr1, t13);
     			append_dev(tr1, td4);
     			append_dev(td4, input4);
-    			set_input_value(input4, /*newExpo*/ ctx[5].expo_bys);
+    			set_input_value(input4, /*newExpo*/ ctx[5].tot_esco);
     			append_dev(tr1, t14);
     			append_dev(tr1, td5);
     			mount_component(button0, td5, null);
@@ -27808,8 +27808,8 @@ var app = (function () {
     				set_input_value(input3, /*newExpo*/ ctx[5].expo_m);
     			}
 
-    			if (dirty[0] & /*newExpo*/ 32 && input4.value !== /*newExpo*/ ctx[5].expo_bys) {
-    				set_input_value(input4, /*newExpo*/ ctx[5].expo_bys);
+    			if (dirty[0] & /*newExpo*/ 32 && input4.value !== /*newExpo*/ ctx[5].tot_esco) {
+    				set_input_value(input4, /*newExpo*/ ctx[5].tot_esco);
     			}
 
     			const button0_changes = {};
@@ -28132,7 +28132,7 @@ var app = (function () {
     		year: "",
     		expo_tec: "",
     		expo_m: "",
-    		expo_bys: ""
+    		tot_esco: ""
     	};
 
     	onMount(getExpo);
@@ -28340,7 +28340,7 @@ var app = (function () {
     	}
 
     	function input4_input_handler() {
-    		newExpo.expo_bys = this.value;
+    		newExpo.tot_esco = this.value;
     		$$invalidate(5, newExpo);
     	}
 
@@ -28349,7 +28349,7 @@ var app = (function () {
     		$$invalidate(5, newExpo.year = null, newExpo);
     		$$invalidate(5, newExpo.expo_tec = null, newExpo);
     		$$invalidate(5, newExpo.expo_m = null, newExpo);
-    		$$invalidate(5, newExpo.expo_bys = null, newExpo);
+    		$$invalidate(5, newExpo.tot_esco = null, newExpo);
     	};
 
     	const click_handler_3 = function (expos) {
@@ -30453,7 +30453,7 @@ var app = (function () {
     			updatedYear = expo.year;
     			$$invalidate(1, updatedExpoTec = expo.expo_tec);
     			$$invalidate(2, updatedExpoM = expo.expo_m);
-    			$$invalidate(2, updatedExpoM = expo.expo_bys);
+    			$$invalidate(2, updatedExpoM = expo.tot_esco);
     		} else {
     			Fallos(res.status, params.country);
     			pop();
@@ -30470,7 +30470,7 @@ var app = (function () {
     				year: updatedYear,
     				expo_tec: updatedExpoTec,
     				expo_m: updatedExpoM,
-    				expo_bys: updatedExpoM
+    				tot_esco: updatedExpoM
     			}),
     			headers: { "Content-Type": "application/json" }
     		});
@@ -31989,7 +31989,7 @@ var app = (function () {
     	let year = [];
     	let expo_tec = [];
     	let expo_m = [];
-    	let expo_bys = [];
+    	let tot_esco = [];
     	let datosOrdenados = [];
 
     	async function getData() {
@@ -32016,7 +32016,7 @@ var app = (function () {
     					country.push(expo.country + "-" + expo.year);
     					expo_tec.push(expo.expo_tec);
     					expo_m.push(expo.expo_m);
-    					expo_bys.push(expo.expo_bys);
+    					tot_esco.push(expo.tot_esco);
     				});
 
     				location.reload();
@@ -32035,7 +32035,7 @@ var app = (function () {
     					country.push(expo.country + "-" + expo.year);
     					expo_tec.push(expo.expo_tec);
     					expo_m.push(expo.expo_m);
-    					expo_bys.push(expo.expo_bys);
+    					tot_esco.push(expo.tot_esco);
     				});
     			}
     		} else {
@@ -32068,7 +32068,7 @@ var app = (function () {
     			series: [
     				{
     					name: 'Exportaciones Bienes y Servicios',
-    					data: expo_bys
+    					data: tot_esco
     				},
     				{
     					name: 'Exportaciones Prod. Manufacturados',
@@ -32107,7 +32107,7 @@ var app = (function () {
     		year,
     		expo_tec,
     		expo_m,
-    		expo_bys,
+    		tot_esco,
     		datosOrdenados,
     		getData,
     		loadGraph
@@ -32119,7 +32119,7 @@ var app = (function () {
     		if ('year' in $$props) year = $$props.year;
     		if ('expo_tec' in $$props) expo_tec = $$props.expo_tec;
     		if ('expo_m' in $$props) expo_m = $$props.expo_m;
-    		if ('expo_bys' in $$props) expo_bys = $$props.expo_bys;
+    		if ('tot_esco' in $$props) tot_esco = $$props.tot_esco;
     		if ('datosOrdenados' in $$props) datosOrdenados = $$props.datosOrdenados;
     	};
 
@@ -32190,23 +32190,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$1, 135, 4, 3640);
+    			add_location(script0, file$1, 137, 4, 3620);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 136, 4, 3733);
+    			add_location(script1, file$1, 138, 4, 3713);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 137, 4, 3836);
+    			add_location(script2, file$1, 139, 4, 3816);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 138, 4, 3936);
+    			add_location(script3, file$1, 140, 4, 3916);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$1, 139, 4, 4038);
+    			add_location(script4, file$1, 141, 4, 4018);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$1, 146, 8, 4216);
-    			add_location(code, file$1, 149, 12, 4383);
+    			add_location(div, file$1, 148, 8, 4196);
+    			add_location(code, file$1, 151, 12, 4363);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 147, 8, 4252);
+    			add_location(p, file$1, 149, 8, 4232);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 145, 4, 4172);
-    			add_location(main, file$1, 143, 0, 4158);
+    			add_location(figure, file$1, 147, 4, 4152);
+    			add_location(main, file$1, 145, 0, 4138);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32274,10 +32274,12 @@ var app = (function () {
     	let economies = [];
     	let country = [];
     	let year = [];
-    	let expo_bys = [];
+    	let tot_esco = [];
     	let expo_m = [];
     	let expo_tec = [];
     	let percapita = [];
+    	let tot_man = [];
+    	let tot_wom = [];
     	let currency = [];
     	let currentprices = [];
     	let ages1 = [];
@@ -32300,7 +32302,7 @@ var app = (function () {
     			expos.forEach(expo => {
     				country.push(expo.country + "-" + expo.year);
     				year.push(expo.year);
-    				ages1.push(expo.expo_bys + expo.expo_m + expo.expo_tec);
+    				ages1.push(expo.tot_esco + expo.expo_m + expo.expo_tec);
     				expo_m.push(expo.expo_m);
     				expo_tec.push(expo.expo_tec);
     			});
@@ -32321,11 +32323,11 @@ var app = (function () {
     			escos.forEach(esco => {
     				// year.push(esco.year);
     				//country.push(esco.country);
-    				ages_zero_fifty.push(esco.ages_zero_fifty);
+    				tot_wom.push(esco.tot_wom);
 
-    				ages_fifty_seventy.push(esco.ages_fifty_seventy);
-    				ages2.push(esco.ages_seventy + esco.ages_fifty_seventy + esco.ages_zero_fifty);
-    				expo_bys.push(esco.ages_seventy);
+    				tot_man.push(esco.tot_man);
+    				ages2.push(esco.tot_esco + esco.tot_man + esco.tot_wom);
+    				tot_esco.push(esco.tot_esco);
     			});
     		} else {
     			console.log("Error in request");
@@ -32386,10 +32388,12 @@ var app = (function () {
     		economies,
     		country,
     		year,
-    		expo_bys,
+    		tot_esco,
     		expo_m,
     		expo_tec,
     		percapita,
+    		tot_man,
+    		tot_wom,
     		currency,
     		currentprices,
     		ages1,
@@ -32405,10 +32409,12 @@ var app = (function () {
     		if ('economies' in $$props) economies = $$props.economies;
     		if ('country' in $$props) country = $$props.country;
     		if ('year' in $$props) year = $$props.year;
-    		if ('expo_bys' in $$props) expo_bys = $$props.expo_bys;
+    		if ('tot_esco' in $$props) tot_esco = $$props.tot_esco;
     		if ('expo_m' in $$props) expo_m = $$props.expo_m;
     		if ('expo_tec' in $$props) expo_tec = $$props.expo_tec;
     		if ('percapita' in $$props) percapita = $$props.percapita;
+    		if ('tot_man' in $$props) tot_man = $$props.tot_man;
+    		if ('tot_wom' in $$props) tot_wom = $$props.tot_wom;
     		if ('currency' in $$props) currency = $$props.currency;
     		if ('currentprices' in $$props) currentprices = $$props.currentprices;
     		if ('ages1' in $$props) ages1 = $$props.ages1;

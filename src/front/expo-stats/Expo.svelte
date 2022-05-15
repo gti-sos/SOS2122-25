@@ -21,7 +21,7 @@
         year:"",
         expo_tec:"",
         expo_m:"",
-        expo_bys:""
+        tot_esco:""
     }
 
 	onMount(getExpo);
@@ -283,7 +283,7 @@ loading
 				<td><input type="number" bind:value="{newExpo.year}"></td>
 				<td><input bind:value="{newExpo.expo_tec}"></td>
 				<td><input bind:value="{newExpo.expo_m}"></td>
-				<td><input bind:value="{newExpo.expo_bys}"></td>
+				<td><input bind:value="{newExpo.tot_esco}"></td>
 
 				<td><Button outline color="primary" on:click="{insertExpo}">
 					Añadir
@@ -294,7 +294,7 @@ loading
 					newExpo.year = null;
 					newExpo.expo_tec = null;
 					newExpo.expo_m = null;
-					newExpo.expo_bys= null;
+					newExpo.tot_esco= null;
 				}}">
 					Limpiar
 					</Button>
@@ -306,7 +306,7 @@ loading
 				<td>{expos.year}</td>
                 <td>{expos.expo_tec}</td>
                 <td>{expos.expo_m}</td>
-                <td>{expos.expo_bys}</td>
+                <td>{expos.tot_esco}</td>
 
 				<td><Button outline color="warning" on:click={function (){
 					window.location.href = `/#/expo/${expos.country}/${expos.year}`

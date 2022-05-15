@@ -21,9 +21,9 @@
     let newesco={
         country: "",
         year:"",
-        ages_zero_fifty:"",
-        ages_fifty_seventy:"",
-        ages_seventy:""
+        tot_wom:"",
+        tot_man:"",
+        tot_esco:""
     }
 
 	onMount(getesco);
@@ -95,7 +95,7 @@
     }
 	
 	async function insertesco(){
-		if (newesco.country == "" || newesco.country == null || newesco.year == "" || newesco.year == null || newesco.ages_zero_fifty == "" || newesco.ages_zero_fifty == null || newesco.ages_fifty_seventy == "" || newesco.ages_fifty_seventy == null || newesco.ages_seventy == "" || newesco.ages_seventy == null) {
+		if (newesco.country == "" || newesco.country == null || newesco.year == "" || newesco.year == null || newesco.tot_wom == "" || newesco.tot_wom == null || newesco.tot_man == "" || newesco.tot_man == null || newesco.tot_esco == "" || newesco.tot_esco == null) {
 			color="danger";
 			checkMSG="Debe completar todos los campos";
 			visible="true";
@@ -115,9 +115,9 @@
 					visible="true";
 					newesco.country = null;
 					newesco.year = null;
-					newesco.ages_zero_fifty = null;
-					newesco.ages_fifty_seventy = null;
-					newesco.ages_seventy = null;
+					newesco.tot_wom = null;
+					newesco.tot_man = null;
+					newesco.tot_esco = null;
 				getesco();
 
 				//window.alert("Entrada introducida con éxito");
@@ -290,18 +290,18 @@ loading
 			<tr>
 				<th>País</th>
 				<th>Año</th>
-                <th>Muertes 0-50 años</th>
-                <th>Muertes 50-70 años</th>
-                <th>Muertes 70 años</th>
+                <th>Escolarizacion total</th>
+                <th>Escolarizacion hombres</th>
+                <th>Escolarizacion mujeres</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td><input bind:value="{newesco.country}"></td>
 				<td><input type="number" bind:value="{newesco.year}"></td>
-				<td><input type="number" bind:value="{newesco.ages_zero_fifty}"></td>
-				<td><input type="number" bind:value="{newesco.ages_fifty_seventy}"></td>
-				<td><input type="number" bind:value="{newesco.ages_seventy}"></td>
+				<td><input type="number" bind:value="{newesco.tot_wom}"></td>
+				<td><input type="number" bind:value="{newesco.tot_man}"></td>
+				<td><input type="number" bind:value="{newesco.tot_esco}"></td>
 
 				<td><Button outline color="primary" on:click="{insertesco}">
 					Añadir
@@ -310,9 +310,9 @@ loading
 				<td align="center"><Button outline color="primary" on:click="{()=>{
 					newesco.country = null;
 					newesco.year = null;
-					newesco.ages_zero_fifty = null;
-					newesco.ages_fifty_seventy = null;
-					newesco.ages_seventy = null;
+					newesco.tot_wom = null;
+					newesco.tot_man = null;
+					newesco.tot_esco = null;
 				}}">
 					Limpiar
 					</Button>
@@ -322,9 +322,9 @@ loading
 			<tr>
 				<td>{escoa.country}</td>
 				<td>{escoa.year}</td>
-                <td>{escoa.ages_zero_fifty}</td>
-                <td>{escoa.ages_fifty_seventy}</td>
-                <td>{escoa.ages_seventy}</td>
+                <td>{escoa.tot_wom}</td>
+                <td>{escoa.tot_man}</td>
+                <td>{escoa.tot_esco}</td>
 
 				<td><Button outline color="warning" on:click={function (){
 					window.location.href = `/#/esco/${escoa.country}/${escoa.year}`

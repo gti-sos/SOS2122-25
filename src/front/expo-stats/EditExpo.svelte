@@ -32,7 +32,7 @@
             updatedYear=expo.year;
             updatedExpoTec=expo.expo_tec;
             updatedExpoM=expo.expo_m;
-            updatedExpoM=expo.expo_bys;
+            updatedExpoM=expo.tot_esco;
 		}else{
             Fallos(res.status,params.country);
             pop();
@@ -49,7 +49,7 @@
                     year: updatedYear,
                     expo_tec: updatedExpoTec,
                     expo_m: updatedExpoM,
-                    expo_bys: updatedExpoM
+                    tot_esco: updatedExpoM
                 }),
 				headers: {
 					"Content-Type": "application/json"

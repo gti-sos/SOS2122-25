@@ -7,9 +7,9 @@
     let escos=[];
     let country=[];
     let year=[];
-    let ages_zero_fifty=[];
-    let ages_fifty_seventy=[];
-    let ages_seventy=[];
+    let tot_wom=[];
+    let tot_man=[];
+    let tot_esco=[];
     let datosOrdenados=[];
 
     async function getData(){
@@ -29,9 +29,9 @@
             datosOrdenados.forEach(esco => {
                 year.push(esco.year);
                 country.push(esco.country+"-"+ esco.year);
-                ages_zero_fifty.push(esco.ages_zero_fifty);
-                ages_fifty_seventy.push(esco.ages_fifty_seventy);
-                ages_seventy.push(esco.ages_seventy);          
+                tot_wom.push(esco.tot_wom);
+                tot_man.push(esco.tot_man);
+                tot_esco.push(esco.tot_esco);          
             });
             location.reload();
             }
@@ -45,9 +45,9 @@
             datosOrdenados.forEach(esco => {
                 year.push(esco.year);
                 country.push(esco.country+"-"+esco.year);
-                ages_zero_fifty.push(esco.ages_zero_fifty);
-                ages_fifty_seventy.push(esco.ages_fifty_seventy);
-                ages_seventy.push(esco.ages_seventy);            
+                tot_wom.push(esco.tot_wom);
+                tot_man.push(esco.tot_man);
+                tot_esco.push(esco.tot_esco);            
             }); 
             }
             
@@ -96,16 +96,16 @@
             },
             series: [
                 {
-                name: 'Mayores de 70 años',
-                data: ages_seventy
+                name: 'Escolarizacion Total',
+                data: tot_esco
                 },
                 {
-                name: 'De 50 a 70 años',
-                data: ages_fifty_seventy
+                name: 'Escolarización Hombres',
+                data: tot_man
                 },
                 {
-                name: 'Menores de 50 años',
-                data: ages_zero_fifty
+                name: 'Escolarización Mujeres',
+                data: tot_wom
                 
                 }
                 

@@ -9,66 +9,65 @@ var esco_stats = [
     {
         country: "france",
         year: 2019,
-        ages_zero_fifty: 2,
-        ages_fifty_seventy: 8,
-        ages_seventy: 230
+        tot_wom: 260,
+        tot_man: 200,
+        tot_esco: 230
     },
     {
         country: "argentina",
         year: 2019,
-        ages_zero_fifty: 21,
-        ages_fifty_seventy: 71,
-        ages_seventy: 835
+        tot_wom: 100,
+        tot_man: 301,
+        tot_esco: 205
     },
     {
         country: "brazil",
         year: 2019,
-        ages_zero_fifty: 40,
-        ages_fifty_seventy: 43,
-        ages_seventy: 455
+        tot_wom: 178,
+        tot_man: 189,
+        tot_esco: 180
     },
     {
         country: "china",
         year: 2019,
-        ages_zero_fifty: 20,
-        ages_fifty_seventy: 7,
-        ages_seventy: 130
+        tot_wom: 125,
+        tot_man: 123,
+        tot_esco: 124
     },
     {
         country: "japan",
         year: 2019,
-        ages_zero_fifty: 4,
-        ages_fifty_seventy: 17,
-        ages_seventy: 409
+        tot_wom: 189,
+        tot_man: 230,
+        tot_esco: 211
     },
     {
         country: "england",
         year: 2019,
-        ages_zero_fifty: 5,
-        ages_fifty_seventy: 16,
-        ages_seventy: 440
+        tot_wom: 189,
+        tot_man: 230,
+        tot_esco: 211
     },
     {
         country: "india",
         year: 2019,
-        ages_zero_fifty: 117,
-        ages_fifty_seventy: 43,
-        ages_seventy: 328
+        tot_wom: 117,
+        tot_man: 43,
+        tot_esco: 328
 
     },
     {
         country: "eeuu",
         year: 2019,
-        ages_zero_fifty: 5,
-        ages_fifty_seventy: 16,
-        ages_seventy: 184
+        tot_wom: 260,
+        tot_man: 200,
+        tot_esco: 230
     },
     {
         country: "spain",
-        year: 2019,
-        ages_zero_fifty: 3,
-        ages_fifty_seventy: 8,
-        ages_seventy: 198
+        tot_wom: 178,
+        tot_man: 189,
+        tot_esco: 180
     }
 ]
 
@@ -399,9 +398,9 @@ module.exports.register = (app, db) => {
     function comprobar_body(req) {
         return (req.body.country == null |
             req.body.year == null |
-            req.body.ages_zero_fifty == null |
-            req.body.ages_fifty_seventy == null |
-            req.body.ages_seventy == null);
+            req.body.tot_wom == null |
+            req.body.tot_man == null |
+            req.body.tot_esco == null);
     }
 
     //PAGINACION

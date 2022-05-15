@@ -18,9 +18,9 @@
     
     let updatedCountry;
     let updatedYear;
-    let updatedAgesZeroFifty;
-    let updatedAgesFiftySeventy;
-    let updatedAgesSeventy;
+    let updatedtot_wom;
+    let updatedtot_man;
+    let updatedtot_esco;
 
     onMount(getesco);
 
@@ -32,9 +32,9 @@
 			esco=data;
 			updatedCountry=esco.country;
             updatedYear=esco.year;
-            updatedAgesZeroFifty=esco.ages_zero_fifty;
-            updatedAgesFiftySeventy=esco.ages_fifty_seventy;
-            updatedAgesSeventy=esco.ages_seventy;
+            updatedtot_wom=esco.tot_wom;
+            updatedtot_man=esco.tot_man;
+            updatedtot_esco=esco.tot_esco;
 		}else{
             Fallos(res.status,params.country);
             pop();
@@ -49,9 +49,9 @@
 				body: JSON.stringify({
                     country: updatedCountry,
                     year: updatedYear,
-                    ages_zero_fifty: updatedAgesZeroFifty,
-                    ages_fifty_seventy: updatedAgesFiftySeventy,
-                    ages_seventy: updatedAgesSeventy
+                    tot_wom: updatedtot_wom,
+                    tot_man: updatedtot_man,
+                    tot_esco: updatedtot_esco
                 }),
 				headers: {
 					"Content-Type": "application/json"
@@ -146,18 +146,18 @@
                 <tr>
                     <th>País</th>
                     <th>Año</th>
-                    <th>Muertes 0-50 años</th>
-                    <th>Muertes 50-70 años</th>
-                    <th>Muertes 70 años</th>
+                    <th>Escolarizacion total</th>
+                    <th>Escolarizacion hombres</th>
+                    <th>Escolarizacion mujeres</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>{params.country}</td>
                     <td>{updatedYear}</td>
-                    <td><input bind:value="{updatedAgesZeroFifty}"></td>
-                    <td><input bind:value="{updatedAgesFiftySeventy}"></td>
-                    <td><input bind:value="{updatedAgesSeventy}"></td>
+                    <td><input bind:value="{updatedtot_wom}"></td>
+                    <td><input bind:value="{updatedtot_man}"></td>
+                    <td><input bind:value="{updatedtot_esco}"></td>
     
                     <td><Button outline color="primary" on:click="{Editesco}">
                         Editar

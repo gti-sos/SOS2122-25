@@ -11,7 +11,7 @@ var expo_stats = [
         year: 2019,
         expo_tec: 18.673,
         expo_m: 59.114,
-        expo_bys: 11.756
+        tot_esco: 11.756
         
     },
     {
@@ -19,7 +19,7 @@ var expo_stats = [
         year: 2019,
         expo_tec: 6.846,
         expo_m: 66.650,
-        expo_bys:34.955
+        tot_esco:34.955
         
     },
     {
@@ -27,21 +27,21 @@ var expo_stats = [
         year: 2019,
         expo_tec: 5.213,
         expo_m: 16.555,
-        expo_bys:17.696
+        tot_esco:17.696
     },
     {
         country: "marroco",
         year: 2019,
         expo_tec: 4.898,
         expo_m: 70.843,
-        expo_bys: 39.317
+        tot_esco: 39.317
     },
     {
         country: "greece",
         year: 2019,
         expo_tec: 12.515,
         expo_m: 37.505,
-        expo_bys: 40.132
+        tot_esco: 40.132
     } 
 ]
 
@@ -367,7 +367,7 @@ module.exports.register = (app, db) =>{
             req.body.year == null |
             req.body.expo_tec == null |
             req.body.expo_m == null |
-            req.body.expo_bys == null);
+            req.body.tot_esco == null);
     }
     //PAGINACION
     function paginacion(req, lista) {
