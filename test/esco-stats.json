@@ -199,50 +199,6 @@
 			"response": []
 		},
 		{
-			"name": "esco-stats POST de una lista de recursos",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 409\", function () {\r",
-							"    pm.response.to.have.status(409);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats",
-					"protocol": "https",
-					"host": [
-						"sos2122-25",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"api",
-						"v1",
-						"esco-stats"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "esco-stats POST para un recurso especifico",
 			"event": [
 				{
@@ -262,7 +218,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
+					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 260,\r\n\"tot_man\": 200,\r\n\"tot_esco\": 230\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -282,52 +238,6 @@
 						"v1",
 						"esco-stats",
 						"france"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "esco-stats PUT de un recurso",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"country\": \"france\",\r\n\"year\": 2019,\r\n\"tot_wom\": 223,\r\n\"tot_man\": 235,\r\n\"tot_esco\": 230\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://sos2122-25.herokuapp.com/api/v1/esco-stats/france/2019",
-					"protocol": "https",
-					"host": [
-						"sos2122-25",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"api",
-						"v1",
-						"esco-stats",
-						"france",
-						"2019"
 					]
 				}
 			},
@@ -431,7 +341,7 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Status code is 409\", function () {\r",
-							"    pm.response.to.have.status(409);\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -475,7 +385,7 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Status code is 409\", function () {\r",
-							"    pm.response.to.have.status(409);\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript"
