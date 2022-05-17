@@ -10,7 +10,7 @@
     "test-economies": "npx newman run ./test/economies-test.json -e ./test/env/LOCAL.json",
     "test-esco-stats": "npx newman run ./test/esco-stats.json -e ./test/env/HEROKU.json",
     "test-expo-stats": "npx newman run ./test/expo-stats.json -e ./test/env/LOCAL1.json",
-    "test": "npm run test-economies && npm run test-esco-stats && npm run expo-stats"
+    "test": "npm run test-economies && npm run test-esco-stats && npm run test-expo-stats"
   },
   "repository": {
     "type": "git",
