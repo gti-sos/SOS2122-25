@@ -64,42 +64,15 @@
                 type: 'area'
             },
             title: {
-                text: 'Grafica de economia mundial'
+                text: 'Economia Mundial'
             },
-
             xAxis: {
-                categories: country,
-                tickmarkPlacement: 'on',
-                title: {
-                    enabled: false
-                }
+                categories: country
             },
-            yAxis: {
-                
-                title: {
-                    text: 'economia'
-                },
-                
+            credits: {
+                enabled: false
             },
-            tooltip: {
-                split: true,
-                valueSuffix: 'economia'
-            },
-            plotOptions: {
-                
-                area: {
-                    stacking: 'normal',
-                    lineColor: '#666666',
-                    lineWidth: 1,
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: '#666666'
-                    }
-                }
-            },
-            
-            series: [
-                {
+            series: [{
                 name: 'percapita',
                 data: percapita
                 },
@@ -149,8 +122,8 @@
 				<DropdownToggle nav caret> FRONT-END </DropdownToggle>
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
-				  <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">Inversion promoción social</DropdownItem>
-				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
+				  <DropdownItem href="#/esco-stats">esco-Stats FRONT-END</DropdownItem>
+				  <DropdownItem href="#/expo">expo-Stats FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
@@ -160,8 +133,8 @@
 				<DropdownToggle nav caret> Gráficas </DropdownToggle>
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
-				  <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">Inversion promoción social</DropdownItem>
-				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
+				  <DropdownItem href="#/graphesco">esco-Stats</DropdownItem>
+				  <DropdownItem href="#/#/graphexpo">Expo-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
@@ -176,9 +149,9 @@
     <figure class="highcharts-figure">
         <div id="container"></div>
         <p class="highcharts-description">
-            <!--A demo showing a stacked area chart, also sometimes referred to as a
-            mountain chart. In a stacked chart, the data series values are added
-            together to make up a total.-->
+            A simple demo showcasing an area chart with negative values and multiple
+            data series. Note that interacting with one data series will dim the
+            others, making it easier to distinguish between them.
         </p>
     </figure>
 

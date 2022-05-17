@@ -216,7 +216,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
 				  <DropdownItem href="./#/esco-stats">esco FRONT-END</DropdownItem>
-				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
+				  <DropdownItem href="#/graphexpo">Expo-Stats FRONT-END</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
@@ -227,7 +227,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
 				  <DropdownItem href="./#/graphesco">esco-Stats</DropdownItem>
-				  <DropdownItem href="#/graphics/azar-games-and-bet-activities">Actividad en loteria</DropdownItem>
+				  <DropdownItem href="#/graphexpo">Expo-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>

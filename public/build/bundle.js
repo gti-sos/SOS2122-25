@@ -10974,7 +10974,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Cargar Aplicación");
+    			t = text("Cargar APIs");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -10995,7 +10995,7 @@ var app = (function () {
     	return block;
     }
 
-    // (7:3) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (7:3) <Navbar style="background-color: #FF7F50; color:white;" light expand="lg">
     function create_default_slot$a(ctx) {
     	let navbarbrand;
     	let t;
@@ -11057,7 +11057,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$a.name,
     		type: "slot",
-    		source: "(7:3) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(7:3) <Navbar style=\\\"background-color: #FF7F50; color:white;\\\" light expand=\\\"lg\\\">",
     		ctx
     	});
 
@@ -11071,7 +11071,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: #FF7F50; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$a] },
@@ -20164,13 +20164,13 @@ var app = (function () {
     	return block;
     }
 
-    // (219:6) <DropdownItem href="#/graphics/azar-games-and-bet-activities">
+    // (219:6) <DropdownItem href="#/graphexpo">
     function create_default_slot_26$2(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Actividad en loteria");
+    			t = text("Expo-Stats FRONT-END");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -20184,7 +20184,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_26$2.name,
     		type: "slot",
-    		source: "(219:6) <DropdownItem href=\\\"#/graphics/azar-games-and-bet-activities\\\">",
+    		source: "(219:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
     	});
 
@@ -20251,7 +20251,7 @@ var app = (function () {
 
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/graphics/azar-games-and-bet-activities",
+    				href: "#/graphexpo",
     				$$slots: { default: [create_default_slot_26$2] },
     				$$scope: { ctx }
     			},
@@ -20528,13 +20528,13 @@ var app = (function () {
     	return block;
     }
 
-    // (230:6) <DropdownItem href="#/graphics/azar-games-and-bet-activities">
+    // (230:6) <DropdownItem href="#/graphexpo">
     function create_default_slot_19$4(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Actividad en loteria");
+    			t = text("Expo-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -20548,7 +20548,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$4.name,
     		type: "slot",
-    		source: "(230:6) <DropdownItem href=\\\"#/graphics/azar-games-and-bet-activities\\\">",
+    		source: "(230:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
     	});
 
@@ -20615,7 +20615,7 @@ var app = (function () {
 
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/graphics/azar-games-and-bet-activities",
+    				href: "#/graphexpo",
     				$$slots: { default: [create_default_slot_19$4] },
     				$$scope: { ctx }
     			},
@@ -21009,7 +21009,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("ERROR: ");
     			t1 = text(/*msg*/ ctx[4]);
-    			add_location(p, file$7, 243, 3, 7672);
+    			add_location(p, file$7, 243, 3, 7604);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21091,7 +21091,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("Correcto: ");
     			t1 = text(/*msg*/ ctx[4]);
-    			add_location(p, file$7, 248, 3, 7814);
+    			add_location(p, file$7, 248, 3, 7746);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21446,24 +21446,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$7, 263, 16, 8110);
-    			add_location(th1, file$7, 264, 16, 8152);
-    			add_location(tr0, file$7, 262, 12, 8088);
-    			add_location(thead, file$7, 261, 8, 8067);
+    			add_location(th0, file$7, 263, 16, 8042);
+    			add_location(th1, file$7, 264, 16, 8084);
+    			add_location(tr0, file$7, 262, 12, 8020);
+    			add_location(thead, file$7, 261, 8, 7999);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$7, 271, 16, 8268);
-    			add_location(td0, file$7, 271, 12, 8264);
+    			add_location(input0, file$7, 271, 16, 8200);
+    			add_location(td0, file$7, 271, 12, 8196);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$7, 272, 16, 8340);
-    			add_location(td1, file$7, 272, 12, 8336);
+    			add_location(input1, file$7, 272, 16, 8272);
+    			add_location(td1, file$7, 272, 12, 8268);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$7, 273, 12, 8406);
+    			add_location(td2, file$7, 273, 12, 8338);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$7, 286, 12, 8928);
-    			add_location(tr1, file$7, 270, 8, 8246);
-    			add_location(tbody, file$7, 267, 8, 8217);
+    			add_location(td3, file$7, 286, 12, 8860);
+    			add_location(tr1, file$7, 270, 8, 8178);
+    			add_location(tbody, file$7, 267, 8, 8149);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -21746,16 +21746,16 @@ var app = (function () {
     			t10 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$7, 336, 4, 10331);
-    			add_location(td1, file$7, 337, 4, 10358);
-    			add_location(td2, file$7, 338, 16, 10394);
-    			add_location(td3, file$7, 339, 16, 10435);
-    			add_location(td4, file$7, 340, 16, 10475);
+    			add_location(td0, file$7, 336, 4, 10263);
+    			add_location(td1, file$7, 337, 4, 10290);
+    			add_location(td2, file$7, 338, 16, 10326);
+    			add_location(td3, file$7, 339, 16, 10367);
+    			add_location(td4, file$7, 340, 16, 10407);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$7, 342, 4, 10510);
+    			add_location(td5, file$7, 342, 4, 10442);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$7, 347, 4, 10696);
-    			add_location(tr, file$7, 335, 3, 10321);
+    			add_location(td6, file$7, 347, 4, 10628);
+    			add_location(tr, file$7, 335, 3, 10253);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22047,36 +22047,36 @@ var app = (function () {
     			t18 = space();
     			td8 = element("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$7, 301, 4, 9291);
-    			add_location(th1, file$7, 302, 4, 9310);
-    			add_location(th2, file$7, 303, 16, 9340);
-    			add_location(th3, file$7, 304, 16, 9376);
-    			add_location(th4, file$7, 305, 16, 9411);
-    			add_location(tr0, file$7, 300, 3, 9281);
-    			add_location(thead, file$7, 299, 2, 9269);
-    			add_location(input0, file$7, 310, 8, 9485);
-    			add_location(td0, file$7, 310, 4, 9481);
+    			add_location(th0, file$7, 301, 4, 9223);
+    			add_location(th1, file$7, 302, 4, 9242);
+    			add_location(th2, file$7, 303, 16, 9272);
+    			add_location(th3, file$7, 304, 16, 9308);
+    			add_location(th4, file$7, 305, 16, 9343);
+    			add_location(tr0, file$7, 300, 3, 9213);
+    			add_location(thead, file$7, 299, 2, 9201);
+    			add_location(input0, file$7, 310, 8, 9417);
+    			add_location(td0, file$7, 310, 4, 9413);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$7, 311, 8, 9543);
-    			add_location(td1, file$7, 311, 4, 9539);
+    			add_location(input1, file$7, 311, 8, 9475);
+    			add_location(td1, file$7, 311, 4, 9471);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$7, 312, 8, 9612);
-    			add_location(td2, file$7, 312, 4, 9608);
+    			add_location(input2, file$7, 312, 8, 9544);
+    			add_location(td2, file$7, 312, 4, 9540);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$7, 313, 8, 9686);
-    			add_location(td3, file$7, 313, 4, 9682);
+    			add_location(input3, file$7, 313, 8, 9618);
+    			add_location(td3, file$7, 313, 4, 9614);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$7, 314, 8, 9759);
-    			add_location(td4, file$7, 314, 4, 9755);
+    			add_location(input4, file$7, 314, 8, 9691);
+    			add_location(td4, file$7, 314, 4, 9687);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$7, 316, 4, 9835);
+    			add_location(td5, file$7, 316, 4, 9767);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$7, 321, 4, 9968);
-    			add_location(tr1, file$7, 309, 3, 9471);
-    			add_location(td7, file$7, 354, 4, 10869);
-    			add_location(td8, file$7, 357, 4, 10975);
-    			add_location(tr2, file$7, 353, 3, 10859);
-    			add_location(tbody, file$7, 308, 2, 9459);
+    			add_location(td6, file$7, 321, 4, 9900);
+    			add_location(tr1, file$7, 309, 3, 9403);
+    			add_location(td7, file$7, 354, 4, 10801);
+    			add_location(td8, file$7, 357, 4, 10907);
+    			add_location(tr2, file$7, 353, 3, 10791);
+    			add_location(tbody, file$7, 308, 2, 9391);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -22406,7 +22406,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t6 = space();
     			info.block.c();
-    			add_location(h1, file$7, 240, 4, 7544);
+    			add_location(h1, file$7, 240, 4, 7476);
     			add_location(main, file$7, 197, 0, 5779);
     		},
     		l: function claim(nodes) {
@@ -23819,7 +23819,7 @@ var app = (function () {
 
     const file$5 = "src\\front\\frontEconomies\\MyGraphEconomies.svelte";
 
-    // (135:2) <NavbarBrand href="#/info">
+    // (108:2) <NavbarBrand href="#/info">
     function create_default_slot_22$2(ctx) {
     	let t;
 
@@ -23839,14 +23839,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_22$2.name,
     		type: "slot",
-    		source: "(135:2) <NavbarBrand href=\\\"#/info\\\">",
+    		source: "(108:2) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (138:4) <DropdownToggle nav caret>
+    // (111:4) <DropdownToggle nav caret>
     function create_default_slot_21$3(ctx) {
     	let t;
 
@@ -23866,14 +23866,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_21$3.name,
     		type: "slot",
-    		source: "(138:4) <DropdownToggle nav caret>",
+    		source: "(111:4) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (140:6) <DropdownItem href="./api/v2/economies">
+    // (113:6) <DropdownItem href="./api/v2/economies">
     function create_default_slot_20$3(ctx) {
     	let t;
 
@@ -23893,14 +23893,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_20$3.name,
     		type: "slot",
-    		source: "(140:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
+    		source: "(113:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (142:6) <DropdownItem href="./api/v1/esco-stats">
+    // (115:6) <DropdownItem href="./api/v1/esco-stats">
     function create_default_slot_19$3(ctx) {
     	let t;
 
@@ -23920,14 +23920,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$3.name,
     		type: "slot",
-    		source: "(142:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
+    		source: "(115:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (144:6) <DropdownItem href="./api/v1/expo-stats">
+    // (117:6) <DropdownItem href="./api/v1/expo-stats">
     function create_default_slot_18$3(ctx) {
     	let t;
 
@@ -23947,14 +23947,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_18$3.name,
     		type: "slot",
-    		source: "(144:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
+    		source: "(117:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (139:4) <DropdownMenu end>
+    // (112:4) <DropdownMenu end>
     function create_default_slot_17$3(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -24079,14 +24079,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_17$3.name,
     		type: "slot",
-    		source: "(139:4) <DropdownMenu end>",
+    		source: "(112:4) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (137:3) <Dropdown >
+    // (110:3) <Dropdown >
     function create_default_slot_16$3(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -24162,14 +24162,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$3.name,
     		type: "slot",
-    		source: "(137:3) <Dropdown >",
+    		source: "(110:3) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (149:4) <DropdownToggle nav caret>
+    // (122:4) <DropdownToggle nav caret>
     function create_default_slot_15$3(ctx) {
     	let t;
 
@@ -24189,14 +24189,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_15$3.name,
     		type: "slot",
-    		source: "(149:4) <DropdownToggle nav caret>",
+    		source: "(122:4) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (151:6) <DropdownItem href="./#/economies">
+    // (124:6) <DropdownItem href="./#/economies">
     function create_default_slot_14$3(ctx) {
     	let t;
 
@@ -24216,20 +24216,20 @@ var app = (function () {
     		block,
     		id: create_default_slot_14$3.name,
     		type: "slot",
-    		source: "(151:6) <DropdownItem href=\\\"./#/economies\\\">",
+    		source: "(124:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (152:6) <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">
+    // (125:6) <DropdownItem href="#/esco-stats">
     function create_default_slot_13$3(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Inversion promoción social");
+    			t = text("esco-Stats FRONT-END");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -24243,20 +24243,20 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$3.name,
     		type: "slot",
-    		source: "(152:6) <DropdownItem href=\\\"#/graphics/line/province-budget-and-investment-in-social-promotion\\\">",
+    		source: "(125:6) <DropdownItem href=\\\"#/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (153:6) <DropdownItem href="#/graphics/azar-games-and-bet-activities">
+    // (126:6) <DropdownItem href="#/expo">
     function create_default_slot_12$3(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Actividad en loteria");
+    			t = text("expo-Stats FRONT-END");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -24270,14 +24270,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12$3.name,
     		type: "slot",
-    		source: "(153:6) <DropdownItem href=\\\"#/graphics/azar-games-and-bet-activities\\\">",
+    		source: "(126:6) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (155:6) <DropdownItem href="#/graph">
+    // (128:6) <DropdownItem href="#/graph">
     function create_default_slot_11$3(ctx) {
     	let t;
 
@@ -24297,14 +24297,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$3.name,
     		type: "slot",
-    		source: "(155:6) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(128:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:4) <DropdownMenu end>
+    // (123:4) <DropdownMenu end>
     function create_default_slot_10$3(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -24328,7 +24328,7 @@ var app = (function () {
 
     	dropdownitem1 = new DropdownItem({
     			props: {
-    				href: "#/graphics/line/province-budget-and-investment-in-social-promotion",
+    				href: "#/esco-stats",
     				$$slots: { default: [create_default_slot_13$3] },
     				$$scope: { ctx }
     			},
@@ -24337,7 +24337,7 @@ var app = (function () {
 
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/graphics/azar-games-and-bet-activities",
+    				href: "#/expo",
     				$$slots: { default: [create_default_slot_12$3] },
     				$$scope: { ctx }
     			},
@@ -24443,14 +24443,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10$3.name,
     		type: "slot",
-    		source: "(150:4) <DropdownMenu end>",
+    		source: "(123:4) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (148:12) <Dropdown>
+    // (121:12) <Dropdown>
     function create_default_slot_9$3(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -24526,14 +24526,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$3.name,
     		type: "slot",
-    		source: "(148:12) <Dropdown>",
+    		source: "(121:12) <Dropdown>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (160:4) <DropdownToggle nav caret>
+    // (133:4) <DropdownToggle nav caret>
     function create_default_slot_8$3(ctx) {
     	let t;
 
@@ -24553,14 +24553,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$3.name,
     		type: "slot",
-    		source: "(160:4) <DropdownToggle nav caret>",
+    		source: "(133:4) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (162:6) <DropdownItem href="./#/economies-graph">
+    // (135:6) <DropdownItem href="./#/economies-graph">
     function create_default_slot_7$3(ctx) {
     	let t;
 
@@ -24580,20 +24580,20 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$3.name,
     		type: "slot",
-    		source: "(162:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
+    		source: "(135:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (163:6) <DropdownItem href="#/graphics/line/province-budget-and-investment-in-social-promotion">
+    // (136:6) <DropdownItem href="#/graphesco">
     function create_default_slot_6$3(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Inversion promoción social");
+    			t = text("esco-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -24607,20 +24607,20 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$3.name,
     		type: "slot",
-    		source: "(163:6) <DropdownItem href=\\\"#/graphics/line/province-budget-and-investment-in-social-promotion\\\">",
+    		source: "(136:6) <DropdownItem href=\\\"#/graphesco\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (164:6) <DropdownItem href="#/graphics/azar-games-and-bet-activities">
+    // (137:6) <DropdownItem href="#/#/graphexpo">
     function create_default_slot_5$3(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Actividad en loteria");
+    			t = text("Expo-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -24634,14 +24634,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$3.name,
     		type: "slot",
-    		source: "(164:6) <DropdownItem href=\\\"#/graphics/azar-games-and-bet-activities\\\">",
+    		source: "(137:6) <DropdownItem href=\\\"#/#/graphexpo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (166:6) <DropdownItem href="#/graph">
+    // (139:6) <DropdownItem href="#/graph">
     function create_default_slot_4$3(ctx) {
     	let t;
 
@@ -24661,14 +24661,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$3.name,
     		type: "slot",
-    		source: "(166:6) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(139:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:4) <DropdownMenu end>
+    // (134:4) <DropdownMenu end>
     function create_default_slot_3$3(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -24692,7 +24692,7 @@ var app = (function () {
 
     	dropdownitem1 = new DropdownItem({
     			props: {
-    				href: "#/graphics/line/province-budget-and-investment-in-social-promotion",
+    				href: "#/graphesco",
     				$$slots: { default: [create_default_slot_6$3] },
     				$$scope: { ctx }
     			},
@@ -24701,7 +24701,7 @@ var app = (function () {
 
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/graphics/azar-games-and-bet-activities",
+    				href: "#/#/graphexpo",
     				$$slots: { default: [create_default_slot_5$3] },
     				$$scope: { ctx }
     			},
@@ -24807,14 +24807,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$3.name,
     		type: "slot",
-    		source: "(161:4) <DropdownMenu end>",
+    		source: "(134:4) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (159:5) <Dropdown >
+    // (132:5) <Dropdown >
     function create_default_slot_2$3(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -24890,14 +24890,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$3.name,
     		type: "slot",
-    		source: "(159:5) <Dropdown >",
+    		source: "(132:5) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:2) <Nav navbar>
+    // (109:2) <Nav navbar>
     function create_default_slot_1$3(ctx) {
     	let dropdown0;
     	let t0;
@@ -24995,14 +24995,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$3.name,
     		type: "slot",
-    		source: "(136:2) <Nav navbar>",
+    		source: "(109:2) <Nav navbar>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (134:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (107:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
     function create_default_slot$3(ctx) {
     	let navbarbrand;
     	let t;
@@ -25077,7 +25077,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(134:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(107:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -25134,22 +25134,23 @@ var app = (function () {
     			div = element("div");
     			t3 = space();
     			p = element("p");
+    			p.textContent = "A simple demo showcasing an area chart with negative values and multiple\r\n            data series. Note that interacting with one data series will dim the\r\n            others, making it easier to distinguish between them.";
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$5, 123, 4, 3979);
+    			add_location(script0, file$5, 96, 4, 3249);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$5, 124, 4, 4071);
+    			add_location(script1, file$5, 97, 4, 3341);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$5, 125, 4, 4170);
+    			add_location(script2, file$5, 98, 4, 3440);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$5, 126, 4, 4271);
-    			add_location(br, file$5, 174, 4, 6293);
+    			add_location(script3, file$5, 99, 4, 3541);
+    			add_location(br, file$5, 147, 4, 5361);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$5, 176, 8, 6347);
+    			add_location(div, file$5, 149, 8, 5415);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$5, 177, 8, 6383);
+    			add_location(p, file$5, 150, 8, 5451);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$5, 175, 4, 6303);
-    			add_location(main, file$5, 131, 0, 4392);
+    			add_location(figure, file$5, 148, 4, 5371);
+    			add_location(main, file$5, 104, 0, 3662);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -25292,22 +25293,9 @@ var app = (function () {
     	async function loadGraph() {
     		Highcharts.chart('container', {
     			chart: { type: 'area' },
-    			title: { text: 'Grafica de economia mundial' },
-    			xAxis: {
-    				categories: country,
-    				tickmarkPlacement: 'on',
-    				title: { enabled: false }
-    			},
-    			yAxis: { title: { text: 'economia' } },
-    			tooltip: { split: true, valueSuffix: 'economia' },
-    			plotOptions: {
-    				area: {
-    					stacking: 'normal',
-    					lineColor: '#666666',
-    					lineWidth: 1,
-    					marker: { lineWidth: 1, lineColor: '#666666' }
-    				}
-    			},
+    			title: { text: 'Economia Mundial' },
+    			xAxis: { categories: country },
+    			credits: { enabled: false },
     			series: [
     				{ name: 'percapita', data: percapita },
     				{ name: 'currency', data: currency },

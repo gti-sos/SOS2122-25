@@ -4,8 +4,8 @@
 
 
 <body>
-	  <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-		  <NavbarBrand style=color:black; href="#/info">Cargar Aplicación</NavbarBrand>
+	  <Navbar style="background-color: #FF7F50; color:white;" light expand="lg">
+		  <NavbarBrand style=color:black; href="#/info">Cargar APIs</NavbarBrand>
 		  <Nav navbar>
 			
 		  </Nav>
