@@ -212,7 +212,7 @@
 		  </NavItem>-->
 		</Nav>
 	</Navbar>
-    <h1>Economia Mundial</h1>
+    <h1>Exportaciones</h1>
 	<Button on:click="{getPgAnt}">
 		Página Anterior
 	</Button>
