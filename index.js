@@ -16,6 +16,16 @@ db_economies_stats = new Datastore();
 db_esco_stats = new Datastore();
 db_expo_stats = new Datastore();
 
+const cors = require("cors"); 
+const request = require("request");
+
+
+app.use(cors());
+
+//Proxy economies
+var paths='/remoteAPI';
+var apiServerHost = 'https://sos2122-20.herokuapp.com/api/v2/economies';
+
 
 economies_stats_API.register(app,db_economies_stats);
 esco_stats_API.register(app,db_esco_stats);
