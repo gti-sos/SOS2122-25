@@ -13,6 +13,7 @@
 	import EditExpo from "./expo-stats/EditExpo.svelte";
 	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
+	import Integration from './frontEconomies/integrationApi1.svelte';
 	//export let name;
 
 	const routes={
@@ -28,7 +29,8 @@
 		"/expo" : Expo,
 		"/expo/:country/:year" : EditExpo,
 		"/graphexpo" : ExpoGraph,
-		"/graph": MyGraph
+		"/graph": MyGraph,
+		"/integracion1": Integration
 
 
 	};
