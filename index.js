@@ -24,7 +24,7 @@ app.use(cors());
 
 //Proxy economies
 var paths='/remoteAPI';
-var apiServerHost = 'https://sos2122-20.herokuapp.com/api/v2/economies';
+var apiServerHost = 'https://sos2122-25.herokuapp.com/api/v2/economies';
 
 
 economies_stats_API.register(app,db_economies_stats);
