@@ -15,13 +15,13 @@
 
     async function getData(){
         console.log("Fetching Economies....");
-        const res = await fetch("https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats");
+        const res = await fetch("/remoteApi");
         if(res.ok){
             const data = await res.json();          
             datos = data;
             //si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
             if (datos.length == 0) {
-                const res = await fetch("/remoteApi");
+                const res = await fetch("/api/v2/economies/loadInitialData");
                 console.log("Entradas recibidas: "+datos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
             datosOrdenados = datos.sort(function (a, b){
@@ -64,7 +64,7 @@
                 type: 'area'
             },
             title: {
-                text: 'Fertilizantes'
+                text: 'Economia Mundial'
             },
             xAxis: {
                 categories: country
@@ -94,9 +94,9 @@
 
 <svelte:head>
 
-    <script src="https://code.highcharts.com/highcharts.js"on:load="{loadGraph}"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"on:load="{loadGraph}"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"on:load="{loadGraph}"></script>
 
 
