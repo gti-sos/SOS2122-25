@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35731/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -8582,7 +8582,7 @@ var app = (function () {
     	container_1 = new Container({
     			props: {
     				fluid: /*container*/ ctx[0] === 'fluid',
-    				$$slots: { default: [create_default_slot$d] },
+    				$$slots: { default: [create_default_slot$c] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -8632,7 +8632,7 @@ var app = (function () {
     }
 
     // (41:4) <Container fluid={container === 'fluid'}>
-    function create_default_slot$d(ctx) {
+    function create_default_slot$c(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[10].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[11], null);
@@ -8680,7 +8680,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$d.name,
+    		id: create_default_slot$c.name,
     		type: "slot",
     		source: "(41:4) <Container fluid={container === 'fluid'}>",
     		ctx
@@ -10214,7 +10214,7 @@ var app = (function () {
 
     	colgroup = new Colgroup({
     			props: {
-    				$$slots: { default: [create_default_slot_3$b] },
+    				$$slots: { default: [create_default_slot_3$a] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -10222,7 +10222,7 @@ var app = (function () {
 
     	tableheader = new TableHeader({
     			props: {
-    				$$slots: { default: [create_default_slot_2$b] },
+    				$$slots: { default: [create_default_slot_2$a] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -10242,7 +10242,7 @@ var app = (function () {
 
     	tablefooter = new TableFooter({
     			props: {
-    				$$slots: { default: [create_default_slot_1$c] },
+    				$$slots: { default: [create_default_slot_1$b] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -10379,7 +10379,7 @@ var app = (function () {
     }
 
     // (34:6) <Colgroup>
-    function create_default_slot_3$b(ctx) {
+    function create_default_slot_3$a(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[11].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[12], null);
@@ -10427,7 +10427,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$b.name,
+    		id: create_default_slot_3$a.name,
     		type: "slot",
     		source: "(34:6) <Colgroup>",
     		ctx
@@ -10437,7 +10437,7 @@ var app = (function () {
     }
 
     // (37:6) <TableHeader>
-    function create_default_slot_2$b(ctx) {
+    function create_default_slot_2$a(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[11].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[12], get_default_slot_context);
@@ -10485,7 +10485,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$b.name,
+    		id: create_default_slot_2$a.name,
     		type: "slot",
     		source: "(37:6) <TableHeader>",
     		ctx
@@ -10562,7 +10562,7 @@ var app = (function () {
     }
 
     // (47:6) <TableFooter>
-    function create_default_slot_1$c(ctx) {
+    function create_default_slot_1$b(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[11].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[12], null);
@@ -10610,7 +10610,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$c.name,
+    		id: create_default_slot_1$b.name,
     		type: "slot",
     		source: "(47:6) <TableFooter>",
     		ctx
@@ -10620,7 +10620,7 @@ var app = (function () {
     }
 
     // (31:0) <ResponsiveContainer {responsive}>
-    function create_default_slot$c(ctx) {
+    function create_default_slot$b(ctx) {
     	let table;
     	let current_block_type_index;
     	let if_block;
@@ -10703,7 +10703,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$c.name,
+    		id: create_default_slot$b.name,
     		type: "slot",
     		source: "(31:0) <ResponsiveContainer {responsive}>",
     		ctx
@@ -10719,7 +10719,7 @@ var app = (function () {
     	responsivecontainer = new ResponsiveContainer({
     			props: {
     				responsive: /*responsive*/ ctx[0],
-    				$$slots: { default: [create_default_slot$c] },
+    				$$slots: { default: [create_default_slot$b] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -10966,7 +10966,7 @@ var app = (function () {
     const file$d = "src\\front\\Home.svelte";
 
     // (8:4) <NavbarBrand style=color:black; href="#/info">
-    function create_default_slot_1$b(ctx) {
+    function create_default_slot_1$a(ctx) {
     	let t;
 
     	const block = {
@@ -10983,7 +10983,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$b.name,
+    		id: create_default_slot_1$a.name,
     		type: "slot",
     		source: "(8:4) <NavbarBrand style=color:black; href=\\\"#/info\\\">",
     		ctx
@@ -10993,7 +10993,7 @@ var app = (function () {
     }
 
     // (7:3) <Navbar style="background-color: #FF7F50; color:white;" light expand="lg">
-    function create_default_slot$b(ctx) {
+    function create_default_slot$a(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -11003,7 +11003,7 @@ var app = (function () {
     			props: {
     				style: "color:black;",
     				href: "#/info",
-    				$$slots: { default: [create_default_slot_1$b] },
+    				$$slots: { default: [create_default_slot_1$a] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11052,7 +11052,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$b.name,
+    		id: create_default_slot$a.name,
     		type: "slot",
     		source: "(7:3) <Navbar style=\\\"background-color: #FF7F50; color:white;\\\" light expand=\\\"lg\\\">",
     		ctx
@@ -11071,7 +11071,7 @@ var app = (function () {
     				style: "background-color: #FF7F50; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot$b] },
+    				$$slots: { default: [create_default_slot$a] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11170,7 +11170,7 @@ var app = (function () {
     const file$c = "src\\front\\Info.svelte";
 
     // (8:2) <NavbarBrand href="#/info">
-    function create_default_slot_21$9(ctx) {
+    function create_default_slot_21$8(ctx) {
     	let t;
 
     	const block = {
@@ -11187,7 +11187,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$9.name,
+    		id: create_default_slot_21$8.name,
     		type: "slot",
     		source: "(8:2) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
@@ -11197,7 +11197,7 @@ var app = (function () {
     }
 
     // (11:4) <DropdownToggle nav caret>
-    function create_default_slot_20$9(ctx) {
+    function create_default_slot_20$8(ctx) {
     	let t;
 
     	const block = {
@@ -11214,7 +11214,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$9.name,
+    		id: create_default_slot_20$8.name,
     		type: "slot",
     		source: "(11:4) <DropdownToggle nav caret>",
     		ctx
@@ -11224,7 +11224,7 @@ var app = (function () {
     }
 
     // (13:6) <DropdownItem href="./api/v2/economies">
-    function create_default_slot_19$9(ctx) {
+    function create_default_slot_19$8(ctx) {
     	let t;
 
     	const block = {
@@ -11241,7 +11241,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$9.name,
+    		id: create_default_slot_19$8.name,
     		type: "slot",
     		source: "(13:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
@@ -11251,7 +11251,7 @@ var app = (function () {
     }
 
     // (15:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_18$9(ctx) {
+    function create_default_slot_18$8(ctx) {
     	let t;
 
     	const block = {
@@ -11268,7 +11268,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$9.name,
+    		id: create_default_slot_18$8.name,
     		type: "slot",
     		source: "(15:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
@@ -11278,7 +11278,7 @@ var app = (function () {
     }
 
     // (17:6) <DropdownItem href="./api/v1/expo">
-    function create_default_slot_17$9(ctx) {
+    function create_default_slot_17$8(ctx) {
     	let t;
 
     	const block = {
@@ -11295,7 +11295,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$9.name,
+    		id: create_default_slot_17$8.name,
     		type: "slot",
     		source: "(17:6) <DropdownItem href=\\\"./api/v1/expo\\\">",
     		ctx
@@ -11305,7 +11305,7 @@ var app = (function () {
     }
 
     // (12:4) <DropdownMenu end>
-    function create_default_slot_16$9(ctx) {
+    function create_default_slot_16$8(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -11320,7 +11320,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./api/v2/economies",
-    				$$slots: { default: [create_default_slot_19$9] },
+    				$$slots: { default: [create_default_slot_19$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11331,7 +11331,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_18$9] },
+    				$$slots: { default: [create_default_slot_18$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11342,7 +11342,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "./api/v1/expo",
-    				$$slots: { default: [create_default_slot_17$9] },
+    				$$slots: { default: [create_default_slot_17$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11427,7 +11427,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$9.name,
+    		id: create_default_slot_16$8.name,
     		type: "slot",
     		source: "(12:4) <DropdownMenu end>",
     		ctx
@@ -11437,7 +11437,7 @@ var app = (function () {
     }
 
     // (10:3) <Dropdown >
-    function create_default_slot_15$9(ctx) {
+    function create_default_slot_15$8(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -11447,7 +11447,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_20$9] },
+    				$$slots: { default: [create_default_slot_20$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11456,7 +11456,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_16$9] },
+    				$$slots: { default: [create_default_slot_16$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11510,7 +11510,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$9.name,
+    		id: create_default_slot_15$8.name,
     		type: "slot",
     		source: "(10:3) <Dropdown >",
     		ctx
@@ -11520,7 +11520,7 @@ var app = (function () {
     }
 
     // (22:4) <DropdownToggle nav caret>
-    function create_default_slot_14$9(ctx) {
+    function create_default_slot_14$8(ctx) {
     	let t;
 
     	const block = {
@@ -11537,7 +11537,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$9.name,
+    		id: create_default_slot_14$8.name,
     		type: "slot",
     		source: "(22:4) <DropdownToggle nav caret>",
     		ctx
@@ -11547,7 +11547,7 @@ var app = (function () {
     }
 
     // (24:6) <DropdownItem href="./#/economies">
-    function create_default_slot_13$9(ctx) {
+    function create_default_slot_13$8(ctx) {
     	let t;
 
     	const block = {
@@ -11564,7 +11564,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$9.name,
+    		id: create_default_slot_13$8.name,
     		type: "slot",
     		source: "(24:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
@@ -11574,7 +11574,7 @@ var app = (function () {
     }
 
     // (26:6) <DropdownItem href="./#/esco-stats">
-    function create_default_slot_12$9(ctx) {
+    function create_default_slot_12$8(ctx) {
     	let t;
 
     	const block = {
@@ -11591,7 +11591,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$9.name,
+    		id: create_default_slot_12$8.name,
     		type: "slot",
     		source: "(26:6) <DropdownItem href=\\\"./#/esco-stats\\\">",
     		ctx
@@ -11601,7 +11601,7 @@ var app = (function () {
     }
 
     // (28:6) <DropdownItem href="#/expo">
-    function create_default_slot_11$9(ctx) {
+    function create_default_slot_11$8(ctx) {
     	let t;
 
     	const block = {
@@ -11618,7 +11618,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$9.name,
+    		id: create_default_slot_11$8.name,
     		type: "slot",
     		source: "(28:6) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
@@ -11628,7 +11628,7 @@ var app = (function () {
     }
 
     // (23:4) <DropdownMenu end>
-    function create_default_slot_10$9(ctx) {
+    function create_default_slot_10$8(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -11643,7 +11643,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_13$9] },
+    				$$slots: { default: [create_default_slot_13$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11654,7 +11654,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/esco-stats",
-    				$$slots: { default: [create_default_slot_12$9] },
+    				$$slots: { default: [create_default_slot_12$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11665,7 +11665,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/expo",
-    				$$slots: { default: [create_default_slot_11$9] },
+    				$$slots: { default: [create_default_slot_11$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11750,7 +11750,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$9.name,
+    		id: create_default_slot_10$8.name,
     		type: "slot",
     		source: "(23:4) <DropdownMenu end>",
     		ctx
@@ -11760,7 +11760,7 @@ var app = (function () {
     }
 
     // (21:12) <Dropdown>
-    function create_default_slot_9$9(ctx) {
+    function create_default_slot_9$8(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -11770,7 +11770,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_14$9] },
+    				$$slots: { default: [create_default_slot_14$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11779,7 +11779,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_10$9] },
+    				$$slots: { default: [create_default_slot_10$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11833,7 +11833,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$9.name,
+    		id: create_default_slot_9$8.name,
     		type: "slot",
     		source: "(21:12) <Dropdown>",
     		ctx
@@ -11843,7 +11843,7 @@ var app = (function () {
     }
 
     // (33:3) <DropdownToggle nav caret>
-    function create_default_slot_8$9(ctx) {
+    function create_default_slot_8$8(ctx) {
     	let t;
 
     	const block = {
@@ -11860,7 +11860,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$9.name,
+    		id: create_default_slot_8$8.name,
     		type: "slot",
     		source: "(33:3) <DropdownToggle nav caret>",
     		ctx
@@ -11870,7 +11870,7 @@ var app = (function () {
     }
 
     // (35:5) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_7$9(ctx) {
+    function create_default_slot_7$8(ctx) {
     	let t;
 
     	const block = {
@@ -11887,7 +11887,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$9.name,
+    		id: create_default_slot_7$8.name,
     		type: "slot",
     		source: "(35:5) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -11897,7 +11897,7 @@ var app = (function () {
     }
 
     // (37:5) <DropdownItem href="./#/graphesco">
-    function create_default_slot_6$9(ctx) {
+    function create_default_slot_6$8(ctx) {
     	let t;
 
     	const block = {
@@ -11914,7 +11914,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$9.name,
+    		id: create_default_slot_6$8.name,
     		type: "slot",
     		source: "(37:5) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -11924,7 +11924,7 @@ var app = (function () {
     }
 
     // (39:5) <DropdownItem href="#/graphexpo">
-    function create_default_slot_5$9(ctx) {
+    function create_default_slot_5$8(ctx) {
     	let t;
 
     	const block = {
@@ -11941,7 +11941,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$9.name,
+    		id: create_default_slot_5$8.name,
     		type: "slot",
     		source: "(39:5) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
@@ -11951,7 +11951,7 @@ var app = (function () {
     }
 
     // (41:13) <DropdownItem href="./#/graph">
-    function create_default_slot_4$a(ctx) {
+    function create_default_slot_4$9(ctx) {
     	let t;
 
     	const block = {
@@ -11968,7 +11968,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$a.name,
+    		id: create_default_slot_4$9.name,
     		type: "slot",
     		source: "(41:13) <DropdownItem href=\\\"./#/graph\\\">",
     		ctx
@@ -11978,7 +11978,7 @@ var app = (function () {
     }
 
     // (34:3) <DropdownMenu end>
-    function create_default_slot_3$a(ctx) {
+    function create_default_slot_3$9(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -11997,7 +11997,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_7$9] },
+    				$$slots: { default: [create_default_slot_7$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12008,7 +12008,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_6$9] },
+    				$$slots: { default: [create_default_slot_6$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12019,7 +12019,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graphexpo",
-    				$$slots: { default: [create_default_slot_5$9] },
+    				$$slots: { default: [create_default_slot_5$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12030,7 +12030,7 @@ var app = (function () {
     	dropdownitem6 = new DropdownItem({
     			props: {
     				href: "./#/graph",
-    				$$slots: { default: [create_default_slot_4$a] },
+    				$$slots: { default: [create_default_slot_4$9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12138,7 +12138,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$a.name,
+    		id: create_default_slot_3$9.name,
     		type: "slot",
     		source: "(34:3) <DropdownMenu end>",
     		ctx
@@ -12148,7 +12148,7 @@ var app = (function () {
     }
 
     // (32:4) <Dropdown >
-    function create_default_slot_2$a(ctx) {
+    function create_default_slot_2$9(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -12158,7 +12158,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_8$9] },
+    				$$slots: { default: [create_default_slot_8$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12167,7 +12167,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_3$a] },
+    				$$slots: { default: [create_default_slot_3$9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12221,7 +12221,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$a.name,
+    		id: create_default_slot_2$9.name,
     		type: "slot",
     		source: "(32:4) <Dropdown >",
     		ctx
@@ -12231,7 +12231,7 @@ var app = (function () {
     }
 
     // (9:2) <Nav navbar>
-    function create_default_slot_1$a(ctx) {
+    function create_default_slot_1$9(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -12241,7 +12241,7 @@ var app = (function () {
 
     	dropdown0 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_15$9] },
+    				$$slots: { default: [create_default_slot_15$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12249,7 +12249,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_9$9] },
+    				$$slots: { default: [create_default_slot_9$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12257,7 +12257,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_2$a] },
+    				$$slots: { default: [create_default_slot_2$9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12326,7 +12326,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$a.name,
+    		id: create_default_slot_1$9.name,
     		type: "slot",
     		source: "(9:2) <Nav navbar>",
     		ctx
@@ -12336,7 +12336,7 @@ var app = (function () {
     }
 
     // (7:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot$a(ctx) {
+    function create_default_slot$9(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -12345,7 +12345,7 @@ var app = (function () {
     	navbarbrand = new NavbarBrand({
     			props: {
     				href: "#/info",
-    				$$slots: { default: [create_default_slot_21$9] },
+    				$$slots: { default: [create_default_slot_21$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12354,7 +12354,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_1$a] },
+    				$$slots: { default: [create_default_slot_1$9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12408,7 +12408,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$a.name,
+    		id: create_default_slot$9.name,
     		type: "slot",
     		source: "(7:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -12574,7 +12574,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot$a] },
+    				$$slots: { default: [create_default_slot$9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -12785,7 +12785,6 @@ var app = (function () {
     			attr_dev(a2, "href", "https://github.com/AngelSM11");
     			add_location(a2, file$c, 54, 9, 2074);
     			attr_dev(a3, "href", "https://ourworldindata.org/esco");
-<<<<<<< HEAD
     			add_location(a3, file$c, 54, 88, 2153);
     			add_location(p1, file$c, 54, 4, 2069);
     			attr_dev(a4, "href", "https://github.com/adriperez01");
@@ -12877,97 +12876,6 @@ var app = (function () {
     			attr_dev(a32, "href", "./#/graph");
     			add_location(a32, file$c, 82, 6, 5088);
     			add_location(p15, file$c, 82, 1, 5083);
-=======
-    			add_location(a3, file$b, 54, 88, 2153);
-    			add_location(p1, file$b, 54, 4, 2069);
-    			attr_dev(a4, "href", "https://github.com/adrianperez01_");
-    			add_location(a4, file$b, 55, 9, 2225);
-    			add_location(p2, file$b, 55, 4, 2220);
-    			add_location(br0, file$b, 56, 4, 2333);
-    			add_location(h31, file$b, 57, 4, 2343);
-    			add_location(br1, file$b, 58, 4, 2486);
-    			add_location(br2, file$b, 58, 8, 2490);
-    			add_location(h32, file$b, 59, 4, 2500);
-    			attr_dev(a5, "href", "https://github.com/gti-sos/SOS2122-25.git");
-    			add_location(a5, file$b, 59, 24, 2520);
-    			add_location(br3, file$b, 60, 4, 2600);
-    			add_location(br4, file$b, 60, 8, 2604);
-    			add_location(h33, file$b, 61, 4, 2614);
-    			attr_dev(a6, "href", "http://SOS2122-25.herokuapp.com");
-    			add_location(a6, file$b, 61, 17, 2627);
-    			add_location(br5, file$b, 62, 4, 2710);
-    			add_location(br6, file$b, 62, 8, 2714);
-    			add_location(h34, file$b, 63, 4, 2724);
-    			attr_dev(a7, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies/docs");
-    			add_location(a7, file$b, 64, 9, 2763);
-    			attr_dev(a8, "href", "https://github.com/damiangc99");
-    			add_location(a8, file$b, 64, 147, 2901);
-    			add_location(p3, file$b, 64, 4, 2758);
-    			attr_dev(a9, "href", "https://documenter.getpostman.com/view/19481634/UyxjFko9");
-    			add_location(a9, file$b, 65, 9, 2985);
-    			attr_dev(a10, "href", "https://github.com/AngelSM11");
-    			add_location(a10, file$b, 65, 150, 3126);
-    			add_location(p4, file$b, 65, 4, 2980);
-    			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo/docs");
-    			add_location(a11, file$b, 66, 9, 3201);
-    			attr_dev(a12, "href", "https://github.com/adrianperez01_");
-    			add_location(a12, file$b, 66, 137, 3329);
-    			add_location(p5, file$b, 66, 4, 3196);
-    			add_location(br7, file$b, 67, 4, 3406);
-    			add_location(h35, file$b, 68, 1, 3413);
-    			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies");
-    			add_location(a13, file$b, 69, 6, 3435);
-    			attr_dev(a14, "href", "https://github.com/Damiangc99");
-    			add_location(a14, file$b, 69, 134, 3563);
-    			add_location(p6, file$b, 69, 1, 3430);
-    			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats");
-    			add_location(a15, file$b, 70, 6, 3630);
-    			attr_dev(a16, "href", "https://github.com/AngelSM11");
-    			add_location(a16, file$b, 70, 136, 3760);
-    			add_location(p7, file$b, 70, 1, 3625);
-    			attr_dev(a17, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo");
-    			add_location(a17, file$b, 71, 6, 3832);
-    			attr_dev(a18, "href", "https://github.com/adrianperez01_");
-    			add_location(a18, file$b, 71, 124, 3950);
-    			add_location(p8, file$b, 71, 1, 3827);
-    			add_location(br8, file$b, 72, 4, 4027);
-    			add_location(h36, file$b, 73, 4, 4037);
-    			attr_dev(a19, "href", "#/economies");
-    			add_location(a19, file$b, 74, 6, 4064);
-    			attr_dev(a20, "href", "https://github.com/Damiangc99");
-    			add_location(a20, file$b, 74, 91, 4149);
-    			add_location(p9, file$b, 74, 1, 4059);
-    			attr_dev(a21, "href", "#/esco-stats");
-    			add_location(a21, file$b, 75, 6, 4216);
-    			attr_dev(a22, "href", "https://github.com/AngelSM11");
-    			add_location(a22, file$b, 75, 93, 4303);
-    			add_location(p10, file$b, 75, 1, 4211);
-    			attr_dev(a23, "href", "#/expo");
-    			add_location(a23, file$b, 76, 6, 4375);
-    			attr_dev(a24, "href", "https://github.com/adrianperez01_");
-    			add_location(a24, file$b, 76, 81, 4450);
-    			add_location(p11, file$b, 76, 1, 4370);
-    			add_location(br9, file$b, 77, 4, 4527);
-    			add_location(h37, file$b, 78, 4, 4537);
-    			attr_dev(a25, "href", "./#/economies-graph");
-    			add_location(a25, file$b, 79, 9, 4566);
-    			attr_dev(a26, "href", "https://github.com/Damiangc99");
-    			add_location(a26, file$b, 79, 108, 4665);
-    			add_location(p12, file$b, 79, 4, 4561);
-    			attr_dev(a27, "href", "./#/graphesco");
-    			add_location(a27, file$b, 80, 9, 4735);
-    			attr_dev(a28, "href", "https://github.com/AngelSM11");
-    			add_location(a28, file$b, 80, 96, 4822);
-    			add_location(p13, file$b, 80, 4, 4730);
-    			attr_dev(a29, "href", "#/expo");
-    			add_location(a29, file$b, 81, 9, 4897);
-    			attr_dev(a30, "href", "https://github.com/adrianperez01_");
-    			add_location(a30, file$b, 81, 84, 4972);
-    			add_location(p14, file$b, 81, 4, 4892);
-    			attr_dev(a31, "href", "./#/graph");
-    			add_location(a31, file$b, 82, 6, 5051);
-    			add_location(p15, file$b, 82, 1, 5046);
->>>>>>> 247af78e907b7334dc2368c13d4739ad3eb01ce4
     			attr_dev(main, "class", "svelte-95ufxa");
     			add_location(main, file$c, 49, 0, 1849);
     		},
@@ -13805,7 +13713,7 @@ var app = (function () {
     }
 
     // (203:12) <Dropdown>
-    function create_default_slot_22$6(ctx) {
+    function create_default_slot_22$5(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -13878,7 +13786,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$6.name,
+    		id: create_default_slot_22$5.name,
     		type: "slot",
     		source: "(203:12) <Dropdown>",
     		ctx
@@ -13888,7 +13796,7 @@ var app = (function () {
     }
 
     // (215:4) <DropdownToggle nav caret>
-    function create_default_slot_21$8(ctx) {
+    function create_default_slot_21$7(ctx) {
     	let t;
 
     	const block = {
@@ -13905,7 +13813,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$8.name,
+    		id: create_default_slot_21$7.name,
     		type: "slot",
     		source: "(215:4) <DropdownToggle nav caret>",
     		ctx
@@ -13915,7 +13823,7 @@ var app = (function () {
     }
 
     // (217:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_20$8(ctx) {
+    function create_default_slot_20$7(ctx) {
     	let t;
 
     	const block = {
@@ -13932,7 +13840,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$8.name,
+    		id: create_default_slot_20$7.name,
     		type: "slot",
     		source: "(217:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -13942,7 +13850,7 @@ var app = (function () {
     }
 
     // (219:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_19$8(ctx) {
+    function create_default_slot_19$7(ctx) {
     	let t;
 
     	const block = {
@@ -13959,7 +13867,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$8.name,
+    		id: create_default_slot_19$7.name,
     		type: "slot",
     		source: "(219:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -13969,7 +13877,7 @@ var app = (function () {
     }
 
     // (221:6) <DropdownItem href="#/graphexpo">
-    function create_default_slot_18$8(ctx) {
+    function create_default_slot_18$7(ctx) {
     	let t;
 
     	const block = {
@@ -13986,7 +13894,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$8.name,
+    		id: create_default_slot_18$7.name,
     		type: "slot",
     		source: "(221:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
@@ -13996,7 +13904,7 @@ var app = (function () {
     }
 
     // (223:6) <DropdownItem href="./#/graph">
-    function create_default_slot_17$8(ctx) {
+    function create_default_slot_17$7(ctx) {
     	let t;
 
     	const block = {
@@ -14013,7 +13921,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$8.name,
+    		id: create_default_slot_17$7.name,
     		type: "slot",
     		source: "(223:6) <DropdownItem href=\\\"./#/graph\\\">",
     		ctx
@@ -14023,7 +13931,7 @@ var app = (function () {
     }
 
     // (216:4) <DropdownMenu end>
-    function create_default_slot_16$8(ctx) {
+    function create_default_slot_16$7(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -14042,7 +13950,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_20$8] },
+    				$$slots: { default: [create_default_slot_20$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14053,7 +13961,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_19$8] },
+    				$$slots: { default: [create_default_slot_19$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14064,7 +13972,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graphexpo",
-    				$$slots: { default: [create_default_slot_18$8] },
+    				$$slots: { default: [create_default_slot_18$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14075,7 +13983,7 @@ var app = (function () {
     	dropdownitem6 = new DropdownItem({
     			props: {
     				href: "./#/graph",
-    				$$slots: { default: [create_default_slot_17$8] },
+    				$$slots: { default: [create_default_slot_17$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14183,7 +14091,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$8.name,
+    		id: create_default_slot_16$7.name,
     		type: "slot",
     		source: "(216:4) <DropdownMenu end>",
     		ctx
@@ -14193,7 +14101,7 @@ var app = (function () {
     }
 
     // (214:5) <Dropdown >
-    function create_default_slot_15$8(ctx) {
+    function create_default_slot_15$7(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -14203,7 +14111,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_21$8] },
+    				$$slots: { default: [create_default_slot_21$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14212,7 +14120,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_16$8] },
+    				$$slots: { default: [create_default_slot_16$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14266,7 +14174,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$8.name,
+    		id: create_default_slot_15$7.name,
     		type: "slot",
     		source: "(214:5) <Dropdown >",
     		ctx
@@ -14276,7 +14184,7 @@ var app = (function () {
     }
 
     // (191:2) <Nav navbar>
-    function create_default_slot_14$8(ctx) {
+    function create_default_slot_14$7(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -14294,7 +14202,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_22$6] },
+    				$$slots: { default: [create_default_slot_22$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14302,7 +14210,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_15$8] },
+    				$$slots: { default: [create_default_slot_15$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14371,7 +14279,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$8.name,
+    		id: create_default_slot_14$7.name,
     		type: "slot",
     		source: "(191:2) <Nav navbar>",
     		ctx
@@ -14381,7 +14289,7 @@ var app = (function () {
     }
 
     // (189:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot_13$8(ctx) {
+    function create_default_slot_13$7(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -14399,7 +14307,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_14$8] },
+    				$$slots: { default: [create_default_slot_14$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14453,7 +14361,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$8.name,
+    		id: create_default_slot_13$7.name,
     		type: "slot",
     		source: "(189:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -14463,7 +14371,7 @@ var app = (function () {
     }
 
     // (232:1) <Button on:click="{getPgAnt}">
-    function create_default_slot_12$8(ctx) {
+    function create_default_slot_12$7(ctx) {
     	let t;
 
     	const block = {
@@ -14480,7 +14388,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$8.name,
+    		id: create_default_slot_12$7.name,
     		type: "slot",
     		source: "(232:1) <Button on:click=\\\"{getPgAnt}\\\">",
     		ctx
@@ -14490,7 +14398,7 @@ var app = (function () {
     }
 
     // (235:1) <Button on:click="{getPgSig}">
-    function create_default_slot_11$8(ctx) {
+    function create_default_slot_11$7(ctx) {
     	let t;
 
     	const block = {
@@ -14507,7 +14415,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$8.name,
+    		id: create_default_slot_11$7.name,
     		type: "slot",
     		source: "(235:1) <Button on:click=\\\"{getPgSig}\\\">",
     		ctx
@@ -14552,7 +14460,7 @@ var app = (function () {
     				color: /*color*/ ctx[4],
     				isOpen: /*visible*/ ctx[3],
     				toggle: /*func*/ ctx[14],
-    				$$slots: { default: [create_default_slot_10$8] },
+    				$$slots: { default: [create_default_slot_10$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14561,7 +14469,7 @@ var app = (function () {
     	table0 = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot_7$8] },
+    				$$slots: { default: [create_default_slot_7$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14570,7 +14478,7 @@ var app = (function () {
     	table1 = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot$9] },
+    				$$slots: { default: [create_default_slot$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14682,7 +14590,7 @@ var app = (function () {
     }
 
     // (242:1) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
-    function create_default_slot_10$8(ctx) {
+    function create_default_slot_10$7(ctx) {
     	let if_block_anchor;
     	let if_block = /*checkMSG*/ ctx[2] && create_if_block$5(ctx);
 
@@ -14717,7 +14625,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$8.name,
+    		id: create_default_slot_10$7.name,
     		type: "slot",
     		source: "(242:1) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
     		ctx
@@ -14727,7 +14635,7 @@ var app = (function () {
     }
 
     // (261:22) <Button outline color="dark" on:click="{()=>{      if (from == null || to == null) {       color="success";       checkMSG="Los campos fecha inicio y fecha fin no pueden estar vacíos";       visible="true";       //window.alert('Los campos fecha inicio y fecha fin no pueden estar vacíos')      }else{       getesco();      }     }}">
-    function create_default_slot_9$8(ctx) {
+    function create_default_slot_9$7(ctx) {
     	let t;
 
     	const block = {
@@ -14744,7 +14652,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$8.name,
+    		id: create_default_slot_9$7.name,
     		type: "slot",
     		source: "(261:22) <Button outline color=\\\"dark\\\" on:click=\\\"{()=>{      if (from == null || to == null) {       color=\\\"success\\\";       checkMSG=\\\"Los campos fecha inicio y fecha fin no pueden estar vacíos\\\";       visible=\\\"true\\\";       //window.alert('Los campos fecha inicio y fecha fin no pueden estar vacíos')      }else{       getesco();      }     }}\\\">",
     		ctx
@@ -14754,7 +14662,7 @@ var app = (function () {
     }
 
     // (274:22) <Button outline color="info" on:click="{()=>{      from = null;      to = null;      getesco();           }}">
-    function create_default_slot_8$8(ctx) {
+    function create_default_slot_8$7(ctx) {
     	let t;
 
     	const block = {
@@ -14771,7 +14679,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$8.name,
+    		id: create_default_slot_8$7.name,
     		type: "slot",
     		source: "(274:22) <Button outline color=\\\"info\\\" on:click=\\\"{()=>{      from = null;      to = null;      getesco();           }}\\\">",
     		ctx
@@ -14781,7 +14689,7 @@ var app = (function () {
     }
 
     // (248:1) <Table bordered>
-    function create_default_slot_7$8(ctx) {
+    function create_default_slot_7$7(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -14809,7 +14717,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "dark",
-    				$$slots: { default: [create_default_slot_9$8] },
+    				$$slots: { default: [create_default_slot_9$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14821,7 +14729,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "info",
-    				$$slots: { default: [create_default_slot_8$8] },
+    				$$slots: { default: [create_default_slot_8$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -14952,7 +14860,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$8.name,
+    		id: create_default_slot_7$7.name,
     		type: "slot",
     		source: "(248:1) <Table bordered>",
     		ctx
@@ -14962,7 +14870,7 @@ var app = (function () {
     }
 
     // (306:8) <Button outline color="primary" on:click="{insertesco}">
-    function create_default_slot_6$8(ctx) {
+    function create_default_slot_6$7(ctx) {
     	let t;
 
     	const block = {
@@ -14979,7 +14887,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$8.name,
+    		id: create_default_slot_6$7.name,
     		type: "slot",
     		source: "(306:8) <Button outline color=\\\"primary\\\" on:click=\\\"{insertesco}\\\">",
     		ctx
@@ -14989,7 +14897,7 @@ var app = (function () {
     }
 
     // (310:23) <Button outline color="primary" on:click="{()=>{       newesco.country = null;       newesco.year = null;       newesco.tot_wom = null;       newesco.tot_man = null;       newesco.tot_esco = null;      }}">
-    function create_default_slot_5$8(ctx) {
+    function create_default_slot_5$7(ctx) {
     	let t;
 
     	const block = {
@@ -15006,7 +14914,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$8.name,
+    		id: create_default_slot_5$7.name,
     		type: "slot",
     		source: "(310:23) <Button outline color=\\\"primary\\\" on:click=\\\"{()=>{       newesco.country = null;       newesco.year = null;       newesco.tot_wom = null;       newesco.tot_man = null;       newesco.tot_esco = null;      }}\\\">",
     		ctx
@@ -15016,7 +14924,7 @@ var app = (function () {
     }
 
     // (329:8) <Button outline color="warning" on:click={function (){       window.location.href = `/#/esco/${escoa.country}/${escoa.year}`      }}>
-    function create_default_slot_4$9(ctx) {
+    function create_default_slot_4$8(ctx) {
     	let t;
 
     	const block = {
@@ -15033,7 +14941,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$9.name,
+    		id: create_default_slot_4$8.name,
     		type: "slot",
     		source: "(329:8) <Button outline color=\\\"warning\\\" on:click={function (){       window.location.href = `/#/esco/${escoa.country}/${escoa.year}`      }}>",
     		ctx
@@ -15043,7 +14951,7 @@ var app = (function () {
     }
 
     // (334:8) <Button outline color="danger" on:click={Borraresco(escoa.country,escoa.year)}>
-    function create_default_slot_3$9(ctx) {
+    function create_default_slot_3$8(ctx) {
     	let t;
 
     	const block = {
@@ -15060,7 +14968,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$9.name,
+    		id: create_default_slot_3$8.name,
     		type: "slot",
     		source: "(334:8) <Button outline color=\\\"danger\\\" on:click={Borraresco(escoa.country,escoa.year)}>",
     		ctx
@@ -15107,7 +15015,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "warning",
-    				$$slots: { default: [create_default_slot_4$9] },
+    				$$slots: { default: [create_default_slot_4$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15119,7 +15027,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_3$9] },
+    				$$slots: { default: [create_default_slot_3$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15237,7 +15145,7 @@ var app = (function () {
     }
 
     // (342:8) <Button outline color="success" on:click={Loadesco}>
-    function create_default_slot_2$9(ctx) {
+    function create_default_slot_2$8(ctx) {
     	let t;
 
     	const block = {
@@ -15254,7 +15162,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$9.name,
+    		id: create_default_slot_2$8.name,
     		type: "slot",
     		source: "(342:8) <Button outline color=\\\"success\\\" on:click={Loadesco}>",
     		ctx
@@ -15264,7 +15172,7 @@ var app = (function () {
     }
 
     // (345:8) <Button outline color="danger" on:click={BorrarescosAll}>
-    function create_default_slot_1$9(ctx) {
+    function create_default_slot_1$8(ctx) {
     	let t;
 
     	const block = {
@@ -15281,7 +15189,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$9.name,
+    		id: create_default_slot_1$8.name,
     		type: "slot",
     		source: "(345:8) <Button outline color=\\\"danger\\\" on:click={BorrarescosAll}>",
     		ctx
@@ -15291,7 +15199,7 @@ var app = (function () {
     }
 
     // (288:1) <Table bordered>
-    function create_default_slot$9(ctx) {
+    function create_default_slot$8(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -15342,7 +15250,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_6$8] },
+    				$$slots: { default: [create_default_slot_6$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15354,7 +15262,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_5$8] },
+    				$$slots: { default: [create_default_slot_5$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15377,7 +15285,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "success",
-    				$$slots: { default: [create_default_slot_2$9] },
+    				$$slots: { default: [create_default_slot_2$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15389,7 +15297,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_1$9] },
+    				$$slots: { default: [create_default_slot_1$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15669,7 +15577,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$9.name,
+    		id: create_default_slot$8.name,
     		type: "slot",
     		source: "(288:1) <Table bordered>",
     		ctx
@@ -15726,7 +15634,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot_13$8] },
+    				$$slots: { default: [create_default_slot_13$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15734,7 +15642,7 @@ var app = (function () {
 
     	button0 = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_12$8] },
+    				$$slots: { default: [create_default_slot_12$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -15744,7 +15652,7 @@ var app = (function () {
 
     	button1 = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_11$8] },
+    				$$slots: { default: [create_default_slot_11$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16306,7 +16214,7 @@ var app = (function () {
     }
 
     // (102:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_22$5(ctx) {
+    function create_default_slot_22$4(ctx) {
     	let t;
 
     	const block = {
@@ -16323,7 +16231,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$5.name,
+    		id: create_default_slot_22$4.name,
     		type: "slot",
     		source: "(102:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
@@ -16333,7 +16241,7 @@ var app = (function () {
     }
 
     // (104:6) <DropdownItem href="./api/v1/expo-stats">
-    function create_default_slot_21$7(ctx) {
+    function create_default_slot_21$6(ctx) {
     	let t;
 
     	const block = {
@@ -16350,7 +16258,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$7.name,
+    		id: create_default_slot_21$6.name,
     		type: "slot",
     		source: "(104:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
     		ctx
@@ -16360,7 +16268,7 @@ var app = (function () {
     }
 
     // (99:4) <DropdownMenu end>
-    function create_default_slot_20$7(ctx) {
+    function create_default_slot_20$6(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -16386,7 +16294,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_22$5] },
+    				$$slots: { default: [create_default_slot_22$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16397,7 +16305,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "./api/v1/expo-stats",
-    				$$slots: { default: [create_default_slot_21$7] },
+    				$$slots: { default: [create_default_slot_21$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16482,7 +16390,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$7.name,
+    		id: create_default_slot_20$6.name,
     		type: "slot",
     		source: "(99:4) <DropdownMenu end>",
     		ctx
@@ -16492,7 +16400,7 @@ var app = (function () {
     }
 
     // (97:3) <Dropdown >
-    function create_default_slot_19$7(ctx) {
+    function create_default_slot_19$6(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -16511,7 +16419,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_20$7] },
+    				$$slots: { default: [create_default_slot_20$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16565,7 +16473,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$7.name,
+    		id: create_default_slot_19$6.name,
     		type: "slot",
     		source: "(97:3) <Dropdown >",
     		ctx
@@ -16575,7 +16483,7 @@ var app = (function () {
     }
 
     // (109:4) <DropdownToggle nav caret>
-    function create_default_slot_18$7(ctx) {
+    function create_default_slot_18$6(ctx) {
     	let t;
 
     	const block = {
@@ -16592,7 +16500,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$7.name,
+    		id: create_default_slot_18$6.name,
     		type: "slot",
     		source: "(109:4) <DropdownToggle nav caret>",
     		ctx
@@ -16602,7 +16510,7 @@ var app = (function () {
     }
 
     // (111:6) <DropdownItem href="./#/economies">
-    function create_default_slot_17$7(ctx) {
+    function create_default_slot_17$6(ctx) {
     	let t;
 
     	const block = {
@@ -16619,7 +16527,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$7.name,
+    		id: create_default_slot_17$6.name,
     		type: "slot",
     		source: "(111:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
@@ -16629,7 +16537,7 @@ var app = (function () {
     }
 
     // (113:6) <DropdownItem href="./#/esco-stats">
-    function create_default_slot_16$7(ctx) {
+    function create_default_slot_16$6(ctx) {
     	let t;
 
     	const block = {
@@ -16646,7 +16554,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$7.name,
+    		id: create_default_slot_16$6.name,
     		type: "slot",
     		source: "(113:6) <DropdownItem href=\\\"./#/esco-stats\\\">",
     		ctx
@@ -16656,7 +16564,7 @@ var app = (function () {
     }
 
     // (115:6) <DropdownItem href="#/expo-stats">
-    function create_default_slot_15$7(ctx) {
+    function create_default_slot_15$6(ctx) {
     	let t;
 
     	const block = {
@@ -16673,7 +16581,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$7.name,
+    		id: create_default_slot_15$6.name,
     		type: "slot",
     		source: "(115:6) <DropdownItem href=\\\"#/expo-stats\\\">",
     		ctx
@@ -16683,7 +16591,7 @@ var app = (function () {
     }
 
     // (110:4) <DropdownMenu end>
-    function create_default_slot_14$7(ctx) {
+    function create_default_slot_14$6(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -16698,7 +16606,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_17$7] },
+    				$$slots: { default: [create_default_slot_17$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16709,7 +16617,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/esco-stats",
-    				$$slots: { default: [create_default_slot_16$7] },
+    				$$slots: { default: [create_default_slot_16$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16720,7 +16628,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/expo-stats",
-    				$$slots: { default: [create_default_slot_15$7] },
+    				$$slots: { default: [create_default_slot_15$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16805,7 +16713,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$7.name,
+    		id: create_default_slot_14$6.name,
     		type: "slot",
     		source: "(110:4) <DropdownMenu end>",
     		ctx
@@ -16815,7 +16723,7 @@ var app = (function () {
     }
 
     // (108:12) <Dropdown>
-    function create_default_slot_13$7(ctx) {
+    function create_default_slot_13$6(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -16825,7 +16733,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_18$7] },
+    				$$slots: { default: [create_default_slot_18$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16834,7 +16742,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_14$7] },
+    				$$slots: { default: [create_default_slot_14$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16888,7 +16796,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$7.name,
+    		id: create_default_slot_13$6.name,
     		type: "slot",
     		source: "(108:12) <Dropdown>",
     		ctx
@@ -16898,7 +16806,7 @@ var app = (function () {
     }
 
     // (120:4) <DropdownToggle nav caret>
-    function create_default_slot_12$7(ctx) {
+    function create_default_slot_12$6(ctx) {
     	let t;
 
     	const block = {
@@ -16915,7 +16823,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$7.name,
+    		id: create_default_slot_12$6.name,
     		type: "slot",
     		source: "(120:4) <DropdownToggle nav caret>",
     		ctx
@@ -16925,7 +16833,7 @@ var app = (function () {
     }
 
     // (122:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_11$7(ctx) {
+    function create_default_slot_11$6(ctx) {
     	let t;
 
     	const block = {
@@ -16942,7 +16850,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$7.name,
+    		id: create_default_slot_11$6.name,
     		type: "slot",
     		source: "(122:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -16952,7 +16860,7 @@ var app = (function () {
     }
 
     // (123:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_10$7(ctx) {
+    function create_default_slot_10$6(ctx) {
     	let t;
 
     	const block = {
@@ -16969,7 +16877,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$7.name,
+    		id: create_default_slot_10$6.name,
     		type: "slot",
     		source: "(123:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -16979,7 +16887,7 @@ var app = (function () {
     }
 
     // (124:6) <DropdownItem href="#/graphexpo">
-    function create_default_slot_9$7(ctx) {
+    function create_default_slot_9$6(ctx) {
     	let t;
 
     	const block = {
@@ -16996,7 +16904,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$7.name,
+    		id: create_default_slot_9$6.name,
     		type: "slot",
     		source: "(124:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
@@ -17006,7 +16914,7 @@ var app = (function () {
     }
 
     // (126:18) <DropdownItem href="./#/graph">
-    function create_default_slot_8$7(ctx) {
+    function create_default_slot_8$6(ctx) {
     	let t;
 
     	const block = {
@@ -17023,7 +16931,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$7.name,
+    		id: create_default_slot_8$6.name,
     		type: "slot",
     		source: "(126:18) <DropdownItem href=\\\"./#/graph\\\">",
     		ctx
@@ -17033,7 +16941,7 @@ var app = (function () {
     }
 
     // (121:4) <DropdownMenu end>
-    function create_default_slot_7$7(ctx) {
+    function create_default_slot_7$6(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -17048,7 +16956,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_11$7] },
+    				$$slots: { default: [create_default_slot_11$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17057,7 +16965,7 @@ var app = (function () {
     	dropdownitem1 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_10$7] },
+    				$$slots: { default: [create_default_slot_10$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17066,7 +16974,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "#/graphexpo",
-    				$$slots: { default: [create_default_slot_9$7] },
+    				$$slots: { default: [create_default_slot_9$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17077,7 +16985,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "./#/graph",
-    				$$slots: { default: [create_default_slot_8$7] },
+    				$$slots: { default: [create_default_slot_8$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17169,7 +17077,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$7.name,
+    		id: create_default_slot_7$6.name,
     		type: "slot",
     		source: "(121:4) <DropdownMenu end>",
     		ctx
@@ -17179,7 +17087,7 @@ var app = (function () {
     }
 
     // (119:5) <Dropdown >
-    function create_default_slot_6$7(ctx) {
+    function create_default_slot_6$6(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -17189,7 +17097,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_12$7] },
+    				$$slots: { default: [create_default_slot_12$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17198,7 +17106,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_7$7] },
+    				$$slots: { default: [create_default_slot_7$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17252,7 +17160,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$7.name,
+    		id: create_default_slot_6$6.name,
     		type: "slot",
     		source: "(119:5) <Dropdown >",
     		ctx
@@ -17262,7 +17170,7 @@ var app = (function () {
     }
 
     // (96:2) <Nav navbar>
-    function create_default_slot_5$7(ctx) {
+    function create_default_slot_5$6(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -17272,7 +17180,7 @@ var app = (function () {
 
     	dropdown0 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_19$7] },
+    				$$slots: { default: [create_default_slot_19$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17280,7 +17188,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_13$7] },
+    				$$slots: { default: [create_default_slot_13$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17288,7 +17196,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_6$7] },
+    				$$slots: { default: [create_default_slot_6$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17357,7 +17265,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$7.name,
+    		id: create_default_slot_5$6.name,
     		type: "slot",
     		source: "(96:2) <Nav navbar>",
     		ctx
@@ -17367,7 +17275,7 @@ var app = (function () {
     }
 
     // (94:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot_4$8(ctx) {
+    function create_default_slot_4$7(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -17385,7 +17293,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_5$7] },
+    				$$slots: { default: [create_default_slot_5$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17439,7 +17347,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$8.name,
+    		id: create_default_slot_4$7.name,
     		type: "slot",
     		source: "(94:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -17479,7 +17387,7 @@ var app = (function () {
     }
 
     // (135:4) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
-    function create_default_slot_3$8(ctx) {
+    function create_default_slot_3$7(ctx) {
     	let if_block_anchor;
     	let if_block = /*checkMSG*/ ctx[1] && create_if_block$4(ctx);
 
@@ -17514,7 +17422,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$8.name,
+    		id: create_default_slot_3$7.name,
     		type: "slot",
     		source: "(135:4) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
     		ctx
@@ -17553,7 +17461,7 @@ var app = (function () {
     	table = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot_1$8] },
+    				$$slots: { default: [create_default_slot_1$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17602,7 +17510,7 @@ var app = (function () {
     }
 
     // (162:24) <Button outline color="primary" on:click="{Editesco}">
-    function create_default_slot_2$8(ctx) {
+    function create_default_slot_2$7(ctx) {
     	let t;
 
     	const block = {
@@ -17619,7 +17527,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$8.name,
+    		id: create_default_slot_2$7.name,
     		type: "slot",
     		source: "(162:24) <Button outline color=\\\"primary\\\" on:click=\\\"{Editesco}\\\">",
     		ctx
@@ -17629,7 +17537,7 @@ var app = (function () {
     }
 
     // (144:8) <Table bordered>
-    function create_default_slot_1$8(ctx) {
+    function create_default_slot_1$7(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -17670,7 +17578,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_2$8] },
+    				$$slots: { default: [create_default_slot_2$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17827,7 +17735,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$8.name,
+    		id: create_default_slot_1$7.name,
     		type: "slot",
     		source: "(144:8) <Table bordered>",
     		ctx
@@ -17867,7 +17775,7 @@ var app = (function () {
     }
 
     // (171:4) <Button outline color="secondary" on:click= "{pop}">
-    function create_default_slot$8(ctx) {
+    function create_default_slot$7(ctx) {
     	let t;
 
     	const block = {
@@ -17884,7 +17792,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$8.name,
+    		id: create_default_slot$7.name,
     		type: "slot",
     		source: "(171:4) <Button outline color=\\\"secondary\\\" on:click= \\\"{pop}\\\">",
     		ctx
@@ -17915,7 +17823,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot_4$8] },
+    				$$slots: { default: [create_default_slot_4$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17926,7 +17834,7 @@ var app = (function () {
     				color: /*color*/ ctx[3],
     				isOpen: /*visible*/ ctx[2],
     				toggle: /*func*/ ctx[10],
-    				$$slots: { default: [create_default_slot_3$8] },
+    				$$slots: { default: [create_default_slot_3$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -17950,7 +17858,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot$8] },
+    				$$slots: { default: [create_default_slot$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18274,7 +18182,7 @@ var app = (function () {
     const file$9 = "src\\front\\esco-stats\\MyGraphesco.svelte";
 
     // (127:2) <NavbarBrand href="#/info">
-    function create_default_slot_21$6(ctx) {
+    function create_default_slot_21$5(ctx) {
     	let t;
 
     	const block = {
@@ -18291,7 +18199,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$6.name,
+    		id: create_default_slot_21$5.name,
     		type: "slot",
     		source: "(127:2) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
@@ -18301,7 +18209,7 @@ var app = (function () {
     }
 
     // (130:4) <DropdownToggle nav caret>
-    function create_default_slot_20$6(ctx) {
+    function create_default_slot_20$5(ctx) {
     	let t;
 
     	const block = {
@@ -18318,7 +18226,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$6.name,
+    		id: create_default_slot_20$5.name,
     		type: "slot",
     		source: "(130:4) <DropdownToggle nav caret>",
     		ctx
@@ -18328,7 +18236,7 @@ var app = (function () {
     }
 
     // (132:6) <DropdownItem href="./api/v2/economies">
-    function create_default_slot_19$6(ctx) {
+    function create_default_slot_19$5(ctx) {
     	let t;
 
     	const block = {
@@ -18345,7 +18253,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$6.name,
+    		id: create_default_slot_19$5.name,
     		type: "slot",
     		source: "(132:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
@@ -18355,7 +18263,7 @@ var app = (function () {
     }
 
     // (134:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_18$6(ctx) {
+    function create_default_slot_18$5(ctx) {
     	let t;
 
     	const block = {
@@ -18372,7 +18280,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$6.name,
+    		id: create_default_slot_18$5.name,
     		type: "slot",
     		source: "(134:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
@@ -18382,7 +18290,7 @@ var app = (function () {
     }
 
     // (136:6) <DropdownItem href="./api/v1/expo-stats">
-    function create_default_slot_17$6(ctx) {
+    function create_default_slot_17$5(ctx) {
     	let t;
 
     	const block = {
@@ -18399,7 +18307,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$6.name,
+    		id: create_default_slot_17$5.name,
     		type: "slot",
     		source: "(136:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
     		ctx
@@ -18409,7 +18317,7 @@ var app = (function () {
     }
 
     // (131:4) <DropdownMenu end>
-    function create_default_slot_16$6(ctx) {
+    function create_default_slot_16$5(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -18424,7 +18332,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./api/v2/economies",
-    				$$slots: { default: [create_default_slot_19$6] },
+    				$$slots: { default: [create_default_slot_19$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18435,7 +18343,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_18$6] },
+    				$$slots: { default: [create_default_slot_18$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18446,7 +18354,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "./api/v1/expo-stats",
-    				$$slots: { default: [create_default_slot_17$6] },
+    				$$slots: { default: [create_default_slot_17$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18531,7 +18439,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$6.name,
+    		id: create_default_slot_16$5.name,
     		type: "slot",
     		source: "(131:4) <DropdownMenu end>",
     		ctx
@@ -18541,7 +18449,7 @@ var app = (function () {
     }
 
     // (129:3) <Dropdown >
-    function create_default_slot_15$6(ctx) {
+    function create_default_slot_15$5(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -18551,7 +18459,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_20$6] },
+    				$$slots: { default: [create_default_slot_20$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18560,7 +18468,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_16$6] },
+    				$$slots: { default: [create_default_slot_16$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18614,7 +18522,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$6.name,
+    		id: create_default_slot_15$5.name,
     		type: "slot",
     		source: "(129:3) <Dropdown >",
     		ctx
@@ -18624,7 +18532,7 @@ var app = (function () {
     }
 
     // (141:4) <DropdownToggle nav caret>
-    function create_default_slot_14$6(ctx) {
+    function create_default_slot_14$5(ctx) {
     	let t;
 
     	const block = {
@@ -18641,7 +18549,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$6.name,
+    		id: create_default_slot_14$5.name,
     		type: "slot",
     		source: "(141:4) <DropdownToggle nav caret>",
     		ctx
@@ -18651,7 +18559,7 @@ var app = (function () {
     }
 
     // (143:6) <DropdownItem href="./#/economies">
-    function create_default_slot_13$6(ctx) {
+    function create_default_slot_13$5(ctx) {
     	let t;
 
     	const block = {
@@ -18668,7 +18576,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$6.name,
+    		id: create_default_slot_13$5.name,
     		type: "slot",
     		source: "(143:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
@@ -18678,7 +18586,7 @@ var app = (function () {
     }
 
     // (145:6) <DropdownItem href="./#/esco-stats">
-    function create_default_slot_12$6(ctx) {
+    function create_default_slot_12$5(ctx) {
     	let t;
 
     	const block = {
@@ -18695,7 +18603,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$6.name,
+    		id: create_default_slot_12$5.name,
     		type: "slot",
     		source: "(145:6) <DropdownItem href=\\\"./#/esco-stats\\\">",
     		ctx
@@ -18705,7 +18613,7 @@ var app = (function () {
     }
 
     // (147:6) <DropdownItem href="#/expo-stats">
-    function create_default_slot_11$6(ctx) {
+    function create_default_slot_11$5(ctx) {
     	let t;
 
     	const block = {
@@ -18722,7 +18630,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$6.name,
+    		id: create_default_slot_11$5.name,
     		type: "slot",
     		source: "(147:6) <DropdownItem href=\\\"#/expo-stats\\\">",
     		ctx
@@ -18732,7 +18640,7 @@ var app = (function () {
     }
 
     // (142:4) <DropdownMenu end>
-    function create_default_slot_10$6(ctx) {
+    function create_default_slot_10$5(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -18747,7 +18655,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_13$6] },
+    				$$slots: { default: [create_default_slot_13$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18758,7 +18666,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/esco-stats",
-    				$$slots: { default: [create_default_slot_12$6] },
+    				$$slots: { default: [create_default_slot_12$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18769,7 +18677,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/expo-stats",
-    				$$slots: { default: [create_default_slot_11$6] },
+    				$$slots: { default: [create_default_slot_11$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18854,7 +18762,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$6.name,
+    		id: create_default_slot_10$5.name,
     		type: "slot",
     		source: "(142:4) <DropdownMenu end>",
     		ctx
@@ -18864,7 +18772,7 @@ var app = (function () {
     }
 
     // (140:12) <Dropdown>
-    function create_default_slot_9$6(ctx) {
+    function create_default_slot_9$5(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -18874,7 +18782,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_14$6] },
+    				$$slots: { default: [create_default_slot_14$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18883,7 +18791,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_10$6] },
+    				$$slots: { default: [create_default_slot_10$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -18937,7 +18845,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$6.name,
+    		id: create_default_slot_9$5.name,
     		type: "slot",
     		source: "(140:12) <Dropdown>",
     		ctx
@@ -18947,7 +18855,7 @@ var app = (function () {
     }
 
     // (152:4) <DropdownToggle nav caret>
-    function create_default_slot_8$6(ctx) {
+    function create_default_slot_8$5(ctx) {
     	let t;
 
     	const block = {
@@ -18964,7 +18872,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$6.name,
+    		id: create_default_slot_8$5.name,
     		type: "slot",
     		source: "(152:4) <DropdownToggle nav caret>",
     		ctx
@@ -18974,7 +18882,7 @@ var app = (function () {
     }
 
     // (154:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_7$6(ctx) {
+    function create_default_slot_7$5(ctx) {
     	let t;
 
     	const block = {
@@ -18991,7 +18899,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$6.name,
+    		id: create_default_slot_7$5.name,
     		type: "slot",
     		source: "(154:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -19001,7 +18909,7 @@ var app = (function () {
     }
 
     // (156:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_6$6(ctx) {
+    function create_default_slot_6$5(ctx) {
     	let t;
 
     	const block = {
@@ -19018,7 +18926,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$6.name,
+    		id: create_default_slot_6$5.name,
     		type: "slot",
     		source: "(156:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -19028,7 +18936,7 @@ var app = (function () {
     }
 
     // (158:6) <DropdownItem href="#/graphexpo">
-    function create_default_slot_5$6(ctx) {
+    function create_default_slot_5$5(ctx) {
     	let t;
 
     	const block = {
@@ -19045,7 +18953,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$6.name,
+    		id: create_default_slot_5$5.name,
     		type: "slot",
     		source: "(158:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
@@ -19055,7 +18963,7 @@ var app = (function () {
     }
 
     // (160:18) <DropdownItem href="./#/graph">
-    function create_default_slot_4$7(ctx) {
+    function create_default_slot_4$6(ctx) {
     	let t;
 
     	const block = {
@@ -19072,7 +18980,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$7.name,
+    		id: create_default_slot_4$6.name,
     		type: "slot",
     		source: "(160:18) <DropdownItem href=\\\"./#/graph\\\">",
     		ctx
@@ -19082,7 +18990,7 @@ var app = (function () {
     }
 
     // (153:4) <DropdownMenu end>
-    function create_default_slot_3$7(ctx) {
+    function create_default_slot_3$6(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -19101,7 +19009,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_7$6] },
+    				$$slots: { default: [create_default_slot_7$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19112,7 +19020,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_6$6] },
+    				$$slots: { default: [create_default_slot_6$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19123,7 +19031,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graphexpo",
-    				$$slots: { default: [create_default_slot_5$6] },
+    				$$slots: { default: [create_default_slot_5$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19134,7 +19042,7 @@ var app = (function () {
     	dropdownitem6 = new DropdownItem({
     			props: {
     				href: "./#/graph",
-    				$$slots: { default: [create_default_slot_4$7] },
+    				$$slots: { default: [create_default_slot_4$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19242,7 +19150,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$7.name,
+    		id: create_default_slot_3$6.name,
     		type: "slot",
     		source: "(153:4) <DropdownMenu end>",
     		ctx
@@ -19252,7 +19160,7 @@ var app = (function () {
     }
 
     // (151:5) <Dropdown >
-    function create_default_slot_2$7(ctx) {
+    function create_default_slot_2$6(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -19262,7 +19170,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_8$6] },
+    				$$slots: { default: [create_default_slot_8$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19271,7 +19179,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_3$7] },
+    				$$slots: { default: [create_default_slot_3$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19325,7 +19233,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$7.name,
+    		id: create_default_slot_2$6.name,
     		type: "slot",
     		source: "(151:5) <Dropdown >",
     		ctx
@@ -19335,7 +19243,7 @@ var app = (function () {
     }
 
     // (128:2) <Nav navbar>
-    function create_default_slot_1$7(ctx) {
+    function create_default_slot_1$6(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -19345,7 +19253,7 @@ var app = (function () {
 
     	dropdown0 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_15$6] },
+    				$$slots: { default: [create_default_slot_15$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19353,7 +19261,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_9$6] },
+    				$$slots: { default: [create_default_slot_9$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19361,7 +19269,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_2$7] },
+    				$$slots: { default: [create_default_slot_2$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19430,7 +19338,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$7.name,
+    		id: create_default_slot_1$6.name,
     		type: "slot",
     		source: "(128:2) <Nav navbar>",
     		ctx
@@ -19440,7 +19348,7 @@ var app = (function () {
     }
 
     // (126:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot$7(ctx) {
+    function create_default_slot$6(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -19449,7 +19357,7 @@ var app = (function () {
     	navbarbrand = new NavbarBrand({
     			props: {
     				href: "#/info",
-    				$$slots: { default: [create_default_slot_21$6] },
+    				$$slots: { default: [create_default_slot_21$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19458,7 +19366,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_1$7] },
+    				$$slots: { default: [create_default_slot_1$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -19512,7 +19420,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$7.name,
+    		id: create_default_slot$6.name,
     		type: "slot",
     		source: "(126:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -19547,7 +19455,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot$7] },
+    				$$slots: { default: [create_default_slot$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20540,7 +20448,7 @@ var app = (function () {
     }
 
     // (226:4) <DropdownToggle nav caret>
-    function create_default_slot_22$4(ctx) {
+    function create_default_slot_22$3(ctx) {
     	let t;
 
     	const block = {
@@ -20557,7 +20465,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$4.name,
+    		id: create_default_slot_22$3.name,
     		type: "slot",
     		source: "(226:4) <DropdownToggle nav caret>",
     		ctx
@@ -20567,7 +20475,7 @@ var app = (function () {
     }
 
     // (228:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_21$5(ctx) {
+    function create_default_slot_21$4(ctx) {
     	let t;
 
     	const block = {
@@ -20584,7 +20492,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$5.name,
+    		id: create_default_slot_21$4.name,
     		type: "slot",
     		source: "(228:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -20594,7 +20502,7 @@ var app = (function () {
     }
 
     // (229:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_20$5(ctx) {
+    function create_default_slot_20$4(ctx) {
     	let t;
 
     	const block = {
@@ -20611,7 +20519,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$5.name,
+    		id: create_default_slot_20$4.name,
     		type: "slot",
     		source: "(229:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -20621,7 +20529,7 @@ var app = (function () {
     }
 
     // (230:6) <DropdownItem href="./#/graphexpo">
-    function create_default_slot_19$5(ctx) {
+    function create_default_slot_19$4(ctx) {
     	let t;
 
     	const block = {
@@ -20638,7 +20546,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$5.name,
+    		id: create_default_slot_19$4.name,
     		type: "slot",
     		source: "(230:6) <DropdownItem href=\\\"./#/graphexpo\\\">",
     		ctx
@@ -20648,7 +20556,7 @@ var app = (function () {
     }
 
     // (232:6) <DropdownItem href="#/graph">
-    function create_default_slot_18$5(ctx) {
+    function create_default_slot_18$4(ctx) {
     	let t;
 
     	const block = {
@@ -20665,7 +20573,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$5.name,
+    		id: create_default_slot_18$4.name,
     		type: "slot",
     		source: "(232:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -20675,7 +20583,7 @@ var app = (function () {
     }
 
     // (227:4) <DropdownMenu end>
-    function create_default_slot_17$5(ctx) {
+    function create_default_slot_17$4(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -20690,7 +20598,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_21$5] },
+    				$$slots: { default: [create_default_slot_21$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20699,7 +20607,7 @@ var app = (function () {
     	dropdownitem1 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_20$5] },
+    				$$slots: { default: [create_default_slot_20$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20708,7 +20616,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/graphexpo",
-    				$$slots: { default: [create_default_slot_19$5] },
+    				$$slots: { default: [create_default_slot_19$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20719,7 +20627,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_18$5] },
+    				$$slots: { default: [create_default_slot_18$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20811,7 +20719,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$5.name,
+    		id: create_default_slot_17$4.name,
     		type: "slot",
     		source: "(227:4) <DropdownMenu end>",
     		ctx
@@ -20821,7 +20729,7 @@ var app = (function () {
     }
 
     // (225:5) <Dropdown >
-    function create_default_slot_16$5(ctx) {
+    function create_default_slot_16$4(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -20831,7 +20739,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_22$4] },
+    				$$slots: { default: [create_default_slot_22$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20840,7 +20748,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_17$5] },
+    				$$slots: { default: [create_default_slot_17$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20894,7 +20802,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$5.name,
+    		id: create_default_slot_16$4.name,
     		type: "slot",
     		source: "(225:5) <Dropdown >",
     		ctx
@@ -20904,7 +20812,7 @@ var app = (function () {
     }
 
     // (202:2) <Nav navbar>
-    function create_default_slot_15$5(ctx) {
+    function create_default_slot_15$4(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -20930,7 +20838,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_16$5] },
+    				$$slots: { default: [create_default_slot_16$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -20999,7 +20907,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$5.name,
+    		id: create_default_slot_15$4.name,
     		type: "slot",
     		source: "(202:2) <Nav navbar>",
     		ctx
@@ -21009,7 +20917,7 @@ var app = (function () {
     }
 
     // (200:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot_14$5(ctx) {
+    function create_default_slot_14$4(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -21027,7 +20935,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_15$5] },
+    				$$slots: { default: [create_default_slot_15$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -21081,7 +20989,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$5.name,
+    		id: create_default_slot_14$4.name,
     		type: "slot",
     		source: "(200:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -21128,7 +21036,7 @@ var app = (function () {
     }
 
     // (242:1) <Alert color="danger" isOpen={visibleError} toggle={() => (visibleError = false)}>
-    function create_default_slot_13$5(ctx) {
+    function create_default_slot_13$4(ctx) {
     	let if_block_anchor;
     	let if_block = /*msg*/ ctx[4] && create_if_block_1$1(ctx);
 
@@ -21163,7 +21071,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$5.name,
+    		id: create_default_slot_13$4.name,
     		type: "slot",
     		source: "(242:1) <Alert color=\\\"danger\\\" isOpen={visibleError} toggle={() => (visibleError = false)}>",
     		ctx
@@ -21210,7 +21118,7 @@ var app = (function () {
     }
 
     // (247:1) <Alert color="success" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>
-    function create_default_slot_12$5(ctx) {
+    function create_default_slot_12$4(ctx) {
     	let if_block_anchor;
     	let if_block = /*msg*/ ctx[4] && create_if_block$3(ctx);
 
@@ -21245,7 +21153,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$5.name,
+    		id: create_default_slot_12$4.name,
     		type: "slot",
     		source: "(247:1) <Alert color=\\\"success\\\" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>",
     		ctx
@@ -21255,7 +21163,7 @@ var app = (function () {
     }
 
     // (252:1) <Button on:click="{getPgAnt}">
-    function create_default_slot_11$5(ctx) {
+    function create_default_slot_11$4(ctx) {
     	let t;
 
     	const block = {
@@ -21272,7 +21180,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$5.name,
+    		id: create_default_slot_11$4.name,
     		type: "slot",
     		source: "(252:1) <Button on:click=\\\"{getPgAnt}\\\">",
     		ctx
@@ -21282,7 +21190,7 @@ var app = (function () {
     }
 
     // (255:1) <Button on:click="{getPgSig}">
-    function create_default_slot_10$5(ctx) {
+    function create_default_slot_10$4(ctx) {
     	let t;
 
     	const block = {
@@ -21299,7 +21207,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$5.name,
+    		id: create_default_slot_10$4.name,
     		type: "slot",
     		source: "(255:1) <Button on:click=\\\"{getPgSig}\\\">",
     		ctx
@@ -21340,7 +21248,7 @@ var app = (function () {
     	table0 = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot_7$5] },
+    				$$slots: { default: [create_default_slot_7$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -21349,7 +21257,7 @@ var app = (function () {
     	table1 = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot$6] },
+    				$$slots: { default: [create_default_slot$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -21413,7 +21321,7 @@ var app = (function () {
     }
 
     // (274:31) <Button outline color="dark" on:click="{()=>{                  if (from == null || to == null) {                      //window.alert('Los campos fecha inicio y fecha fin no pueden estar vacíos')       visibleError = true;       visibleMsg = false;       msg = "Los campos fecha inicio y fecha fin no pueden estar vacíos";                  }else{                      getEconomies();                  }              }}">
-    function create_default_slot_9$5(ctx) {
+    function create_default_slot_9$4(ctx) {
     	let t;
 
     	const block = {
@@ -21430,7 +21338,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$5.name,
+    		id: create_default_slot_9$4.name,
     		type: "slot",
     		source: "(274:31) <Button outline color=\\\"dark\\\" on:click=\\\"{()=>{                  if (from == null || to == null) {                      //window.alert('Los campos fecha inicio y fecha fin no pueden estar vacíos')       visibleError = true;       visibleMsg = false;       msg = \\\"Los campos fecha inicio y fecha fin no pueden estar vacíos\\\";                  }else{                      getEconomies();                  }              }}\\\">",
     		ctx
@@ -21440,7 +21348,7 @@ var app = (function () {
     }
 
     // (287:31) <Button outline color="info" on:click="{()=>{                  from = null;                  to = null;                  getEconomies();                                }}">
-    function create_default_slot_8$5(ctx) {
+    function create_default_slot_8$4(ctx) {
     	let t;
 
     	const block = {
@@ -21457,7 +21365,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$5.name,
+    		id: create_default_slot_8$4.name,
     		type: "slot",
     		source: "(287:31) <Button outline color=\\\"info\\\" on:click=\\\"{()=>{                  from = null;                  to = null;                  getEconomies();                                }}\\\">",
     		ctx
@@ -21467,7 +21375,7 @@ var app = (function () {
     }
 
     // (261:1) <Table bordered>
-    function create_default_slot_7$5(ctx) {
+    function create_default_slot_7$4(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -21495,7 +21403,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "dark",
-    				$$slots: { default: [create_default_slot_9$5] },
+    				$$slots: { default: [create_default_slot_9$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -21507,7 +21415,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "info",
-    				$$slots: { default: [create_default_slot_8$5] },
+    				$$slots: { default: [create_default_slot_8$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -21638,7 +21546,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$5.name,
+    		id: create_default_slot_7$4.name,
     		type: "slot",
     		source: "(261:1) <Table bordered>",
     		ctx
@@ -21648,7 +21556,7 @@ var app = (function () {
     }
 
     // (317:23) <Button outline color="primary" on:click="{insertEconomies}">
-    function create_default_slot_6$5(ctx) {
+    function create_default_slot_6$4(ctx) {
     	let t;
 
     	const block = {
@@ -21665,7 +21573,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$5.name,
+    		id: create_default_slot_6$4.name,
     		type: "slot",
     		source: "(317:23) <Button outline color=\\\"primary\\\" on:click=\\\"{insertEconomies}\\\">",
     		ctx
@@ -21675,7 +21583,7 @@ var app = (function () {
     }
 
     // (322:23) <Button outline color="primary" on:click="{()=>{       neweconomies.country = null;       neweconomies.year = null;       neweconomies.percapita = null;       neweconomies.currency = null;       neweconomies.currentprices = null;      }}">
-    function create_default_slot_5$5(ctx) {
+    function create_default_slot_5$4(ctx) {
     	let t;
 
     	const block = {
@@ -21692,7 +21600,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$5.name,
+    		id: create_default_slot_5$4.name,
     		type: "slot",
     		source: "(322:23) <Button outline color=\\\"primary\\\" on:click=\\\"{()=>{       neweconomies.country = null;       neweconomies.year = null;       neweconomies.percapita = null;       neweconomies.currency = null;       neweconomies.currentprices = null;      }}\\\">",
     		ctx
@@ -21702,7 +21610,7 @@ var app = (function () {
     }
 
     // (343:23) <Button outline color="warning" on:click={function (){       window.location.href = `/#/economies/${cd.country+"/"+cd.year}`      }}>
-    function create_default_slot_4$6(ctx) {
+    function create_default_slot_4$5(ctx) {
     	let t;
 
     	const block = {
@@ -21719,7 +21627,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$6.name,
+    		id: create_default_slot_4$5.name,
     		type: "slot",
     		source: "(343:23) <Button outline color=\\\"warning\\\" on:click={function (){       window.location.href = `/#/economies/${cd.country+\\\"/\\\"+cd.year}`      }}>",
     		ctx
@@ -21729,7 +21637,7 @@ var app = (function () {
     }
 
     // (348:23) <Button outline color="danger" on:click={BorrarEconomies(cd.country,cd.year)}>
-    function create_default_slot_3$6(ctx) {
+    function create_default_slot_3$5(ctx) {
     	let t;
 
     	const block = {
@@ -21746,7 +21654,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$6.name,
+    		id: create_default_slot_3$5.name,
     		type: "slot",
     		source: "(348:23) <Button outline color=\\\"danger\\\" on:click={BorrarEconomies(cd.country,cd.year)}>",
     		ctx
@@ -21793,7 +21701,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "warning",
-    				$$slots: { default: [create_default_slot_4$6] },
+    				$$slots: { default: [create_default_slot_4$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -21805,7 +21713,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_3$6] },
+    				$$slots: { default: [create_default_slot_3$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -21925,7 +21833,7 @@ var app = (function () {
     }
 
     // (355:8) <Button outline color="success" on:click={LoadEconomies}>
-    function create_default_slot_2$6(ctx) {
+    function create_default_slot_2$5(ctx) {
     	let t;
 
     	const block = {
@@ -21942,7 +21850,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$6.name,
+    		id: create_default_slot_2$5.name,
     		type: "slot",
     		source: "(355:8) <Button outline color=\\\"success\\\" on:click={LoadEconomies}>",
     		ctx
@@ -21952,7 +21860,7 @@ var app = (function () {
     }
 
     // (358:8) <Button outline color="danger" on:click={BorrarEconomiesAll}>
-    function create_default_slot_1$6(ctx) {
+    function create_default_slot_1$5(ctx) {
     	let t;
 
     	const block = {
@@ -21969,7 +21877,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$6.name,
+    		id: create_default_slot_1$5.name,
     		type: "slot",
     		source: "(358:8) <Button outline color=\\\"danger\\\" on:click={BorrarEconomiesAll}>",
     		ctx
@@ -21979,7 +21887,7 @@ var app = (function () {
     }
 
     // (299:1) <Table bordered>
-    function create_default_slot$6(ctx) {
+    function create_default_slot$5(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -22030,7 +21938,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_6$5] },
+    				$$slots: { default: [create_default_slot_6$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22042,7 +21950,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_5$5] },
+    				$$slots: { default: [create_default_slot_5$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22065,7 +21973,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "success",
-    				$$slots: { default: [create_default_slot_2$6] },
+    				$$slots: { default: [create_default_slot_2$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22077,7 +21985,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_1$6] },
+    				$$slots: { default: [create_default_slot_1$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22358,7 +22266,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$6.name,
+    		id: create_default_slot$5.name,
     		type: "slot",
     		source: "(299:1) <Table bordered>",
     		ctx
@@ -22419,7 +22327,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot_14$5] },
+    				$$slots: { default: [create_default_slot_14$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22430,7 +22338,7 @@ var app = (function () {
     				color: "danger",
     				isOpen: /*visibleError*/ ctx[2],
     				toggle: /*func*/ ctx[14],
-    				$$slots: { default: [create_default_slot_13$5] },
+    				$$slots: { default: [create_default_slot_13$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22441,7 +22349,7 @@ var app = (function () {
     				color: "success",
     				isOpen: /*visibleMsg*/ ctx[3],
     				toggle: /*func_1*/ ctx[15],
-    				$$slots: { default: [create_default_slot_12$5] },
+    				$$slots: { default: [create_default_slot_12$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22449,7 +22357,7 @@ var app = (function () {
 
     	button0 = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_11$5] },
+    				$$slots: { default: [create_default_slot_11$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -22459,7 +22367,7 @@ var app = (function () {
 
     	button1 = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_10$5] },
+    				$$slots: { default: [create_default_slot_10$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -23038,7 +22946,7 @@ var app = (function () {
     }
 
     // (95:4) <Alert color="danger" isOpen={visibleError} toggle={() => (visibleError = false)}>
-    function create_default_slot_4$5(ctx) {
+    function create_default_slot_4$4(ctx) {
     	let if_block_anchor;
     	let if_block = /*msg*/ ctx[3] && create_if_block_1(ctx);
 
@@ -23073,7 +22981,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$5.name,
+    		id: create_default_slot_4$4.name,
     		type: "slot",
     		source: "(95:4) <Alert color=\\\"danger\\\" isOpen={visibleError} toggle={() => (visibleError = false)}>",
     		ctx
@@ -23120,7 +23028,7 @@ var app = (function () {
     }
 
     // (100:1) <Alert color="success" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>
-    function create_default_slot_3$5(ctx) {
+    function create_default_slot_3$4(ctx) {
     	let if_block_anchor;
     	let if_block = /*msg*/ ctx[3] && create_if_block$2(ctx);
 
@@ -23155,7 +23063,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$5.name,
+    		id: create_default_slot_3$4.name,
     		type: "slot",
     		source: "(100:1) <Alert color=\\\"success\\\" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>",
     		ctx
@@ -23194,7 +23102,7 @@ var app = (function () {
     	table = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot_1$5] },
+    				$$slots: { default: [create_default_slot_1$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -23243,7 +23151,7 @@ var app = (function () {
     }
 
     // (127:24) <Button outline color="primary" on:click="{EditEconomies}">
-    function create_default_slot_2$5(ctx) {
+    function create_default_slot_2$4(ctx) {
     	let t;
 
     	const block = {
@@ -23260,7 +23168,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$5.name,
+    		id: create_default_slot_2$4.name,
     		type: "slot",
     		source: "(127:24) <Button outline color=\\\"primary\\\" on:click=\\\"{EditEconomies}\\\">",
     		ctx
@@ -23270,7 +23178,7 @@ var app = (function () {
     }
 
     // (109:8) <Table bordered>
-    function create_default_slot_1$5(ctx) {
+    function create_default_slot_1$4(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -23312,7 +23220,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_2$5] },
+    				$$slots: { default: [create_default_slot_2$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -23469,7 +23377,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$5.name,
+    		id: create_default_slot_1$4.name,
     		type: "slot",
     		source: "(109:8) <Table bordered>",
     		ctx
@@ -23509,7 +23417,7 @@ var app = (function () {
     }
 
     // (136:4) <Button outline color="secondary" on:click= "{pop}">
-    function create_default_slot$5(ctx) {
+    function create_default_slot$4(ctx) {
     	let t;
 
     	const block = {
@@ -23526,7 +23434,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$5.name,
+    		id: create_default_slot$4.name,
     		type: "slot",
     		source: "(136:4) <Button outline color=\\\"secondary\\\" on:click= \\\"{pop}\\\">",
     		ctx
@@ -23557,7 +23465,7 @@ var app = (function () {
     				color: "danger",
     				isOpen: /*visibleError*/ ctx[1],
     				toggle: /*func*/ ctx[9],
-    				$$slots: { default: [create_default_slot_4$5] },
+    				$$slots: { default: [create_default_slot_4$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -23568,7 +23476,7 @@ var app = (function () {
     				color: "success",
     				isOpen: /*visibleMsg*/ ctx[2],
     				toggle: /*func_1*/ ctx[10],
-    				$$slots: { default: [create_default_slot_3$5] },
+    				$$slots: { default: [create_default_slot_3$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -23592,7 +23500,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot$5] },
+    				$$slots: { default: [create_default_slot$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -23912,7 +23820,7 @@ var app = (function () {
     const file$6 = "src\\front\\frontEconomies\\MyGraphEconomies.svelte";
 
     // (108:2) <NavbarBrand href="#/info">
-    function create_default_slot_22$3(ctx) {
+    function create_default_slot_22$2(ctx) {
     	let t;
 
     	const block = {
@@ -23929,7 +23837,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$3.name,
+    		id: create_default_slot_22$2.name,
     		type: "slot",
     		source: "(108:2) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
@@ -23939,7 +23847,7 @@ var app = (function () {
     }
 
     // (111:4) <DropdownToggle nav caret>
-    function create_default_slot_21$4(ctx) {
+    function create_default_slot_21$3(ctx) {
     	let t;
 
     	const block = {
@@ -23956,7 +23864,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$4.name,
+    		id: create_default_slot_21$3.name,
     		type: "slot",
     		source: "(111:4) <DropdownToggle nav caret>",
     		ctx
@@ -23966,7 +23874,7 @@ var app = (function () {
     }
 
     // (113:6) <DropdownItem href="./api/v2/economies">
-    function create_default_slot_20$4(ctx) {
+    function create_default_slot_20$3(ctx) {
     	let t;
 
     	const block = {
@@ -23983,7 +23891,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$4.name,
+    		id: create_default_slot_20$3.name,
     		type: "slot",
     		source: "(113:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
@@ -23993,7 +23901,7 @@ var app = (function () {
     }
 
     // (115:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_19$4(ctx) {
+    function create_default_slot_19$3(ctx) {
     	let t;
 
     	const block = {
@@ -24010,7 +23918,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$4.name,
+    		id: create_default_slot_19$3.name,
     		type: "slot",
     		source: "(115:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
@@ -24020,7 +23928,7 @@ var app = (function () {
     }
 
     // (117:6) <DropdownItem href="./api/v1/expo-stats">
-    function create_default_slot_18$4(ctx) {
+    function create_default_slot_18$3(ctx) {
     	let t;
 
     	const block = {
@@ -24037,7 +23945,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$4.name,
+    		id: create_default_slot_18$3.name,
     		type: "slot",
     		source: "(117:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
     		ctx
@@ -24047,7 +23955,7 @@ var app = (function () {
     }
 
     // (112:4) <DropdownMenu end>
-    function create_default_slot_17$4(ctx) {
+    function create_default_slot_17$3(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -24062,7 +23970,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./api/v2/economies",
-    				$$slots: { default: [create_default_slot_20$4] },
+    				$$slots: { default: [create_default_slot_20$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24073,7 +23981,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_19$4] },
+    				$$slots: { default: [create_default_slot_19$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24084,7 +23992,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "./api/v1/expo-stats",
-    				$$slots: { default: [create_default_slot_18$4] },
+    				$$slots: { default: [create_default_slot_18$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24169,7 +24077,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$4.name,
+    		id: create_default_slot_17$3.name,
     		type: "slot",
     		source: "(112:4) <DropdownMenu end>",
     		ctx
@@ -24179,7 +24087,7 @@ var app = (function () {
     }
 
     // (110:3) <Dropdown >
-    function create_default_slot_16$4(ctx) {
+    function create_default_slot_16$3(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -24189,7 +24097,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_21$4] },
+    				$$slots: { default: [create_default_slot_21$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24198,7 +24106,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_17$4] },
+    				$$slots: { default: [create_default_slot_17$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24252,7 +24160,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$4.name,
+    		id: create_default_slot_16$3.name,
     		type: "slot",
     		source: "(110:3) <Dropdown >",
     		ctx
@@ -24262,7 +24170,7 @@ var app = (function () {
     }
 
     // (122:4) <DropdownToggle nav caret>
-    function create_default_slot_15$4(ctx) {
+    function create_default_slot_15$3(ctx) {
     	let t;
 
     	const block = {
@@ -24279,7 +24187,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$4.name,
+    		id: create_default_slot_15$3.name,
     		type: "slot",
     		source: "(122:4) <DropdownToggle nav caret>",
     		ctx
@@ -24289,7 +24197,7 @@ var app = (function () {
     }
 
     // (124:6) <DropdownItem href="./#/economies">
-    function create_default_slot_14$4(ctx) {
+    function create_default_slot_14$3(ctx) {
     	let t;
 
     	const block = {
@@ -24306,7 +24214,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$4.name,
+    		id: create_default_slot_14$3.name,
     		type: "slot",
     		source: "(124:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
@@ -24316,7 +24224,7 @@ var app = (function () {
     }
 
     // (125:6) <DropdownItem href="#/esco-stats">
-    function create_default_slot_13$4(ctx) {
+    function create_default_slot_13$3(ctx) {
     	let t;
 
     	const block = {
@@ -24333,7 +24241,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$4.name,
+    		id: create_default_slot_13$3.name,
     		type: "slot",
     		source: "(125:6) <DropdownItem href=\\\"#/esco-stats\\\">",
     		ctx
@@ -24343,7 +24251,7 @@ var app = (function () {
     }
 
     // (126:6) <DropdownItem href="#/expo">
-    function create_default_slot_12$4(ctx) {
+    function create_default_slot_12$3(ctx) {
     	let t;
 
     	const block = {
@@ -24360,7 +24268,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$4.name,
+    		id: create_default_slot_12$3.name,
     		type: "slot",
     		source: "(126:6) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
@@ -24370,7 +24278,7 @@ var app = (function () {
     }
 
     // (128:6) <DropdownItem href="#/graph">
-    function create_default_slot_11$4(ctx) {
+    function create_default_slot_11$3(ctx) {
     	let t;
 
     	const block = {
@@ -24387,7 +24295,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$4.name,
+    		id: create_default_slot_11$3.name,
     		type: "slot",
     		source: "(128:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -24397,7 +24305,7 @@ var app = (function () {
     }
 
     // (123:4) <DropdownMenu end>
-    function create_default_slot_10$4(ctx) {
+    function create_default_slot_10$3(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -24412,7 +24320,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_14$4] },
+    				$$slots: { default: [create_default_slot_14$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24421,7 +24329,7 @@ var app = (function () {
     	dropdownitem1 = new DropdownItem({
     			props: {
     				href: "#/esco-stats",
-    				$$slots: { default: [create_default_slot_13$4] },
+    				$$slots: { default: [create_default_slot_13$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24430,7 +24338,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "#/expo",
-    				$$slots: { default: [create_default_slot_12$4] },
+    				$$slots: { default: [create_default_slot_12$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24441,7 +24349,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_11$4] },
+    				$$slots: { default: [create_default_slot_11$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24533,7 +24441,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$4.name,
+    		id: create_default_slot_10$3.name,
     		type: "slot",
     		source: "(123:4) <DropdownMenu end>",
     		ctx
@@ -24543,7 +24451,7 @@ var app = (function () {
     }
 
     // (121:12) <Dropdown>
-    function create_default_slot_9$4(ctx) {
+    function create_default_slot_9$3(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -24553,7 +24461,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_15$4] },
+    				$$slots: { default: [create_default_slot_15$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24562,7 +24470,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_10$4] },
+    				$$slots: { default: [create_default_slot_10$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24616,7 +24524,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$4.name,
+    		id: create_default_slot_9$3.name,
     		type: "slot",
     		source: "(121:12) <Dropdown>",
     		ctx
@@ -24626,7 +24534,7 @@ var app = (function () {
     }
 
     // (133:4) <DropdownToggle nav caret>
-    function create_default_slot_8$4(ctx) {
+    function create_default_slot_8$3(ctx) {
     	let t;
 
     	const block = {
@@ -24643,7 +24551,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$4.name,
+    		id: create_default_slot_8$3.name,
     		type: "slot",
     		source: "(133:4) <DropdownToggle nav caret>",
     		ctx
@@ -24653,7 +24561,7 @@ var app = (function () {
     }
 
     // (135:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_7$4(ctx) {
+    function create_default_slot_7$3(ctx) {
     	let t;
 
     	const block = {
@@ -24670,7 +24578,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$4.name,
+    		id: create_default_slot_7$3.name,
     		type: "slot",
     		source: "(135:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -24680,7 +24588,7 @@ var app = (function () {
     }
 
     // (136:6) <DropdownItem href="#/graphesco">
-    function create_default_slot_6$4(ctx) {
+    function create_default_slot_6$3(ctx) {
     	let t;
 
     	const block = {
@@ -24697,7 +24605,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$4.name,
+    		id: create_default_slot_6$3.name,
     		type: "slot",
     		source: "(136:6) <DropdownItem href=\\\"#/graphesco\\\">",
     		ctx
@@ -24707,7 +24615,7 @@ var app = (function () {
     }
 
     // (137:6) <DropdownItem href="#/#/graphexpo">
-    function create_default_slot_5$4(ctx) {
+    function create_default_slot_5$3(ctx) {
     	let t;
 
     	const block = {
@@ -24724,7 +24632,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$4.name,
+    		id: create_default_slot_5$3.name,
     		type: "slot",
     		source: "(137:6) <DropdownItem href=\\\"#/#/graphexpo\\\">",
     		ctx
@@ -24734,7 +24642,7 @@ var app = (function () {
     }
 
     // (139:6) <DropdownItem href="#/graph">
-    function create_default_slot_4$4(ctx) {
+    function create_default_slot_4$3(ctx) {
     	let t;
 
     	const block = {
@@ -24751,7 +24659,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$4.name,
+    		id: create_default_slot_4$3.name,
     		type: "slot",
     		source: "(139:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -24761,7 +24669,7 @@ var app = (function () {
     }
 
     // (134:4) <DropdownMenu end>
-    function create_default_slot_3$4(ctx) {
+    function create_default_slot_3$3(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -24776,7 +24684,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_7$4] },
+    				$$slots: { default: [create_default_slot_7$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24785,7 +24693,7 @@ var app = (function () {
     	dropdownitem1 = new DropdownItem({
     			props: {
     				href: "#/graphesco",
-    				$$slots: { default: [create_default_slot_6$4] },
+    				$$slots: { default: [create_default_slot_6$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24794,7 +24702,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "#/#/graphexpo",
-    				$$slots: { default: [create_default_slot_5$4] },
+    				$$slots: { default: [create_default_slot_5$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24805,7 +24713,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_4$4] },
+    				$$slots: { default: [create_default_slot_4$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24897,7 +24805,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$4.name,
+    		id: create_default_slot_3$3.name,
     		type: "slot",
     		source: "(134:4) <DropdownMenu end>",
     		ctx
@@ -24907,7 +24815,7 @@ var app = (function () {
     }
 
     // (132:5) <Dropdown >
-    function create_default_slot_2$4(ctx) {
+    function create_default_slot_2$3(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -24917,7 +24825,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_8$4] },
+    				$$slots: { default: [create_default_slot_8$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24926,7 +24834,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_3$4] },
+    				$$slots: { default: [create_default_slot_3$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -24980,7 +24888,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$4.name,
+    		id: create_default_slot_2$3.name,
     		type: "slot",
     		source: "(132:5) <Dropdown >",
     		ctx
@@ -24990,7 +24898,7 @@ var app = (function () {
     }
 
     // (109:2) <Nav navbar>
-    function create_default_slot_1$4(ctx) {
+    function create_default_slot_1$3(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -25000,7 +24908,7 @@ var app = (function () {
 
     	dropdown0 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_16$4] },
+    				$$slots: { default: [create_default_slot_16$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -25008,7 +24916,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_9$4] },
+    				$$slots: { default: [create_default_slot_9$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -25016,7 +24924,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_2$4] },
+    				$$slots: { default: [create_default_slot_2$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -25085,7 +24993,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$4.name,
+    		id: create_default_slot_1$3.name,
     		type: "slot",
     		source: "(109:2) <Nav navbar>",
     		ctx
@@ -25095,7 +25003,7 @@ var app = (function () {
     }
 
     // (107:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot$4(ctx) {
+    function create_default_slot$3(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -25104,7 +25012,7 @@ var app = (function () {
     	navbarbrand = new NavbarBrand({
     			props: {
     				href: "#/info",
-    				$$slots: { default: [create_default_slot_22$3] },
+    				$$slots: { default: [create_default_slot_22$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -25113,7 +25021,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_1$4] },
+    				$$slots: { default: [create_default_slot_1$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -25167,7 +25075,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$4.name,
+    		id: create_default_slot$3.name,
     		type: "slot",
     		source: "(107:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -25204,7 +25112,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot$4] },
+    				$$slots: { default: [create_default_slot$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26182,7 +26090,7 @@ var app = (function () {
     }
 
     // (200:4) <DropdownToggle nav caret>
-    function create_default_slot_22$2(ctx) {
+    function create_default_slot_22$1(ctx) {
     	let t;
 
     	const block = {
@@ -26199,7 +26107,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$2.name,
+    		id: create_default_slot_22$1.name,
     		type: "slot",
     		source: "(200:4) <DropdownToggle nav caret>",
     		ctx
@@ -26209,7 +26117,7 @@ var app = (function () {
     }
 
     // (202:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_21$3(ctx) {
+    function create_default_slot_21$2(ctx) {
     	let t;
 
     	const block = {
@@ -26226,7 +26134,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$3.name,
+    		id: create_default_slot_21$2.name,
     		type: "slot",
     		source: "(202:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -26236,7 +26144,7 @@ var app = (function () {
     }
 
     // (203:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_20$3(ctx) {
+    function create_default_slot_20$2(ctx) {
     	let t;
 
     	const block = {
@@ -26253,7 +26161,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$3.name,
+    		id: create_default_slot_20$2.name,
     		type: "slot",
     		source: "(203:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -26263,7 +26171,7 @@ var app = (function () {
     }
 
     // (204:6) <DropdownItem href="#/graphexpo">
-    function create_default_slot_19$3(ctx) {
+    function create_default_slot_19$2(ctx) {
     	let t;
 
     	const block = {
@@ -26280,7 +26188,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$3.name,
+    		id: create_default_slot_19$2.name,
     		type: "slot",
     		source: "(204:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
@@ -26290,7 +26198,7 @@ var app = (function () {
     }
 
     // (205:18) <DropdownItem href="#/graph">
-    function create_default_slot_18$3(ctx) {
+    function create_default_slot_18$2(ctx) {
     	let t;
 
     	const block = {
@@ -26307,7 +26215,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$3.name,
+    		id: create_default_slot_18$2.name,
     		type: "slot",
     		source: "(205:18) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -26317,7 +26225,7 @@ var app = (function () {
     }
 
     // (207:6) <DropdownItem href="#/graph">
-    function create_default_slot_17$3(ctx) {
+    function create_default_slot_17$2(ctx) {
     	let t;
 
     	const block = {
@@ -26334,7 +26242,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$3.name,
+    		id: create_default_slot_17$2.name,
     		type: "slot",
     		source: "(207:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -26344,7 +26252,7 @@ var app = (function () {
     }
 
     // (201:4) <DropdownMenu end>
-    function create_default_slot_16$3(ctx) {
+    function create_default_slot_16$2(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -26361,7 +26269,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_21$3] },
+    				$$slots: { default: [create_default_slot_21$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26370,7 +26278,7 @@ var app = (function () {
     	dropdownitem1 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_20$3] },
+    				$$slots: { default: [create_default_slot_20$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26379,7 +26287,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "#/graphexpo",
-    				$$slots: { default: [create_default_slot_19$3] },
+    				$$slots: { default: [create_default_slot_19$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26388,7 +26296,7 @@ var app = (function () {
     	dropdownitem3 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_18$3] },
+    				$$slots: { default: [create_default_slot_18$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26399,7 +26307,7 @@ var app = (function () {
     	dropdownitem5 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_17$3] },
+    				$$slots: { default: [create_default_slot_17$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26506,7 +26414,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$3.name,
+    		id: create_default_slot_16$2.name,
     		type: "slot",
     		source: "(201:4) <DropdownMenu end>",
     		ctx
@@ -26516,7 +26424,7 @@ var app = (function () {
     }
 
     // (199:5) <Dropdown >
-    function create_default_slot_15$3(ctx) {
+    function create_default_slot_15$2(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -26526,7 +26434,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_22$2] },
+    				$$slots: { default: [create_default_slot_22$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26535,7 +26443,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_16$3] },
+    				$$slots: { default: [create_default_slot_16$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26589,7 +26497,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$3.name,
+    		id: create_default_slot_15$2.name,
     		type: "slot",
     		source: "(199:5) <Dropdown >",
     		ctx
@@ -26599,7 +26507,7 @@ var app = (function () {
     }
 
     // (176:2) <Nav navbar>
-    function create_default_slot_14$3(ctx) {
+    function create_default_slot_14$2(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -26625,7 +26533,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_15$3] },
+    				$$slots: { default: [create_default_slot_15$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26694,7 +26602,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$3.name,
+    		id: create_default_slot_14$2.name,
     		type: "slot",
     		source: "(176:2) <Nav navbar>",
     		ctx
@@ -26704,7 +26612,7 @@ var app = (function () {
     }
 
     // (174:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot_13$3(ctx) {
+    function create_default_slot_13$2(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -26722,7 +26630,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_14$3] },
+    				$$slots: { default: [create_default_slot_14$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26776,7 +26684,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$3.name,
+    		id: create_default_slot_13$2.name,
     		type: "slot",
     		source: "(174:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -26786,7 +26694,7 @@ var app = (function () {
     }
 
     // (216:1) <Button on:click="{getPgAnt}">
-    function create_default_slot_12$3(ctx) {
+    function create_default_slot_12$2(ctx) {
     	let t;
 
     	const block = {
@@ -26803,7 +26711,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$3.name,
+    		id: create_default_slot_12$2.name,
     		type: "slot",
     		source: "(216:1) <Button on:click=\\\"{getPgAnt}\\\">",
     		ctx
@@ -26813,7 +26721,7 @@ var app = (function () {
     }
 
     // (219:1) <Button on:click="{getPgSig}">
-    function create_default_slot_11$3(ctx) {
+    function create_default_slot_11$2(ctx) {
     	let t;
 
     	const block = {
@@ -26830,7 +26738,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$3.name,
+    		id: create_default_slot_11$2.name,
     		type: "slot",
     		source: "(219:1) <Button on:click=\\\"{getPgSig}\\\">",
     		ctx
@@ -26875,7 +26783,7 @@ var app = (function () {
     				color: /*color*/ ctx[4],
     				isOpen: /*visible*/ ctx[3],
     				toggle: /*func*/ ctx[14],
-    				$$slots: { default: [create_default_slot_10$3] },
+    				$$slots: { default: [create_default_slot_10$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26884,7 +26792,7 @@ var app = (function () {
     	table0 = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot_7$3] },
+    				$$slots: { default: [create_default_slot_7$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -26893,7 +26801,7 @@ var app = (function () {
     	table1 = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot$3] },
+    				$$slots: { default: [create_default_slot$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27005,7 +26913,7 @@ var app = (function () {
     }
 
     // (225:1) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
-    function create_default_slot_10$3(ctx) {
+    function create_default_slot_10$2(ctx) {
     	let if_block_anchor;
     	let if_block = /*checkMSG*/ ctx[2] && create_if_block$1(ctx);
 
@@ -27040,7 +26948,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$3.name,
+    		id: create_default_slot_10$2.name,
     		type: "slot",
     		source: "(225:1) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
     		ctx
@@ -27050,7 +26958,7 @@ var app = (function () {
     }
 
     // (244:22) <Button outline color="dark" on:click="{()=>{      if (from == null || to == null) {       color="success";       checkMSG="Los campos fecha inicio y fecha fin no pueden estar vacíos";       visible="true";      }else{       getExpo();      }     }}">
-    function create_default_slot_9$3(ctx) {
+    function create_default_slot_9$2(ctx) {
     	let t;
 
     	const block = {
@@ -27067,7 +26975,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$3.name,
+    		id: create_default_slot_9$2.name,
     		type: "slot",
     		source: "(244:22) <Button outline color=\\\"dark\\\" on:click=\\\"{()=>{      if (from == null || to == null) {       color=\\\"success\\\";       checkMSG=\\\"Los campos fecha inicio y fecha fin no pueden estar vacíos\\\";       visible=\\\"true\\\";      }else{       getExpo();      }     }}\\\">",
     		ctx
@@ -27077,7 +26985,7 @@ var app = (function () {
     }
 
     // (256:22) <Button outline color="info" on:click="{()=>{      from = null;      to = null;      getExpo();           }}">
-    function create_default_slot_8$3(ctx) {
+    function create_default_slot_8$2(ctx) {
     	let t;
 
     	const block = {
@@ -27094,7 +27002,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$3.name,
+    		id: create_default_slot_8$2.name,
     		type: "slot",
     		source: "(256:22) <Button outline color=\\\"info\\\" on:click=\\\"{()=>{      from = null;      to = null;      getExpo();           }}\\\">",
     		ctx
@@ -27104,7 +27012,7 @@ var app = (function () {
     }
 
     // (231:1) <Table bordered>
-    function create_default_slot_7$3(ctx) {
+    function create_default_slot_7$2(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -27132,7 +27040,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "dark",
-    				$$slots: { default: [create_default_slot_9$3] },
+    				$$slots: { default: [create_default_slot_9$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27144,7 +27052,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "info",
-    				$$slots: { default: [create_default_slot_8$3] },
+    				$$slots: { default: [create_default_slot_8$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27275,7 +27183,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$3.name,
+    		id: create_default_slot_7$2.name,
     		type: "slot",
     		source: "(231:1) <Table bordered>",
     		ctx
@@ -27285,7 +27193,7 @@ var app = (function () {
     }
 
     // (288:8) <Button outline color="primary" on:click="{insertExpo}">
-    function create_default_slot_6$3(ctx) {
+    function create_default_slot_6$2(ctx) {
     	let t;
 
     	const block = {
@@ -27302,7 +27210,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$3.name,
+    		id: create_default_slot_6$2.name,
     		type: "slot",
     		source: "(288:8) <Button outline color=\\\"primary\\\" on:click=\\\"{insertExpo}\\\">",
     		ctx
@@ -27312,7 +27220,7 @@ var app = (function () {
     }
 
     // (292:23) <Button outline color="primary" on:click="{()=>{       newExpo.country = null;       newExpo.year = null;       newExpo.expo_tec = null;       newExpo.expo_m = null;       newExpo.tot_esco= null;      }}">
-    function create_default_slot_5$3(ctx) {
+    function create_default_slot_5$2(ctx) {
     	let t;
 
     	const block = {
@@ -27329,7 +27237,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$3.name,
+    		id: create_default_slot_5$2.name,
     		type: "slot",
     		source: "(292:23) <Button outline color=\\\"primary\\\" on:click=\\\"{()=>{       newExpo.country = null;       newExpo.year = null;       newExpo.expo_tec = null;       newExpo.expo_m = null;       newExpo.tot_esco= null;      }}\\\">",
     		ctx
@@ -27339,7 +27247,7 @@ var app = (function () {
     }
 
     // (311:8) <Button outline color="warning" on:click={function (){       window.location.href = `/#/expo/${expos.country}/${expos.year}`      }}>
-    function create_default_slot_4$3(ctx) {
+    function create_default_slot_4$2(ctx) {
     	let t;
 
     	const block = {
@@ -27356,7 +27264,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$3.name,
+    		id: create_default_slot_4$2.name,
     		type: "slot",
     		source: "(311:8) <Button outline color=\\\"warning\\\" on:click={function (){       window.location.href = `/#/expo/${expos.country}/${expos.year}`      }}>",
     		ctx
@@ -27366,7 +27274,7 @@ var app = (function () {
     }
 
     // (316:8) <Button outline color="danger" on:click={BorrarExpo(expos.country,expos.year)}>
-    function create_default_slot_3$3(ctx) {
+    function create_default_slot_3$2(ctx) {
     	let t;
 
     	const block = {
@@ -27383,7 +27291,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$3.name,
+    		id: create_default_slot_3$2.name,
     		type: "slot",
     		source: "(316:8) <Button outline color=\\\"danger\\\" on:click={BorrarExpo(expos.country,expos.year)}>",
     		ctx
@@ -27430,7 +27338,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "warning",
-    				$$slots: { default: [create_default_slot_4$3] },
+    				$$slots: { default: [create_default_slot_4$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27442,7 +27350,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_3$3] },
+    				$$slots: { default: [create_default_slot_3$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27560,7 +27468,7 @@ var app = (function () {
     }
 
     // (323:8) <Button outline color="success" on:click={LoadExpo}>
-    function create_default_slot_2$3(ctx) {
+    function create_default_slot_2$2(ctx) {
     	let t;
 
     	const block = {
@@ -27577,7 +27485,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$3.name,
+    		id: create_default_slot_2$2.name,
     		type: "slot",
     		source: "(323:8) <Button outline color=\\\"success\\\" on:click={LoadExpo}>",
     		ctx
@@ -27587,7 +27495,7 @@ var app = (function () {
     }
 
     // (326:8) <Button outline color="danger" on:click={BorrarExpoAll}>
-    function create_default_slot_1$3(ctx) {
+    function create_default_slot_1$2(ctx) {
     	let t;
 
     	const block = {
@@ -27604,7 +27512,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$3.name,
+    		id: create_default_slot_1$2.name,
     		type: "slot",
     		source: "(326:8) <Button outline color=\\\"danger\\\" on:click={BorrarExpoAll}>",
     		ctx
@@ -27614,7 +27522,7 @@ var app = (function () {
     }
 
     // (270:1) <Table bordered>
-    function create_default_slot$3(ctx) {
+    function create_default_slot$2(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -27665,7 +27573,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_6$3] },
+    				$$slots: { default: [create_default_slot_6$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27677,7 +27585,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_5$3] },
+    				$$slots: { default: [create_default_slot_5$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27700,7 +27608,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "success",
-    				$$slots: { default: [create_default_slot_2$3] },
+    				$$slots: { default: [create_default_slot_2$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27712,7 +27620,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_1$3] },
+    				$$slots: { default: [create_default_slot_1$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -27989,7 +27897,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$3.name,
+    		id: create_default_slot$2.name,
     		type: "slot",
     		source: "(270:1) <Table bordered>",
     		ctx
@@ -28046,7 +27954,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot_13$3] },
+    				$$slots: { default: [create_default_slot_13$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -28054,7 +27962,7 @@ var app = (function () {
 
     	button0 = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_12$3] },
+    				$$slots: { default: [create_default_slot_12$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -28064,7 +27972,7 @@ var app = (function () {
 
     	button1 = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_11$3] },
+    				$$slots: { default: [create_default_slot_11$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -28669,7 +28577,7 @@ var app = (function () {
     }
 
     // (96:4) <DropdownMenu end>
-    function create_default_slot_22$1(ctx) {
+    function create_default_slot_22(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -28791,7 +28699,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$1.name,
+    		id: create_default_slot_22.name,
     		type: "slot",
     		source: "(96:4) <DropdownMenu end>",
     		ctx
@@ -28801,7 +28709,7 @@ var app = (function () {
     }
 
     // (94:3) <Dropdown >
-    function create_default_slot_21$2(ctx) {
+    function create_default_slot_21$1(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -28820,7 +28728,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_22$1] },
+    				$$slots: { default: [create_default_slot_22] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -28874,7 +28782,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$2.name,
+    		id: create_default_slot_21$1.name,
     		type: "slot",
     		source: "(94:3) <Dropdown >",
     		ctx
@@ -28884,7 +28792,7 @@ var app = (function () {
     }
 
     // (106:4) <DropdownToggle nav caret>
-    function create_default_slot_20$2(ctx) {
+    function create_default_slot_20$1(ctx) {
     	let t;
 
     	const block = {
@@ -28901,7 +28809,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$2.name,
+    		id: create_default_slot_20$1.name,
     		type: "slot",
     		source: "(106:4) <DropdownToggle nav caret>",
     		ctx
@@ -28911,7 +28819,7 @@ var app = (function () {
     }
 
     // (108:6) <DropdownItem href="./#/economies">
-    function create_default_slot_19$2(ctx) {
+    function create_default_slot_19$1(ctx) {
     	let t;
 
     	const block = {
@@ -28928,7 +28836,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$2.name,
+    		id: create_default_slot_19$1.name,
     		type: "slot",
     		source: "(108:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
@@ -28938,7 +28846,7 @@ var app = (function () {
     }
 
     // (109:6) <DropdownItem href="./#/esco-stats">
-    function create_default_slot_18$2(ctx) {
+    function create_default_slot_18$1(ctx) {
     	let t;
 
     	const block = {
@@ -28955,7 +28863,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$2.name,
+    		id: create_default_slot_18$1.name,
     		type: "slot",
     		source: "(109:6) <DropdownItem href=\\\"./#/esco-stats\\\">",
     		ctx
@@ -28965,7 +28873,7 @@ var app = (function () {
     }
 
     // (110:6) <DropdownItem href="#/expo">
-    function create_default_slot_17$2(ctx) {
+    function create_default_slot_17$1(ctx) {
     	let t;
 
     	const block = {
@@ -28982,7 +28890,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$2.name,
+    		id: create_default_slot_17$1.name,
     		type: "slot",
     		source: "(110:6) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
@@ -28992,7 +28900,7 @@ var app = (function () {
     }
 
     // (112:6) <DropdownItem href="#/graph">
-    function create_default_slot_16$2(ctx) {
+    function create_default_slot_16$1(ctx) {
     	let t;
 
     	const block = {
@@ -29009,7 +28917,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$2.name,
+    		id: create_default_slot_16$1.name,
     		type: "slot",
     		source: "(112:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -29019,7 +28927,7 @@ var app = (function () {
     }
 
     // (107:4) <DropdownMenu end>
-    function create_default_slot_15$2(ctx) {
+    function create_default_slot_15$1(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -29034,7 +28942,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_19$2] },
+    				$$slots: { default: [create_default_slot_19$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29043,7 +28951,7 @@ var app = (function () {
     	dropdownitem1 = new DropdownItem({
     			props: {
     				href: "./#/esco-stats",
-    				$$slots: { default: [create_default_slot_18$2] },
+    				$$slots: { default: [create_default_slot_18$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29052,7 +28960,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "#/expo",
-    				$$slots: { default: [create_default_slot_17$2] },
+    				$$slots: { default: [create_default_slot_17$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29063,7 +28971,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_16$2] },
+    				$$slots: { default: [create_default_slot_16$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29155,7 +29063,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$2.name,
+    		id: create_default_slot_15$1.name,
     		type: "slot",
     		source: "(107:4) <DropdownMenu end>",
     		ctx
@@ -29165,7 +29073,7 @@ var app = (function () {
     }
 
     // (105:12) <Dropdown>
-    function create_default_slot_14$2(ctx) {
+    function create_default_slot_14$1(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -29175,7 +29083,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_20$2] },
+    				$$slots: { default: [create_default_slot_20$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29184,7 +29092,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_15$2] },
+    				$$slots: { default: [create_default_slot_15$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29238,7 +29146,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$2.name,
+    		id: create_default_slot_14$1.name,
     		type: "slot",
     		source: "(105:12) <Dropdown>",
     		ctx
@@ -29248,7 +29156,7 @@ var app = (function () {
     }
 
     // (117:4) <DropdownToggle nav caret>
-    function create_default_slot_13$2(ctx) {
+    function create_default_slot_13$1(ctx) {
     	let t;
 
     	const block = {
@@ -29265,7 +29173,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$2.name,
+    		id: create_default_slot_13$1.name,
     		type: "slot",
     		source: "(117:4) <DropdownToggle nav caret>",
     		ctx
@@ -29275,7 +29183,7 @@ var app = (function () {
     }
 
     // (119:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_12$2(ctx) {
+    function create_default_slot_12$1(ctx) {
     	let t;
 
     	const block = {
@@ -29292,7 +29200,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$2.name,
+    		id: create_default_slot_12$1.name,
     		type: "slot",
     		source: "(119:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -29302,7 +29210,7 @@ var app = (function () {
     }
 
     // (120:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_11$2(ctx) {
+    function create_default_slot_11$1(ctx) {
     	let t;
 
     	const block = {
@@ -29319,7 +29227,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$2.name,
+    		id: create_default_slot_11$1.name,
     		type: "slot",
     		source: "(120:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -29329,7 +29237,7 @@ var app = (function () {
     }
 
     // (121:6) <DropdownItem href="#/graphexpo">
-    function create_default_slot_10$2(ctx) {
+    function create_default_slot_10$1(ctx) {
     	let t;
 
     	const block = {
@@ -29346,7 +29254,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$2.name,
+    		id: create_default_slot_10$1.name,
     		type: "slot",
     		source: "(121:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
@@ -29356,7 +29264,7 @@ var app = (function () {
     }
 
     // (122:18) <DropdownItem href="#/graph">
-    function create_default_slot_9$2(ctx) {
+    function create_default_slot_9$1(ctx) {
     	let t;
 
     	const block = {
@@ -29373,7 +29281,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$2.name,
+    		id: create_default_slot_9$1.name,
     		type: "slot",
     		source: "(122:18) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -29383,7 +29291,7 @@ var app = (function () {
     }
 
     // (124:6) <DropdownItem href="#/graph">
-    function create_default_slot_8$2(ctx) {
+    function create_default_slot_8$1(ctx) {
     	let t;
 
     	const block = {
@@ -29400,7 +29308,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$2.name,
+    		id: create_default_slot_8$1.name,
     		type: "slot",
     		source: "(124:6) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
@@ -29410,7 +29318,7 @@ var app = (function () {
     }
 
     // (118:4) <DropdownMenu end>
-    function create_default_slot_7$2(ctx) {
+    function create_default_slot_7$1(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -29427,7 +29335,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_12$2] },
+    				$$slots: { default: [create_default_slot_12$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29436,7 +29344,7 @@ var app = (function () {
     	dropdownitem1 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_11$2] },
+    				$$slots: { default: [create_default_slot_11$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29445,7 +29353,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "#/graphexpo",
-    				$$slots: { default: [create_default_slot_10$2] },
+    				$$slots: { default: [create_default_slot_10$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29454,7 +29362,7 @@ var app = (function () {
     	dropdownitem3 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_9$2] },
+    				$$slots: { default: [create_default_slot_9$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29465,7 +29373,7 @@ var app = (function () {
     	dropdownitem5 = new DropdownItem({
     			props: {
     				href: "#/graph",
-    				$$slots: { default: [create_default_slot_8$2] },
+    				$$slots: { default: [create_default_slot_8$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29572,7 +29480,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$2.name,
+    		id: create_default_slot_7$1.name,
     		type: "slot",
     		source: "(118:4) <DropdownMenu end>",
     		ctx
@@ -29582,7 +29490,7 @@ var app = (function () {
     }
 
     // (116:5) <Dropdown >
-    function create_default_slot_6$2(ctx) {
+    function create_default_slot_6$1(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -29592,7 +29500,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_13$2] },
+    				$$slots: { default: [create_default_slot_13$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29601,7 +29509,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_7$2] },
+    				$$slots: { default: [create_default_slot_7$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29655,7 +29563,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$2.name,
+    		id: create_default_slot_6$1.name,
     		type: "slot",
     		source: "(116:5) <Dropdown >",
     		ctx
@@ -29665,7 +29573,7 @@ var app = (function () {
     }
 
     // (93:2) <Nav navbar>
-    function create_default_slot_5$2(ctx) {
+    function create_default_slot_5$1(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -29675,7 +29583,7 @@ var app = (function () {
 
     	dropdown0 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_21$2] },
+    				$$slots: { default: [create_default_slot_21$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29683,7 +29591,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_14$2] },
+    				$$slots: { default: [create_default_slot_14$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29691,7 +29599,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_6$2] },
+    				$$slots: { default: [create_default_slot_6$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29760,7 +29668,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$2.name,
+    		id: create_default_slot_5$1.name,
     		type: "slot",
     		source: "(93:2) <Nav navbar>",
     		ctx
@@ -29770,7 +29678,7 @@ var app = (function () {
     }
 
     // (91:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot_4$2(ctx) {
+    function create_default_slot_4$1(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -29788,7 +29696,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_5$2] },
+    				$$slots: { default: [create_default_slot_5$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29842,7 +29750,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$2.name,
+    		id: create_default_slot_4$1.name,
     		type: "slot",
     		source: "(91:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -29882,7 +29790,7 @@ var app = (function () {
     }
 
     // (133:4) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
-    function create_default_slot_3$2(ctx) {
+    function create_default_slot_3$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*checkMSG*/ ctx[3] && create_if_block(ctx);
 
@@ -29917,7 +29825,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$2.name,
+    		id: create_default_slot_3$1.name,
     		type: "slot",
     		source: "(133:4) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
     		ctx
@@ -29956,7 +29864,7 @@ var app = (function () {
     	table = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot_1$2] },
+    				$$slots: { default: [create_default_slot_1$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30005,7 +29913,7 @@ var app = (function () {
     }
 
     // (160:24) <Button outline color="primary" on:click="{EditExpo}">
-    function create_default_slot_2$2(ctx) {
+    function create_default_slot_2$1(ctx) {
     	let t;
 
     	const block = {
@@ -30022,7 +29930,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$2.name,
+    		id: create_default_slot_2$1.name,
     		type: "slot",
     		source: "(160:24) <Button outline color=\\\"primary\\\" on:click=\\\"{EditExpo}\\\">",
     		ctx
@@ -30032,7 +29940,7 @@ var app = (function () {
     }
 
     // (142:8) <Table bordered>
-    function create_default_slot_1$2(ctx) {
+    function create_default_slot_1$1(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -30074,7 +29982,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_2$2] },
+    				$$slots: { default: [create_default_slot_2$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30231,7 +30139,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$2.name,
+    		id: create_default_slot_1$1.name,
     		type: "slot",
     		source: "(142:8) <Table bordered>",
     		ctx
@@ -30271,7 +30179,7 @@ var app = (function () {
     }
 
     // (169:4) <Button outline color="secondary" on:click= "{pop}">
-    function create_default_slot$2(ctx) {
+    function create_default_slot$1(ctx) {
     	let t;
 
     	const block = {
@@ -30288,7 +30196,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$2.name,
+    		id: create_default_slot$1.name,
     		type: "slot",
     		source: "(169:4) <Button outline color=\\\"secondary\\\" on:click= \\\"{pop}\\\">",
     		ctx
@@ -30319,7 +30227,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot_4$2] },
+    				$$slots: { default: [create_default_slot_4$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30330,7 +30238,7 @@ var app = (function () {
     				color: /*color*/ ctx[5],
     				isOpen: /*visible*/ ctx[4],
     				toggle: /*func*/ ctx[8],
-    				$$slots: { default: [create_default_slot_3$2] },
+    				$$slots: { default: [create_default_slot_3$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30354,7 +30262,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot$2] },
+    				$$slots: { default: [create_default_slot$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30676,7 +30584,7 @@ var app = (function () {
     const file$3 = "src\\front\\expo-stats\\ExpoGraph.svelte";
 
     // (127:2) <NavbarBrand href="#/info">
-    function create_default_slot_21$1(ctx) {
+    function create_default_slot_21(ctx) {
     	let t;
 
     	const block = {
@@ -30693,7 +30601,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_21$1.name,
+    		id: create_default_slot_21.name,
     		type: "slot",
     		source: "(127:2) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
@@ -30703,7 +30611,7 @@ var app = (function () {
     }
 
     // (130:4) <DropdownToggle nav caret>
-    function create_default_slot_20$1(ctx) {
+    function create_default_slot_20(ctx) {
     	let t;
 
     	const block = {
@@ -30720,7 +30628,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$1.name,
+    		id: create_default_slot_20.name,
     		type: "slot",
     		source: "(130:4) <DropdownToggle nav caret>",
     		ctx
@@ -30730,7 +30638,7 @@ var app = (function () {
     }
 
     // (132:6) <DropdownItem href="./api/v2/economies">
-    function create_default_slot_19$1(ctx) {
+    function create_default_slot_19(ctx) {
     	let t;
 
     	const block = {
@@ -30747,7 +30655,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$1.name,
+    		id: create_default_slot_19.name,
     		type: "slot",
     		source: "(132:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
@@ -30757,7 +30665,7 @@ var app = (function () {
     }
 
     // (134:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_18$1(ctx) {
+    function create_default_slot_18(ctx) {
     	let t;
 
     	const block = {
@@ -30774,7 +30682,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$1.name,
+    		id: create_default_slot_18.name,
     		type: "slot",
     		source: "(134:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
@@ -30784,7 +30692,7 @@ var app = (function () {
     }
 
     // (136:6) <DropdownItem href="./api/v1/expo">
-    function create_default_slot_17$1(ctx) {
+    function create_default_slot_17(ctx) {
     	let t;
 
     	const block = {
@@ -30801,7 +30709,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$1.name,
+    		id: create_default_slot_17.name,
     		type: "slot",
     		source: "(136:6) <DropdownItem href=\\\"./api/v1/expo\\\">",
     		ctx
@@ -30811,7 +30719,7 @@ var app = (function () {
     }
 
     // (131:4) <DropdownMenu end>
-    function create_default_slot_16$1(ctx) {
+    function create_default_slot_16(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -30826,7 +30734,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./api/v2/economies",
-    				$$slots: { default: [create_default_slot_19$1] },
+    				$$slots: { default: [create_default_slot_19] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30837,7 +30745,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_18$1] },
+    				$$slots: { default: [create_default_slot_18] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30848,7 +30756,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "./api/v1/expo",
-    				$$slots: { default: [create_default_slot_17$1] },
+    				$$slots: { default: [create_default_slot_17] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30933,7 +30841,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$1.name,
+    		id: create_default_slot_16.name,
     		type: "slot",
     		source: "(131:4) <DropdownMenu end>",
     		ctx
@@ -30943,7 +30851,7 @@ var app = (function () {
     }
 
     // (129:3) <Dropdown >
-    function create_default_slot_15$1(ctx) {
+    function create_default_slot_15(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -30953,7 +30861,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_20$1] },
+    				$$slots: { default: [create_default_slot_20] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -30962,7 +30870,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_16$1] },
+    				$$slots: { default: [create_default_slot_16] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31016,7 +30924,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$1.name,
+    		id: create_default_slot_15.name,
     		type: "slot",
     		source: "(129:3) <Dropdown >",
     		ctx
@@ -31026,7 +30934,7 @@ var app = (function () {
     }
 
     // (141:4) <DropdownToggle nav caret>
-    function create_default_slot_14$1(ctx) {
+    function create_default_slot_14(ctx) {
     	let t;
 
     	const block = {
@@ -31043,7 +30951,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$1.name,
+    		id: create_default_slot_14.name,
     		type: "slot",
     		source: "(141:4) <DropdownToggle nav caret>",
     		ctx
@@ -31053,7 +30961,7 @@ var app = (function () {
     }
 
     // (143:6) <DropdownItem href="./#/economies">
-    function create_default_slot_13$1(ctx) {
+    function create_default_slot_13(ctx) {
     	let t;
 
     	const block = {
@@ -31070,7 +30978,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$1.name,
+    		id: create_default_slot_13.name,
     		type: "slot",
     		source: "(143:6) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
@@ -31080,7 +30988,7 @@ var app = (function () {
     }
 
     // (145:6) <DropdownItem href="./#/esco-stats">
-    function create_default_slot_12$1(ctx) {
+    function create_default_slot_12(ctx) {
     	let t;
 
     	const block = {
@@ -31097,7 +31005,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$1.name,
+    		id: create_default_slot_12.name,
     		type: "slot",
     		source: "(145:6) <DropdownItem href=\\\"./#/esco-stats\\\">",
     		ctx
@@ -31107,7 +31015,7 @@ var app = (function () {
     }
 
     // (147:6) <DropdownItem href="#/expo">
-    function create_default_slot_11$1(ctx) {
+    function create_default_slot_11(ctx) {
     	let t;
 
     	const block = {
@@ -31124,7 +31032,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$1.name,
+    		id: create_default_slot_11.name,
     		type: "slot",
     		source: "(147:6) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
@@ -31134,7 +31042,7 @@ var app = (function () {
     }
 
     // (142:4) <DropdownMenu end>
-    function create_default_slot_10$1(ctx) {
+    function create_default_slot_10(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -31149,7 +31057,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_13$1] },
+    				$$slots: { default: [create_default_slot_13] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31160,7 +31068,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/esco-stats",
-    				$$slots: { default: [create_default_slot_12$1] },
+    				$$slots: { default: [create_default_slot_12] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31171,7 +31079,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/expo",
-    				$$slots: { default: [create_default_slot_11$1] },
+    				$$slots: { default: [create_default_slot_11] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31256,7 +31164,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$1.name,
+    		id: create_default_slot_10.name,
     		type: "slot",
     		source: "(142:4) <DropdownMenu end>",
     		ctx
@@ -31266,7 +31174,7 @@ var app = (function () {
     }
 
     // (140:12) <Dropdown>
-    function create_default_slot_9$1(ctx) {
+    function create_default_slot_9(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -31276,7 +31184,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_14$1] },
+    				$$slots: { default: [create_default_slot_14] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31285,7 +31193,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_10$1] },
+    				$$slots: { default: [create_default_slot_10] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31339,7 +31247,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$1.name,
+    		id: create_default_slot_9.name,
     		type: "slot",
     		source: "(140:12) <Dropdown>",
     		ctx
@@ -31349,7 +31257,7 @@ var app = (function () {
     }
 
     // (152:4) <DropdownToggle nav caret>
-    function create_default_slot_8$1(ctx) {
+    function create_default_slot_8(ctx) {
     	let t;
 
     	const block = {
@@ -31366,7 +31274,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$1.name,
+    		id: create_default_slot_8.name,
     		type: "slot",
     		source: "(152:4) <DropdownToggle nav caret>",
     		ctx
@@ -31376,7 +31284,7 @@ var app = (function () {
     }
 
     // (154:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_7$1(ctx) {
+    function create_default_slot_7(ctx) {
     	let t;
 
     	const block = {
@@ -31393,7 +31301,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$1.name,
+    		id: create_default_slot_7.name,
     		type: "slot",
     		source: "(154:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
@@ -31403,7 +31311,7 @@ var app = (function () {
     }
 
     // (156:6) <DropdownItem href="./#/graphesco">
-    function create_default_slot_6$1(ctx) {
+    function create_default_slot_6(ctx) {
     	let t;
 
     	const block = {
@@ -31420,7 +31328,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$1.name,
+    		id: create_default_slot_6.name,
     		type: "slot",
     		source: "(156:6) <DropdownItem href=\\\"./#/graphesco\\\">",
     		ctx
@@ -31430,7 +31338,7 @@ var app = (function () {
     }
 
     // (158:6) <DropdownItem href="#/graphexpo">
-    function create_default_slot_5$1(ctx) {
+    function create_default_slot_5(ctx) {
     	let t;
 
     	const block = {
@@ -31447,7 +31355,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$1.name,
+    		id: create_default_slot_5.name,
     		type: "slot",
     		source: "(158:6) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
@@ -31457,7 +31365,7 @@ var app = (function () {
     }
 
     // (160:18) <DropdownItem href="./#/graph">
-    function create_default_slot_4$1(ctx) {
+    function create_default_slot_4(ctx) {
     	let t;
 
     	const block = {
@@ -31474,7 +31382,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$1.name,
+    		id: create_default_slot_4.name,
     		type: "slot",
     		source: "(160:18) <DropdownItem href=\\\"./#/graph\\\">",
     		ctx
@@ -31484,7 +31392,7 @@ var app = (function () {
     }
 
     // (153:4) <DropdownMenu end>
-    function create_default_slot_3$1(ctx) {
+    function create_default_slot_3(ctx) {
     	let dropdownitem0;
     	let t0;
     	let dropdownitem1;
@@ -31503,7 +31411,7 @@ var app = (function () {
     	dropdownitem0 = new DropdownItem({
     			props: {
     				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_7$1] },
+    				$$slots: { default: [create_default_slot_7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31514,7 +31422,7 @@ var app = (function () {
     	dropdownitem2 = new DropdownItem({
     			props: {
     				href: "./#/graphesco",
-    				$$slots: { default: [create_default_slot_6$1] },
+    				$$slots: { default: [create_default_slot_6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31525,7 +31433,7 @@ var app = (function () {
     	dropdownitem4 = new DropdownItem({
     			props: {
     				href: "#/graphexpo",
-    				$$slots: { default: [create_default_slot_5$1] },
+    				$$slots: { default: [create_default_slot_5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31536,7 +31444,7 @@ var app = (function () {
     	dropdownitem6 = new DropdownItem({
     			props: {
     				href: "./#/graph",
-    				$$slots: { default: [create_default_slot_4$1] },
+    				$$slots: { default: [create_default_slot_4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31644,7 +31552,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$1.name,
+    		id: create_default_slot_3.name,
     		type: "slot",
     		source: "(153:4) <DropdownMenu end>",
     		ctx
@@ -31654,7 +31562,7 @@ var app = (function () {
     }
 
     // (151:5) <Dropdown >
-    function create_default_slot_2$1(ctx) {
+    function create_default_slot_2(ctx) {
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -31664,7 +31572,7 @@ var app = (function () {
     			props: {
     				nav: true,
     				caret: true,
-    				$$slots: { default: [create_default_slot_8$1] },
+    				$$slots: { default: [create_default_slot_8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31673,7 +31581,7 @@ var app = (function () {
     	dropdownmenu = new DropdownMenu({
     			props: {
     				end: true,
-    				$$slots: { default: [create_default_slot_3$1] },
+    				$$slots: { default: [create_default_slot_3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31727,7 +31635,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$1.name,
+    		id: create_default_slot_2.name,
     		type: "slot",
     		source: "(151:5) <Dropdown >",
     		ctx
@@ -31737,7 +31645,7 @@ var app = (function () {
     }
 
     // (128:2) <Nav navbar>
-    function create_default_slot_1$1(ctx) {
+    function create_default_slot_1(ctx) {
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -31747,7 +31655,7 @@ var app = (function () {
 
     	dropdown0 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_15$1] },
+    				$$slots: { default: [create_default_slot_15] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31755,7 +31663,7 @@ var app = (function () {
 
     	dropdown1 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_9$1] },
+    				$$slots: { default: [create_default_slot_9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31763,7 +31671,7 @@ var app = (function () {
 
     	dropdown2 = new Dropdown({
     			props: {
-    				$$slots: { default: [create_default_slot_2$1] },
+    				$$slots: { default: [create_default_slot_2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31832,7 +31740,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$1.name,
+    		id: create_default_slot_1.name,
     		type: "slot",
     		source: "(128:2) <Nav navbar>",
     		ctx
@@ -31842,7 +31750,7 @@ var app = (function () {
     }
 
     // (126:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot$1(ctx) {
+    function create_default_slot(ctx) {
     	let navbarbrand;
     	let t;
     	let nav;
@@ -31851,7 +31759,7 @@ var app = (function () {
     	navbarbrand = new NavbarBrand({
     			props: {
     				href: "#/info",
-    				$$slots: { default: [create_default_slot_21$1] },
+    				$$slots: { default: [create_default_slot_21] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31860,7 +31768,7 @@ var app = (function () {
     	nav = new Nav({
     			props: {
     				navbar: true,
-    				$$slots: { default: [create_default_slot_1$1] },
+    				$$slots: { default: [create_default_slot_1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -31914,7 +31822,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$1.name,
+    		id: create_default_slot.name,
     		type: "slot",
     		source: "(126:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
@@ -31949,7 +31857,7 @@ var app = (function () {
     				style: "background-color: #6EAA8D; color:white;",
     				light: true,
     				expand: "lg",
-    				$$slots: { default: [create_default_slot$1] },
+    				$$slots: { default: [create_default_slot] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -32516,1404 +32424,87 @@ var app = (function () {
     	}
     }
 
-    /* src\front\frontEconomies\integrationApi1.svelte generated by Svelte v3.47.0 */
+    /* src\front\esco-stats\integration1.svelte generated by Svelte v3.47.0 */
 
     const { console: console_1 } = globals;
-
-    const file$1 = "src\\front\\frontEconomies\\integrationApi1.svelte";
-
-    // (108:2) <NavbarBrand href="#/info">
-    function create_default_slot_22(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("INICIO");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_22.name,
-    		type: "slot",
-    		source: "(108:2) <NavbarBrand href=\\\"#/info\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (111:4) <DropdownToggle nav caret>
-    function create_default_slot_21(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("API");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_21.name,
-    		type: "slot",
-    		source: "(111:4) <DropdownToggle nav caret>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (113:6) <DropdownItem href="./api/v2/economies">
-    function create_default_slot_20(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("economies-Stats");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_20.name,
-    		type: "slot",
-    		source: "(113:6) <DropdownItem href=\\\"./api/v2/economies\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (115:6) <DropdownItem href="./api/v1/esco-stats">
-    function create_default_slot_19(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("esco-Stats");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_19.name,
-    		type: "slot",
-    		source: "(115:6) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (117:6) <DropdownItem href="./api/v1/expo-stats">
-    function create_default_slot_18(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("expo-Stats");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_18.name,
-    		type: "slot",
-    		source: "(117:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (112:4) <DropdownMenu end>
-    function create_default_slot_17(ctx) {
-    	let dropdownitem0;
-    	let t0;
-    	let dropdownitem1;
-    	let t1;
-    	let dropdownitem2;
-    	let t2;
-    	let dropdownitem3;
-    	let t3;
-    	let dropdownitem4;
-    	let current;
-
-    	dropdownitem0 = new DropdownItem({
-    			props: {
-    				href: "./api/v2/economies",
-    				$$slots: { default: [create_default_slot_20] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem1 = new DropdownItem({ props: { divider: true }, $$inline: true });
-
-    	dropdownitem2 = new DropdownItem({
-    			props: {
-    				href: "./api/v1/esco-stats",
-    				$$slots: { default: [create_default_slot_19] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem3 = new DropdownItem({ props: { divider: true }, $$inline: true });
-
-    	dropdownitem4 = new DropdownItem({
-    			props: {
-    				href: "./api/v1/expo-stats",
-    				$$slots: { default: [create_default_slot_18] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(dropdownitem0.$$.fragment);
-    			t0 = space();
-    			create_component(dropdownitem1.$$.fragment);
-    			t1 = space();
-    			create_component(dropdownitem2.$$.fragment);
-    			t2 = space();
-    			create_component(dropdownitem3.$$.fragment);
-    			t3 = space();
-    			create_component(dropdownitem4.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(dropdownitem0, target, anchor);
-    			insert_dev(target, t0, anchor);
-    			mount_component(dropdownitem1, target, anchor);
-    			insert_dev(target, t1, anchor);
-    			mount_component(dropdownitem2, target, anchor);
-    			insert_dev(target, t2, anchor);
-    			mount_component(dropdownitem3, target, anchor);
-    			insert_dev(target, t3, anchor);
-    			mount_component(dropdownitem4, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const dropdownitem0_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem0_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem0.$set(dropdownitem0_changes);
-    			const dropdownitem2_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem2_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem2.$set(dropdownitem2_changes);
-    			const dropdownitem4_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem4_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem4.$set(dropdownitem4_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(dropdownitem0.$$.fragment, local);
-    			transition_in(dropdownitem1.$$.fragment, local);
-    			transition_in(dropdownitem2.$$.fragment, local);
-    			transition_in(dropdownitem3.$$.fragment, local);
-    			transition_in(dropdownitem4.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(dropdownitem0.$$.fragment, local);
-    			transition_out(dropdownitem1.$$.fragment, local);
-    			transition_out(dropdownitem2.$$.fragment, local);
-    			transition_out(dropdownitem3.$$.fragment, local);
-    			transition_out(dropdownitem4.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(dropdownitem0, detaching);
-    			if (detaching) detach_dev(t0);
-    			destroy_component(dropdownitem1, detaching);
-    			if (detaching) detach_dev(t1);
-    			destroy_component(dropdownitem2, detaching);
-    			if (detaching) detach_dev(t2);
-    			destroy_component(dropdownitem3, detaching);
-    			if (detaching) detach_dev(t3);
-    			destroy_component(dropdownitem4, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_17.name,
-    		type: "slot",
-    		source: "(112:4) <DropdownMenu end>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (110:3) <Dropdown >
-    function create_default_slot_16(ctx) {
-    	let dropdowntoggle;
-    	let t;
-    	let dropdownmenu;
-    	let current;
-
-    	dropdowntoggle = new DropdownToggle({
-    			props: {
-    				nav: true,
-    				caret: true,
-    				$$slots: { default: [create_default_slot_21] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownmenu = new DropdownMenu({
-    			props: {
-    				end: true,
-    				$$slots: { default: [create_default_slot_17] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(dropdowntoggle.$$.fragment);
-    			t = space();
-    			create_component(dropdownmenu.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(dropdowntoggle, target, anchor);
-    			insert_dev(target, t, anchor);
-    			mount_component(dropdownmenu, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const dropdowntoggle_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdowntoggle_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdowntoggle.$set(dropdowntoggle_changes);
-    			const dropdownmenu_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownmenu_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownmenu.$set(dropdownmenu_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(dropdowntoggle.$$.fragment, local);
-    			transition_in(dropdownmenu.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(dropdowntoggle.$$.fragment, local);
-    			transition_out(dropdownmenu.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(dropdowntoggle, detaching);
-    			if (detaching) detach_dev(t);
-    			destroy_component(dropdownmenu, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_16.name,
-    		type: "slot",
-    		source: "(110:3) <Dropdown >",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (122:4) <DropdownToggle nav caret>
-    function create_default_slot_15(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("FRONT-END");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_15.name,
-    		type: "slot",
-    		source: "(122:4) <DropdownToggle nav caret>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (124:6) <DropdownItem href="./#/economies">
-    function create_default_slot_14(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("economies FRONT-END");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_14.name,
-    		type: "slot",
-    		source: "(124:6) <DropdownItem href=\\\"./#/economies\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (125:6) <DropdownItem href="#/esco-stats">
-    function create_default_slot_13(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("esco-Stats FRONT-END");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_13.name,
-    		type: "slot",
-    		source: "(125:6) <DropdownItem href=\\\"#/esco-stats\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (126:6) <DropdownItem href="#/expo">
-    function create_default_slot_12(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("expo-Stats FRONT-END");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_12.name,
-    		type: "slot",
-    		source: "(126:6) <DropdownItem href=\\\"#/expo\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (128:6) <DropdownItem href="#/graph">
-    function create_default_slot_11(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Conjunto");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_11.name,
-    		type: "slot",
-    		source: "(128:6) <DropdownItem href=\\\"#/graph\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (123:4) <DropdownMenu end>
-    function create_default_slot_10(ctx) {
-    	let dropdownitem0;
-    	let t0;
-    	let dropdownitem1;
-    	let t1;
-    	let dropdownitem2;
-    	let t2;
-    	let dropdownitem3;
-    	let t3;
-    	let dropdownitem4;
-    	let current;
-
-    	dropdownitem0 = new DropdownItem({
-    			props: {
-    				href: "./#/economies",
-    				$$slots: { default: [create_default_slot_14] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem1 = new DropdownItem({
-    			props: {
-    				href: "#/esco-stats",
-    				$$slots: { default: [create_default_slot_13] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem2 = new DropdownItem({
-    			props: {
-    				href: "#/expo",
-    				$$slots: { default: [create_default_slot_12] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem3 = new DropdownItem({ props: { divider: true }, $$inline: true });
-
-    	dropdownitem4 = new DropdownItem({
-    			props: {
-    				href: "#/graph",
-    				$$slots: { default: [create_default_slot_11] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(dropdownitem0.$$.fragment);
-    			t0 = space();
-    			create_component(dropdownitem1.$$.fragment);
-    			t1 = space();
-    			create_component(dropdownitem2.$$.fragment);
-    			t2 = space();
-    			create_component(dropdownitem3.$$.fragment);
-    			t3 = space();
-    			create_component(dropdownitem4.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(dropdownitem0, target, anchor);
-    			insert_dev(target, t0, anchor);
-    			mount_component(dropdownitem1, target, anchor);
-    			insert_dev(target, t1, anchor);
-    			mount_component(dropdownitem2, target, anchor);
-    			insert_dev(target, t2, anchor);
-    			mount_component(dropdownitem3, target, anchor);
-    			insert_dev(target, t3, anchor);
-    			mount_component(dropdownitem4, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const dropdownitem0_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem0_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem0.$set(dropdownitem0_changes);
-    			const dropdownitem1_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem1_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem1.$set(dropdownitem1_changes);
-    			const dropdownitem2_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem2_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem2.$set(dropdownitem2_changes);
-    			const dropdownitem4_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem4_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem4.$set(dropdownitem4_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(dropdownitem0.$$.fragment, local);
-    			transition_in(dropdownitem1.$$.fragment, local);
-    			transition_in(dropdownitem2.$$.fragment, local);
-    			transition_in(dropdownitem3.$$.fragment, local);
-    			transition_in(dropdownitem4.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(dropdownitem0.$$.fragment, local);
-    			transition_out(dropdownitem1.$$.fragment, local);
-    			transition_out(dropdownitem2.$$.fragment, local);
-    			transition_out(dropdownitem3.$$.fragment, local);
-    			transition_out(dropdownitem4.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(dropdownitem0, detaching);
-    			if (detaching) detach_dev(t0);
-    			destroy_component(dropdownitem1, detaching);
-    			if (detaching) detach_dev(t1);
-    			destroy_component(dropdownitem2, detaching);
-    			if (detaching) detach_dev(t2);
-    			destroy_component(dropdownitem3, detaching);
-    			if (detaching) detach_dev(t3);
-    			destroy_component(dropdownitem4, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_10.name,
-    		type: "slot",
-    		source: "(123:4) <DropdownMenu end>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (121:12) <Dropdown>
-    function create_default_slot_9(ctx) {
-    	let dropdowntoggle;
-    	let t;
-    	let dropdownmenu;
-    	let current;
-
-    	dropdowntoggle = new DropdownToggle({
-    			props: {
-    				nav: true,
-    				caret: true,
-    				$$slots: { default: [create_default_slot_15] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownmenu = new DropdownMenu({
-    			props: {
-    				end: true,
-    				$$slots: { default: [create_default_slot_10] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(dropdowntoggle.$$.fragment);
-    			t = space();
-    			create_component(dropdownmenu.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(dropdowntoggle, target, anchor);
-    			insert_dev(target, t, anchor);
-    			mount_component(dropdownmenu, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const dropdowntoggle_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdowntoggle_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdowntoggle.$set(dropdowntoggle_changes);
-    			const dropdownmenu_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownmenu_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownmenu.$set(dropdownmenu_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(dropdowntoggle.$$.fragment, local);
-    			transition_in(dropdownmenu.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(dropdowntoggle.$$.fragment, local);
-    			transition_out(dropdownmenu.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(dropdowntoggle, detaching);
-    			if (detaching) detach_dev(t);
-    			destroy_component(dropdownmenu, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_9.name,
-    		type: "slot",
-    		source: "(121:12) <Dropdown>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (133:4) <DropdownToggle nav caret>
-    function create_default_slot_8(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Gráficas");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_8.name,
-    		type: "slot",
-    		source: "(133:4) <DropdownToggle nav caret>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (135:6) <DropdownItem href="./#/economies-graph">
-    function create_default_slot_7(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("economies-Stats");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_7.name,
-    		type: "slot",
-    		source: "(135:6) <DropdownItem href=\\\"./#/economies-graph\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (136:6) <DropdownItem href="#/graphesco">
-    function create_default_slot_6(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("esco-Stats");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_6.name,
-    		type: "slot",
-    		source: "(136:6) <DropdownItem href=\\\"#/graphesco\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (137:6) <DropdownItem href="#/#/graphexpo">
-    function create_default_slot_5(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Expo-Stats");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_5.name,
-    		type: "slot",
-    		source: "(137:6) <DropdownItem href=\\\"#/#/graphexpo\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (139:6) <DropdownItem href="#/graph">
-    function create_default_slot_4(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Conjunto");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_4.name,
-    		type: "slot",
-    		source: "(139:6) <DropdownItem href=\\\"#/graph\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (134:4) <DropdownMenu end>
-    function create_default_slot_3(ctx) {
-    	let dropdownitem0;
-    	let t0;
-    	let dropdownitem1;
-    	let t1;
-    	let dropdownitem2;
-    	let t2;
-    	let dropdownitem3;
-    	let t3;
-    	let dropdownitem4;
-    	let current;
-
-    	dropdownitem0 = new DropdownItem({
-    			props: {
-    				href: "./#/economies-graph",
-    				$$slots: { default: [create_default_slot_7] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem1 = new DropdownItem({
-    			props: {
-    				href: "#/graphesco",
-    				$$slots: { default: [create_default_slot_6] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem2 = new DropdownItem({
-    			props: {
-    				href: "#/#/graphexpo",
-    				$$slots: { default: [create_default_slot_5] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownitem3 = new DropdownItem({ props: { divider: true }, $$inline: true });
-
-    	dropdownitem4 = new DropdownItem({
-    			props: {
-    				href: "#/graph",
-    				$$slots: { default: [create_default_slot_4] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(dropdownitem0.$$.fragment);
-    			t0 = space();
-    			create_component(dropdownitem1.$$.fragment);
-    			t1 = space();
-    			create_component(dropdownitem2.$$.fragment);
-    			t2 = space();
-    			create_component(dropdownitem3.$$.fragment);
-    			t3 = space();
-    			create_component(dropdownitem4.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(dropdownitem0, target, anchor);
-    			insert_dev(target, t0, anchor);
-    			mount_component(dropdownitem1, target, anchor);
-    			insert_dev(target, t1, anchor);
-    			mount_component(dropdownitem2, target, anchor);
-    			insert_dev(target, t2, anchor);
-    			mount_component(dropdownitem3, target, anchor);
-    			insert_dev(target, t3, anchor);
-    			mount_component(dropdownitem4, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const dropdownitem0_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem0_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem0.$set(dropdownitem0_changes);
-    			const dropdownitem1_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem1_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem1.$set(dropdownitem1_changes);
-    			const dropdownitem2_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem2_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem2.$set(dropdownitem2_changes);
-    			const dropdownitem4_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownitem4_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownitem4.$set(dropdownitem4_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(dropdownitem0.$$.fragment, local);
-    			transition_in(dropdownitem1.$$.fragment, local);
-    			transition_in(dropdownitem2.$$.fragment, local);
-    			transition_in(dropdownitem3.$$.fragment, local);
-    			transition_in(dropdownitem4.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(dropdownitem0.$$.fragment, local);
-    			transition_out(dropdownitem1.$$.fragment, local);
-    			transition_out(dropdownitem2.$$.fragment, local);
-    			transition_out(dropdownitem3.$$.fragment, local);
-    			transition_out(dropdownitem4.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(dropdownitem0, detaching);
-    			if (detaching) detach_dev(t0);
-    			destroy_component(dropdownitem1, detaching);
-    			if (detaching) detach_dev(t1);
-    			destroy_component(dropdownitem2, detaching);
-    			if (detaching) detach_dev(t2);
-    			destroy_component(dropdownitem3, detaching);
-    			if (detaching) detach_dev(t3);
-    			destroy_component(dropdownitem4, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_3.name,
-    		type: "slot",
-    		source: "(134:4) <DropdownMenu end>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (132:5) <Dropdown >
-    function create_default_slot_2(ctx) {
-    	let dropdowntoggle;
-    	let t;
-    	let dropdownmenu;
-    	let current;
-
-    	dropdowntoggle = new DropdownToggle({
-    			props: {
-    				nav: true,
-    				caret: true,
-    				$$slots: { default: [create_default_slot_8] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdownmenu = new DropdownMenu({
-    			props: {
-    				end: true,
-    				$$slots: { default: [create_default_slot_3] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(dropdowntoggle.$$.fragment);
-    			t = space();
-    			create_component(dropdownmenu.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(dropdowntoggle, target, anchor);
-    			insert_dev(target, t, anchor);
-    			mount_component(dropdownmenu, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const dropdowntoggle_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdowntoggle_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdowntoggle.$set(dropdowntoggle_changes);
-    			const dropdownmenu_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdownmenu_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdownmenu.$set(dropdownmenu_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(dropdowntoggle.$$.fragment, local);
-    			transition_in(dropdownmenu.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(dropdowntoggle.$$.fragment, local);
-    			transition_out(dropdownmenu.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(dropdowntoggle, detaching);
-    			if (detaching) detach_dev(t);
-    			destroy_component(dropdownmenu, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_2.name,
-    		type: "slot",
-    		source: "(132:5) <Dropdown >",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (109:2) <Nav navbar>
-    function create_default_slot_1(ctx) {
-    	let dropdown0;
-    	let t0;
-    	let dropdown1;
-    	let t1;
-    	let dropdown2;
-    	let current;
-
-    	dropdown0 = new Dropdown({
-    			props: {
-    				$$slots: { default: [create_default_slot_16] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdown1 = new Dropdown({
-    			props: {
-    				$$slots: { default: [create_default_slot_9] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	dropdown2 = new Dropdown({
-    			props: {
-    				$$slots: { default: [create_default_slot_2] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(dropdown0.$$.fragment);
-    			t0 = space();
-    			create_component(dropdown1.$$.fragment);
-    			t1 = space();
-    			create_component(dropdown2.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(dropdown0, target, anchor);
-    			insert_dev(target, t0, anchor);
-    			mount_component(dropdown1, target, anchor);
-    			insert_dev(target, t1, anchor);
-    			mount_component(dropdown2, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const dropdown0_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdown0_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdown0.$set(dropdown0_changes);
-    			const dropdown1_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdown1_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdown1.$set(dropdown1_changes);
-    			const dropdown2_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				dropdown2_changes.$$scope = { dirty, ctx };
-    			}
-
-    			dropdown2.$set(dropdown2_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(dropdown0.$$.fragment, local);
-    			transition_in(dropdown1.$$.fragment, local);
-    			transition_in(dropdown2.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(dropdown0.$$.fragment, local);
-    			transition_out(dropdown1.$$.fragment, local);
-    			transition_out(dropdown2.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(dropdown0, detaching);
-    			if (detaching) detach_dev(t0);
-    			destroy_component(dropdown1, detaching);
-    			if (detaching) detach_dev(t1);
-    			destroy_component(dropdown2, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_1.name,
-    		type: "slot",
-    		source: "(109:2) <Nav navbar>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (107:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
-    function create_default_slot(ctx) {
-    	let navbarbrand;
-    	let t;
-    	let nav;
-    	let current;
-
-    	navbarbrand = new NavbarBrand({
-    			props: {
-    				href: "#/info",
-    				$$slots: { default: [create_default_slot_22] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	nav = new Nav({
-    			props: {
-    				navbar: true,
-    				$$slots: { default: [create_default_slot_1] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(navbarbrand.$$.fragment);
-    			t = space();
-    			create_component(nav.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(navbarbrand, target, anchor);
-    			insert_dev(target, t, anchor);
-    			mount_component(nav, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const navbarbrand_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				navbarbrand_changes.$$scope = { dirty, ctx };
-    			}
-
-    			navbarbrand.$set(navbarbrand_changes);
-    			const nav_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				nav_changes.$$scope = { dirty, ctx };
-    			}
-
-    			nav.$set(nav_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(navbarbrand.$$.fragment, local);
-    			transition_in(nav.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(navbarbrand.$$.fragment, local);
-    			transition_out(nav.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(navbarbrand, detaching);
-    			if (detaching) detach_dev(t);
-    			destroy_component(nav, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot.name,
-    		type: "slot",
-    		source: "(107:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
-    		ctx
-    	});
-
-    	return block;
-    }
+    const file$1 = "src\\front\\esco-stats\\integration1.svelte";
 
     function create_fragment$1(ctx) {
+    	let head;
+    	let title;
+    	let t1;
     	let script0;
     	let script0_src_value;
-    	let script1;
-    	let script1_src_value;
-    	let script2;
-    	let script2_src_value;
-    	let script3;
-    	let script3_src_value;
-    	let t0;
-    	let main;
-    	let navbar;
-    	let t1;
-    	let br;
     	let t2;
-    	let figure;
-    	let div;
+    	let link;
     	let t3;
-    	let p;
-    	let current;
-    	let mounted;
-    	let dispose;
-
-    	navbar = new Navbar({
-    			props: {
-    				style: "background-color: #6EAA8D; color:white;",
-    				light: true,
-    				expand: "lg",
-    				$$slots: { default: [create_default_slot] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
+    	let style;
+    	let t5;
+    	let body;
+    	let div;
+    	let t6;
+    	let script1;
 
     	const block = {
     		c: function create() {
-    			script0 = element("script");
-    			script1 = element("script");
-    			script2 = element("script");
-    			script3 = element("script");
-    			t0 = space();
-    			main = element("main");
-    			create_component(navbar.$$.fragment);
+    			head = element("head");
+    			title = element("title");
+    			title.textContent = "Timeline";
     			t1 = space();
-    			br = element("br");
+    			script0 = element("script");
     			t2 = space();
-    			figure = element("figure");
-    			div = element("div");
+    			link = element("link");
     			t3 = space();
-    			p = element("p");
-    			p.textContent = "A simple demo showcasing an area chart with negative values and multiple\r\n            data series. Note that interacting with one data series will dim the\r\n            others, making it easier to distinguish between them.";
-    			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$1, 96, 4, 3319);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 97, 4, 3411);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 98, 4, 3510);
-    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 99, 4, 3611);
-    			add_location(br, file$1, 147, 4, 5431);
-    			attr_dev(div, "id", "container");
-    			add_location(div, file$1, 149, 8, 5485);
-    			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 150, 8, 5521);
-    			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 148, 4, 5441);
-    			add_location(main, file$1, 104, 0, 3732);
+    			style = element("style");
+    			style.textContent = "#visualization {\r\n        width: 600px;\r\n        height: 400px;\r\n        border: 1px solid lightgray;\r\n      }";
+    			t5 = space();
+    			body = element("body");
+    			div = element("div");
+    			t6 = space();
+    			script1 = element("script");
+    			script1.textContent = "// DOM element where the Timeline will be attached\r\n    var container = document.getElementById('visualization');\r\n  \r\n    // Create a DataSet (allows two way data-binding)\r\n    var items = new vis.DataSet([\r\n      {id: 1, content: 'item 1', start: '2014-04-20'},\r\n      {id: 2, content: 'item 2', start: '2014-04-14'},\r\n      {id: 3, content: 'item 3', start: '2014-04-18'},\r\n      {id: 4, content: 'item 4', start: '2014-04-16', end: '2014-04-19'},\r\n      {id: 5, content: 'item 5', start: '2014-04-25'},\r\n      {id: 6, content: 'item 6', start: '2014-04-27', type: 'point'}\r\n    ]);\r\n  \r\n    // Configuration for the Timeline\r\n    var options = {};\r\n  \r\n    // Create a Timeline\r\n    var timeline = new vis.Timeline(container, items, options);";
+    			add_location(title, file$1, 49, 4, 1468);
+    			attr_dev(script0, "type", "text/javascript");
+    			if (!src_url_equal(script0.src, script0_src_value = "https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$1, 50, 4, 1497);
+    			attr_dev(link, "href", "https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css");
+    			attr_dev(link, "rel", "stylesheet");
+    			attr_dev(link, "type", "text/css");
+    			add_location(link, file$1, 51, 4, 1630);
+    			attr_dev(style, "type", "text/css");
+    			add_location(style, file$1, 52, 4, 1758);
+    			add_location(head, file$1, 48, 0, 1456);
+    			attr_dev(div, "id", "visualization");
+    			add_location(div, file$1, 61, 2, 1938);
+    			attr_dev(script1, "type", "text/javascript");
+    			add_location(script1, file$1, 62, 2, 1972);
+    			add_location(body, file$1, 60, 2, 1928);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			append_dev(document.head, script0);
-    			append_dev(document.head, script1);
-    			append_dev(document.head, script2);
-    			append_dev(document.head, script3);
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, main, anchor);
-    			mount_component(navbar, main, null);
-    			append_dev(main, t1);
-    			append_dev(main, br);
-    			append_dev(main, t2);
-    			append_dev(main, figure);
-    			append_dev(figure, div);
-    			append_dev(figure, t3);
-    			append_dev(figure, p);
-    			current = true;
-
-    			if (!mounted) {
-    				dispose = [
-    					listen_dev(script0, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script1, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script2, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false)
-    				];
-
-    				mounted = true;
-    			}
+    			insert_dev(target, head, anchor);
+    			append_dev(head, title);
+    			append_dev(head, t1);
+    			append_dev(head, script0);
+    			append_dev(head, t2);
+    			append_dev(head, link);
+    			append_dev(head, t3);
+    			append_dev(head, style);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, body, anchor);
+    			append_dev(body, div);
+    			append_dev(body, t6);
+    			append_dev(body, script1);
     		},
-    		p: function update(ctx, [dirty]) {
-    			const navbar_changes = {};
-
-    			if (dirty & /*$$scope*/ 1024) {
-    				navbar_changes.$$scope = { dirty, ctx };
-    			}
-
-    			navbar.$set(navbar_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(navbar.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(navbar.$$.fragment, local);
-    			current = false;
-    		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
     		d: function destroy(detaching) {
-    			detach_dev(script0);
-    			detach_dev(script1);
-    			detach_dev(script2);
-    			detach_dev(script3);
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(main);
-    			destroy_component(navbar);
-    			mounted = false;
-    			run_all(dispose);
+    			if (detaching) detach_dev(head);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(body);
     		}
     	};
 
@@ -33930,145 +32521,93 @@ var app = (function () {
 
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots('IntegrationApi1', slots, []);
+    	validate_slots('Integration1', slots, []);
     	const delay = ms => new Promise(res => setTimeout(res, ms));
-    	let year = [];
-    	let country = [];
-    	let quantity = [];
-    	let absolute_change = [];
-    	let relative_change = [];
-    	let datos = [];
-    	let datosOrdenados = [];
+    	let data = [];
+    	let cityName = "";
+    	let countryName = "";
+    	let years = [];
+    	let population = [];
 
-    	//creo 2 let datos para poder ordenado los datos por año
     	async function getData() {
-    		console.log("Fetching Economies....");
-    		const res = await fetch("https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats");
+    		console.log("Fetching data....");
+    		const res = await fetch("/remoteApiV1");
 
     		if (res.ok) {
-    			const data = await res.json();
-    			datos = data;
+    			const info = await res.json();
 
-    			//si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
-    			if (datos.length == 0) {
-    				await fetch("/remoteApi");
-    				console.log("Entradas recibidas: " + datos.length);
+    			//informacion de la ciudad de Insbruck
+    			data = info.data[116];
 
-    				//con la siguiente funcion ordeno los datos por años de menor a mayor
-    				datosOrdenados = datos.sort(function (a, b) {
-    					return a.year - b.year;
-    				});
+    			cityName = data["city"];
+    			countryName = data["country"];
 
-    				console.log("Ordenadas correctamente");
+    			data["populationCounts"].forEach(e => {
+    				years.push(e["year"]);
+    				population.push(e["value"]);
+    			});
 
-    				datosOrdenados.forEach(dato => {
-    					year.push(dato.year);
-    					country.push(dato.country + "-" + dato.year);
-    					quantity.push(dato.quantity);
-    					absolute_change.push(dato.absolute_change);
-    					relative_change.push(dato.relative_change);
-    				});
+    			console.log("Data:", data);
+    			console.log("Poblacion de " + cityName + " en " + countryName);
+    			console.log("Años: ", years);
+    			console.log("Poblacion: ", population);
 
-    				location.reload();
-    			} else {
-    				console.log("Entradas recibidas: " + datos.length);
+    			//esperamos a que se carguen 
+    			await delay(500);
 
-    				//con la siguiente funcion ordeno los datos por años de menor a mayor
-    				datosOrdenados = datos.sort(function (a, b) {
-    					return a.year - b.year;
-    				});
-
-    				console.log("Ordenadas correctamente");
-
-    				datosOrdenados.forEach(dato => {
-    					year.push(dato.year);
-    					country.push(dato.country + "-" + dato.year);
-    					quantity.push(dato.quantity);
-    					absolute_change.push(dato.absolute_change);
-    					relative_change.push(dato.relative_change);
-    				});
-    			}
+    			loadGraph();
     		} else {
-    			console.log("Error, can`t charge data");
+    			console.log("Error cargando los datos");
     		}
     	}
 
     	async function loadGraph() {
-    		Highcharts.chart('container', {
-    			chart: { type: 'area' },
-    			title: { text: 'Fertilizantes' },
-    			xAxis: { categories: country },
-    			credits: { enabled: false },
-    			series: [
-    				{ name: 'quantity', data: quantity },
-    				{
-    					name: 'absolute_change',
-    					data: absolute_change
-    				},
-    				{
-    					name: 'relative_change',
-    					data: relative_change
-    				}
-    			]
-    		});
+    		var dataPlot = [{ x: years, y: population, type: 'bar' }];
+    		Plotly.newPlot('myDiv', dataPlot);
     	}
 
     	onMount(getData);
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<IntegrationApi1> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<Integration1> was created with unknown prop '${key}'`);
     	});
 
     	$$self.$capture_state = () => ({
     		onMount,
-    		Navbar,
-    		Nav,
-    		NavItem,
-    		NavLink,
-    		NavbarBrand,
-    		Dropdown,
-    		DropdownToggle,
-    		DropdownMenu,
-    		DropdownItem,
-    		Button,
     		delay,
-    		year,
-    		country,
-    		quantity,
-    		absolute_change,
-    		relative_change,
-    		datos,
-    		datosOrdenados,
+    		data,
+    		cityName,
+    		countryName,
+    		years,
+    		population,
     		getData,
     		loadGraph
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('year' in $$props) year = $$props.year;
-    		if ('country' in $$props) country = $$props.country;
-    		if ('quantity' in $$props) quantity = $$props.quantity;
-    		if ('absolute_change' in $$props) absolute_change = $$props.absolute_change;
-    		if ('relative_change' in $$props) relative_change = $$props.relative_change;
-    		if ('datos' in $$props) datos = $$props.datos;
-    		if ('datosOrdenados' in $$props) datosOrdenados = $$props.datosOrdenados;
+    		if ('data' in $$props) data = $$props.data;
+    		if ('cityName' in $$props) cityName = $$props.cityName;
+    		if ('countryName' in $$props) countryName = $$props.countryName;
+    		if ('years' in $$props) years = $$props.years;
+    		if ('population' in $$props) population = $$props.population;
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [loadGraph];
+    	return [];
     }
 
-    class IntegrationApi1 extends SvelteComponentDev {
+    class Integration1 extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
     		init(this, options, instance$1, create_fragment$1, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
-    			tagName: "IntegrationApi1",
+    			tagName: "Integration1",
     			options,
     			id: create_fragment$1.name
     		});
@@ -34092,7 +32631,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			create_component(router.$$.fragment);
-    			add_location(main, file, 41, 0, 1220);
+    			add_location(main, file, 47, 0, 1542);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -34146,7 +32685,7 @@ var app = (function () {
     		"/expo/:country/:year": EditExpo_1,
     		"/graphexpo": ExpoGraph,
     		"/graph": MyGraph,
-    		"/integracion1": IntegrationApi1
+    		"/integracion1": Integration
     	};
 
     	const writable_props = [];
@@ -34169,7 +32708,7 @@ var app = (function () {
     		EditExpo: EditExpo_1,
     		ExpoGraph,
     		MyGraph,
-    		Integration: IntegrationApi1,
+    		Integration1,
     		routes
     	});
 
