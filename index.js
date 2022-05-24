@@ -21,13 +21,9 @@ db_esco_stats = new Datastore();
 db_expo_stats = new Datastore();
 
 
-
-
-
-
 //Proxy economies
 var paths='/remoteAPI';
-var apiServerHost = 'https://sos2122-20.herokuapp.com/api/v1/fertilizer-stats';
+var apiServerHost = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
 
 app.use(paths, function(req, res) {
     var url = apiServerHost + req.url;

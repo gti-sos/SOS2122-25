@@ -33754,21 +33754,21 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "A simple demo showcasing an area chart with negative values and multiple\r\n            data series. Note that interacting with one data series will dim the\r\n            others, making it easier to distinguish between them.";
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$1, 96, 4, 3326);
+    			add_location(script0, file$1, 96, 4, 3319);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 97, 4, 3418);
+    			add_location(script1, file$1, 97, 4, 3411);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 98, 4, 3517);
+    			add_location(script2, file$1, 98, 4, 3510);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 99, 4, 3618);
-    			add_location(br, file$1, 147, 4, 5438);
+    			add_location(script3, file$1, 99, 4, 3611);
+    			add_location(br, file$1, 147, 4, 5431);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$1, 149, 8, 5492);
+    			add_location(div, file$1, 149, 8, 5485);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 150, 8, 5528);
+    			add_location(p, file$1, 150, 8, 5521);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 148, 4, 5448);
-    			add_location(main, file$1, 104, 0, 3739);
+    			add_location(figure, file$1, 148, 4, 5441);
+    			add_location(main, file$1, 104, 0, 3732);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -33849,9 +33849,9 @@ var app = (function () {
     	const delay = ms => new Promise(res => setTimeout(res, ms));
     	let year = [];
     	let country = [];
-    	let percapita = [];
-    	let currency = [];
-    	let currentprices = [];
+    	let quantity = [];
+    	let absolute_change = [];
+    	let relative_change = [];
     	let datos = [];
     	let datosOrdenados = [];
 
@@ -33866,7 +33866,7 @@ var app = (function () {
 
     			//si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
     			if (datos.length == 0) {
-    				await fetch("https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats/loadInitialData");
+    				await fetch("/remoteApi");
     				console.log("Entradas recibidas: " + datos.length);
 
     				//con la siguiente funcion ordeno los datos por años de menor a mayor
@@ -33879,9 +33879,9 @@ var app = (function () {
     				datosOrdenados.forEach(dato => {
     					year.push(dato.year);
     					country.push(dato.country + "-" + dato.year);
-    					percapita.push(dato.percapita);
-    					currency.push(dato.currency);
-    					currentprices.push(dato.currentprices);
+    					quantity.push(dato.quantity);
+    					absolute_change.push(dato.absolute_change);
+    					relative_change.push(dato.relative_change);
     				});
 
     				location.reload();
@@ -33898,9 +33898,9 @@ var app = (function () {
     				datosOrdenados.forEach(dato => {
     					year.push(dato.year);
     					country.push(dato.country + "-" + dato.year);
-    					percapita.push(dato.percapita);
-    					currency.push(dato.currency);
-    					currentprices.push(dato.currentprices);
+    					quantity.push(dato.quantity);
+    					absolute_change.push(dato.absolute_change);
+    					relative_change.push(dato.relative_change);
     				});
     			}
     		} else {
@@ -33915,11 +33915,14 @@ var app = (function () {
     			xAxis: { categories: country },
     			credits: { enabled: false },
     			series: [
-    				{ name: 'percapita', data: percapita },
-    				{ name: 'currency', data: currency },
+    				{ name: 'quantity', data: quantity },
     				{
-    					name: 'currentprices',
-    					data: currentprices
+    					name: 'absolute_change',
+    					data: absolute_change
+    				},
+    				{
+    					name: 'relative_change',
+    					data: relative_change
     				}
     			]
     		});
@@ -33947,9 +33950,9 @@ var app = (function () {
     		delay,
     		year,
     		country,
-    		percapita,
-    		currency,
-    		currentprices,
+    		quantity,
+    		absolute_change,
+    		relative_change,
     		datos,
     		datosOrdenados,
     		getData,
@@ -33959,9 +33962,9 @@ var app = (function () {
     	$$self.$inject_state = $$props => {
     		if ('year' in $$props) year = $$props.year;
     		if ('country' in $$props) country = $$props.country;
-    		if ('percapita' in $$props) percapita = $$props.percapita;
-    		if ('currency' in $$props) currency = $$props.currency;
-    		if ('currentprices' in $$props) currentprices = $$props.currentprices;
+    		if ('quantity' in $$props) quantity = $$props.quantity;
+    		if ('absolute_change' in $$props) absolute_change = $$props.absolute_change;
+    		if ('relative_change' in $$props) relative_change = $$props.relative_change;
     		if ('datos' in $$props) datos = $$props.datos;
     		if ('datosOrdenados' in $$props) datosOrdenados = $$props.datosOrdenados;
     	};
