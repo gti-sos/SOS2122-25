@@ -63,7 +63,7 @@
     <br><br>
     <h3>Documentos POSTMAN:</h3>
     <p>- <a href="https://SOS2122-25.herokuapp.com/api/v2/economies/docs">https://SOS2122-25.herokuapp.com/api/v2/economies/docs </a>(developed by <a href="https://github.com/damiangc99">Damian Gonzalez Carrasco</a>)</p>
-    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs">https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
+    <p>- <a href="https://documenter.getpostman.com/view/19481634/UyxjFko9">https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
     <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo/docs">https://SOS2122-25.herokuapp.com/api/v1/expo/docs </a>(developed by <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>)</p>
     <br>
 	<h3>APIS:</h3>

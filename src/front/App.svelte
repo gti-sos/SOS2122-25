@@ -13,6 +13,13 @@
 	import EditExpo from "./expo-stats/EditExpo.svelte";
 	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
+	import Integration1 from './esco-stats/integration1.svelte';
+	//import Integration2 from './esco-stats/integration2.svelte';
+	//import Integration3 from './esco-stats/integration3.svelte';
+	//import Integration4 from './esco-stats/integration4.svelte';
+	//import Integration5 from './esco-stats/integration5.svelte';
+	//import Integration6 from './esco-stats/integration6.svelte';
+	
 	//export let name;
 
 	const routes={
@@ -28,7 +35,15 @@
 		"/expo" : Expo,
 		"/expo/:country/:year" : EditExpo,
 		"/graphexpo" : ExpoGraph,
-		"/graph": MyGraph
+		"/graph": MyGraph,
+
+		"/integration1": Integration1,
+		//"/integration2": Integration2,
+		//"/integration3": Integration3,
+		//"/integration4": Integration4,
+		//"/integration5": Integration5,
+		//"/integration6": Integration6,
+
 
 
 	};
