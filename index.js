@@ -1,9 +1,13 @@
 const cool = require("cool-ascii-faces");
 const express = require("express");
 const bodyParser = require("body-parser")
+const cors = require("cors"); 
+const request = require("request");
 const app = express();
 app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
+
+app.use(cors());
 
 const economies_stats_API = require("./src/back/economies-stats-v2.js");
 const esco_stats_API = require("./src/back/esco-stats.js");
@@ -16,15 +20,21 @@ db_economies_stats = new Datastore();
 db_esco_stats = new Datastore();
 db_expo_stats = new Datastore();
 
-const cors = require("cors"); 
-const request = require("request");
 
 
-app.use(cors());
+
+
 
 //Proxy economies
 var paths='/remoteAPI';
-var apiServerHost = 'https://sos2122-25.herokuapp.com/api/v2/economies';
+var apiServerHost = 'https://sos2122-20.herokuapp.com/api/v1/fertilizer-stats';
+
+app.use(paths, function(req, res) {
+    var url = apiServerHost + req.url;
+    console.log('piped: ' + req.url);
+    req.pipe(request(url)).pipe(res);
+  });
+  
 
 
 economies_stats_API.register(app,db_economies_stats);
