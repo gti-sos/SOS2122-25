@@ -68,7 +68,7 @@
     <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo/docs">https://SOS2122-25.herokuapp.com/api/v1/expo/docs </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
 =======
     <p>- <a href="https://documenter.getpostman.com/view/19481634/UyxjFko9">https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
-    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo/docs">https://SOS2122-25.herokuapp.com/api/v1/expo/docs </a>(developed by <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>)</p>
+    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo/docs">https://SOS2122-25.herokuapp.com/api/v1/expo/docs </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
 >>>>>>> 247af78e907b7334dc2368c13d4739ad3eb01ce4
     <br>
 	<h3>APIS:</h3>
