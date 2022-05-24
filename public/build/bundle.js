@@ -12444,127 +12444,129 @@ var app = (function () {
     	let t17;
     	let a4;
     	let t19;
-    	let t20;
-    	let br0;
+    	let a5;
     	let t21;
-    	let h31;
+    	let t22;
+    	let br0;
     	let t23;
+    	let h31;
+    	let t25;
     	let br1;
     	let br2;
-    	let t24;
+    	let t26;
     	let h32;
-    	let a5;
-    	let t27;
+    	let a6;
+    	let t29;
     	let br3;
     	let br4;
-    	let t28;
+    	let t30;
     	let h33;
-    	let a6;
-    	let t31;
+    	let a7;
+    	let t33;
     	let br5;
     	let br6;
-    	let t32;
-    	let h34;
     	let t34;
+    	let h34;
+    	let t36;
     	let p3;
-    	let t35;
-    	let a7;
     	let t37;
     	let a8;
     	let t39;
-    	let t40;
-    	let p4;
-    	let t41;
     	let a9;
+    	let t41;
+    	let t42;
+    	let p4;
     	let t43;
     	let a10;
     	let t45;
-    	let t46;
-    	let p5;
-    	let t47;
     	let a11;
+    	let t47;
+    	let t48;
+    	let p5;
     	let t49;
     	let a12;
     	let t51;
-    	let t52;
-    	let br7;
-    	let t53;
-    	let h35;
-    	let t55;
-    	let p6;
-    	let t56;
     	let a13;
+    	let t53;
+    	let t54;
+    	let br7;
+    	let t55;
+    	let h35;
+    	let t57;
+    	let p6;
     	let t58;
     	let a14;
     	let t60;
-    	let t61;
-    	let p7;
-    	let t62;
     	let a15;
+    	let t62;
+    	let t63;
+    	let p7;
     	let t64;
     	let a16;
     	let t66;
-    	let t67;
-    	let p8;
-    	let t68;
     	let a17;
+    	let t68;
+    	let t69;
+    	let p8;
     	let t70;
     	let a18;
     	let t72;
-    	let t73;
-    	let br8;
-    	let t74;
-    	let h36;
-    	let t76;
-    	let p9;
-    	let t77;
     	let a19;
+    	let t74;
+    	let t75;
+    	let br8;
+    	let t76;
+    	let h36;
+    	let t78;
+    	let p9;
     	let t79;
     	let a20;
     	let t81;
-    	let t82;
-    	let p10;
-    	let t83;
     	let a21;
+    	let t83;
+    	let t84;
+    	let p10;
     	let t85;
     	let a22;
     	let t87;
-    	let t88;
-    	let p11;
-    	let t89;
     	let a23;
+    	let t89;
+    	let t90;
+    	let p11;
     	let t91;
     	let a24;
     	let t93;
-    	let t94;
-    	let br9;
-    	let t95;
-    	let h37;
-    	let t97;
-    	let p12;
-    	let t98;
     	let a25;
+    	let t95;
+    	let t96;
+    	let br9;
+    	let t97;
+    	let h37;
+    	let t99;
+    	let p12;
     	let t100;
     	let a26;
     	let t102;
-    	let t103;
-    	let p13;
-    	let t104;
     	let a27;
+    	let t104;
+    	let t105;
+    	let p13;
     	let t106;
     	let a28;
     	let t108;
-    	let t109;
-    	let p14;
-    	let t110;
     	let a29;
+    	let t110;
+    	let t111;
+    	let p14;
     	let t112;
     	let a30;
     	let t114;
-    	let t115;
-    	let p15;
-    	let t116;
     	let a31;
+    	let t116;
+    	let t117;
+    	let p15;
+    	let t118;
+    	let a32;
     	let current;
 
     	navbar = new Navbar({
@@ -12612,162 +12614,165 @@ var app = (function () {
     			t17 = text("- ");
     			a4 = element("a");
     			a4.textContent = "Adrián Pérez Gómez";
-    			t19 = text("(fuente de datos: exports-stats)");
-    			t20 = space();
+    			t19 = text("(fuente de datos: ");
+    			a5 = element("a");
+    			a5.textContent = "expo-stats";
+    			t21 = text(")");
+    			t22 = space();
     			br0 = element("br");
-    			t21 = space();
+    			t23 = space();
     			h31 = element("h3");
     			h31.textContent = "Project description:";
-    			t23 = text(" Nuestras fuentes de información esta orientadas a analizar la relación que existe entre las exportaciones. \r\n    ");
+    			t25 = text(" Nuestras fuentes de información esta orientadas a analizar la relación que existe entre las exportaciones. \r\n    ");
     			br1 = element("br");
     			br2 = element("br");
-    			t24 = space();
+    			t26 = space();
     			h32 = element("h3");
     			h32.textContent = "Repository:";
-    			a5 = element("a");
-    			a5.textContent = "gti-sos/SOS2122-25";
-    			t27 = space();
+    			a6 = element("a");
+    			a6.textContent = "gti-sos/SOS2122-25";
+    			t29 = space();
     			br3 = element("br");
     			br4 = element("br");
-    			t28 = space();
+    			t30 = space();
     			h33 = element("h3");
     			h33.textContent = "URL:";
-    			a6 = element("a");
-    			a6.textContent = "http://SOS2122-25.herokuapp.com";
-    			t31 = space();
+    			a7 = element("a");
+    			a7.textContent = "http://SOS2122-25.herokuapp.com";
+    			t33 = space();
     			br5 = element("br");
     			br6 = element("br");
-    			t32 = space();
+    			t34 = space();
     			h34 = element("h3");
     			h34.textContent = "Documentos POSTMAN:";
-    			t34 = space();
+    			t36 = space();
     			p3 = element("p");
-    			t35 = text("- ");
-    			a7 = element("a");
-    			a7.textContent = "https://SOS2122-25.herokuapp.com/api/v2/economies/docs ";
-    			t37 = text("(developed by ");
+    			t37 = text("- ");
     			a8 = element("a");
-    			a8.textContent = "Damian Gonzalez Carrasco";
-    			t39 = text(")");
-    			t40 = space();
-    			p4 = element("p");
-    			t41 = text("- ");
+    			a8.textContent = "https://SOS2122-25.herokuapp.com/api/v2/economies/docs ";
+    			t39 = text("(developed by ");
     			a9 = element("a");
-    			a9.textContent = "https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs ";
-    			t43 = text("(developed by ");
+    			a9.textContent = "Damian Gonzalez Carrasco";
+    			t41 = text(")");
+    			t42 = space();
+    			p4 = element("p");
+    			t43 = text("- ");
     			a10 = element("a");
-    			a10.textContent = "Angel Simon Mesa";
-    			t45 = text(")");
-    			t46 = space();
-    			p5 = element("p");
-    			t47 = text("- ");
+    			a10.textContent = "https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs ";
+    			t45 = text("(developed by ");
     			a11 = element("a");
-    			a11.textContent = "https://SOS2122-25.herokuapp.com/api/v1/expo/docs ";
-    			t49 = text("(developed by ");
+    			a11.textContent = "Angel Simon Mesa";
+    			t47 = text(")");
+    			t48 = space();
+    			p5 = element("p");
+    			t49 = text("- ");
     			a12 = element("a");
-    			a12.textContent = "Adrián Pérez Gómez";
-    			t51 = text(")");
-    			t52 = space();
+    			a12.textContent = "https://SOS2122-25.herokuapp.com/api/v1/expo/docs ";
+    			t51 = text("(developed by ");
+    			a13 = element("a");
+    			a13.textContent = "Adrián Pérez Gómez";
+    			t53 = text(")");
+    			t54 = space();
     			br7 = element("br");
-    			t53 = space();
+    			t55 = space();
     			h35 = element("h3");
     			h35.textContent = "APIS:";
-    			t55 = space();
+    			t57 = space();
     			p6 = element("p");
-    			t56 = text("- ");
-    			a13 = element("a");
-    			a13.textContent = "https://SOS2122-25.herokuapp.com/api/v2/economies ";
-    			t58 = text("(developed by ");
+    			t58 = text("- ");
     			a14 = element("a");
-    			a14.textContent = "Damiangc99";
-    			t60 = text(")");
-    			t61 = space();
-    			p7 = element("p");
-    			t62 = text("- ");
+    			a14.textContent = "https://SOS2122-25.herokuapp.com/api/v2/economies ";
+    			t60 = text("(developed by ");
     			a15 = element("a");
-    			a15.textContent = "https://SOS2122-25.herokuapp.com/api/v1/esco-stats ";
-    			t64 = text("(developed by ");
+    			a15.textContent = "Damiangc99";
+    			t62 = text(")");
+    			t63 = space();
+    			p7 = element("p");
+    			t64 = text("- ");
     			a16 = element("a");
-    			a16.textContent = "Angel Simon Mesa";
-    			t66 = text(")");
-    			t67 = space();
-    			p8 = element("p");
-    			t68 = text("- ");
+    			a16.textContent = "https://SOS2122-25.herokuapp.com/api/v1/esco-stats ";
+    			t66 = text("(developed by ");
     			a17 = element("a");
-    			a17.textContent = "https://SOS2122-25.herokuapp.com/api/v1/expo ";
-    			t70 = text("(developed by ");
+    			a17.textContent = "Angel Simon Mesa";
+    			t68 = text(")");
+    			t69 = space();
+    			p8 = element("p");
+    			t70 = text("- ");
     			a18 = element("a");
-    			a18.textContent = "Adrián Pérez Gómez";
-    			t72 = text(")");
-    			t73 = space();
+    			a18.textContent = "https://SOS2122-25.herokuapp.com/api/v1/expo ";
+    			t72 = text("(developed by ");
+    			a19 = element("a");
+    			a19.textContent = "Adrián Pérez Gómez";
+    			t74 = text(")");
+    			t75 = space();
     			br8 = element("br");
-    			t74 = space();
+    			t76 = space();
     			h36 = element("h3");
     			h36.textContent = "FRONT-END:";
-    			t76 = space();
+    			t78 = space();
     			p9 = element("p");
-    			t77 = text("- ");
-    			a19 = element("a");
-    			a19.textContent = "https://SOS2122-25.herokuapp.com/#/economies ";
-    			t79 = text("(developed by ");
+    			t79 = text("- ");
     			a20 = element("a");
-    			a20.textContent = "Damiangc99";
-    			t81 = text(")");
-    			t82 = space();
-    			p10 = element("p");
-    			t83 = text("- ");
+    			a20.textContent = "https://SOS2122-25.herokuapp.com/#/economies ";
+    			t81 = text("(developed by ");
     			a21 = element("a");
-    			a21.textContent = "https://SOS2122-25.herokuapp.com/#/esco-stats ";
-    			t85 = text("(developed by ");
+    			a21.textContent = "Damiangc99";
+    			t83 = text(")");
+    			t84 = space();
+    			p10 = element("p");
+    			t85 = text("- ");
     			a22 = element("a");
-    			a22.textContent = "Angel Simon Mesa";
-    			t87 = text(")");
-    			t88 = space();
-    			p11 = element("p");
-    			t89 = text("- ");
+    			a22.textContent = "https://SOS2122-25.herokuapp.com/#/esco-stats ";
+    			t87 = text("(developed by ");
     			a23 = element("a");
-    			a23.textContent = "https://SOS2122-25.herokuapp.com/#/expo ";
-    			t91 = text("(developed by ");
+    			a23.textContent = "Angel Simon Mesa";
+    			t89 = text(")");
+    			t90 = space();
+    			p11 = element("p");
+    			t91 = text("- ");
     			a24 = element("a");
-    			a24.textContent = "Adrián Pérez Gómez";
-    			t93 = text(")");
-    			t94 = space();
-    			br9 = element("br");
-    			t95 = space();
-    			h37 = element("h3");
-    			h37.textContent = "GÁFRICAS:";
-    			t97 = space();
-    			p12 = element("p");
-    			t98 = text("- ");
+    			a24.textContent = "https://SOS2122-25.herokuapp.com/#/expo ";
+    			t93 = text("(developed by ");
     			a25 = element("a");
-    			a25.textContent = "https://SOS2122-25.herokuapp.com/#/economies-graph ";
-    			t100 = text("(developed by ");
+    			a25.textContent = "Adrián Pérez Gómez";
+    			t95 = text(")");
+    			t96 = space();
+    			br9 = element("br");
+    			t97 = space();
+    			h37 = element("h3");
+    			h37.textContent = "GRÁFICAS:";
+    			t99 = space();
+    			p12 = element("p");
+    			t100 = text("- ");
     			a26 = element("a");
-    			a26.textContent = "Damiangc99";
-    			t102 = text(")");
-    			t103 = space();
-    			p13 = element("p");
-    			t104 = text("- ");
+    			a26.textContent = "https://SOS2122-25.herokuapp.com/#/economies-graph ";
+    			t102 = text("(developed by ");
     			a27 = element("a");
-    			a27.textContent = "https://SOS2122-25.herokuapp.com/#/graphesco ";
-    			t106 = text("(developed by ");
+    			a27.textContent = "Damiangc99";
+    			t104 = text(")");
+    			t105 = space();
+    			p13 = element("p");
+    			t106 = text("- ");
     			a28 = element("a");
-    			a28.textContent = "Angel Simon Mesa";
-    			t108 = text(")");
-    			t109 = space();
-    			p14 = element("p");
-    			t110 = text("- ");
+    			a28.textContent = "https://SOS2122-25.herokuapp.com/#/graphesco ";
+    			t108 = text("(developed by ");
     			a29 = element("a");
-    			a29.textContent = "https://SOS2122-25.herokuapp.com/#/expo ";
-    			t112 = text("(developed by ");
+    			a29.textContent = "Angel Simon Mesa";
+    			t110 = text(")");
+    			t111 = space();
+    			p14 = element("p");
+    			t112 = text("- ");
     			a30 = element("a");
-    			a30.textContent = "Adrián Pérez Gómez";
-    			t114 = text(")");
-    			t115 = space();
-    			p15 = element("p");
-    			t116 = text("- ");
+    			a30.textContent = "https://SOS2122-25.herokuapp.com/#/graphexpo ";
+    			t114 = text("(developed by ");
     			a31 = element("a");
-    			a31.textContent = "https://SOS2122-25.herokuapp.com/#/graph";
+    			a31.textContent = "Adrián Pérez Gómez";
+    			t116 = text(")");
+    			t117 = space();
+    			p15 = element("p");
+    			t118 = text("- ");
+    			a32 = element("a");
+    			a32.textContent = "https://SOS2122-25.herokuapp.com/#/graph";
     			add_location(body, file$b, 5, 0, 162);
     			attr_dev(h1, "class", "svelte-95ufxa");
     			add_location(h1, file$b, 50, 4, 1861);
@@ -12784,91 +12789,93 @@ var app = (function () {
     			add_location(p1, file$b, 54, 4, 2069);
     			attr_dev(a4, "href", "https://github.com/adrianperez01_");
     			add_location(a4, file$b, 55, 9, 2225);
+    			attr_dev(a5, "href", "https://ourworldindata.org/expo");
+    			add_location(a5, file$b, 55, 93, 2309);
     			add_location(p2, file$b, 55, 4, 2220);
-    			add_location(br0, file$b, 56, 4, 2333);
-    			add_location(h31, file$b, 57, 4, 2343);
-    			add_location(br1, file$b, 58, 4, 2486);
-    			add_location(br2, file$b, 58, 8, 2490);
-    			add_location(h32, file$b, 59, 4, 2500);
-    			attr_dev(a5, "href", "https://github.com/gti-sos/SOS2122-25.git");
-    			add_location(a5, file$b, 59, 24, 2520);
-    			add_location(br3, file$b, 60, 4, 2600);
-    			add_location(br4, file$b, 60, 8, 2604);
-    			add_location(h33, file$b, 61, 4, 2614);
-    			attr_dev(a6, "href", "http://SOS2122-25.herokuapp.com");
-    			add_location(a6, file$b, 61, 17, 2627);
-    			add_location(br5, file$b, 62, 4, 2710);
-    			add_location(br6, file$b, 62, 8, 2714);
-    			add_location(h34, file$b, 63, 4, 2724);
-    			attr_dev(a7, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies/docs");
-    			add_location(a7, file$b, 64, 9, 2763);
-    			attr_dev(a8, "href", "https://github.com/damiangc99");
-    			add_location(a8, file$b, 64, 147, 2901);
-    			add_location(p3, file$b, 64, 4, 2758);
-    			attr_dev(a9, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs");
-    			add_location(a9, file$b, 65, 9, 2985);
-    			attr_dev(a10, "href", "https://github.com/AngelSM11");
-    			add_location(a10, file$b, 65, 149, 3125);
-    			add_location(p4, file$b, 65, 4, 2980);
-    			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo/docs");
-    			add_location(a11, file$b, 66, 9, 3200);
-    			attr_dev(a12, "href", "https://github.com/adrianperez01_");
-    			add_location(a12, file$b, 66, 137, 3328);
-    			add_location(p5, file$b, 66, 4, 3195);
-    			add_location(br7, file$b, 67, 4, 3405);
-    			add_location(h35, file$b, 68, 1, 3412);
-    			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies");
-    			add_location(a13, file$b, 69, 6, 3434);
-    			attr_dev(a14, "href", "https://github.com/Damiangc99");
-    			add_location(a14, file$b, 69, 134, 3562);
-    			add_location(p6, file$b, 69, 1, 3429);
-    			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats");
-    			add_location(a15, file$b, 70, 6, 3629);
-    			attr_dev(a16, "href", "https://github.com/AngelSM11");
-    			add_location(a16, file$b, 70, 136, 3759);
-    			add_location(p7, file$b, 70, 1, 3624);
-    			attr_dev(a17, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo");
-    			add_location(a17, file$b, 71, 6, 3831);
-    			attr_dev(a18, "href", "https://github.com/adrianperez01_");
-    			add_location(a18, file$b, 71, 124, 3949);
-    			add_location(p8, file$b, 71, 1, 3826);
-    			add_location(br8, file$b, 72, 4, 4026);
-    			add_location(h36, file$b, 73, 4, 4036);
-    			attr_dev(a19, "href", "#/economies");
-    			add_location(a19, file$b, 74, 6, 4063);
-    			attr_dev(a20, "href", "https://github.com/Damiangc99");
-    			add_location(a20, file$b, 74, 91, 4148);
-    			add_location(p9, file$b, 74, 1, 4058);
-    			attr_dev(a21, "href", "#/esco-stats");
-    			add_location(a21, file$b, 75, 6, 4215);
-    			attr_dev(a22, "href", "https://github.com/AngelSM11");
-    			add_location(a22, file$b, 75, 93, 4302);
-    			add_location(p10, file$b, 75, 1, 4210);
-    			attr_dev(a23, "href", "#/expo");
-    			add_location(a23, file$b, 76, 6, 4374);
-    			attr_dev(a24, "href", "https://github.com/adrianperez01_");
-    			add_location(a24, file$b, 76, 81, 4449);
-    			add_location(p11, file$b, 76, 1, 4369);
-    			add_location(br9, file$b, 77, 4, 4526);
-    			add_location(h37, file$b, 78, 4, 4536);
-    			attr_dev(a25, "href", "./#/economies-graph");
-    			add_location(a25, file$b, 79, 9, 4565);
-    			attr_dev(a26, "href", "https://github.com/Damiangc99");
-    			add_location(a26, file$b, 79, 108, 4664);
-    			add_location(p12, file$b, 79, 4, 4560);
-    			attr_dev(a27, "href", "./#/graphesco");
-    			add_location(a27, file$b, 80, 9, 4734);
-    			attr_dev(a28, "href", "https://github.com/AngelSM11");
-    			add_location(a28, file$b, 80, 96, 4821);
-    			add_location(p13, file$b, 80, 4, 4729);
-    			attr_dev(a29, "href", "#/expo");
-    			add_location(a29, file$b, 81, 9, 4896);
-    			attr_dev(a30, "href", "https://github.com/adrianperez01_");
-    			add_location(a30, file$b, 81, 84, 4971);
-    			add_location(p14, file$b, 81, 4, 4891);
-    			attr_dev(a31, "href", "./#/graph");
-    			add_location(a31, file$b, 82, 6, 5050);
-    			add_location(p15, file$b, 82, 1, 5045);
+    			add_location(br0, file$b, 56, 4, 2376);
+    			add_location(h31, file$b, 57, 4, 2386);
+    			add_location(br1, file$b, 58, 4, 2529);
+    			add_location(br2, file$b, 58, 8, 2533);
+    			add_location(h32, file$b, 59, 4, 2543);
+    			attr_dev(a6, "href", "https://github.com/gti-sos/SOS2122-25.git");
+    			add_location(a6, file$b, 59, 24, 2563);
+    			add_location(br3, file$b, 60, 4, 2643);
+    			add_location(br4, file$b, 60, 8, 2647);
+    			add_location(h33, file$b, 61, 4, 2657);
+    			attr_dev(a7, "href", "http://SOS2122-25.herokuapp.com");
+    			add_location(a7, file$b, 61, 17, 2670);
+    			add_location(br5, file$b, 62, 4, 2753);
+    			add_location(br6, file$b, 62, 8, 2757);
+    			add_location(h34, file$b, 63, 4, 2767);
+    			attr_dev(a8, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies/docs");
+    			add_location(a8, file$b, 64, 9, 2806);
+    			attr_dev(a9, "href", "https://github.com/damiangc99");
+    			add_location(a9, file$b, 64, 147, 2944);
+    			add_location(p3, file$b, 64, 4, 2801);
+    			attr_dev(a10, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs");
+    			add_location(a10, file$b, 65, 9, 3028);
+    			attr_dev(a11, "href", "https://github.com/AngelSM11");
+    			add_location(a11, file$b, 65, 149, 3168);
+    			add_location(p4, file$b, 65, 4, 3023);
+    			attr_dev(a12, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo/docs");
+    			add_location(a12, file$b, 66, 9, 3243);
+    			attr_dev(a13, "href", "https://github.com/adrianperez01_");
+    			add_location(a13, file$b, 66, 137, 3371);
+    			add_location(p5, file$b, 66, 4, 3238);
+    			add_location(br7, file$b, 67, 4, 3448);
+    			add_location(h35, file$b, 68, 1, 3455);
+    			attr_dev(a14, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies");
+    			add_location(a14, file$b, 69, 6, 3477);
+    			attr_dev(a15, "href", "https://github.com/Damiangc99");
+    			add_location(a15, file$b, 69, 134, 3605);
+    			add_location(p6, file$b, 69, 1, 3472);
+    			attr_dev(a16, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats");
+    			add_location(a16, file$b, 70, 6, 3672);
+    			attr_dev(a17, "href", "https://github.com/AngelSM11");
+    			add_location(a17, file$b, 70, 136, 3802);
+    			add_location(p7, file$b, 70, 1, 3667);
+    			attr_dev(a18, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo");
+    			add_location(a18, file$b, 71, 6, 3874);
+    			attr_dev(a19, "href", "https://github.com/adrianperez01_");
+    			add_location(a19, file$b, 71, 124, 3992);
+    			add_location(p8, file$b, 71, 1, 3869);
+    			add_location(br8, file$b, 72, 4, 4069);
+    			add_location(h36, file$b, 73, 4, 4079);
+    			attr_dev(a20, "href", "#/economies");
+    			add_location(a20, file$b, 74, 6, 4106);
+    			attr_dev(a21, "href", "https://github.com/Damiangc99");
+    			add_location(a21, file$b, 74, 91, 4191);
+    			add_location(p9, file$b, 74, 1, 4101);
+    			attr_dev(a22, "href", "#/esco-stats");
+    			add_location(a22, file$b, 75, 6, 4258);
+    			attr_dev(a23, "href", "https://github.com/AngelSM11");
+    			add_location(a23, file$b, 75, 93, 4345);
+    			add_location(p10, file$b, 75, 1, 4253);
+    			attr_dev(a24, "href", "#/expo");
+    			add_location(a24, file$b, 76, 6, 4417);
+    			attr_dev(a25, "href", "https://github.com/adrianperez01_");
+    			add_location(a25, file$b, 76, 81, 4492);
+    			add_location(p11, file$b, 76, 1, 4412);
+    			add_location(br9, file$b, 77, 4, 4569);
+    			add_location(h37, file$b, 78, 4, 4579);
+    			attr_dev(a26, "href", "./#/economies-graph");
+    			add_location(a26, file$b, 79, 9, 4608);
+    			attr_dev(a27, "href", "https://github.com/Damiangc99");
+    			add_location(a27, file$b, 79, 108, 4707);
+    			add_location(p12, file$b, 79, 4, 4603);
+    			attr_dev(a28, "href", "./#/graphesco");
+    			add_location(a28, file$b, 80, 9, 4777);
+    			attr_dev(a29, "href", "https://github.com/AngelSM11");
+    			add_location(a29, file$b, 80, 96, 4864);
+    			add_location(p13, file$b, 80, 4, 4772);
+    			attr_dev(a30, "href", "#/expo");
+    			add_location(a30, file$b, 81, 9, 4939);
+    			attr_dev(a31, "href", "https://github.com/adrianperez01_");
+    			add_location(a31, file$b, 81, 89, 5019);
+    			add_location(p14, file$b, 81, 4, 4934);
+    			attr_dev(a32, "href", "./#/graph");
+    			add_location(a32, file$b, 82, 6, 5098);
+    			add_location(p15, file$b, 82, 1, 5093);
     			attr_dev(main, "class", "svelte-95ufxa");
     			add_location(main, file$b, 49, 0, 1849);
     		},
@@ -12902,127 +12909,129 @@ var app = (function () {
     			append_dev(p2, t17);
     			append_dev(p2, a4);
     			append_dev(p2, t19);
-    			append_dev(main, t20);
+    			append_dev(p2, a5);
+    			append_dev(p2, t21);
+    			append_dev(main, t22);
     			append_dev(main, br0);
-    			append_dev(main, t21);
-    			append_dev(main, h31);
     			append_dev(main, t23);
+    			append_dev(main, h31);
+    			append_dev(main, t25);
     			append_dev(main, br1);
     			append_dev(main, br2);
-    			append_dev(main, t24);
+    			append_dev(main, t26);
     			append_dev(main, h32);
-    			append_dev(main, a5);
-    			append_dev(main, t27);
+    			append_dev(main, a6);
+    			append_dev(main, t29);
     			append_dev(main, br3);
     			append_dev(main, br4);
-    			append_dev(main, t28);
+    			append_dev(main, t30);
     			append_dev(main, h33);
-    			append_dev(main, a6);
-    			append_dev(main, t31);
+    			append_dev(main, a7);
+    			append_dev(main, t33);
     			append_dev(main, br5);
     			append_dev(main, br6);
-    			append_dev(main, t32);
-    			append_dev(main, h34);
     			append_dev(main, t34);
+    			append_dev(main, h34);
+    			append_dev(main, t36);
     			append_dev(main, p3);
-    			append_dev(p3, t35);
-    			append_dev(p3, a7);
     			append_dev(p3, t37);
     			append_dev(p3, a8);
     			append_dev(p3, t39);
-    			append_dev(main, t40);
+    			append_dev(p3, a9);
+    			append_dev(p3, t41);
+    			append_dev(main, t42);
     			append_dev(main, p4);
-    			append_dev(p4, t41);
-    			append_dev(p4, a9);
     			append_dev(p4, t43);
     			append_dev(p4, a10);
     			append_dev(p4, t45);
-    			append_dev(main, t46);
+    			append_dev(p4, a11);
+    			append_dev(p4, t47);
+    			append_dev(main, t48);
     			append_dev(main, p5);
-    			append_dev(p5, t47);
-    			append_dev(p5, a11);
     			append_dev(p5, t49);
     			append_dev(p5, a12);
     			append_dev(p5, t51);
-    			append_dev(main, t52);
+    			append_dev(p5, a13);
+    			append_dev(p5, t53);
+    			append_dev(main, t54);
     			append_dev(main, br7);
-    			append_dev(main, t53);
-    			append_dev(main, h35);
     			append_dev(main, t55);
+    			append_dev(main, h35);
+    			append_dev(main, t57);
     			append_dev(main, p6);
-    			append_dev(p6, t56);
-    			append_dev(p6, a13);
     			append_dev(p6, t58);
     			append_dev(p6, a14);
     			append_dev(p6, t60);
-    			append_dev(main, t61);
+    			append_dev(p6, a15);
+    			append_dev(p6, t62);
+    			append_dev(main, t63);
     			append_dev(main, p7);
-    			append_dev(p7, t62);
-    			append_dev(p7, a15);
     			append_dev(p7, t64);
     			append_dev(p7, a16);
     			append_dev(p7, t66);
-    			append_dev(main, t67);
+    			append_dev(p7, a17);
+    			append_dev(p7, t68);
+    			append_dev(main, t69);
     			append_dev(main, p8);
-    			append_dev(p8, t68);
-    			append_dev(p8, a17);
     			append_dev(p8, t70);
     			append_dev(p8, a18);
     			append_dev(p8, t72);
-    			append_dev(main, t73);
+    			append_dev(p8, a19);
+    			append_dev(p8, t74);
+    			append_dev(main, t75);
     			append_dev(main, br8);
-    			append_dev(main, t74);
-    			append_dev(main, h36);
     			append_dev(main, t76);
+    			append_dev(main, h36);
+    			append_dev(main, t78);
     			append_dev(main, p9);
-    			append_dev(p9, t77);
-    			append_dev(p9, a19);
     			append_dev(p9, t79);
     			append_dev(p9, a20);
     			append_dev(p9, t81);
-    			append_dev(main, t82);
+    			append_dev(p9, a21);
+    			append_dev(p9, t83);
+    			append_dev(main, t84);
     			append_dev(main, p10);
-    			append_dev(p10, t83);
-    			append_dev(p10, a21);
     			append_dev(p10, t85);
     			append_dev(p10, a22);
     			append_dev(p10, t87);
-    			append_dev(main, t88);
+    			append_dev(p10, a23);
+    			append_dev(p10, t89);
+    			append_dev(main, t90);
     			append_dev(main, p11);
-    			append_dev(p11, t89);
-    			append_dev(p11, a23);
     			append_dev(p11, t91);
     			append_dev(p11, a24);
     			append_dev(p11, t93);
-    			append_dev(main, t94);
+    			append_dev(p11, a25);
+    			append_dev(p11, t95);
+    			append_dev(main, t96);
     			append_dev(main, br9);
-    			append_dev(main, t95);
-    			append_dev(main, h37);
     			append_dev(main, t97);
+    			append_dev(main, h37);
+    			append_dev(main, t99);
     			append_dev(main, p12);
-    			append_dev(p12, t98);
-    			append_dev(p12, a25);
     			append_dev(p12, t100);
     			append_dev(p12, a26);
     			append_dev(p12, t102);
-    			append_dev(main, t103);
+    			append_dev(p12, a27);
+    			append_dev(p12, t104);
+    			append_dev(main, t105);
     			append_dev(main, p13);
-    			append_dev(p13, t104);
-    			append_dev(p13, a27);
     			append_dev(p13, t106);
     			append_dev(p13, a28);
     			append_dev(p13, t108);
-    			append_dev(main, t109);
+    			append_dev(p13, a29);
+    			append_dev(p13, t110);
+    			append_dev(main, t111);
     			append_dev(main, p14);
-    			append_dev(p14, t110);
-    			append_dev(p14, a29);
     			append_dev(p14, t112);
     			append_dev(p14, a30);
     			append_dev(p14, t114);
-    			append_dev(main, t115);
+    			append_dev(p14, a31);
+    			append_dev(p14, t116);
+    			append_dev(main, t117);
     			append_dev(main, p15);
-    			append_dev(p15, t116);
-    			append_dev(p15, a31);
+    			append_dev(p15, t118);
+    			append_dev(p15, a32);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -18286,7 +18295,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("expoç-Stats");
+    			t = text("expo-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -19470,18 +19479,18 @@ var app = (function () {
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
     			add_location(script0, file$8, 118, 4, 3921);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$8, 119, 4, 4014);
+    			add_location(script1, file$8, 119, 4, 3992);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$8, 120, 4, 4114);
+    			add_location(script2, file$8, 120, 4, 4070);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$8, 121, 4, 4216);
+    			add_location(script3, file$8, 121, 4, 4150);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$8, 168, 8, 6147);
+    			add_location(div, file$8, 168, 8, 6080);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$8, 169, 8, 6179);
+    			add_location(p, file$8, 169, 8, 6112);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$8, 167, 4, 6103);
-    			add_location(main, file$8, 124, 0, 4334);
+    			add_location(figure, file$8, 167, 4, 6036);
+    			add_location(main, file$8, 124, 0, 4268);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -19502,13 +19511,7 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = [
-    					listen_dev(script0, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script1, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script2, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false)
-    				];
-
+    				dispose = listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false);
     				mounted = true;
     			}
     		},
@@ -19539,7 +19542,7 @@ var app = (function () {
     			if (detaching) detach_dev(main);
     			destroy_component(navbar);
     			mounted = false;
-    			run_all(dispose);
+    			dispose();
     		}
     	};
 
@@ -19838,7 +19841,7 @@ var app = (function () {
     	return block;
     }
 
-    // (210:6) <DropdownItem href="./api/v1/expo-stats">
+    // (210:6) <DropdownItem href="./api/v1/expo">
     function create_default_slot_32$1(ctx) {
     	let t;
 
@@ -19858,7 +19861,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_32$1.name,
     		type: "slot",
-    		source: "(210:6) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
+    		source: "(210:6) <DropdownItem href=\\\"./api/v1/expo\\\">",
     		ctx
     	});
 
@@ -19902,7 +19905,7 @@ var app = (function () {
 
     	dropdownitem4 = new DropdownItem({
     			props: {
-    				href: "./api/v1/expo-stats",
+    				href: "./api/v1/expo",
     				$$slots: { default: [create_default_slot_32$1] },
     				$$scope: { ctx }
     			},
@@ -20161,13 +20164,13 @@ var app = (function () {
     	return block;
     }
 
-    // (219:6) <DropdownItem href="#/graphexpo">
+    // (219:6) <DropdownItem href="./#/expo">
     function create_default_slot_26$2(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Expo-Stats FRONT-END");
+    			t = text("expo FRONT-END");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -20181,7 +20184,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_26$2.name,
     		type: "slot",
-    		source: "(219:6) <DropdownItem href=\\\"#/graphexpo\\\">",
+    		source: "(219:6) <DropdownItem href=\\\"./#/expo\\\">",
     		ctx
     	});
 
@@ -20248,7 +20251,7 @@ var app = (function () {
 
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/graphexpo",
+    				href: "./#/expo",
     				$$slots: { default: [create_default_slot_26$2] },
     				$$scope: { ctx }
     			},
@@ -20525,13 +20528,13 @@ var app = (function () {
     	return block;
     }
 
-    // (230:6) <DropdownItem href="#/graphexpo">
+    // (230:6) <DropdownItem href="./#/graphexpo">
     function create_default_slot_19$4(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Expo-Stats");
+    			t = text("expo-Stats");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -20545,7 +20548,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$4.name,
     		type: "slot",
-    		source: "(230:6) <DropdownItem href=\\\"#/graphexpo\\\">",
+    		source: "(230:6) <DropdownItem href=\\\"./#/graphexpo\\\">",
     		ctx
     	});
 
@@ -20612,7 +20615,7 @@ var app = (function () {
 
     	dropdownitem2 = new DropdownItem({
     			props: {
-    				href: "#/graphexpo",
+    				href: "./#/graphexpo",
     				$$slots: { default: [create_default_slot_19$4] },
     				$$scope: { ctx }
     			},
@@ -21006,7 +21009,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("ERROR: ");
     			t1 = text(/*msg*/ ctx[4]);
-    			add_location(p, file$7, 243, 3, 7604);
+    			add_location(p, file$7, 243, 3, 7591);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21088,7 +21091,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("Correcto: ");
     			t1 = text(/*msg*/ ctx[4]);
-    			add_location(p, file$7, 248, 3, 7746);
+    			add_location(p, file$7, 248, 3, 7733);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21443,24 +21446,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$7, 263, 16, 8042);
-    			add_location(th1, file$7, 264, 16, 8084);
-    			add_location(tr0, file$7, 262, 12, 8020);
-    			add_location(thead, file$7, 261, 8, 7999);
+    			add_location(th0, file$7, 263, 16, 8029);
+    			add_location(th1, file$7, 264, 16, 8071);
+    			add_location(tr0, file$7, 262, 12, 8007);
+    			add_location(thead, file$7, 261, 8, 7986);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$7, 271, 16, 8200);
-    			add_location(td0, file$7, 271, 12, 8196);
+    			add_location(input0, file$7, 271, 16, 8187);
+    			add_location(td0, file$7, 271, 12, 8183);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$7, 272, 16, 8272);
-    			add_location(td1, file$7, 272, 12, 8268);
+    			add_location(input1, file$7, 272, 16, 8259);
+    			add_location(td1, file$7, 272, 12, 8255);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$7, 273, 12, 8338);
+    			add_location(td2, file$7, 273, 12, 8325);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$7, 286, 12, 8860);
-    			add_location(tr1, file$7, 270, 8, 8178);
-    			add_location(tbody, file$7, 267, 8, 8149);
+    			add_location(td3, file$7, 286, 12, 8847);
+    			add_location(tr1, file$7, 270, 8, 8165);
+    			add_location(tbody, file$7, 267, 8, 8136);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -21743,16 +21746,16 @@ var app = (function () {
     			t10 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$7, 336, 4, 10263);
-    			add_location(td1, file$7, 337, 4, 10290);
-    			add_location(td2, file$7, 338, 16, 10326);
-    			add_location(td3, file$7, 339, 16, 10367);
-    			add_location(td4, file$7, 340, 16, 10407);
+    			add_location(td0, file$7, 336, 4, 10250);
+    			add_location(td1, file$7, 337, 4, 10277);
+    			add_location(td2, file$7, 338, 16, 10313);
+    			add_location(td3, file$7, 339, 16, 10354);
+    			add_location(td4, file$7, 340, 16, 10394);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$7, 342, 4, 10442);
+    			add_location(td5, file$7, 342, 4, 10429);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$7, 347, 4, 10628);
-    			add_location(tr, file$7, 335, 3, 10253);
+    			add_location(td6, file$7, 347, 4, 10615);
+    			add_location(tr, file$7, 335, 3, 10240);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22044,36 +22047,36 @@ var app = (function () {
     			t18 = space();
     			td8 = element("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$7, 301, 4, 9223);
-    			add_location(th1, file$7, 302, 4, 9242);
-    			add_location(th2, file$7, 303, 16, 9272);
-    			add_location(th3, file$7, 304, 16, 9308);
-    			add_location(th4, file$7, 305, 16, 9343);
-    			add_location(tr0, file$7, 300, 3, 9213);
-    			add_location(thead, file$7, 299, 2, 9201);
-    			add_location(input0, file$7, 310, 8, 9417);
-    			add_location(td0, file$7, 310, 4, 9413);
+    			add_location(th0, file$7, 301, 4, 9210);
+    			add_location(th1, file$7, 302, 4, 9229);
+    			add_location(th2, file$7, 303, 16, 9259);
+    			add_location(th3, file$7, 304, 16, 9295);
+    			add_location(th4, file$7, 305, 16, 9330);
+    			add_location(tr0, file$7, 300, 3, 9200);
+    			add_location(thead, file$7, 299, 2, 9188);
+    			add_location(input0, file$7, 310, 8, 9404);
+    			add_location(td0, file$7, 310, 4, 9400);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$7, 311, 8, 9475);
-    			add_location(td1, file$7, 311, 4, 9471);
+    			add_location(input1, file$7, 311, 8, 9462);
+    			add_location(td1, file$7, 311, 4, 9458);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$7, 312, 8, 9544);
-    			add_location(td2, file$7, 312, 4, 9540);
+    			add_location(input2, file$7, 312, 8, 9531);
+    			add_location(td2, file$7, 312, 4, 9527);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$7, 313, 8, 9618);
-    			add_location(td3, file$7, 313, 4, 9614);
+    			add_location(input3, file$7, 313, 8, 9605);
+    			add_location(td3, file$7, 313, 4, 9601);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$7, 314, 8, 9691);
-    			add_location(td4, file$7, 314, 4, 9687);
+    			add_location(input4, file$7, 314, 8, 9678);
+    			add_location(td4, file$7, 314, 4, 9674);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$7, 316, 4, 9767);
+    			add_location(td5, file$7, 316, 4, 9754);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$7, 321, 4, 9900);
-    			add_location(tr1, file$7, 309, 3, 9403);
-    			add_location(td7, file$7, 354, 4, 10801);
-    			add_location(td8, file$7, 357, 4, 10907);
-    			add_location(tr2, file$7, 353, 3, 10791);
-    			add_location(tbody, file$7, 308, 2, 9391);
+    			add_location(td6, file$7, 321, 4, 9887);
+    			add_location(tr1, file$7, 309, 3, 9390);
+    			add_location(td7, file$7, 354, 4, 10788);
+    			add_location(td8, file$7, 357, 4, 10894);
+    			add_location(tr2, file$7, 353, 3, 10778);
+    			add_location(tbody, file$7, 308, 2, 9378);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -22403,7 +22406,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t6 = space();
     			info.block.c();
-    			add_location(h1, file$7, 240, 4, 7476);
+    			add_location(h1, file$7, 240, 4, 7463);
     			add_location(main, file$7, 197, 0, 5779);
     		},
     		l: function claim(nodes) {
@@ -25135,19 +25138,19 @@ var app = (function () {
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
     			add_location(script0, file$5, 96, 4, 3249);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$5, 97, 4, 3341);
+    			add_location(script1, file$5, 97, 4, 3320);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$5, 98, 4, 3440);
+    			add_location(script2, file$5, 98, 4, 3398);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$5, 99, 4, 3541);
-    			add_location(br, file$5, 147, 4, 5361);
+    			add_location(script3, file$5, 99, 4, 3478);
+    			add_location(br, file$5, 147, 4, 5298);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$5, 149, 8, 5415);
+    			add_location(div, file$5, 149, 8, 5352);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$5, 150, 8, 5451);
+    			add_location(p, file$5, 150, 8, 5388);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$5, 148, 4, 5371);
-    			add_location(main, file$5, 104, 0, 3662);
+    			add_location(figure, file$5, 148, 4, 5308);
+    			add_location(main, file$5, 104, 0, 3599);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -25170,13 +25173,7 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = [
-    					listen_dev(script0, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script1, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script2, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false)
-    				];
-
+    				dispose = listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false);
     				mounted = true;
     			}
     		},
@@ -25207,7 +25204,7 @@ var app = (function () {
     			if (detaching) detach_dev(main);
     			destroy_component(navbar);
     			mounted = false;
-    			run_all(dispose);
+    			dispose();
     		}
     	};
 
@@ -31882,20 +31879,20 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Este gráfico compara las exportaciones de diferentes paises";
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$2, 118, 4, 3945);
+    			add_location(script0, file$2, 118, 4, 3942);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$2, 119, 4, 4038);
+    			add_location(script1, file$2, 119, 4, 4013);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$2, 120, 4, 4138);
+    			add_location(script2, file$2, 120, 4, 4091);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$2, 121, 4, 4240);
+    			add_location(script3, file$2, 121, 4, 4171);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$2, 168, 8, 6158);
+    			add_location(div, file$2, 168, 8, 6089);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$2, 169, 8, 6190);
+    			add_location(p, file$2, 169, 8, 6121);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$2, 167, 4, 6114);
-    			add_location(main, file$2, 124, 0, 4358);
+    			add_location(figure, file$2, 167, 4, 6045);
+    			add_location(main, file$2, 124, 0, 4289);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -31916,13 +31913,7 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = [
-    					listen_dev(script0, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script1, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script2, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false)
-    				];
-
+    				dispose = listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false);
     				mounted = true;
     			}
     		},
@@ -31953,7 +31944,7 @@ var app = (function () {
     			if (detaching) detach_dev(main);
     			destroy_component(navbar);
     			mounted = false;
-    			run_all(dispose);
+    			dispose();
     		}
     	};
 
@@ -32033,7 +32024,7 @@ var app = (function () {
 
     	async function loadGraph() {
     		Highcharts.chart("container", {
-    			chart: { type: "column" },
+    			chart: { type: "bar" },
     			title: { text: "País" },
     			subtitle: {
     				text: "Source: https://ourworldindata.org/expo"
@@ -32178,23 +32169,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$1, 137, 4, 3620);
+    			add_location(script0, file$1, 137, 4, 3618);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 138, 4, 3713);
+    			add_location(script1, file$1, 138, 4, 3711);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 139, 4, 3816);
+    			add_location(script2, file$1, 139, 4, 3814);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 140, 4, 3916);
+    			add_location(script3, file$1, 140, 4, 3914);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$1, 141, 4, 4018);
+    			add_location(script4, file$1, 141, 4, 4016);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$1, 148, 8, 4196);
-    			add_location(code, file$1, 151, 12, 4363);
+    			add_location(div, file$1, 148, 8, 4194);
+    			add_location(code, file$1, 151, 12, 4361);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 149, 8, 4232);
+    			add_location(p, file$1, 149, 8, 4230);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 147, 4, 4152);
-    			add_location(main, file$1, 145, 0, 4138);
+    			add_location(figure, file$1, 147, 4, 4150);
+    			add_location(main, file$1, 145, 0, 4136);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32325,11 +32316,13 @@ var app = (function () {
     	async function loadGraph() {
     		Highcharts.chart("container", {
     			title: {
-    				text: "Solar Employment Growth by Sector, 2010-2016"
+    				text: "Comparativa entre las Economías, Exportaciones y Educación"
     			},
-    			subtitle: { text: "Source: thesolarfoundation.com" },
+    			subtitle: { text: "" },
     			yAxis: {
-    				title: { text: "economia escolarizacion" }
+    				title: {
+    					text: "economia escolarizacion exportaciones"
+    				}
     			},
     			xAxis: {
     				title: { text: "Pais-año" },
