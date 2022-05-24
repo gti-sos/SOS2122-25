@@ -95,7 +95,7 @@ module.exports.register = (app, db) => {
     // Documentos
 
     app.get(BASE_API_URL_esco_STATS + "/docs", (req, res) => {
-        res.redirect("https://documenter.getpostman.com/view/19481634/UyxjFko9")
+        res.redirect("")
     })
 
 
