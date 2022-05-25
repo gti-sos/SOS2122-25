@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 main.svelte-95ufxa{text-align:center;padding:1em;max-width:240px;margin:0 auto}h1.svelte-95ufxa{color:#ff3e00;text-transform:uppercase;font-size:4em;font-weight:100}@media(min-width: 640px){main.svelte-95ufxa{max-width:none}}.modal-open{overflow:hidden;padding-right:0}.overflow-noscroll{overflow:hidden;padding-right:0px}/*!
-=======
-<<<<<<< HEAD
-main.svelte-95ufxa{text-align:center;padding:1em;max-width:240px;margin:0 auto}h1.svelte-95ufxa{color:#ff3e00;text-transform:uppercase;font-size:4em;font-weight:100}@media(min-width: 640px){main.svelte-95ufxa{max-width:none}}.modal-open{overflow:hidden;padding-right:0}.overflow-noscroll{overflow:hidden;padding-right:0px}
-=======
-main.svelte-95ufxa{text-align:center;padding:1em;max-width:240px;margin:0 auto}h1.svelte-95ufxa{color:#ff3e00;text-transform:uppercase;font-size:4em;font-weight:100}@media(min-width: 640px){main.svelte-95ufxa{max-width:none}}.overflow-noscroll{overflow:hidden;padding-right:0px}.modal-open{overflow:hidden;padding-right:0}/*!
->>>>>>> 18b21f763491aaddc068c96e754f18311d4d9706
  * Copyright (c) 2017 ~ present NAVER Corp.
  * billboard.js project is licensed under the MIT license
  *
@@ -287,4 +280,3 @@ text.bb-chart-arcs-gauge-title {
     border-radius: 5px;
     cursor: pointer; }
 
->>>>>>> 0ef6053e8b2a70ad315668cfc2ae125de18ec255
