@@ -29,7 +29,7 @@ app.use(paths, function(req, res) {
     var url = apiServerHost + req.url;
     console.log('piped: ' + req.url);
     req.pipe(request(url)).pipe(res);
-  });
+});
   
 
 

@@ -13,7 +13,11 @@
 	import EditExpo from "./expo-stats/EditExpo.svelte";
 	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
+
 	import Integration from './frontEconomies/integrationApi1.svelte';
+
+	import IntegrationEco from './frontEconomies/integrationApi1.svelte';
+
 	import Integration1 from './esco-stats/integration1.svelte';
 	//import Integration2 from './esco-stats/integration2.svelte';
 	//import Integration3 from './esco-stats/integration3.svelte';
@@ -39,7 +43,7 @@
 		"/graphexpo" : ExpoGraph,
 		"/graph": MyGraph,
 
-		"/economies/integracion1": Integration,
+		"/economies/integracion1": IntegrationEco,
 
 
 		"/integration1": Integration1,
@@ -48,8 +52,6 @@
 		//"/integration4": Integration4,
 		//"/integration5": Integration5,
 		//"/integration6": Integration6,
-
-
 
 
 	};
