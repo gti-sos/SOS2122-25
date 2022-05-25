@@ -46,13 +46,22 @@ var economies_stats = [
     } 
 ]
 
-var PathV1='/remoteAPI';
-var extApiServerHostV1 = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
+var Api1='/remoteAPI';
+var Api2='/remoteAPI2';
+var ApiServerHostV1 = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
+var ApiServerHostV2 = 'https://sos2122-11.herokuapp.com/api/v2/inequality-stats';
+
 
 module.exports.register = (app, db) => {
 
-    app.use(PathV1, function(req, res) {
-        var url = extApiServerHostV1 + req.url;
+    app.use(Api1, function(req, res) {
+        var url = ApiServerHostV1 + req.url;
+        console.log('piped: ' + req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+
+    app.use(Api2, function(req, res) {
+        var url = ApiServerHostV2 + req.url;
         console.log('piped: ' + req.baseUrl + req.url);
         req.pipe(request(url)).pipe(res);
     });

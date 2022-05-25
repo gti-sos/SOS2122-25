@@ -14,7 +14,9 @@
 	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
 
-	import IntegrationEco from './frontEconomies/integrationApi1.svelte';
+
+	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
+	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';
 
 	import Integration1 from './esco-stats/integration1.svelte';
 	//import Integration2 from './esco-stats/integration2.svelte';
@@ -41,8 +43,8 @@
 		"/graphexpo" : ExpoGraph,
 		"/graph": MyGraph,
 
-		"/economies/integracion1": IntegrationEco,
-
+		"/economies/integracion1": IntegrationEco1,
+		"/economies/integracion2": IntegrationEco2,
 
 		"/integration1": Integration1,
 		//"/integration2": Integration2,
