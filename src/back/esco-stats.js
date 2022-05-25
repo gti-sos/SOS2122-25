@@ -71,7 +71,17 @@ var esco_stats = [
     }
 ]
 
+//Proxy esco
+var paths1='/remoteAPI-esco';
+var apiServerHost1 = 'https://sos2122-27.herokuapp.com/api/v2/public-expenditure-stats';
+
 module.exports.register = (app, db) => {
+
+    app.use(paths1, function(req, res) {
+        var url = apiServerHost1 + req.url;
+        console.log('piped: ' + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
 
     app.get(BASE_API_URL_esco_STATS + "/loadInitialData", (req, res) => {
         db.find({}, function (err, filteredList) {

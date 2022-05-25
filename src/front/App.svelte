@@ -14,8 +14,6 @@
 	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
 
-	import Integration from './frontEconomies/integrationApi1.svelte';
-
 	import IntegrationEco from './frontEconomies/integrationApi1.svelte';
 
 	import Integration1 from './esco-stats/integration1.svelte';

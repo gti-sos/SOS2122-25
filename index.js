@@ -21,18 +21,6 @@ db_esco_stats = new Datastore();
 db_expo_stats = new Datastore();
 
 
-//Proxy economies
-var paths='/remoteAPI';
-var apiServerHost = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
-
-app.use(paths, function(req, res) {
-    var url = apiServerHost + req.url;
-    console.log('piped: ' + req.url);
-    req.pipe(request(url)).pipe(res);
-});
-  
-
-
 economies_stats_API.register(app,db_economies_stats);
 esco_stats_API.register(app,db_esco_stats);
 expo_stats_API.register(app,db_expo_stats);

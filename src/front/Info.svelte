@@ -81,6 +81,8 @@
     <p>- <a href="./#/graphesco">https://SOS2122-25.herokuapp.com/#/graphesco </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
     <p>- <a href="#/graphexpo">https://SOS2122-25.herokuapp.com/#/graphexpo </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
 	<p>- <a href="./#/graph">https://SOS2122-25.herokuapp.com/#/graph </a></p>
+	<h3>PRUEBA:</h3>
+	<p>- <a href="./#/integration1">https://SOS2122-25.herokuapp.com/#/intergation1 </a></p>
 </main>
 <style>
 	main {
