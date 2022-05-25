@@ -1,4 +1,6 @@
 const bodyParser = require("body-parser");
+const cors = require("cors"); 
+const request = require("request");
 
 const BASE_API_URL_economies_STATS = "/api/v2/economies";
 
@@ -44,9 +46,16 @@ var economies_stats = [
     } 
 ]
 
-
+var PathV1='/remoteAPI';
+var extApiServerHostV1 = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
 
 module.exports.register = (app, db) => {
+
+    app.use(PathV1, function(req, res) {
+        var url = extApiServerHostV1 + req.url;
+        console.log('piped: ' + req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
 
     app.get(BASE_API_URL_economies_STATS + "/loadInitialData", (req, res) => {
 

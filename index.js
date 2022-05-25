@@ -14,12 +14,9 @@ const esco_stats_API = require("./src/back/esco-stats.js");
 const expo_stats_API = require("./src/back/expo-stats.js");
 const Datastore = require('nedb');
 
-
-
 db_economies_stats = new Datastore();
 db_esco_stats = new Datastore();
 db_expo_stats = new Datastore();
-
 
 economies_stats_API.register(app,db_economies_stats);
 esco_stats_API.register(app,db_esco_stats);
@@ -35,7 +32,6 @@ app.get("/cool", (req,res)=>{
 app.listen(port, ()=>{
     console.log(`Server ready at port ${port}`);
 });
-
 
 
 
