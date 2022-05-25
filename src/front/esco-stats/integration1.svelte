@@ -9,13 +9,13 @@
       let stats = [];
       let country= [];
       let year = [];
-      let tot_wom = ["tot_wom"];
-      let tot_man = ["tot_man"];
-      let tot_esco = ["tot_esco"];
+      let public_expenditure = ["public_expenditure"];
+      let pe_to_gdp = ["pe_to_gdp"];
+      let pe_on_defence = ["pe_on_defence"];
 
       async function loadGraph(){
           console.log("Fetching stats....");
-          const res = await fetch("/remoteAPI");
+          const res = await fetch("/remoteAPI-esco");
           if(res.ok){
               const data = await res.json();
               stats = data;
@@ -24,9 +24,9 @@
               stats.forEach(stat => {
                   country.push(stat.country+"-"+stat.year);
                   year.push(stat.year);
-                  tot_wom.push(stat.tot_wom);
-                  tot_man.push(stat.tot_man);
-                  tot_esco.push(stat.tot_esco);            
+                  public_expenditure.push(stat.public_expenditure);
+                  pe_to_gdp.push(stat.pe_to_gdp);
+                  pe_on_defence.push(stat.pe_on_defence);            
               });
           }
           else{
@@ -38,9 +38,9 @@
             data: {
       
               columns: [
-                tot_wom,
-                tot_man,
-                tot_esco
+                public_expenditure,
+                pe_to_gdp,
+                pe_on_defence
               ],
               type: 'spline'
             },
