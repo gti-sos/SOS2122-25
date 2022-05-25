@@ -196,7 +196,7 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/expo-stats">expo-Stats</DropdownItem>
+				  <DropdownItem href="./api/v1/expo">expo-Stats</DropdownItem>
 				</DropdownMenu>
             </Dropdown>
               
@@ -207,7 +207,7 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./#/esco-stats">esco FRONT_END</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="#/expo-stats">expo FRONT-END</DropdownItem>
+				  <DropdownItem href="#/expo">expo FRONT-END</DropdownItem>
 				</DropdownMenu>
 			  </Dropdown>
 			  

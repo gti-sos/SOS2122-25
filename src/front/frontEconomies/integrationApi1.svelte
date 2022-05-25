@@ -6,22 +6,22 @@
 
     let year = [];
     let country = [];
-    let percapita = [];
-    let currency = [];
-    let currentprices = [];
+    let quantity = [];
+    let absolute_change = [];
+    let relative_change = [];
     let datos = []; 
     let datosOrdenados = [];   
     //creo 2 let datos para poder ordenado los datos por año
 
     async function getData(){
         console.log("Fetching Economies....");
-        const res = await fetch("/api/v2/economies");
+        const res = await fetch("https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats");
         if(res.ok){
             const data = await res.json();          
             datos = data;
             //si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
             if (datos.length == 0) {
-                const res = await fetch("/api/v2/economies/loadInitialData");
+                const res = await fetch("/remoteApi");
                 console.log("Entradas recibidas: "+datos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
             datosOrdenados = datos.sort(function (a, b){
@@ -31,9 +31,9 @@
             datosOrdenados.forEach(dato => {
                 year.push(dato.year);
                 country.push(dato.country+"-"+dato.year);
-                percapita.push(dato.percapita);
-                currency.push(dato.currency);
-                currentprices.push(dato.currentprices);          
+                quantity.push(dato.quantity);
+                absolute_change.push(dato.absolute_change);
+                relative_change.push(dato.relative_change);          
             });
             location.reload();
             }
@@ -47,9 +47,9 @@
             datosOrdenados.forEach(dato => {
                 year.push(dato.year);
                 country.push(dato.country+"-"+dato.year);
-                percapita.push(dato.percapita);
-                currency.push(dato.currency);
-                currentprices.push(dato.currentprices);            
+                quantity.push(dato.quantity);
+                absolute_change.push(dato.absolute_change);
+                relative_change.push(dato.relative_change);            
             }); 
             }
             
@@ -64,7 +64,7 @@
                 type: 'area'
             },
             title: {
-                text: 'Economia Mundial'
+                text: 'Fertilizantes'
             },
             xAxis: {
                 categories: country
@@ -73,16 +73,16 @@
                 enabled: false
             },
             series: [{
-                name: 'percapita',
-                data: percapita
+                name: 'quantity',
+                data: quantity
                 },
                 {
-                name: 'currency',
-                data: currency
+                name: 'absolute_change',
+                data: absolute_change
                 },
                 {
-                name: 'currentprices',
-                data: currentprices
+                name: 'relative_change',
+                data: relative_change
                 }
             ]
         });
@@ -94,9 +94,9 @@
 
 <svelte:head>
 
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"on:load="{loadGraph}"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"on:load="{loadGraph}"></script>
 
 

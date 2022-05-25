@@ -53,7 +53,7 @@
     <h3>Team</h3>
     <p>- <a href="https://github.com/damiangc99">Damian Gonzalez Carrasco</a>(fuente de datos: <a href="https://ourworldindata.org/percapita">economies</a>)</p>
     <p>- <a href="https://github.com/AngelSM11">Angel Simon Mesa </a> (fuente de datos: <a href="https://ourworldindata.org/esco">esco-stats</a>)</p>
-    <p>- <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>(fuente de datos: exports-stats)</p>
+    <p>- <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>(fuente de datos: <a href="https://ourworldindata.org/expo">expo-stats</a>)</p>
     <br>
     <h3>Project description:</h3> Nuestras fuentes de información esta orientadas a analizar la relación que existe entre las exportaciones. 
     <br><br>
@@ -63,23 +63,28 @@
     <br><br>
     <h3>Documentos POSTMAN:</h3>
     <p>- <a href="https://SOS2122-25.herokuapp.com/api/v2/economies/docs">https://SOS2122-25.herokuapp.com/api/v2/economies/docs </a>(developed by <a href="https://github.com/damiangc99">Damian Gonzalez Carrasco</a>)</p>
+<<<<<<< HEAD
+    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs">https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
+    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo/docs">https://SOS2122-25.herokuapp.com/api/v1/expo/docs </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
+=======
     <p>- <a href="https://documenter.getpostman.com/view/19481634/UyxjFko9">https://SOS2122-25.herokuapp.com/api/v1/esco-stats/docs </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
-    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo/docs">https://SOS2122-25.herokuapp.com/api/v1/expo/docs </a>(developed by <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>)</p>
+    <p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo/docs">https://SOS2122-25.herokuapp.com/api/v1/expo/docs </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
+>>>>>>> 247af78e907b7334dc2368c13d4739ad3eb01ce4
     <br>
 	<h3>APIS:</h3>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v2/economies">https://SOS2122-25.herokuapp.com/api/v2/economies </a>(developed by <a href="https://github.com/Damiangc99">Damiangc99</a>)</p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/esco-stats">https://SOS2122-25.herokuapp.com/api/v1/esco-stats </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo">https://SOS2122-25.herokuapp.com/api/v1/expo </a>(developed by <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>)</p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/api/v1/expo">https://SOS2122-25.herokuapp.com/api/v1/expo </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
     <br>
     <h3>FRONT-END:</h3>
 	<p>- <a href="#/economies">https://SOS2122-25.herokuapp.com/#/economies </a>(developed by <a href="https://github.com/Damiangc99">Damiangc99</a>)</p>
 	<p>- <a href="#/esco-stats">https://SOS2122-25.herokuapp.com/#/esco-stats </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
-	<p>- <a href="#/expo">https://SOS2122-25.herokuapp.com/#/expo </a>(developed by <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>)</p>
+	<p>- <a href="#/expo">https://SOS2122-25.herokuapp.com/#/expo </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
     <br>
-    <h3>GÁFRICAS:</h3>
+    <h3>GRÁFICAS:</h3>
     <p>- <a href="./#/economies-graph">https://SOS2122-25.herokuapp.com/#/economies-graph </a>(developed by <a href="https://github.com/Damiangc99">Damiangc99</a>)</p>
     <p>- <a href="./#/graphesco">https://SOS2122-25.herokuapp.com/#/graphesco </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
-    <p>- <a href="#/expo">https://SOS2122-25.herokuapp.com/#/expo </a>(developed by <a href="https://github.com/adrianperez01_">Adrián Pérez Gómez</a>)</p>
+    <p>- <a href="#/graphexpo">https://SOS2122-25.herokuapp.com/#/graphexpo </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
 	<p>- <a href="./#/graph">https://SOS2122-25.herokuapp.com/#/graph </a></p>
 </main>
 <style>

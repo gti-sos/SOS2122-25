@@ -1,37 +1,76 @@
-<html>
-<head>
-  <title>Timeline</title>
-  <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-  <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-  <style type="text/css">
-    #visualization {
-      width: 600px;
-      height: 400px;
-      border: 1px solid lightgray;
-    }
-  </style>
-</head>
-<body>
-<div id="visualization"></div>
-<script type="text/javascript">
-  // DOM element where the Timeline will be attached
-  var container = document.getElementById('visualization');
-
-  // Create a DataSet (allows two way data-binding)
-  var items = new vis.DataSet([
-    {id: 1, content: 'item 1', start: '2014-04-20'},
-    {id: 2, content: 'item 2', start: '2014-04-14'},
-    {id: 3, content: 'item 3', start: '2014-04-18'},
-    {id: 4, content: 'item 4', start: '2014-04-16', end: '2014-04-19'},
-    {id: 5, content: 'item 5', start: '2014-04-25'},
-    {id: 6, content: 'item 6', start: '2014-04-27', type: 'point'}
-  ]);
-
-  // Configuration for the Timeline
-  var options = {};
-
-  // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options);
-</script>
-</body>
-</html>
+<script>
+    import { onMount } from 'svelte';
+    import c3 from "c3";
+    import {Table,Button} from 'sveltestrap';
+    import {pop} from 'svelte-spa-router';
+    let apiData = {};
+    const delay = ms => new Promise(res => setTimeout(res,ms));
+        let stats = [];
+        let country= [];
+        let year = [];
+        let quantity = ["quantity"];
+        let absolute_change = ["absolute_change"];
+        let relative_change = ["relative_change"]; 
+        async function loadGraph(){
+            console.log("Fetching stats....");
+            const res = await fetch("/api/v1/fertilizers-stats");
+            if(res.ok){
+                const data = await res.json();
+                stats = data;
+                console.log("Estadísticas recibidas: "+stats.length);
+                //inicializamos los arrays para mostrar los datos
+                stats.forEach(stat => {
+                    country.push(stat.country+"-"+stat.year);
+                    year.push(stat.year);
+                    quantity.push(stat.quantity);
+                    absolute_change.push(stat.absolute_change);
+                    relative_change.push(stat.relative_change);            
+                });
+            }else{
+                console.log("Error cargando los datos");
+            }
+            console.log("Comprobando");
+      
+            var chart= c3.generate({
+                bindto: '#chart',
+    data: {
+        
+        columns: [
+           quantity,
+           absolute_change,
+           relative_change
+        ],
+        type: 'spline'
+    },
+    axis:{
+        x:{
+            type:'category',
+            categories:country
+    
+        }
+        }
+});
+           
+}
+       
+    //onMount(getPEStats);
+    </script>
+    <svelte:head>
+    
+        <!-- Load c3.css -->
+        <link rel="stylesheet" href="./c3/c3.css"  >
+        <script type="text/javascript" src="./d3/dist/d3.js"  ></script>
+        <script type="text/javascript" src="./c3/c3.js" on:load="{loadGraph}"></script>
+        
+    
+    </svelte:head>
+    
+    <main>
+    
+            <div id="chart"></div>
+           
+          
+        <Button on:click="{pop}">
+            Volver
+        </Button>
+    </main>
