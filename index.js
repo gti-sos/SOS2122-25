@@ -18,11 +18,6 @@ db_economies_stats = new Datastore();
 db_esco_stats = new Datastore();
 db_expo_stats = new Datastore();
 
-
-
-  
-
-
 economies_stats_API.register(app,db_economies_stats);
 esco_stats_API.register(app,db_esco_stats);
 expo_stats_API.register(app,db_expo_stats);
