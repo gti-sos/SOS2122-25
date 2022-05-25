@@ -134,7 +134,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
 				  <DropdownItem href="#/graphesco">esco-Stats</DropdownItem>
-				  <DropdownItem href="#/#/graphexpo">Expo-Stats</DropdownItem>
+				  <DropdownItem href="#/graphexpo">Expo-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="#/graph">Conjunto</DropdownItem>
 				</DropdownMenu>
