@@ -8,7 +8,9 @@
 
     let country= [];
     let year = [];
-    let expo_bys = [];
+    let tot_esco = [];
+    let tot_wom =[];
+    let tot_man=[];
     let expo_m = [];
     let expo_tec = [];
     let percapita = [];
@@ -31,7 +33,7 @@
             expos.forEach(expo => {
                 country.push(expo.country+"-"+expo.year);
                 year.push(expo.year);
-                ages1.push(expo.expo_bys+expo.expo_m+expo.expo_tec);
+                ages1.push(expo.tot_esco+expo.expo_m+expo.expo_tec);
                 expo_m.push(expo.expo_m);
                 expo_tec.push(expo.expo_tec);   
             });
@@ -50,10 +52,10 @@
             escos.forEach(esco=>{
                // year.push(esco.year);
                 //country.push(esco.country);
-                ages_zero_fifty.push(esco.ages_zero_fifty);
-                ages_fifty_seventy.push(esco.ages_fifty_seventy);
-                ages2.push(esco.ages_seventy+esco.ages_fifty_seventy+esco.ages_zero_fifty);
-                expo_bys.push(esco.ages_seventy);
+                tot_wom.push(esco.tot_wom);
+                tot_man.push(esco.tot_man);
+                ages2.push(esco.tot_esco+esco.tot_man+esco.tot_wom);
+                tot_esco.push(esco.tot_esco);
             });
 
 

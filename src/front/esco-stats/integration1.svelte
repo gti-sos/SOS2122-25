@@ -7,15 +7,20 @@
   let apiData = {};
   const delay = ms => new Promise(res => setTimeout(res,ms));
       let stats = [];
+      let stats_ex = [];
       let country= [];
       let year = [];
-      let ages_zero_fifty = ["ages_zero_fifty"];
-      let ages_fifty_seventy = ["ages_fifty_seventy"];
-      let ages_seventy = ["ages_seventy"];
+      let tot_wom = ["tot_wom"];
+      let tot_man = ["tot_man"];
+      let tot_esco = ["tot_esco"];
+      let coefficients = ["coefficients"];
+      let educations = ["educations"];
+      let lifes = ["lifes"];
 
       async function loadGraph(){
           console.log("Fetching stats....");
-          const res = await fetch("https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats");
+          const res = await fetch("/api/v1/esco-stats");
+          const res_ex = await fetch("https://sos2122-11.herokuapp.com/api/v2/inequality-stats");
           if(res.ok){
               const data = await res.json();
               stats = data;
@@ -24,46 +29,53 @@
               stats.forEach(stat => {
                   country.push(stat.country+"-"+stat.year);
                   year.push(stat.year);
-                  ages_zero_fifty.push(stat.ages_zero_fifty);
-                  ages_fifty_seventy.push(stat.ages_fifty_seventy);
-                  ages_seventy.push(stat.ages_seventy);            
+                  tot_wom.push(stat.tot_wom);
+                  tot_man.push(stat.tot_man);
+                  tot_esco.push(stat.tot_esco);            
               });
           }
           else{
               console.log("Error cargando los datos");
           }
+          
+          if(res_ex.ok){
+              const data_ex = await res_ex.json();
+              stats_ex = data_ex;
+              console.log("Estadísticas recibidas: "+stats_ex.length);
+              //inicializamos los arrays para mostrar los datos
+              stats_ex.forEach(stat_ex => {
+                  country.push(stat_ex.country+"-"+stat_ex.year);
+                  year.push(stat_ex.year);
+                  coefficients.push(stat_ex.coefficients);
+                  educations.push(stat_ex.educations);
+                  lifes.push(stat_ex.lifes);            
+              });
+          }
+          else{
+              console.log("Error cargando los datos");
+          }
+
           console.log("Comprobando");
                  
-          var chart = c3.generate({
+          var chart= c3.generate({
+                bindto: '#chart',
     data: {
+        
         columns: [
-            ['data1', 30, 200, 100, 400, 150, 250],
-            ['data2', 50, 20, 10, 40, 15, 25]
-        ]
-    }
+            tot_wom,
+            tot_man,
+            tot_esco
+        ],
+        type: 'spline'
+    },
+    axis:{
+        x:{
+            type:'category',
+            categories:country
+    
+        }
+        }
 });
-
-setTimeout(function () {
-    chart.load({
-        columns: [
-            ['data1', 230, 190, 300, 500, 300, 400]
-        ]
-    });
-}, 1000);
-
-setTimeout(function () {
-    chart.load({
-        columns: [
-            ['data3', 130, 150, 200, 300, 200, 100]
-        ]
-    });
-}, 1500);
-
-setTimeout(function () {
-    chart.unload({
-        ids: 'data1'
-    });
-}, 2000);
 
         //}
       }

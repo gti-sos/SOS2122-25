@@ -32208,23 +32208,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$2(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$4, 135, 4, 3640);
+    			add_location(script0, file$4, 137, 4, 3618);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$4, 136, 4, 3733);
+    			add_location(script1, file$4, 138, 4, 3711);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$4, 137, 4, 3836);
+    			add_location(script2, file$4, 139, 4, 3814);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$4, 138, 4, 3936);
+    			add_location(script3, file$4, 140, 4, 3914);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$4, 139, 4, 4038);
+    			add_location(script4, file$4, 141, 4, 4016);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$4, 146, 8, 4216);
-    			add_location(code, file$4, 149, 12, 4383);
+    			add_location(div, file$4, 148, 8, 4194);
+    			add_location(code, file$4, 151, 12, 4361);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$4, 147, 8, 4252);
+    			add_location(p, file$4, 149, 8, 4230);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$4, 145, 4, 4172);
-    			add_location(main, file$4, 143, 0, 4158);
+    			add_location(figure, file$4, 147, 4, 4150);
+    			add_location(main, file$4, 145, 0, 4136);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32292,7 +32292,9 @@ var app = (function () {
     	let economies = [];
     	let country = [];
     	let year = [];
-    	let expo_bys = [];
+    	let tot_esco = [];
+    	let tot_wom = [];
+    	let tot_man = [];
     	let expo_m = [];
     	let expo_tec = [];
     	let percapita = [];
@@ -32318,7 +32320,7 @@ var app = (function () {
     			expos.forEach(expo => {
     				country.push(expo.country + "-" + expo.year);
     				year.push(expo.year);
-    				ages1.push(expo.expo_bys + expo.expo_m + expo.expo_tec);
+    				ages1.push(expo.tot_esco + expo.expo_m + expo.expo_tec);
     				expo_m.push(expo.expo_m);
     				expo_tec.push(expo.expo_tec);
     			});
@@ -32339,11 +32341,11 @@ var app = (function () {
     			escos.forEach(esco => {
     				// year.push(esco.year);
     				//country.push(esco.country);
-    				ages_zero_fifty.push(esco.ages_zero_fifty);
+    				tot_wom.push(esco.tot_wom);
 
-    				ages_fifty_seventy.push(esco.ages_fifty_seventy);
-    				ages2.push(esco.ages_seventy + esco.ages_fifty_seventy + esco.ages_zero_fifty);
-    				expo_bys.push(esco.ages_seventy);
+    				tot_man.push(esco.tot_man);
+    				ages2.push(esco.tot_esco + esco.tot_man + esco.tot_wom);
+    				tot_esco.push(esco.tot_esco);
     			});
     		} else {
     			console.log("Error in request");
@@ -32404,7 +32406,9 @@ var app = (function () {
     		economies,
     		country,
     		year,
-    		expo_bys,
+    		tot_esco,
+    		tot_wom,
+    		tot_man,
     		expo_m,
     		expo_tec,
     		percapita,
@@ -32423,7 +32427,9 @@ var app = (function () {
     		if ('economies' in $$props) economies = $$props.economies;
     		if ('country' in $$props) country = $$props.country;
     		if ('year' in $$props) year = $$props.year;
-    		if ('expo_bys' in $$props) expo_bys = $$props.expo_bys;
+    		if ('tot_esco' in $$props) tot_esco = $$props.tot_esco;
+    		if ('tot_wom' in $$props) tot_wom = $$props.tot_wom;
+    		if ('tot_man' in $$props) tot_man = $$props.tot_man;
     		if ('expo_m' in $$props) expo_m = $$props.expo_m;
     		if ('expo_tec' in $$props) expo_tec = $$props.expo_tec;
     		if ('percapita' in $$props) percapita = $$props.percapita;
@@ -83355,7 +83361,7 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$1 = "src\\front\\esco-stats\\integration1.svelte";
 
-    // (88:6) <Button on:click="{pop}">
+    // (100:6) <Button on:click="{pop}">
     function create_default_slot(ctx) {
     	let t;
 
@@ -83375,7 +83381,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(88:6) <Button on:click=\\\"{pop}\\\">",
+    		source: "(100:6) <Button on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -83419,16 +83425,16 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$1, 75, 6, 2132);
+    			add_location(link, file$1, 87, 6, 2711);
     			attr_dev(script0, "type", "text/javascript");
     			if (!src_url_equal(script0.src, script0_src_value = "./d3/dist/d3.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$1, 76, 6, 2184);
+    			add_location(script0, file$1, 88, 6, 2763);
     			attr_dev(script1, "type", "text/javascript");
     			if (!src_url_equal(script1.src, script1_src_value = "./c3/c3.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 77, 6, 2256);
+    			add_location(script1, file$1, 89, 6, 2835);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$1, 84, 10, 2395);
-    			add_location(main, file$1, 82, 2, 2373);
+    			add_location(div, file$1, 96, 10, 2974);
+    			add_location(main, file$1, 94, 2, 2952);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -83452,7 +83458,7 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 512) {
+    			if (dirty & /*$$scope*/ 8192) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -83496,15 +83502,20 @@ var app = (function () {
     	let apiData = {};
     	const delay = ms => new Promise(res => setTimeout(res, ms));
     	let stats = [];
+    	let stats_ex = [];
     	let country = [];
     	let year = [];
-    	let ages_zero_fifty = ["ages_zero_fifty"];
-    	let ages_fifty_seventy = ["ages_fifty_seventy"];
-    	let ages_seventy = ["ages_seventy"];
+    	let tot_wom = ["tot_wom"];
+    	let tot_man = ["tot_man"];
+    	let tot_esco = ["tot_esco"];
+    	let coefficients = ["coefficients"];
+    	let educations = ["educations"];
+    	let lifes = ["lifes"];
 
     	async function loadGraph() {
     		console.log("Fetching stats....");
-    		const res = await fetch("https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats");
+    		const res = await fetch("/api/v1/esco-stats");
+    		const res_ex = await fetch("https://sos2122-11.herokuapp.com/api/v2/inequality-stats");
 
     		if (res.ok) {
     			const data = await res.json();
@@ -83515,9 +83526,26 @@ var app = (function () {
     			stats.forEach(stat => {
     				country.push(stat.country + "-" + stat.year);
     				year.push(stat.year);
-    				ages_zero_fifty.push(stat.ages_zero_fifty);
-    				ages_fifty_seventy.push(stat.ages_fifty_seventy);
-    				ages_seventy.push(stat.ages_seventy);
+    				tot_wom.push(stat.tot_wom);
+    				tot_man.push(stat.tot_man);
+    				tot_esco.push(stat.tot_esco);
+    			});
+    		} else {
+    			console.log("Error cargando los datos");
+    		}
+
+    		if (res_ex.ok) {
+    			const data_ex = await res_ex.json();
+    			stats_ex = data_ex;
+    			console.log("Estadísticas recibidas: " + stats_ex.length);
+
+    			//inicializamos los arrays para mostrar los datos
+    			stats_ex.forEach(stat_ex => {
+    				country.push(stat_ex.country + "-" + stat_ex.year);
+    				year.push(stat_ex.year);
+    				coefficients.push(stat_ex.coefficients);
+    				educations.push(stat_ex.educations);
+    				lifes.push(stat_ex.lifes);
     			});
     		} else {
     			console.log("Error cargando los datos");
@@ -83525,39 +83553,16 @@ var app = (function () {
 
     		console.log("Comprobando");
 
-    		var chart = c3.generate({
+    		c3.generate({
+    			bindto: '#chart',
     			data: {
-    				columns: [
-    					['data1', 30, 200, 100, 400, 150, 250],
-    					['data2', 50, 20, 10, 40, 15, 25]
-    				]
+    				columns: [tot_wom, tot_man, tot_esco],
+    				type: 'spline'
+    			},
+    			axis: {
+    				x: { type: 'category', categories: country }
     			}
     		});
-
-    		setTimeout(
-    			function () {
-    				chart.load({
-    					columns: [['data1', 230, 190, 300, 500, 300, 400]]
-    				});
-    			},
-    			1000
-    		);
-
-    		setTimeout(
-    			function () {
-    				chart.load({
-    					columns: [['data3', 130, 150, 200, 300, 200, 100]]
-    				});
-    			},
-    			1500
-    		);
-
-    		setTimeout(
-    			function () {
-    				chart.unload({ ids: 'data1' });
-    			},
-    			2000
-    		);
     	} //}
 
     	const writable_props = [];
@@ -83576,22 +83581,30 @@ var app = (function () {
     		apiData,
     		delay,
     		stats,
+    		stats_ex,
     		country,
     		year,
-    		ages_zero_fifty,
-    		ages_fifty_seventy,
-    		ages_seventy,
+    		tot_wom,
+    		tot_man,
+    		tot_esco,
+    		coefficients,
+    		educations,
+    		lifes,
     		loadGraph
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('apiData' in $$props) apiData = $$props.apiData;
     		if ('stats' in $$props) stats = $$props.stats;
+    		if ('stats_ex' in $$props) stats_ex = $$props.stats_ex;
     		if ('country' in $$props) country = $$props.country;
     		if ('year' in $$props) year = $$props.year;
-    		if ('ages_zero_fifty' in $$props) ages_zero_fifty = $$props.ages_zero_fifty;
-    		if ('ages_fifty_seventy' in $$props) ages_fifty_seventy = $$props.ages_fifty_seventy;
-    		if ('ages_seventy' in $$props) ages_seventy = $$props.ages_seventy;
+    		if ('tot_wom' in $$props) tot_wom = $$props.tot_wom;
+    		if ('tot_man' in $$props) tot_man = $$props.tot_man;
+    		if ('tot_esco' in $$props) tot_esco = $$props.tot_esco;
+    		if ('coefficients' in $$props) coefficients = $$props.coefficients;
+    		if ('educations' in $$props) educations = $$props.educations;
+    		if ('lifes' in $$props) lifes = $$props.lifes;
     	};
 
     	if ($$props && "$$inject" in $$props) {
