@@ -22,7 +22,7 @@
             //si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
             if (datos.length == 0) {
                 const res = await fetch("/api/v2/economies/loadInitialData");
-                console.log("Entradas recibidas: "+datos.length);
+            console.log("Entradas recibidas: "+datos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
             datosOrdenados = datos.sort(function (a, b){
             return (a.year - b.year)

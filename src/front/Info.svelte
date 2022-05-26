@@ -51,9 +51,9 @@
     <h1>SOS2122-25</h1>
 
     <h3>Team</h3>
-    <p>- <a href="https://github.com/damiangc99">Damian Gonzalez Carrasco</a>(fuente de datos: <a href="https://ourworldindata.org/percapita">economies</a>)</p>
-    <p>- <a href="https://github.com/AngelSM11">Angel Simon Mesa </a> (fuente de datos: <a href="https://ourworldindata.org/esco">esco-stats</a>)</p>
-    <p>- <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>(fuente de datos: <a href="https://ourworldindata.org/expo">expo-stats</a>)</p>
+    <p>- <a href="https://github.com/damiangc99">Damian Gonzalez Carrasco</a></p>
+    <p>- <a href="https://github.com/AngelSM11">Angel Simon Mesa </a> </p>
+    <p>- <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a></p>
     <br>
     <h3>Project description:</h3> Nuestras fuentes de información esta orientadas a analizar la relación que existe entre las exportaciones. 
     <br><br>
@@ -81,7 +81,10 @@
     <p>- <a href="./#/graphesco">https://SOS2122-25.herokuapp.com/#/graphesco </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
     <p>- <a href="#/graphexpo">https://SOS2122-25.herokuapp.com/#/graphexpo </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
 	<p>- <a href="./#/graph">https://SOS2122-25.herokuapp.com/#/graph </a></p>
-	<h3>PRUEBA:</h3>
+	<h3>INTEGRACIONES:</h3>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion1">https://SOS2122-25.herokuapp.com/#/economies/integracion1 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion2">https://SOS2122-25.herokuapp.com/#/economies/integracion2 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion3">https://SOS2122-25.herokuapp.com/#/economies/integracion3 </a></p>
 	<p>- <a href="./#/integration1">https://SOS2122-25.herokuapp.com/#/intergation1 </a></p>
 </main>
 <style>
