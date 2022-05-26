@@ -2177,7 +2177,7 @@ var app = (function () {
     			t1 = space();
     			if_block2.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$A, 26, 2, 808);
+    			add_location(div, file$A, 26, 2, 834);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2312,7 +2312,7 @@ var app = (function () {
     			t = text$2(/*heading*/ ctx[3]);
     			if (heading_slot) heading_slot.c();
     			attr_dev(h4, "class", "alert-heading");
-    			add_location(h4, file$A, 33, 6, 961);
+    			add_location(h4, file$A, 33, 6, 994);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -2380,7 +2380,7 @@ var app = (function () {
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", /*closeClassNames*/ ctx[6]);
     			attr_dev(button, "aria-label", /*closeAriaLabel*/ ctx[2]);
-    			add_location(button, file$A, 38, 6, 1077);
+    			add_location(button, file$A, 38, 6, 1115);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2864,7 +2864,7 @@ var app = (function () {
     			button = element$1("button");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$z, 54, 2, 1124);
+    			add_location(button, file$z, 54, 2, 1178);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2982,7 +2982,7 @@ var app = (function () {
     			a = element$1("a");
     			if_block.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$z, 37, 2, 866);
+    			add_location(a, file$z, 37, 2, 903);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -3150,7 +3150,7 @@ var app = (function () {
     	return block_1;
     }
 
-    // (65:10)        
+    // (65:10)         
     function fallback_block$1(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -3223,7 +3223,7 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block$1.name,
     		type: "fallback",
-    		source: "(65:10)        ",
+    		source: "(65:10)         ",
     		ctx
     	});
 
@@ -5570,7 +5570,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$y, 123, 2, 3209);
+    			add_location(div, file$y, 123, 2, 3332);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5648,7 +5648,7 @@ var app = (function () {
     			li = element$1("li");
     			if (default_slot) default_slot.c();
     			set_attributes(li, li_data);
-    			add_location(li, file$y, 119, 2, 3118);
+    			add_location(li, file$y, 119, 2, 3237);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -6143,7 +6143,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$x, 23, 0, 542);
+    			add_location(div, file$x, 23, 0, 565);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6377,7 +6377,7 @@ var app = (function () {
     			button = element$1("button");
     			if (default_slot) default_slot.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$w, 49, 2, 1086);
+    			add_location(button, file$w, 49, 2, 1135);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -6475,7 +6475,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$w, 45, 2, 979);
+    			add_location(a, file$w, 45, 2, 1024);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -6562,7 +6562,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$w, 41, 2, 864);
+    			add_location(div, file$w, 41, 2, 905);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -6651,7 +6651,7 @@ var app = (function () {
     			h6 = element$1("h6");
     			if (default_slot) default_slot.c();
     			set_attributes(h6, h6_data);
-    			add_location(h6, file$w, 37, 2, 748);
+    			add_location(h6, file$w, 37, 2, 785);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h6, anchor);
@@ -7032,7 +7032,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$v, 41, 0, 933);
+    			add_location(div, file$v, 41, 0, 974);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7283,7 +7283,7 @@ var app = (function () {
     			button = element$1("button");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$u, 94, 2, 1948);
+    			add_location(button, file$u, 94, 2, 2042);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -7394,7 +7394,7 @@ var app = (function () {
     			span = element$1("span");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(span, span_data);
-    			add_location(span, file$u, 80, 2, 1673);
+    			add_location(span, file$u, 80, 2, 1753);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7503,7 +7503,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$u, 66, 2, 1382);
+    			add_location(div, file$u, 66, 2, 1448);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -7611,7 +7611,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$u, 51, 2, 1080);
+    			add_location(a, file$u, 51, 2, 1131);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -7689,7 +7689,7 @@ var app = (function () {
     	return block_1;
     }
 
-    // (105:10)        
+    // (105:10)         
     function fallback_block_3(ctx) {
     	let span;
     	let t;
@@ -7699,7 +7699,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$2(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$u, 105, 6, 2165);
+    			add_location(span, file$u, 105, 6, 2270);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7717,14 +7717,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_3.name,
     		type: "fallback",
-    		source: "(105:10)        ",
+    		source: "(105:10)         ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (90:10)        
+    // (90:10)         
     function fallback_block_2(ctx) {
     	let span;
     	let t;
@@ -7734,7 +7734,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$2(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$u, 90, 6, 1867);
+    			add_location(span, file$u, 90, 6, 1957);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7752,14 +7752,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_2.name,
     		type: "fallback",
-    		source: "(90:10)        ",
+    		source: "(90:10)         ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (76:10)        
+    // (76:10)         
     function fallback_block_1(ctx) {
     	let span;
     	let t;
@@ -7769,7 +7769,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$2(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$u, 76, 6, 1575);
+    			add_location(span, file$u, 76, 6, 1651);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7787,14 +7787,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_1.name,
     		type: "fallback",
-    		source: "(76:10)        ",
+    		source: "(76:10)         ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (62:10)        
+    // (62:10)         
     function fallback_block(ctx) {
     	let span;
     	let t;
@@ -7804,7 +7804,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$2(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$u, 62, 6, 1287);
+    			add_location(span, file$u, 62, 6, 1349);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7822,7 +7822,7 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block.name,
     		type: "fallback",
-    		source: "(62:10)        ",
+    		source: "(62:10)         ",
     		ctx
     	});
 
@@ -8263,7 +8263,7 @@ var app = (function () {
     			ul = element$1("ul");
     			if (default_slot) default_slot.c();
     			set_attributes(ul, ul_data);
-    			add_location(ul, file$t, 39, 0, 941);
+    			add_location(ul, file$t, 39, 0, 980);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8731,7 +8731,7 @@ var app = (function () {
     			nav = element$1("nav");
     			if_block.c();
     			set_attributes(nav, nav_data);
-    			add_location(nav, file$s, 38, 0, 889);
+    			add_location(nav, file$s, 38, 0, 927);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9007,7 +9007,7 @@ var app = (function () {
     			li = element$1("li");
     			if (default_slot) default_slot.c();
     			set_attributes(li, li_data);
-    			add_location(li, file$r, 10, 0, 219);
+    			add_location(li, file$r, 10, 0, 229);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9164,7 +9164,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$q, 27, 0, 472);
+    			add_location(a, file$q, 27, 0, 499);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9396,7 +9396,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$p, 10, 0, 192);
+    			add_location(a, file$p, 10, 0, 202);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9550,7 +9550,7 @@ var app = (function () {
     		c: function create() {
     			colgroup = element$1("colgroup");
     			if (default_slot) default_slot.c();
-    			add_location(colgroup, file$o, 6, 0, 92);
+    			add_location(colgroup, file$o, 6, 0, 98);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9711,7 +9711,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			attr_dev(div, "class", /*responsiveClassName*/ ctx[1]);
-    			add_location(div, file$n, 13, 2, 305);
+    			add_location(div, file$n, 13, 2, 318);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -9939,9 +9939,9 @@ var app = (function () {
     			tfoot = element$1("tfoot");
     			tr = element$1("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$m, 7, 2, 117);
+    			add_location(tr, file$m, 7, 2, 124);
     			set_attributes(tfoot, tfoot_data);
-    			add_location(tfoot, file$m, 6, 0, 90);
+    			add_location(tfoot, file$m, 6, 0, 96);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10052,9 +10052,9 @@ var app = (function () {
     			thead = element$1("thead");
     			tr = element$1("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$l, 7, 2, 117);
+    			add_location(tr, file$l, 7, 2, 124);
     			set_attributes(thead, thead_data);
-    			add_location(thead, file$l, 6, 0, 90);
+    			add_location(thead, file$l, 6, 0, 96);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10277,7 +10277,7 @@ var app = (function () {
 
     			t2 = space();
     			create_component(tablefooter.$$.fragment);
-    			add_location(tbody, file$k, 39, 6, 1057);
+    			add_location(tbody, file$k, 39, 6, 1096);
     		},
     		m: function mount(target, anchor) {
     			mount_component(colgroup, target, anchor);
@@ -10522,7 +10522,7 @@ var app = (function () {
     			tr = element$1("tr");
     			if (default_slot) default_slot.c();
     			t = space();
-    			add_location(tr, file$k, 41, 10, 1103);
+    			add_location(tr, file$k, 41, 10, 1144);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -10662,7 +10662,7 @@ var app = (function () {
     			table = element$1("table");
     			if_block.c();
     			set_attributes(table, table_data);
-    			add_location(table, file$k, 31, 2, 885);
+    			add_location(table, file$k, 31, 2, 916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -12574,23 +12574,32 @@ var app = (function () {
     	let t109;
     	let a29;
     	let t111;
+    	let br10;
+    	let t112;
     	let h38;
-    	let t113;
-    	let p16;
-    	let t114;
     	let a30;
+    	let t114;
+    	let t115;
+    	let p16;
     	let t116;
-    	let p17;
-    	let t117;
     	let a31;
+    	let t118;
+    	let p17;
     	let t119;
-    	let p18;
-    	let t120;
     	let a32;
+    	let t121;
+    	let p18;
     	let t122;
-    	let p19;
-    	let t123;
     	let a33;
+    	let t124;
+    	let p19;
+    	let t125;
+    	let a34;
+    	let t127;
+    	let br11;
+    	let t128;
+    	let h39;
+    	let a35;
     	let current;
 
     	navbar = new Navbar({
@@ -12786,28 +12795,38 @@ var app = (function () {
     			a29 = element$1("a");
     			a29.textContent = "https://SOS2122-25.herokuapp.com/#/graph";
     			t111 = space();
+    			br10 = element$1("br");
+    			t112 = space();
     			h38 = element$1("h3");
-    			h38.textContent = "INTEGRACIONES:";
-    			t113 = space();
-    			p16 = element$1("p");
-    			t114 = text$2("- ");
     			a30 = element$1("a");
-    			a30.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion1";
-    			t116 = space();
-    			p17 = element$1("p");
-    			t117 = text$2("- ");
+    			a30.textContent = "INTEGRACIONES";
+    			t114 = text$2(":");
+    			t115 = space();
+    			p16 = element$1("p");
+    			t116 = text$2("- ");
     			a31 = element$1("a");
-    			a31.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion2";
-    			t119 = space();
-    			p18 = element$1("p");
-    			t120 = text$2("- ");
+    			a31.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion1";
+    			t118 = space();
+    			p17 = element$1("p");
+    			t119 = text$2("- ");
     			a32 = element$1("a");
-    			a32.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion3";
-    			t122 = space();
-    			p19 = element$1("p");
-    			t123 = text$2("- ");
+    			a32.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion2";
+    			t121 = space();
+    			p18 = element$1("p");
+    			t122 = text$2("- ");
     			a33 = element$1("a");
-    			a33.textContent = "https://SOS2122-25.herokuapp.com/#/intergation1";
+    			a33.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion3";
+    			t124 = space();
+    			p19 = element$1("p");
+    			t125 = text$2("- ");
+    			a34 = element$1("a");
+    			a34.textContent = "https://SOS2122-25.herokuapp.com/#/intergation1";
+    			t127 = space();
+    			br11 = element$1("br");
+    			t128 = space();
+    			h39 = element$1("h3");
+    			a35 = element$1("a");
+    			a35.textContent = "ENLACE a los VIDEOS";
     			add_location(body, file$i, 5, 0, 162);
     			attr_dev(h1, "class", "svelte-14b11ol");
     			add_location(h1, file$i, 50, 4, 1864);
@@ -12905,19 +12924,26 @@ var app = (function () {
     			attr_dev(a29, "href", "./#/graph");
     			add_location(a29, file$i, 82, 6, 4863);
     			add_location(p15, file$i, 82, 1, 4858);
-    			add_location(h38, file$i, 83, 1, 4935);
-    			attr_dev(a30, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
-    			add_location(a30, file$i, 84, 6, 4966);
-    			add_location(p16, file$i, 84, 1, 4961);
-    			attr_dev(a31, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion2");
-    			add_location(a31, file$i, 85, 6, 5108);
-    			add_location(p17, file$i, 85, 1, 5103);
-    			attr_dev(a32, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion3");
-    			add_location(a32, file$i, 86, 6, 5250);
-    			add_location(p18, file$i, 86, 1, 5245);
-    			attr_dev(a33, "href", "./#/integration1");
-    			add_location(a33, file$i, 87, 6, 5392);
-    			add_location(p19, file$i, 87, 1, 5387);
+    			add_location(br10, file$i, 83, 1, 4935);
+    			attr_dev(a30, "href", "https://SOS2122-25.herokuapp.com/#/analytics");
+    			add_location(a30, file$i, 84, 5, 4946);
+    			add_location(h38, file$i, 84, 1, 4942);
+    			attr_dev(a31, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
+    			add_location(a31, file$i, 85, 6, 5032);
+    			add_location(p16, file$i, 85, 1, 5027);
+    			attr_dev(a32, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion2");
+    			add_location(a32, file$i, 86, 6, 5174);
+    			add_location(p17, file$i, 86, 1, 5169);
+    			attr_dev(a33, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion3");
+    			add_location(a33, file$i, 87, 6, 5316);
+    			add_location(p18, file$i, 87, 1, 5311);
+    			attr_dev(a34, "href", "./#/integration1");
+    			add_location(a34, file$i, 88, 6, 5458);
+    			add_location(p19, file$i, 88, 1, 5453);
+    			add_location(br11, file$i, 89, 1, 5544);
+    			attr_dev(a35, "href", "https://SOS2122-25.herokuapp.com/#/about");
+    			add_location(a35, file$i, 90, 5, 5555);
+    			add_location(h39, file$i, 90, 1, 5551);
     			attr_dev(main, "class", "svelte-14b11ol");
     			add_location(main, file$i, 49, 0, 1852);
     		},
@@ -13066,23 +13092,32 @@ var app = (function () {
     			append_dev(p15, t109);
     			append_dev(p15, a29);
     			append_dev(main, t111);
+    			append_dev(main, br10);
+    			append_dev(main, t112);
     			append_dev(main, h38);
-    			append_dev(main, t113);
+    			append_dev(h38, a30);
+    			append_dev(h38, t114);
+    			append_dev(main, t115);
     			append_dev(main, p16);
-    			append_dev(p16, t114);
-    			append_dev(p16, a30);
-    			append_dev(main, t116);
+    			append_dev(p16, t116);
+    			append_dev(p16, a31);
+    			append_dev(main, t118);
     			append_dev(main, p17);
-    			append_dev(p17, t117);
-    			append_dev(p17, a31);
-    			append_dev(main, t119);
+    			append_dev(p17, t119);
+    			append_dev(p17, a32);
+    			append_dev(main, t121);
     			append_dev(main, p18);
-    			append_dev(p18, t120);
-    			append_dev(p18, a32);
-    			append_dev(main, t122);
+    			append_dev(p18, t122);
+    			append_dev(p18, a33);
+    			append_dev(main, t124);
     			append_dev(main, p19);
-    			append_dev(p19, t123);
-    			append_dev(p19, a33);
+    			append_dev(p19, t125);
+    			append_dev(p19, a34);
+    			append_dev(main, t127);
+    			append_dev(main, br11);
+    			append_dev(main, t128);
+    			append_dev(main, h39);
+    			append_dev(h39, a35);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -32218,7 +32253,6 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$2(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
     			add_location(script0, file$8, 137, 4, 3576);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
     			add_location(script1, file$8, 138, 4, 3669);
@@ -32236,25 +32270,6 @@ var app = (function () {
     			attr_dev(figure, "class", "highcharts-figure");
     			add_location(figure, file$8, 147, 4, 4108);
     			add_location(main, file$8, 145, 0, 4094);
-=======
-    			add_location(script0, file$8, 137, 4, 3594);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$8, 138, 4, 3687);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$8, 139, 4, 3790);
-    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$8, 140, 4, 3890);
-    			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$8, 141, 4, 3992);
-    			attr_dev(div, "id", "container");
-    			add_location(div, file$8, 148, 8, 4170);
-    			add_location(code, file$8, 151, 12, 4337);
-    			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$8, 149, 8, 4206);
-    			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$8, 147, 4, 4126);
-    			add_location(main, file$8, 145, 0, 4112);
->>>>>>> 1bcc657192a0370aeab864dd69c9136bc11aa44f
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -90458,18 +90473,6 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-<<<<<<< HEAD
-    			add_location(link, file$2, 87, 6, 2711);
-    			attr_dev(script0, "type", "text/javascript");
-    			if (!src_url_equal(script0.src, script0_src_value = "./d3/dist/d3.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$2, 88, 6, 2763);
-    			attr_dev(script1, "type", "text/javascript");
-    			if (!src_url_equal(script1.src, script1_src_value = "./c3/c3.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$2, 89, 6, 2835);
-    			attr_dev(div, "id", "chart");
-    			add_location(div, file$2, 96, 10, 2974);
-    			add_location(main, file$2, 94, 2, 2952);
-=======
     			add_location(link, file$2, 94, 6, 2901);
     			attr_dev(script0, "type", "text/javascript");
     			if (!src_url_equal(script0.src, script0_src_value = "./d3/dist/d3.js")) attr_dev(script0, "src", script0_src_value);
@@ -90480,7 +90483,6 @@ var app = (function () {
     			attr_dev(div, "id", "chart");
     			add_location(div, file$2, 103, 10, 3164);
     			add_location(main, file$2, 101, 2, 3142);
->>>>>>> 1bcc657192a0370aeab864dd69c9136bc11aa44f
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
