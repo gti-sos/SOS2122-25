@@ -4,7 +4,7 @@
 
 
 <body>
-    <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
 		<NavbarBrand href="#/info">INICIO</NavbarBrand>
 		<Nav navbar>
 			<Dropdown >
@@ -89,13 +89,13 @@
 </main>
 <style>
 	main {
-		text-align: center;
+		text-align: left;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
 	}
     h1 {
-		color: #ff3e00;
+		color: brown;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;

@@ -132,7 +132,7 @@ import Economies from './economies.svelte';
     
     <main>
     
-        <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+        <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
             <NavbarBrand href="#/info">INICIO</NavbarBrand>
             <Nav navbar>
                 <Dropdown >

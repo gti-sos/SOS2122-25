@@ -69,16 +69,16 @@
 
         Highcharts.chart("container", {
         title: {
-            text: "Solar Employment Growth by Sector, 2010-2016",
+            text: "Economia, escolarizacion y exportaciones",
         },
 
         subtitle: {
-            text: "Source: thesolarfoundation.com",
+            text: "",
         },
 
         yAxis: {
             title: {
-                text: "economia escolarizacion",
+                text: "economia escolarizacion y exportaciones",
             },
 
         },
