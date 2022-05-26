@@ -9,13 +9,13 @@
       let stats = [];
       let country= [];
       let year = [];
-      let public_expenditure = ["public_expenditure"];
-      let pe_to_gdp = ["pe_to_gdp"];
-      let pe_on_defence = ["pe_on_defence"];
+      let ages_zero_fifty = ["ages_zero_fifty"];
+      let ages_fifty_seventy = ["ages_fifty_seventy"];
+      let ages_seventy = ["ages_seventy"];
 
       async function loadGraph(){
           console.log("Fetching stats....");
-          const res = await fetch("/remoteAPI-esco");
+          const res = await fetch("https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats");
           if(res.ok){
               const data = await res.json();
               stats = data;
@@ -24,35 +24,48 @@
               stats.forEach(stat => {
                   country.push(stat.country+"-"+stat.year);
                   year.push(stat.year);
-                  public_expenditure.push(stat.public_expenditure);
-                  pe_to_gdp.push(stat.pe_to_gdp);
-                  pe_on_defence.push(stat.pe_on_defence);            
+                  ages_zero_fifty.push(stat.ages_zero_fifty);
+                  ages_fifty_seventy.push(stat.ages_fifty_seventy);
+                  ages_seventy.push(stat.ages_seventy);            
               });
           }
           else{
               console.log("Error cargando los datos");
           }
-          console.log("Comprobando");   
+          console.log("Comprobando");
+                 
           var chart = c3.generate({
-            bindto: '#chart',
-            data: {
-      
-              columns: [
-                public_expenditure,
-                pe_to_gdp,
-                pe_on_defence
-              ],
-              type: 'spline'
-            },
-            axis:{
-              x:{
-                type:'category',
-                categories:country
-  
-              }
-            }
-          });
-         
+    data: {
+        columns: [
+            ['data1', 30, 200, 100, 400, 150, 250],
+            ['data2', 50, 20, 10, 40, 15, 25]
+        ]
+    }
+});
+
+setTimeout(function () {
+    chart.load({
+        columns: [
+            ['data1', 230, 190, 300, 500, 300, 400]
+        ]
+    });
+}, 1000);
+
+setTimeout(function () {
+    chart.load({
+        columns: [
+            ['data3', 130, 150, 200, 300, 200, 100]
+        ]
+    });
+}, 1500);
+
+setTimeout(function () {
+    chart.unload({
+        ids: 'data1'
+    });
+}, 2000);
+
+        //}
       }
      
   //onMount(getData);
