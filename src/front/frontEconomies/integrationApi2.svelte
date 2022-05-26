@@ -1,31 +1,50 @@
 <script>
     import { onMount } from 'svelte';
     import "billboard.js/dist/theme/insight.css";
-    import {Table,Button} from 'sveltestrap';
+    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button} from 'sveltestrap';
+    import {Table} from 'sveltestrap';
     import {pop} from 'svelte-spa-router';
+import Economies from './economies.svelte';
     let apiData = {};
     const delay = ms => new Promise(res => setTimeout(res,ms));
         let stats = [];
+        let economies = [];
         let country= [];
         let year = [];
+        let percapita = ["percapita"];
+        let currency = ["currency"];
+        let currentprices = ["currentprices"];
         let coefficients = ["coefficients"];
-        let educations = ["educations"];
-        let lifes = ["lifes"]; 
+        let lifes = ["lifes"];
+        let educations = ["educations"]; 
         async function loadGraph(){
             console.log("Fetching stats....");
-            const res = await fetch("/remoteAPI2");
-            if(res.ok){
-                const data = await res.json();
-                stats = data;
+            const res1 = await fetch("/economies/remoteAPI2");
+            const res2 = await fetch("/api/v2/economies");
+            if(res1.ok && res2.ok){
+                const data1 = await res1.json();
+                const data2 = await res2.json();
+                stats = data1;
                 console.log("Estadísticas recibidas: "+stats.length);
                 //inicializamos los arrays para mostrar los datos
                 stats.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
                     year.push(stat.year);
                     coefficients.push(stat.coefficients);
-                    educations.push(stat.educations);
-                    lifes.push(stat.lifes);           
+                    lifes.push(stat.lifes);
+                    educations.push(stat.educations);           
                 });
+
+                economies=data2;
+                if (economies.length == 0) {
+                    const res = await fetch("/api/v2/economies/loadInitialData");
+                }
+                console.log("Recibido: " + economies.length);
+                economies.forEach(economy=>{
+                    percapita.push(economy.percapita);
+                    currency.push(economy.currency);
+                    currentprices.push(economy.currentprices);
+            });
             }else{
                 console.log("Error cargando los datos");
             }
@@ -33,47 +52,72 @@
             await delay(500);
       
             var chart = bb.generate({
-  data: {
-    axis: {
-    x: {
-      type: "category"
-    }
-  },
-    columns: [
-	
-    ],
-   
-    types: {
-      coefficients: "area", // for ESM specify as: area()
-      lifes: "area-spline",
-      educations: "area-spline" // for ESM specify as: areaSpline()
-    }
-  },
-  bindto: "#areaChart"
-});
+                data: {
+                     axis: {
+                         x: {
+                            type: country
+                         }
+                      },
+                     columns: [
     
-setTimeout(function() {
-	chart.load({
-		columns: [
-			coefficients
-		]
-	});
-}, 500);
-setTimeout(function() {
-	chart.load({
-		columns: [
-			lifes
-		]
-	});
-}, 1000);
-setTimeout(function() {
-	chart.load({
-		columns: [
-			educations
-		]
-	});
-}, 1500);
-console.log(coefficients)
+                      ],
+   
+                   types: {
+                        coefficients: "area", // for ESM specify as: area()
+                        educations: "area-spline",
+                        lifes: "area-spline",
+                        percapita: "area-spline",
+                        currency:"area-spline",
+                        currentprices: "area-spline"
+                  }
+                },
+                bindto: "#areaChart"
+            });
+    
+            setTimeout(function() {
+                chart.load({
+                    columns: [
+                        coefficients
+                    ]
+                });
+            }, 500);
+            setTimeout(function() {
+                chart.load({
+                    columns: [
+                        educations
+                    ]
+                });
+            }, 1000);
+            setTimeout(function() {
+                chart.load({
+                    columns: [
+                        lifes
+                    ]
+                });
+            }, 1500);
+            console.log(coefficients)
+            setTimeout(function() {
+                chart.load({
+                    columns: [
+                        percapita
+                    ]
+                });
+            }, 1500);
+            setTimeout(function() {
+                chart.load({
+                    columns: [
+                        currency
+                    ]
+                });
+            }, 1500);
+            setTimeout(function() {
+                chart.load({
+                    columns: [
+                        currentprices
+                    ]
+                });
+            }, 1500);
+            console.log(coefficients)
 }
        
    onMount(loadGraph);
@@ -88,10 +132,48 @@ console.log(coefficients)
     
     <main>
     
+        <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+            <NavbarBrand href="#/info">INICIO</NavbarBrand>
+            <Nav navbar>
+                <Dropdown >
+                    <DropdownToggle nav caret> API </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./api/v2/economies">economies-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="./api/v1/expo-stats">expo-Stats</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                
+                <Dropdown>
+                    <DropdownToggle nav caret> FRONT-END </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
+                    <DropdownItem href="#/esco-stats">esco-Stats FRONT-END</DropdownItem>
+                    <DropdownItem href="#/expo">expo-Stats FRONT-END</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                
+                <Dropdown >
+                    <DropdownToggle nav caret> Gráficas </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
+                    <DropdownItem href="#/graphesco">esco-Stats</DropdownItem>
+                    <DropdownItem href="#/graphexpo">Expo-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+            <!--<NavItem>
+                <NavLink style="float:right; margin:left;" href="#/about">Acerca de</NavLink>
+            </NavItem>-->
+            </Nav>
+        </Navbar>
+
+
             <div id="chart"></div>
            
-          
-        <Button on:click="{pop}">
-            Volver
-        </Button>
     </main>

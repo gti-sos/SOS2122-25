@@ -1,49 +1,35 @@
 <script>
     import { onMount } from 'svelte';
-    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button} from 'sveltestrap';
     import "billboard.js/dist/theme/insight.css";
+    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button} from 'sveltestrap';
     import {Table} from 'sveltestrap';
     import {pop} from 'svelte-spa-router';
     let apiData = {};
     const delay = ms => new Promise(res => setTimeout(res,ms));
         let stats = [];
-        let economies = [];
         let country= [];
         let year = [];
-        let percapita = ["percapita"];
-        let currency = ["currency"];
-        let currentprices = ["currentprices"];
-        let quantity = ["quantity"];
-        let absolute_change = ["absolute_change"];
-        let relative_change = ["relative_change"]; 
+        let code = ["code"];
+        let built_area = ["built_area"];
+        let grazing_area = ["grazing_area"]; 
         async function loadGraph(){
             console.log("Fetching stats....");
-            const res1 = await fetch("/economies/remoteAPI");
-            const res2 = await fetch("/api/v2/economies");
-            if(res1.ok && res2.ok){
-                const data1 = await res1.json();
-                const data2 = await res2.json();
-                stats = data1;
+            const res = await fetch("/economies/remoteAPI3");
+            if(res.ok){
+                const data = await res.json();
+                stats = data;
+                if (stats.length == 0) {
+                    const res = await fetch("/economies/remoteAPI3/loadInitialData");
+                }
                 console.log("Estadísticas recibidas: "+stats.length);
                 //inicializamos los arrays para mostrar los datos
                 stats.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
                     year.push(stat.year);
-                    quantity.push(stat.quantity);
-                    absolute_change.push(stat.absolute_change);
-                    relative_change.push(stat.relative_change);           
+                    code.push(stat.code);
+                    built_area.push(stat.built_area);
+                    grazing_area.push(stat.grazing_area);           
                 });
-
-                economies=data2;
-                if (economies.length == 0) {
-                    const res = await fetch("/api/v2/economies/loadInitialData");
-                }
-                console.log("Recibido: " + economies.length);
-                economies.forEach(economy=>{
-                    percapita.push(economy.percapita);
-                    currency.push(economy.currency);
-                    currentprices.push(economy.currentprices);
-            });
             }else{
                 console.log("Error cargando los datos");
             }
@@ -52,75 +38,50 @@
       
             var chart = bb.generate({
                 data: {
-                     axis: {
-                         x: {
-                            type: country
-                         }
-                      },
-                     columns: [
-    
-                      ],
-   
-                   types: {
-                        quantity: "area", // for ESM specify as: area()
-                       relative_change: "area-spline",
-                        absolute_change: "area-spline",
-                        percapita: "area-spline",
-                        currency:"area-spline",
-                        currentprices: "area-spline"
-                  }
+                    axis: {
+                    x: {
+                    type: "category"
+                    }
+                },
+                    columns: [
+                    
+                    ],
+                
+                    types: {
+                    code: "area", // for ESM specify as: area()
+                    grazing_area: "area-spline",
+                    built_area: "area-spline" // for ESM specify as: areaSpline()
+                    }
                 },
                 bindto: "#areaChart"
             });
-    
+                    
             setTimeout(function() {
                 chart.load({
-                    columns: [
-                        quantity
-                    ]
-                });
+                       columns: [
+                        code
+                       ]
+                    });
             }, 500);
             setTimeout(function() {
                 chart.load({
-                    columns: [
-                        relative_change
-                    ]
+                        columns: [
+                            grazing_area
+                        ]
                 });
             }, 1000);
             setTimeout(function() {
                 chart.load({
                     columns: [
-                        absolute_change
+                        built_area
                     ]
                 });
             }, 1500);
-            console.log(quantity)
-            setTimeout(function() {
-                chart.load({
-                    columns: [
-                        percapita
-                    ]
-                });
-            }, 1500);
-            setTimeout(function() {
-                chart.load({
-                    columns: [
-                        currency
-                    ]
-                });
-            }, 1500);
-            setTimeout(function() {
-                chart.load({
-                    columns: [
-                        currentprices
-                    ]
-                });
-            }, 1500);
-            console.log(quantity)
-}
+            console.log(code)
+    }
        
    onMount(loadGraph);
-    </script>
+</script>
     <svelte:head>
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js"></script>
@@ -130,8 +91,7 @@
     </svelte:head>
     
     <main>
-    
-<!--barra de navegacion-->
+
         <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
             <NavbarBrand href="#/info">INICIO</NavbarBrand>
             <Nav navbar>
@@ -173,8 +133,7 @@
             </Nav>
         </Navbar>
 
+    
         <div id="chart"></div>
            
-          
-
     </main>

@@ -17,7 +17,7 @@
     let ages1 =[];
     let ages2=[];
     let ages3=[];
-    async function getData(){
+    async function loadGraph(){
         const res1= await fetch("/api/v1/expo");
         const res2= await fetch("/api/v2/economies");
         const res3= await fetch("/api/v1/esco-stats");
@@ -61,9 +61,9 @@
         }else{
             console.log("Error in request");
         }
-    }
+    
 
-    async function loadGraph(){
+    
 
         Highcharts.chart("container", {
         title: {
@@ -128,7 +128,7 @@
 
     }
    
-    onMount(getData);
+    onMount(loadGraph);
 </script>
 <svelte:head>
 

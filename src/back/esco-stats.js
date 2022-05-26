@@ -78,9 +78,9 @@ var apiServerHost1 = 'https://sos2122-27.herokuapp.com/api/v2/public-expenditure
 
 module.exports.register = (app, db) => {
 
-    app.use(PathV1, function(req, res) {
+    app.use(apiServerHost1, function(req, res) {
         var url = extApiServerHost + req.url;
-        console.log('piped: ' + req.baseUrl + req.url);
+        console.log('piped: '+ req.url);
         req.pipe(request(url)).pipe(res);
     });
 

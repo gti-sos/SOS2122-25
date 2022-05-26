@@ -17,6 +17,7 @@
 
 	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
 	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';
+	import IntegrationEco3 from './frontEconomies/integrationApi3.svelte';
 
 	import Integration1 from './esco-stats/integration1.svelte';
 	//import Integration2 from './esco-stats/integration2.svelte';
@@ -45,6 +46,7 @@
 
 		"/economies/integracion1": IntegrationEco1,
 		"/economies/integracion2": IntegrationEco2,
+		"/economies/integracion3": IntegrationEco3,
 
 		"/integration1": Integration1,
 		//"/integration2": Integration2,
