@@ -73,7 +73,7 @@ var esco_stats = [
 
 //Proxy esco
 var paths1='/remoteAPI-esco';
-var apiServerHost1 = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
+var apiServerHost1 = 'https://sos2122-11.herokuapp.com/api/v2/inequality-stats';
 
 
 module.exports.register = (app, db) => {
