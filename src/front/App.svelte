@@ -14,6 +14,8 @@
 	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
 
+	import about from './about.svelte';
+	import analytics from './analytics.svelte'
 
 	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
 	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';
@@ -33,7 +35,8 @@
 	const routes={
 		'/' : Home,
 		"/info" : Info,
-
+		"/about" : about,
+		"/analytics" : analytics,
 		"/esco-stats" : esco,
 		"/esco/:country/:year" : Editesco,
 		"/graphesco": MyGraphesco,
