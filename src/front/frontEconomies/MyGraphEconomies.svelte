@@ -19,13 +19,12 @@
         if(res.ok){
             const data = await res.json();          
             datos = data;
-            //si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
+            
             if (datos.length == 0) {
                 const res = await fetch("/api/v2/economies/loadInitialData");
-            console.log("Entradas recibidas: "+datos.length);
-            //con la siguiente funcion ordeno los datos por años de menor a mayor
-            datosOrdenados = datos.sort(function (a, b){
-            return (a.year - b.year)
+                console.log("Entradas recibidas: "+datos.length);
+                datosOrdenados = datos.sort(function (a, b){
+                return (a.year - b.year)
             });
             console.log("Ordenadas correctamente");
             datosOrdenados.forEach(dato => {
