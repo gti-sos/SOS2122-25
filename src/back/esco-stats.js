@@ -1,4 +1,4 @@
-//Laura Martinez Sanchez
+const request = require("request");
 const bodyParser = require("body-parser");
 
 const BASE_API_URL_esco_STATS = "/api/v1/esco-stats";
@@ -73,14 +73,14 @@ var esco_stats = [
 
 //Proxy esco
 var paths1='/remoteAPI-esco';
-var apiServerHost1 = 'https://sos2122-27.herokuapp.com/api/v2/public-expenditure-stats';
+var apiServerHost1 = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
 
 
 module.exports.register = (app, db) => {
 
-    app.use(apiServerHost1, function(req, res) {
-        var url = extApiServerHost + req.url;
-        console.log('piped: '+ req.url);
+    app.use(paths1, function(req, res) {
+        var url = apiServerHost1 + req.url;
+        console.log('piped: '+ req.baseUrl + req.url);
         req.pipe(request(url)).pipe(res);
     });
 
