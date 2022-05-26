@@ -20,10 +20,11 @@
       async function loadGraph(){
           console.log("Fetching stats....");
           const res = await fetch("/api/v1/esco-stats");
-          const res_ex = await fetch("https://sos2122-11.herokuapp.com/api/v2/inequality-stats");
+          const res_ex = await fetch("/remoteAPI-esco");
           if(res.ok){
               const data = await res.json();
               stats = data;
+              
               console.log("Estadísticas recibidas: "+stats.length);
               //inicializamos los arrays para mostrar los datos
               stats.forEach(stat => {
@@ -41,6 +42,9 @@
           if(res_ex.ok){
               const data_ex = await res_ex.json();
               stats_ex = data_ex;
+              if (stats_ex.length == 0) {
+                    const res = await fetch("/remoteAPI-esco/loadInitialData");
+                }
               console.log("Estadísticas recibidas: "+stats_ex.length);
               //inicializamos los arrays para mostrar los datos
               stats_ex.forEach(stat_ex => {
@@ -64,7 +68,10 @@
         columns: [
             tot_wom,
             tot_man,
-            tot_esco
+            tot_esco,
+            coefficients,
+            educations,
+            lifes
         ],
         type: 'spline'
     },
