@@ -49,9 +49,9 @@
 				body: JSON.stringify({
                     country: updatedCountry,
                     year: updatedYear,
-                    tot_wom: updatedtot_wom,
-                    tot_man: updatedtot_man,
-                    tot_esco: updatedtot_esco
+                    tot_wom: parseInt(updatedtot_wom),
+                    tot_man: parseInt(updatedtot_man),
+                    tot_esco: parseInt(updatedtot_esco)
                 }),
 				headers: {
 					"Content-Type": "application/json"

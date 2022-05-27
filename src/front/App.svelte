@@ -23,7 +23,7 @@
 
 	import Integration1 from './esco-stats/integration1.svelte';
 	import IntegrationExpo1 from './expo-stats/integrationAPIpneumonia.svelte';
-	//import Integration2 from './esco-stats/integration2.svelte';
+	import Integration2 from './esco-stats/integration2.svelte';
 	//import Integration3 from './esco-stats/integration3.svelte';
 	//import Integration4 from './esco-stats/integration4.svelte';
 	//import Integration5 from './esco-stats/integration5.svelte';
@@ -53,7 +53,7 @@
 		"/economies/integracion3": IntegrationEco3,
 
 		"/integration1": Integration1,
-		//"/integration2": Integration2,
+		"/integration2": Integration2,
 		//"/integration3": Integration3,
 		//"/integration4": Integration4,
 		//"/integration5": Integration5,

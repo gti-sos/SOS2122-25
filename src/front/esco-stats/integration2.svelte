@@ -13,13 +13,13 @@
         let tot_wom = ["tot_wom"];
         let tot_man = ["tot_man"];
         let tot_esco = ["tot_esco"]; 
-        let ages_seventy =["ages_seventy"];
-        let ages_fifty_seventy =["ages_fifty_seventy"];
-        let ages_zero_fifty =["ages_zero_fifty"];
+        let coefficients =["coefficients"];
+        let educations =["educations"];
+        let lifes =["lifes"];
         async function getData(){
             console.log("Fetching stats....");
-            const res = await fetch("/api/v1/esco-stats");
-            const res1= await fetch("/remoteAPI1-esco")
+            const res = await fetch("api/v1/esco-stats");
+            const res1= await fetch("/remoteAPI2-esco")
             if(res.ok&&res1.ok){
                 const data = await res.json();
                 const data1= await res1.json();
@@ -40,9 +40,9 @@
                 stats1.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
               
-                    ages_seventy.push(stat.ages_seventy);
-                    ages_fifty_seventy.push(stat.ages_fifty_seventy);
-                    ages_zero_fifty.push(stat.ages_zero_fifty); 
+                    coefficients.push(stat.coefficients);
+                    educations.push(stat.educations);
+                    lifes.push(stat.lifes); 
                 });
             }else{
                 console.log("Error cargando los datos");
@@ -63,9 +63,9 @@
            tot_wom,
            tot_man,
            tot_esco,
-           ages_seventy,
-           ages_fifty_seventy,
-           ages_zero_fifty,
+           coefficients,
+           educations,
+           lifes,
            
         ],
         type: 'spline'
