@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -11007,7 +11007,7 @@ var app = (function () {
     	return block;
     }
 
-    // (7:3) <Navbar style="background-color: #FF7F50; color:white;" light expand="lg">
+    // (7:3) <Navbar style="background-color: lightgreen; color:white;" light expand="lg">
     function create_default_slot$h(ctx) {
     	let navbarbrand;
     	let t;
@@ -11069,7 +11069,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$h.name,
     		type: "slot",
-    		source: "(7:3) <Navbar style=\\\"background-color: #FF7F50; color:white;\\\" light expand=\\\"lg\\\">",
+    		source: "(7:3) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\">",
     		ctx
     	});
 
@@ -11083,7 +11083,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #FF7F50; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$h] },
@@ -12350,7 +12350,7 @@ var app = (function () {
     	return block;
     }
 
-    // (7:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (7:4) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$g(ctx) {
     	let navbarbrand;
     	let t;
@@ -12425,7 +12425,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$g.name,
     		type: "slot",
-    		source: "(7:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(7:4) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -12574,28 +12574,37 @@ var app = (function () {
     	let t109;
     	let a29;
     	let t111;
+    	let br10;
+    	let t112;
     	let h38;
-    	let t113;
-    	let p16;
-    	let t114;
     	let a30;
+    	let t114;
+    	let t115;
+    	let p16;
     	let t116;
-    	let p17;
-    	let t117;
     	let a31;
+    	let t118;
+    	let p17;
     	let t119;
-    	let p18;
-    	let t120;
     	let a32;
+    	let t121;
+    	let p18;
     	let t122;
-    	let p19;
-    	let t123;
     	let a33;
+    	let t124;
+    	let p19;
+    	let t125;
+    	let a34;
+    	let t127;
+    	let br11;
+    	let t128;
+    	let h39;
+    	let a35;
     	let current;
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$g] },
@@ -12786,140 +12795,157 @@ var app = (function () {
     			a29 = element$1("a");
     			a29.textContent = "https://SOS2122-25.herokuapp.com/#/graph";
     			t111 = space();
+    			br10 = element$1("br");
+    			t112 = space();
     			h38 = element$1("h3");
-    			h38.textContent = "INTEGRACIONES:";
-    			t113 = space();
-    			p16 = element$1("p");
-    			t114 = text$1("- ");
     			a30 = element$1("a");
-    			a30.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion1";
-    			t116 = space();
-    			p17 = element$1("p");
-    			t117 = text$1("- ");
+    			a30.textContent = "INTEGRACIONES";
+    			t114 = text$1(":");
+    			t115 = space();
+    			p16 = element$1("p");
+    			t116 = text$1("- ");
     			a31 = element$1("a");
-    			a31.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion2";
-    			t119 = space();
-    			p18 = element$1("p");
-    			t120 = text$1("- ");
+    			a31.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion1";
+    			t118 = space();
+    			p17 = element$1("p");
+    			t119 = text$1("- ");
     			a32 = element$1("a");
-    			a32.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion3";
-    			t122 = space();
-    			p19 = element$1("p");
-    			t123 = text$1("- ");
+    			a32.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion2";
+    			t121 = space();
+    			p18 = element$1("p");
+    			t122 = text$1("- ");
     			a33 = element$1("a");
-    			a33.textContent = "https://SOS2122-25.herokuapp.com/#/intergation1";
+    			a33.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion3";
+    			t124 = space();
+    			p19 = element$1("p");
+    			t125 = text$1("- ");
+    			a34 = element$1("a");
+    			a34.textContent = "https://SOS2122-25.herokuapp.com/#/intergation1";
+    			t127 = space();
+    			br11 = element$1("br");
+    			t128 = space();
+    			h39 = element$1("h3");
+    			a35 = element$1("a");
+    			a35.textContent = "ENLACE a los VIDEOS";
     			add_location(body, file$j, 5, 0, 162);
-    			attr_dev(h1, "class", "svelte-95ufxa");
-    			add_location(h1, file$j, 50, 4, 1861);
-    			add_location(h30, file$j, 52, 4, 1888);
+    			attr_dev(h1, "class", "svelte-14b11ol");
+    			add_location(h1, file$j, 50, 4, 1864);
+    			add_location(h30, file$j, 52, 4, 1891);
     			attr_dev(a0, "href", "https://github.com/damiangc99");
-    			add_location(a0, file$j, 53, 9, 1912);
-    			add_location(p0, file$j, 53, 4, 1907);
+    			add_location(a0, file$j, 53, 9, 1915);
+    			add_location(p0, file$j, 53, 4, 1910);
     			attr_dev(a1, "href", "https://github.com/AngelSM11");
-    			add_location(a1, file$j, 54, 9, 1995);
-    			add_location(p1, file$j, 54, 4, 1990);
+    			add_location(a1, file$j, 54, 9, 1998);
+    			add_location(p1, file$j, 54, 4, 1993);
     			attr_dev(a2, "href", "https://github.com/adriperez01");
-    			add_location(a2, file$j, 55, 9, 2071);
-    			add_location(p2, file$j, 55, 4, 2066);
-    			add_location(br0, file$j, 56, 4, 2144);
-    			add_location(h31, file$j, 57, 4, 2154);
-    			add_location(br1, file$j, 58, 4, 2297);
-    			add_location(br2, file$j, 58, 8, 2301);
-    			add_location(h32, file$j, 59, 4, 2311);
+    			add_location(a2, file$j, 55, 9, 2074);
+    			add_location(p2, file$j, 55, 4, 2069);
+    			add_location(br0, file$j, 56, 4, 2147);
+    			add_location(h31, file$j, 57, 4, 2157);
+    			add_location(br1, file$j, 58, 4, 2300);
+    			add_location(br2, file$j, 58, 8, 2304);
+    			add_location(h32, file$j, 59, 4, 2314);
     			attr_dev(a3, "href", "https://github.com/gti-sos/SOS2122-25.git");
-    			add_location(a3, file$j, 59, 24, 2331);
-    			add_location(br3, file$j, 60, 4, 2411);
-    			add_location(br4, file$j, 60, 8, 2415);
-    			add_location(h33, file$j, 61, 4, 2425);
+    			add_location(a3, file$j, 59, 24, 2334);
+    			add_location(br3, file$j, 60, 4, 2414);
+    			add_location(br4, file$j, 60, 8, 2418);
+    			add_location(h33, file$j, 61, 4, 2428);
     			attr_dev(a4, "href", "http://SOS2122-25.herokuapp.com");
-    			add_location(a4, file$j, 61, 17, 2438);
-    			add_location(br5, file$j, 62, 4, 2521);
-    			add_location(br6, file$j, 62, 8, 2525);
-    			add_location(h34, file$j, 63, 4, 2535);
+    			add_location(a4, file$j, 61, 17, 2441);
+    			add_location(br5, file$j, 62, 4, 2524);
+    			add_location(br6, file$j, 62, 8, 2528);
+    			add_location(h34, file$j, 63, 4, 2538);
     			attr_dev(a5, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies/docs");
-    			add_location(a5, file$j, 64, 9, 2574);
+    			add_location(a5, file$j, 64, 9, 2577);
     			attr_dev(a6, "href", "https://github.com/damiangc99");
-    			add_location(a6, file$j, 64, 147, 2712);
-    			add_location(p3, file$j, 64, 4, 2569);
+    			add_location(a6, file$j, 64, 147, 2715);
+    			add_location(p3, file$j, 64, 4, 2572);
     			attr_dev(a7, "href", "https://documenter.getpostman.com/view/19481634/UyxjFko9");
-    			add_location(a7, file$j, 65, 9, 2796);
+    			add_location(a7, file$j, 65, 9, 2799);
     			attr_dev(a8, "href", "https://github.com/AngelSM11");
-    			add_location(a8, file$j, 65, 150, 2937);
-    			add_location(p4, file$j, 65, 4, 2791);
+    			add_location(a8, file$j, 65, 150, 2940);
+    			add_location(p4, file$j, 65, 4, 2794);
     			attr_dev(a9, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo/docs");
-    			add_location(a9, file$j, 66, 9, 3012);
+    			add_location(a9, file$j, 66, 9, 3015);
     			attr_dev(a10, "href", "https://github.com/adriperez01");
-    			add_location(a10, file$j, 66, 137, 3140);
-    			add_location(p5, file$j, 66, 4, 3007);
-    			add_location(br7, file$j, 67, 4, 3214);
-    			add_location(h35, file$j, 68, 1, 3221);
+    			add_location(a10, file$j, 66, 137, 3143);
+    			add_location(p5, file$j, 66, 4, 3010);
+    			add_location(br7, file$j, 67, 4, 3217);
+    			add_location(h35, file$j, 68, 1, 3224);
     			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/api/v2/economies");
-    			add_location(a11, file$j, 69, 6, 3243);
+    			add_location(a11, file$j, 69, 6, 3246);
     			attr_dev(a12, "href", "https://github.com/Damiangc99");
-    			add_location(a12, file$j, 69, 134, 3371);
-    			add_location(p6, file$j, 69, 1, 3238);
+    			add_location(a12, file$j, 69, 134, 3374);
+    			add_location(p6, file$j, 69, 1, 3241);
     			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/api/v1/esco-stats");
-    			add_location(a13, file$j, 70, 6, 3438);
+    			add_location(a13, file$j, 70, 6, 3441);
     			attr_dev(a14, "href", "https://github.com/AngelSM11");
-    			add_location(a14, file$j, 70, 136, 3568);
-    			add_location(p7, file$j, 70, 1, 3433);
+    			add_location(a14, file$j, 70, 136, 3571);
+    			add_location(p7, file$j, 70, 1, 3436);
     			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/api/v1/expo");
-    			add_location(a15, file$j, 71, 6, 3640);
+    			add_location(a15, file$j, 71, 6, 3643);
     			attr_dev(a16, "href", "https://github.com/adriperez01");
-    			add_location(a16, file$j, 71, 124, 3758);
-    			add_location(p8, file$j, 71, 1, 3635);
-    			add_location(br8, file$j, 72, 4, 3832);
-    			add_location(h36, file$j, 73, 4, 3842);
+    			add_location(a16, file$j, 71, 124, 3761);
+    			add_location(p8, file$j, 71, 1, 3638);
+    			add_location(br8, file$j, 72, 4, 3835);
+    			add_location(h36, file$j, 73, 4, 3845);
     			attr_dev(a17, "href", "#/economies");
-    			add_location(a17, file$j, 74, 6, 3869);
+    			add_location(a17, file$j, 74, 6, 3872);
     			attr_dev(a18, "href", "https://github.com/Damiangc99");
-    			add_location(a18, file$j, 74, 91, 3954);
-    			add_location(p9, file$j, 74, 1, 3864);
+    			add_location(a18, file$j, 74, 91, 3957);
+    			add_location(p9, file$j, 74, 1, 3867);
     			attr_dev(a19, "href", "#/esco-stats");
-    			add_location(a19, file$j, 75, 6, 4021);
+    			add_location(a19, file$j, 75, 6, 4024);
     			attr_dev(a20, "href", "https://github.com/AngelSM11");
-    			add_location(a20, file$j, 75, 93, 4108);
-    			add_location(p10, file$j, 75, 1, 4016);
+    			add_location(a20, file$j, 75, 93, 4111);
+    			add_location(p10, file$j, 75, 1, 4019);
     			attr_dev(a21, "href", "#/expo");
-    			add_location(a21, file$j, 76, 6, 4180);
+    			add_location(a21, file$j, 76, 6, 4183);
     			attr_dev(a22, "href", "https://github.com/adriperez01");
-    			add_location(a22, file$j, 76, 81, 4255);
-    			add_location(p11, file$j, 76, 1, 4175);
-    			add_location(br9, file$j, 77, 4, 4329);
-    			add_location(h37, file$j, 78, 4, 4339);
+    			add_location(a22, file$j, 76, 81, 4258);
+    			add_location(p11, file$j, 76, 1, 4178);
+    			add_location(br9, file$j, 77, 4, 4332);
+    			add_location(h37, file$j, 78, 4, 4342);
     			attr_dev(a23, "href", "./#/economies-graph");
-    			add_location(a23, file$j, 79, 9, 4368);
+    			add_location(a23, file$j, 79, 9, 4371);
     			attr_dev(a24, "href", "https://github.com/Damiangc99");
-    			add_location(a24, file$j, 79, 108, 4467);
-    			add_location(p12, file$j, 79, 4, 4363);
+    			add_location(a24, file$j, 79, 108, 4470);
+    			add_location(p12, file$j, 79, 4, 4366);
     			attr_dev(a25, "href", "./#/graphesco");
-    			add_location(a25, file$j, 80, 9, 4537);
+    			add_location(a25, file$j, 80, 9, 4540);
     			attr_dev(a26, "href", "https://github.com/AngelSM11");
-    			add_location(a26, file$j, 80, 96, 4624);
-    			add_location(p13, file$j, 80, 4, 4532);
+    			add_location(a26, file$j, 80, 96, 4627);
+    			add_location(p13, file$j, 80, 4, 4535);
     			attr_dev(a27, "href", "#/graphexpo");
-    			add_location(a27, file$j, 81, 9, 4699);
+    			add_location(a27, file$j, 81, 9, 4702);
     			attr_dev(a28, "href", "https://github.com/adriperez01");
-    			add_location(a28, file$j, 81, 94, 4784);
-    			add_location(p14, file$j, 81, 4, 4694);
+    			add_location(a28, file$j, 81, 94, 4787);
+    			add_location(p14, file$j, 81, 4, 4697);
     			attr_dev(a29, "href", "./#/graph");
-    			add_location(a29, file$j, 82, 6, 4860);
-    			add_location(p15, file$j, 82, 1, 4855);
-    			add_location(h38, file$j, 83, 1, 4932);
-    			attr_dev(a30, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
-    			add_location(a30, file$j, 84, 6, 4963);
-    			add_location(p16, file$j, 84, 1, 4958);
-    			attr_dev(a31, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion2");
-    			add_location(a31, file$j, 85, 6, 5105);
-    			add_location(p17, file$j, 85, 1, 5100);
-    			attr_dev(a32, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion3");
-    			add_location(a32, file$j, 86, 6, 5247);
-    			add_location(p18, file$j, 86, 1, 5242);
-    			attr_dev(a33, "href", "./#/integration1");
-    			add_location(a33, file$j, 87, 6, 5389);
-    			add_location(p19, file$j, 87, 1, 5384);
-    			attr_dev(main, "class", "svelte-95ufxa");
-    			add_location(main, file$j, 49, 0, 1849);
+    			add_location(a29, file$j, 82, 6, 4863);
+    			add_location(p15, file$j, 82, 1, 4858);
+    			add_location(br10, file$j, 83, 1, 4935);
+    			attr_dev(a30, "href", "https://SOS2122-25.herokuapp.com/#/analytics");
+    			add_location(a30, file$j, 84, 5, 4946);
+    			add_location(h38, file$j, 84, 1, 4942);
+    			attr_dev(a31, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
+    			add_location(a31, file$j, 85, 6, 5032);
+    			add_location(p16, file$j, 85, 1, 5027);
+    			attr_dev(a32, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion2");
+    			add_location(a32, file$j, 86, 6, 5174);
+    			add_location(p17, file$j, 86, 1, 5169);
+    			attr_dev(a33, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion3");
+    			add_location(a33, file$j, 87, 6, 5316);
+    			add_location(p18, file$j, 87, 1, 5311);
+    			attr_dev(a34, "href", "./#/integration1");
+    			add_location(a34, file$j, 88, 6, 5458);
+    			add_location(p19, file$j, 88, 1, 5453);
+    			add_location(br11, file$j, 89, 1, 5544);
+    			attr_dev(a35, "href", "https://SOS2122-25.herokuapp.com/#/about");
+    			add_location(a35, file$j, 90, 5, 5555);
+    			add_location(h39, file$j, 90, 1, 5551);
+    			attr_dev(main, "class", "svelte-14b11ol");
+    			add_location(main, file$j, 49, 0, 1852);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -13066,23 +13092,32 @@ var app = (function () {
     			append_dev(p15, t109);
     			append_dev(p15, a29);
     			append_dev(main, t111);
+    			append_dev(main, br10);
+    			append_dev(main, t112);
     			append_dev(main, h38);
-    			append_dev(main, t113);
+    			append_dev(h38, a30);
+    			append_dev(h38, t114);
+    			append_dev(main, t115);
     			append_dev(main, p16);
-    			append_dev(p16, t114);
-    			append_dev(p16, a30);
-    			append_dev(main, t116);
+    			append_dev(p16, t116);
+    			append_dev(p16, a31);
+    			append_dev(main, t118);
     			append_dev(main, p17);
-    			append_dev(p17, t117);
-    			append_dev(p17, a31);
-    			append_dev(main, t119);
+    			append_dev(p17, t119);
+    			append_dev(p17, a32);
+    			append_dev(main, t121);
     			append_dev(main, p18);
-    			append_dev(p18, t120);
-    			append_dev(p18, a32);
-    			append_dev(main, t122);
+    			append_dev(p18, t122);
+    			append_dev(p18, a33);
+    			append_dev(main, t124);
     			append_dev(main, p19);
-    			append_dev(p19, t123);
-    			append_dev(p19, a33);
+    			append_dev(p19, t125);
+    			append_dev(p19, a34);
+    			append_dev(main, t127);
+    			append_dev(main, br11);
+    			append_dev(main, t128);
+    			append_dev(main, h39);
+    			append_dev(h39, a35);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -14339,7 +14374,7 @@ var app = (function () {
     	return block;
     }
 
-    // (189:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (189:1) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot_13$c(ctx) {
     	let navbarbrand;
     	let t;
@@ -14414,7 +14449,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$c.name,
     		type: "slot",
-    		source: "(189:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(189:1) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -14811,24 +14846,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element$1("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$i, 250, 4, 7336);
-    			add_location(th1, file$i, 251, 4, 7366);
-    			add_location(tr0, file$i, 249, 3, 7326);
-    			add_location(thead, file$i, 248, 2, 7314);
+    			add_location(th0, file$i, 250, 4, 7339);
+    			add_location(th1, file$i, 251, 4, 7369);
+    			add_location(tr0, file$i, 249, 3, 7329);
+    			add_location(thead, file$i, 248, 2, 7317);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$i, 258, 7, 7440);
-    			add_location(td0, file$i, 258, 3, 7436);
+    			add_location(input0, file$i, 258, 7, 7443);
+    			add_location(td0, file$i, 258, 3, 7439);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$i, 259, 7, 7503);
-    			add_location(td1, file$i, 259, 3, 7499);
+    			add_location(input1, file$i, 259, 7, 7506);
+    			add_location(td1, file$i, 259, 3, 7502);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$i, 260, 3, 7560);
+    			add_location(td2, file$i, 260, 3, 7563);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$i, 273, 3, 7955);
-    			add_location(tr1, file$i, 257, 2, 7427);
-    			add_location(tbody, file$i, 254, 2, 7410);
+    			add_location(td3, file$i, 273, 3, 7958);
+    			add_location(tr1, file$i, 257, 2, 7430);
+    			add_location(tbody, file$i, 254, 2, 7413);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -15111,14 +15146,14 @@ var app = (function () {
     			t10 = space();
     			td6 = element$1("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$i, 322, 4, 9180);
-    			add_location(td1, file$i, 323, 4, 9210);
-    			add_location(td2, file$i, 324, 16, 9249);
-    			add_location(td3, file$i, 325, 16, 9291);
-    			add_location(td4, file$i, 326, 16, 9333);
-    			add_location(td5, file$i, 328, 4, 9366);
-    			add_location(td6, file$i, 333, 4, 9537);
-    			add_location(tr, file$i, 321, 3, 9170);
+    			add_location(td0, file$i, 322, 4, 9183);
+    			add_location(td1, file$i, 323, 4, 9213);
+    			add_location(td2, file$i, 324, 16, 9252);
+    			add_location(td3, file$i, 325, 16, 9294);
+    			add_location(td4, file$i, 326, 16, 9336);
+    			add_location(td5, file$i, 328, 4, 9369);
+    			add_location(td6, file$i, 333, 4, 9540);
+    			add_location(tr, file$i, 321, 3, 9173);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -15410,35 +15445,35 @@ var app = (function () {
     			t18 = space();
     			td8 = element$1("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$i, 290, 4, 8212);
-    			add_location(th1, file$i, 291, 4, 8231);
-    			add_location(th2, file$i, 292, 16, 8261);
-    			add_location(th3, file$i, 293, 16, 8308);
-    			add_location(th4, file$i, 294, 16, 8357);
-    			add_location(tr0, file$i, 289, 3, 8202);
-    			add_location(thead, file$i, 288, 2, 8190);
-    			add_location(input0, file$i, 299, 8, 8440);
-    			add_location(td0, file$i, 299, 4, 8436);
+    			add_location(th0, file$i, 290, 4, 8215);
+    			add_location(th1, file$i, 291, 4, 8234);
+    			add_location(th2, file$i, 292, 16, 8264);
+    			add_location(th3, file$i, 293, 16, 8311);
+    			add_location(th4, file$i, 294, 16, 8360);
+    			add_location(tr0, file$i, 289, 3, 8205);
+    			add_location(thead, file$i, 288, 2, 8193);
+    			add_location(input0, file$i, 299, 8, 8443);
+    			add_location(td0, file$i, 299, 4, 8439);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$i, 300, 8, 8493);
-    			add_location(td1, file$i, 300, 4, 8489);
+    			add_location(input1, file$i, 300, 8, 8496);
+    			add_location(td1, file$i, 300, 4, 8492);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$i, 301, 8, 8557);
-    			add_location(td2, file$i, 301, 4, 8553);
+    			add_location(input2, file$i, 301, 8, 8560);
+    			add_location(td2, file$i, 301, 4, 8556);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$i, 302, 8, 8624);
-    			add_location(td3, file$i, 302, 4, 8620);
+    			add_location(input3, file$i, 302, 8, 8627);
+    			add_location(td3, file$i, 302, 4, 8623);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$i, 303, 8, 8691);
-    			add_location(td4, file$i, 303, 4, 8687);
-    			add_location(td5, file$i, 305, 4, 8757);
+    			add_location(input4, file$i, 303, 8, 8694);
+    			add_location(td4, file$i, 303, 4, 8690);
+    			add_location(td5, file$i, 305, 4, 8760);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$i, 309, 4, 8863);
-    			add_location(tr1, file$i, 298, 3, 8426);
-    			add_location(td7, file$i, 341, 4, 9702);
-    			add_location(td8, file$i, 344, 4, 9803);
-    			add_location(tr2, file$i, 340, 3, 9692);
-    			add_location(tbody, file$i, 297, 2, 8414);
+    			add_location(td6, file$i, 309, 4, 8866);
+    			add_location(tr1, file$i, 298, 3, 8429);
+    			add_location(td7, file$i, 341, 4, 9705);
+    			add_location(td8, file$i, 344, 4, 9806);
+    			add_location(tr2, file$i, 340, 3, 9695);
+    			add_location(tbody, file$i, 297, 2, 8417);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -15682,7 +15717,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot_13$c] },
@@ -15738,7 +15773,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t4 = space();
     			info.block.c();
-    			add_location(h1, file$i, 230, 4, 6956);
+    			add_location(h1, file$i, 230, 4, 6959);
     			add_location(main, file$i, 187, 0, 5277);
     		},
     		l: function claim(nodes) {
@@ -17325,7 +17360,7 @@ var app = (function () {
     	return block;
     }
 
-    // (94:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (94:4) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot_4$c(ctx) {
     	let navbarbrand;
     	let t;
@@ -17400,7 +17435,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$c.name,
     		type: "slot",
-    		source: "(94:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(94:4) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -17675,24 +17710,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element$1("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$h, 146, 20, 4427);
-    			add_location(th1, file$h, 147, 20, 4462);
-    			add_location(th2, file$h, 148, 20, 4496);
-    			add_location(th3, file$h, 149, 20, 4547);
-    			add_location(th4, file$h, 150, 20, 4600);
-    			add_location(tr0, file$h, 145, 16, 4401);
-    			add_location(thead, file$h, 144, 12, 4376);
-    			add_location(td0, file$h, 155, 20, 4741);
-    			add_location(td1, file$h, 156, 20, 4788);
-    			add_location(input0, file$h, 157, 24, 4836);
-    			add_location(td2, file$h, 157, 20, 4832);
-    			add_location(input1, file$h, 158, 24, 4904);
-    			add_location(td3, file$h, 158, 20, 4900);
-    			add_location(input2, file$h, 159, 24, 4972);
-    			add_location(td4, file$h, 159, 20, 4968);
-    			add_location(td5, file$h, 161, 20, 5043);
-    			add_location(tr1, file$h, 154, 16, 4715);
-    			add_location(tbody, file$h, 153, 12, 4690);
+    			add_location(th0, file$h, 146, 20, 4430);
+    			add_location(th1, file$h, 147, 20, 4465);
+    			add_location(th2, file$h, 148, 20, 4499);
+    			add_location(th3, file$h, 149, 20, 4550);
+    			add_location(th4, file$h, 150, 20, 4603);
+    			add_location(tr0, file$h, 145, 16, 4404);
+    			add_location(thead, file$h, 144, 12, 4379);
+    			add_location(td0, file$h, 155, 20, 4744);
+    			add_location(td1, file$h, 156, 20, 4791);
+    			add_location(input0, file$h, 157, 24, 4839);
+    			add_location(td2, file$h, 157, 20, 4835);
+    			add_location(input1, file$h, 158, 24, 4907);
+    			add_location(td3, file$h, 158, 20, 4903);
+    			add_location(input2, file$h, 159, 24, 4975);
+    			add_location(td4, file$h, 159, 20, 4971);
+    			add_location(td5, file$h, 161, 20, 5046);
+    			add_location(tr1, file$h, 154, 16, 4718);
+    			add_location(tbody, file$h, 153, 12, 4693);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -17871,7 +17906,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot_4$c] },
@@ -17932,7 +17967,7 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-    			add_location(h1, file$h, 133, 4, 4110);
+    			add_location(h1, file$h, 133, 4, 4113);
     			add_location(main, file$h, 92, 0, 2440);
     		},
     		l: function claim(nodes) {
@@ -19398,7 +19433,7 @@ var app = (function () {
     	return block;
     }
 
-    // (126:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (126:4) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$d(ctx) {
     	let navbarbrand;
     	let t;
@@ -19473,7 +19508,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$d.name,
     		type: "slot",
-    		source: "(126:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(126:4) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -19503,7 +19538,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$d] },
@@ -19536,11 +19571,11 @@ var app = (function () {
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
     			add_location(script3, file$g, 121, 4, 4150);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$g, 168, 8, 6080);
+    			add_location(div, file$g, 168, 8, 6083);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$g, 169, 8, 6112);
+    			add_location(p, file$g, 169, 8, 6115);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$g, 167, 4, 6036);
+    			add_location(figure, file$g, 167, 4, 6039);
     			add_location(main, file$g, 124, 0, 4268);
     		},
     		l: function claim(nodes) {
@@ -20967,7 +21002,7 @@ var app = (function () {
     	return block;
     }
 
-    // (200:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (200:1) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot_14$9(ctx) {
     	let navbarbrand;
     	let t;
@@ -21042,7 +21077,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_14$9.name,
     		type: "slot",
-    		source: "(200:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(200:1) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -21060,7 +21095,7 @@ var app = (function () {
     			p = element$1("p");
     			t0 = text$1("ERROR: ");
     			t1 = text$1(/*msg*/ ctx[4]);
-    			add_location(p, file$f, 243, 3, 7591);
+    			add_location(p, file$f, 243, 3, 7594);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21142,7 +21177,7 @@ var app = (function () {
     			p = element$1("p");
     			t0 = text$1("Correcto: ");
     			t1 = text$1(/*msg*/ ctx[4]);
-    			add_location(p, file$f, 248, 3, 7733);
+    			add_location(p, file$f, 248, 3, 7736);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21497,24 +21532,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element$1("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$f, 263, 16, 8029);
-    			add_location(th1, file$f, 264, 16, 8071);
-    			add_location(tr0, file$f, 262, 12, 8007);
-    			add_location(thead, file$f, 261, 8, 7986);
+    			add_location(th0, file$f, 263, 16, 8032);
+    			add_location(th1, file$f, 264, 16, 8074);
+    			add_location(tr0, file$f, 262, 12, 8010);
+    			add_location(thead, file$f, 261, 8, 7989);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$f, 271, 16, 8187);
-    			add_location(td0, file$f, 271, 12, 8183);
+    			add_location(input0, file$f, 271, 16, 8190);
+    			add_location(td0, file$f, 271, 12, 8186);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$f, 272, 16, 8259);
-    			add_location(td1, file$f, 272, 12, 8255);
+    			add_location(input1, file$f, 272, 16, 8262);
+    			add_location(td1, file$f, 272, 12, 8258);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$f, 273, 12, 8325);
+    			add_location(td2, file$f, 273, 12, 8328);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$f, 286, 12, 8847);
-    			add_location(tr1, file$f, 270, 8, 8165);
-    			add_location(tbody, file$f, 267, 8, 8136);
+    			add_location(td3, file$f, 286, 12, 8850);
+    			add_location(tr1, file$f, 270, 8, 8168);
+    			add_location(tbody, file$f, 267, 8, 8139);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -21797,16 +21832,16 @@ var app = (function () {
     			t10 = space();
     			td6 = element$1("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$f, 336, 4, 10250);
-    			add_location(td1, file$f, 337, 4, 10277);
-    			add_location(td2, file$f, 338, 16, 10313);
-    			add_location(td3, file$f, 339, 16, 10354);
-    			add_location(td4, file$f, 340, 16, 10394);
+    			add_location(td0, file$f, 336, 4, 10253);
+    			add_location(td1, file$f, 337, 4, 10280);
+    			add_location(td2, file$f, 338, 16, 10316);
+    			add_location(td3, file$f, 339, 16, 10357);
+    			add_location(td4, file$f, 340, 16, 10397);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$f, 342, 4, 10429);
+    			add_location(td5, file$f, 342, 4, 10432);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$f, 347, 4, 10615);
-    			add_location(tr, file$f, 335, 3, 10240);
+    			add_location(td6, file$f, 347, 4, 10618);
+    			add_location(tr, file$f, 335, 3, 10243);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22098,36 +22133,36 @@ var app = (function () {
     			t18 = space();
     			td8 = element$1("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$f, 301, 4, 9210);
-    			add_location(th1, file$f, 302, 4, 9229);
-    			add_location(th2, file$f, 303, 16, 9259);
-    			add_location(th3, file$f, 304, 16, 9295);
-    			add_location(th4, file$f, 305, 16, 9330);
-    			add_location(tr0, file$f, 300, 3, 9200);
-    			add_location(thead, file$f, 299, 2, 9188);
-    			add_location(input0, file$f, 310, 8, 9404);
-    			add_location(td0, file$f, 310, 4, 9400);
+    			add_location(th0, file$f, 301, 4, 9213);
+    			add_location(th1, file$f, 302, 4, 9232);
+    			add_location(th2, file$f, 303, 16, 9262);
+    			add_location(th3, file$f, 304, 16, 9298);
+    			add_location(th4, file$f, 305, 16, 9333);
+    			add_location(tr0, file$f, 300, 3, 9203);
+    			add_location(thead, file$f, 299, 2, 9191);
+    			add_location(input0, file$f, 310, 8, 9407);
+    			add_location(td0, file$f, 310, 4, 9403);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$f, 311, 8, 9462);
-    			add_location(td1, file$f, 311, 4, 9458);
+    			add_location(input1, file$f, 311, 8, 9465);
+    			add_location(td1, file$f, 311, 4, 9461);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$f, 312, 8, 9531);
-    			add_location(td2, file$f, 312, 4, 9527);
+    			add_location(input2, file$f, 312, 8, 9534);
+    			add_location(td2, file$f, 312, 4, 9530);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$f, 313, 8, 9605);
-    			add_location(td3, file$f, 313, 4, 9601);
+    			add_location(input3, file$f, 313, 8, 9608);
+    			add_location(td3, file$f, 313, 4, 9604);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$f, 314, 8, 9678);
-    			add_location(td4, file$f, 314, 4, 9674);
+    			add_location(input4, file$f, 314, 8, 9681);
+    			add_location(td4, file$f, 314, 4, 9677);
     			attr_dev(td5, "align", "center");
-    			add_location(td5, file$f, 316, 4, 9754);
+    			add_location(td5, file$f, 316, 4, 9757);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$f, 321, 4, 9887);
-    			add_location(tr1, file$f, 309, 3, 9390);
-    			add_location(td7, file$f, 354, 4, 10788);
-    			add_location(td8, file$f, 357, 4, 10894);
-    			add_location(tr2, file$f, 353, 3, 10778);
-    			add_location(tbody, file$f, 308, 2, 9378);
+    			add_location(td6, file$f, 321, 4, 9890);
+    			add_location(tr1, file$f, 309, 3, 9393);
+    			add_location(td7, file$f, 354, 4, 10791);
+    			add_location(td8, file$f, 357, 4, 10897);
+    			add_location(tr2, file$f, 353, 3, 10781);
+    			add_location(tbody, file$f, 308, 2, 9381);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -22375,7 +22410,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot_14$9] },
@@ -22457,7 +22492,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t6 = space();
     			info.block.c();
-    			add_location(h1, file$f, 240, 4, 7463);
+    			add_location(h1, file$f, 240, 4, 7466);
     			add_location(main, file$f, 197, 0, 5779);
     		},
     		l: function claim(nodes) {
@@ -25053,7 +25088,7 @@ var app = (function () {
     	return block;
     }
 
-    // (106:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (106:1) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$a(ctx) {
     	let navbarbrand;
     	let t;
@@ -25128,7 +25163,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$a.name,
     		type: "slot",
-    		source: "(106:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(106:1) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -25160,7 +25195,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$a] },
@@ -25194,13 +25229,13 @@ var app = (function () {
     			add_location(script2, file$d, 97, 4, 3205);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
     			add_location(script3, file$d, 98, 4, 3285);
-    			add_location(br, file$d, 146, 4, 5103);
+    			add_location(br, file$d, 146, 4, 5106);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$d, 148, 8, 5157);
+    			add_location(div, file$d, 148, 8, 5160);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$d, 149, 8, 5193);
+    			add_location(p, file$d, 149, 8, 5196);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$d, 147, 4, 5113);
+    			add_location(figure, file$d, 147, 4, 5116);
     			add_location(main, file$d, 103, 0, 3406);
     		},
     		l: function claim(nodes) {
@@ -26660,7 +26695,7 @@ var app = (function () {
     	return block;
     }
 
-    // (174:1) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (174:1) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot_13$7(ctx) {
     	let navbarbrand;
     	let t;
@@ -26735,7 +26770,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$7.name,
     		type: "slot",
-    		source: "(174:1) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(174:1) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -27132,24 +27167,24 @@ var app = (function () {
     			t6 = space();
     			td3 = element$1("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$c, 233, 4, 6614);
-    			add_location(th1, file$c, 234, 4, 6644);
-    			add_location(tr0, file$c, 232, 3, 6604);
-    			add_location(thead, file$c, 231, 2, 6592);
+    			add_location(th0, file$c, 233, 4, 6617);
+    			add_location(th1, file$c, 234, 4, 6647);
+    			add_location(tr0, file$c, 232, 3, 6607);
+    			add_location(thead, file$c, 231, 2, 6595);
     			attr_dev(input0, "type", "number");
     			attr_dev(input0, "min", "0");
-    			add_location(input0, file$c, 241, 7, 6718);
-    			add_location(td0, file$c, 241, 3, 6714);
+    			add_location(input0, file$c, 241, 7, 6721);
+    			add_location(td0, file$c, 241, 3, 6717);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "min", "0");
-    			add_location(input1, file$c, 242, 7, 6781);
-    			add_location(td1, file$c, 242, 3, 6777);
+    			add_location(input1, file$c, 242, 7, 6784);
+    			add_location(td1, file$c, 242, 3, 6780);
     			attr_dev(td2, "align", "center");
-    			add_location(td2, file$c, 243, 3, 6838);
+    			add_location(td2, file$c, 243, 3, 6841);
     			attr_dev(td3, "align", "center");
-    			add_location(td3, file$c, 255, 3, 7150);
-    			add_location(tr1, file$c, 240, 2, 6705);
-    			add_location(tbody, file$c, 237, 2, 6688);
+    			add_location(td3, file$c, 255, 3, 7153);
+    			add_location(tr1, file$c, 240, 2, 6708);
+    			add_location(tbody, file$c, 237, 2, 6691);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -27432,14 +27467,14 @@ var app = (function () {
     			t10 = space();
     			td6 = element$1("td");
     			create_component(button1.$$.fragment);
-    			add_location(td0, file$c, 304, 4, 8364);
-    			add_location(td1, file$c, 305, 4, 8394);
-    			add_location(td2, file$c, 306, 16, 8433);
-    			add_location(td3, file$c, 307, 16, 8476);
-    			add_location(td4, file$c, 308, 16, 8517);
-    			add_location(td5, file$c, 310, 4, 8550);
-    			add_location(td6, file$c, 315, 4, 8721);
-    			add_location(tr, file$c, 303, 3, 8354);
+    			add_location(td0, file$c, 304, 4, 8367);
+    			add_location(td1, file$c, 305, 4, 8397);
+    			add_location(td2, file$c, 306, 16, 8436);
+    			add_location(td3, file$c, 307, 16, 8479);
+    			add_location(td4, file$c, 308, 16, 8520);
+    			add_location(td5, file$c, 310, 4, 8553);
+    			add_location(td6, file$c, 315, 4, 8724);
+    			add_location(tr, file$c, 303, 3, 8357);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -27731,32 +27766,32 @@ var app = (function () {
     			t18 = space();
     			td8 = element$1("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$c, 272, 4, 7407);
-    			add_location(th1, file$c, 273, 4, 7426);
-    			add_location(th2, file$c, 274, 16, 7456);
-    			add_location(th3, file$c, 275, 16, 7509);
-    			add_location(th4, file$c, 276, 16, 7574);
-    			add_location(tr0, file$c, 271, 3, 7397);
-    			add_location(thead, file$c, 270, 2, 7385);
-    			add_location(input0, file$c, 281, 8, 7667);
-    			add_location(td0, file$c, 281, 4, 7663);
+    			add_location(th0, file$c, 272, 4, 7410);
+    			add_location(th1, file$c, 273, 4, 7429);
+    			add_location(th2, file$c, 274, 16, 7459);
+    			add_location(th3, file$c, 275, 16, 7512);
+    			add_location(th4, file$c, 276, 16, 7577);
+    			add_location(tr0, file$c, 271, 3, 7400);
+    			add_location(thead, file$c, 270, 2, 7388);
+    			add_location(input0, file$c, 281, 8, 7670);
+    			add_location(td0, file$c, 281, 4, 7666);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$c, 282, 8, 7720);
-    			add_location(td1, file$c, 282, 4, 7716);
-    			add_location(input2, file$c, 283, 8, 7784);
-    			add_location(td2, file$c, 283, 4, 7780);
-    			add_location(input3, file$c, 284, 8, 7838);
-    			add_location(td3, file$c, 284, 4, 7834);
-    			add_location(input4, file$c, 285, 8, 7890);
-    			add_location(td4, file$c, 285, 4, 7886);
-    			add_location(td5, file$c, 287, 4, 7942);
+    			add_location(input1, file$c, 282, 8, 7723);
+    			add_location(td1, file$c, 282, 4, 7719);
+    			add_location(input2, file$c, 283, 8, 7787);
+    			add_location(td2, file$c, 283, 4, 7783);
+    			add_location(input3, file$c, 284, 8, 7841);
+    			add_location(td3, file$c, 284, 4, 7837);
+    			add_location(input4, file$c, 285, 8, 7893);
+    			add_location(td4, file$c, 285, 4, 7889);
+    			add_location(td5, file$c, 287, 4, 7945);
     			attr_dev(td6, "align", "center");
-    			add_location(td6, file$c, 291, 4, 8048);
-    			add_location(tr1, file$c, 280, 3, 7653);
-    			add_location(td7, file$c, 322, 4, 8880);
-    			add_location(td8, file$c, 325, 4, 8981);
-    			add_location(tr2, file$c, 321, 3, 8870);
-    			add_location(tbody, file$c, 279, 2, 7641);
+    			add_location(td6, file$c, 291, 4, 8051);
+    			add_location(tr1, file$c, 280, 3, 7656);
+    			add_location(td7, file$c, 322, 4, 8883);
+    			add_location(td8, file$c, 325, 4, 8984);
+    			add_location(tr2, file$c, 321, 3, 8873);
+    			add_location(tbody, file$c, 279, 2, 7644);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -28000,7 +28035,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot_13$7] },
@@ -28056,7 +28091,7 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t4 = space();
     			info.block.c();
-    			add_location(h1, file$c, 214, 4, 6246);
+    			add_location(h1, file$c, 214, 4, 6249);
     			add_location(main, file$c, 172, 0, 4534);
     		},
     		l: function claim(nodes) {
@@ -29726,7 +29761,7 @@ var app = (function () {
     	return block;
     }
 
-    // (91:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (91:4) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot_4$6(ctx) {
     	let navbarbrand;
     	let t;
@@ -29801,7 +29836,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$6.name,
     		type: "slot",
-    		source: "(91:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(91:4) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -30077,24 +30112,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element$1("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$b, 144, 20, 4384);
-    			add_location(th1, file$b, 145, 20, 4419);
-    			add_location(th2, file$b, 146, 20, 4453);
-    			add_location(th3, file$b, 147, 20, 4510);
-    			add_location(th4, file$b, 148, 20, 4579);
-    			add_location(tr0, file$b, 143, 16, 4358);
-    			add_location(thead, file$b, 142, 12, 4333);
-    			add_location(td0, file$b, 153, 20, 4730);
-    			add_location(td1, file$b, 154, 20, 4777);
-    			add_location(input0, file$b, 155, 24, 4825);
-    			add_location(td2, file$b, 155, 20, 4821);
-    			add_location(input1, file$b, 156, 24, 4893);
-    			add_location(td3, file$b, 156, 20, 4889);
-    			add_location(input2, file$b, 157, 24, 4959);
-    			add_location(td4, file$b, 157, 20, 4955);
-    			add_location(td5, file$b, 159, 20, 5027);
-    			add_location(tr1, file$b, 152, 16, 4704);
-    			add_location(tbody, file$b, 151, 12, 4679);
+    			add_location(th0, file$b, 144, 20, 4387);
+    			add_location(th1, file$b, 145, 20, 4422);
+    			add_location(th2, file$b, 146, 20, 4456);
+    			add_location(th3, file$b, 147, 20, 4513);
+    			add_location(th4, file$b, 148, 20, 4582);
+    			add_location(tr0, file$b, 143, 16, 4361);
+    			add_location(thead, file$b, 142, 12, 4336);
+    			add_location(td0, file$b, 153, 20, 4733);
+    			add_location(td1, file$b, 154, 20, 4780);
+    			add_location(input0, file$b, 155, 24, 4828);
+    			add_location(td2, file$b, 155, 20, 4824);
+    			add_location(input1, file$b, 156, 24, 4896);
+    			add_location(td3, file$b, 156, 20, 4892);
+    			add_location(input2, file$b, 157, 24, 4962);
+    			add_location(td4, file$b, 157, 20, 4958);
+    			add_location(td5, file$b, 159, 20, 5030);
+    			add_location(tr1, file$b, 152, 16, 4707);
+    			add_location(tbody, file$b, 151, 12, 4682);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -30273,7 +30308,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot_4$6] },
@@ -30334,7 +30369,7 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-    			add_location(h1, file$b, 131, 4, 4067);
+    			add_location(h1, file$b, 131, 4, 4070);
     			add_location(main, file$b, 89, 0, 2346);
     		},
     		l: function claim(nodes) {
@@ -31798,7 +31833,7 @@ var app = (function () {
     	return block;
     }
 
-    // (126:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (126:4) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$7(ctx) {
     	let navbarbrand;
     	let t;
@@ -31873,7 +31908,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$7.name,
     		type: "slot",
-    		source: "(126:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(126:4) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -31903,7 +31938,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$7] },
@@ -31936,11 +31971,11 @@ var app = (function () {
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
     			add_location(script3, file$a, 121, 4, 4171);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$a, 168, 8, 6089);
+    			add_location(div, file$a, 168, 8, 6092);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$a, 169, 8, 6121);
+    			add_location(p, file$a, 169, 8, 6124);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$a, 167, 4, 6045);
+    			add_location(figure, file$a, 167, 4, 6048);
     			add_location(main, file$a, 124, 0, 4289);
     		},
     		l: function claim(nodes) {
@@ -32218,23 +32253,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$9, 137, 4, 3594);
+    			add_location(script0, file$9, 137, 4, 3576);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$9, 138, 4, 3687);
+    			add_location(script1, file$9, 138, 4, 3669);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$9, 139, 4, 3790);
+    			add_location(script2, file$9, 139, 4, 3772);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$9, 140, 4, 3890);
+    			add_location(script3, file$9, 140, 4, 3872);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$9, 141, 4, 3992);
+    			add_location(script4, file$9, 141, 4, 3974);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$9, 148, 8, 4170);
-    			add_location(code, file$9, 151, 12, 4337);
+    			add_location(div, file$9, 148, 8, 4152);
+    			add_location(code, file$9, 151, 12, 4319);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$9, 149, 8, 4206);
+    			add_location(p, file$9, 149, 8, 4188);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$9, 147, 4, 4126);
-    			add_location(main, file$9, 145, 0, 4112);
+    			add_location(figure, file$9, 147, 4, 4108);
+    			add_location(main, file$9, 145, 0, 4094);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32363,11 +32398,13 @@ var app = (function () {
 
     		Highcharts.chart("container", {
     			title: {
-    				text: "Solar Employment Growth by Sector, 2010-2016"
+    				text: "Economia, escolarizacion y exportaciones"
     			},
-    			subtitle: { text: "Source: thesolarfoundation.com" },
+    			subtitle: { text: "" },
     			yAxis: {
-    				title: { text: "economia escolarizacion" }
+    				title: {
+    					text: "economia escolarizacion y exportaciones"
+    				}
     			},
     			xAxis: {
     				title: { text: "Pais-año" },
@@ -33638,7 +33675,7 @@ var app = (function () {
     	return block;
     }
 
-    // (7:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (7:4) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$6(ctx) {
     	let navbarbrand;
     	let t;
@@ -33713,7 +33750,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$6.name,
     		type: "slot",
-    		source: "(7:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(7:4) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -33744,7 +33781,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$6] },
@@ -33779,19 +33816,19 @@ var app = (function () {
     			t11 = space();
     			br = element$1("br");
     			add_location(body, file$8, 5, 0, 162);
-    			add_location(h3, file$8, 52, 4, 1865);
+    			add_location(h3, file$8, 52, 4, 1868);
     			attr_dev(a0, "href", "https://github.com/damiangc99");
-    			add_location(a0, file$8, 53, 9, 1891);
-    			add_location(p0, file$8, 53, 4, 1886);
+    			add_location(a0, file$8, 53, 9, 1894);
+    			add_location(p0, file$8, 53, 4, 1889);
     			attr_dev(a1, "href", "https://github.com/AngelSM11");
-    			add_location(a1, file$8, 54, 9, 1988);
-    			add_location(p1, file$8, 54, 4, 1983);
+    			add_location(a1, file$8, 54, 9, 1991);
+    			add_location(p1, file$8, 54, 4, 1986);
     			attr_dev(a2, "href", "https://github.com/adriperez01");
-    			add_location(a2, file$8, 55, 9, 2076);
-    			add_location(p2, file$8, 55, 4, 2071);
-    			add_location(br, file$8, 56, 4, 2162);
+    			add_location(a2, file$8, 55, 9, 2079);
+    			add_location(p2, file$8, 55, 4, 2074);
+    			add_location(br, file$8, 56, 4, 2165);
     			attr_dev(main, "class", "svelte-ri70vu");
-    			add_location(main, file$8, 49, 0, 1849);
+    			add_location(main, file$8, 49, 0, 1852);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -35064,7 +35101,7 @@ var app = (function () {
     	return block;
     }
 
-    // (7:4) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (7:4) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$5(ctx) {
     	let navbarbrand;
     	let t;
@@ -35139,7 +35176,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$5.name,
     		type: "slot",
-    		source: "(7:4) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(7:4) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -35180,7 +35217,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$5] },
@@ -35228,25 +35265,25 @@ var app = (function () {
     			a3 = element$1("a");
     			a3.textContent = "https://SOS2122-25.herokuapp.com/#/intergation1";
     			add_location(body, file$7, 5, 0, 162);
-    			add_location(h30, file$7, 50, 4, 1861);
+    			add_location(h30, file$7, 50, 4, 1864);
     			attr_dev(a0, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
-    			add_location(a0, file$7, 51, 6, 1917);
-    			add_location(p0, file$7, 51, 1, 1912);
+    			add_location(a0, file$7, 51, 6, 1920);
+    			add_location(p0, file$7, 51, 1, 1915);
     			attr_dev(a1, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion2");
-    			add_location(a1, file$7, 52, 6, 2059);
-    			add_location(p1, file$7, 52, 1, 2054);
+    			add_location(a1, file$7, 52, 6, 2062);
+    			add_location(p1, file$7, 52, 1, 2057);
     			attr_dev(a2, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion3");
-    			add_location(a2, file$7, 53, 6, 2201);
-    			add_location(p2, file$7, 53, 1, 2196);
-    			add_location(br0, file$7, 54, 4, 2341);
-    			add_location(h31, file$7, 55, 4, 2351);
-    			add_location(br1, file$7, 56, 4, 2393);
-    			add_location(h32, file$7, 57, 1, 2400);
+    			add_location(a2, file$7, 53, 6, 2204);
+    			add_location(p2, file$7, 53, 1, 2199);
+    			add_location(br0, file$7, 54, 4, 2344);
+    			add_location(h31, file$7, 55, 4, 2354);
+    			add_location(br1, file$7, 56, 4, 2396);
+    			add_location(h32, file$7, 57, 1, 2403);
     			attr_dev(a3, "href", "./#/integration1");
-    			add_location(a3, file$7, 58, 6, 2448);
-    			add_location(p3, file$7, 58, 1, 2443);
+    			add_location(a3, file$7, 58, 6, 2451);
+    			add_location(p3, file$7, 58, 1, 2446);
     			attr_dev(main, "class", "svelte-1h6otfa");
-    			add_location(main, file$7, 49, 0, 1849);
+    			add_location(main, file$7, 49, 0, 1852);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -36547,7 +36584,7 @@ var app = (function () {
     	return block;
     }
 
-    // (135:8) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (135:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$4(ctx) {
     	let navbarbrand;
     	let t;
@@ -36622,7 +36659,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$4.name,
     		type: "slot",
-    		source: "(135:8) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(135:8) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -36645,7 +36682,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$4] },
@@ -36671,7 +36708,7 @@ var app = (function () {
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
     			add_location(script2, file$6, 126, 8, 4616);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$6, 175, 8, 6952);
+    			add_location(div, file$6, 175, 8, 6955);
     			add_location(main, file$6, 131, 4, 4763);
     		},
     		l: function claim(nodes) {
@@ -38105,7 +38142,7 @@ var app = (function () {
     	return block;
     }
 
-    // (135:8) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (135:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$3(ctx) {
     	let navbarbrand;
     	let t;
@@ -38180,7 +38217,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(135:8) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(135:8) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -38203,7 +38240,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$3] },
@@ -38229,7 +38266,7 @@ var app = (function () {
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
     			add_location(script2, file$5, 127, 8, 4605);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$5, 176, 12, 6919);
+    			add_location(div, file$5, 176, 12, 6922);
     			add_location(main, file$5, 132, 4, 4752);
     		},
     		l: function claim(nodes) {
@@ -39664,7 +39701,7 @@ var app = (function () {
     	return block;
     }
 
-    // (95:8) <Navbar style="background-color: #6EAA8D; color:white;" light expand="lg" >
+    // (95:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$2(ctx) {
     	let navbarbrand;
     	let t;
@@ -39739,7 +39776,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(95:8) <Navbar style=\\\"background-color: #6EAA8D; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(95:8) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
@@ -39762,7 +39799,7 @@ var app = (function () {
 
     	navbar = new Navbar({
     			props: {
-    				style: "background-color: #6EAA8D; color:white;",
+    				style: "background-color: lightgreen; color:white;",
     				light: true,
     				expand: "lg",
     				$$slots: { default: [create_default_slot$2] },
@@ -39788,7 +39825,7 @@ var app = (function () {
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
     			add_location(script2, file$4, 87, 8, 3198);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$4, 136, 8, 5508);
+    			add_location(div, file$4, 136, 8, 5511);
     			add_location(main, file$4, 92, 4, 3345);
     		},
     		l: function claim(nodes) {

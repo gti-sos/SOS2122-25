@@ -4,7 +4,7 @@
 
 
 <body>
-	  <Navbar style="background-color: #FF7F50; color:white;" light expand="lg">
+	  <Navbar style="background-color: lightgreen; color:white;" light expand="lg">
 		  <NavbarBrand style=color:black; href="#/info">Cargar APIs</NavbarBrand>
 		  <Nav navbar>
 			
