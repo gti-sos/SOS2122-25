@@ -72,14 +72,21 @@ var esco_stats = [
 ]
 
 //Proxy esco
-var paths1='/remoteAPI-esco';
-var apiServerHost1 = 'https://sos2122-11.herokuapp.com/api/v2/inequality-stats';
-
+var paths1='/remoteAPI1-esco';
+var apiServerHost1 = 'https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats';
+var paths2='/remoteAPI2-esco';
+var apiServerHost2 = 'https://sos2122-11.herokuapp.com/api/v2/inequality-stats';
 
 module.exports.register = (app, db) => {
 
     app.use(paths1, function(req, res) {
         var url = apiServerHost1 + req.url;
+        console.log('piped: '+ req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+
+    app.use(paths2, function(req, res) {
+        var url = apiServerHost2 + req.url;
         console.log('piped: '+ req.baseUrl + req.url);
         req.pipe(request(url)).pipe(res);
     });
