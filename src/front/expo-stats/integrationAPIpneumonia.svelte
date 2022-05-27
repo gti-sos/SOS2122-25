@@ -1,183 +1,131 @@
 <script>
-import {onMount} from'svelte';
-  
-  let apiData = [];
-  const delay = ms => new Promise(res => setTimeout(res, ms));
-  async function getData(){
-      const res = await fetch("/api/v1/expo");
-      if (res.ok){
-          const json = await res.json();
-          console.log("datos cargados..."+JSON.stringify(json));
-          apiData = json;
-          guardaD1(json);
-          const res1 = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats");
-          if (res1.ok){    
-              const json2 = await res1.json();
-              apiData = json2;
-              guardaD(json2);
-              console.log("cargando el grafo con los datos nuevos"+apiData);
-              await delay(1000);
-              loadGraph();
-          
-          }else{
-              console.log("Error en la peticion de los datos iniciales para el grafico");
+    import { onMount } from 'svelte';
+    let apiData = {};
+    const delay = ms => new Promise(res => setTimeout(res,ms));
+        let stats = [];
+        let stats1=[];
+        let country= [];
+        let tec = ["expo_tec"];
+        let m = ["expo_m"];
+        let bys = ["tot_esco"]; 
+        let seventy =["ages_seventy"];
+        let fifty_seventy =["ages_fifty_seventy"];
+        let zero_fifty =["ages_zero_fifty"];
+        async function getData(){
+            console.log("Fetching stats....");
+            const res = await fetch("/api/v1/expo");
+            const res1= await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats")
+            if(res.ok&&res1.ok){
+                const data = await res.json();
+                const data1= await res1.json();
+                stats = data;
+                console.log("Estadísticas recibidas: "+stats.length);
+                //inicializamos los arrays para mostrar los datos
+                stats.forEach(stat => {
+                    country.push(stat.country+"-"+stat.year);
+                    
+                    tec.push(stat.expo_tec);
+                    m.push(stat.expo_m);
+                    bys.push(stat.tot_esco);
+                    seventy.push(0);
+                    fifty_seventy.push(0);
+                    zero_fifty.push(0);
+                              
+                });
+                stats1 = data1;
+                console.log("Estadísticas recibidas: "+stats1.length);
+                //inicializamos los arrays para mostrar los datos
+                stats1.forEach(stat => {
+                    country.push(stat.country+"-"+stat.year);
               
-          }
-  
-  }else{
-      console.log("Error en la peticion de los datos iniciales para el grafico");
-          
-  }
-}
-    let tec = [];
-    let m = [];
-    let bys = [];
-    async function guardaD1(json){
-        for(let i = 0; i<json.length; i++){
-                let aux = [];
-                aux.push(json[i].year);
-                aux.push(json[i].expo_tec);
-                tec.push(aux);
-                aux = [];
-                aux.push(json[i].year);
-                aux.push(json[i].expo_m);
-                m.push(aux);
-                
-                aux = [];
-                aux.push(json[i].year);
-                aux.push(json[i].tot_esco);
-                bys.push(aux);
+                    seventy.push(stat.ages_seventy);
+                    fifty_seventy.push(stat.ages_fifty_seventy);
+                    zero_fifty.push(stat.ages_zero_fifty); 
+                    tec.push(0);
+                    m.push(0);
+                    bys.push(0);
+                });
+            }else{
+                console.log("Error cargando los datos");
             }
-    }
-    let mas70 = [];
-    let entre50y70 = [];
-    let menos50 = [];
-    async function guardaD(json){
-        for(let i = 0; i<json.length; i++){
-                let aux = [];
-                aux.push(json[i].year);
-                aux.push(json[i].ages_seventy);
-                mas70.push(aux);
-                aux = [];
-                aux.push(json[i].year);
-                aux.push(json[i].ages_fifty_seventy);
-                entre50y70.push(aux);
-                
-                aux = [];
-                aux.push(json[i].year);
-                aux.push(json[i].ages_zero_fifty);
-                menos50.push(aux);
-            }
-    }
-    async function loadGraph(){
-        Highcharts.chart('container', {
-            chart: {
-                type: 'areaspline'
-            },
-            title: {
-                text: 'Integracion de los datos de pneumonía'
-            },
-            legend: {
-                layout: 'vertical',
-                align: 'left',
-                verticalAlign: 'top',
-                x: 150,
-                y: 100,
-                floating: true,
-                borderWidth: 1,
-                backgroundColor:
-                Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
-            },
-            xAxis: {
-                accessibility: {
-                    title :{
-                        text:'año'
-                    }
-                
-                }
-            },
-            legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'middle'
-            },
-            plotOptions: {
-                series: {
-                    label: {
-                        connectorAllowed: false
+            loadGraph();
+            console.log("Comprobando");
+        }
+    async function loadGraph() {
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var trace_olympic_gold_medals = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: country,
+                datasets: [
+                    {
+                        label: "Muertes 0-50 años",
+                        backgroundColor: "rgb(0, 128, 128)",
+                        borderColor: "rgb(255, 255, 255)",
+                        data: zero_fifty,
                     },
-                    pointStart: 2017
-                }
+                    {
+                        label: "Muertes 50-70 años",
+                        backgroundColor: "rgb(255, 0 ,0)",
+                        borderColor: "rgb(255, 255, 255)",
+                        data: fifty_seventy,
+                    },
+                    {
+                        label: "Muertes 70 años",
+                        backgroundColor: "rgb(255, 255, 0)",
+                        borderColor: "rgb(255, 255, 255)",
+                        data: seventy,
+                    },
+                    {
+                        label: "Exportaciones Tecnológicas",
+                        backgroundColor: "#0000FF",
+                        borderColor: "#0000FF",
+                        data: tec,
+                    },
+                    {
+                        label: "Exportaciones Prod. Manufacturados",
+                        backgroundColor: "#008000",
+                        borderColor: "#008000",
+                        data: m,
+                    },
+                    {
+                        label: "Exportaciones Bienes y Servicios",
+                        backgroundColor: "#ff8000",
+                        borderColor: "#ff8000",
+                        data: bys,
+                    },
+                ],
             },
-            yAxis: {
-                title: {
-                    text: 'Values'
-                }
-            },
-            tooltip: {
-                shared: true,
-                valueSuffix: ' units'
-            },
-            credits: {
-                enabled: false
-            },
-            plotOptions: {
-                areaspline: {
-                    fillOpacity: 0.5
-                }
-            },
-            series: [{
-                name: 'Exportaciones Bienes y Servicios',
-                data: bys
-                },
-                {
-                name: 'Exportaciones Prod. Manufacturados',
-                data: m
-                },
-                {
-                name: 'Exportaciones Tecnológicas',
-                data: tec
-                },
-                {
-                name: 'Mayores de 70 años',
-                data: mas70
-                },
-                {
-                name: 'De 50 a 70 años',
-                data: entre50y70
-                },
-                {
-                name: 'Menores de 50 años',
-                data: menos50
-                }
-                ]
+            options: {},
         });
-        
+       
+       
     }
     onMount(getData);
-   
-   
 </script>
+
+<svelte:head>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chart.js"
+        on:load={loadGraph}></script>
+</svelte:head>
+
 <main>
-    <figure class="highcharts-figure">
-        <div id="container"></div>
-        <p class="highcharts-description">
-            Using an area-splitline graph.
-            Intregracion de la API de exportaciones y de la API Neumonía de Laura del grupo 24. 
-            
-        </p>
-    </figure>
+    <h2>Integracion de API propia y API de Laura grupo 24</h2>
+    <h4>Biblioteca: Chart.js</h4>
+    <!--<button class="btn btn-primary hBack" type="button">Volver</button>
+    <a href="/#/tennis" class="btn btn-primary hBack" role="button" >Volver</a> -->
+    <a href="/#/agriculturalproduction-stats" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
+
+    <canvas id="myChart" />
 
 </main>
 
-<svelte:head>
-
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/series-label.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
-   
-
-</svelte:head>
+<style>
+    h2 {
+        text-align: center;
+    }
+    h4 {
+        text-align: center;
+    }
+</style>

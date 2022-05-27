@@ -2177,7 +2177,7 @@ var app = (function () {
     			t1 = space();
     			if_block2.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$B, 26, 2, 808);
+    			add_location(div, file$B, 26, 2, 834);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2312,7 +2312,7 @@ var app = (function () {
     			t = text$1(/*heading*/ ctx[3]);
     			if (heading_slot) heading_slot.c();
     			attr_dev(h4, "class", "alert-heading");
-    			add_location(h4, file$B, 33, 6, 961);
+    			add_location(h4, file$B, 33, 6, 994);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -2380,7 +2380,7 @@ var app = (function () {
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", /*closeClassNames*/ ctx[6]);
     			attr_dev(button, "aria-label", /*closeAriaLabel*/ ctx[2]);
-    			add_location(button, file$B, 38, 6, 1077);
+    			add_location(button, file$B, 38, 6, 1115);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2864,7 +2864,7 @@ var app = (function () {
     			button = element$1("button");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$A, 54, 2, 1124);
+    			add_location(button, file$A, 54, 2, 1178);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2982,7 +2982,7 @@ var app = (function () {
     			a = element$1("a");
     			if_block.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$A, 37, 2, 866);
+    			add_location(a, file$A, 37, 2, 903);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -3150,7 +3150,7 @@ var app = (function () {
     	return block_1;
     }
 
-    // (65:10)        
+    // (65:10)         
     function fallback_block$1(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -3223,7 +3223,7 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block$1.name,
     		type: "fallback",
-    		source: "(65:10)        ",
+    		source: "(65:10)         ",
     		ctx
     	});
 
@@ -5570,7 +5570,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$z, 123, 2, 3209);
+    			add_location(div, file$z, 123, 2, 3332);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5648,7 +5648,7 @@ var app = (function () {
     			li = element$1("li");
     			if (default_slot) default_slot.c();
     			set_attributes(li, li_data);
-    			add_location(li, file$z, 119, 2, 3118);
+    			add_location(li, file$z, 119, 2, 3237);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -6143,7 +6143,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$y, 23, 0, 542);
+    			add_location(div, file$y, 23, 0, 565);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6377,7 +6377,7 @@ var app = (function () {
     			button = element$1("button");
     			if (default_slot) default_slot.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$x, 49, 2, 1086);
+    			add_location(button, file$x, 49, 2, 1135);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -6475,7 +6475,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$x, 45, 2, 979);
+    			add_location(a, file$x, 45, 2, 1024);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -6562,7 +6562,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$x, 41, 2, 864);
+    			add_location(div, file$x, 41, 2, 905);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -6651,7 +6651,7 @@ var app = (function () {
     			h6 = element$1("h6");
     			if (default_slot) default_slot.c();
     			set_attributes(h6, h6_data);
-    			add_location(h6, file$x, 37, 2, 748);
+    			add_location(h6, file$x, 37, 2, 785);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h6, anchor);
@@ -7032,7 +7032,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$w, 41, 0, 933);
+    			add_location(div, file$w, 41, 0, 974);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7283,7 +7283,7 @@ var app = (function () {
     			button = element$1("button");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(button, button_data);
-    			add_location(button, file$v, 94, 2, 1948);
+    			add_location(button, file$v, 94, 2, 2042);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -7394,7 +7394,7 @@ var app = (function () {
     			span = element$1("span");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(span, span_data);
-    			add_location(span, file$v, 80, 2, 1673);
+    			add_location(span, file$v, 80, 2, 1753);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7503,7 +7503,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(div, div_data);
-    			add_location(div, file$v, 66, 2, 1382);
+    			add_location(div, file$v, 66, 2, 1448);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -7611,7 +7611,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot_or_fallback) default_slot_or_fallback.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$v, 51, 2, 1080);
+    			add_location(a, file$v, 51, 2, 1131);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -7689,7 +7689,7 @@ var app = (function () {
     	return block_1;
     }
 
-    // (105:10)        
+    // (105:10)         
     function fallback_block_3(ctx) {
     	let span;
     	let t;
@@ -7699,7 +7699,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$1(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$v, 105, 6, 2165);
+    			add_location(span, file$v, 105, 6, 2270);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7717,14 +7717,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_3.name,
     		type: "fallback",
-    		source: "(105:10)        ",
+    		source: "(105:10)         ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (90:10)        
+    // (90:10)         
     function fallback_block_2(ctx) {
     	let span;
     	let t;
@@ -7734,7 +7734,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$1(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$v, 90, 6, 1867);
+    			add_location(span, file$v, 90, 6, 1957);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7752,14 +7752,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_2.name,
     		type: "fallback",
-    		source: "(90:10)        ",
+    		source: "(90:10)         ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (76:10)        
+    // (76:10)         
     function fallback_block_1(ctx) {
     	let span;
     	let t;
@@ -7769,7 +7769,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$1(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$v, 76, 6, 1575);
+    			add_location(span, file$v, 76, 6, 1651);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7787,14 +7787,14 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block_1.name,
     		type: "fallback",
-    		source: "(76:10)        ",
+    		source: "(76:10)         ",
     		ctx
     	});
 
     	return block_1;
     }
 
-    // (62:10)        
+    // (62:10)         
     function fallback_block(ctx) {
     	let span;
     	let t;
@@ -7804,7 +7804,7 @@ var app = (function () {
     			span = element$1("span");
     			t = text$1(/*ariaLabel*/ ctx[1]);
     			attr_dev(span, "class", "visually-hidden");
-    			add_location(span, file$v, 62, 6, 1287);
+    			add_location(span, file$v, 62, 6, 1349);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -7822,7 +7822,7 @@ var app = (function () {
     		block: block_1,
     		id: fallback_block.name,
     		type: "fallback",
-    		source: "(62:10)        ",
+    		source: "(62:10)         ",
     		ctx
     	});
 
@@ -8263,7 +8263,7 @@ var app = (function () {
     			ul = element$1("ul");
     			if (default_slot) default_slot.c();
     			set_attributes(ul, ul_data);
-    			add_location(ul, file$u, 39, 0, 941);
+    			add_location(ul, file$u, 39, 0, 980);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8731,7 +8731,7 @@ var app = (function () {
     			nav = element$1("nav");
     			if_block.c();
     			set_attributes(nav, nav_data);
-    			add_location(nav, file$t, 38, 0, 889);
+    			add_location(nav, file$t, 38, 0, 927);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9007,7 +9007,7 @@ var app = (function () {
     			li = element$1("li");
     			if (default_slot) default_slot.c();
     			set_attributes(li, li_data);
-    			add_location(li, file$s, 10, 0, 219);
+    			add_location(li, file$s, 10, 0, 229);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9164,7 +9164,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$r, 27, 0, 472);
+    			add_location(a, file$r, 27, 0, 499);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9396,7 +9396,7 @@ var app = (function () {
     			a = element$1("a");
     			if (default_slot) default_slot.c();
     			set_attributes(a, a_data);
-    			add_location(a, file$q, 10, 0, 192);
+    			add_location(a, file$q, 10, 0, 202);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9550,7 +9550,7 @@ var app = (function () {
     		c: function create() {
     			colgroup = element$1("colgroup");
     			if (default_slot) default_slot.c();
-    			add_location(colgroup, file$p, 6, 0, 92);
+    			add_location(colgroup, file$p, 6, 0, 98);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9711,7 +9711,7 @@ var app = (function () {
     			div = element$1("div");
     			if (default_slot) default_slot.c();
     			attr_dev(div, "class", /*responsiveClassName*/ ctx[1]);
-    			add_location(div, file$o, 13, 2, 305);
+    			add_location(div, file$o, 13, 2, 318);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -9939,9 +9939,9 @@ var app = (function () {
     			tfoot = element$1("tfoot");
     			tr = element$1("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$n, 7, 2, 117);
+    			add_location(tr, file$n, 7, 2, 124);
     			set_attributes(tfoot, tfoot_data);
-    			add_location(tfoot, file$n, 6, 0, 90);
+    			add_location(tfoot, file$n, 6, 0, 96);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10052,9 +10052,9 @@ var app = (function () {
     			thead = element$1("thead");
     			tr = element$1("tr");
     			if (default_slot) default_slot.c();
-    			add_location(tr, file$m, 7, 2, 117);
+    			add_location(tr, file$m, 7, 2, 124);
     			set_attributes(thead, thead_data);
-    			add_location(thead, file$m, 6, 0, 90);
+    			add_location(thead, file$m, 6, 0, 96);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10277,7 +10277,7 @@ var app = (function () {
 
     			t2 = space();
     			create_component(tablefooter.$$.fragment);
-    			add_location(tbody, file$l, 39, 6, 1057);
+    			add_location(tbody, file$l, 39, 6, 1096);
     		},
     		m: function mount(target, anchor) {
     			mount_component(colgroup, target, anchor);
@@ -10522,7 +10522,7 @@ var app = (function () {
     			tr = element$1("tr");
     			if (default_slot) default_slot.c();
     			t = space();
-    			add_location(tr, file$l, 41, 10, 1103);
+    			add_location(tr, file$l, 41, 10, 1144);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -10662,7 +10662,7 @@ var app = (function () {
     			table = element$1("table");
     			if_block.c();
     			set_attributes(table, table_data);
-    			add_location(table, file$l, 31, 2, 885);
+    			add_location(table, file$l, 31, 2, 916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -23003,15 +23003,9 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			p = element$1("p");
-<<<<<<< HEAD
-    			t0 = text$2("ERROR: ");
-    			t1 = text$2(/*msg*/ ctx[3]);
-    			add_location(p, file$d, 97, 3, 2696);
-=======
     			t0 = text$1("ERROR: ");
     			t1 = text$1(/*msg*/ ctx[3]);
-    			add_location(p, file$e, 96, 3, 2643);
->>>>>>> 3063bee98c1e179c9a3e31022e2bf5287c0b880c
+    			add_location(p, file$e, 97, 3, 2696);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23091,15 +23085,9 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			p = element$1("p");
-<<<<<<< HEAD
-    			t0 = text$2("Correcto: ");
-    			t1 = text$2(/*msg*/ ctx[3]);
-    			add_location(p, file$d, 102, 3, 2838);
-=======
     			t0 = text$1("Correcto: ");
     			t1 = text$1(/*msg*/ ctx[3]);
-    			add_location(p, file$e, 101, 3, 2785);
->>>>>>> 3063bee98c1e179c9a3e31022e2bf5287c0b880c
+    			add_location(p, file$e, 102, 3, 2838);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23364,45 +23352,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element$1("td");
     			create_component(button.$$.fragment);
-<<<<<<< HEAD
-    			add_location(th0, file$d, 112, 20, 3041);
-    			add_location(th1, file$d, 113, 20, 3076);
-    			add_location(th2, file$d, 114, 20, 3110);
-    			add_location(th3, file$d, 115, 20, 3150);
-    			add_location(th4, file$d, 116, 20, 3189);
-    			add_location(tr0, file$d, 111, 16, 3015);
-    			add_location(thead, file$d, 110, 12, 2990);
-    			add_location(td0, file$d, 121, 20, 3321);
-    			add_location(td1, file$d, 122, 20, 3368);
-    			add_location(input0, file$d, 123, 24, 3416);
-    			add_location(td2, file$d, 123, 20, 3412);
-    			add_location(input1, file$d, 124, 24, 3486);
-    			add_location(td3, file$d, 124, 20, 3482);
-    			add_location(input2, file$d, 125, 24, 3555);
-    			add_location(td4, file$d, 125, 20, 3551);
-    			add_location(td5, file$d, 127, 20, 3631);
-    			add_location(tr1, file$d, 120, 16, 3295);
-    			add_location(tbody, file$d, 119, 12, 3270);
-=======
-    			add_location(th0, file$e, 111, 20, 2988);
-    			add_location(th1, file$e, 112, 20, 3023);
-    			add_location(th2, file$e, 113, 20, 3057);
-    			add_location(th3, file$e, 114, 20, 3097);
-    			add_location(th4, file$e, 115, 20, 3136);
-    			add_location(tr0, file$e, 110, 16, 2962);
-    			add_location(thead, file$e, 109, 12, 2937);
-    			add_location(td0, file$e, 120, 20, 3268);
-    			add_location(td1, file$e, 121, 20, 3315);
-    			add_location(input0, file$e, 122, 24, 3363);
-    			add_location(td2, file$e, 122, 20, 3359);
-    			add_location(input1, file$e, 123, 24, 3433);
-    			add_location(td3, file$e, 123, 20, 3429);
-    			add_location(input2, file$e, 124, 24, 3502);
-    			add_location(td4, file$e, 124, 20, 3498);
-    			add_location(td5, file$e, 126, 20, 3578);
-    			add_location(tr1, file$e, 119, 16, 3242);
-    			add_location(tbody, file$e, 118, 12, 3217);
->>>>>>> 3063bee98c1e179c9a3e31022e2bf5287c0b880c
+    			add_location(th0, file$e, 112, 20, 3041);
+    			add_location(th1, file$e, 113, 20, 3076);
+    			add_location(th2, file$e, 114, 20, 3110);
+    			add_location(th3, file$e, 115, 20, 3150);
+    			add_location(th4, file$e, 116, 20, 3189);
+    			add_location(tr0, file$e, 111, 16, 3015);
+    			add_location(thead, file$e, 110, 12, 2990);
+    			add_location(td0, file$e, 121, 20, 3321);
+    			add_location(td1, file$e, 122, 20, 3368);
+    			add_location(input0, file$e, 123, 24, 3416);
+    			add_location(td2, file$e, 123, 20, 3412);
+    			add_location(input1, file$e, 124, 24, 3486);
+    			add_location(td3, file$e, 124, 20, 3482);
+    			add_location(input2, file$e, 125, 24, 3555);
+    			add_location(td4, file$e, 125, 20, 3551);
+    			add_location(td5, file$e, 127, 20, 3631);
+    			add_location(tr1, file$e, 120, 16, 3295);
+    			add_location(tbody, file$e, 119, 12, 3270);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -23535,13 +23502,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (137:4) <Button outline color="secondary" on:click= "{pop}">
-    function create_default_slot$a(ctx) {
-=======
-    // (136:4) <Button outline color="secondary" on:click= "{pop}">
     function create_default_slot$b(ctx) {
->>>>>>> 3063bee98c1e179c9a3e31022e2bf5287c0b880c
     	let t;
 
     	const block = {
@@ -23647,13 +23609,8 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-<<<<<<< HEAD
-    			add_location(h1, file$d, 94, 4, 2554);
-    			add_location(main, file$d, 93, 0, 2542);
-=======
-    			add_location(h1, file$e, 93, 4, 2501);
-    			add_location(main, file$e, 92, 0, 2489);
->>>>>>> 3063bee98c1e179c9a3e31022e2bf5287c0b880c
+    			add_location(h1, file$e, 94, 4, 2554);
+    			add_location(main, file$e, 93, 0, 2542);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -70330,86 +70287,83 @@ var app = (function () {
 
     /* src\front\expo-stats\integrationAPIpneumonia.svelte generated by Svelte v3.47.0 */
 
-    const { console: console_1$1 } = globals;
+    const { console: console_1$1, document: document_1 } = globals;
     const file$2 = "src\\front\\expo-stats\\integrationAPIpneumonia.svelte";
 
     function create_fragment$2(ctx) {
-    	let main;
-    	let figure;
-    	let div;
+    	let script;
+    	let script_src_value;
     	let t0;
-    	let p;
+    	let main;
+    	let h2;
     	let t2;
-    	let script0;
-    	let script0_src_value;
-    	let script1;
-    	let script1_src_value;
-    	let script2;
-    	let script2_src_value;
-    	let script3;
-    	let script3_src_value;
-    	let script4;
-    	let script4_src_value;
+    	let h4;
+    	let t4;
+    	let a;
+    	let t6;
+    	let canvas;
+    	let mounted;
+    	let dispose;
 
     	const block = {
     		c: function create() {
-    			main = element$1("main");
-    			figure = element$1("figure");
-    			div = element$1("div");
+    			script = element$1("script");
     			t0 = space();
-    			p = element$1("p");
-    			p.textContent = "Using an area-splitline graph.\r\n            Intregracion de la API de exportaciones y de la API Neumonía de Laura del grupo 24.";
+    			main = element$1("main");
+    			h2 = element$1("h2");
+    			h2.textContent = "Integracion de API propia y API de Laura grupo 24";
     			t2 = space();
-    			script0 = element$1("script");
-    			script1 = element$1("script");
-    			script2 = element$1("script");
-    			script3 = element$1("script");
-    			script4 = element$1("script");
-    			attr_dev(div, "id", "container");
-    			add_location(div, file$2, 162, 8, 4809);
-    			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$2, 163, 8, 4845);
-    			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$2, 161, 4, 4765);
-    			add_location(main, file$2, 160, 0, 4753);
-    			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$2, 174, 4, 5100);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$2, 175, 4, 5171);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$2, 176, 4, 5252);
-    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$2, 177, 4, 5330);
-    			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$2, 178, 4, 5410);
+    			h4 = element$1("h4");
+    			h4.textContent = "Biblioteca: Chart.js";
+    			t4 = space();
+    			a = element$1("a");
+    			a.textContent = "Volver";
+    			t6 = space();
+    			canvas = element$1("canvas");
+    			if (!src_url_equal(script.src, script_src_value = "https://cdn.jsdelivr.net/npm/chart.js")) attr_dev(script, "src", script_src_value);
+    			add_location(script, file$2, 107, 4, 4155);
+    			attr_dev(h2, "class", "svelte-1f1idld");
+    			add_location(h2, file$2, 113, 4, 4286);
+    			attr_dev(h4, "class", "svelte-1f1idld");
+    			add_location(h4, file$2, 114, 4, 4350);
+    			attr_dev(a, "href", "/#/agriculturalproduction-stats");
+    			attr_dev(a, "class", "btn btn-primary btn-lg active");
+    			attr_dev(a, "role", "button");
+    			attr_dev(a, "aria-pressed", "true");
+    			add_location(a, file$2, 117, 4, 4547);
+    			attr_dev(canvas, "id", "myChart");
+    			add_location(canvas, file$2, 119, 4, 4679);
+    			add_location(main, file$2, 112, 0, 4274);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			append_dev(document_1.head, script);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, main, anchor);
-    			append_dev(main, figure);
-    			append_dev(figure, div);
-    			append_dev(figure, t0);
-    			append_dev(figure, p);
-    			insert_dev(target, t2, anchor);
-    			append_dev(document.head, script0);
-    			append_dev(document.head, script1);
-    			append_dev(document.head, script2);
-    			append_dev(document.head, script3);
-    			append_dev(document.head, script4);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, h4);
+    			append_dev(main, t4);
+    			append_dev(main, a);
+    			append_dev(main, t6);
+    			append_dev(main, canvas);
+
+    			if (!mounted) {
+    				dispose = listen_dev(script, "load", /*loadGraph*/ ctx[0], false, false, false);
+    				mounted = true;
+    			}
     		},
     		p: noop$4,
     		i: noop$4,
     		o: noop$4,
     		d: function destroy(detaching) {
+    			detach_dev(script);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
-    			if (detaching) detach_dev(t2);
-    			detach_dev(script0);
-    			detach_dev(script1);
-    			detach_dev(script2);
-    			detach_dev(script3);
-    			detach_dev(script4);
+    			mounted = false;
+    			dispose();
     		}
     	};
 
@@ -70427,134 +70381,110 @@ var app = (function () {
     function instance$2($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('IntegrationAPIpneumonia', slots, []);
-    	let apiData = [];
+    	let apiData = {};
     	const delay = ms => new Promise(res => setTimeout(res, ms));
+    	let stats = [];
+    	let stats1 = [];
+    	let country = [];
+    	let tec = ["expo_tec"];
+    	let m = ["expo_m"];
+    	let bys = ["tot_esco"];
+    	let seventy = ["ages_seventy"];
+    	let fifty_seventy = ["ages_fifty_seventy"];
+    	let zero_fifty = ["ages_zero_fifty"];
 
     	async function getData() {
+    		console.log("Fetching stats....");
     		const res = await fetch("/api/v1/expo");
+    		const res1 = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats");
 
-    		if (res.ok) {
-    			const json = await res.json();
-    			console.log("datos cargados..." + JSON.stringify(json));
-    			apiData = json;
-    			guardaD1(json);
-    			const res1 = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats");
+    		if (res.ok && res1.ok) {
+    			const data = await res.json();
+    			const data1 = await res1.json();
+    			stats = data;
+    			console.log("Estadísticas recibidas: " + stats.length);
 
-    			if (res1.ok) {
-    				const json2 = await res1.json();
-    				apiData = json2;
-    				guardaD(json2);
-    				console.log("cargando el grafo con los datos nuevos" + apiData);
-    				await delay(1000);
-    				loadGraph();
-    			} else {
-    				console.log("Error en la peticion de los datos iniciales para el grafico");
-    			}
+    			//inicializamos los arrays para mostrar los datos
+    			stats.forEach(stat => {
+    				country.push(stat.country + "-" + stat.year);
+    				tec.push(stat.expo_tec);
+    				m.push(stat.expo_m);
+    				bys.push(stat.tot_esco);
+    				seventy.push(0);
+    				fifty_seventy.push(0);
+    				zero_fifty.push(0);
+    			});
+
+    			stats1 = data1;
+    			console.log("Estadísticas recibidas: " + stats1.length);
+
+    			//inicializamos los arrays para mostrar los datos
+    			stats1.forEach(stat => {
+    				country.push(stat.country + "-" + stat.year);
+    				seventy.push(stat.ages_seventy);
+    				fifty_seventy.push(stat.ages_fifty_seventy);
+    				zero_fifty.push(stat.ages_zero_fifty);
+    				tec.push(0);
+    				m.push(0);
+    				bys.push(0);
+    			});
     		} else {
-    			console.log("Error en la peticion de los datos iniciales para el grafico");
+    			console.log("Error cargando los datos");
     		}
-    	}
 
-    	let tec = [];
-    	let m = [];
-    	let bys = [];
-
-    	async function guardaD1(json) {
-    		for (let i = 0; i < json.length; i++) {
-    			let aux = [];
-    			aux.push(json[i].year);
-    			aux.push(json[i].expo_tec);
-    			tec.push(aux);
-    			aux = [];
-    			aux.push(json[i].year);
-    			aux.push(json[i].expo_m);
-    			m.push(aux);
-    			aux = [];
-    			aux.push(json[i].year);
-    			aux.push(json[i].tot_esco);
-    			bys.push(aux);
-    		}
-    	}
-
-    	let mas70 = [];
-    	let entre50y70 = [];
-    	let menos50 = [];
-
-    	async function guardaD(json) {
-    		for (let i = 0; i < json.length; i++) {
-    			let aux = [];
-    			aux.push(json[i].year);
-    			aux.push(json[i].ages_seventy);
-    			mas70.push(aux);
-    			aux = [];
-    			aux.push(json[i].year);
-    			aux.push(json[i].ages_fifty_seventy);
-    			entre50y70.push(aux);
-    			aux = [];
-    			aux.push(json[i].year);
-    			aux.push(json[i].ages_zero_fifty);
-    			menos50.push(aux);
-    		}
+    		loadGraph();
+    		console.log("Comprobando");
     	}
 
     	async function loadGraph() {
-    		Highcharts.chart('container', {
-    			chart: { type: 'areaspline' },
-    			title: {
-    				text: 'Integracion de los datos de pneumonía'
-    			},
-    			legend: {
-    				layout: 'vertical',
-    				align: 'left',
-    				verticalAlign: 'top',
-    				x: 150,
-    				y: 100,
-    				floating: true,
-    				borderWidth: 1,
-    				backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
-    			},
-    			xAxis: {
-    				accessibility: { title: { text: 'año' } }
-    			},
-    			legend: {
-    				layout: 'vertical',
-    				align: 'right',
-    				verticalAlign: 'middle'
-    			},
-    			plotOptions: {
-    				series: {
-    					label: { connectorAllowed: false },
-    					pointStart: 2017
-    				}
-    			},
-    			yAxis: { title: { text: 'Values' } },
-    			tooltip: { shared: true, valueSuffix: ' units' },
-    			credits: { enabled: false },
-    			plotOptions: { areaspline: { fillOpacity: 0.5 } },
-    			series: [
-    				{
-    					name: 'Exportaciones Bienes y Servicios',
-    					data: bys
+    		var ctx = document.getElementById("myChart").getContext("2d");
+
+    		new Chart(ctx,
+    		{
+    				type: "bar",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Muertes 0-50 años",
+    							backgroundColor: "rgb(0, 128, 128)",
+    							borderColor: "rgb(255, 255, 255)",
+    							data: zero_fifty
+    						},
+    						{
+    							label: "Muertes 50-70 años",
+    							backgroundColor: "rgb(255, 0 ,0)",
+    							borderColor: "rgb(255, 255, 255)",
+    							data: fifty_seventy
+    						},
+    						{
+    							label: "Muertes 70 años",
+    							backgroundColor: "rgb(255, 255, 0)",
+    							borderColor: "rgb(255, 255, 255)",
+    							data: seventy
+    						},
+    						{
+    							label: "Exportaciones Tecnológicas",
+    							backgroundColor: "#0000FF",
+    							borderColor: "#0000FF",
+    							data: tec
+    						},
+    						{
+    							label: "Exportaciones Prod. Manufacturados",
+    							backgroundColor: "#008000",
+    							borderColor: "#008000",
+    							data: m
+    						},
+    						{
+    							label: "Exportaciones Bienes y Servicios",
+    							backgroundColor: "#ff8000",
+    							borderColor: "#ff8000",
+    							data: bys
+    						}
+    					]
     				},
-    				{
-    					name: 'Exportaciones Prod. Manufacturados',
-    					data: m
-    				},
-    				{
-    					name: 'Exportaciones Tecnológicas',
-    					data: tec
-    				},
-    				{ name: 'Mayores de 70 años', data: mas70 },
-    				{
-    					name: 'De 50 a 70 años',
-    					data: entre50y70
-    				},
-    				{
-    					name: 'Menores de 50 años',
-    					data: menos50
-    				}
-    			]
-    		});
+    				options: {}
+    			});
     	}
 
     	onMount(getData);
@@ -70568,33 +70498,37 @@ var app = (function () {
     		onMount,
     		apiData,
     		delay,
-    		getData,
+    		stats,
+    		stats1,
+    		country,
     		tec,
     		m,
     		bys,
-    		guardaD1,
-    		mas70,
-    		entre50y70,
-    		menos50,
-    		guardaD,
+    		seventy,
+    		fifty_seventy,
+    		zero_fifty,
+    		getData,
     		loadGraph
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('apiData' in $$props) apiData = $$props.apiData;
+    		if ('stats' in $$props) stats = $$props.stats;
+    		if ('stats1' in $$props) stats1 = $$props.stats1;
+    		if ('country' in $$props) country = $$props.country;
     		if ('tec' in $$props) tec = $$props.tec;
     		if ('m' in $$props) m = $$props.m;
     		if ('bys' in $$props) bys = $$props.bys;
-    		if ('mas70' in $$props) mas70 = $$props.mas70;
-    		if ('entre50y70' in $$props) entre50y70 = $$props.entre50y70;
-    		if ('menos50' in $$props) menos50 = $$props.menos50;
+    		if ('seventy' in $$props) seventy = $$props.seventy;
+    		if ('fifty_seventy' in $$props) fifty_seventy = $$props.fifty_seventy;
+    		if ('zero_fifty' in $$props) zero_fifty = $$props.zero_fifty;
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [];
+    	return [loadGraph];
     }
 
     class IntegrationAPIpneumonia extends SvelteComponentDev {
