@@ -17710,24 +17710,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element$1("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$h, 146, 20, 4430);
-    			add_location(th1, file$h, 147, 20, 4465);
-    			add_location(th2, file$h, 148, 20, 4499);
-    			add_location(th3, file$h, 149, 20, 4550);
-    			add_location(th4, file$h, 150, 20, 4603);
-    			add_location(tr0, file$h, 145, 16, 4404);
-    			add_location(thead, file$h, 144, 12, 4379);
-    			add_location(td0, file$h, 155, 20, 4744);
-    			add_location(td1, file$h, 156, 20, 4791);
-    			add_location(input0, file$h, 157, 24, 4839);
-    			add_location(td2, file$h, 157, 20, 4835);
-    			add_location(input1, file$h, 158, 24, 4907);
-    			add_location(td3, file$h, 158, 20, 4903);
-    			add_location(input2, file$h, 159, 24, 4975);
-    			add_location(td4, file$h, 159, 20, 4971);
-    			add_location(td5, file$h, 161, 20, 5046);
-    			add_location(tr1, file$h, 154, 16, 4718);
-    			add_location(tbody, file$h, 153, 12, 4693);
+    			add_location(th0, file$h, 146, 20, 4460);
+    			add_location(th1, file$h, 147, 20, 4495);
+    			add_location(th2, file$h, 148, 20, 4529);
+    			add_location(th3, file$h, 149, 20, 4580);
+    			add_location(th4, file$h, 150, 20, 4633);
+    			add_location(tr0, file$h, 145, 16, 4434);
+    			add_location(thead, file$h, 144, 12, 4409);
+    			add_location(td0, file$h, 155, 20, 4774);
+    			add_location(td1, file$h, 156, 20, 4821);
+    			add_location(input0, file$h, 157, 24, 4869);
+    			add_location(td2, file$h, 157, 20, 4865);
+    			add_location(input1, file$h, 158, 24, 4937);
+    			add_location(td3, file$h, 158, 20, 4933);
+    			add_location(input2, file$h, 159, 24, 5005);
+    			add_location(td4, file$h, 159, 20, 5001);
+    			add_location(td5, file$h, 161, 20, 5076);
+    			add_location(tr1, file$h, 154, 16, 4748);
+    			add_location(tbody, file$h, 153, 12, 4723);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -17967,8 +17967,8 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-    			add_location(h1, file$h, 133, 4, 4113);
-    			add_location(main, file$h, 92, 0, 2440);
+    			add_location(h1, file$h, 133, 4, 4143);
+    			add_location(main, file$h, 92, 0, 2470);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -18135,9 +18135,9 @@ var app = (function () {
     			body: JSON.stringify({
     				country: updatedCountry,
     				year: updatedYear,
-    				tot_wom: updatedtot_wom,
-    				tot_man: updatedtot_man,
-    				tot_esco: updatedtot_esco
+    				tot_wom: parseInt(updatedtot_wom),
+    				tot_man: parseInt(updatedtot_man),
+    				tot_esco: parseInt(updatedtot_esco)
     			}),
     			headers: { "Content-Type": "application/json" }
     		});
