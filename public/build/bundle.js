@@ -22994,7 +22994,7 @@ var app = (function () {
     const { console: console_1$a } = globals;
     const file$d = "src\\front\\frontEconomies\\EditEconomies.svelte";
 
-    // (96:2) {#if msg}
+    // (97:2) {#if msg}
     function create_if_block_1(ctx) {
     	let p;
     	let t0;
@@ -23005,7 +23005,7 @@ var app = (function () {
     			p = element$1("p");
     			t0 = text$2("ERROR: ");
     			t1 = text$2(/*msg*/ ctx[3]);
-    			add_location(p, file$d, 96, 3, 2643);
+    			add_location(p, file$d, 97, 3, 2696);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23024,14 +23024,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(96:2) {#if msg}",
+    		source: "(97:2) {#if msg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (95:4) <Alert color="danger" isOpen={visibleError} toggle={() => (visibleError = false)}>
+    // (96:4) <Alert color="danger" isOpen={visibleError} toggle={() => (visibleError = false)}>
     function create_default_slot_4$9(ctx) {
     	let if_block_anchor;
     	let if_block = /*msg*/ ctx[3] && create_if_block_1(ctx);
@@ -23069,14 +23069,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$9.name,
     		type: "slot",
-    		source: "(95:4) <Alert color=\\\"danger\\\" isOpen={visibleError} toggle={() => (visibleError = false)}>",
+    		source: "(96:4) <Alert color=\\\"danger\\\" isOpen={visibleError} toggle={() => (visibleError = false)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (101:2) {#if msg}
+    // (102:2) {#if msg}
     function create_if_block$2(ctx) {
     	let p;
     	let t0;
@@ -23087,7 +23087,7 @@ var app = (function () {
     			p = element$1("p");
     			t0 = text$2("Correcto: ");
     			t1 = text$2(/*msg*/ ctx[3]);
-    			add_location(p, file$d, 101, 3, 2785);
+    			add_location(p, file$d, 102, 3, 2838);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23106,14 +23106,14 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(101:2) {#if msg}",
+    		source: "(102:2) {#if msg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (100:1) <Alert color="success" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>
+    // (101:1) <Alert color="success" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>
     function create_default_slot_3$9(ctx) {
     	let if_block_anchor;
     	let if_block = /*msg*/ ctx[3] && create_if_block$2(ctx);
@@ -23151,7 +23151,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$9.name,
     		type: "slot",
-    		source: "(100:1) <Alert color=\\\"success\\\" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>",
+    		source: "(101:1) <Alert color=\\\"success\\\" isOpen={visibleMsg} toggle={() => (visibleMsg = false)}>",
     		ctx
     	});
 
@@ -23180,7 +23180,7 @@ var app = (function () {
     	return block;
     }
 
-    // (107:8) {:then economies}
+    // (108:8) {:then economies}
     function create_then_block$2(ctx) {
     	let table;
     	let current;
@@ -23229,14 +23229,14 @@ var app = (function () {
     		block,
     		id: create_then_block$2.name,
     		type: "then",
-    		source: "(107:8) {:then economies}",
+    		source: "(108:8) {:then economies}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:24) <Button outline color="primary" on:click="{EditEconomies}">
+    // (128:24) <Button outline color="primary" on:click="{EditEconomies}">
     function create_default_slot_2$9(ctx) {
     	let t;
 
@@ -23256,14 +23256,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$9.name,
     		type: "slot",
-    		source: "(127:24) <Button outline color=\\\"primary\\\" on:click=\\\"{EditEconomies}\\\">",
+    		source: "(128:24) <Button outline color=\\\"primary\\\" on:click=\\\"{EditEconomies}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (109:8) <Table bordered>
+    // (110:8) <Table bordered>
     function create_default_slot_1$9(ctx) {
     	let thead;
     	let tr0;
@@ -23352,24 +23352,24 @@ var app = (function () {
     			t16 = space();
     			td5 = element$1("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$d, 111, 20, 2988);
-    			add_location(th1, file$d, 112, 20, 3023);
-    			add_location(th2, file$d, 113, 20, 3057);
-    			add_location(th3, file$d, 114, 20, 3097);
-    			add_location(th4, file$d, 115, 20, 3136);
-    			add_location(tr0, file$d, 110, 16, 2962);
-    			add_location(thead, file$d, 109, 12, 2937);
-    			add_location(td0, file$d, 120, 20, 3268);
-    			add_location(td1, file$d, 121, 20, 3315);
-    			add_location(input0, file$d, 122, 24, 3363);
-    			add_location(td2, file$d, 122, 20, 3359);
-    			add_location(input1, file$d, 123, 24, 3433);
-    			add_location(td3, file$d, 123, 20, 3429);
-    			add_location(input2, file$d, 124, 24, 3502);
-    			add_location(td4, file$d, 124, 20, 3498);
-    			add_location(td5, file$d, 126, 20, 3578);
-    			add_location(tr1, file$d, 119, 16, 3242);
-    			add_location(tbody, file$d, 118, 12, 3217);
+    			add_location(th0, file$d, 112, 20, 3041);
+    			add_location(th1, file$d, 113, 20, 3076);
+    			add_location(th2, file$d, 114, 20, 3110);
+    			add_location(th3, file$d, 115, 20, 3150);
+    			add_location(th4, file$d, 116, 20, 3189);
+    			add_location(tr0, file$d, 111, 16, 3015);
+    			add_location(thead, file$d, 110, 12, 2990);
+    			add_location(td0, file$d, 121, 20, 3321);
+    			add_location(td1, file$d, 122, 20, 3368);
+    			add_location(input0, file$d, 123, 24, 3416);
+    			add_location(td2, file$d, 123, 20, 3412);
+    			add_location(input1, file$d, 124, 24, 3486);
+    			add_location(td3, file$d, 124, 20, 3482);
+    			add_location(input2, file$d, 125, 24, 3555);
+    			add_location(td4, file$d, 125, 20, 3551);
+    			add_location(td5, file$d, 127, 20, 3631);
+    			add_location(tr1, file$d, 120, 16, 3295);
+    			add_location(tbody, file$d, 119, 12, 3270);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -23465,14 +23465,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$9.name,
     		type: "slot",
-    		source: "(109:8) <Table bordered>",
+    		source: "(110:8) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (105:22)       loading          {:then economies}
+    // (106:22)       loading          {:then economies}
     function create_pending_block$2(ctx) {
     	let t;
 
@@ -23495,14 +23495,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$2.name,
     		type: "pending",
-    		source: "(105:22)       loading          {:then economies}",
+    		source: "(106:22)       loading          {:then economies}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:4) <Button outline color="secondary" on:click= "{pop}">
+    // (137:4) <Button outline color="secondary" on:click= "{pop}">
     function create_default_slot$a(ctx) {
     	let t;
 
@@ -23522,7 +23522,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$a.name,
     		type: "slot",
-    		source: "(136:4) <Button outline color=\\\"secondary\\\" on:click= \\\"{pop}\\\">",
+    		source: "(137:4) <Button outline color=\\\"secondary\\\" on:click= \\\"{pop}\\\">",
     		ctx
     	});
 
@@ -23609,8 +23609,8 @@ var app = (function () {
     			info.block.c();
     			t6 = space();
     			create_component(button.$$.fragment);
-    			add_location(h1, file$d, 93, 4, 2501);
-    			add_location(main, file$d, 92, 0, 2489);
+    			add_location(h1, file$d, 94, 4, 2554);
+    			add_location(main, file$d, 93, 0, 2542);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -23779,9 +23779,9 @@ var app = (function () {
     			body: JSON.stringify({
     				country: updatedCountry,
     				year: updatedYear,
-    				percapita: updatedpercapita,
-    				currency: updatedcurrency,
-    				currentprices: updatedcurrentprices
+    				percapita: parseInt(updatedpercapita),
+    				currency: parseInt(updatedcurrency),
+    				currentprices: parseInt(updatedcurrentprices)
     			}),
     			headers: { "Content-Type": "application/json" }
     		});
