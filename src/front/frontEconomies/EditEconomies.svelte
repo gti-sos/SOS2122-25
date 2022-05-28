@@ -48,9 +48,10 @@
 				body: JSON.stringify({
                     country: updatedCountry,
                     year: updatedYear,
-                    percapita: updatedpercapita,
-                    currency: updatedcurrency,
-                    currentprices: updatedcurrentprices
+                    percapita: parseInt(updatedpercapita),
+                    currency: parseInt(updatedcurrency),
+                    currentprices: parseInt(updatedcurrentprices),
+                    
                 }),
 				headers: {
 					"Content-Type": "application/json"

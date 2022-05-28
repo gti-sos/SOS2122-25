@@ -86,6 +86,8 @@
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion1">https://SOS2122-25.herokuapp.com/#/economies/integracion1 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion2">https://SOS2122-25.herokuapp.com/#/economies/integracion2 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion3">https://SOS2122-25.herokuapp.com/#/economies/integracion3 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo1">https://SOS2122-25.herokuapp.com/#/expo/integrationExpo1 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo2">https://SOS2122-25.herokuapp.com/#/expo/IntegrationExpo2</a></p>
 	<p>- <a href="./#/integration1">https://SOS2122-25.herokuapp.com/#/intergation1 </a></p>
 	<br>
 	<h3><a href="https://SOS2122-25.herokuapp.com/#/about">ENLACE a los VIDEOS</a></h3>
