@@ -52,6 +52,11 @@
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion1">https://SOS2122-25.herokuapp.com/#/economies/integracion1 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion2">https://SOS2122-25.herokuapp.com/#/economies/integracion2 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion3">https://SOS2122-25.herokuapp.com/#/economies/integracion3 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion4">https://SOS2122-25.herokuapp.com/#/economies/integracion4 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion5">https://SOS2122-25.herokuapp.com/#/economies/integracion5 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion6">https://SOS2122-25.herokuapp.com/#/economies/integracion6 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion7">https://SOS2122-25.herokuapp.com/#/economies/integracion7 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion8">https://SOS2122-25.herokuapp.com/#/economies/integracion8 </a></p>
     <br>
     <h3>Integraciones Adrián Pérez:</h3>
     <br>
