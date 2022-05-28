@@ -9,32 +9,32 @@
         let stats = [];
         let country= [];
         let year = [];
-        let code = ["code"];
-        let built_area = ["built_area"];
-        let grazing_area = ["grazing_area"]; 
+        let average = ["average"];
+        let women = ["women"];
+        let men = ["men"]; 
         let economies = [];
         let percapita = ["percapita"];
         let currency = ["currency"];
         let currentprices = ["currentprices"];
         async function loadGraph(){
             console.log("Fetching stats....");
-            const res1 = await fetch("/economies/remoteAPI3");
+            const res1 = await fetch("https://sos2122-32.herokuapp.com/api/v1/housework-stats/");
             const res2 = await fetch("/api/v2/economies");
             if(res1.ok && res2.ok){
                 const data = await res1.json();
                 const data2 = await res2.json();
                 stats = data;
                 if (stats.length == 0) {
-                    const res = await fetch("/economies/remoteAPI3/loadInitialData");
+                    const res = await fetch("https://sos2122-32.herokuapp.com/api/v1/housework-stats/");
                 }
                 console.log("Estadísticas recibidas: "+stats.length);
                 //inicializamos los arrays para mostrar los datos
                 stats.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
                     year.push(stat.year);
-                    code.push(stat.code);
-                    built_area.push(stat.built_area);
-                    grazing_area.push(stat.grazing_area);           
+                    average.push(stat.average);
+                    women.push(stat.women);
+                    men.push(stat.men);           
                 });
 
                 economies=data2;
@@ -65,9 +65,9 @@
                     ],
                 
                     types: {
-                        code: "area", // for ESM specify as: area()
-                        grazing_area: "area-spline",
-                        built_area: "area-spline", // for ESM specify as: areaSpline()
+                        average: "area", // for ESM specify as: area()
+                        men: "area-spline",
+                        women: "area-spline", // for ESM specify as: areaSpline()
                         percapita: "area-spline",
                         currency:"area-spline",
                         currentprices: "area-spline"
@@ -79,7 +79,7 @@
             setTimeout(function() {
                 chart.load({
                        columns: [
-                        code,built_area,grazing_area,percapita,currency,currentprices
+                        average,women,men,percapita,currency,currentprices
                        ]
                     });
             }, 500);
@@ -138,6 +138,7 @@
             </Nav>
         </Navbar>
 
+        <p>Comparacion del trabajo en casa</p>
     
         <div id="chart"></div>
            

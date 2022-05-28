@@ -7,34 +7,29 @@
     let apiData = {};
     const delay = ms => new Promise(res => setTimeout(res,ms));
         let stats = [];
+        let id = ["id"];
+        let postId = ["postId"];
+        let email = ["email"]; 
+        let economies = [];
         let country= [];
         let year = [];
-        let code = ["code"];
-        let built_area = ["built_area"];
-        let grazing_area = ["grazing_area"]; 
-        let economies = [];
         let percapita = ["percapita"];
         let currency = ["currency"];
         let currentprices = ["currentprices"];
         async function loadGraph(){
             console.log("Fetching stats....");
-            const res1 = await fetch("/economies/remoteAPI3");
+            const res1 = await fetch("https://jsonplaceholder.typicode.com/comments");
             const res2 = await fetch("/api/v2/economies");
             if(res1.ok && res2.ok){
                 const data = await res1.json();
                 const data2 = await res2.json();
                 stats = data;
-                if (stats.length == 0) {
-                    const res = await fetch("/economies/remoteAPI3/loadInitialData");
-                }
                 console.log("Estadísticas recibidas: "+stats.length);
                 //inicializamos los arrays para mostrar los datos
                 stats.forEach(stat => {
-                    country.push(stat.country+"-"+stat.year);
-                    year.push(stat.year);
-                    code.push(stat.code);
-                    built_area.push(stat.built_area);
-                    grazing_area.push(stat.grazing_area);           
+                    id.push(stat.id);
+                    postId.push(stat.postId);
+                    email.push(stat.email);           
                 });
 
                 economies=data2;
@@ -57,17 +52,16 @@
                 data: {
                     axis: {
                     x: {
-                    type: "category"
+                    type: email
                     }
                 },
                     columns: [
-                    
+                        email
                     ],
                 
                     types: {
-                        code: "area", // for ESM specify as: area()
-                        grazing_area: "area-spline",
-                        built_area: "area-spline", // for ESM specify as: areaSpline()
+                        id: "area", // for ESM specify as: area()
+                        postId: "area", // for ESM specify as: areaSpline()
                         percapita: "area-spline",
                         currency:"area-spline",
                         currentprices: "area-spline"
@@ -79,10 +73,11 @@
             setTimeout(function() {
                 chart.load({
                        columns: [
-                        code,built_area,grazing_area,percapita,currency,currentprices
+                        id,postId,email,percapita,currency,currentprices
                        ]
                     });
             }, 500);
+            console.log(id)
     }
        
    onMount(loadGraph);

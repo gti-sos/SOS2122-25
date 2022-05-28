@@ -24,6 +24,7 @@
   "homepage": "https://github.com/gti-sos/SOS2122-25#readme",
   "dependencies": {
     "@google-cloud/storage": "^5.20.5",
+    "axios": "^0.27.2",
     "billboard": "^1.0.0",
     "billboard.js": "^3.4.1",
     "body-parser": "^1.20.0",
@@ -38,8 +39,10 @@
     "jsonwebtoken": "^8.5.1",
     "nedb": "^1.8.0",
     "request": "^2.88.2",
+    "sdk": "^0.5.0",
     "svelte-spa-router": "^3.2.0",
     "sveltestrap": "^5.9.0",
+    "unirest": "^0.6.0",
     "vis-timeline": "^7.5.1"
   },
   "devDependencies": {

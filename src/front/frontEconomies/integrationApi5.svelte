@@ -1,43 +1,29 @@
 <script>
     import { onMount } from 'svelte';
     import "billboard.js/dist/theme/insight.css";
-    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button} from 'sveltestrap';
-    import {Table} from 'sveltestrap';
+    import Alert from 'sveltestrap/src/Alert.svelte';
+    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Table,Button} from 'sveltestrap';
     import {pop} from 'svelte-spa-router';
-    let apiData = {};
-    const delay = ms => new Promise(res => setTimeout(res,ms));
-        let stats = [];
-        let country= [];
-        let year = [];
-        let code = ["code"];
-        let built_area = ["built_area"];
-        let grazing_area = ["grazing_area"]; 
-        let economies = [];
-        let percapita = ["percapita"];
-        let currency = ["currency"];
-        let currentprices = ["currentprices"];
-        async function loadGraph(){
-            console.log("Fetching stats....");
-            const res1 = await fetch("/economies/remoteAPI3");
-            const res2 = await fetch("/api/v2/economies");
-            if(res1.ok && res2.ok){
-                const data = await res1.json();
-                const data2 = await res2.json();
-                stats = data;
-                if (stats.length == 0) {
-                    const res = await fetch("/economies/remoteAPI3/loadInitialData");
-                }
-                console.log("Estadísticas recibidas: "+stats.length);
-                //inicializamos los arrays para mostrar los datos
-                stats.forEach(stat => {
-                    country.push(stat.country+"-"+stat.year);
-                    year.push(stat.year);
-                    code.push(stat.code);
-                    built_area.push(stat.built_area);
-                    grazing_area.push(stat.grazing_area);           
-                });
+    let checkMSG = "";
+    let visible = false;
+    let color = "danger";
 
-                economies=data2;
+    let economies = [];
+    let percapita = ["percapita"];
+    let currency = ["currency"];
+    let currentprices = ["currentprices"];
+
+    const delay = ms => new Promise(res => setTimeout(res,ms));
+
+    
+    async function loadGraph(){
+            console.log("Fetching stats....");
+            const res = await fetch("/api/v2/economies");
+            if(res.ok){
+                const data = await res.json();
+
+
+                economies=data;
                 if (economies.length == 0) {
                     const res = await fetch("/api/v2/economies/loadInitialData");
                 }
@@ -65,9 +51,6 @@
                     ],
                 
                     types: {
-                        code: "area", // for ESM specify as: area()
-                        grazing_area: "area-spline",
-                        built_area: "area-spline", // for ESM specify as: areaSpline()
                         percapita: "area-spline",
                         currency:"area-spline",
                         currentprices: "area-spline"
@@ -79,13 +62,28 @@
             setTimeout(function() {
                 chart.load({
                        columns: [
-                        code,built_area,grazing_area,percapita,currency,currentprices
+                        percapita,currency,currentprices
                        ]
                     });
             }, 500);
     }
+    async function loadData(){
+        let url = 'https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits';
+        let response = await fetch(url);
+
+        let commits = await response.json(); // leer respuesta del cuerpo y devolver como JSON
+        console.log("Estadísticas recibidas: "+commits.length);
+
+			checkMSG= "Nombre: "+JSON.stringify(commits[1].author.login)+"\n"+"Id: "+JSON.stringify(commits[1].author.id)+"\n"+"email: "+JSON.stringify(commits[1].author.html_url)+"\n";
+            checkMSG= checkMSG+"   y \n Nombre: "+JSON.stringify(commits[2].author.login)+"\n"+"Id: "+JSON.stringify(commits[2].author.id)+"\n"+"email: "+JSON.stringify(commits[2].author.html_url)+"\n";
+
+			visible="true";
+        
+    }
+
        
    onMount(loadGraph);
+       
 </script>
     <svelte:head>
         <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -140,5 +138,13 @@
 
     
         <div id="chart"></div>
+        <Button outline color="success" on:click={loadData}>
+            Datos creadores
+        </Button> 
+        <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
+            {#if checkMSG}
+                {checkMSG}
+            {/if}
+        </Alert>
            
     </main>

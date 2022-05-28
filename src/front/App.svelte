@@ -20,6 +20,11 @@
 	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
 	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';
 	import IntegrationEco3 from './frontEconomies/integrationApi3.svelte';
+	import IntegrationEco4 from './frontEconomies/integrationApi4.svelte';
+	import IntegrationEco5 from './frontEconomies/integrationApi5.svelte';
+	import IntegrationEco6 from './frontEconomies/integrationApi6.svelte';
+	import IntegrationEco7 from './frontEconomies/integrationApi7.svelte';
+	import IntegrationEco8 from './frontEconomies/integrationApi8.svelte';
 
 	import Integration1 from './esco-stats/integration1.svelte';
 	import IntegrationExpo1 from './expo-stats/integrationAPIpneumonia.svelte';
@@ -51,6 +56,11 @@
 		"/economies/integracion1": IntegrationEco1,
 		"/economies/integracion2": IntegrationEco2,
 		"/economies/integracion3": IntegrationEco3,
+		"/economies/integracion4": IntegrationEco4,
+		"/economies/integracion5": IntegrationEco5,
+		"/economies/integracion6": IntegrationEco6,
+		"/economies/integracion7": IntegrationEco7,
+		"/economies/integracion8": IntegrationEco8,
 
 		"/integration1": Integration1,
 		"/integration2": Integration2,

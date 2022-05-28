@@ -49,9 +49,12 @@ var economies_stats = [
 var Api1='/economies/remoteAPI';
 var Api2='/economies/remoteAPI2';
 var Api3='/economies/remoteAPI3';
+var Api4='/economies/remoteAPI4';
 var ApiServerHostV1 = 'https://sos2122-20.herokuapp.com/api/v1/fertilizers-stats';
 var ApiServerHostV2 = 'https://sos2122-11.herokuapp.com/api/v2/inequality-stats';
 var ApiServerHostV3 = 'https://sos2122-20.herokuapp.com/api/v1/landusage-stats';
+var ApiServerHostV4 = 'https://swapi.dev/api/people/1/?format=json';
+
 
 
 module.exports.register = (app, db) => {
@@ -70,6 +73,12 @@ module.exports.register = (app, db) => {
 
     app.use(Api3, function(req, res) {
         var url = ApiServerHostV3 + req.url;
+        console.log('piped: ' + req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+
+    app.use(Api4, function(req, res) {
+        var url = ApiServerHostV4 + req.url;
         console.log('piped: ' + req.baseUrl + req.url);
         req.pipe(request(url)).pipe(res);
     });
