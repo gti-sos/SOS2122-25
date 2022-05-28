@@ -35284,42 +35284,42 @@ var app = (function () {
     			p8 = element$1("p");
     			t33 = text$1("- ");
     			a8 = element$1("a");
-    			a8.textContent = "https://SOS2122-25.herokuapp.com/#/integracion1";
+    			a8.textContent = "https://SOS2122-25.herokuapp.com/#/integration1";
     			t35 = space();
     			p9 = element$1("p");
     			t36 = text$1("- ");
     			a9 = element$1("a");
-    			a9.textContent = "https://SOS2122-25.herokuapp.com/#/integracion2";
+    			a9.textContent = "https://SOS2122-25.herokuapp.com/#/integration2";
     			t38 = space();
     			p10 = element$1("p");
     			t39 = text$1("- ");
     			a10 = element$1("a");
-    			a10.textContent = "https://SOS2122-25.herokuapp.com/#/integracion3";
+    			a10.textContent = "https://SOS2122-25.herokuapp.com/#/integration3";
     			t41 = space();
     			p11 = element$1("p");
     			t42 = text$1("- ");
     			a11 = element$1("a");
-    			a11.textContent = "https://SOS2122-25.herokuapp.com/#/integracion4";
+    			a11.textContent = "https://SOS2122-25.herokuapp.com/#/integration4";
     			t44 = space();
     			p12 = element$1("p");
     			t45 = text$1("- ");
     			a12 = element$1("a");
-    			a12.textContent = "https://SOS2122-25.herokuapp.com/#/integracion5";
+    			a12.textContent = "https://SOS2122-25.herokuapp.com/#/integration5";
     			t47 = space();
     			p13 = element$1("p");
     			t48 = text$1("- ");
     			a13 = element$1("a");
-    			a13.textContent = "https://SOS2122-25.herokuapp.com/#/integracion5b";
+    			a13.textContent = "https://SOS2122-25.herokuapp.com/#/integration5b";
     			t50 = space();
     			p14 = element$1("p");
     			t51 = text$1("- ");
     			a14 = element$1("a");
-    			a14.textContent = "https://SOS2122-25.herokuapp.com/#/integracion6";
+    			a14.textContent = "https://SOS2122-25.herokuapp.com/#/integration6";
     			t53 = space();
     			p15 = element$1("p");
     			t54 = text$1("- ");
     			a15 = element$1("a");
-    			a15.textContent = "https://SOS2122-25.herokuapp.com/#/integracion7";
+    			a15.textContent = "https://SOS2122-25.herokuapp.com/#/integration7";
     			add_location(body, file$j, 5, 0, 162);
     			add_location(h30, file$j, 50, 4, 1864);
     			attr_dev(a0, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
@@ -35350,28 +35350,28 @@ var app = (function () {
     			add_location(h31, file$j, 60, 4, 3064);
     			add_location(br1, file$j, 61, 4, 3106);
     			add_location(h32, file$j, 62, 1, 3113);
-    			attr_dev(a8, "href", "https://SOS2122-25.herokuapp.com/#/integracion1");
+    			attr_dev(a8, "href", "https://SOS2122-25.herokuapp.com/#/integration1");
     			add_location(a8, file$j, 63, 6, 3161);
     			add_location(p8, file$j, 63, 1, 3156);
-    			attr_dev(a9, "href", "https://SOS2122-25.herokuapp.com/#/integracion2");
+    			attr_dev(a9, "href", "https://SOS2122-25.herokuapp.com/#/integration2");
     			add_location(a9, file$j, 64, 6, 3283);
     			add_location(p9, file$j, 64, 1, 3278);
-    			attr_dev(a10, "href", "https://SOS2122-25.herokuapp.com/#/integracion3");
+    			attr_dev(a10, "href", "https://SOS2122-25.herokuapp.com/#/integration3");
     			add_location(a10, file$j, 65, 6, 3405);
     			add_location(p10, file$j, 65, 1, 3400);
-    			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/#/integracion4");
+    			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/#/integration4");
     			add_location(a11, file$j, 66, 6, 3527);
     			add_location(p11, file$j, 66, 1, 3522);
-    			attr_dev(a12, "href", "https://SOS2122-25.herokuapp.com/#/integracion5");
+    			attr_dev(a12, "href", "https://SOS2122-25.herokuapp.com/#/integration5");
     			add_location(a12, file$j, 67, 6, 3649);
     			add_location(p12, file$j, 67, 1, 3644);
-    			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/#/integracion5b");
+    			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/#/integration5b");
     			add_location(a13, file$j, 68, 6, 3771);
     			add_location(p13, file$j, 68, 1, 3766);
-    			attr_dev(a14, "href", "https://SOS2122-25.herokuapp.com/#/integracion6");
+    			attr_dev(a14, "href", "https://SOS2122-25.herokuapp.com/#/integration6");
     			add_location(a14, file$j, 69, 6, 3895);
     			add_location(p14, file$j, 69, 1, 3890);
-    			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/#/integracion7");
+    			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/#/integration7");
     			add_location(a15, file$j, 70, 6, 4017);
     			add_location(p15, file$j, 70, 1, 4012);
     			attr_dev(main, "class", "svelte-1h6otfa");
@@ -89244,10 +89244,10 @@ var app = (function () {
     			create_component(alert.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$2, 98, 8, 3142);
+    			add_location(link, file$2, 98, 8, 3149);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$2, 147, 12, 5408);
-    			add_location(main, file$2, 104, 4, 3236);
+    			add_location(div, file$2, 147, 12, 5415);
+    			add_location(main, file$2, 104, 4, 3243);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -89403,7 +89403,7 @@ var app = (function () {
     		console.log("Loading info....");
 
     		await fetch("https://reqres.in/api/users/2").then(function (res) {
-    			$$invalidate(2, color = "");
+    			$$invalidate(2, color = "success");
     			$$invalidate(0, checkMSG = "Nombre: " + JSON.stringify(stats1.data.first_name) + " " + JSON.stringify(stats1.data.last_name) + "        email: " + JSON.stringify(stats1.data.email));
     			$$invalidate(1, visible = "true");
     		}); //window.alert("Entradas cargadas con éxito");
@@ -90966,10 +90966,10 @@ var app = (function () {
     			create_component(alert.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$1, 98, 8, 3107);
+    			add_location(link, file$1, 98, 8, 3114);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$1, 147, 12, 5373);
-    			add_location(main, file$1, 104, 4, 3201);
+    			add_location(div, file$1, 147, 12, 5380);
+    			add_location(main, file$1, 104, 4, 3208);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -91125,7 +91125,7 @@ var app = (function () {
     		console.log("Loading info....");
 
     		await fetch("https://reqres.in/api/unknown/2").then(function (res) {
-    			$$invalidate(2, color = "");
+    			$$invalidate(2, color = "success");
     			$$invalidate(0, checkMSG = "Nombre: " + JSON.stringify(stats1.data.name) + "        año de creación: " + JSON.stringify(stats1.data.year));
     			$$invalidate(1, visible = "true");
     		}); //window.alert("Entradas cargadas con éxito");
