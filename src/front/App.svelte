@@ -15,7 +15,7 @@
 	import MyGraph from './MyGraph.svelte';
 
 	import about from './about.svelte';
-	import integration from './integration.svelte';
+	import Integration from './Integration.svelte';
 
 	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
 	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';
@@ -45,7 +45,7 @@
 		'/' : Home,
 		"/info" : Info,
 		"/about" : about,
-		"/integration" : integration,
+		"/Integration" : Integration,
 		"/esco-stats" : esco,
 		"/esco/:country/:year" : Editesco,
 		"/graphesco": MyGraphesco,
