@@ -15,7 +15,7 @@
 	import MyGraph from './MyGraph.svelte';
 
 	import about from './about.svelte';
-	import integration from './integration.svelte'
+	import integration from './integration.svelte';
 
 	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
 	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';

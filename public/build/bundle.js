@@ -91231,7 +91231,7 @@ var app = (function () {
     		c: function create() {
     			main = element$1("main");
     			create_component(router.$$.fragment);
-    			add_location(main, file, 85, 0, 3263);
+    			add_location(main, file, 85, 0, 3268);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -91328,7 +91328,7 @@ var app = (function () {
     		ExpoGraph,
     		MyGraph,
     		about: About,
-    		analytics: Integration,
+    		integration: Integration,
     		IntegrationEco1: IntegrationApi1,
     		IntegrationEco2: IntegrationApi2,
     		IntegrationEco3: IntegrationApi3,
