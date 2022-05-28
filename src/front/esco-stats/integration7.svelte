@@ -2,10 +2,14 @@
 
     import { onMount } from 'svelte';
     import * as c3 from "c3";
+    import Alert from 'sveltestrap/src/Alert.svelte';
     import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Table,Button} from 'sveltestrap';
     import {pop} from 'svelte-spa-router';
     let apiData = {};
     const delay = ms => new Promise(res => setTimeout(res,ms));
+        let checkMSG = "";
+        let visible = false;
+        let color = "danger";
         let stats = [];
         let stats1=[];
         let country= [];
@@ -13,13 +17,13 @@
         let tot_wom = ["tot_wom"];
         let tot_man = ["tot_man"];
         let tot_esco = ["tot_esco"]; 
-        let public_expenditure =["public_expenditure"];
-        let pe_to_gdp =["pe_to_gdp"];
-        let pe_on_defence =["pe_on_defence"];
+        let ages_seventy =["ages_seventy"];
+        let ages_fifty_seventy =["ages_fifty_seventy"];
+        let ages_zero_fifty =["ages_zero_fifty"];
         async function getData(){
             console.log("Fetching stats....");
             const res = await fetch("/api/v1/esco-stats");
-            const res1= await fetch("/remoteAPI4-esco")
+            const res1= await fetch("https://reqres.in/api/unknown/2")
             if(res.ok&&res1.ok){
                 const data = await res.json();
                 const data1= await res1.json();
@@ -35,15 +39,10 @@
                               
                 });
                 stats1 = data1;
+                console.log(stats1.data);
                 console.log("Estadísticas recibidas: "+stats1.length);
                 //inicializamos los arrays para mostrar los datos
-                stats1.forEach(stat => {
-                    country.push(stat.country+"-"+stat.year);
-              
-                    public_expenditure.push(stat.public_expenditure);
-                    pe_to_gdp.push(stat.pe_to_gdp);
-                    pe_on_defence.push(stat.pe_on_defence); 
-                });
+                
             }else{
                 console.log("Error cargando los datos");
             }
@@ -51,21 +50,20 @@
             console.log("Comprobando");
         }
              
-
+        
     async function loadGraph(){
     
-    
+        
             var chart= c3.generate({
                 bindto: '#chart',
+                
     data: {
         
         columns: [
            tot_wom,
            tot_man,
            tot_esco,
-           public_expenditure,
-           pe_to_gdp,
-           pe_on_defence,
+           
            
         ],
         type: 'spline'
@@ -79,8 +77,19 @@
         }
 });
     }
+    async function Loadinfo(){
+        console.log("Loading info....");
+        const res = await fetch("https://reqres.in/api/unknown/2"
+			).then(function (res){
+				color="";
+				checkMSG="Nombre: "+JSON.stringify(stats1.data.name)+"        año de creación: "+JSON.stringify(stats1.data.year);
+				visible="true";
+				
+				//window.alert("Entradas cargadas con éxito");
+			});
+    }
            
-
+    
        
     onMount(getData);
     </script>
@@ -134,10 +143,22 @@
             </NavItem>-->
             </Nav>
         </Navbar>
+        
+
             <div id="chart"></div>
-           
-          
+
+        <Button outline color="success" on:click={Loadinfo}>
+            Información de los datos
+        </Button>   
+        
         <Button on:click="{pop}">
             Volver
         </Button>
+        <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
+            {#if checkMSG}
+                {checkMSG}
+            {/if}
+        </Alert>
+        
+        
     </main>

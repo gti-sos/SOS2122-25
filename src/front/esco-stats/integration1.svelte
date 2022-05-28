@@ -2,7 +2,7 @@
 
     import { onMount } from 'svelte';
     import * as c3 from "c3";
-    import {Table,Button} from 'sveltestrap';
+    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Table,Button} from 'sveltestrap';
     import {pop} from 'svelte-spa-router';
     let apiData = {};
     const delay = ms => new Promise(res => setTimeout(res,ms));
@@ -79,8 +79,10 @@
         }
 });
     }
-           
-
+         
+    
+    
+    
        
     onMount(getData);
     </script>
@@ -94,7 +96,47 @@
     </svelte:head>
     
     <main>
-    
+        <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
+            <NavbarBrand href="#/info">INICIO</NavbarBrand>
+            <Nav navbar>
+                <Dropdown >
+                    <DropdownToggle nav caret> API </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./api/v2/economies">economies-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="./api/v1/expo-stats">expo-Stats</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                
+                <Dropdown>
+                    <DropdownToggle nav caret> FRONT-END </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
+                    <DropdownItem href="#/esco-stats">esco-Stats FRONT-END</DropdownItem>
+                    <DropdownItem href="#/expo">expo-Stats FRONT-END</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                
+                <Dropdown >
+                    <DropdownToggle nav caret> Gráficas </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
+                    <DropdownItem href="#/graphesco">esco-Stats</DropdownItem>
+                    <DropdownItem href="#/graphexpo">Expo-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+            <!--<NavItem>
+                <NavLink style="float:right; margin:left;" href="#/about">Acerca de</NavLink>
+            </NavItem>-->
+            </Nav>
+        </Navbar>
+
             <div id="chart"></div>
            
           

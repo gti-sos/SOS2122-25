@@ -8,13 +8,13 @@
         let tec = ["expo_tec"];
         let m = ["expo_m"];
         let bys = ["tot_esco"]; 
-        let seventy =["ages_seventy"];
-        let fifty_seventy =["ages_fifty_seventy"];
-        let zero_fifty =["ages_zero_fifty"];
+        let prod = ["production"];
+        let AbsC = ["absolute_change"];
+        let RelC = ["relative_change"]; 
         async function getData(){
             console.log("Fetching stats....");
             const res = await fetch("/api/v1/expo");
-            const res1= await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats")
+            const res1= await fetch("https://sos2122-20.herokuapp.com/api/v1/agriculturalproduction-stats")
             if(res.ok&&res1.ok){
                 const data = await res.json();
                 const data1= await res1.json();
@@ -27,9 +27,9 @@
                     tec.push(stat.expo_tec);
                     m.push(stat.expo_m);
                     bys.push(stat.tot_esco);
-                    seventy.push(0);
-                    fifty_seventy.push(0);
-                    zero_fifty.push(0);
+                    prod.push(0);
+                    AbsC.push(0);
+                    RelC.push(0);
                               
                 });
                 stats1 = data1;
@@ -38,9 +38,9 @@
                 stats1.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
               
-                    seventy.push(stat.ages_seventy);
-                    fifty_seventy.push(stat.ages_fifty_seventy);
-                    zero_fifty.push(stat.ages_zero_fifty); 
+                    prod.push(stat.production);
+                    AbsC.push(stat.absolute_change);
+                    RelC.push(stat.relative_change);
                     tec.push(0);
                     m.push(0);
                     bys.push(0);
@@ -59,22 +59,23 @@
                 labels: country,
                 datasets: [
                     {
-                        label: "Muertes 0-50 años",
-                        backgroundColor: "rgb(0, 128, 128)",
-                        borderColor: "rgb(255, 255, 255)",
-                        data: zero_fifty,
+
+                        label: "Produccion",
+                        backgroundColor: "#1111FF",
+                        borderColor: "#1111FF",
+                        data: prod,
                     },
                     {
-                        label: "Muertes 50-70 años",
-                        backgroundColor: "rgb(255, 0 ,0)",
-                        borderColor: "rgb(255, 255, 255)",
-                        data: fifty_seventy,
+                        label: "Cambio Absoluto",
+                        backgroundColor: "#007100",
+                        borderColor: "#007100",
+                        data: AbsC,
                     },
                     {
-                        label: "Muertes 70 años",
-                        backgroundColor: "rgb(255, 255, 0)",
-                        borderColor: "rgb(255, 255, 255)",
-                        data: seventy,
+                        label: "Cambio Relativo",
+                        backgroundColor: "#ff9100",
+                        borderColor: "#ff9100",
+                        data: RelC,
                     },
                     {
                         label: "Exportaciones Tecnológicas",

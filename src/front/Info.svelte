@@ -80,15 +80,13 @@
     <p>- <a href="./#/economies-graph">https://SOS2122-25.herokuapp.com/#/economies-graph </a>(developed by <a href="https://github.com/Damiangc99">Damiangc99</a>)</p>
     <p>- <a href="./#/graphesco">https://SOS2122-25.herokuapp.com/#/graphesco </a>(developed by <a href="https://github.com/AngelSM11">Angel Simon Mesa</a>)</p>
     <p>- <a href="#/graphexpo">https://SOS2122-25.herokuapp.com/#/graphexpo </a>(developed by <a href="https://github.com/adriperez01">Adrián Pérez Gómez</a>)</p>
+	<br>
+	<h3>GRÁFICA COMÚN:</h3>
 	<p>- <a href="./#/graph">https://SOS2122-25.herokuapp.com/#/graph </a></p>
 	<br>
-	<h3><a href="https://SOS2122-25.herokuapp.com/#/analytics">INTEGRACIONES</a>:</h3>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion1">https://SOS2122-25.herokuapp.com/#/economies/integracion1 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion2">https://SOS2122-25.herokuapp.com/#/economies/integracion2 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion3">https://SOS2122-25.herokuapp.com/#/economies/integracion3 </a></p>
-	<p>- <a href="./#/integration1">https://SOS2122-25.herokuapp.com/#/intergation1 </a></p>
+	<h3><a href="https://SOS2122-25.herokuapp.com/#/integration">INTEGRACIONES</a></h3>
 	<br>
-	<h3><a href="https://SOS2122-25.herokuapp.com/#/about">ENLACE a los VIDEOS</a></h3>
+	<h3><a href="https://SOS2122-25.herokuapp.com/#/about">VIDEOS</a></h3>
 </main>
 <style>
 	main {

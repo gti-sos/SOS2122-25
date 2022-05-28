@@ -2,7 +2,7 @@
 
     import { onMount } from 'svelte';
     import * as c3 from "c3";
-    import {Table,Button} from 'sveltestrap';
+    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Table,Button} from 'sveltestrap';
     import {pop} from 'svelte-spa-router';
     let apiData = {};
     const delay = ms => new Promise(res => setTimeout(res,ms));
@@ -13,12 +13,12 @@
         let tot_wom = ["tot_wom"];
         let tot_man = ["tot_man"];
         let tot_esco = ["tot_esco"]; 
-        let coefficients =["coefficients"];
-        let educations =["educations"];
-        let lifes =["lifes"];
+        let production =["production"];
+        let absolute_change =["absolute_change"];
+        let relative_change =["relative_change"];
         async function getData(){
             console.log("Fetching stats....");
-            const res = await fetch("api/v1/esco-stats");
+            const res = await fetch("/api/v1/esco-stats");
             const res1= await fetch("/remoteAPI2-esco")
             if(res.ok&&res1.ok){
                 const data = await res.json();
@@ -40,9 +40,9 @@
                 stats1.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
               
-                    coefficients.push(stat.coefficients);
-                    educations.push(stat.educations);
-                    lifes.push(stat.lifes); 
+                    production.push(stat.production);
+                    absolute_change.push(stat.absolute_change);
+                    relative_change.push(stat.relative_change); 
                 });
             }else{
                 console.log("Error cargando los datos");
@@ -63,9 +63,9 @@
            tot_wom,
            tot_man,
            tot_esco,
-           coefficients,
-           educations,
-           lifes,
+           production,
+           absolute_change,
+           relative_change,
            
         ],
         type: 'spline'
@@ -94,7 +94,46 @@
     </svelte:head>
     
     <main>
-    
+        <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
+            <NavbarBrand href="#/info">INICIO</NavbarBrand>
+            <Nav navbar>
+                <Dropdown >
+                    <DropdownToggle nav caret> API </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./api/v2/economies">economies-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="./api/v1/esco-stats">esco-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="./api/v1/expo-stats">expo-Stats</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                
+                <Dropdown>
+                    <DropdownToggle nav caret> FRONT-END </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./#/economies">economies FRONT-END</DropdownItem>
+                    <DropdownItem href="#/esco-stats">esco-Stats FRONT-END</DropdownItem>
+                    <DropdownItem href="#/expo">expo-Stats FRONT-END</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                
+                <Dropdown >
+                    <DropdownToggle nav caret> Gráficas </DropdownToggle>
+                    <DropdownMenu end>
+                    <DropdownItem href="./#/economies-graph">economies-Stats</DropdownItem>
+                    <DropdownItem href="#/graphesco">esco-Stats</DropdownItem>
+                    <DropdownItem href="#/graphexpo">Expo-Stats</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem href="#/graph">Conjunto</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+            <!--<NavItem>
+                <NavLink style="float:right; margin:left;" href="#/about">Acerca de</NavLink>
+            </NavItem>-->
+            </Nav>
+        </Navbar>
             <div id="chart"></div>
            
           

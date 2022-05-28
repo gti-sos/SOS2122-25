@@ -15,7 +15,7 @@
 	import MyGraph from './MyGraph.svelte';
 
 	import about from './about.svelte';
-	import analytics from './analytics.svelte'
+	import analytics from './integration.svelte'
 
 	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
 	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';
@@ -26,13 +26,17 @@
 	import IntegrationEco7 from './frontEconomies/integrationApi7.svelte';
 	import IntegrationEco8 from './frontEconomies/integrationApi8.svelte';
 
-	import Integration1 from './esco-stats/integration1.svelte';
+	
 	import IntegrationExpo1 from './expo-stats/integrationAPIpneumonia.svelte';
+	import IntegrationExpo2 from './expo-stats/integrationAPIagricultural.svelte';
+	import Integration1 from './esco-stats/integration1.svelte';
 	import Integration2 from './esco-stats/integration2.svelte';
-	//import Integration3 from './esco-stats/integration3.svelte';
-	//import Integration4 from './esco-stats/integration4.svelte';
-	//import Integration5 from './esco-stats/integration5.svelte';
-	//import Integration6 from './esco-stats/integration6.svelte';
+	import Integration3 from './esco-stats/integration3.svelte';
+	import Integration4 from './esco-stats/integration4.svelte';
+	import Integration5 from './esco-stats/integration5.svelte';
+	import Integration5b from './esco-stats/integration5b.svelte';
+	import Integration6 from './esco-stats/integration6.svelte';
+	import Integration7 from './esco-stats/integration7.svelte';
 	
 
 	//export let name;
@@ -41,7 +45,7 @@
 		'/' : Home,
 		"/info" : Info,
 		"/about" : about,
-		"/analytics" : analytics,
+		"/integration" : analytics,
 		"/esco-stats" : esco,
 		"/esco/:country/:year" : Editesco,
 		"/graphesco": MyGraphesco,
@@ -53,6 +57,7 @@
 		"/graphexpo" : ExpoGraph,
 		"/graph": MyGraph,
 		"/expo/integrationExpo1": IntegrationExpo1,
+		"/expo/integrationExpo2": IntegrationExpo2,
 		"/economies/integracion1": IntegrationEco1,
 		"/economies/integracion2": IntegrationEco2,
 		"/economies/integracion3": IntegrationEco3,
@@ -64,10 +69,12 @@
 
 		"/integration1": Integration1,
 		"/integration2": Integration2,
-		//"/integration3": Integration3,
-		//"/integration4": Integration4,
-		//"/integration5": Integration5,
-		//"/integration6": Integration6,
+		"/integration3": Integration3,
+		"/integration4": Integration4,
+		"/integration5": Integration5,
+		"/integration5b": Integration5b,
+		"/integration6": Integration6,
+		"/integration7": Integration7,
 
 
 	};

@@ -13,13 +13,13 @@
         let tot_wom = ["tot_wom"];
         let tot_man = ["tot_man"];
         let tot_esco = ["tot_esco"]; 
-        let public_expenditure =["public_expenditure"];
-        let pe_to_gdp =["pe_to_gdp"];
-        let pe_on_defence =["pe_on_defence"];
+        let total_debt =["total_debt"];
+        let debt_gdp =["debt_gdp"];
+        let per_capita_debt =["per_capita_debt"];
         async function getData(){
             console.log("Fetching stats....");
             const res = await fetch("/api/v1/esco-stats");
-            const res1= await fetch("/remoteAPI4-esco")
+            const res1= await fetch("/remoteAPI5b-esco")
             if(res.ok&&res1.ok){
                 const data = await res.json();
                 const data1= await res1.json();
@@ -40,9 +40,9 @@
                 stats1.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
               
-                    public_expenditure.push(stat.public_expenditure);
-                    pe_to_gdp.push(stat.pe_to_gdp);
-                    pe_on_defence.push(stat.pe_on_defence); 
+                    total_debt.push(stat.total_debt);
+                    debt_gdp.push(stat.debt_gdp);
+                    per_capita_debt.push(stat.per_capita_debt); 
                 });
             }else{
                 console.log("Error cargando los datos");
@@ -63,9 +63,9 @@
            tot_wom,
            tot_man,
            tot_esco,
-           public_expenditure,
-           pe_to_gdp,
-           pe_on_defence,
+           total_debt,
+           debt_gdp,
+           per_capita_debt,
            
         ],
         type: 'spline'
