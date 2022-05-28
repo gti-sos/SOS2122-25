@@ -61,6 +61,7 @@
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion3">https://SOS2122-25.herokuapp.com/#/integracion3 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion4">https://SOS2122-25.herokuapp.com/#/integracion4 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion5">https://SOS2122-25.herokuapp.com/#/integracion5 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion5b">https://SOS2122-25.herokuapp.com/#/integracion5b </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion6">https://SOS2122-25.herokuapp.com/#/integracion6 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion7">https://SOS2122-25.herokuapp.com/#/integracion7 </a></p>
 </main>

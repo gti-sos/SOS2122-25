@@ -29,6 +29,7 @@
 	import Integration3 from './esco-stats/integration3.svelte';
 	import Integration4 from './esco-stats/integration4.svelte';
 	import Integration5 from './esco-stats/integration5.svelte';
+	import Integration5b from './esco-stats/integration5b.svelte';
 	import Integration6 from './esco-stats/integration6.svelte';
 	import Integration7 from './esco-stats/integration7.svelte';
 	
@@ -61,6 +62,7 @@
 		"/integration3": Integration3,
 		"/integration4": Integration4,
 		"/integration5": Integration5,
+		"/integration5b": Integration5b,
 		"/integration6": Integration6,
 		"/integration7": Integration7,
 

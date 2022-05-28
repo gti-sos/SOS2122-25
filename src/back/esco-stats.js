@@ -82,6 +82,8 @@ var paths4='/remoteAPI4-esco';
 var apiServerHost4 = 'https://sos2122-27.herokuapp.com/api/v2/public-expenditure-stats';
 var paths5='/remoteAPI5-esco';
 var apiServerHost5 = 'https://sos2122-26.herokuapp.com/api/v2/defense-spent-stats';
+var paths5b='/remoteAPI5b-esco';
+var apiServerHost5b = 'https://sos2122-27.herokuapp.com/api/v2/public-debt-stats';
 
 module.exports.register = (app, db) => {
 
@@ -111,6 +113,12 @@ module.exports.register = (app, db) => {
 
     app.use(paths5, function(req, res) {
         var url = apiServerHost5 + req.url;
+        console.log('piped: '+ req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+
+    app.use(paths5b, function(req, res) {
+        var url = apiServerHost5b + req.url;
         console.log('piped: '+ req.baseUrl + req.url);
         req.pipe(request(url)).pipe(res);
     });
