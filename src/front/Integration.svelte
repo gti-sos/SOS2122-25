@@ -61,14 +61,14 @@
     <h3>Integraciones Adrián Pérez:</h3>
     <br>
 	<h3>Integraciones Ángel Simón Mesa:</h3>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion1">https://SOS2122-25.herokuapp.com/#/integracion1 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion2">https://SOS2122-25.herokuapp.com/#/integracion2 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion3">https://SOS2122-25.herokuapp.com/#/integracion3 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion4">https://SOS2122-25.herokuapp.com/#/integracion4 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion5">https://SOS2122-25.herokuapp.com/#/integracion5 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion5b">https://SOS2122-25.herokuapp.com/#/integracion5b </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion6">https://SOS2122-25.herokuapp.com/#/integracion6 </a></p>
-	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion7">https://SOS2122-25.herokuapp.com/#/integracion7 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration1">https://SOS2122-25.herokuapp.com/#/integration1 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration2">https://SOS2122-25.herokuapp.com/#/integration2 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration3">https://SOS2122-25.herokuapp.com/#/integration3 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration4">https://SOS2122-25.herokuapp.com/#/integration4 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration5">https://SOS2122-25.herokuapp.com/#/integration5 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration5b">https://SOS2122-25.herokuapp.com/#/integration5b </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration6">https://SOS2122-25.herokuapp.com/#/integration6 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration7">https://SOS2122-25.herokuapp.com/#/integration7 </a></p>
 </main>
 <style>
 	main {
