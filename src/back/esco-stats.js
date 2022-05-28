@@ -75,7 +75,13 @@ var esco_stats = [
 var paths1='/remoteAPI1-esco';
 var apiServerHost1 = 'https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats';
 var paths2='/remoteAPI2-esco';
-var apiServerHost2 = 'https://sos2122-11.herokuapp.com/api/v2/inequality-stats';
+var apiServerHost2 = 'https://sos2122-20.herokuapp.com/api/v1/agriculturalproduction-stats';
+var paths3='/remoteAPI3-esco';
+var apiServerHost3 = 'https://sos2122-22.herokuapp.com/api/v2/co2-stats';
+var paths4='/remoteAPI4-esco';
+var apiServerHost4 = 'https://sos2122-27.herokuapp.com/api/v2/public-expenditure-stats';
+var paths5='/remoteAPI5-esco';
+var apiServerHost5 = 'https://sos2122-26.herokuapp.com/api/v2/defense-spent-stats';
 
 module.exports.register = (app, db) => {
 
@@ -87,6 +93,24 @@ module.exports.register = (app, db) => {
 
     app.use(paths2, function(req, res) {
         var url = apiServerHost2 + req.url;
+        console.log('piped: '+ req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+
+    app.use(paths3, function(req, res) {
+        var url = apiServerHost3 + req.url;
+        console.log('piped: '+ req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+
+    app.use(paths4, function(req, res) {
+        var url = apiServerHost4 + req.url;
+        console.log('piped: '+ req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });  
+
+    app.use(paths5, function(req, res) {
+        var url = apiServerHost5 + req.url;
         console.log('piped: '+ req.baseUrl + req.url);
         req.pipe(request(url)).pipe(res);
     });
