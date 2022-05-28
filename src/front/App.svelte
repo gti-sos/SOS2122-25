@@ -15,15 +15,16 @@
 	import MyGraph from './MyGraph.svelte';
 
 	import about from './about.svelte';
-	import analytics from './analytics.svelte'
+	import analytics from './integration.svelte'
 
 	import IntegrationEco1 from './frontEconomies/integrationApi1.svelte';
 	import IntegrationEco2 from './frontEconomies/integrationApi2.svelte';
 	import IntegrationEco3 from './frontEconomies/integrationApi3.svelte';
 
-	import Integration1 from './esco-stats/integration1.svelte';
+	
 	import IntegrationExpo1 from './expo-stats/integrationAPIpneumonia.svelte';
 	import IntegrationExpo2 from './expo-stats/integrationAPIagricultural.svelte';
+	import Integration1 from './esco-stats/integration1.svelte';
 	import Integration2 from './esco-stats/integration2.svelte';
 	import Integration3 from './esco-stats/integration3.svelte';
 	import Integration4 from './esco-stats/integration4.svelte';
@@ -38,7 +39,7 @@
 		'/' : Home,
 		"/info" : Info,
 		"/about" : about,
-		"/analytics" : analytics,
+		"/integration" : analytics,
 		"/esco-stats" : esco,
 		"/esco/:country/:year" : Editesco,
 		"/graphesco": MyGraphesco,

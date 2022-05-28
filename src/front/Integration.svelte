@@ -56,7 +56,13 @@
     <h3>Integraciones Adrián Pérez:</h3>
     <br>
 	<h3>Integraciones Ángel Simón Mesa:</h3>
-	<p>- <a href="./#/integration1">https://SOS2122-25.herokuapp.com/#/intergation1 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion1">https://SOS2122-25.herokuapp.com/#/integracion1 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion2">https://SOS2122-25.herokuapp.com/#/integracion2 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion3">https://SOS2122-25.herokuapp.com/#/integracion3 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion4">https://SOS2122-25.herokuapp.com/#/integracion4 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion5">https://SOS2122-25.herokuapp.com/#/integracion5 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion6">https://SOS2122-25.herokuapp.com/#/integracion6 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integracion7">https://SOS2122-25.herokuapp.com/#/integracion7 </a></p>
 </main>
 <style>
 	main {
