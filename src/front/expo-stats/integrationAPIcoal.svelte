@@ -8,13 +8,14 @@
         let tec = ["expo_tec"];
         let m = ["expo_m"];
         let bys = ["tot_esco"]; 
-        let prod = ["production"];
-        let AbsC = ["absolute_change"];
-        let RelC = ["relative_change"]; 
+        let exp = [];
+        let prod = [];
+        let cons = [];
+        let exports_stats = []; 
         async function getData(){
             console.log("Fetching stats....");
             const res = await fetch("/api/v1/expo");
-            const res1= await fetch("/remoteAPI2")
+            const res1= await fetch("https://sos2122-22.herokuapp.com/api/v2/coal-stats")
             if(res.ok&&res1.ok){
                 const data = await res.json();
                 const data1= await res1.json();
@@ -27,9 +28,9 @@
                     tec.push(stat.expo_tec);
                     m.push(stat.expo_m);
                     bys.push(stat.tot_esco);
+                    exp.push(0);
                     prod.push(0);
-                    AbsC.push(0);
-                    RelC.push(0);
+                    cons.push(0);
                               
                 });
                 stats1 = data1;
@@ -38,9 +39,9 @@
                 stats1.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
               
-                    prod.push(stat.production);
-                    AbsC.push(stat.absolute_change);
-                    RelC.push(stat.relative_change);
+                    exp.push(stat.exports);
+                    prod.push(stat.productions);
+                    cons.push(stat.consumption);
                     tec.push(0);
                     m.push(0);
                     bys.push(0);
@@ -54,28 +55,28 @@
     async function loadGraph() {
         var ctx = document.getElementById("myChart").getContext("2d");
         var trace_olympic_gold_medals = new Chart(ctx, {
-            type: "radar",
+            type: "bar",
             data: {
                 labels: country,
                 datasets: [
                     {
 
-                        label: "Produccion",
+                        label: "Producciones",
                         backgroundColor: "pink",
                         borderColor: "pink",
                         data: prod,
                     },
                     {
-                        label: "Cambio Absoluto",
+                        label: "Exportaciones",
                         backgroundColor: "#FFF700",
                         borderColor: "#FFF700",
-                        data: AbsC,
+                        data: exp,
                     },
                     {
-                        label: "Cambio Relativo",
+                        label: "Consumo",
                         backgroundColor: "FF00E8",
                         borderColor: "FF00E8",
-                        data: RelC,
+                        data: cons,
                     },
                     {
                         label: "Exportaciones Tecnológicas",
@@ -112,10 +113,8 @@
 </svelte:head>
 
 <main>
-    <h2>Integracion de API propia y API de Javi grupo 20</h2>
+    <h2>Integracion de API propia y API de Jesús Vena grupo 22</h2>
     <h4>Biblioteca: Chart.js</h4>
-    <!--<button class="btn btn-primary hBack" type="button">Volver</button>
-    <a href="/#/tennis" class="btn btn-primary hBack" role="button" >Volver</a> -->
     <a href="/#/expo" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
 
     <canvas id="myChart" />

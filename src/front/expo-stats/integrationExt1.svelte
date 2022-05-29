@@ -63,26 +63,26 @@
             myChart.destroy();
         }
         myChart = new Chart(ctx, {
-            type: "horizontalBar",
+            type: "bar",
             data: {
                 labels: country,
                 datasets: [
                     {
                         label: "Casos Activos",
-                        backgroundColor: "rgb(0, 128, 128)",
-                        borderColor: "rgb(255, 255, 255)",
+                        backgroundColor: "pink",
+                        borderColor: "pink",
                         data: Cases,
                     },
                     {
                         label: "Casos Totales",
-                        backgroundColor: "	#000000",
-                        borderColor: "	#000000",
+                        backgroundColor: "yellow",
+                        borderColor: "yellow",
                         data: TC,
                     },
                     {
                         label: "Numero de Tests",
-                        backgroundColor: "#0000FF",
-                        borderColor: "#0000FF",
+                        backgroundColor: "purple",
+                        borderColor: "purple",
                         data: T,
                     },
                     {
@@ -128,7 +128,7 @@
 </svelte:head>
 
 <main>
-    <h2>API Externa (CovidStats)</h2>
+    <h2>Gráfica comparativa de los datos del COVID19 (API Externa) y las Exportaciones(Mi API)</h2>
     <a href="/#/info" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
 
     <canvas id="myChart" />

@@ -236,8 +236,8 @@ module.exports.register = (app, db) =>{
     
     
     
-    app.post(BASE_API_URL_EXPO_STATS,(req, res)=>{
-        
+    app.post(BASE_API_URL_EXPO_STATS, (req, res) => {
+
         if (comprobar_body(req)) {
             res.sendStatus(400, "BAD REQUEST - INCORRECT PARAMETERS");
         } else {

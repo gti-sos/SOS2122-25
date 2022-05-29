@@ -59,6 +59,13 @@
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/economies/integracion8">https://SOS2122-25.herokuapp.com/#/economies/integracion8 </a></p>
     <br>
     <h3>Integraciones Adrián Pérez:</h3>
+	<h5>APIs Internas</h5>	
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo1">https://SOS2122-25.herokuapp.com/#/expo/IntegrationExpo1 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo2">https://SOS2122-25.herokuapp.com/#/expo/integrationExpo2 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo3">https://SOS2122-25.herokuapp.com/#/expo/IntegrationExpo3 </a></p>
+	<h5>APIs Externas</h5>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExt1">https://SOS2122-25.herokuapp.com/#/expo/integrationExt1 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExt2">https://SOS2122-25.herokuapp.com/#/expo/IntegrationExt2 </a></p>
     <br>
 	<h3>Integraciones Ángel Simón Mesa:</h3>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/integration1">https://SOS2122-25.herokuapp.com/#/integration1 </a></p>
