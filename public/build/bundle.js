@@ -32200,23 +32200,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$o, 138, 4, 3714);
+    			add_location(script0, file$o, 128, 4, 3839);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$o, 139, 4, 3785);
+    			add_location(script1, file$o, 129, 4, 3910);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$o, 140, 4, 3863);
+    			add_location(script2, file$o, 130, 4, 3988);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$o, 141, 4, 3943);
+    			add_location(script3, file$o, 131, 4, 4068);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$o, 142, 4, 4024);
+    			add_location(script4, file$o, 132, 4, 4149);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$o, 149, 8, 4180);
-    			add_location(code, file$o, 152, 12, 4347);
+    			add_location(div, file$o, 139, 8, 4305);
+    			add_location(code, file$o, 142, 12, 4472);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$o, 150, 8, 4216);
+    			add_location(p, file$o, 140, 8, 4341);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$o, 148, 4, 4136);
-    			add_location(main, file$o, 146, 0, 4122);
+    			add_location(figure, file$o, 138, 4, 4261);
+    			add_location(main, file$o, 136, 0, 4247);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32329,44 +32329,31 @@ var app = (function () {
     			console.log("Error in request");
     		}
 
-    		Highcharts.chart("container", {
+    		Highcharts.chart('container', {
+    			chart: { type: 'areaspline' },
     			title: {
-    				text: "Economia, escolarizacion y exportaciones"
-    			},
-    			subtitle: { text: "" },
-    			yAxis: {
-    				title: {
-    					text: "economia escolarizacion y exportaciones"
-    				}
-    			},
-    			xAxis: {
-    				title: { text: "Pais-año" },
-    				categories: country
+    				text: 'Economia escolarizacion exportaciones'
     			},
     			legend: {
-    				layout: "vertical",
-    				align: "right",
-    				verticalAlign: "middle"
+    				layout: 'vertical',
+    				align: 'left',
+    				verticalAlign: 'top',
+    				x: 150,
+    				y: 100,
+    				floating: true,
+    				borderWidth: 1,
+    				backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
     			},
+    			xAxis: { type: "category", categories: country },
+    			yAxis: { title: { text: 'units' } },
+    			tooltip: { shared: true, valueSuffix: ' units' },
+    			credits: { enabled: false },
+    			plotOptions: { areaspline: { fillOpacity: 0.5 } },
     			series: [
-    				{ name: 'expo', data: ages1 },
+    				{ name: 'Economies', data: ages3 },
     				{ name: 'esco', data: ages2 },
-    				{ name: 'economies', data: ages3 }
-    			],
-    			responsive: {
-    				rules: [
-    					{
-    						condition: { maxWidth: 500 },
-    						chartOptions: {
-    							legend: {
-    								layout: "horizontal",
-    								align: "center",
-    								verticalAlign: "bottom"
-    							}
-    						}
-    					}
-    				]
-    			}
+    				{ name: 'expo', data: ages1 }
+    			]
     		});
     	}
 
@@ -92257,7 +92244,7 @@ var app = (function () {
     		c: function create() {
     			main = element$1("main");
     			create_component(router.$$.fragment);
-    			add_location(main, file, 98, 0, 3669);
+    			add_location(main, file, 102, 0, 3745);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -92313,6 +92300,7 @@ var app = (function () {
     		"/expo/:country/:year": EditExpo_1,
     		"/graphexpo": ExpoGraph,
     		"/graph": MyGraph,
+    		"/analytics": MyGraph,
     		//INTEGRACIONES EXPO
     		"/expo/integrationExpo1": IntegrationAPIpneumonia,
     		"/expo/integrationExpo2": IntegrationAPIagricultural,
@@ -92358,6 +92346,7 @@ var app = (function () {
     		EditExpo: EditExpo_1,
     		ExpoGraph,
     		MyGraph,
+    		analytics: MyGraph,
     		about: About,
     		Integration,
     		IntegrationEco1: IntegrationApi1,

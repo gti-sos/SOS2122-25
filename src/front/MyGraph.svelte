@@ -68,66 +68,56 @@
 
     
 
-        Highcharts.chart("container", {
-        title: {
-            text: "Economia, escolarizacion y exportaciones",
-        },
-
-        subtitle: {
-            text: "",
-        },
-
-        yAxis: {
-            title: {
-                text: "economia escolarizacion y exportaciones",
+        Highcharts.chart('container', {
+            chart: {
+                type: 'areaspline'
             },
-
-        },
-
-        xAxis: {
             title: {
-                text: "Pais-año",
-            },categories: country,
-        },
-
-        legend: {
-            layout: "vertical",
-            align: "right",
-            verticalAlign: "middle",
-        },
-
-        
-
-        series: [
-        {
-        name: 'expo',
-        data: ages1,
-    },{
-        name: 'esco',
-        data: ages2,
-    },{
-        name: 'economies',
-        data: ages3,
-    },
-    ],
-
-        responsive: {
-            rules: [
-                {
-                    condition: {
-                        maxWidth: 500,
-                    },
-                    chartOptions: {
-                        legend: {
-                            layout: "horizontal",
-                            align: "center",
-                            verticalAlign: "bottom",
-                        },
-                    },
-                },
-            ],
-        },
-    });
+                text: 'Economia escolarizacion exportaciones'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 150,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor:
+                    Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
+            },
+            xAxis: {
+                type: "category",
+                categories: country
+            },
+            yAxis: {
+                title: {
+                    text: 'units'
+                }
+            },
+            tooltip: {
+                shared: true,
+                valueSuffix: ' units'
+            },
+            credits: {
+                enabled: false
+            },
+            plotOptions: {
+                areaspline: {
+                    fillOpacity: 0.5
+                }
+            },
+            series: [{
+                name: 'Economies',
+                data: ages3
+            }, {
+                name: 'esco',
+                data: ages2
+            },{
+                name: 'expo',
+                data: ages1                
+            }]
+        });
 
     }
    

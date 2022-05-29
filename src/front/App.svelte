@@ -13,8 +13,11 @@
 	import EditExpo from "./expo-stats/EditExpo.svelte";
 	import ExpoGraph from './expo-stats/ExpoGraph.svelte';
 	import MyGraph from './MyGraph.svelte';
+	import analytics from './MyGraph.svelte';
 
 	import about from './about.svelte';
+
+
 
 
 	import Integration from './Integration.svelte';
@@ -64,6 +67,7 @@
 		"/expo/:country/:year" : EditExpo,
 		"/graphexpo" : ExpoGraph,
 		"/graph": MyGraph,
+		"/analytics": analytics,
 		//INTEGRACIONES EXPO
 		"/expo/integrationExpo1": IntegrationExpo1,
 		"/expo/integrationExpo2": IntegrationExpo2,
