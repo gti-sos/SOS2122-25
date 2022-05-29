@@ -32,6 +32,8 @@
 	
 	import IntegrationExpo1 from './expo-stats/integrationAPIpneumonia.svelte';
 	import IntegrationExpo2 from './expo-stats/integrationAPIagricultural.svelte';
+	import IntegrationExt1 from './expo-stats/integrationExt1.svelte';
+	import IntegrationExt2 from './expo-stats/integrationExt2.svelte';
 	import Integration1 from './esco-stats/integration1.svelte';
 	import Integration2 from './esco-stats/integration2.svelte';
 	import Integration3 from './esco-stats/integration3.svelte';
@@ -63,6 +65,8 @@
 		"/graph": MyGraph,
 		"/expo/integrationExpo1": IntegrationExpo1,
 		"/expo/integrationExpo2": IntegrationExpo2,
+		"/expo/integrationExt1": IntegrationExt1,
+		"/expo/integrationExt2": IntegrationExt2,
 		"/economies/integracion1": IntegrationEco1,
 		"/economies/integracion2": IntegrationEco2,
 		"/economies/integracion3": IntegrationEco3,

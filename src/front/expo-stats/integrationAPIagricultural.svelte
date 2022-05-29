@@ -14,7 +14,7 @@
         async function getData(){
             console.log("Fetching stats....");
             const res = await fetch("/api/v1/expo");
-            const res1= await fetch("https://sos2122-20.herokuapp.com/api/v1/agriculturalproduction-stats")
+            const res1= await fetch("/remoteAPI2")
             if(res.ok&&res1.ok){
                 const data = await res.json();
                 const data1= await res1.json();
@@ -61,20 +61,20 @@
                     {
 
                         label: "Produccion",
-                        backgroundColor: "#1111FF",
-                        borderColor: "#1111FF",
+                        backgroundColor: "pink",
+                        borderColor: "pink",
                         data: prod,
                     },
                     {
                         label: "Cambio Absoluto",
-                        backgroundColor: "#007100",
-                        borderColor: "#007100",
+                        backgroundColor: "#FFF700",
+                        borderColor: "#FFF700",
                         data: AbsC,
                     },
                     {
                         label: "Cambio Relativo",
-                        backgroundColor: "#ff9100",
-                        borderColor: "#ff9100",
+                        backgroundColor: "FF00E8",
+                        borderColor: "FF00E8",
                         data: RelC,
                     },
                     {
@@ -112,7 +112,7 @@
 </svelte:head>
 
 <main>
-    <h2>Integracion de API propia y API de Laura grupo 24</h2>
+    <h2>Integracion de API propia y API de Javi grupo 20</h2>
     <h4>Biblioteca: Chart.js</h4>
     <!--<button class="btn btn-primary hBack" type="button">Volver</button>
     <a href="/#/tennis" class="btn btn-primary hBack" role="button" >Volver</a> -->
