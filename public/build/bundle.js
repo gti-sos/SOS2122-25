@@ -32180,6 +32180,8 @@ var app = (function () {
     	let t2;
     	let code;
     	let t4;
+    	let mounted;
+    	let dispose;
 
     	const block = {
     		c: function create() {
@@ -32199,23 +32201,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$l, 137, 4, 3668);
+    			add_location(script0, file$l, 137, 4, 3576);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$l, 138, 4, 3739);
+    			add_location(script1, file$l, 138, 4, 3669);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$l, 139, 4, 3820);
+    			add_location(script2, file$l, 139, 4, 3772);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$l, 140, 4, 3898);
+    			add_location(script3, file$l, 140, 4, 3872);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$l, 141, 4, 3978);
+    			add_location(script4, file$l, 141, 4, 3974);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$l, 148, 8, 4134);
-    			add_location(code, file$l, 151, 12, 4301);
+    			add_location(div, file$l, 148, 8, 4152);
+    			add_location(code, file$l, 151, 12, 4319);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$l, 149, 8, 4170);
+    			add_location(p, file$l, 149, 8, 4188);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$l, 147, 4, 4090);
-    			add_location(main, file$l, 145, 0, 4076);
+    			add_location(figure, file$l, 147, 4, 4108);
+    			add_location(main, file$l, 145, 0, 4094);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32235,6 +32237,18 @@ var app = (function () {
     			append_dev(p, t2);
     			append_dev(p, code);
     			append_dev(p, t4);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(script0, "load", /*loadGraph*/ ctx[0], false, false, false),
+    					listen_dev(script1, "load", /*loadGraph*/ ctx[0], false, false, false),
+    					listen_dev(script2, "load", /*loadGraph*/ ctx[0], false, false, false),
+    					listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false),
+    					listen_dev(script4, "load", /*loadGraph*/ ctx[0], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
     		},
     		p: noop$4,
     		i: noop$4,
@@ -32247,6 +32261,8 @@ var app = (function () {
     			detach_dev(script4);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
+    			mounted = false;
+    			run_all(dispose);
     		}
     	};
 
@@ -32295,7 +32311,9 @@ var app = (function () {
 
     			//inicializamos los arrays para mostrar los datos
     			expos.forEach(expo => {
-    				ages1.push(expo.expo_m + expo.expo_tec);
+    				country.push(expo.country + "-" + expo.year);
+    				year.push(expo.year);
+    				ages1.push(expo.tot_esco + expo.expo_m + expo.expo_tec);
     				expo_m.push(expo.expo_m);
     				expo_tec.push(expo.expo_tec);
     			});
@@ -32303,20 +32321,21 @@ var app = (function () {
     			economies = data3;
     			console.log("Recibido: " + economies.length);
 
-    			economies.forEach(economy => {
-    				percapita.push(economy.percapita);
-    				currency.push(economy.currency);
-    				currentprices.push(economy.currentprices);
-    				ages3.push(economy.percapita + economy.currency + economy.currentprices);
+    			economies.forEach(economies => {
+    				percapita.push(economies.percapita);
+    				currency.push(economies.currency);
+    				ages3.push(economies.percapita + economies.currency + economies.currentprices);
+    				currentprices.push(economies.currentprices);
     			});
 
     			escos = data2;
     			console.log("Recibido: " + escos.length);
 
     			escos.forEach(esco => {
-    				country.push(esco.country + "-" + esco.year);
-    				year.push(esco.year);
+    				// year.push(esco.year);
+    				//country.push(esco.country);
     				tot_wom.push(esco.tot_wom);
+
     				tot_man.push(esco.tot_man);
     				ages2.push(esco.tot_esco + esco.tot_man + esco.tot_wom);
     				tot_esco.push(esco.tot_esco);
@@ -32417,7 +32436,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [];
+    	return [loadGraph];
     }
 
     class MyGraph extends SvelteComponentDev {
