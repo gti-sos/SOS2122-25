@@ -8,13 +8,14 @@
         let tec = ["expo_tec"];
         let m = ["expo_m"];
         let bys = ["tot_esco"]; 
-        let seventy =["ages_seventy"];
-        let fifty_seventy =["ages_fifty_seventy"];
-        let zero_fifty =["ages_zero_fifty"];
+        let imp = [];
+        let ex = [];
+        let ba= [];
         async function getData(){
             console.log("Fetching stats....");
+            const loaData = await fetch("https://sos2122-22.herokuapp.com/api/v2/trade-stats/loadInitialData");
             const res = await fetch("/api/v1/expo");
-            const res1= await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats")
+            const res1= await fetch("https://sos2122-22.herokuapp.com/api/v2/trade-stats")
             if(res.ok&&res1.ok){
                 const data = await res.json();
                 const data1= await res1.json();
@@ -27,9 +28,9 @@
                     tec.push(stat.expo_tec);
                     m.push(stat.expo_m);
                     bys.push(stat.tot_esco);
-                    seventy.push(0);
-                    fifty_seventy.push(0);
-                    zero_fifty.push(0);
+                    imp.push(0);
+                    ex.push(0);
+                    ba.push(0);
                               
                 });
                 stats1 = data1;
@@ -38,9 +39,9 @@
                 stats1.forEach(stat => {
                     country.push(stat.country+"-"+stat.year);
               
-                    seventy.push(stat.ages_seventy);
-                    fifty_seventy.push(stat.ages_fifty_seventy);
-                    zero_fifty.push(stat.ages_zero_fifty); 
+                    imp.push(stat.import);
+                    ex.push(stat.export);
+                    ba.push(stat.balance);
                     tec.push(0);
                     m.push(0);
                     bys.push(0);
@@ -59,22 +60,22 @@
                 labels: country,
                 datasets: [
                     {
-                        label: "Muertes 0-50 años",
+                        label: "Exportaciones",
                         backgroundColor: "rgb(0, 128, 128)",
                         borderColor: "rgb(255, 255, 255)",
-                        data: zero_fifty,
+                        data: ex,
                     },
                     {
-                        label: "Muertes 50-70 años",
+                        label: "Importaciones",
                         backgroundColor: "rgb(255, 0 ,0)",
                         borderColor: "rgb(255, 255, 255)",
-                        data: fifty_seventy,
+                        data: imp,
                     },
                     {
-                        label: "Muertes 70 años",
+                        label: "Balance",
                         backgroundColor: "rgb(255, 255, 0)",
                         borderColor: "rgb(255, 255, 255)",
-                        data: seventy,
+                        data: ba,
                     },
                     {
                         label: "Exportaciones Tecnológicas",
@@ -111,11 +112,8 @@
 </svelte:head>
 
 <main>
-    <h2>Integracion de API propia y API de Laura grupo 24</h2>
-    <h4>Biblioteca: Chart.js</h4>
-    <!--<button class="btn btn-primary hBack" type="button">Volver</button>
-    <a href="/#/tennis" class="btn btn-primary hBack" role="button" >Volver</a> -->
-    <a href="/#/expo" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
+    <h2>Integracion de mi API con la API de Marco del Grupo22 mediante la biblioteca Chart.js</h2>
+    <a href="/#/expo" class="btn btn-warning" role="button" aria-pressed="true">Atrás</a>
 
     <canvas id="myChart" />
 
@@ -123,9 +121,6 @@
 
 <style>
     h2 {
-        text-align: center;
-    }
-    h4 {
         text-align: center;
     }
 </style>

@@ -112,11 +112,8 @@
 </svelte:head>
 
 <main>
-    <h2>Integracion de API propia y API de Javi grupo 20</h2>
-    <h4>Biblioteca: Chart.js</h4>
-    <!--<button class="btn btn-primary hBack" type="button">Volver</button>
-    <a href="/#/tennis" class="btn btn-primary hBack" role="button" >Volver</a> -->
-    <a href="/#/expo" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
+    <h2>Integracion de mi API con la API de Javier del Grupo20 mediante la biblioteca Chart.js</h2>
+    <a href="/#/expo" class="btn btn-warning" role="button" aria-pressed="true">Atrás</a>
 
     <canvas id="myChart" />
 
@@ -124,9 +121,6 @@
 
 <style>
     h2 {
-        text-align: center;
-    }
-    h4 {
         text-align: center;
     }
 </style>

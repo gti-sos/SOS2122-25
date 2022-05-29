@@ -36,6 +36,7 @@
 	import IntegrationExpo1 from './expo-stats/integrationAPIpneumonia.svelte';
 	import IntegrationExpo2 from './expo-stats/integrationAPIagricultural.svelte';
 	import IntegrationExpo3 from './expo-stats/integrationAPIcoal.svelte';
+	import IntegrationExpo4 from './expo-stats/integrationAPItrade.svelte';
 	import IntegrationExt1 from './expo-stats/integrationExt1.svelte';
 	import IntegrationExt2 from './expo-stats/integrationExt2.svelte';
 	import Integration1 from './esco-stats/integration1.svelte';
@@ -72,6 +73,7 @@
 		"/expo/integrationExpo1": IntegrationExpo1,
 		"/expo/integrationExpo2": IntegrationExpo2,
 		"/expo/integrationExpo3": IntegrationExpo3,
+		"/expo/integrationExpo4": IntegrationExpo4,
 		"/expo/integrationExt1": IntegrationExt1,
 		"/expo/integrationExt2": IntegrationExt2,
 		//INTEGRACIONES
