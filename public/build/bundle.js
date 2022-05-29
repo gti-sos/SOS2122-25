@@ -32202,6 +32202,7 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+<<<<<<< HEAD
     			add_location(script0, file$l, 140, 4, 3896);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
     			add_location(script1, file$l, 141, 4, 3967);
@@ -32219,6 +32220,25 @@ var app = (function () {
     			attr_dev(figure, "class", "highcharts-figure");
     			add_location(figure, file$l, 150, 4, 4340);
     			add_location(main, file$l, 148, 0, 4326);
+=======
+    			add_location(script0, file$l, 138, 4, 3714);
+    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$l, 139, 4, 3785);
+    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$l, 140, 4, 3863);
+    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$l, 141, 4, 3943);
+    			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$l, 142, 4, 4024);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$l, 149, 8, 4180);
+    			add_location(code, file$l, 152, 12, 4347);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$l, 150, 8, 4216);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$l, 148, 4, 4136);
+    			add_location(main, file$l, 146, 0, 4122);
+>>>>>>> 5e277f894b0ca9eae681b7bcbbb0632897dda154
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32238,11 +32258,14 @@ var app = (function () {
     			append_dev(p, t2);
     			append_dev(p, code);
     			append_dev(p, t4);
+<<<<<<< HEAD
 
     			if (!mounted) {
     				dispose = listen_dev(script4, "load", /*loadGraph*/ ctx[0], false, false, false);
     				mounted = true;
     			}
+=======
+>>>>>>> 5e277f894b0ca9eae681b7bcbbb0632897dda154
     		},
     		p: noop$4,
     		i: noop$4,
@@ -32255,8 +32278,11 @@ var app = (function () {
     			detach_dev(script4);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
+<<<<<<< HEAD
     			mounted = false;
     			dispose();
+=======
+>>>>>>> 5e277f894b0ca9eae681b7bcbbb0632897dda154
     		}
     	};
 
@@ -32305,8 +32331,13 @@ var app = (function () {
 
     			//inicializamos los arrays para mostrar los datos
     			expos.forEach(expo => {
+<<<<<<< HEAD
     				/* country.push(expo.country+"-"+expo.year);
     year.push(expo.year); */
+=======
+    				//country.push(expo.country+"-"+expo.year);
+    				//year.push(expo.year);
+>>>>>>> 5e277f894b0ca9eae681b7bcbbb0632897dda154
     				ages1.push(expo.expo_m + expo.expo_tec);
 
     				expo_m.push(expo.expo_m);
@@ -32316,11 +32347,11 @@ var app = (function () {
     			economies = data3;
     			console.log("Recibido: " + economies.length);
 
-    			economies.forEach(economy => {
-    				percapita.push(economy.percapita);
-    				currency.push(economy.currency);
-    				currentprices.push(economy.currentprices);
-    				ages3.push(economy.percapita + economy.currency + economy.currentprices);
+    			economies.forEach(economies => {
+    				percapita.push(economies.percapita);
+    				currency.push(economies.currency);
+    				ages3.push(economies.percapita + economies.currency + economies.currentprices);
+    				currentprices.push(economies.currentprices);
     			});
 
     			escos = data2;
@@ -32328,7 +32359,11 @@ var app = (function () {
 
     			escos.forEach(esco => {
     				year.push(esco.year);
+<<<<<<< HEAD
     				country.push(esco.country);
+=======
+    				country.push(esco.country + "-" + esco.year);
+>>>>>>> 5e277f894b0ca9eae681b7bcbbb0632897dda154
     				tot_wom.push(esco.tot_wom);
     				tot_man.push(esco.tot_man);
     				ages2.push(esco.tot_esco + esco.tot_man + esco.tot_wom);

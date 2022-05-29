@@ -32,8 +32,8 @@
             console.log("Recibido: "+expos.length);
             //inicializamos los arrays para mostrar los datos
             expos.forEach(expo => {
-                /* country.push(expo.country+"-"+expo.year);
-                year.push(expo.year); */
+                //country.push(expo.country+"-"+expo.year);
+                //year.push(expo.year);
                 ages1.push(expo.expo_m+expo.expo_tec);
                 expo_m.push(expo.expo_m);
                 expo_tec.push(expo.expo_tec);   
@@ -41,20 +41,18 @@
 
             economies=data3;
             console.log("Recibido: " + economies.length);
-            economies.forEach(economy=>{
-
-                percapita.push(economy.percapita);
-                currency.push(economy.currency);
-                currentprices.push(economy.currentprices);
-                ages3.push(economy.percapita+economy.currency+economy.currentprices);
+            economies.forEach(economies=>{
+                percapita.push(economies.percapita);
+                currency.push(economies.currency);
+                ages3.push(economies.percapita+economies.currency+economies.currentprices);
+                currentprices.push(economies.currentprices);
             });
             
             escos=data2;
             console.log("Recibido: " + escos.length);
-
             escos.forEach(esco=>{
                 year.push(esco.year);
-                country.push(esco.country);
+                country.push(esco.country+"-"+esco.year);
                 tot_wom.push(esco.tot_wom);
                 tot_man.push(esco.tot_man);
                 ages2.push(esco.tot_esco+esco.tot_man+esco.tot_wom);
@@ -71,65 +69,65 @@
     
 
         Highcharts.chart("container", {
-            title: {
-                text: "Economia, escolarizacion y exportaciones",
-            },
-
-            subtitle: {
-                text: "",
-            },
-
-            yAxis: {
-                title: {
-                    text: "economia escolarizacion y exportaciones",
-                },
-
-            },
-
-            xAxis: {
-                title: {
-                    text: "Pais-año",
-                },categories: country,
-            },
-
-            legend: {
-                layout: "vertical",
-                align: "right",
-                verticalAlign: "middle",
-            },
-
-            
-
-            series: [
-            {
-            name: 'expo',
-            data: ages1,
-        },{
-            name: 'esco',
-            data: ages2,
-        },{
-            name: 'economies',
-            data: ages3,
+        title: {
+            text: "Economia, escolarizacion y exportaciones",
         },
-        ],
 
-            responsive: {
-                rules: [
-                    {
-                        condition: {
-                            maxWidth: 500,
-                        },
-                        chartOptions: {
-                            legend: {
-                                layout: "horizontal",
-                                align: "center",
-                                verticalAlign: "bottom",
-                            },
+        subtitle: {
+            text: "",
+        },
+
+        yAxis: {
+            title: {
+                text: "economia escolarizacion y exportaciones",
+            },
+
+        },
+
+        xAxis: {
+            title: {
+                text: "Pais-año",
+            },categories: country,
+        },
+
+        legend: {
+            layout: "vertical",
+            align: "right",
+            verticalAlign: "middle",
+        },
+
+        
+
+        series: [
+        {
+        name: 'expo',
+        data: ages1,
+    },{
+        name: 'esco',
+        data: ages2,
+    },{
+        name: 'economies',
+        data: ages3,
+    },
+    ],
+
+        responsive: {
+            rules: [
+                {
+                    condition: {
+                        maxWidth: 500,
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: "horizontal",
+                            align: "center",
+                            verticalAlign: "bottom",
                         },
                     },
-                ],
-            },
-        });
+                },
+            ],
+        },
+    });
 
     }
    
@@ -142,7 +140,7 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 </svelte:head>
 
