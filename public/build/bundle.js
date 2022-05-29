@@ -32181,8 +32181,6 @@ var app = (function () {
     	let t2;
     	let code;
     	let t4;
-    	let mounted;
-    	let dispose;
 
     	const block = {
     		c: function create() {
@@ -32202,52 +32200,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$l, 137, 4, 3576);
-=======
-<<<<<<< HEAD
-    			add_location(script0, file$l, 138, 4, 3702);
+    			add_location(script0, file$l, 138, 4, 3714);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$l, 139, 4, 3773);
+    			add_location(script1, file$l, 139, 4, 3785);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$l, 140, 4, 3851);
+    			add_location(script2, file$l, 140, 4, 3863);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$l, 141, 4, 3931);
+    			add_location(script3, file$l, 141, 4, 3943);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$l, 142, 4, 4012);
+    			add_location(script4, file$l, 142, 4, 4024);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$l, 149, 8, 4190);
-    			add_location(code, file$l, 152, 12, 4357);
+    			add_location(div, file$l, 149, 8, 4180);
+    			add_location(code, file$l, 152, 12, 4347);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$l, 150, 8, 4226);
+    			add_location(p, file$l, 150, 8, 4216);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$l, 148, 4, 4146);
-    			add_location(main, file$l, 146, 0, 4132);
-=======
-    			add_location(script0, file$l, 137, 4, 3668);
->>>>>>> 2a1f13513065969a0ab31dee28fbc65ad1999400
-    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$l, 138, 4, 3669);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$l, 139, 4, 3772);
-    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$l, 140, 4, 3872);
-    			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$l, 141, 4, 3974);
-    			attr_dev(div, "id", "container");
-    			add_location(div, file$l, 148, 8, 4152);
-    			add_location(code, file$l, 151, 12, 4319);
-    			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$l, 149, 8, 4188);
-    			attr_dev(figure, "class", "highcharts-figure");
-<<<<<<< HEAD
-    			add_location(figure, file$l, 147, 4, 4108);
-    			add_location(main, file$l, 145, 0, 4094);
-=======
-    			add_location(figure, file$l, 147, 4, 4090);
-    			add_location(main, file$l, 145, 0, 4076);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
->>>>>>> 2a1f13513065969a0ab31dee28fbc65ad1999400
+    			add_location(figure, file$l, 148, 4, 4136);
+    			add_location(main, file$l, 146, 0, 4122);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32267,29 +32236,6 @@ var app = (function () {
     			append_dev(p, t2);
     			append_dev(p, code);
     			append_dev(p, t4);
-<<<<<<< HEAD
-
-    			if (!mounted) {
-    				dispose = [
-    					listen_dev(script0, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script1, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script2, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script3, "load", /*loadGraph*/ ctx[0], false, false, false),
-    					listen_dev(script4, "load", /*loadGraph*/ ctx[0], false, false, false)
-    				];
-
-    				mounted = true;
-    			}
-=======
-<<<<<<< HEAD
-
-    			if (!mounted) {
-    				dispose = listen_dev(script4, "load", /*loadGraph*/ ctx[0], false, false, false);
-    				mounted = true;
-    			}
-=======
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
->>>>>>> 2a1f13513065969a0ab31dee28fbc65ad1999400
     		},
     		p: noop$4,
     		i: noop$4,
@@ -32302,16 +32248,6 @@ var app = (function () {
     			detach_dev(script4);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
-<<<<<<< HEAD
-    			mounted = false;
-    			run_all(dispose);
-=======
-<<<<<<< HEAD
-    			mounted = false;
-    			dispose();
-=======
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
->>>>>>> 2a1f13513065969a0ab31dee28fbc65ad1999400
     		}
     	};
 
@@ -32360,20 +32296,10 @@ var app = (function () {
 
     			//inicializamos los arrays para mostrar los datos
     			expos.forEach(expo => {
-<<<<<<< HEAD
-    				country.push(expo.country + "-" + expo.year);
-    				year.push(expo.year);
-    				ages1.push(expo.tot_esco + expo.expo_m + expo.expo_tec);
-=======
-<<<<<<< HEAD
-    				/* country.push(expo.country+"-"+expo.year);
-    year.push(expo.year); */
+    				//country.push(expo.country+"-"+expo.year);
+    				//year.push(expo.year);
     				ages1.push(expo.expo_m + expo.expo_tec);
 
-=======
-    				ages1.push(expo.expo_m + expo.expo_tec);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
->>>>>>> 2a1f13513065969a0ab31dee28fbc65ad1999400
     				expo_m.push(expo.expo_m);
     				expo_tec.push(expo.expo_tec);
     			});
@@ -32392,20 +32318,9 @@ var app = (function () {
     			console.log("Recibido: " + escos.length);
 
     			escos.forEach(esco => {
-<<<<<<< HEAD
-    				// year.push(esco.year);
-    				//country.push(esco.country);
-=======
-<<<<<<< HEAD
     				year.push(esco.year);
-    				country.push(esco.country);
-=======
     				country.push(esco.country + "-" + esco.year);
-    				year.push(esco.year);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
->>>>>>> 2a1f13513065969a0ab31dee28fbc65ad1999400
     				tot_wom.push(esco.tot_wom);
-
     				tot_man.push(esco.tot_man);
     				ages2.push(esco.tot_esco + esco.tot_man + esco.tot_wom);
     				tot_esco.push(esco.tot_esco);
@@ -32516,7 +32431,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [loadGraph];
+    	return [];
     }
 
     class MyGraph extends SvelteComponentDev {
@@ -91311,11 +91226,7 @@ var app = (function () {
     		c: function create() {
     			main = element$1("main");
     			create_component(router.$$.fragment);
-<<<<<<< HEAD
-    			add_location(main, file, 85, 0, 3267);
-=======
-    			add_location(main, file, 85, 0, 3268);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
+    			add_location(main, file, 90, 0, 3278);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -91412,11 +91323,7 @@ var app = (function () {
     		ExpoGraph,
     		MyGraph,
     		about: About,
-<<<<<<< HEAD
-    		integration: Integration,
-=======
     		Integration,
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		IntegrationEco1: IntegrationApi1,
     		IntegrationEco2: IntegrationApi2,
     		IntegrationEco3: IntegrationApi3,
