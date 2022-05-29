@@ -68,7 +68,7 @@
            per_capita_debt,
            
         ],
-        type: 'spline'
+        type: 'pie'
     },
     axis:{
         x:{

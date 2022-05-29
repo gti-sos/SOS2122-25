@@ -32181,6 +32181,8 @@ var app = (function () {
     	let t2;
     	let code;
     	let t4;
+    	let mounted;
+    	let dispose;
 
     	const block = {
     		c: function create() {
@@ -32200,43 +32202,23 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$l, 138, 4, 3702);
+    			add_location(script0, file$l, 140, 4, 3896);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$l, 139, 4, 3773);
+    			add_location(script1, file$l, 141, 4, 3967);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$l, 140, 4, 3851);
+    			add_location(script2, file$l, 142, 4, 4045);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$l, 141, 4, 3931);
+    			add_location(script3, file$l, 143, 4, 4125);
     			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$l, 142, 4, 4012);
+    			add_location(script4, file$l, 144, 4, 4206);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$l, 149, 8, 4190);
-    			add_location(code, file$l, 152, 12, 4357);
+    			add_location(div, file$l, 151, 8, 4384);
+    			add_location(code, file$l, 154, 12, 4551);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$l, 150, 8, 4226);
+    			add_location(p, file$l, 152, 8, 4420);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$l, 148, 4, 4146);
-    			add_location(main, file$l, 146, 0, 4132);
-=======
-    			add_location(script0, file$l, 137, 4, 3668);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$l, 138, 4, 3739);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$l, 139, 4, 3820);
-    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$l, 140, 4, 3898);
-    			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$l, 141, 4, 3978);
-    			attr_dev(div, "id", "container");
-    			add_location(div, file$l, 148, 8, 4134);
-    			add_location(code, file$l, 151, 12, 4301);
-    			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$l, 149, 8, 4170);
-    			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$l, 147, 4, 4090);
-    			add_location(main, file$l, 145, 0, 4076);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
+    			add_location(figure, file$l, 150, 4, 4340);
+    			add_location(main, file$l, 148, 0, 4326);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32256,14 +32238,11 @@ var app = (function () {
     			append_dev(p, t2);
     			append_dev(p, code);
     			append_dev(p, t4);
-<<<<<<< HEAD
 
     			if (!mounted) {
     				dispose = listen_dev(script4, "load", /*loadGraph*/ ctx[0], false, false, false);
     				mounted = true;
     			}
-=======
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		},
     		p: noop$4,
     		i: noop$4,
@@ -32276,11 +32255,8 @@ var app = (function () {
     			detach_dev(script4);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
-<<<<<<< HEAD
     			mounted = false;
     			dispose();
-=======
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		}
     	};
 
@@ -32329,14 +32305,10 @@ var app = (function () {
 
     			//inicializamos los arrays para mostrar los datos
     			expos.forEach(expo => {
-<<<<<<< HEAD
     				/* country.push(expo.country+"-"+expo.year);
     year.push(expo.year); */
     				ages1.push(expo.expo_m + expo.expo_tec);
 
-=======
-    				ages1.push(expo.expo_m + expo.expo_tec);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     				expo_m.push(expo.expo_m);
     				expo_tec.push(expo.expo_tec);
     			});
@@ -32355,13 +32327,8 @@ var app = (function () {
     			console.log("Recibido: " + escos.length);
 
     			escos.forEach(esco => {
-<<<<<<< HEAD
     				year.push(esco.year);
     				country.push(esco.country);
-=======
-    				country.push(esco.country + "-" + esco.year);
-    				year.push(esco.year);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     				tot_wom.push(esco.tot_wom);
     				tot_man.push(esco.tot_man);
     				ages2.push(esco.tot_esco + esco.tot_man + esco.tot_wom);
@@ -32473,7 +32440,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [];
+    	return [loadGraph];
     }
 
     class MyGraph extends SvelteComponentDev {
@@ -81418,10 +81385,10 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$7, 89, 8, 2843);
+    			add_location(link, file$7, 89, 8, 2840);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$7, 136, 12, 5097);
-    			add_location(main, file$7, 95, 4, 2937);
+    			add_location(div, file$7, 136, 12, 5094);
+    			add_location(main, file$7, 95, 4, 2934);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -81542,7 +81509,7 @@ var app = (function () {
     			bindto: '#chart',
     			data: {
     				columns: [tot_wom, tot_man, tot_esco, production, absolute_change, relative_change],
-    				type: 'spline'
+    				type: 'bar'
     			},
     			axis: {
     				x: { type: 'category', categories: country }
@@ -82964,10 +82931,10 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$6, 89, 8, 2743);
+    			add_location(link, file$6, 89, 8, 2748);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$6, 136, 12, 4997);
-    			add_location(main, file$6, 95, 4, 2837);
+    			add_location(div, file$6, 136, 12, 5002);
+    			add_location(main, file$6, 95, 4, 2842);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -83088,7 +83055,7 @@ var app = (function () {
     			bindto: '#chart',
     			data: {
     				columns: [tot_wom, tot_man, tot_esco, co2_tot, co2_kg, co2_tpc],
-    				type: 'spline'
+    				type: 'area-spline'
     			},
     			axis: {
     				x: { type: 'category', categories: country }
@@ -84510,10 +84477,10 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$5, 89, 8, 2843);
+    			add_location(link, file$5, 89, 8, 2842);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$5, 136, 12, 5097);
-    			add_location(main, file$5, 95, 4, 2937);
+    			add_location(div, file$5, 136, 12, 5096);
+    			add_location(main, file$5, 95, 4, 2936);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -84634,7 +84601,7 @@ var app = (function () {
     			bindto: '#chart',
     			data: {
     				columns: [tot_wom, tot_man, tot_esco, public_expenditure, pe_to_gdp, pe_on_defence],
-    				type: 'spline'
+    				type: 'gauge'
     			},
     			axis: {
     				x: { type: 'category', categories: country }
@@ -86056,10 +86023,10 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$4, 89, 8, 2833);
+    			add_location(link, file$4, 89, 8, 2834);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$4, 136, 12, 5087);
-    			add_location(main, file$4, 95, 4, 2927);
+    			add_location(div, file$4, 136, 12, 5088);
+    			add_location(main, file$4, 95, 4, 2928);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -86180,7 +86147,7 @@ var app = (function () {
     			bindto: '#chart',
     			data: {
     				columns: [tot_wom, tot_man, tot_esco, spen_mill_eur, public_percent, pib_percent],
-    				type: 'spline'
+    				type: 'scatter'
     			},
     			axis: {
     				x: { type: 'category', categories: country }
@@ -87602,10 +87569,10 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$3, 89, 8, 2809);
+    			add_location(link, file$3, 89, 8, 2806);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$3, 136, 12, 5063);
-    			add_location(main, file$3, 95, 4, 2903);
+    			add_location(div, file$3, 136, 12, 5060);
+    			add_location(main, file$3, 95, 4, 2900);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -87726,7 +87693,7 @@ var app = (function () {
     			bindto: '#chart',
     			data: {
     				columns: [tot_wom, tot_man, tot_esco, total_debt, debt_gdp, per_capita_debt],
-    				type: 'spline'
+    				type: 'pie'
     			},
     			axis: {
     				x: { type: 'category', categories: country }
@@ -87812,7 +87779,7 @@ var app = (function () {
     const { console: console_1$1 } = globals;
     const file$2 = "src\\front\\esco-stats\\integration6.svelte";
 
-    // (107:12) <NavbarBrand href="#/info">
+    // (111:12) <NavbarBrand href="#/info">
     function create_default_slot_25$1(ctx) {
     	let t;
 
@@ -87832,14 +87799,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_25$1.name,
     		type: "slot",
-    		source: "(107:12) <NavbarBrand href=\\\"#/info\\\">",
+    		source: "(111:12) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (110:20) <DropdownToggle nav caret>
+    // (114:20) <DropdownToggle nav caret>
     function create_default_slot_24$1(ctx) {
     	let t;
 
@@ -87859,14 +87826,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_24$1.name,
     		type: "slot",
-    		source: "(110:20) <DropdownToggle nav caret>",
+    		source: "(114:20) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (112:20) <DropdownItem href="./api/v2/economies">
+    // (116:20) <DropdownItem href="./api/v2/economies">
     function create_default_slot_23$1(ctx) {
     	let t;
 
@@ -87886,14 +87853,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_23$1.name,
     		type: "slot",
-    		source: "(112:20) <DropdownItem href=\\\"./api/v2/economies\\\">",
+    		source: "(116:20) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:20) <DropdownItem href="./api/v1/esco-stats">
+    // (118:20) <DropdownItem href="./api/v1/esco-stats">
     function create_default_slot_22$1(ctx) {
     	let t;
 
@@ -87913,14 +87880,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_22$1.name,
     		type: "slot",
-    		source: "(114:20) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
+    		source: "(118:20) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:20) <DropdownItem href="./api/v1/expo-stats">
+    // (120:20) <DropdownItem href="./api/v1/expo-stats">
     function create_default_slot_21$1(ctx) {
     	let t;
 
@@ -87940,14 +87907,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_21$1.name,
     		type: "slot",
-    		source: "(116:20) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
+    		source: "(120:20) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (111:20) <DropdownMenu end>
+    // (115:20) <DropdownMenu end>
     function create_default_slot_20$1(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -88072,14 +88039,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_20$1.name,
     		type: "slot",
-    		source: "(111:20) <DropdownMenu end>",
+    		source: "(115:20) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (109:16) <Dropdown >
+    // (113:16) <Dropdown >
     function create_default_slot_19$1(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -88155,14 +88122,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$1.name,
     		type: "slot",
-    		source: "(109:16) <Dropdown >",
+    		source: "(113:16) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (121:20) <DropdownToggle nav caret>
+    // (125:20) <DropdownToggle nav caret>
     function create_default_slot_18$1(ctx) {
     	let t;
 
@@ -88182,14 +88149,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_18$1.name,
     		type: "slot",
-    		source: "(121:20) <DropdownToggle nav caret>",
+    		source: "(125:20) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:20) <DropdownItem href="./#/economies">
+    // (127:20) <DropdownItem href="./#/economies">
     function create_default_slot_17$1(ctx) {
     	let t;
 
@@ -88209,14 +88176,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_17$1.name,
     		type: "slot",
-    		source: "(123:20) <DropdownItem href=\\\"./#/economies\\\">",
+    		source: "(127:20) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (124:20) <DropdownItem href="#/esco-stats">
+    // (128:20) <DropdownItem href="#/esco-stats">
     function create_default_slot_16$1(ctx) {
     	let t;
 
@@ -88236,14 +88203,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$1.name,
     		type: "slot",
-    		source: "(124:20) <DropdownItem href=\\\"#/esco-stats\\\">",
+    		source: "(128:20) <DropdownItem href=\\\"#/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:20) <DropdownItem href="#/expo">
+    // (129:20) <DropdownItem href="#/expo">
     function create_default_slot_15$1(ctx) {
     	let t;
 
@@ -88263,14 +88230,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_15$1.name,
     		type: "slot",
-    		source: "(125:20) <DropdownItem href=\\\"#/expo\\\">",
+    		source: "(129:20) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:20) <DropdownItem href="#/graph">
+    // (131:20) <DropdownItem href="#/graph">
     function create_default_slot_14$1(ctx) {
     	let t;
 
@@ -88290,14 +88257,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_14$1.name,
     		type: "slot",
-    		source: "(127:20) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(131:20) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (122:20) <DropdownMenu end>
+    // (126:20) <DropdownMenu end>
     function create_default_slot_13$1(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -88436,14 +88403,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$1.name,
     		type: "slot",
-    		source: "(122:20) <DropdownMenu end>",
+    		source: "(126:20) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (120:16) <Dropdown>
+    // (124:16) <Dropdown>
     function create_default_slot_12$1(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -88519,14 +88486,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12$1.name,
     		type: "slot",
-    		source: "(120:16) <Dropdown>",
+    		source: "(124:16) <Dropdown>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (132:20) <DropdownToggle nav caret>
+    // (136:20) <DropdownToggle nav caret>
     function create_default_slot_11$1(ctx) {
     	let t;
 
@@ -88546,14 +88513,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$1.name,
     		type: "slot",
-    		source: "(132:20) <DropdownToggle nav caret>",
+    		source: "(136:20) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (134:20) <DropdownItem href="./#/economies-graph">
+    // (138:20) <DropdownItem href="./#/economies-graph">
     function create_default_slot_10$1(ctx) {
     	let t;
 
@@ -88573,14 +88540,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10$1.name,
     		type: "slot",
-    		source: "(134:20) <DropdownItem href=\\\"./#/economies-graph\\\">",
+    		source: "(138:20) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (135:20) <DropdownItem href="#/graphesco">
+    // (139:20) <DropdownItem href="#/graphesco">
     function create_default_slot_9$1(ctx) {
     	let t;
 
@@ -88600,14 +88567,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$1.name,
     		type: "slot",
-    		source: "(135:20) <DropdownItem href=\\\"#/graphesco\\\">",
+    		source: "(139:20) <DropdownItem href=\\\"#/graphesco\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:20) <DropdownItem href="#/graphexpo">
+    // (140:20) <DropdownItem href="#/graphexpo">
     function create_default_slot_8$1(ctx) {
     	let t;
 
@@ -88627,14 +88594,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(136:20) <DropdownItem href=\\\"#/graphexpo\\\">",
+    		source: "(140:20) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (138:20) <DropdownItem href="#/graph">
+    // (142:20) <DropdownItem href="#/graph">
     function create_default_slot_7$1(ctx) {
     	let t;
 
@@ -88654,14 +88621,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$1.name,
     		type: "slot",
-    		source: "(138:20) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(142:20) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:20) <DropdownMenu end>
+    // (137:20) <DropdownMenu end>
     function create_default_slot_6$1(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -88800,14 +88767,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(133:20) <DropdownMenu end>",
+    		source: "(137:20) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (131:16) <Dropdown >
+    // (135:16) <Dropdown >
     function create_default_slot_5$1(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -88883,14 +88850,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$1.name,
     		type: "slot",
-    		source: "(131:16) <Dropdown >",
+    		source: "(135:16) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (108:12) <Nav navbar>
+    // (112:12) <Nav navbar>
     function create_default_slot_4$1(ctx) {
     	let dropdown0;
     	let t0;
@@ -88988,14 +88955,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$1.name,
     		type: "slot",
-    		source: "(108:12) <Nav navbar>",
+    		source: "(112:12) <Nav navbar>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
+    // (110:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot_3$1(ctx) {
     	let navbarbrand;
     	let t;
@@ -89070,14 +89037,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$1.name,
     		type: "slot",
-    		source: "(106:8) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(110:8) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:8) <Button outline color="success" on:click={Loadinfo}>
+    // (154:8) <Button outline color="success" on:click={Loadinfo}>
     function create_default_slot_2$1(ctx) {
     	let t;
 
@@ -89097,14 +89064,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$1.name,
     		type: "slot",
-    		source: "(150:8) <Button outline color=\\\"success\\\" on:click={Loadinfo}>",
+    		source: "(154:8) <Button outline color=\\\"success\\\" on:click={Loadinfo}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (154:8) <Button on:click="{pop}">
+    // (158:8) <Button on:click="{pop}">
     function create_default_slot_1$1(ctx) {
     	let t;
 
@@ -89124,14 +89091,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(154:8) <Button on:click=\\\"{pop}\\\">",
+    		source: "(158:8) <Button on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (158:12) {#if checkMSG}
+    // (162:12) {#if checkMSG}
     function create_if_block$1(ctx) {
     	let t;
 
@@ -89154,14 +89121,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(158:12) {#if checkMSG}",
+    		source: "(162:12) {#if checkMSG}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (157:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
+    // (161:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
     function create_default_slot$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*checkMSG*/ ctx[0] && create_if_block$1(ctx);
@@ -89199,7 +89166,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$1.name,
     		type: "slot",
-    		source: "(157:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
+    		source: "(161:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
     		ctx
     	});
 
@@ -89281,10 +89248,10 @@ var app = (function () {
     			create_component(alert.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$2, 98, 8, 3149);
+    			add_location(link, file$2, 102, 8, 3246);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$2, 147, 12, 5415);
-    			add_location(main, file$2, 104, 4, 3243);
+    			add_location(div, file$2, 151, 12, 5512);
+    			add_location(main, file$2, 108, 4, 3340);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -89428,7 +89395,11 @@ var app = (function () {
     			bindto: '#chart',
     			data: {
     				columns: [tot_wom, tot_man, tot_esco],
-    				type: 'spline'
+    				types: {
+    					tot_wom: 'area',
+    					tot_man: 'bar',
+    					tot_esco: 'spline'
+    				}
     			},
     			axis: {
     				x: { type: 'category', categories: country }
@@ -89534,7 +89505,7 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$1 = "src\\front\\esco-stats\\integration7.svelte";
 
-    // (107:12) <NavbarBrand href="#/info">
+    // (111:12) <NavbarBrand href="#/info">
     function create_default_slot_25(ctx) {
     	let t;
 
@@ -89554,14 +89525,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_25.name,
     		type: "slot",
-    		source: "(107:12) <NavbarBrand href=\\\"#/info\\\">",
+    		source: "(111:12) <NavbarBrand href=\\\"#/info\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (110:20) <DropdownToggle nav caret>
+    // (114:20) <DropdownToggle nav caret>
     function create_default_slot_24(ctx) {
     	let t;
 
@@ -89581,14 +89552,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_24.name,
     		type: "slot",
-    		source: "(110:20) <DropdownToggle nav caret>",
+    		source: "(114:20) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (112:20) <DropdownItem href="./api/v2/economies">
+    // (116:20) <DropdownItem href="./api/v2/economies">
     function create_default_slot_23(ctx) {
     	let t;
 
@@ -89608,14 +89579,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_23.name,
     		type: "slot",
-    		source: "(112:20) <DropdownItem href=\\\"./api/v2/economies\\\">",
+    		source: "(116:20) <DropdownItem href=\\\"./api/v2/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:20) <DropdownItem href="./api/v1/esco-stats">
+    // (118:20) <DropdownItem href="./api/v1/esco-stats">
     function create_default_slot_22(ctx) {
     	let t;
 
@@ -89635,14 +89606,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_22.name,
     		type: "slot",
-    		source: "(114:20) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
+    		source: "(118:20) <DropdownItem href=\\\"./api/v1/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:20) <DropdownItem href="./api/v1/expo-stats">
+    // (120:20) <DropdownItem href="./api/v1/expo-stats">
     function create_default_slot_21(ctx) {
     	let t;
 
@@ -89662,14 +89633,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_21.name,
     		type: "slot",
-    		source: "(116:20) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
+    		source: "(120:20) <DropdownItem href=\\\"./api/v1/expo-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (111:20) <DropdownMenu end>
+    // (115:20) <DropdownMenu end>
     function create_default_slot_20(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -89794,14 +89765,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_20.name,
     		type: "slot",
-    		source: "(111:20) <DropdownMenu end>",
+    		source: "(115:20) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (109:16) <Dropdown >
+    // (113:16) <Dropdown >
     function create_default_slot_19(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -89877,14 +89848,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_19.name,
     		type: "slot",
-    		source: "(109:16) <Dropdown >",
+    		source: "(113:16) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (121:20) <DropdownToggle nav caret>
+    // (125:20) <DropdownToggle nav caret>
     function create_default_slot_18(ctx) {
     	let t;
 
@@ -89904,14 +89875,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_18.name,
     		type: "slot",
-    		source: "(121:20) <DropdownToggle nav caret>",
+    		source: "(125:20) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:20) <DropdownItem href="./#/economies">
+    // (127:20) <DropdownItem href="./#/economies">
     function create_default_slot_17(ctx) {
     	let t;
 
@@ -89931,14 +89902,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_17.name,
     		type: "slot",
-    		source: "(123:20) <DropdownItem href=\\\"./#/economies\\\">",
+    		source: "(127:20) <DropdownItem href=\\\"./#/economies\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (124:20) <DropdownItem href="#/esco-stats">
+    // (128:20) <DropdownItem href="#/esco-stats">
     function create_default_slot_16(ctx) {
     	let t;
 
@@ -89958,14 +89929,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_16.name,
     		type: "slot",
-    		source: "(124:20) <DropdownItem href=\\\"#/esco-stats\\\">",
+    		source: "(128:20) <DropdownItem href=\\\"#/esco-stats\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:20) <DropdownItem href="#/expo">
+    // (129:20) <DropdownItem href="#/expo">
     function create_default_slot_15(ctx) {
     	let t;
 
@@ -89985,14 +89956,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(125:20) <DropdownItem href=\\\"#/expo\\\">",
+    		source: "(129:20) <DropdownItem href=\\\"#/expo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:20) <DropdownItem href="#/graph">
+    // (131:20) <DropdownItem href="#/graph">
     function create_default_slot_14(ctx) {
     	let t;
 
@@ -90012,14 +89983,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_14.name,
     		type: "slot",
-    		source: "(127:20) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(131:20) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (122:20) <DropdownMenu end>
+    // (126:20) <DropdownMenu end>
     function create_default_slot_13(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -90158,14 +90129,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(122:20) <DropdownMenu end>",
+    		source: "(126:20) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (120:16) <Dropdown>
+    // (124:16) <Dropdown>
     function create_default_slot_12(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -90241,14 +90212,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(120:16) <Dropdown>",
+    		source: "(124:16) <Dropdown>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (132:20) <DropdownToggle nav caret>
+    // (136:20) <DropdownToggle nav caret>
     function create_default_slot_11(ctx) {
     	let t;
 
@@ -90268,14 +90239,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(132:20) <DropdownToggle nav caret>",
+    		source: "(136:20) <DropdownToggle nav caret>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (134:20) <DropdownItem href="./#/economies-graph">
+    // (138:20) <DropdownItem href="./#/economies-graph">
     function create_default_slot_10(ctx) {
     	let t;
 
@@ -90295,14 +90266,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(134:20) <DropdownItem href=\\\"./#/economies-graph\\\">",
+    		source: "(138:20) <DropdownItem href=\\\"./#/economies-graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (135:20) <DropdownItem href="#/graphesco">
+    // (139:20) <DropdownItem href="#/graphesco">
     function create_default_slot_9(ctx) {
     	let t;
 
@@ -90322,14 +90293,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(135:20) <DropdownItem href=\\\"#/graphesco\\\">",
+    		source: "(139:20) <DropdownItem href=\\\"#/graphesco\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:20) <DropdownItem href="#/graphexpo">
+    // (140:20) <DropdownItem href="#/graphexpo">
     function create_default_slot_8(ctx) {
     	let t;
 
@@ -90349,14 +90320,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(136:20) <DropdownItem href=\\\"#/graphexpo\\\">",
+    		source: "(140:20) <DropdownItem href=\\\"#/graphexpo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (138:20) <DropdownItem href="#/graph">
+    // (142:20) <DropdownItem href="#/graph">
     function create_default_slot_7(ctx) {
     	let t;
 
@@ -90376,14 +90347,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(138:20) <DropdownItem href=\\\"#/graph\\\">",
+    		source: "(142:20) <DropdownItem href=\\\"#/graph\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:20) <DropdownMenu end>
+    // (137:20) <DropdownMenu end>
     function create_default_slot_6(ctx) {
     	let dropdownitem0;
     	let t0;
@@ -90522,14 +90493,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(133:20) <DropdownMenu end>",
+    		source: "(137:20) <DropdownMenu end>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (131:16) <Dropdown >
+    // (135:16) <Dropdown >
     function create_default_slot_5(ctx) {
     	let dropdowntoggle;
     	let t;
@@ -90605,14 +90576,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(131:16) <Dropdown >",
+    		source: "(135:16) <Dropdown >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (108:12) <Nav navbar>
+    // (112:12) <Nav navbar>
     function create_default_slot_4(ctx) {
     	let dropdown0;
     	let t0;
@@ -90710,14 +90681,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(108:12) <Nav navbar>",
+    		source: "(112:12) <Nav navbar>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
+    // (110:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot_3(ctx) {
     	let navbarbrand;
     	let t;
@@ -90792,14 +90763,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(106:8) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
+    		source: "(110:8) <Navbar style=\\\"background-color: lightgreen; color:white;\\\" light expand=\\\"lg\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:8) <Button outline color="success" on:click={Loadinfo}>
+    // (154:8) <Button outline color="success" on:click={Loadinfo}>
     function create_default_slot_2(ctx) {
     	let t;
 
@@ -90819,14 +90790,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(150:8) <Button outline color=\\\"success\\\" on:click={Loadinfo}>",
+    		source: "(154:8) <Button outline color=\\\"success\\\" on:click={Loadinfo}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (154:8) <Button on:click="{pop}">
+    // (158:8) <Button on:click="{pop}">
     function create_default_slot_1(ctx) {
     	let t;
 
@@ -90846,14 +90817,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(154:8) <Button on:click=\\\"{pop}\\\">",
+    		source: "(158:8) <Button on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (158:12) {#if checkMSG}
+    // (162:12) {#if checkMSG}
     function create_if_block(ctx) {
     	let t;
 
@@ -90876,14 +90847,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(158:12) {#if checkMSG}",
+    		source: "(162:12) {#if checkMSG}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (157:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
+    // (161:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>
     function create_default_slot(ctx) {
     	let if_block_anchor;
     	let if_block = /*checkMSG*/ ctx[0] && create_if_block(ctx);
@@ -90921,7 +90892,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(157:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
+    		source: "(161:8) <Alert color={color} isOpen={visible} toggle={() => (visible = false)}>",
     		ctx
     	});
 
@@ -91003,10 +90974,10 @@ var app = (function () {
     			create_component(alert.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$1, 98, 8, 3114);
+    			add_location(link, file$1, 102, 8, 3210);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$1, 147, 12, 5380);
-    			add_location(main, file$1, 104, 4, 3208);
+    			add_location(div, file$1, 151, 12, 5476);
+    			add_location(main, file$1, 108, 4, 3304);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -91150,7 +91121,11 @@ var app = (function () {
     			bindto: '#chart',
     			data: {
     				columns: [tot_wom, tot_man, tot_esco],
-    				type: 'spline'
+    				types: {
+    					tot_wom: 'bar',
+    					tot_man: 'bar',
+    					tot_esco: 'spline'
+    				}
     			},
     			axis: {
     				x: { type: 'category', categories: country }
@@ -91268,11 +91243,7 @@ var app = (function () {
     		c: function create() {
     			main = element$1("main");
     			create_component(router.$$.fragment);
-<<<<<<< HEAD
-    			add_location(main, file, 85, 0, 3267);
-=======
-    			add_location(main, file, 85, 0, 3268);
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
+    			add_location(main, file, 90, 0, 3278);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -91369,11 +91340,7 @@ var app = (function () {
     		ExpoGraph,
     		MyGraph,
     		about: About,
-<<<<<<< HEAD
-    		integration: Integration,
-=======
     		Integration,
->>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		IntegrationEco1: IntegrationApi1,
     		IntegrationEco2: IntegrationApi2,
     		IntegrationEco3: IntegrationApi3,
