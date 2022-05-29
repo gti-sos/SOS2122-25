@@ -33758,33 +33758,18 @@ var app = (function () {
     			a2.textContent = "Enlace video Adrián Pérez Gómez";
     			t11 = space();
     			br = element$1("br");
-<<<<<<< HEAD
-    			add_location(body, file$k, 5, 0, 162);
-    			add_location(h3, file$k, 52, 4, 1868);
-    			attr_dev(a0, "href", "https://youtu.be/5HJVgtZk1V4");
-    			add_location(a0, file$k, 53, 9, 1894);
-    			add_location(p0, file$k, 53, 4, 1889);
-    			attr_dev(a1, "href", "https://github.com/AngelSM11");
-    			add_location(a1, file$k, 54, 9, 1990);
-    			add_location(p1, file$k, 54, 4, 1985);
-    			attr_dev(a2, "href", "https://github.com/adriperez01");
-    			add_location(a2, file$k, 55, 9, 2078);
-    			add_location(p2, file$k, 55, 4, 2073);
-    			add_location(br, file$k, 56, 4, 2164);
-=======
     			add_location(body, file$m, 5, 0, 162);
     			add_location(h3, file$m, 52, 4, 1868);
-    			attr_dev(a0, "href", "https://github.com/damiangc99");
+    			attr_dev(a0, "href", "https://youtu.be/5HJVgtZk1V4");
     			add_location(a0, file$m, 53, 9, 1894);
     			add_location(p0, file$m, 53, 4, 1889);
     			attr_dev(a1, "href", "https://github.com/AngelSM11");
-    			add_location(a1, file$m, 54, 9, 1991);
-    			add_location(p1, file$m, 54, 4, 1986);
+    			add_location(a1, file$m, 54, 9, 1990);
+    			add_location(p1, file$m, 54, 4, 1985);
     			attr_dev(a2, "href", "https://github.com/adriperez01");
-    			add_location(a2, file$m, 55, 9, 2079);
-    			add_location(p2, file$m, 55, 4, 2074);
-    			add_location(br, file$m, 56, 4, 2165);
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
+    			add_location(a2, file$m, 55, 9, 2078);
+    			add_location(p2, file$m, 55, 4, 2073);
+    			add_location(br, file$m, 56, 4, 2164);
     			attr_dev(main, "class", "svelte-ri70vu");
     			add_location(main, file$m, 49, 0, 1852);
     		},
@@ -36546,13 +36531,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (161:16) <Dropdown >
-    function create_default_slot_2$f(ctx) {
-=======
-    // (160:16) <Dropdown >
     function create_default_slot_2$g(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -36634,13 +36614,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (138:12) <Nav navbar>
-    function create_default_slot_1$f(ctx) {
-=======
-    // (137:12) <Nav navbar>
     function create_default_slot_1$g(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -36744,13 +36719,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (136:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
-    function create_default_slot$f(ctx) {
-=======
-    // (135:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$g(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let navbarbrand;
     	let t;
     	let nav;
@@ -36867,25 +36837,14 @@ var app = (function () {
     			t1 = space();
     			div = element$1("div");
     			if (!src_url_equal(script0.src, script0_src_value = "https://d3js.org/d3.v6.min.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$i, 125, 8, 4492);
+    			add_location(script0, file$k, 125, 8, 4492);
     			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$i, 126, 8, 4555);
+    			add_location(script1, file$k, 126, 8, 4555);
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$i, 127, 8, 4663);
+    			add_location(script2, file$k, 127, 8, 4663);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$i, 176, 8, 7002);
-    			add_location(main, file$i, 132, 4, 4810);
-=======
-    			add_location(script0, file$k, 124, 8, 4445);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$k, 125, 8, 4508);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$k, 126, 8, 4616);
-    			attr_dev(div, "id", "chart");
-    			add_location(div, file$k, 175, 8, 6955);
-    			add_location(main, file$k, 131, 4, 4763);
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
+    			add_location(div, file$k, 176, 8, 7002);
+    			add_location(main, file$k, 132, 4, 4810);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -38132,13 +38091,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (161:16) <Dropdown >
-    function create_default_slot_2$e(ctx) {
-=======
-    // (160:16) <Dropdown >
     function create_default_slot_2$f(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -38220,13 +38174,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (138:12) <Nav navbar>
-    function create_default_slot_1$e(ctx) {
-=======
-    // (137:12) <Nav navbar>
     function create_default_slot_1$f(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -38330,13 +38279,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (136:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
-    function create_default_slot$e(ctx) {
-=======
-    // (135:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$f(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let navbarbrand;
     	let t;
     	let nav;
@@ -38457,27 +38401,16 @@ var app = (function () {
     			t2 = space();
     			div1 = element$1("div");
     			if (!src_url_equal(script0.src, script0_src_value = "https://d3js.org/d3.v6.min.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$h, 126, 8, 4406);
+    			add_location(script0, file$j, 126, 8, 4406);
     			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$h, 127, 8, 4469);
+    			add_location(script1, file$j, 127, 8, 4469);
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$h, 128, 8, 4577);
+    			add_location(script2, file$j, 128, 8, 4577);
     			attr_dev(div0, "id", "barChart_1");
-    			add_location(div0, file$h, 178, 8, 6919);
+    			add_location(div0, file$j, 178, 8, 6919);
     			attr_dev(div1, "id", "barChart_2");
-    			add_location(div1, file$h, 179, 8, 6956);
-    			add_location(main, file$h, 133, 4, 4724);
-=======
-    			add_location(script0, file$j, 125, 8, 4434);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$j, 126, 8, 4497);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$j, 127, 8, 4605);
-    			attr_dev(div, "id", "chart");
-    			add_location(div, file$j, 176, 12, 6922);
-    			add_location(main, file$j, 132, 4, 4752);
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
+    			add_location(div1, file$j, 179, 8, 6956);
+    			add_location(main, file$j, 133, 4, 4724);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -39723,13 +39656,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (122:16) <Dropdown >
-    function create_default_slot_2$d(ctx) {
-=======
-    // (125:16) <Dropdown >
     function create_default_slot_2$e(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -39811,13 +39739,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (99:12) <Nav navbar>
-    function create_default_slot_1$d(ctx) {
-=======
-    // (102:12) <Nav navbar>
     function create_default_slot_1$e(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -39921,13 +39844,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (97:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
-    function create_default_slot$d(ctx) {
-=======
-    // (100:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$e(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let navbarbrand;
     	let t;
     	let nav;
@@ -40044,25 +39962,14 @@ var app = (function () {
     			t1 = space();
     			div = element$1("div");
     			if (!src_url_equal(script0.src, script0_src_value = "https://d3js.org/d3.v6.min.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$g, 87, 8, 3377);
+    			add_location(script0, file$i, 87, 8, 3377);
     			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$g, 88, 8, 3440);
+    			add_location(script1, file$i, 88, 8, 3440);
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$g, 89, 8, 3548);
+    			add_location(script2, file$i, 89, 8, 3548);
     			attr_dev(div, "id", "bubbleChart");
-    			add_location(div, file$g, 138, 8, 5861);
-    			add_location(main, file$g, 94, 4, 3695);
-=======
-    			add_location(script0, file$i, 90, 8, 3569);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$i, 91, 8, 3632);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$i, 92, 8, 3740);
-    			attr_dev(div, "id", "chart");
-    			add_location(div, file$i, 141, 8, 6053);
-    			add_location(main, file$i, 97, 4, 3887);
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
+    			add_location(div, file$i, 138, 8, 5861);
+    			add_location(main, file$i, 94, 4, 3695);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -44457,13 +44364,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (126:16) <Dropdown >
-    function create_default_slot_2$a(ctx) {
-=======
-    // (125:16) <Dropdown >
     function create_default_slot_2$b(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -44545,13 +44447,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (103:12) <Nav navbar>
-    function create_default_slot_1$a(ctx) {
-=======
-    // (102:12) <Nav navbar>
     function create_default_slot_1$b(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -44655,13 +44552,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (101:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
-    function create_default_slot$a(ctx) {
-=======
-    // (100:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$b(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let navbarbrand;
     	let t;
     	let nav;
@@ -44783,27 +44675,15 @@ var app = (function () {
     			t3 = space();
     			div = element$1("div");
     			if (!src_url_equal(script0.src, script0_src_value = "https://d3js.org/d3.v6.min.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$d, 91, 8, 3646);
+    			add_location(script0, file$f, 91, 8, 3646);
     			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$d, 92, 8, 3709);
+    			add_location(script1, file$f, 92, 8, 3709);
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$d, 93, 8, 3817);
-    			add_location(p, file$d, 141, 8, 6124);
+    			add_location(script2, file$f, 93, 8, 3817);
+    			add_location(p, file$f, 141, 8, 6124);
     			attr_dev(div, "id", "splineChart");
-    			add_location(div, file$d, 143, 8, 6178);
-    			add_location(main, file$d, 98, 4, 3964);
-=======
-    			add_location(script0, file$f, 90, 8, 3557);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$f, 91, 8, 3620);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$f, 92, 8, 3728);
-    			add_location(p, file$f, 140, 8, 6035);
-    			attr_dev(div, "id", "chart");
-    			add_location(div, file$f, 142, 8, 6089);
-    			add_location(main, file$f, 97, 4, 3875);
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
+    			add_location(div, file$f, 143, 8, 6178);
+    			add_location(main, file$f, 98, 4, 3964);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -46020,13 +45900,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (131:16) <Dropdown >
-    function create_default_slot_2$9(ctx) {
-=======
-    // (125:16) <Dropdown >
     function create_default_slot_2$a(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -46108,13 +45983,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (108:12) <Nav navbar>
-    function create_default_slot_1$9(ctx) {
-=======
-    // (102:12) <Nav navbar>
     function create_default_slot_1$a(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -46218,13 +46088,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (106:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
-    function create_default_slot$9(ctx) {
-=======
-    // (100:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$a(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let navbarbrand;
     	let t;
     	let nav;
@@ -46341,25 +46206,14 @@ var app = (function () {
     			t1 = space();
     			div = element$1("div");
     			if (!src_url_equal(script0.src, script0_src_value = "https://d3js.org/d3.v6.min.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$c, 96, 8, 3739);
+    			add_location(script0, file$e, 96, 8, 3739);
     			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$c, 97, 8, 3802);
+    			add_location(script1, file$e, 97, 8, 3802);
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$c, 98, 8, 3910);
+    			add_location(script2, file$e, 98, 8, 3910);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$c, 147, 8, 6223);
-    			add_location(main, file$c, 103, 4, 4057);
-=======
-    			add_location(script0, file$e, 90, 8, 3564);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$e, 91, 8, 3627);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$e, 92, 8, 3735);
-    			attr_dev(div, "id", "chart");
-    			add_location(div, file$e, 141, 8, 6048);
-    			add_location(main, file$e, 97, 4, 3882);
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
+    			add_location(div, file$e, 147, 8, 6223);
+    			add_location(main, file$e, 103, 4, 4057);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -47575,13 +47429,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (137:16) <Dropdown >
-    function create_default_slot_2$8(ctx) {
-=======
-    // (125:16) <Dropdown >
     function create_default_slot_2$9(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdowntoggle;
     	let t;
     	let dropdownmenu;
@@ -47663,13 +47512,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (114:12) <Nav navbar>
-    function create_default_slot_1$8(ctx) {
-=======
-    // (102:12) <Nav navbar>
     function create_default_slot_1$9(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let dropdown0;
     	let t0;
     	let dropdown1;
@@ -47773,13 +47617,8 @@ var app = (function () {
     	return block;
     }
 
-<<<<<<< HEAD
     // (112:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
-    function create_default_slot$8(ctx) {
-=======
-    // (100:8) <Navbar style="background-color: lightgreen; color:white;" light expand="lg" >
     function create_default_slot$9(ctx) {
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
     	let navbarbrand;
     	let t;
     	let nav;
@@ -47896,25 +47735,14 @@ var app = (function () {
     			t1 = space();
     			div = element$1("div");
     			if (!src_url_equal(script0.src, script0_src_value = "https://d3js.org/d3.v6.min.js")) attr_dev(script0, "src", script0_src_value);
-<<<<<<< HEAD
-    			add_location(script0, file$b, 102, 8, 3980);
+    			add_location(script0, file$d, 102, 8, 3980);
     			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$b, 103, 8, 4043);
+    			add_location(script1, file$d, 103, 8, 4043);
     			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$b, 104, 8, 4151);
+    			add_location(script2, file$d, 104, 8, 4151);
     			attr_dev(div, "id", "rotateXAxisTickText");
-    			add_location(div, file$b, 153, 8, 6464);
-    			add_location(main, file$b, 109, 4, 4298);
-=======
-    			add_location(script0, file$d, 90, 8, 3721);
-    			if (!src_url_equal(script1.src, script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$d, 91, 8, 3784);
-    			if (!src_url_equal(script2.src, script2_src_value = "https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.4.1/billboard.min.css")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$d, 92, 8, 3892);
-    			attr_dev(div, "id", "chart");
-    			add_location(div, file$d, 141, 8, 6205);
-    			add_location(main, file$d, 97, 4, 4039);
->>>>>>> 8b78529e79078bedb1720b41da37492faa509ed5
+    			add_location(div, file$d, 153, 8, 6464);
+    			add_location(main, file$d, 109, 4, 4298);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
