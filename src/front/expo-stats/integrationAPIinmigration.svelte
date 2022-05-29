@@ -96,7 +96,18 @@
                     },
                 ],
             },
-            options: {},
+            options: {
+   //             responsive: true,
+   //             plugins: {
+   //                legend: {
+     //                   position: 'top',
+       //             },
+         //           title: {
+           //             display: true,
+             //           text: 'Chart.js Bubble Chart'
+               //     }
+                //}
+            },
         });
        
        

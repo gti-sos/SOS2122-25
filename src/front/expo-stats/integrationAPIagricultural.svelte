@@ -73,8 +73,8 @@
                     },
                     {
                         label: "Cambio Relativo",
-                        backgroundColor: "FF00E8",
-                        borderColor: "FF00E8",
+                        backgroundColor: "purple",
+                        borderColor: "purple",
                         data: RelC,
                     },
                     {
@@ -97,7 +97,19 @@
                     },
                 ],
             },
-            options: {},
+            options: {
+                    plugins: {
+                    filler: {
+                        propagate: false
+                    },
+                    'samples-filler-analyser': {
+                        target: 'chart-analyser'
+                    }
+                    },
+                    interaction: {
+                    intersect: false
+                    }
+            },
         });
        
        

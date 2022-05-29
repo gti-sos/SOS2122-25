@@ -13,6 +13,7 @@
         let zero_fifty =["ages_zero_fifty"];
         async function getData(){
             console.log("Fetching stats....");
+            const loaData = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats/loadInitialData");
             const res = await fetch("/api/v1/expo");
             const res1= await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats")
             if(res.ok&&res1.ok){
@@ -96,7 +97,9 @@
                     },
                 ],
             },
-            options: {},
+            options: {
+            
+            },
         });
        
        

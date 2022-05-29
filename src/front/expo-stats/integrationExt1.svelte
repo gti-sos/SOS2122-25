@@ -63,9 +63,9 @@
             myChart.destroy();
         }
         myChart = new Chart(ctx, {
-            type: "bar",
+            type: "radar",
             data: {
-                labels: country,
+               labels: country,
                 datasets: [
                     {
                         label: "Casos Activos",
@@ -129,7 +129,7 @@
 
 <main>
     <h2>Gráfica comparativa de los datos del COVID19 (API Externa) y las Exportaciones(Mi API)</h2>
-    <a href="/#/info" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
+    <a href="/#/info" class="btn btn-warning" role="button" aria-pressed="true">Atrás</a>
 
     <canvas id="myChart" />
 

@@ -64,6 +64,8 @@
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo2">https://SOS2122-25.herokuapp.com/#/expo/integrationExpo2 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo3">https://SOS2122-25.herokuapp.com/#/expo/IntegrationExpo3 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo4">https://SOS2122-25.herokuapp.com/#/expo/integrationExpo4 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo5">https://SOS2122-25.herokuapp.com/#/expo/integrationExpo5 </a></p>
+	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExpo6">https://SOS2122-25.herokuapp.com/#/expo/integrationExpo6 </a></p>
 	<h5>APIs Externas</h5>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExt1">https://SOS2122-25.herokuapp.com/#/expo/integrationExt1 </a></p>
 	<p>- <a href="https://SOS2122-25.herokuapp.com/#/expo/integrationExt2">https://SOS2122-25.herokuapp.com/#/expo/IntegrationExt2 </a></p>

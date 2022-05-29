@@ -98,7 +98,9 @@
                     },
                 ],
             },
-            options: {},
+            options: {
+                indexAxis: 'y'
+            },
         });
        
        

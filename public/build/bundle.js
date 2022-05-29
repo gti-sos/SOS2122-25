@@ -35174,27 +35174,27 @@ var app = (function () {
     	let t41;
     	let a11;
     	let t43;
-    	let h51;
-    	let t45;
     	let p12;
-    	let t46;
+    	let t44;
     	let a12;
-    	let t48;
+    	let t46;
     	let p13;
-    	let t49;
+    	let t47;
     	let a13;
+    	let t49;
+    	let h51;
     	let t51;
-    	let br1;
-    	let t52;
-    	let h32;
-    	let t54;
     	let p14;
-    	let t55;
+    	let t52;
     	let a14;
-    	let t57;
+    	let t54;
     	let p15;
-    	let t58;
+    	let t55;
     	let a15;
+    	let t57;
+    	let br1;
+    	let t58;
+    	let h32;
     	let t60;
     	let p16;
     	let t61;
@@ -35219,6 +35219,14 @@ var app = (function () {
     	let p21;
     	let t76;
     	let a21;
+    	let t78;
+    	let p22;
+    	let t79;
+    	let a22;
+    	let t81;
+    	let p23;
+    	let t82;
+    	let a23;
     	let current;
 
     	navbar = new Navbar({
@@ -35309,63 +35317,73 @@ var app = (function () {
     			a11 = element$1("a");
     			a11.textContent = "https://SOS2122-25.herokuapp.com/#/expo/integrationExpo4";
     			t43 = space();
+    			p12 = element$1("p");
+    			t44 = text$1("- ");
+    			a12 = element$1("a");
+    			a12.textContent = "https://SOS2122-25.herokuapp.com/#/expo/integrationExpo5";
+    			t46 = space();
+    			p13 = element$1("p");
+    			t47 = text$1("- ");
+    			a13 = element$1("a");
+    			a13.textContent = "https://SOS2122-25.herokuapp.com/#/expo/integrationExpo6";
+    			t49 = space();
     			h51 = element$1("h5");
     			h51.textContent = "APIs Externas";
-    			t45 = space();
-    			p12 = element$1("p");
-    			t46 = text$1("- ");
-    			a12 = element$1("a");
-    			a12.textContent = "https://SOS2122-25.herokuapp.com/#/expo/integrationExt1";
-    			t48 = space();
-    			p13 = element$1("p");
-    			t49 = text$1("- ");
-    			a13 = element$1("a");
-    			a13.textContent = "https://SOS2122-25.herokuapp.com/#/expo/IntegrationExt2";
     			t51 = space();
+    			p14 = element$1("p");
+    			t52 = text$1("- ");
+    			a14 = element$1("a");
+    			a14.textContent = "https://SOS2122-25.herokuapp.com/#/expo/integrationExt1";
+    			t54 = space();
+    			p15 = element$1("p");
+    			t55 = text$1("- ");
+    			a15 = element$1("a");
+    			a15.textContent = "https://SOS2122-25.herokuapp.com/#/expo/IntegrationExt2";
+    			t57 = space();
     			br1 = element$1("br");
-    			t52 = space();
+    			t58 = space();
     			h32 = element$1("h3");
     			h32.textContent = "Integraciones Ángel Simón Mesa:";
-    			t54 = space();
-    			p14 = element$1("p");
-    			t55 = text$1("- ");
-    			a14 = element$1("a");
-    			a14.textContent = "https://SOS2122-25.herokuapp.com/#/integration1";
-    			t57 = space();
-    			p15 = element$1("p");
-    			t58 = text$1("- ");
-    			a15 = element$1("a");
-    			a15.textContent = "https://SOS2122-25.herokuapp.com/#/integration2";
     			t60 = space();
     			p16 = element$1("p");
     			t61 = text$1("- ");
     			a16 = element$1("a");
-    			a16.textContent = "https://SOS2122-25.herokuapp.com/#/integration3";
+    			a16.textContent = "https://SOS2122-25.herokuapp.com/#/integration1";
     			t63 = space();
     			p17 = element$1("p");
     			t64 = text$1("- ");
     			a17 = element$1("a");
-    			a17.textContent = "https://SOS2122-25.herokuapp.com/#/integration4";
+    			a17.textContent = "https://SOS2122-25.herokuapp.com/#/integration2";
     			t66 = space();
     			p18 = element$1("p");
     			t67 = text$1("- ");
     			a18 = element$1("a");
-    			a18.textContent = "https://SOS2122-25.herokuapp.com/#/integration5";
+    			a18.textContent = "https://SOS2122-25.herokuapp.com/#/integration3";
     			t69 = space();
     			p19 = element$1("p");
     			t70 = text$1("- ");
     			a19 = element$1("a");
-    			a19.textContent = "https://SOS2122-25.herokuapp.com/#/integration5b";
+    			a19.textContent = "https://SOS2122-25.herokuapp.com/#/integration4";
     			t72 = space();
     			p20 = element$1("p");
     			t73 = text$1("- ");
     			a20 = element$1("a");
-    			a20.textContent = "https://SOS2122-25.herokuapp.com/#/integration6";
+    			a20.textContent = "https://SOS2122-25.herokuapp.com/#/integration5";
     			t75 = space();
     			p21 = element$1("p");
     			t76 = text$1("- ");
     			a21 = element$1("a");
-    			a21.textContent = "https://SOS2122-25.herokuapp.com/#/integration7";
+    			a21.textContent = "https://SOS2122-25.herokuapp.com/#/integration5b";
+    			t78 = space();
+    			p22 = element$1("p");
+    			t79 = text$1("- ");
+    			a22 = element$1("a");
+    			a22.textContent = "https://SOS2122-25.herokuapp.com/#/integration6";
+    			t81 = space();
+    			p23 = element$1("p");
+    			t82 = text$1("- ");
+    			a23 = element$1("a");
+    			a23.textContent = "https://SOS2122-25.herokuapp.com/#/integration7";
     			add_location(body, file$p, 5, 0, 162);
     			add_location(h30, file$p, 50, 4, 1864);
     			attr_dev(a0, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
@@ -35407,39 +35425,45 @@ var app = (function () {
     			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/#/expo/integrationExpo4");
     			add_location(a11, file$p, 65, 6, 3554);
     			add_location(p11, file$p, 65, 1, 3549);
-    			add_location(h51, file$p, 66, 1, 3689);
-    			attr_dev(a12, "href", "https://SOS2122-25.herokuapp.com/#/expo/integrationExt1");
-    			add_location(a12, file$p, 67, 6, 3719);
-    			add_location(p12, file$p, 67, 1, 3714);
-    			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/#/expo/integrationExt2");
-    			add_location(a13, file$p, 68, 6, 3857);
-    			add_location(p13, file$p, 68, 1, 3852);
-    			add_location(br1, file$p, 69, 4, 3993);
-    			add_location(h32, file$p, 70, 1, 4000);
-    			attr_dev(a14, "href", "https://SOS2122-25.herokuapp.com/#/integration1");
-    			add_location(a14, file$p, 71, 6, 4048);
-    			add_location(p14, file$p, 71, 1, 4043);
-    			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/#/integration2");
-    			add_location(a15, file$p, 72, 6, 4170);
-    			add_location(p15, file$p, 72, 1, 4165);
-    			attr_dev(a16, "href", "https://SOS2122-25.herokuapp.com/#/integration3");
-    			add_location(a16, file$p, 73, 6, 4292);
-    			add_location(p16, file$p, 73, 1, 4287);
-    			attr_dev(a17, "href", "https://SOS2122-25.herokuapp.com/#/integration4");
-    			add_location(a17, file$p, 74, 6, 4414);
-    			add_location(p17, file$p, 74, 1, 4409);
-    			attr_dev(a18, "href", "https://SOS2122-25.herokuapp.com/#/integration5");
-    			add_location(a18, file$p, 75, 6, 4536);
-    			add_location(p18, file$p, 75, 1, 4531);
-    			attr_dev(a19, "href", "https://SOS2122-25.herokuapp.com/#/integration5b");
-    			add_location(a19, file$p, 76, 6, 4658);
-    			add_location(p19, file$p, 76, 1, 4653);
-    			attr_dev(a20, "href", "https://SOS2122-25.herokuapp.com/#/integration6");
-    			add_location(a20, file$p, 77, 6, 4782);
-    			add_location(p20, file$p, 77, 1, 4777);
-    			attr_dev(a21, "href", "https://SOS2122-25.herokuapp.com/#/integration7");
-    			add_location(a21, file$p, 78, 6, 4904);
-    			add_location(p21, file$p, 78, 1, 4899);
+    			attr_dev(a12, "href", "https://SOS2122-25.herokuapp.com/#/expo/integrationExpo5");
+    			add_location(a12, file$p, 66, 6, 3694);
+    			add_location(p12, file$p, 66, 1, 3689);
+    			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/#/expo/integrationExpo6");
+    			add_location(a13, file$p, 67, 6, 3834);
+    			add_location(p13, file$p, 67, 1, 3829);
+    			add_location(h51, file$p, 68, 1, 3969);
+    			attr_dev(a14, "href", "https://SOS2122-25.herokuapp.com/#/expo/integrationExt1");
+    			add_location(a14, file$p, 69, 6, 3999);
+    			add_location(p14, file$p, 69, 1, 3994);
+    			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/#/expo/integrationExt2");
+    			add_location(a15, file$p, 70, 6, 4137);
+    			add_location(p15, file$p, 70, 1, 4132);
+    			add_location(br1, file$p, 71, 4, 4273);
+    			add_location(h32, file$p, 72, 1, 4280);
+    			attr_dev(a16, "href", "https://SOS2122-25.herokuapp.com/#/integration1");
+    			add_location(a16, file$p, 73, 6, 4328);
+    			add_location(p16, file$p, 73, 1, 4323);
+    			attr_dev(a17, "href", "https://SOS2122-25.herokuapp.com/#/integration2");
+    			add_location(a17, file$p, 74, 6, 4450);
+    			add_location(p17, file$p, 74, 1, 4445);
+    			attr_dev(a18, "href", "https://SOS2122-25.herokuapp.com/#/integration3");
+    			add_location(a18, file$p, 75, 6, 4572);
+    			add_location(p18, file$p, 75, 1, 4567);
+    			attr_dev(a19, "href", "https://SOS2122-25.herokuapp.com/#/integration4");
+    			add_location(a19, file$p, 76, 6, 4694);
+    			add_location(p19, file$p, 76, 1, 4689);
+    			attr_dev(a20, "href", "https://SOS2122-25.herokuapp.com/#/integration5");
+    			add_location(a20, file$p, 77, 6, 4816);
+    			add_location(p20, file$p, 77, 1, 4811);
+    			attr_dev(a21, "href", "https://SOS2122-25.herokuapp.com/#/integration5b");
+    			add_location(a21, file$p, 78, 6, 4938);
+    			add_location(p21, file$p, 78, 1, 4933);
+    			attr_dev(a22, "href", "https://SOS2122-25.herokuapp.com/#/integration6");
+    			add_location(a22, file$p, 79, 6, 5062);
+    			add_location(p22, file$p, 79, 1, 5057);
+    			attr_dev(a23, "href", "https://SOS2122-25.herokuapp.com/#/integration7");
+    			add_location(a23, file$p, 80, 6, 5184);
+    			add_location(p23, file$p, 80, 1, 5179);
     			attr_dev(main, "class", "svelte-1h6otfa");
     			add_location(main, file$p, 49, 0, 1852);
     		},
@@ -35507,27 +35531,27 @@ var app = (function () {
     			append_dev(p11, t41);
     			append_dev(p11, a11);
     			append_dev(main, t43);
-    			append_dev(main, h51);
-    			append_dev(main, t45);
     			append_dev(main, p12);
-    			append_dev(p12, t46);
+    			append_dev(p12, t44);
     			append_dev(p12, a12);
-    			append_dev(main, t48);
+    			append_dev(main, t46);
     			append_dev(main, p13);
-    			append_dev(p13, t49);
+    			append_dev(p13, t47);
     			append_dev(p13, a13);
+    			append_dev(main, t49);
+    			append_dev(main, h51);
     			append_dev(main, t51);
-    			append_dev(main, br1);
-    			append_dev(main, t52);
-    			append_dev(main, h32);
-    			append_dev(main, t54);
     			append_dev(main, p14);
-    			append_dev(p14, t55);
+    			append_dev(p14, t52);
     			append_dev(p14, a14);
-    			append_dev(main, t57);
+    			append_dev(main, t54);
     			append_dev(main, p15);
-    			append_dev(p15, t58);
+    			append_dev(p15, t55);
     			append_dev(p15, a15);
+    			append_dev(main, t57);
+    			append_dev(main, br1);
+    			append_dev(main, t58);
+    			append_dev(main, h32);
     			append_dev(main, t60);
     			append_dev(main, p16);
     			append_dev(p16, t61);
@@ -35552,6 +35576,14 @@ var app = (function () {
     			append_dev(main, p21);
     			append_dev(p21, t76);
     			append_dev(p21, a21);
+    			append_dev(main, t78);
+    			append_dev(main, p22);
+    			append_dev(p22, t79);
+    			append_dev(p22, a22);
+    			append_dev(main, t81);
+    			append_dev(main, p23);
+    			append_dev(p23, t82);
+    			append_dev(p23, a23);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -48103,17 +48135,17 @@ var app = (function () {
     			t4 = space();
     			canvas = element$1("canvas");
     			if (!src_url_equal(script.src, script_src_value = "https://cdn.jsdelivr.net/npm/chart.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$g, 107, 4, 4155);
+    			add_location(script, file$g, 110, 4, 4300);
     			attr_dev(h2, "class", "svelte-6teu96");
-    			add_location(h2, file$g, 113, 4, 4286);
+    			add_location(h2, file$g, 116, 4, 4431);
     			attr_dev(a, "href", "/#/expo");
     			attr_dev(a, "class", "btn btn-warning");
     			attr_dev(a, "role", "button");
     			attr_dev(a, "aria-pressed", "true");
-    			add_location(a, file$g, 114, 4, 4386);
+    			add_location(a, file$g, 117, 4, 4531);
     			attr_dev(canvas, "id", "myChart");
-    			add_location(canvas, file$g, 115, 4, 4477);
-    			add_location(main, file$g, 112, 0, 4274);
+    			add_location(canvas, file$g, 118, 4, 4622);
+    			add_location(main, file$g, 115, 0, 4419);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -48173,6 +48205,7 @@ var app = (function () {
 
     	async function getData() {
     		console.log("Fetching stats....");
+    		await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats/loadInitialData");
     		const res = await fetch("/api/v1/expo");
     		const res1 = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats");
 
@@ -48354,17 +48387,17 @@ var app = (function () {
     			t4 = space();
     			canvas = element$1("canvas");
     			if (!src_url_equal(script.src, script_src_value = "https://cdn.jsdelivr.net/npm/chart.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$f, 108, 4, 3960);
+    			add_location(script, file$f, 120, 4, 4347);
     			attr_dev(h2, "class", "svelte-6teu96");
-    			add_location(h2, file$f, 114, 4, 4091);
+    			add_location(h2, file$f, 126, 4, 4478);
     			attr_dev(a, "href", "/#/expo");
     			attr_dev(a, "class", "btn btn-warning");
     			attr_dev(a, "role", "button");
     			attr_dev(a, "aria-pressed", "true");
-    			add_location(a, file$f, 115, 4, 4192);
+    			add_location(a, file$f, 127, 4, 4579);
     			attr_dev(canvas, "id", "myChart");
-    			add_location(canvas, file$f, 117, 4, 4285);
-    			add_location(main, file$f, 113, 0, 4079);
+    			add_location(canvas, file$f, 129, 4, 4672);
+    			add_location(main, file$f, 125, 0, 4466);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -48488,8 +48521,8 @@ var app = (function () {
     						},
     						{
     							label: "Cambio Relativo",
-    							backgroundColor: "FF00E8",
-    							borderColor: "FF00E8",
+    							backgroundColor: "purple",
+    							borderColor: "purple",
     							data: RelC
     						},
     						{
@@ -48512,7 +48545,13 @@ var app = (function () {
     						}
     					]
     				},
-    				options: {}
+    				options: {
+    					plugins: {
+    						filler: { propagate: false },
+    						'samples-filler-analyser': { target: 'chart-analyser' }
+    					},
+    					interaction: { intersect: false }
+    				}
     			});
     	}
 
@@ -48605,17 +48644,17 @@ var app = (function () {
     			t4 = space();
     			canvas = element$1("canvas");
     			if (!src_url_equal(script.src, script_src_value = "https://cdn.jsdelivr.net/npm/chart.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$e, 109, 4, 3961);
+    			add_location(script, file$e, 111, 4, 4007);
     			attr_dev(h2, "class", "svelte-6teu96");
-    			add_location(h2, file$e, 115, 4, 4092);
+    			add_location(h2, file$e, 117, 4, 4138);
     			attr_dev(a, "href", "/#/expo");
     			attr_dev(a, "class", "btn btn-warning");
     			attr_dev(a, "role", "button");
     			attr_dev(a, "aria-pressed", "true");
-    			add_location(a, file$e, 116, 4, 4192);
+    			add_location(a, file$e, 118, 4, 4238);
     			attr_dev(canvas, "id", "myChart");
-    			add_location(canvas, file$e, 118, 4, 4285);
-    			add_location(main, file$e, 114, 0, 4080);
+    			add_location(canvas, file$e, 120, 4, 4331);
+    			add_location(main, file$e, 116, 0, 4126);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -48764,7 +48803,7 @@ var app = (function () {
     						}
     					]
     				},
-    				options: {}
+    				options: { indexAxis: 'y' }
     			});
     	}
 
@@ -49362,17 +49401,17 @@ var app = (function () {
     			t4 = space();
     			canvas = element$1("canvas");
     			if (!src_url_equal(script.src, script_src_value = "https://cdn.jsdelivr.net/npm/chart.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$b, 107, 4, 4008);
+    			add_location(script, file$b, 118, 4, 4368);
     			attr_dev(h2, "class", "svelte-6teu96");
-    			add_location(h2, file$b, 113, 4, 4139);
+    			add_location(h2, file$b, 124, 4, 4499);
     			attr_dev(a, "href", "/#/expo");
     			attr_dev(a, "class", "btn btn-warning");
     			attr_dev(a, "role", "button");
     			attr_dev(a, "aria-pressed", "true");
-    			add_location(a, file$b, 114, 4, 4240);
+    			add_location(a, file$b, 125, 4, 4600);
     			attr_dev(canvas, "id", "myChart");
-    			add_location(canvas, file$b, 116, 4, 4333);
-    			add_location(main, file$b, 112, 0, 4127);
+    			add_location(canvas, file$b, 127, 4, 4693);
+    			add_location(main, file$b, 123, 0, 4487);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -49520,11 +49559,20 @@ var app = (function () {
     						}
     					]
     				},
-    				options: {}
-    			});
-    	}
+    				options: {}, //             responsive: true,
+    				//             plugins: {
+    				
+    			}); //                legend: {
+    		//                   position: 'top',
+    		//             },
+    		//           title: {
+    	} //             display: true,
+    	//           text: 'Chart.js Bubble Chart'
 
+    	//     }
+    	//}
     	onMount(getData);
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -49609,21 +49657,21 @@ var app = (function () {
     			h2.textContent = "Gráfica comparativa de los datos del COVID19 (API Externa) y las Exportaciones(Mi API)";
     			t2 = space();
     			a = element$1("a");
-    			a.textContent = "Volver";
+    			a.textContent = "Atrás";
     			t4 = space();
     			canvas = element$1("canvas");
     			if (!src_url_equal(script.src, script_src_value = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$a, 124, 4, 4211);
+    			add_location(script, file$a, 124, 4, 4212);
     			attr_dev(h2, "class", "svelte-6teu96");
-    			add_location(h2, file$a, 130, 4, 4371);
+    			add_location(h2, file$a, 130, 4, 4372);
     			attr_dev(a, "href", "/#/info");
-    			attr_dev(a, "class", "btn btn-primary btn-lg active");
+    			attr_dev(a, "class", "btn btn-warning");
     			attr_dev(a, "role", "button");
     			attr_dev(a, "aria-pressed", "true");
-    			add_location(a, file$a, 131, 4, 4472);
+    			add_location(a, file$a, 131, 4, 4473);
     			attr_dev(canvas, "id", "myChart");
-    			add_location(canvas, file$a, 133, 4, 4580);
-    			add_location(main, file$a, 129, 0, 4359);
+    			add_location(canvas, file$a, 133, 4, 4566);
+    			add_location(main, file$a, 129, 0, 4360);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -49740,7 +49788,7 @@ var app = (function () {
 
     		myChart = new Chart(ctx,
     		{
-    				type: "bar",
+    				type: "radar",
     				data: {
     					labels: country,
     					datasets: [
