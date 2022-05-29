@@ -33753,10 +33753,10 @@ var app = (function () {
     			attr_dev(a1, "href", "https://www.youtube.com/watch?v=InXnaN-PVNU");
     			add_location(a1, file$q, 55, 9, 1992);
     			add_location(p1, file$q, 55, 4, 1987);
-    			attr_dev(a2, "href", "https://github.com/adriperez01");
+    			attr_dev(a2, "href", "https://www.youtube.com/watch?v=iGf7hz8_t6Q&ab_channel=AdrianPerez");
     			add_location(a2, file$q, 56, 9, 2095);
     			add_location(p2, file$q, 56, 4, 2090);
-    			add_location(br, file$q, 57, 4, 2181);
+    			add_location(br, file$q, 57, 4, 2217);
     			attr_dev(main, "class", "svelte-ri70vu");
     			add_location(main, file$q, 49, 0, 1852);
     		},
