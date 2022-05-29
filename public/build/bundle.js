@@ -32200,7 +32200,11 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+<<<<<<< HEAD
+    			add_location(script0, file$l, 138, 4, 3714);
+=======
     			add_location(script0, file$n, 138, 4, 3714);
+>>>>>>> 102f76ba0e331385c3a7d0244cbd9146c865de96
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
     			add_location(script1, file$n, 139, 4, 3785);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
@@ -32215,8 +32219,13 @@ var app = (function () {
     			attr_dev(p, "class", "highcharts-description");
     			add_location(p, file$n, 150, 8, 4216);
     			attr_dev(figure, "class", "highcharts-figure");
+<<<<<<< HEAD
+    			add_location(figure, file$l, 148, 4, 4136);
+    			add_location(main, file$l, 146, 0, 4122);
+=======
     			add_location(figure, file$n, 148, 4, 4136);
     			add_location(main, file$n, 146, 0, 4122);
+>>>>>>> 102f76ba0e331385c3a7d0244cbd9146c865de96
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
