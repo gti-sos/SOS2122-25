@@ -68,7 +68,7 @@
            pib_percent,
            
         ],
-        type: 'spline'
+        type: 'scatter'
     },
     axis:{
         x:{

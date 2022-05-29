@@ -68,7 +68,7 @@
            relative_change,
            
         ],
-        type: 'spline'
+        type: 'bar'
     },
     axis:{
         x:{

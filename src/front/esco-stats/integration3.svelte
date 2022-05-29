@@ -68,7 +68,7 @@
            co2_tpc,
            
         ],
-        type: 'spline'
+        type: 'area-spline'
     },
     axis:{
         x:{

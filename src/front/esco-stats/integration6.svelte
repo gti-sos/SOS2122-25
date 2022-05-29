@@ -66,7 +66,11 @@
            
            
         ],
-        type: 'spline'
+        types: {
+            tot_wom: 'area',
+            tot_man: 'bar',
+            tot_esco:'spline',
+        },
     },
     axis:{
         x:{

@@ -3,8 +3,6 @@ const bodyParser = require("body-parser");
 
 const BASE_API_URL_EXPO_STATS = "/api/v1/expo";
 
-
-
 var expo_stats = [
     {
         country: "eeuu",

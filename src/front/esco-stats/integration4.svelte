@@ -68,7 +68,7 @@
            pe_on_defence,
            
         ],
-        type: 'spline'
+        type: 'gauge'
     },
     axis:{
         x:{
