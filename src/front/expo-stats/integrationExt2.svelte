@@ -25,7 +25,7 @@
                 height: '100%'
             },
             title: {
-                text: 'Goleadores Liga Santander (2020)'
+                text: 'Goleadores Liga Santander del año 2020'
             },
             tooltip: {
                 useHTML: true,
@@ -50,7 +50,7 @@
                             value: 250
                         },
                         style: {
-                            color: 'black',
+                            color: 'pink',
                             textOutline: 'none',
                             fontWeight: 'normal'
                         }
@@ -59,7 +59,7 @@
             },
             series: [
                 {
-                    name: "Goleadores La Liga",
+                    name: "Goleadores",
                     data: apiFootball,
                     tooltip: {
                         valueSuffix: ' '
@@ -78,15 +78,11 @@
 </svelte:head>
 
 <main>
-    <Nav>
-        <NavItem>
-            <NavLink href="/#/info">Volver</NavLink>
-        </NavItem>
-    </Nav>
+    <a href="/#/expo" class="btn btn-warning" role="button" aria-pressed="true">Atrás</a>
     <figure class="highcharts-figure">
         <div id="container"></div>
         <p class="highcharts-description">
-            Gráfico con los goleadores de La Liga Española en la temporada 2020-21
+            Gráfico con los goleadores de La Liga Santander la temporada pasada
         </p>
     </figure>
 </main>
