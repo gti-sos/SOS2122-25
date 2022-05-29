@@ -81,7 +81,7 @@
         console.log("Loading info....");
         const res = await fetch("https://reqres.in/api/users/2"
 			).then(function (res){
-				color="";
+				color="success";
 				checkMSG="Nombre: "+JSON.stringify(stats1.data.first_name)+" "+JSON.stringify(stats1.data.last_name)+"        email: "+JSON.stringify(stats1.data.email);
 				visible="true";
 				

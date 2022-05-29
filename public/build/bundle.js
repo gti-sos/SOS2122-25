@@ -25170,21 +25170,21 @@ var app = (function () {
     			p = element$1("p");
     			p.textContent = "A simple demo showcasing an area chart with negative values and multiple\r\n            data series. Note that interacting with one data series will dim the\r\n            others, making it easier to distinguish between them.";
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$p, 95, 4, 3056);
+    			add_location(script0, file$p, 95, 4, 3061);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$p, 96, 4, 3127);
+    			add_location(script1, file$p, 96, 4, 3132);
     			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$p, 97, 4, 3205);
+    			add_location(script2, file$p, 97, 4, 3210);
     			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$p, 98, 4, 3285);
-    			add_location(br, file$p, 146, 4, 5106);
+    			add_location(script3, file$p, 98, 4, 3290);
+    			add_location(br, file$p, 146, 4, 5111);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$p, 148, 8, 5160);
+    			add_location(div, file$p, 148, 8, 5165);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$p, 149, 8, 5196);
+    			add_location(p, file$p, 149, 8, 5201);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$p, 147, 4, 5116);
-    			add_location(main, file$p, 103, 0, 3406);
+    			add_location(figure, file$p, 147, 4, 5121);
+    			add_location(main, file$p, 103, 0, 3411);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32181,8 +32181,6 @@ var app = (function () {
     	let t2;
     	let code;
     	let t4;
-    	let mounted;
-    	let dispose;
 
     	const block = {
     		c: function create() {
@@ -32202,6 +32200,7 @@ var app = (function () {
     			code.textContent = "series-label";
     			t4 = text$1(" module, which adds a label to each line for\r\n            enhanced readability.");
     			if (!src_url_equal(script0.src, script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+<<<<<<< HEAD
     			add_location(script0, file$l, 138, 4, 3702);
     			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
     			add_location(script1, file$l, 139, 4, 3773);
@@ -32219,6 +32218,25 @@ var app = (function () {
     			attr_dev(figure, "class", "highcharts-figure");
     			add_location(figure, file$l, 148, 4, 4146);
     			add_location(main, file$l, 146, 0, 4132);
+=======
+    			add_location(script0, file$l, 137, 4, 3668);
+    			if (!src_url_equal(script1.src, script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$l, 138, 4, 3739);
+    			if (!src_url_equal(script2.src, script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$l, 139, 4, 3820);
+    			if (!src_url_equal(script3.src, script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$l, 140, 4, 3898);
+    			if (!src_url_equal(script4.src, script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$l, 141, 4, 3978);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$l, 148, 8, 4134);
+    			add_location(code, file$l, 151, 12, 4301);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$l, 149, 8, 4170);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$l, 147, 4, 4090);
+    			add_location(main, file$l, 145, 0, 4076);
+>>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32238,11 +32256,14 @@ var app = (function () {
     			append_dev(p, t2);
     			append_dev(p, code);
     			append_dev(p, t4);
+<<<<<<< HEAD
 
     			if (!mounted) {
     				dispose = listen_dev(script4, "load", /*loadGraph*/ ctx[0], false, false, false);
     				mounted = true;
     			}
+=======
+>>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		},
     		p: noop$4,
     		i: noop$4,
@@ -32255,8 +32276,11 @@ var app = (function () {
     			detach_dev(script4);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
+<<<<<<< HEAD
     			mounted = false;
     			dispose();
+=======
+>>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		}
     	};
 
@@ -32305,10 +32329,14 @@ var app = (function () {
 
     			//inicializamos los arrays para mostrar los datos
     			expos.forEach(expo => {
+<<<<<<< HEAD
     				/* country.push(expo.country+"-"+expo.year);
     year.push(expo.year); */
     				ages1.push(expo.expo_m + expo.expo_tec);
 
+=======
+    				ages1.push(expo.expo_m + expo.expo_tec);
+>>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     				expo_m.push(expo.expo_m);
     				expo_tec.push(expo.expo_tec);
     			});
@@ -32316,19 +32344,24 @@ var app = (function () {
     			economies = data3;
     			console.log("Recibido: " + economies.length);
 
-    			economies.forEach(economies => {
-    				percapita.push(economies.percapita);
-    				currency.push(economies.currency);
-    				ages3.push(economies.percapita + economies.currency + economies.currentprices);
-    				currentprices.push(economies.currentprices);
+    			economies.forEach(economy => {
+    				percapita.push(economy.percapita);
+    				currency.push(economy.currency);
+    				currentprices.push(economy.currentprices);
+    				ages3.push(economy.percapita + economy.currency + economy.currentprices);
     			});
 
     			escos = data2;
     			console.log("Recibido: " + escos.length);
 
     			escos.forEach(esco => {
+<<<<<<< HEAD
     				year.push(esco.year);
     				country.push(esco.country);
+=======
+    				country.push(esco.country + "-" + esco.year);
+    				year.push(esco.year);
+>>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     				tot_wom.push(esco.tot_wom);
     				tot_man.push(esco.tot_man);
     				ages2.push(esco.tot_esco + esco.tot_man + esco.tot_wom);
@@ -32440,7 +32473,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [loadGraph];
+    	return [];
     }
 
     class MyGraph extends SvelteComponentDev {
@@ -33883,9 +33916,9 @@ var app = (function () {
     	}
     }
 
-    /* src\front\integration.svelte generated by Svelte v3.47.0 */
+    /* src\front\Integration.svelte generated by Svelte v3.47.0 */
 
-    const file$j = "src\\front\\integration.svelte";
+    const file$j = "src\\front\\Integration.svelte";
 
     // (8:2) <NavbarBrand href="#/info">
     function create_default_slot_21$g(ctx) {
@@ -35154,33 +35187,33 @@ var app = (function () {
     	let t9;
     	let a2;
     	let t11;
-    	let br0;
-    	let t12;
-    	let h31;
-    	let t14;
-    	let br1;
-    	let t15;
-    	let h32;
-    	let t17;
     	let p3;
-    	let t18;
+    	let t12;
     	let a3;
-    	let t20;
+    	let t14;
     	let p4;
-    	let t21;
+    	let t15;
     	let a4;
-    	let t23;
+    	let t17;
     	let p5;
-    	let t24;
+    	let t18;
     	let a5;
-    	let t26;
+    	let t20;
     	let p6;
-    	let t27;
+    	let t21;
     	let a6;
-    	let t29;
+    	let t23;
     	let p7;
-    	let t30;
+    	let t24;
     	let a7;
+    	let t26;
+    	let br0;
+    	let t27;
+    	let h31;
+    	let t29;
+    	let br1;
+    	let t30;
+    	let h32;
     	let t32;
     	let p8;
     	let t33;
@@ -35193,6 +35226,26 @@ var app = (function () {
     	let p10;
     	let t39;
     	let a10;
+    	let t41;
+    	let p11;
+    	let t42;
+    	let a11;
+    	let t44;
+    	let p12;
+    	let t45;
+    	let a12;
+    	let t47;
+    	let p13;
+    	let t48;
+    	let a13;
+    	let t50;
+    	let p14;
+    	let t51;
+    	let a14;
+    	let t53;
+    	let p15;
+    	let t54;
+    	let a15;
     	let current;
 
     	navbar = new Navbar({
@@ -35230,55 +35283,80 @@ var app = (function () {
     			a2 = element$1("a");
     			a2.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion3";
     			t11 = space();
+    			p3 = element$1("p");
+    			t12 = text$1("- ");
+    			a3 = element$1("a");
+    			a3.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion4";
+    			t14 = space();
+    			p4 = element$1("p");
+    			t15 = text$1("- ");
+    			a4 = element$1("a");
+    			a4.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion5";
+    			t17 = space();
+    			p5 = element$1("p");
+    			t18 = text$1("- ");
+    			a5 = element$1("a");
+    			a5.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion6";
+    			t20 = space();
+    			p6 = element$1("p");
+    			t21 = text$1("- ");
+    			a6 = element$1("a");
+    			a6.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion7";
+    			t23 = space();
+    			p7 = element$1("p");
+    			t24 = text$1("- ");
+    			a7 = element$1("a");
+    			a7.textContent = "https://SOS2122-25.herokuapp.com/#/economies/integracion8";
+    			t26 = space();
     			br0 = element$1("br");
-    			t12 = space();
+    			t27 = space();
     			h31 = element$1("h3");
     			h31.textContent = "Integraciones Adrián Pérez:";
-    			t14 = space();
+    			t29 = space();
     			br1 = element$1("br");
-    			t15 = space();
+    			t30 = space();
     			h32 = element$1("h3");
     			h32.textContent = "Integraciones Ángel Simón Mesa:";
-    			t17 = space();
-    			p3 = element$1("p");
-    			t18 = text$1("- ");
-    			a3 = element$1("a");
-    			a3.textContent = "https://SOS2122-25.herokuapp.com/#/integracion1";
-    			t20 = space();
-    			p4 = element$1("p");
-    			t21 = text$1("- ");
-    			a4 = element$1("a");
-    			a4.textContent = "https://SOS2122-25.herokuapp.com/#/integracion2";
-    			t23 = space();
-    			p5 = element$1("p");
-    			t24 = text$1("- ");
-    			a5 = element$1("a");
-    			a5.textContent = "https://SOS2122-25.herokuapp.com/#/integracion3";
-    			t26 = space();
-    			p6 = element$1("p");
-    			t27 = text$1("- ");
-    			a6 = element$1("a");
-    			a6.textContent = "https://SOS2122-25.herokuapp.com/#/integracion4";
-    			t29 = space();
-    			p7 = element$1("p");
-    			t30 = text$1("- ");
-    			a7 = element$1("a");
-    			a7.textContent = "https://SOS2122-25.herokuapp.com/#/integracion5";
     			t32 = space();
     			p8 = element$1("p");
     			t33 = text$1("- ");
     			a8 = element$1("a");
-    			a8.textContent = "https://SOS2122-25.herokuapp.com/#/integracion5b";
+    			a8.textContent = "https://SOS2122-25.herokuapp.com/#/integration1";
     			t35 = space();
     			p9 = element$1("p");
     			t36 = text$1("- ");
     			a9 = element$1("a");
-    			a9.textContent = "https://SOS2122-25.herokuapp.com/#/integracion6";
+    			a9.textContent = "https://SOS2122-25.herokuapp.com/#/integration2";
     			t38 = space();
     			p10 = element$1("p");
     			t39 = text$1("- ");
     			a10 = element$1("a");
-    			a10.textContent = "https://SOS2122-25.herokuapp.com/#/integracion7";
+    			a10.textContent = "https://SOS2122-25.herokuapp.com/#/integration3";
+    			t41 = space();
+    			p11 = element$1("p");
+    			t42 = text$1("- ");
+    			a11 = element$1("a");
+    			a11.textContent = "https://SOS2122-25.herokuapp.com/#/integration4";
+    			t44 = space();
+    			p12 = element$1("p");
+    			t45 = text$1("- ");
+    			a12 = element$1("a");
+    			a12.textContent = "https://SOS2122-25.herokuapp.com/#/integration5";
+    			t47 = space();
+    			p13 = element$1("p");
+    			t48 = text$1("- ");
+    			a13 = element$1("a");
+    			a13.textContent = "https://SOS2122-25.herokuapp.com/#/integration5b";
+    			t50 = space();
+    			p14 = element$1("p");
+    			t51 = text$1("- ");
+    			a14 = element$1("a");
+    			a14.textContent = "https://SOS2122-25.herokuapp.com/#/integration6";
+    			t53 = space();
+    			p15 = element$1("p");
+    			t54 = text$1("- ");
+    			a15 = element$1("a");
+    			a15.textContent = "https://SOS2122-25.herokuapp.com/#/integration7";
     			add_location(body, file$j, 5, 0, 162);
     			add_location(h30, file$j, 50, 4, 1864);
     			attr_dev(a0, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion1");
@@ -35290,34 +35368,49 @@ var app = (function () {
     			attr_dev(a2, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion3");
     			add_location(a2, file$j, 53, 6, 2204);
     			add_location(p2, file$j, 53, 1, 2199);
-    			add_location(br0, file$j, 54, 4, 2344);
-    			add_location(h31, file$j, 55, 4, 2354);
-    			add_location(br1, file$j, 56, 4, 2396);
-    			add_location(h32, file$j, 57, 1, 2403);
-    			attr_dev(a3, "href", "https://SOS2122-25.herokuapp.com/#/integracion1");
-    			add_location(a3, file$j, 58, 6, 2451);
-    			add_location(p3, file$j, 58, 1, 2446);
-    			attr_dev(a4, "href", "https://SOS2122-25.herokuapp.com/#/integracion2");
-    			add_location(a4, file$j, 59, 6, 2573);
-    			add_location(p4, file$j, 59, 1, 2568);
-    			attr_dev(a5, "href", "https://SOS2122-25.herokuapp.com/#/integracion3");
-    			add_location(a5, file$j, 60, 6, 2695);
-    			add_location(p5, file$j, 60, 1, 2690);
-    			attr_dev(a6, "href", "https://SOS2122-25.herokuapp.com/#/integracion4");
-    			add_location(a6, file$j, 61, 6, 2817);
-    			add_location(p6, file$j, 61, 1, 2812);
-    			attr_dev(a7, "href", "https://SOS2122-25.herokuapp.com/#/integracion5");
-    			add_location(a7, file$j, 62, 6, 2939);
-    			add_location(p7, file$j, 62, 1, 2934);
-    			attr_dev(a8, "href", "https://SOS2122-25.herokuapp.com/#/integracion5b");
-    			add_location(a8, file$j, 63, 6, 3061);
-    			add_location(p8, file$j, 63, 1, 3056);
-    			attr_dev(a9, "href", "https://SOS2122-25.herokuapp.com/#/integracion6");
-    			add_location(a9, file$j, 64, 6, 3185);
-    			add_location(p9, file$j, 64, 1, 3180);
-    			attr_dev(a10, "href", "https://SOS2122-25.herokuapp.com/#/integracion7");
-    			add_location(a10, file$j, 65, 6, 3307);
-    			add_location(p10, file$j, 65, 1, 3302);
+    			attr_dev(a3, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion4");
+    			add_location(a3, file$j, 54, 6, 2346);
+    			add_location(p3, file$j, 54, 1, 2341);
+    			attr_dev(a4, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion5");
+    			add_location(a4, file$j, 55, 6, 2488);
+    			add_location(p4, file$j, 55, 1, 2483);
+    			attr_dev(a5, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion6");
+    			add_location(a5, file$j, 56, 6, 2630);
+    			add_location(p5, file$j, 56, 1, 2625);
+    			attr_dev(a6, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion7");
+    			add_location(a6, file$j, 57, 6, 2772);
+    			add_location(p6, file$j, 57, 1, 2767);
+    			attr_dev(a7, "href", "https://SOS2122-25.herokuapp.com/#/economies/integracion8");
+    			add_location(a7, file$j, 58, 6, 2914);
+    			add_location(p7, file$j, 58, 1, 2909);
+    			add_location(br0, file$j, 59, 4, 3054);
+    			add_location(h31, file$j, 60, 4, 3064);
+    			add_location(br1, file$j, 61, 4, 3106);
+    			add_location(h32, file$j, 62, 1, 3113);
+    			attr_dev(a8, "href", "https://SOS2122-25.herokuapp.com/#/integration1");
+    			add_location(a8, file$j, 63, 6, 3161);
+    			add_location(p8, file$j, 63, 1, 3156);
+    			attr_dev(a9, "href", "https://SOS2122-25.herokuapp.com/#/integration2");
+    			add_location(a9, file$j, 64, 6, 3283);
+    			add_location(p9, file$j, 64, 1, 3278);
+    			attr_dev(a10, "href", "https://SOS2122-25.herokuapp.com/#/integration3");
+    			add_location(a10, file$j, 65, 6, 3405);
+    			add_location(p10, file$j, 65, 1, 3400);
+    			attr_dev(a11, "href", "https://SOS2122-25.herokuapp.com/#/integration4");
+    			add_location(a11, file$j, 66, 6, 3527);
+    			add_location(p11, file$j, 66, 1, 3522);
+    			attr_dev(a12, "href", "https://SOS2122-25.herokuapp.com/#/integration5");
+    			add_location(a12, file$j, 67, 6, 3649);
+    			add_location(p12, file$j, 67, 1, 3644);
+    			attr_dev(a13, "href", "https://SOS2122-25.herokuapp.com/#/integration5b");
+    			add_location(a13, file$j, 68, 6, 3771);
+    			add_location(p13, file$j, 68, 1, 3766);
+    			attr_dev(a14, "href", "https://SOS2122-25.herokuapp.com/#/integration6");
+    			add_location(a14, file$j, 69, 6, 3895);
+    			add_location(p14, file$j, 69, 1, 3890);
+    			attr_dev(a15, "href", "https://SOS2122-25.herokuapp.com/#/integration7");
+    			add_location(a15, file$j, 70, 6, 4017);
+    			add_location(p15, file$j, 70, 1, 4012);
     			attr_dev(main, "class", "svelte-1h6otfa");
     			add_location(main, file$j, 49, 0, 1852);
     		},
@@ -35343,33 +35436,33 @@ var app = (function () {
     			append_dev(p2, t9);
     			append_dev(p2, a2);
     			append_dev(main, t11);
-    			append_dev(main, br0);
-    			append_dev(main, t12);
-    			append_dev(main, h31);
-    			append_dev(main, t14);
-    			append_dev(main, br1);
-    			append_dev(main, t15);
-    			append_dev(main, h32);
-    			append_dev(main, t17);
     			append_dev(main, p3);
-    			append_dev(p3, t18);
+    			append_dev(p3, t12);
     			append_dev(p3, a3);
-    			append_dev(main, t20);
+    			append_dev(main, t14);
     			append_dev(main, p4);
-    			append_dev(p4, t21);
+    			append_dev(p4, t15);
     			append_dev(p4, a4);
-    			append_dev(main, t23);
+    			append_dev(main, t17);
     			append_dev(main, p5);
-    			append_dev(p5, t24);
+    			append_dev(p5, t18);
     			append_dev(p5, a5);
-    			append_dev(main, t26);
+    			append_dev(main, t20);
     			append_dev(main, p6);
-    			append_dev(p6, t27);
+    			append_dev(p6, t21);
     			append_dev(p6, a6);
-    			append_dev(main, t29);
+    			append_dev(main, t23);
     			append_dev(main, p7);
-    			append_dev(p7, t30);
+    			append_dev(p7, t24);
     			append_dev(p7, a7);
+    			append_dev(main, t26);
+    			append_dev(main, br0);
+    			append_dev(main, t27);
+    			append_dev(main, h31);
+    			append_dev(main, t29);
+    			append_dev(main, br1);
+    			append_dev(main, t30);
+    			append_dev(main, h32);
     			append_dev(main, t32);
     			append_dev(main, p8);
     			append_dev(p8, t33);
@@ -35382,6 +35475,26 @@ var app = (function () {
     			append_dev(main, p10);
     			append_dev(p10, t39);
     			append_dev(p10, a10);
+    			append_dev(main, t41);
+    			append_dev(main, p11);
+    			append_dev(p11, t42);
+    			append_dev(p11, a11);
+    			append_dev(main, t44);
+    			append_dev(main, p12);
+    			append_dev(p12, t45);
+    			append_dev(p12, a12);
+    			append_dev(main, t47);
+    			append_dev(main, p13);
+    			append_dev(p13, t48);
+    			append_dev(p13, a13);
+    			append_dev(main, t50);
+    			append_dev(main, p14);
+    			append_dev(p14, t51);
+    			append_dev(p14, a14);
+    			append_dev(main, t53);
+    			append_dev(main, p15);
+    			append_dev(p15, t54);
+    			append_dev(p15, a15);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -89168,10 +89281,10 @@ var app = (function () {
     			create_component(alert.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$2, 98, 8, 3142);
+    			add_location(link, file$2, 98, 8, 3149);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$2, 147, 12, 5408);
-    			add_location(main, file$2, 104, 4, 3236);
+    			add_location(div, file$2, 147, 12, 5415);
+    			add_location(main, file$2, 104, 4, 3243);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -89327,7 +89440,7 @@ var app = (function () {
     		console.log("Loading info....");
 
     		await fetch("https://reqres.in/api/users/2").then(function (res) {
-    			$$invalidate(2, color = "");
+    			$$invalidate(2, color = "success");
     			$$invalidate(0, checkMSG = "Nombre: " + JSON.stringify(stats1.data.first_name) + " " + JSON.stringify(stats1.data.last_name) + "        email: " + JSON.stringify(stats1.data.email));
     			$$invalidate(1, visible = "true");
     		}); //window.alert("Entradas cargadas con éxito");
@@ -90890,10 +91003,10 @@ var app = (function () {
     			create_component(alert.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "./c3/c3.css");
-    			add_location(link, file$1, 98, 8, 3107);
+    			add_location(link, file$1, 98, 8, 3114);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$1, 147, 12, 5373);
-    			add_location(main, file$1, 104, 4, 3201);
+    			add_location(div, file$1, 147, 12, 5380);
+    			add_location(main, file$1, 104, 4, 3208);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -91049,7 +91162,7 @@ var app = (function () {
     		console.log("Loading info....");
 
     		await fetch("https://reqres.in/api/unknown/2").then(function (res) {
-    			$$invalidate(2, color = "");
+    			$$invalidate(2, color = "success");
     			$$invalidate(0, checkMSG = "Nombre: " + JSON.stringify(stats1.data.name) + "        año de creación: " + JSON.stringify(stats1.data.year));
     			$$invalidate(1, visible = "true");
     		}); //window.alert("Entradas cargadas con éxito");
@@ -91155,7 +91268,11 @@ var app = (function () {
     		c: function create() {
     			main = element$1("main");
     			create_component(router.$$.fragment);
+<<<<<<< HEAD
     			add_location(main, file, 85, 0, 3267);
+=======
+    			add_location(main, file, 85, 0, 3268);
+>>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -91200,7 +91317,7 @@ var app = (function () {
     		'/': Home,
     		"/info": Info,
     		"/about": About,
-    		"/integration": Integration,
+    		"/Integration": Integration,
     		"/esco-stats": Esco,
     		"/esco/:country/:year": Editesco_1,
     		"/graphesco": MyGraphesco,
@@ -91252,7 +91369,11 @@ var app = (function () {
     		ExpoGraph,
     		MyGraph,
     		about: About,
+<<<<<<< HEAD
     		integration: Integration,
+=======
+    		Integration,
+>>>>>>> a41a6ecfcee4a884f88282cf3d31bbf35457a2fb
     		IntegrationEco1: IntegrationApi1,
     		IntegrationEco2: IntegrationApi2,
     		IntegrationEco3: IntegrationApi3,

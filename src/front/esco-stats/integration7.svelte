@@ -81,7 +81,7 @@
         console.log("Loading info....");
         const res = await fetch("https://reqres.in/api/unknown/2"
 			).then(function (res){
-				color="";
+				color="success";
 				checkMSG="Nombre: "+JSON.stringify(stats1.data.name)+"        año de creación: "+JSON.stringify(stats1.data.year);
 				visible="true";
 				
