@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import {Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button} from 'sveltestrap';
 
    
     let expos = [];
@@ -31,9 +32,9 @@
             console.log("Recibido: "+expos.length);
             //inicializamos los arrays para mostrar los datos
             expos.forEach(expo => {
-                country.push(expo.country+"-"+expo.year);
-                year.push(expo.year);
-                ages1.push(expo.tot_esco+expo.expo_m+expo.expo_tec);
+                /* country.push(expo.country+"-"+expo.year);
+                year.push(expo.year); */
+                ages1.push(expo.expo_m+expo.expo_tec);
                 expo_m.push(expo.expo_m);
                 expo_tec.push(expo.expo_tec);   
             });
@@ -50,8 +51,8 @@
             escos=data2;
             console.log("Recibido: " + escos.length);
             escos.forEach(esco=>{
-               // year.push(esco.year);
-                //country.push(esco.country);
+                year.push(esco.year);
+                country.push(esco.country);
                 tot_wom.push(esco.tot_wom);
                 tot_man.push(esco.tot_man);
                 ages2.push(esco.tot_esco+esco.tot_man+esco.tot_wom);
@@ -135,10 +136,10 @@
 <svelte:head>
 
 
-    <script src="https://code.highcharts.com/highcharts.js" on:load="{loadGraph}"></script>
-    <script src="https://code.highcharts.com/modules/series-label.js" on:load="{loadGraph}"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js" on:load="{loadGraph}"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js" on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}"></script>
 
 </svelte:head>

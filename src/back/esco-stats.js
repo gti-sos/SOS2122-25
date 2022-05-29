@@ -65,6 +65,7 @@ var esco_stats = [
     },
     {
         country: "spain",
+        year: 2019,
         tot_wom: 178,
         tot_man: 189,
         tot_esco: 180
