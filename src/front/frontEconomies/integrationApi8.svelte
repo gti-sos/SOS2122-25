@@ -65,16 +65,28 @@
                     ],
                 
                     types: {
-                        primarylevel: "area", // for ESM specify as: area()
-                        tertiarylevel: "area-spline",
-                        secondarylevel: "area-spline", // for ESM specify as: areaSpline()
-                        percapita: "area-spline",
-                        currency:"area-spline",
-                        currentprices: "area-spline"
+                        primarylevel: "bar", // for ESM specify as: area()
+                        tertiarylevel: "bar",
+                        secondarylevel: "bar", // for ESM specify as: areaSpline()
+                        percapita: "bar",
+                        currency:"bar",
+                        currentprices: "bar"
                     }
                 },
-                bindto: "#areaChart"
+                axis: {
+                x: {
+                type: "category",
+                categories: country,
+                tick: {
+                    rotate: 75,
+                    multiline: false,
+                    tooltip: true
+                },
+                height: 130
+                }
+            },
             });
+
                     
             setTimeout(function() {
                 chart.load({
@@ -139,6 +151,6 @@
         </Navbar>
 
     
-        <div id="chart"></div>
+        <div id="rotateXAxisTickText"></div>
            
     </main>

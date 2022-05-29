@@ -52,12 +52,7 @@
       
             var chart = bb.generate({
                 data: {
-                     axis: {
-                         x: {
-                            type: country
-                         }
-                      },
-                     columns: [
+                    columns: [
     
                       ],
    
@@ -70,6 +65,12 @@
                         currentprices: "area-spline"
                   }
                 },
+                axis: {
+                         x: {
+                            type: "category",
+                            categories: country
+                         }
+                      },
                 bindto: "#areaChart"
             });
     

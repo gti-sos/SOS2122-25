@@ -25,7 +25,7 @@
                 const data2 = await res2.json();
                 stats = data;
                 if (stats.length == 0) {
-                    const res = await fetch("https://sos2122-32.herokuapp.com/api/v1/ending-statsloadInitialData");
+                    const res = await fetch("https://sos2122-32.herokuapp.com/api/v1/ending-stats/loadInitialData");
                 }
                 console.log("Estadísticas recibidas: "+stats.length);
                 //inicializamos los arrays para mostrar los datos
@@ -71,6 +71,12 @@
                         percapita: "area-spline",
                         currency:"area-spline",
                         currentprices: "area-spline"
+                    }
+                },
+                axis: {
+                    x: {
+                    type: "category",
+                    categories: country
                     }
                 },
                 bindto: "#areaChart"

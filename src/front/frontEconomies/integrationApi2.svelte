@@ -53,27 +53,28 @@ import Economies from './economies.svelte';
       
             var chart = bb.generate({
                 data: {
-                     axis: {
-                         x: {
-                            type: country
-                         }
-                      },
-                     columns: [
-    
-                      ],
-   
-                   types: {
-                        coefficients: "area", // for ESM specify as: area()
-                        educations: "area-spline",
-                        lifes: "area-spline",
-                        percapita: "area-spline",
-                        currency:"area-spline",
-                        currentprices: "area-spline"
-                  }
+                    columns: [
+                        percapita,currency,currentprices
+                    ],
+                    type: "bar", // for ESM specify as: bar()
                 },
-                bindto: "#areaChart"
+                bar: {
+                    width: {
+                    ratio: 0.5
+                    }
+                },   
+                axis: {
+                    x: {
+                    type: "category",
+                    categories: country
+                    },
+                    y: {
+                    max: 450
+                    }
+                },
+                bindto: "#barChart_1"
             });
-    
+                    
             setTimeout(function() {
                 chart.load({
                     columns: [
@@ -174,6 +175,8 @@ import Economies from './economies.svelte';
         </Navbar>
 
 
-            <div id="chart"></div>
+            <!-- Markup -->
+        <div id="barChart_1"></div>
+        <div id="barChart_2"></div>
            
     </main>
