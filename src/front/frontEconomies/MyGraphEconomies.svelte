@@ -40,7 +40,7 @@
                console.log("Entradas recibidas: "+datos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
             datosOrdenados = datos.sort(function (a, b){
-            return (a.year - b.year)
+                 return (a.year - b.year)
             });
             console.log("Ordenadas correctamente");
             datosOrdenados.forEach(dato => {
