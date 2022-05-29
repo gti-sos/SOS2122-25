@@ -9,6 +9,16 @@ const port = process.env.PORT || 8080;
 
 app.use(cors());
 
+//Proxy 
+var paths='/remoteAPI2';
+var apiServerHost = 'https://sos2122-20.herokuapp.com/api/v1/agriculturalproduction-stats';
+
+app.use(paths, function(req, res) {
+  var url = apiServerHost + req.url;
+  console.log('piped: ' + req.url);
+  req.pipe(request(url)).pipe(res);
+});
+
 const economies_stats_API = require("./src/back/economies-stats-v2.js");
 const esco_stats_API = require("./src/back/esco-stats.js");
 const expo_stats_API = require("./src/back/expo-stats.js");

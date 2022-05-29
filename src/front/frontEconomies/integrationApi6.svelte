@@ -25,7 +25,7 @@
                 const data2 = await res2.json();
                 stats = data;
                 if (stats.length == 0) {
-                    const res = await fetch("https://sos2122-32.herokuapp.com/api/v1/housework-stats/");
+                    const res = await fetch("https://sos2122-32.herokuapp.com/api/v1/housework-stats/loadInitialData");
                 }
                 console.log("Estadísticas recibidas: "+stats.length);
                 //inicializamos los arrays para mostrar los datos
@@ -55,25 +55,26 @@
       
             var chart = bb.generate({
                 data: {
-                    axis: {
-                    x: {
-                    type: "category"
-                    }
-                },
                     columns: [
-                    
+                        average,men,women,percapita,currency,currentprices
                     ],
                 
                     types: {
-                        average: "area", // for ESM specify as: area()
-                        men: "area-spline",
-                        women: "area-spline", // for ESM specify as: areaSpline()
-                        percapita: "area-spline",
-                        currency:"area-spline",
-                        currentprices: "area-spline"
+                        average: "spline", // for ESM specify as: area()
+                        men: "spline",
+                        women: "spline", // for ESM specify as: areaSpline()
+                        percapita: "spline",
+                        currency:"spline",
+                        currentprices: "spline"
                     }
                 },
-                bindto: "#areaChart"
+                axis: {
+                    x: {
+                    type: "category",
+                    categories: country
+                    }
+                },
+                bindto: "#areaRangeChart"
             });
                     
             setTimeout(function() {
@@ -140,6 +141,6 @@
 
         <p>Comparacion del trabajo en casa</p>
     
-        <div id="chart"></div>
+        <div id="splineChart"></div>
            
     </main>

@@ -55,26 +55,23 @@
       
             var chart = bb.generate({
                 data: {
-                    axis: {
-                    x: {
-                    type: "category"
-                    }
-                },
                     columns: [
-                    
+                        percapita,currency,currentprices
                     ],
-                
-                    types: {
-                        code: "area", // for ESM specify as: area()
-                        grazing_area: "area-spline",
-                        built_area: "area-spline", // for ESM specify as: areaSpline()
-                        percapita: "area-spline",
-                        currency:"area-spline",
-                        currentprices: "area-spline"
+                    type: "bubble", // for ESM specify as: bubble()
+                    labels: true
+                },
+                bubble: {
+                    maxR: 50
+                },
+                axis: {
+                    x: {
+                    type: "category",
+                    categories: country
                     }
                 },
-                bindto: "#areaChart"
-            });
+                bindto: "#bubbleChart"
+});
                     
             setTimeout(function() {
                 chart.load({
@@ -139,6 +136,6 @@
         </Navbar>
 
     
-        <div id="chart"></div>
+        <div id="bubbleChart"></div>
            
     </main>
